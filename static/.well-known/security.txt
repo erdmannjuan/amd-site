@@ -1,6 +1,6 @@
 # Security contact information
 # See https://securitytxt.org/ for more information
 
-Contact: mailto:erdmannjuan@users.noreply.github.com
+Contact: mailto:info@amdautomation.com
 Preferred-Languages: en
-Canonical: https://erdmannjuan.github.io/amd-site/.well-known/security.txt
+Canonical: https://amdautomation.com/.well-known/security.txt

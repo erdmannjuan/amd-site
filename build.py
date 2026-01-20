@@ -142,6 +142,12 @@ def build_site():
         if wellknown_src.exists():
             shutil.copytree(wellknown_src, OUTPUT_DIR / '.well-known')
             print("  ✓ Copied .well-known directory")
+
+        # Copy CNAME file for custom domain
+        cname_src = STATIC_DIR / 'CNAME'
+        if cname_src.exists():
+            shutil.copy(cname_src, OUTPUT_DIR / 'CNAME')
+            print("  ✓ Copied CNAME file")
     
     pages = get_all_pages(CONTENT_DIR)
     print(f"\n  Found {len(pages)} page(s) to build:\n")

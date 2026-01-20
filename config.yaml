@@ -10,10 +10,10 @@ site:
 
   # REQUIRED: Update with your GitHub Pages URL or custom domain
   # Format: https://username.github.io/repo-name or https://yourdomain.com
-  url: "https://erdmannjuan.github.io/amd-site"
+  url: "https://amdautomation.com"
 
   # Base path for assets (empty for root domain, "/repo-name" for GitHub Pages)
-  base_path: "/amd-site"
+  base_path: ""
 
   author: "Your Name"
 
