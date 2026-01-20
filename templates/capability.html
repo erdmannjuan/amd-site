@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="{{ config.site.base_path }}/">Home</a> &rsaquo;
+            <a href="{{ config.site.base_path }}/capabilities/">Capabilities</a> &rsaquo;
+            <span>{{ page.short_title or page.title }}</span>
+        </nav>
+        <h1 class="page-title">{{ page.hero_title or page.title }}</h1>
+        <p class="page-subtitle">{{ page.hero_subtitle }}</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="section">
+    <div class="container">
+        <div class="capability-content">
+            <div class="content-body">
+                {{ content | safe }}
+            </div>
+
+            {% if page.features %}
+            <div class="capability-features">
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    {% for feature in page.features %}
+                    <li>{{ feature }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% if page.applications %}
+<!-- Applications Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Applications</h2>
+            <p class="section-subtitle">Common use cases for {{ page.short_title or page.title | lower }}</p>
+        </div>
+        <div class="applications-grid">
+            {% for app in page.applications %}
+            <div class="application-card">
+                <h3>{{ app.name }}</h3>
+                <p>{{ app.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.benefits %}
+<!-- Benefits Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Benefits</h2>
+        </div>
+        <div class="benefits-grid">
+            {% for benefit in page.benefits %}
+            <div class="benefit-item">
+                <div class="benefit-icon">&#10003;</div>
+                <div>
+                    <h3>{{ benefit.title }}</h3>
+                    <p>{{ benefit.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Related Capabilities -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Related Capabilities</h2>
+        </div>
+        <div class="capabilities-grid">
+            {% for cap in config.capabilities %}
+            {% if cap.url != page.url %}
+            <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card">
+                <div class="capability-icon">
+                    {% if cap.icon == 'robot' %}&#129302;{% endif %}
+                    {% if cap.icon == 'welding' %}&#128293;{% endif %}
+                    {% if cap.icon == 'test' %}&#128269;{% endif %}
+                    {% if cap.icon == 'assembly' %}&#9881;{% endif %}
+                    {% if cap.icon == 'custom' %}&#128736;{% endif %}
+                    {% if cap.icon == 'handling' %}&#128230;{% endif %}
+                </div>
+                <h3>{{ cap.name }}</h3>
+                <p>{{ cap.description }}</p>
+                <span class="card-link">Learn More &rarr;</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Discuss Your {{ page.short_title or page.title }} Project?</h2>
+        <p>Our engineering team is ready to help you design the perfect automation solution.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="{{ config.site.base_path }}/">Home</a> &rsaquo;
+            <a href="{{ config.site.base_path }}/industries/">Industries</a> &rsaquo;
+            <span>{{ page.short_title or page.title }}</span>
+        </nav>
+        <h1 class="page-title">{{ page.hero_title or page.title }}</h1>
+        <p class="page-subtitle">{{ page.hero_subtitle }}</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="section">
+    <div class="container">
+        <div class="industry-content">
+            <div class="content-body">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if page.solutions %}
+<!-- Solutions Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Solutions for {{ page.short_title or page.title }}</h2>
+        </div>
+        <div class="solutions-grid">
+            {% for solution in page.solutions %}
+            <div class="solution-card">
+                <h3>{{ solution.name }}</h3>
+                <p>{{ solution.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.challenges %}
+<!-- Challenges Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Industry Challenges We Solve</h2>
+        </div>
+        <div class="challenges-list">
+            {% for challenge in page.challenges %}
+            <div class="challenge-item">
+                <div class="challenge-icon">&#10003;</div>
+                <div>
+                    <h3>{{ challenge.title }}</h3>
+                    <p>{{ challenge.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Related Capabilities -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Capabilities for {{ page.short_title or page.title }}</h2>
+            <p class="section-subtitle">Explore the automation technologies we apply in this industry</p>
+        </div>
+        <div class="capabilities-grid">
+            {% for cap in config.capabilities %}
+            <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card">
+                <div class="capability-icon">
+                    {% if cap.icon == 'robot' %}&#129302;{% endif %}
+                    {% if cap.icon == 'welding' %}&#128293;{% endif %}
+                    {% if cap.icon == 'test' %}&#128269;{% endif %}
+                    {% if cap.icon == 'assembly' %}&#9881;{% endif %}
+                    {% if cap.icon == 'custom' %}&#128736;{% endif %}
+                    {% if cap.icon == 'handling' %}&#128230;{% endif %}
+                </div>
+                <h3>{{ cap.name }}</h3>
+                <p>{{ cap.description }}</p>
+                <span class="card-link">Learn More &rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Discuss Your {{ page.short_title or page.title }} Project?</h2>
+        <p>Our team understands the unique requirements of {{ page.short_title or page.title | lower }} manufacturing.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+    </div>
+</section>
+{% endblock %}

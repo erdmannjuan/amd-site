@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">{{ page.label or "Industries" }}</span>
+        <h1 class="page-title">{{ page.hero_title or "Industries We Serve" }}</h1>
+        <p class="page-subtitle">{{ page.hero_subtitle or "Delivering automation solutions across diverse manufacturing sectors" }}</p>
+    </div>
+</section>
+
+<!-- Industries Grid -->
+<section class="section">
+    <div class="container">
+        <div class="industries-grid-large">
+            {% for ind in config.industries %}
+            <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-card-large">
+                <div class="industry-card-icon">
+                    {% if ind.icon == 'car' %}&#128663;{% endif %}
+                    {% if ind.icon == 'medical' %}&#9764;{% endif %}
+                    {% if ind.icon == 'consumer' %}&#127968;{% endif %}
+                    {% if ind.icon == 'electronics' %}&#128187;{% endif %}
+                    {% if ind.icon == 'aerospace' %}&#9992;{% endif %}
+                    {% if ind.icon == 'food' %}&#127828;{% endif %}
+                </div>
+                <h3>{{ ind.name }}</h3>
+                <p>{{ ind.description or "Learn how we help " + ind.name | lower + " manufacturers automate their production." }}</p>
+                <span class="card-link">Learn More &rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Cross-Industry Expertise -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Our Expertise</span>
+            <h2 class="section-title">Cross-Industry Experience</h2>
+            <p class="section-subtitle">Our diverse experience means we bring fresh perspectives and proven solutions to every project</p>
+        </div>
+        <div class="expertise-content">
+            <p>With over 25 years of automation experience across multiple industries, AMD Automation brings a unique perspective to every project. Solutions developed for one industry often inspire innovations in another.</p>
+            <p>Our engineers understand the specific requirements, standards, and challenges of each industry we serve. Whether it's FDA regulations for medical devices, automotive quality standards, or food safety requirements, we design systems that meet your compliance needs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Content from markdown (if any) -->
+{% if content %}
+<section class="section">
+    <div class="container">
+        <div class="content-body">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Don't See Your Industry?</h2>
+        <p>We've worked with manufacturers across many sectors. Contact us to discuss your specific automation needs.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Get in Touch</a>
+    </div>
+</section>
+{% endblock %}

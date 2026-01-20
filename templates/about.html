@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">{{ page.label or "About Us" }}</span>
+        <h1 class="page-title">{{ page.hero_title or "About AMD Automation" }}</h1>
+        <p class="page-subtitle">{{ page.hero_subtitle or "25+ years of engineering excellence in custom automation" }}</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="section">
+    <div class="container">
+        <div class="about-content">
+            <div class="content-body">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="stats-grid">
+            {% for stat in config.stats %}
+            <div class="stat-item">
+                <div class="stat-number">{{ stat.number }}</div>
+                <div class="stat-label">{{ stat.label }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+{% if page.company_values %}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Values</h2>
+        </div>
+        <div class="values-grid">
+            {% for value in page.company_values %}
+            <div class="value-card">
+                <h3>{{ value.title }}</h3>
+                <p>{{ value.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Team Section -->
+{% if page.team_intro %}
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">{{ page.team_intro }}</p>
+        </div>
+        {% if page.team %}
+        <div class="team-grid">
+            {% for member in page.team %}
+            <div class="team-card">
+                <h3>{{ member.name }}</h3>
+                <span class="team-role">{{ member.role }}</span>
+                <p>{{ member.bio }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Certifications -->
+{% if page.certifications %}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Certifications & Partnerships</h2>
+        </div>
+        <div class="certifications-list">
+            {% for cert in page.certifications %}
+            <div class="certification-item">{{ cert }}</div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Work Together?</h2>
+        <p>Let's discuss how AMD Automation can help solve your manufacturing challenges.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Contact Us</a>
+    </div>
+</section>
+{% endblock %}

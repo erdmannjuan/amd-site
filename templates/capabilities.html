@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <span class="section-label">{{ page.label or "What We Do" }}</span>
+        <h1 class="page-title">{{ page.hero_title or "Our Capabilities" }}</h1>
+        <p class="page-subtitle">{{ page.hero_subtitle or "Comprehensive automation solutions tailored to your specific manufacturing needs" }}</p>
+    </div>
+</section>
+
+<!-- Capabilities Grid -->
+<section class="section">
+    <div class="container">
+        <div class="capabilities-grid capabilities-grid-large">
+            {% for cap in config.capabilities %}
+            <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card capability-card-large">
+                <div class="capability-icon capability-icon-large">
+                    {% if cap.icon == 'robot' %}&#129302;{% endif %}
+                    {% if cap.icon == 'welding' %}&#128293;{% endif %}
+                    {% if cap.icon == 'test' %}&#128269;{% endif %}
+                    {% if cap.icon == 'assembly' %}&#9881;{% endif %}
+                    {% if cap.icon == 'custom' %}&#128736;{% endif %}
+                    {% if cap.icon == 'handling' %}&#128230;{% endif %}
+                </div>
+                <h3>{{ cap.name }}</h3>
+                <p>{{ cap.description }}</p>
+                <span class="card-link">Learn More &rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Our Process</span>
+            <h2 class="section-title">How We Work</h2>
+            <p class="section-subtitle">A proven approach to delivering successful automation solutions</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="process-number">01</div>
+                <h3>Discovery</h3>
+                <p>We analyze your manufacturing process, identify challenges, and define project requirements.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">02</div>
+                <h3>Design</h3>
+                <p>Our engineers create detailed designs with 3D modeling and simulation to validate concepts.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">03</div>
+                <h3>Build</h3>
+                <p>We fabricate, assemble, and integrate all components in our state-of-the-art facility.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">04</div>
+                <h3>Deploy</h3>
+                <p>Installation, commissioning, training, and ongoing support ensure your success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content from markdown (if any) -->
+{% if content %}
+<section class="section">
+    <div class="container">
+        <div class="content-body">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Discuss Your Project?</h2>
+        <p>Let our team help you find the right automation solution for your manufacturing needs.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Get a Free Consultation</a>
+    </div>
+</section>
+{% endblock %}
