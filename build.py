@@ -72,7 +72,30 @@ def get_all_pages(content_dir):
     return pages
 
 
-def build_page(page, config, env, all_pages):
+def get_blog_posts(all_pages):
+    """Extract blog posts from all pages"""
+    posts = []
+    for page in all_pages:
+        # Check if it's a blog post (in /blog/ but not the index)
+        if page['url'].startswith('/blog/') and page['url'] != '/blog/':
+            post_data = {
+                'url': page['url'],
+                'title': page['frontmatter'].get('title', 'Untitled'),
+                'description': page['frontmatter'].get('description', ''),
+                'date': page['frontmatter'].get('date', ''),
+                'author': page['frontmatter'].get('author', ''),
+                'category': page['frontmatter'].get('category', ''),
+                'image': page['frontmatter'].get('image', ''),
+                'read_time': page['frontmatter'].get('read_time', ''),
+            }
+            posts.append(post_data)
+
+    # Sort by date (newest first)
+    posts.sort(key=lambda x: x.get('date', ''), reverse=True)
+    return posts
+
+
+def build_page(page, config, env, all_pages, posts=None):
     """Build a single page"""
     page_data = {
         'title': 'Untitled',
@@ -80,21 +103,22 @@ def build_page(page, config, env, all_pages):
         'url': page['url'],
         **page['frontmatter']
     }
-    
+
     md = markdown.Markdown(extensions=['extra', 'meta', 'toc'])
     html_content = md.convert(page['body'])
-    
+
     template_name = page_data.get('template', 'page.html')
     template = env.get_template(template_name)
-    
+
     rendered = template.render(
         page=page_data,
         content=html_content,
         config=config,
         all_pages=all_pages,
+        posts=posts or [],
         year=datetime.now().year
     )
-    
+
     if page_data['url'] == '/':
         output_path = OUTPUT_DIR / 'index.html'
     elif page_data['url'] == '/404/':
@@ -102,11 +126,11 @@ def build_page(page, config, env, all_pages):
         output_path = OUTPUT_DIR / '404.html'
     else:
         output_path = OUTPUT_DIR / page_data['url'].strip('/') / 'index.html'
-    
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(rendered)
-    
+
     print(f"  ✓ Built: {page_data['url']}")
     return page_data
 
@@ -151,10 +175,13 @@ def build_site():
     
     pages = get_all_pages(CONTENT_DIR)
     print(f"\n  Found {len(pages)} page(s) to build:\n")
-    
+
+    # Extract blog posts for blog templates
+    posts = get_blog_posts(pages)
+
     built_pages = []
     for page in pages:
-        page_data = build_page(page, config, env, pages)
+        page_data = build_page(page, config, env, pages, posts)
         built_pages.append(page_data)
     
     generate_sitemap(built_pages, config)
