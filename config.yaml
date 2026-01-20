@@ -12,6 +12,9 @@ site:
   # Format: https://username.github.io/repo-name or https://yourdomain.com
   url: "https://erdmannjuan.github.io/amd-site"
 
+  # Base path for assets (empty for root domain, "/repo-name" for GitHub Pages)
+  base_path: "/amd-site"
+
   author: "Your Name"
 
 seo:

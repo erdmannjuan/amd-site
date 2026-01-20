@@ -23,10 +23,10 @@
             <h2>Current Inventory</h2>
             <div class="card-grid">
                 {% for equip in equipment_pages %}
-                <a href="{{ equip.url }}" class="card equipment-card">
+                <a href="{{ config.site.base_path }}{{ equip.url }}" class="card equipment-card">
                     <div class="card-image">
                         {% if equip.frontmatter.images %}
-                        <img src="/static/images/{{ equip.frontmatter.images[0] }}" alt="{{ equip.frontmatter.title }}">
+                        <img src="{{ config.site.base_path }}/static/images/{{ equip.frontmatter.images[0] }}" alt="{{ equip.frontmatter.title }}">
                         {% else %}
                         <div class="card-placeholder">
                             <span>No Image</span>
@@ -57,7 +57,7 @@
     <div class="container">
         <h2>{{ page.cta_title or "Looking for Something Specific?" }}</h2>
         <p>{{ page.cta_text or "Contact us with your requirements and we'll help you find the right equipment." }}</p>
-        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary">Contact Us</a>
     </div>
 </section>
 {% endif %}

@@ -5,8 +5,8 @@
 <section class="equipment-header">
     <div class="container">
         <nav class="breadcrumb">
-            <a href="/">Home</a> &raquo;
-            <a href="/products/">Products</a> &raquo;
+            <a href="{{ config.site.base_path }}/">Home</a> &raquo;
+            <a href="{{ config.site.base_path }}/products/">Products</a> &raquo;
             <span>{{ page.title }}</span>
         </nav>
     </div>
@@ -20,13 +20,13 @@
             <div class="equipment-gallery">
                 {% if page.images %}
                 <div class="main-image">
-                    <img src="/static/images/{{ page.images[0] }}" alt="{{ page.title }}" id="main-img">
+                    <img src="{{ config.site.base_path }}/static/images/{{ page.images[0] }}" alt="{{ page.title }}" id="main-img">
                 </div>
                 {% if page.images|length > 1 %}
                 <div class="thumbnail-row">
                     {% for img in page.images %}
-                    <div class="thumbnail {% if loop.first %}active{% endif %}" onclick="changeImage('/static/images/{{ img }}', this)">
-                        <img src="/static/images/{{ img }}" alt="{{ page.title }} - Image {{ loop.index }}">
+                    <div class="thumbnail {% if loop.first %}active{% endif %}" onclick="changeImage('{{ config.site.base_path }}/static/images/{{ img }}', this)">
+                        <img src="{{ config.site.base_path }}/static/images/{{ img }}" alt="{{ page.title }} - Image {{ loop.index }}">
                     </div>
                     {% endfor %}
                 </div>
@@ -68,7 +68,7 @@
                 {% endif %}
 
                 <div class="equipment-actions">
-                    <a href="/contact/?inquiry={{ page.title | urlencode }}" class="btn btn-primary">Request Quote</a>
+                    <a href="{{ config.site.base_path }}/contact/?inquiry={{ page.title | urlencode }}" class="btn btn-primary">Request Quote</a>
                     <a href="tel:{{ config.social.phone }}" class="btn btn-secondary">Call Now</a>
                 </div>
             </div>
@@ -91,9 +91,9 @@
         <h2>Related Equipment</h2>
         <div class="related-grid">
             {% for related in page.related_pages %}
-            <a href="{{ related.url }}" class="related-card">
+            <a href="{{ config.site.base_path }}{{ related.url }}" class="related-card">
                 {% if related.image %}
-                <img src="/static/images/{{ related.image }}" alt="{{ related.title }}">
+                <img src="{{ config.site.base_path }}/static/images/{{ related.image }}" alt="{{ related.title }}">
                 {% endif %}
                 <h3>{{ related.title }}</h3>
                 <p>{{ related.excerpt }}</p>
@@ -109,7 +109,7 @@
     <div class="container">
         <h2>Interested in This Equipment?</h2>
         <p>Contact our team for pricing, availability, and financing options.</p>
-        <a href="/contact/" class="btn btn-primary">Get in Touch</a>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary">Get in Touch</a>
     </div>
 </section>
 

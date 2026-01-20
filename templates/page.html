@@ -3,7 +3,7 @@
 {% block content %}
 <!-- Hero Section (if page has hero) -->
 {% if page.hero %}
-<section class="hero" {% if page.hero_image %}style="background-image: url('/static/images/{{ page.hero_image }}')"{% endif %}>
+<section class="hero" {% if page.hero_image %}style="background-image: url('{{ config.site.base_path }}/static/images/{{ page.hero_image }}')"{% endif %}>
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-content">
@@ -39,9 +39,9 @@
         <h2>Related Pages</h2>
         <div class="related-grid">
             {% for related in page.related_pages %}
-            <a href="{{ related.url }}" class="related-card">
+            <a href="{{ config.site.base_path }}{{ related.url }}" class="related-card">
                 {% if related.image %}
-                <img src="/static/images/{{ related.image }}" alt="{{ related.title }}">
+                <img src="{{ config.site.base_path }}/static/images/{{ related.image }}" alt="{{ related.title }}">
                 {% endif %}
                 <h3>{{ related.title }}</h3>
                 <p>{{ related.excerpt }}</p>
@@ -58,7 +58,7 @@
     <div class="container">
         <h2>{{ page.cta_title or "Ready to Get Started?" }}</h2>
         <p>{{ page.cta_text or "Contact us today for a free consultation." }}</p>
-        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary">Contact Us</a>
     </div>
 </section>
 {% endif %}
