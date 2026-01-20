@@ -1,0 +1,44 @@
+# ===========================================
+# SITE CONFIGURATION
+# Update these values before deploying
+# ===========================================
+
+site:
+  # REQUIRED: Update with your business name
+  name: "My Equipment Site"
+  tagline: "Quality Industrial Equipment"
+
+  # REQUIRED: Update with your GitHub Pages URL or custom domain
+  # Format: https://username.github.io/repo-name or https://yourdomain.com
+  url: "https://erdmannjuan.github.io/amd-site"
+
+  author: "Your Name"
+
+seo:
+  default_title_suffix: " | My Equipment Site"
+  default_description: "Premium industrial equipment and machinery for your business needs."
+  default_keywords: "industrial equipment, machinery, tools"
+
+navigation:
+  - name: "Home"
+    url: "/"
+  - name: "Products"
+    url: "/products/"
+  - name: "About"
+    url: "/about/"
+  - name: "Contact"
+    url: "/contact/"
+
+# REQUIRED: Update with your actual contact information
+social:
+  phone: "(555) 123-4567"
+  email: "info@yourdomain.com"
+  address: "123 Industrial Way, City, State 12345"
+
+# Theme colors (optional - defaults work well)
+colors:
+  primary: "#1a365d"      # Deep blue
+  secondary: "#2b6cb0"    # Medium blue
+  accent: "#ed8936"       # Orange
+  light: "#f7fafc"        # Light gray
+  dark: "#1a202c"         # Almost black

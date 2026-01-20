@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section (if page has hero) -->
+{% if page.hero %}
+<section class="hero" {% if page.hero_image %}style="background-image: url('/static/images/{{ page.hero_image }}')"{% endif %}>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ page.hero_title or page.title }}</h1>
+            {% if page.hero_subtitle %}
+            <p class="hero-subtitle">{{ page.hero_subtitle }}</p>
+            {% endif %}
+            {% if page.hero_cta %}
+            <a href="{{ page.hero_cta_url or '#contact' }}" class="btn btn-primary">{{ page.hero_cta }}</a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Page Content -->
+<section class="page-content">
+    <div class="container">
+        {% if not page.hero %}
+        <h1 class="page-title">{{ page.title }}</h1>
+        {% endif %}
+        
+        <div class="content-body">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+
+<!-- Related Links Section (if any) -->
+{% if page.related_pages %}
+<section class="related-section">
+    <div class="container">
+        <h2>Related Pages</h2>
+        <div class="related-grid">
+            {% for related in page.related_pages %}
+            <a href="{{ related.url }}" class="related-card">
+                {% if related.image %}
+                <img src="/static/images/{{ related.image }}" alt="{{ related.title }}">
+                {% endif %}
+                <h3>{{ related.title }}</h3>
+                <p>{{ related.excerpt }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+{% if page.show_cta %}
+<section class="cta-section">
+    <div class="container">
+        <h2>{{ page.cta_title or "Ready to Get Started?" }}</h2>
+        <p>{{ page.cta_text or "Contact us today for a free consultation." }}</p>
+        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+    </div>
+</section>
+{% endif %}
+{% endblock %}

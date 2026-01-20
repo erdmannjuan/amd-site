@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Equipment Header -->
+<section class="equipment-header">
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="/">Home</a> &raquo;
+            <a href="/products/">Products</a> &raquo;
+            <span>{{ page.title }}</span>
+        </nav>
+    </div>
+</section>
+
+<!-- Equipment Details -->
+<section class="equipment-detail">
+    <div class="container">
+        <div class="equipment-grid">
+            <!-- Image Gallery -->
+            <div class="equipment-gallery">
+                {% if page.images %}
+                <div class="main-image">
+                    <img src="/static/images/{{ page.images[0] }}" alt="{{ page.title }}" id="main-img">
+                </div>
+                {% if page.images|length > 1 %}
+                <div class="thumbnail-row">
+                    {% for img in page.images %}
+                    <div class="thumbnail {% if loop.first %}active{% endif %}" onclick="changeImage('/static/images/{{ img }}', this)">
+                        <img src="/static/images/{{ img }}" alt="{{ page.title }} - Image {{ loop.index }}">
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% else %}
+                <div class="main-image placeholder">
+                    <div class="placeholder-text">No Image Available</div>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Equipment Info -->
+            <div class="equipment-info">
+                <h1 class="equipment-title">{{ page.title }}</h1>
+
+                {% if page.status %}
+                <span class="status-badge status-{{ page.status|lower|replace(' ', '-') }}">{{ page.status }}</span>
+                {% endif %}
+
+                {% if page.price %}
+                <div class="equipment-price">
+                    <span class="price-label">Price:</span>
+                    <span class="price-value">{{ page.price }}</span>
+                </div>
+                {% endif %}
+
+                {% if page.specs %}
+                <div class="equipment-specs">
+                    <h3>Specifications</h3>
+                    <table class="specs-table">
+                        {% for key, value in page.specs.items() %}
+                        <tr>
+                            <th>{{ key }}</th>
+                            <td>{{ value }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                {% endif %}
+
+                <div class="equipment-actions">
+                    <a href="/contact/?inquiry={{ page.title | urlencode }}" class="btn btn-primary">Request Quote</a>
+                    <a href="tel:{{ config.social.phone }}" class="btn btn-secondary">Call Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="equipment-description">
+            <h2>Description</h2>
+            <div class="content-body">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Equipment -->
+{% if page.related_pages %}
+<section class="related-section">
+    <div class="container">
+        <h2>Related Equipment</h2>
+        <div class="related-grid">
+            {% for related in page.related_pages %}
+            <a href="{{ related.url }}" class="related-card">
+                {% if related.image %}
+                <img src="/static/images/{{ related.image }}" alt="{{ related.title }}">
+                {% endif %}
+                <h3>{{ related.title }}</h3>
+                <p>{{ related.excerpt }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Interested in This Equipment?</h2>
+        <p>Contact our team for pricing, availability, and financing options.</p>
+        <a href="/contact/" class="btn btn-primary">Get in Touch</a>
+    </div>
+</section>
+
+<script>
+function changeImage(src, thumb) {
+    document.getElementById('main-img').src = src;
+    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+}
+</script>
+{% endblock %}

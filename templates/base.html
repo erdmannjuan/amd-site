@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}{{ config.seo.default_title_suffix }}</title>
+
+    <!-- Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; frame-ancestors 'self';">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ page.description or config.seo.default_description }}">
+    <meta name="keywords" content="{{ page.keywords or config.seo.default_keywords }}">
+    <meta name="author" content="{{ config.site.author }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description or config.seo.default_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ config.site.url }}{{ page.url }}">
+    {% if page.image %}
+    <meta property="og:image" content="{{ config.site.url }}/static/images/{{ page.image }}">
+    {% endif %}
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ config.site.url }}{{ page.url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    {% block head_extra %}{% endblock %}
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <span class="logo-text">{{ config.site.name }}</span>
+                </a>
+                
+                <nav class="main-nav" id="main-nav">
+                    <ul class="nav-list">
+                        {% for item in config.navigation %}
+                        <li class="nav-item">
+                            <a href="{{ item.url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
+                                {{ item.name }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="site-main">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>{{ config.site.name }}</h3>
+                    <p>{{ config.site.tagline }}</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        {% for item in config.navigation %}
+                        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📞 {{ config.social.phone }}</li>
+                        <li>✉️ {{ config.social.email }}</li>
+                        <li>📍 {{ config.social.address }}</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; {{ year }} {{ config.site.name }}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="/static/js/main.js"></script>
+    {% block scripts_extra %}{% endblock %}
+</body>
+</html>

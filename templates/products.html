@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-content">
+    <div class="container">
+        <h1 class="page-title">{{ page.title }}</h1>
+
+        <div class="content-body">
+            {{ content | safe }}
+        </div>
+
+        <!-- Equipment Grid -->
+        {% set equipment_pages = [] %}
+        {% for p in all_pages %}
+            {% if p.frontmatter.template == 'equipment.html' %}
+                {% set _ = equipment_pages.append(p) %}
+            {% endif %}
+        {% endfor %}
+
+        {% if equipment_pages %}
+        <div class="equipment-listing">
+            <h2>Current Inventory</h2>
+            <div class="card-grid">
+                {% for equip in equipment_pages %}
+                <a href="{{ equip.url }}" class="card equipment-card">
+                    <div class="card-image">
+                        {% if equip.frontmatter.images %}
+                        <img src="/static/images/{{ equip.frontmatter.images[0] }}" alt="{{ equip.frontmatter.title }}">
+                        {% else %}
+                        <div class="card-placeholder">
+                            <span>No Image</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="card-body">
+                        {% if equip.frontmatter.status %}
+                        <span class="status-badge status-{{ equip.frontmatter.status|lower|replace(' ', '-') }}">{{ equip.frontmatter.status }}</span>
+                        {% endif %}
+                        <h3 class="card-title">{{ equip.frontmatter.title }}</h3>
+                        <p class="card-text">{{ equip.frontmatter.description[:120] }}{% if equip.frontmatter.description|length > 120 %}...{% endif %}</p>
+                        {% if equip.frontmatter.price %}
+                        <div class="card-price">{{ equip.frontmatter.price }}</div>
+                        {% endif %}
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- CTA Section -->
+{% if page.show_cta %}
+<section class="cta-section">
+    <div class="container">
+        <h2>{{ page.cta_title or "Looking for Something Specific?" }}</h2>
+        <p>{{ page.cta_text or "Contact us with your requirements and we'll help you find the right equipment." }}</p>
+        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+    </div>
+</section>
+{% endif %}
+{% endblock %}
