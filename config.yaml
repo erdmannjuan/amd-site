@@ -1,47 +1,97 @@
 # ===========================================
-# SITE CONFIGURATION
-# Update these values before deploying
+# AMD AUTOMATION - SITE CONFIGURATION
 # ===========================================
 
 site:
-  # REQUIRED: Update with your business name
-  name: "My Equipment Site"
-  tagline: "Quality Industrial Equipment"
-
-  # REQUIRED: Update with your GitHub Pages URL or custom domain
-  # Format: https://username.github.io/repo-name or https://yourdomain.com
+  name: "AMD Automation"
+  tagline: "Custom Automated Manufacturing Solutions"
   url: "https://amdautomation.com"
-
-  # Base path for assets (empty for root domain, "/repo-name" for GitHub Pages)
   base_path: ""
-
-  author: "Your Name"
+  author: "AMD Automation"
 
 seo:
-  default_title_suffix: " | My Equipment Site"
-  default_description: "Premium industrial equipment and machinery for your business needs."
-  default_keywords: "industrial equipment, machinery, tools"
+  default_title_suffix: " | AMD Automation"
+  default_description: "AMD Automation designs and builds custom automated machines, robotic cells, and welding systems. 25+ years of manufacturing automation expertise."
+  default_keywords: "automation, robotic cells, welding automation, custom machines, manufacturing automation"
 
 navigation:
-  - name: "Home"
-    url: "/"
-  - name: "Products"
-    url: "/products/"
+  - name: "Capabilities"
+    url: "/capabilities/"
+  - name: "Industries"
+    url: "/industries/"
   - name: "About"
     url: "/about/"
+  - name: "Blog"
+    url: "/blog/"
   - name: "Contact"
     url: "/contact/"
 
-# REQUIRED: Update with your actual contact information
 social:
   phone: "(555) 123-4567"
-  email: "info@yourdomain.com"
+  email: "info@amdautomation.com"
   address: "123 Industrial Way, City, State 12345"
+  linkedin: "https://linkedin.com/company/amdautomation"
 
-# Theme colors (optional - defaults work well)
+# Company stats for homepage
+stats:
+  - number: "25+"
+    label: "Years in Operation"
+  - number: "1,400+"
+    label: "Machines Built"
+  - number: "15+"
+    label: "Industries Served"
+  - number: "100+"
+    label: "Team Members"
+
+# Capabilities for homepage grid
+capabilities:
+  - name: "Robotic Cells"
+    description: "Custom robotic cell solutions for welding, assembly, machine tending, and material handling applications."
+    icon: "robot"
+    url: "/capabilities/robotic-cells/"
+  - name: "Welding Automation"
+    description: "Automated MIG, TIG, spot welding, and laser welding systems that improve quality and throughput."
+    icon: "welding"
+    url: "/capabilities/welding/"
+  - name: "Test Systems"
+    description: "End-of-line test equipment including leak testing, vision inspection, and functional testing."
+    icon: "test"
+    url: "/capabilities/test-systems/"
+  - name: "Assembly Machines"
+    description: "Flexible and dedicated assembly systems for high-volume production environments."
+    icon: "assembly"
+    url: "/capabilities/assembly/"
+  - name: "Custom Automation"
+    description: "Bespoke automation solutions designed specifically for your unique manufacturing challenges."
+    icon: "custom"
+    url: "/capabilities/custom-automation/"
+  - name: "Material Handling"
+    description: "Automated conveyors, pick-and-place systems, and part transfer solutions."
+    icon: "handling"
+    url: "/capabilities/material-handling/"
+
+# Industries served
+industries:
+  - name: "Automotive"
+    url: "/industries/automotive/"
+    icon: "car"
+  - name: "Medical Devices"
+    url: "/industries/medical/"
+    icon: "medical"
+  - name: "Consumer Products"
+    url: "/industries/consumer/"
+    icon: "consumer"
+  - name: "Electronics"
+    url: "/industries/electronics/"
+    icon: "electronics"
+  - name: "Aerospace"
+    url: "/industries/aerospace/"
+    icon: "aerospace"
+  - name: "Food & Beverage"
+    url: "/industries/food-beverage/"
+    icon: "food"
+
 colors:
-  primary: "#1a365d"      # Deep blue
-  secondary: "#2b6cb0"    # Medium blue
-  accent: "#ed8936"       # Orange
-  light: "#f7fafc"        # Light gray
-  dark: "#1a202c"         # Almost black
+  primary: "#1574c4"
+  secondary: "#befa4f"
+  dark: "#231f20"

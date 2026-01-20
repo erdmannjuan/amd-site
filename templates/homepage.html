@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ page.hero_title or "Your Partner for Custom Automated Manufacturing Solutions" }}</h1>
+            <p class="hero-subtitle">{{ page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals" }}</p>
+            <div class="hero-buttons">
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary btn-lg">Request a Quote</a>
+                <a href="{{ config.site.base_path }}/capabilities/" class="btn btn-white btn-lg">Explore Capabilities</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            {% for stat in config.stats %}
+            <div class="stat-item">
+                <div class="stat-number">{{ stat.number }}</div>
+                <div class="stat-label">{{ stat.label }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Who We Are</span>
+            <h2 class="section-title">Engineering Excellence in Automation</h2>
+            <p class="section-subtitle">AMD Automation designs and builds custom automated machines that solve complex manufacturing challenges. With over 25 years of experience, we deliver turnkey solutions that improve efficiency, quality, and throughput.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Capabilities Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title">Our Capabilities</h2>
+            <p class="section-subtitle">Comprehensive automation solutions tailored to your specific manufacturing needs</p>
+        </div>
+        <div class="capabilities-grid">
+            {% for cap in config.capabilities %}
+            <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card">
+                <div class="capability-icon">
+                    {% if cap.icon == 'robot' %}&#129302;{% endif %}
+                    {% if cap.icon == 'welding' %}&#128293;{% endif %}
+                    {% if cap.icon == 'test' %}&#128269;{% endif %}
+                    {% if cap.icon == 'assembly' %}&#9881;{% endif %}
+                    {% if cap.icon == 'custom' %}&#128736;{% endif %}
+                    {% if cap.icon == 'handling' %}&#128230;{% endif %}
+                </div>
+                <h3>{{ cap.name }}</h3>
+                <p>{{ cap.description }}</p>
+                <span class="card-link">Learn More &rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Industries Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Industries</span>
+            <h2 class="section-title">Industries We Serve</h2>
+            <p class="section-subtitle">Delivering automation solutions across diverse manufacturing sectors</p>
+        </div>
+        <div class="industries-grid">
+            {% for ind in config.industries %}
+            <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-card">
+                <div class="industry-card-image">
+                    {% if ind.icon == 'car' %}&#128663;{% endif %}
+                    {% if ind.icon == 'medical' %}&#9764;{% endif %}
+                    {% if ind.icon == 'consumer' %}&#127968;{% endif %}
+                    {% if ind.icon == 'electronics' %}&#128187;{% endif %}
+                    {% if ind.icon == 'aerospace' %}&#9992;{% endif %}
+                    {% if ind.icon == 'food' %}&#127828;{% endif %}
+                </div>
+                <div class="industry-card-body">
+                    <h3>{{ ind.name }}</h3>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Content from markdown (if any) -->
+{% if content %}
+<section class="section">
+    <div class="container">
+        <div class="content-body">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Automate Your Production?</h2>
+        <p>Let's discuss how AMD Automation can help you improve efficiency, reduce costs, and increase throughput.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Get a Free Consultation</a>
+    </div>
+</section>
+{% endblock %}
