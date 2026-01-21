@@ -105,7 +105,7 @@
     }
 
     // ===========================================
-    // FOOTER FORM (HUBSPOT INTEGRATION)
+    // FOOTER FORM (HUBSPOT INTEGRATION WITH RECAPTCHA)
     // ===========================================
     function initFooterForm() {
         const form = document.getElementById('footer-contact-form');
@@ -113,31 +113,41 @@
 
         const formStatus = document.getElementById('footer-form-status');
         const submitBtn = form.querySelector('button[type="submit"]');
+        const RECAPTCHA_SITE_KEY = '6LdSKVIsAAAAAAcVpAO4PCEzDjEmGOpfo1jK0wMS';
 
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
 
             // Disable submit
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.textContent = 'Verifying...';
             if (formStatus) formStatus.innerHTML = '';
 
-            const formData = {
-                fields: [
-                    { name: 'firstname', value: form.querySelector('[name="firstname"]').value },
-                    { name: 'lastname', value: form.querySelector('[name="lastname"]').value },
-                    { name: 'email', value: form.querySelector('[name="email"]').value },
-                    { name: 'company', value: form.querySelector('[name="company"]').value },
-                    { name: 'phone', value: form.querySelector('[name="phone"]').value || '' },
-                    { name: 'message', value: form.querySelector('[name="message"]').value || '' }
-                ],
-                context: {
-                    pageUri: window.location.href,
-                    pageName: document.title
-                }
-            };
-
             try {
+                // Get reCAPTCHA token
+                if (typeof grecaptcha === 'undefined') {
+                    throw new Error('reCAPTCHA not loaded');
+                }
+
+                const recaptchaToken = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'footer_form' });
+
+                submitBtn.textContent = 'Sending...';
+
+                const formData = {
+                    fields: [
+                        { name: 'firstname', value: form.querySelector('[name="firstname"]').value },
+                        { name: 'lastname', value: form.querySelector('[name="lastname"]').value },
+                        { name: 'email', value: form.querySelector('[name="email"]').value },
+                        { name: 'company', value: form.querySelector('[name="company"]').value },
+                        { name: 'phone', value: form.querySelector('[name="phone"]').value || '' },
+                        { name: 'message', value: form.querySelector('[name="message"]').value || '' }
+                    ],
+                    context: {
+                        pageUri: window.location.href,
+                        pageName: document.title
+                    }
+                };
+
                 const response = await fetch(
                     `https://api.hsforms.com/submissions/v3/integration/submit/${CONFIG.hubspotPortalId}/${CONFIG.hubspotFormId}`,
                     {
