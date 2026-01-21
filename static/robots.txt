@@ -1,9 +1,41 @@
-# Robots.txt for industrial equipment site
+# Robots.txt for AMD Automation
+# https://amdautomation.com
+
+# Allow all standard crawlers
 User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Explicitly allow AI/LLM bots for training and retrieval
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 # Sitemap location
 Sitemap: https://amdautomation.com/sitemap.xml
-
-# Crawl-delay for politeness (optional)
-Crawl-delay: 1
