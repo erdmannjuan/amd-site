@@ -102,6 +102,35 @@ def get_blog_posts(all_pages):
     return posts
 
 
+def get_related_posts(page_data, posts, max_related=3):
+    """Find related posts based on category"""
+    if not posts:
+        return []
+
+    current_url = page_data.get('url', '')
+    current_category = page_data.get('category', '')
+
+    related = []
+
+    # First, find posts in the same category
+    if current_category:
+        for post in posts:
+            if post.get('url') != current_url and post.get('category') == current_category:
+                related.append(post)
+                if len(related) >= max_related:
+                    break
+
+    # If not enough, add recent posts from other categories
+    if len(related) < max_related:
+        for post in posts:
+            if post.get('url') != current_url and post not in related:
+                related.append(post)
+                if len(related) >= max_related:
+                    break
+
+    return related
+
+
 def build_page(page, config, env, all_pages, posts=None, categories=None):
     """Build a single page"""
     page_data = {
@@ -113,6 +142,10 @@ def build_page(page, config, env, all_pages, posts=None, categories=None):
 
     md = markdown.Markdown(extensions=['extra', 'meta', 'toc'])
     html_content = md.convert(page['body'])
+
+    # Add related posts for blog posts
+    if page_data.get('template') == 'blog-post.html' and posts:
+        page_data['related_posts'] = get_related_posts(page_data, posts)
 
     template_name = page_data.get('template', 'page.html')
     template = env.get_template(template_name)

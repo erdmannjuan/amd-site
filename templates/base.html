@@ -261,6 +261,79 @@
 
     <!-- Scripts (deferred for performance) -->
     <script src="{{ config.site.base_path }}/static/js/main.js" defer></script>
+
+    <!-- A/B Testing & Analytics -->
+    <script>
+    (function() {
+        // A/B Test Configuration
+        var AB_TESTS = {
+            'related_content': {
+                variants: ['control', 'variant_a', 'variant_b'],
+                active: true
+            }
+        };
+
+        // Get or assign user to variant
+        function getVariant(testName) {
+            var storageKey = 'ab_' + testName;
+            var variant = localStorage.getItem(storageKey);
+            if (!variant && AB_TESTS[testName]) {
+                var variants = AB_TESTS[testName].variants;
+                variant = variants[Math.floor(Math.random() * variants.length)];
+                localStorage.setItem(storageKey, variant);
+            }
+            return variant;
+        }
+
+        // Track event to Google Analytics
+        function trackEvent(category, action, label, value) {
+            if (typeof gtag === 'function') {
+                gtag('event', action, {
+                    'event_category': category,
+                    'event_label': label,
+                    'value': value
+                });
+            }
+        }
+
+        // Track content clicks with A/B variant info
+        function trackContentClick(element) {
+            var contentId = element.getAttribute('data-content-id') || element.textContent.trim().substring(0, 50);
+            var testSection = element.closest('[data-test]');
+            var testName = testSection ? testSection.getAttribute('data-test') : 'unknown';
+            var variant = getVariant(testName);
+
+            trackEvent('content_click', 'click', contentId, 1);
+            trackEvent('ab_test', testName + '_' + variant, contentId, 1);
+
+            // Log for debugging (remove in production)
+            console.log('A/B Track:', testName, variant, contentId);
+        }
+
+        // Initialize tracking on DOM ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track clicks on related content
+            var trackableLinks = document.querySelectorAll('[data-test] a, .related-post-card, .related-item');
+            trackableLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    trackContentClick(this);
+                });
+            });
+
+            // Track sidebar related article clicks
+            var sidebarLinks = document.querySelectorAll('.article-related a');
+            sidebarLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    trackEvent('sidebar', 'related_click', this.textContent.trim().substring(0, 50), 1);
+                });
+            });
+
+            // Expose for manual tracking
+            window.abTrack = trackContentClick;
+        });
+    })();
+    </script>
+
     {% block scripts_extra %}{% endblock %}
 </body>
 </html>

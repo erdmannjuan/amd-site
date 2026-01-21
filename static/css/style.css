@@ -673,7 +673,7 @@ img {
    Section Styles
    ================================ */
 .section {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 
 .section-sm {
@@ -917,7 +917,7 @@ img {
 .page-hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: var(--white);
-    padding: 10rem 0 5rem;
+    padding: 4rem 0 2rem;
     text-align: left;
     position: relative;
     overflow: hidden;
@@ -2729,7 +2729,7 @@ button:disabled {
 
 /* Blog Filters */
 .blog-filters-section {
-    padding: 2rem 0;
+    padding: 1rem 0;
     background: var(--white);
     border-bottom: 1px solid var(--border-light);
 }
@@ -2814,7 +2814,7 @@ button:disabled {
 }
 
 .blog-section {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -3465,22 +3465,22 @@ button:disabled {
    Page Hero Compact
    ================================ */
 .page-hero-compact {
-    padding: 3rem 0 2.5rem;
+    padding: 1.5rem 0 1.25rem;
     background: var(--white);
     border-bottom: 1px solid var(--border);
 }
 
 .page-hero-compact .section-label {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .page-hero-compact .page-title {
-    font-size: 2.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .page-hero-compact .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 600px;
 }
 
@@ -3489,16 +3489,16 @@ button:disabled {
    ================================ */
 .capabilities-showcase,
 .solutions-showcase {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .capability-showcase-item,
 .solution-showcase-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
     border-bottom: 1px solid var(--border);
 }
 
