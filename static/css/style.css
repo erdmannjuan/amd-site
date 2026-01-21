@@ -946,7 +946,10 @@ img {
     right: 0;
     width: 55%;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--dark-bg) 100%);
+    background: linear-gradient(135deg, rgba(0,48,135,0.7) 0%, rgba(15,15,26,0.6) 100%),
+                url('/static/images/hero-automation.jpg');
+    background-size: cover;
+    background-position: center;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
     z-index: 1;
 }
