@@ -31,7 +31,7 @@ challenges:
     description: We optimize automation investments to deliver strong ROI against competitive pricing targets.
 ---
 
-AMD Automation has deep roots in automotive manufacturing, serving OEMs and Tier 1, 2, and 3 suppliers for over 25 years. We understand the unique demands of automotive production: high volumes, tight quality standards, and relentless cost pressure.
+AMD Automation has deep roots in automotive manufacturing, serving OEMs and Tier 1, 2, and 3 suppliers for over 30 years. We understand the unique demands of automotive production: high volumes, tight quality standards, and relentless cost pressure.
 
 ## Automotive Automation Solutions
 

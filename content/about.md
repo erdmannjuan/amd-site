@@ -33,6 +33,11 @@ AMD Automation was founded over 30 years ago with a clear mission: build custom 
 
 At AMD, engineering isn't just a department—it's our culture. Every project begins with thorough analysis and creative problem-solving. Our team includes specialists in mechanical design, electrical controls, robotics, vision systems, and manufacturing processes.
 
+<figure class="about-content-image">
+<img src="/static/images/about-engineering.jpg" alt="Precision rotary dial assembly machine with multi-station automation built by AMD" width="800" height="280" loading="lazy">
+<figcaption>Custom rotary dial assembly system - one of 2,500+ machines built</figcaption>
+</figure>
+
 ## Our Facility
 
 Our 80,000 sq ft facility houses everything needed to design, build, and test complete automation systems—from engineering offices with advanced CAD tools to large assembly bays and dedicated testing areas. Every system undergoes thorough testing before shipping.

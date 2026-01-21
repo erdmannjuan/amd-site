@@ -13,7 +13,7 @@ Minimize downtime and keep your automated systems running at peak performance wi
 
 ## Why Choose AMD for Spare Parts?
 
-With over 25 years of experience building and servicing automated systems, we understand which components are critical to your uptime. Our spare parts program offers:
+With over 30 years of experience building and servicing automated systems, we understand which components are critical to your uptime. Our spare parts program offers:
 
 - **Fast Response** - Same-day shipping on in-stock items
 - **Technical Expertise** - Our engineers help you identify the right part
