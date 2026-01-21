@@ -355,11 +355,14 @@ img {
     pointer-events: none;
 }
 
-.nav-item.has-dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
+/* Desktop only: show dropdown on hover */
+@media (min-width: 1025px) {
+    .nav-item.has-dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
 }
 
 .dropdown-content {
@@ -396,7 +399,7 @@ img {
 }
 
 /* Mobile dropdown */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .dropdown-menu {
         position: static;
         min-width: 100%;
@@ -406,11 +409,13 @@ img {
         max-height: 0;
         overflow: hidden;
         padding: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        transition: max-height 0.3s ease, padding 0.3s ease;
     }
 
     .dropdown-menu.show {
-        opacity: 1;
-        visibility: visible;
         max-height: 500px;
         padding: 0.5rem 0;
         pointer-events: auto;

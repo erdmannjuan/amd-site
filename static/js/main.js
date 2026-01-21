@@ -60,7 +60,7 @@
 
             // Mobile only: toggle on click
             link.addEventListener('click', function(e) {
-                if (window.innerWidth <= 992) {
+                if (window.innerWidth <= 1024) {
                     e.preventDefault();
                     // Close other dropdowns
                     dropdownItems.forEach(other => {
