@@ -6,11 +6,11 @@
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">{{ page.hero_title or "Your Partner for Custom Automated Manufacturing Solutions" }}</h1>
+            <h1 class="hero-title">{{ page.hero_title or "Custom Automated Manufacturing Solutions" }}</h1>
             <p class="hero-subtitle">{{ page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals" }}</p>
             <div class="hero-buttons">
-                <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary btn-lg">Request a Quote</a>
-                <a href="{{ config.site.base_path }}/capabilities/" class="btn btn-white btn-lg">Explore Capabilities</a>
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+                <a href="{{ config.site.base_path }}/capabilities/" class="btn btn-outline-white btn-lg">Explore Capabilities</a>
             </div>
         </div>
     </div>
@@ -30,19 +30,19 @@
     </div>
 </section>
 
-<!-- Intro Section -->
-<section class="section">
+<!-- Intro Section - White Background -->
+<section class="section section-white">
     <div class="container">
         <div class="section-header">
             <span class="section-label">Who We Are</span>
             <h2 class="section-title">Engineering Excellence in Automation</h2>
-            <p class="section-subtitle">AMD Automation designs and builds custom automated machines that solve complex manufacturing challenges. With over 25 years of experience, we deliver turnkey solutions that improve efficiency, quality, and throughput.</p>
+            <p class="section-subtitle">AMD Machines designs and builds custom automated machines that solve complex manufacturing challenges. With over 25 years of experience, we deliver turnkey solutions that improve efficiency, quality, and throughput.</p>
         </div>
     </div>
 </section>
 
-<!-- Capabilities Section -->
-<section class="section section-alt">
+<!-- Capabilities Section - Gray Background -->
+<section class="section section-gray">
     <div class="container">
         <div class="section-header">
             <span class="section-label">What We Do</span>
@@ -72,8 +72,8 @@
     </div>
 </section>
 
-<!-- Industries Section -->
-<section class="section">
+<!-- Industries Section - White Background -->
+<section class="section section-white">
     <div class="container">
         <div class="section-header">
             <span class="section-label">Industries</span>
@@ -103,7 +103,7 @@
 
 <!-- Content from markdown (if any) -->
 {% if content %}
-<section class="section">
+<section class="section section-light">
     <div class="container">
         <div class="content-body">
             {{ content | safe }}
@@ -112,12 +112,16 @@
 </section>
 {% endif %}
 
-<!-- CTA Section -->
+<!-- CTA Section - Navy Background -->
 <section class="cta-section">
     <div class="container">
-        <h2>Ready to Automate Your Production?</h2>
-        <p>Let's discuss how AMD Automation can help you improve efficiency, reduce costs, and increase throughput.</p>
-        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Get a Free Consultation</a>
+        <div class="cta-content">
+            <h2>Ready to Automate Your Production?</h2>
+            <p>Let's discuss how AMD Machines can help you improve efficiency, reduce costs, and increase throughput.</p>
+            <div class="cta-buttons">
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Get a Free Consultation</a>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock %}

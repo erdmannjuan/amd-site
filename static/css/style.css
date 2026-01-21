@@ -3,23 +3,26 @@
    Enhanced Design inspired by SDC & JR Automation
    ================================ */
 
-/* CSS Variables */
+/* CSS Variables - MOSCA-inspired color palette */
 :root {
-    --primary: #1574c4;
-    --primary-dark: #0d5a9e;
-    --primary-light: #e8f4fc;
-    --secondary: #befa4f;
-    --secondary-dark: #a8e035;
-    --dark: #231f20;
-    --dark-bg: #141414;
-    --text: #333131;
-    --text-light: #666666;
-    --text-muted: #888888;
-    --light-bg: #f8f9fa;
-    --warm-bg: #f5f4f0;
+    --primary: #003087;
+    --primary-dark: #002266;
+    --primary-light: #e6eef8;
+    --secondary: #00a650;
+    --secondary-dark: #008c44;
+    --secondary-light: #e6f7ed;
+    --accent: #f7941d;
+    --dark: #1a1a2e;
+    --dark-bg: #0f0f1a;
+    --text: #2d2d2d;
+    --text-light: #5a5a5a;
+    --text-muted: #8a8a8a;
+    --light-bg: #f5f7fa;
+    --gray-bg: #eaeef2;
+    --warm-bg: #f8f9fb;
     --white: #ffffff;
-    --border: #e0e0e0;
-    --border-light: #eaeaea;
+    --border: #d0d5dd;
+    --border-light: #e8ebf0;
 
     --font-main: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -129,8 +132,8 @@ img {
 
 /* Header Top Bar */
 .header-top-bar {
-    background: var(--dark);
-    padding: 0.5rem 0;
+    background: var(--primary-dark);
+    padding: 0.6rem 0;
     font-size: 0.85rem;
     transition: var(--transition);
 }
@@ -488,26 +491,26 @@ img {
     gap: 0.5rem;
     padding: 1rem 2rem;
     font-family: var(--font-main);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     text-align: center;
-    border: 2px solid transparent;
-    border-radius: var(--radius-md);
+    border: none;
+    border-radius: var(--radius-sm);
     cursor: pointer;
     transition: var(--transition);
     text-decoration: none;
     line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .btn-primary {
     background: var(--primary);
     color: var(--white);
-    border-color: var(--primary);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
-    border-color: var(--primary-dark);
     color: var(--white);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -515,21 +518,19 @@ img {
 
 .btn-secondary {
     background: var(--secondary);
-    color: var(--dark);
-    border-color: var(--secondary);
+    color: var(--white);
 }
 
 .btn-secondary:hover {
     background: var(--secondary-dark);
-    border-color: var(--secondary-dark);
-    color: var(--dark);
+    color: var(--white);
     transform: translateY(-2px);
 }
 
 .btn-outline {
     background: transparent;
     color: var(--primary);
-    border-color: var(--primary);
+    border: 2px solid var(--primary);
 }
 
 .btn-outline:hover {
@@ -537,16 +538,25 @@ img {
     color: var(--white);
 }
 
+.btn-outline-white {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-outline-white:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
 .btn-white {
     background: var(--white);
     color: var(--primary);
-    border-color: var(--white);
 }
 
 .btn-white:hover {
-    background: var(--secondary);
-    border-color: var(--secondary);
-    color: var(--dark);
+    background: var(--light-bg);
+    color: var(--primary-dark);
 }
 
 .btn-dark {
@@ -592,24 +602,36 @@ img {
    Section Styles
    ================================ */
 .section {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .section-sm {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 .section-lg {
-    padding: 7rem 0;
+    padding: 8rem 0;
 }
 
-/* Alternating backgrounds for better readability */
+/* Alternating backgrounds for better readability - MOSCA style */
+.section-white {
+    background: var(--white);
+}
+
 .section-light {
     background: var(--light-bg);
 }
 
+.section-gray {
+    background: var(--gray-bg);
+}
+
 .section-warm {
     background: var(--warm-bg);
+}
+
+.section-alt {
+    background: var(--light-bg);
 }
 
 .section-dark {
@@ -629,7 +651,7 @@ img {
 }
 
 .section-primary {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: var(--primary);
     color: var(--white);
 }
 
@@ -637,6 +659,22 @@ img {
 .section-primary h2,
 .section-primary h3 {
     color: var(--white);
+}
+
+.section-navy {
+    background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+}
+
+.section-navy h1,
+.section-navy h2,
+.section-navy h3,
+.section-navy h4 {
+    color: var(--white);
+}
+
+.section-navy p {
+    color: rgba(255,255,255,0.9);
 }
 
 .section-header {
@@ -686,12 +724,12 @@ img {
    ================================ */
 .hero {
     position: relative;
-    min-height: 85vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a2e 100%);
+    background: var(--primary);
     color: var(--white);
-    padding-top: calc(var(--header-height) + 4rem);
+    padding-top: var(--header-height);
     overflow: hidden;
 }
 
@@ -699,38 +737,43 @@ img {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 60%;
+    right: 0;
+    width: 55%;
     height: 100%;
-    background: var(--primary);
-    clip-path: polygon(0 0, 85% 0, 70% 100%, 0 100%);
-    opacity: 0.95;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--dark-bg) 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.03)"/></svg>');
-    background-size: 30px 30px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.5" fill="rgba(255,255,255,0.05)"/></svg>');
+    background-size: 40px 40px;
+    pointer-events: none;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 650px;
+    max-width: 600px;
+    padding: 4rem 0;
 }
 
 .hero-title {
     color: var(--white);
     margin-bottom: 1.5rem;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.75rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.85);
     margin-bottom: 2.5rem;
-    line-height: 1.7;
+    line-height: 1.8;
+    max-width: 500px;
 }
 
 .hero-buttons {
@@ -741,13 +784,27 @@ img {
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 70vh;
-        padding-top: calc(var(--header-height) + 2rem);
+        min-height: 80vh;
+        text-align: center;
     }
 
     .hero::before {
         width: 100%;
         clip-path: none;
+        opacity: 0.5;
+    }
+
+    .hero-content {
+        padding: 3rem 0;
+    }
+
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 }
 
@@ -838,8 +895,8 @@ img {
    Stats Section
    ================================ */
 .stats-section {
-    background: var(--dark);
-    padding: 4rem 0;
+    background: var(--primary-dark);
+    padding: 3.5rem 0;
 }
 
 .stats-grid {
@@ -851,21 +908,27 @@ img {
 
 .stat-item {
     padding: 1.5rem;
+    border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.stat-item:last-child {
+    border-right: none;
 }
 
 .stat-number {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
-    color: var(--secondary);
+    color: var(--white);
     line-height: 1;
     margin-bottom: 0.5rem;
 }
 
 .stat-label {
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
+    font-weight: 500;
 }
 
 @media (max-width: 992px) {
