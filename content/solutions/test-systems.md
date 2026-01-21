@@ -2,11 +2,11 @@
 title: Automated Test Systems | Leak Testing, Vision Inspection & EOL Testing
 description: "Custom end-of-line test equipment: leak testing, vision inspection, functional testing & quality verification. Ensure 100% product quality with automated testing."
 keywords: automated test systems, end-of-line testing equipment, leak test machines, vision inspection systems, functional test equipment, quality control automation, EOL testing
-template: capability.html
+template: solution.html
 short_title: Test Systems
 hero_title: Automated Test Systems
 hero_subtitle: Ensure product quality with precision testing and inspection equipment
-url: /capabilities/test-systems/
+url: /solutions/test-systems/
 features:
   - Leak and pressure testing
   - Machine vision inspection

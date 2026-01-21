@@ -130,12 +130,12 @@
 <section class="section section-alt related-content" data-test="related_content">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-label">Our Capabilities</span>
-            <h2 class="section-title">Technologies for {{ page.short_title or page.title }}</h2>
+            <span class="section-label">Our Solutions</span>
+            <h2 class="section-title">Solutions for {{ page.short_title or page.title }}</h2>
             <p class="section-subtitle">Explore the automation solutions we apply in this industry</p>
         </div>
         <div class="related-grid">
-            {% set cap_images = {
+            {% set sol_images = {
                 'robotic-cells': 'placeholder-capability-robotic-cells.svg',
                 'welding': 'placeholder-capability-welding.svg',
                 'test-systems': 'placeholder-capability-test-systems.svg',
@@ -143,14 +143,14 @@
                 'custom-automation': 'placeholder-capability-custom.svg',
                 'material-handling': 'placeholder-capability-material-handling.svg'
             } %}
-            {% for cap in config.capabilities %}
-            <a href="{{ config.site.base_path }}{{ cap.url }}" class="related-item" data-content-id="{{ cap.name | lower | replace(' ', '-') }}">
+            {% for sol in config.solutions %}
+            <a href="{{ config.site.base_path }}{{ sol.url }}" class="related-item" data-content-id="{{ sol.name | lower | replace(' ', '-') }}">
                 <div class="related-item-inner">
                     <div class="related-image">
-                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}" loading="lazy" width="400" height="300">
+                        <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy" width="400" height="300">
                     </div>
-                    <h3>{{ cap.name }}</h3>
-                    <p>{{ cap.description }}</p>
+                    <h3>{{ sol.name }}</h3>
+                    <p>{{ sol.description }}</p>
                     <span class="related-link">Learn More</span>
                 </div>
             </a>

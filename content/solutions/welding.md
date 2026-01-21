@@ -2,11 +2,11 @@
 title: Robotic Welding Systems | MIG, TIG, Spot & Laser Welding Automation
 description: Custom robotic welding systems for MIG, TIG, spot & laser welding. Improve weld quality, increase throughput & reduce costs with automated welding solutions.
 keywords: robotic welding systems, automated MIG welding, robotic TIG welding, spot welding automation, laser welding systems, welding robot integrator, arc welding automation
-template: capability.html
+template: solution.html
 short_title: Welding Automation
 hero_title: Welding Automation Systems
 hero_subtitle: Precision welding solutions that deliver consistent quality at production speeds
-url: /capabilities/welding/
+url: /solutions/welding/
 features:
   - MIG/MAG and TIG welding
   - Resistance spot welding

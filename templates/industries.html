@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Page Hero -->
-<section class="page-hero">
+<!-- Page Hero - Compact -->
+<section class="page-hero page-hero-compact">
     <div class="container">
         <span class="section-label">{{ page.label or "Industries" }}</span>
         <h1 class="page-title">{{ page.hero_title or "Industries We Serve" }}</h1>
@@ -10,24 +10,108 @@
     </div>
 </section>
 
-<!-- Industries Grid -->
-<section class="section">
+<!-- Industries Visual Grid -->
+<section class="section industries-showcase">
     <div class="container">
-        <div class="industries-grid-large">
+        {% set ind_images = {
+            'car': 'placeholder-industry-automotive.svg',
+            'medical': 'placeholder-industry-medical.svg',
+            'consumer': 'placeholder-industry-consumer.svg',
+            'electronics': 'placeholder-industry-electronics.svg',
+            'aerospace': 'placeholder-industry-aerospace.svg',
+            'food': 'placeholder-industry-food.svg',
+            'energy': 'placeholder-industry-energy.svg',
+            'heavy-equipment': 'placeholder-industry-heavy.svg',
+            'pharma': 'placeholder-industry-pharma.svg',
+            'defense': 'placeholder-industry-defense.svg',
+            'appliances': 'placeholder-industry-appliances.svg',
+            'general': 'placeholder-industry-general.svg'
+        } %}
+
+        {% set ind_descriptions = {
+            'car': 'Powertrain, body assembly, and component manufacturing automation for Tier 1 suppliers and OEMs.',
+            'medical': 'Precision automation for medical devices, diagnostics, and pharmaceutical manufacturing with FDA compliance.',
+            'consumer': 'High-volume production systems for appliances, personal care, and household products.',
+            'electronics': 'PCB assembly, component handling, and electronics manufacturing automation.',
+            'aerospace': 'Precision manufacturing for aircraft components, engines, and defense systems.',
+            'food': 'Sanitary automation for food processing, packaging, and beverage production.',
+            'energy': 'Automation for battery manufacturing, solar panels, and power generation equipment.',
+            'heavy-equipment': 'Robust automation for construction, agricultural, and mining equipment.',
+            'pharma': 'Cleanroom-compatible automation for drug manufacturing and packaging.',
+            'defense': 'High-precision automation for defense and military manufacturing.',
+            'appliances': 'Assembly automation for large and small household appliances.',
+            'general': 'Versatile automation solutions for diverse industrial applications.'
+        } %}
+
+        {% set ind_blogs = {
+            'car': [
+                {'title': 'Automation Cells vs Production Lines', 'url': '/blog/automation-cells-vs-production-lines/'},
+                {'title': 'Automated Assembly Machines', 'url': '/blog/automated-assembly-machines/'}
+            ],
+            'medical': [
+                {'title': 'Factory Automation for High-Mix Low-Volume', 'url': '/blog/factory-automation-high-mix-low-volume/'},
+                {'title': 'Manufacturing Automation Systems', 'url': '/blog/manufacturing-automation-systems-concept-to-commissioning/'}
+            ],
+            'consumer': [
+                {'title': 'Automated Assembly Machines', 'url': '/blog/automated-assembly-machines/'},
+                {'title': 'What Is Industrial Automation', 'url': '/blog/what-is-industrial-automation/'}
+            ],
+            'electronics': [
+                {'title': 'Industrial Automation Equipment Explained', 'url': '/blog/industrial-automation-equipment-explained/'}
+            ],
+            'aerospace': [
+                {'title': 'Custom vs Standard Automation Equipment', 'url': '/blog/custom-automation-vs-standard-equipment/'},
+                {'title': 'Factory Automation for High-Mix Low-Volume', 'url': '/blog/factory-automation-high-mix-low-volume/'}
+            ],
+            'food': [
+                {'title': 'What Is Industrial Automation', 'url': '/blog/what-is-industrial-automation/'}
+            ],
+            'energy': [
+                {'title': 'Industrial Automation Equipment Explained', 'url': '/blog/industrial-automation-equipment-explained/'}
+            ],
+            'heavy-equipment': [
+                {'title': 'Automation Cells vs Production Lines', 'url': '/blog/automation-cells-vs-production-lines/'}
+            ],
+            'pharma': [
+                {'title': 'Factory Automation for High-Mix Low-Volume', 'url': '/blog/factory-automation-high-mix-low-volume/'}
+            ],
+            'defense': [
+                {'title': 'Custom vs Standard Automation Equipment', 'url': '/blog/custom-automation-vs-standard-equipment/'}
+            ],
+            'appliances': [
+                {'title': 'Automated Assembly Machines', 'url': '/blog/automated-assembly-machines/'}
+            ],
+            'general': [
+                {'title': 'What Is Industrial Automation', 'url': '/blog/what-is-industrial-automation/'}
+            ]
+        } %}
+
+        <div class="industries-visual-grid">
             {% for ind in config.industries %}
-            <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-card-large">
-                <div class="industry-card-icon">
-                    {% if ind.icon == 'car' %}&#128663;{% endif %}
-                    {% if ind.icon == 'medical' %}&#9764;{% endif %}
-                    {% if ind.icon == 'consumer' %}&#127968;{% endif %}
-                    {% if ind.icon == 'electronics' %}&#128187;{% endif %}
-                    {% if ind.icon == 'aerospace' %}&#9992;{% endif %}
-                    {% if ind.icon == 'food' %}&#127828;{% endif %}
+            <div class="industry-showcase-card">
+                <div class="industry-showcase-image">
+                    <a href="{{ config.site.base_path }}{{ ind.url }}">
+                        <img src="{{ config.site.base_path }}/static/images/{{ ind_images[ind.icon] | default('placeholder-card-1.svg') }}" alt="{{ ind.name }}" loading="lazy" width="400" height="280">
+                        <div class="industry-showcase-overlay"></div>
+                    </a>
                 </div>
-                <h3>{{ ind.name }}</h3>
-                <p>{{ ind.description or "Learn how we help " + ind.name | lower + " manufacturers automate their production." }}</p>
-                <span class="card-link">Learn More &rarr;</span>
-            </a>
+                <div class="industry-showcase-content">
+                    <h3><a href="{{ config.site.base_path }}{{ ind.url }}">{{ ind.name }}</a></h3>
+                    <p>{{ ind_descriptions[ind.icon] | default(ind.description) }}</p>
+                    <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-link">Explore {{ ind.name }} Solutions →</a>
+
+                    {% if ind_blogs[ind.icon] %}
+                    <div class="industry-resources">
+                        <span class="resources-label">Related Articles</span>
+                        <ul>
+                            {% for blog in ind_blogs[ind.icon] %}
+                            <li><a href="{{ config.site.base_path }}{{ blog.url }}">{{ blog.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
             {% endfor %}
         </div>
     </div>
@@ -36,14 +120,27 @@
 <!-- Cross-Industry Expertise -->
 <section class="section section-alt">
     <div class="container">
-        <div class="section-header">
-            <span class="section-label">Our Expertise</span>
-            <h2 class="section-title">Cross-Industry Experience</h2>
-            <p class="section-subtitle">Our diverse experience means we bring fresh perspectives and proven solutions to every project</p>
-        </div>
-        <div class="expertise-content">
-            <p>With over 25 years of automation experience across multiple industries, AMD Automation brings a unique perspective to every project. Solutions developed for one industry often inspire innovations in another.</p>
-            <p>Our engineers understand the specific requirements, standards, and challenges of each industry we serve. Whether it's FDA regulations for medical devices, automotive quality standards, or food safety requirements, we design systems that meet your compliance needs.</p>
+        <div class="expertise-grid">
+            <div class="expertise-content">
+                <span class="section-label">Our Expertise</span>
+                <h2 class="section-title">Cross-Industry Experience</h2>
+                <p>With over 30 years of automation experience across multiple industries, AMD Automation brings a unique perspective to every project. Solutions developed for one industry often inspire innovations in another.</p>
+                <p>Our engineers understand the specific requirements, standards, and challenges of each industry we serve. Whether it's FDA regulations for medical devices, automotive quality standards, or food safety requirements, we design systems that meet your compliance needs.</p>
+            </div>
+            <div class="expertise-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-number">30+</span>
+                    <span class="highlight-label">Years Experience</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-number">12+</span>
+                    <span class="highlight-label">Industries Served</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-number">100%</span>
+                    <span class="highlight-label">Custom Solutions</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -52,7 +149,7 @@
 {% if content %}
 <section class="section">
     <div class="container">
-        <div class="content-body">
+        <div class="content-body content-card">
             {{ content | safe }}
         </div>
     </div>
@@ -60,7 +157,7 @@
 {% endif %}
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section cta-accent">
     <div class="container">
         <h2>Don't See Your Industry?</h2>
         <p>We've worked with manufacturers across many sectors. Contact us to discuss your specific automation needs.</p>

@@ -41,33 +41,34 @@
                     <div class="section-header">
                         <span class="section-label">Who We Are</span>
                         <h2 class="section-title">Engineering Excellence in Automation</h2>
-                        <p class="section-subtitle">AMD Machines designs and builds custom automated machines that solve complex manufacturing challenges. With over 25 years of experience, we deliver turnkey solutions that improve efficiency, quality, and throughput.</p>
+                        <p class="section-subtitle">AMD Machines designs and builds custom automated machines that solve complex manufacturing challenges. With over 30 years of experience, we deliver turnkey solutions that improve efficiency, quality, and throughput.</p>
                     </div>
                 </section>
 
-                <!-- Capabilities Section -->
+                <!-- Solutions Section -->
                 <section class="homepage-section homepage-section-gray">
                     <div class="section-header">
                         <span class="section-label">What We Do</span>
-                        <h2 class="section-title">Our Capabilities</h2>
+                        <h2 class="section-title">Our Solutions</h2>
                         <p class="section-subtitle">Comprehensive automation solutions tailored to your specific manufacturing needs</p>
                     </div>
                     <div class="capabilities-grid">
-                        {% set cap_images = {
+                        {% set sol_images = {
                             'robot': 'placeholder-capability-robotic-cells.svg',
                             'welding': 'placeholder-capability-welding.svg',
                             'test': 'placeholder-capability-test-systems.svg',
                             'assembly': 'placeholder-capability-assembly.svg',
                             'custom': 'placeholder-capability-custom.svg',
-                            'handling': 'placeholder-capability-material-handling.svg'
+                            'handling': 'placeholder-capability-material-handling.svg',
+                            'vision': 'placeholder-solution-vision.svg'
                         } %}
-                        {% for cap in config.capabilities %}
-                        <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card">
+                        {% for sol in config.solutions %}
+                        <a href="{{ config.site.base_path }}{{ sol.url }}" class="capability-card">
                             <div class="capability-image">
-                                <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.icon] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}" loading="lazy" width="400" height="300">
+                                <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.icon] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy" width="400" height="300">
                             </div>
-                            <h3>{{ cap.name }}</h3>
-                            <p>{{ cap.description }}</p>
+                            <h3>{{ sol.name }}</h3>
+                            <p>{{ sol.description }}</p>
                             <span class="card-link">Learn More</span>
                         </a>
                         {% endfor %}

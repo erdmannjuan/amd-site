@@ -2,11 +2,11 @@
 title: Custom Robotic Cells & Robot Integration | FANUC Authorized Integrator
 description: Turnkey robotic cell design & integration for welding, assembly, machine tending & material handling. FANUC authorized integrator with 25+ years experience.
 keywords: custom robotic cells, robot system integrator, FANUC robot integration, robotic welding cells, robotic assembly cells, machine tending robots, turnkey robotic systems
-template: capability.html
+template: solution.html
 short_title: Robotic Cells
 hero_title: Robotic Cell Solutions
 hero_subtitle: Custom-designed robotic cells that integrate seamlessly into your production environment
-url: /capabilities/robotic-cells/
+url: /solutions/robotic-cells/
 features:
   - Multi-robot cell configurations
   - Servo positioners and fixtures

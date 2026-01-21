@@ -2,11 +2,11 @@
 title: Custom Automation Equipment | Special Purpose Machine Builder
 description: Custom automation equipment & special purpose machines designed for your unique manufacturing challenges. Turnkey solutions from concept to installation.
 keywords: custom automation equipment, special purpose machine builder, bespoke manufacturing equipment, custom machine design, OEM automation equipment, turnkey automation systems
-template: capability.html
+template: solution.html
 short_title: Custom Automation
 hero_title: Custom Automation Solutions
 hero_subtitle: When standard solutions don't fit, we engineer custom machines for your unique challenges
-url: /capabilities/custom-automation/
+url: /solutions/custom-automation/
 features:
   - Concept to completion delivery
   - 3D design and simulation

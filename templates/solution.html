@@ -48,12 +48,12 @@
             <aside class="content-sidebar">
                 <div class="sidebar-inner">
                     <div class="sidebar-widget">
-                        <h3>Our Capabilities</h3>
+                        <h3>Our Solutions</h3>
                         <ul class="sidebar-nav">
-                            {% for cap in config.capabilities %}
+                            {% for sol in config.solutions %}
                             <li>
-                                <a href="{{ config.site.base_path }}{{ cap.url }}" class="{% if cap.url == page.url %}active{% endif %}">
-                                    {{ cap.name }}
+                                <a href="{{ config.site.base_path }}{{ sol.url }}" class="{% if sol.url == page.url %}active{% endif %}">
+                                    {{ sol.name }}
                                 </a>
                             </li>
                             {% endfor %}
@@ -138,11 +138,11 @@
     <div class="container">
         <div class="section-header text-center">
             <span class="section-label">Explore More</span>
-            <h2 class="section-title">Related Capabilities</h2>
+            <h2 class="section-title">Related Solutions</h2>
             <p class="section-subtitle">Discover other automation solutions that complement {{ page.short_title or page.title | lower }}</p>
         </div>
         <div class="related-grid">
-            {% set cap_images = {
+            {% set sol_images = {
                 'robotic-cells': 'placeholder-capability-robotic-cells.svg',
                 'welding': 'placeholder-capability-welding.svg',
                 'test-systems': 'placeholder-capability-test-systems.svg',
@@ -150,15 +150,15 @@
                 'custom-automation': 'placeholder-capability-custom.svg',
                 'material-handling': 'placeholder-capability-material-handling.svg'
             } %}
-            {% for cap in config.capabilities %}
-            {% if cap.url != page.url %}
-            <a href="{{ config.site.base_path }}{{ cap.url }}" class="related-item" data-content-id="{{ cap.name | lower | replace(' ', '-') }}">
+            {% for sol in config.solutions %}
+            {% if sol.url != page.url %}
+            <a href="{{ config.site.base_path }}{{ sol.url }}" class="related-item" data-content-id="{{ sol.name | lower | replace(' ', '-') }}">
                 <div class="related-item-inner">
                     <div class="related-image">
-                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}" loading="lazy" width="400" height="300">
+                        <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy" width="400" height="300">
                     </div>
-                    <h3>{{ cap.name }}</h3>
-                    <p>{{ cap.description }}</p>
+                    <h3>{{ sol.name }}</h3>
+                    <p>{{ sol.description }}</p>
                     <span class="related-link">Learn More</span>
                 </div>
             </a>
@@ -173,7 +173,7 @@
     <div class="container">
         <div class="cta-content">
             <h2>Ready to Discuss Your {{ page.short_title or page.title }} Project?</h2>
-            <p>Our engineering team has 25+ years of experience designing custom automation solutions. Let's talk about your requirements.</p>
+            <p>Our engineering team has 30+ years of experience designing custom automation solutions. Let's talk about your requirements.</p>
             <div class="cta-buttons">
                 <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
                 <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="btn btn-outline-white btn-lg">Call Us</a>

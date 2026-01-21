@@ -100,7 +100,7 @@
                                 {{ item.name }}
                             </a>
                             {% if item.children %}
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu{% if item.name == 'Solutions' or item.name == 'Industries' %} dropdown-wide{% endif %}">
                                 <div class="dropdown-content">
                                     {% for child in item.children %}
                                     <a href="{{ config.site.base_path }}{{ child.url }}" class="dropdown-item">
@@ -175,13 +175,13 @@
                 </div>
 
                 <div class="footer-section">
-                    <h4>Capabilities</h4>
+                    <h4>Solutions</h4>
                     <ul class="footer-links">
-                        <li><a href="{{ config.site.base_path }}/capabilities/robotic-cells/">Robotic Cells</a></li>
-                        <li><a href="{{ config.site.base_path }}/capabilities/welding/">Welding Automation</a></li>
-                        <li><a href="{{ config.site.base_path }}/capabilities/assembly/">Assembly Machines</a></li>
-                        <li><a href="{{ config.site.base_path }}/capabilities/test-systems/">Test Systems</a></li>
-                        <li><a href="{{ config.site.base_path }}/capabilities/custom-automation/">Custom Automation</a></li>
+                        <li><a href="{{ config.site.base_path }}/solutions/robotic-cells/">Robotic Cells</a></li>
+                        <li><a href="{{ config.site.base_path }}/solutions/welding/">Welding Automation</a></li>
+                        <li><a href="{{ config.site.base_path }}/solutions/assembly/">Assembly Systems</a></li>
+                        <li><a href="{{ config.site.base_path }}/solutions/test-systems/">Test & Inspection</a></li>
+                        <li><a href="{{ config.site.base_path }}/solutions/machine-vision/">Machine Vision</a></li>
                     </ul>
                 </div>
 

@@ -2,11 +2,11 @@
 title: Automated Assembly Machines | High-Speed Assembly Systems & Equipment
 description: Custom automated assembly machines for high-volume manufacturing. Flexible & dedicated assembly systems for complex multi-component products. Turnkey solutions.
 keywords: automated assembly machines, assembly automation equipment, high-speed assembly systems, automated assembly lines, precision assembly machines, component assembly automation
-template: capability.html
+template: solution.html
 short_title: Assembly Machines
 hero_title: Assembly Automation
 hero_subtitle: Precision assembly systems for complex products at production volumes
-url: /capabilities/assembly/
+url: /solutions/assembly/
 features:
   - Rotary dial machines
   - Linear transfer systems
