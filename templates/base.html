@@ -42,8 +42,8 @@
     <style>{% include 'critical.css' %}</style>
 
     <!-- Fonts - Async loading to prevent render blocking -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:ital,wght@1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:ital,wght@1,700&display=swap"></noscript>
 
     <!-- Main CSS - Loaded async to prevent render blocking -->
     <link rel="preload" href="{{ config.site.base_path }}/static/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
