@@ -248,7 +248,7 @@
             <p>Our engineering team is ready to evaluate your requirements and recommend the right automation approach.</p>
             <div class="cta-buttons-row">
                 <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Contact Us</a>
-                <a href="tel:+15551234567" class="btn btn-text-dark">Or call: (555) 123-4567</a>
+                <a href="tel:{{ config.social.phone | replace(' ', '') | replace('+', '+') }}" class="btn btn-text-dark">Or call: {{ config.social.phone }}</a>
             </div>
         </div>
     </div>

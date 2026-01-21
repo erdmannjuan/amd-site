@@ -1,7 +1,7 @@
 ---
-title: Custom Robotic Cells & Robot Integration | FANUC Authorized Integrator
-description: Turnkey robotic cell design & integration for welding, assembly, machine tending & material handling. FANUC authorized integrator with 25+ years experience.
-keywords: custom robotic cells, robot system integrator, FANUC robot integration, robotic welding cells, robotic assembly cells, machine tending robots, turnkey robotic systems
+title: Custom Robotic Cells & Robot Integration | ABB, Yaskawa, UR Authorized
+description: Turnkey robotic cell design & integration for welding, assembly, machine tending & material handling. Authorized integrator for ABB, Yaskawa, Universal Robots, Kawasaki & more.
+keywords: custom robotic cells, robot system integrator, ABB robot integration, Yaskawa robot integration, robotic welding cells, robotic assembly cells, machine tending robots, turnkey robotic systems
 template: solution.html
 short_title: Robotic Cells
 hero_title: Robotic Cell Solutions
@@ -40,7 +40,7 @@ benefits:
     description: Quick changeover capabilities allow adaptation to multiple products and variants.
 ---
 
-AMD Automation designs and builds turnkey robotic cells tailored to your specific manufacturing requirements. As a **FANUC Authorized System Integrator** with over 25 years of experience, our team handles every aspect from initial concept through installation, training, and ongoing support.
+AMD Automation designs and builds turnkey robotic cells tailored to your specific manufacturing requirements. As an **authorized integrator for ABB, Yaskawa, Universal Robots, and Kawasaki** with over 25 years of experience, our team handles every aspect from initial concept through installation, training, and ongoing support.
 
 ## Custom Robotic Cell Design Process
 

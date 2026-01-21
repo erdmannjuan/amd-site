@@ -1,7 +1,7 @@
 ---
 title: About AMD Automation | 30+ Years of Custom Machine Building Excellence
-description: "AMD Automation: 30+ years, 2,500+ custom machines built. FANUC authorized integrator specializing in robotic cells, welding automation & assembly systems."
-keywords: about AMD Automation, custom machine builder, automation engineering company, FANUC authorized integrator, robotic system integrator
+description: "AMD Automation: 30+ years, 2,500+ custom machines built. Authorized integrator for ABB, Yaskawa, Universal Robots, Kawasaki & more. Robotic cells, welding automation & assembly systems."
+keywords: about AMD Automation, custom machine builder, automation engineering company, robotic system integrator, ABB authorized integrator, Yaskawa integrator
 template: about.html
 hero_title: About AMD Automation
 hero_subtitle: Engineering excellence in custom automation for over 30 years
@@ -16,8 +16,10 @@ company_values:
   - title: Continuous Innovation
     description: We constantly expand our capabilities to better serve your needs.
 certifications:
-  - FANUC Authorized Integrator
-  - ABB Robotics Partner
+  - ABB Authorized Integrator
+  - Yaskawa Authorized Integrator
+  - Universal Robots Certified Integrator
+  - Kawasaki Robotics Partner
   - Allen-Bradley Integrator
   - Siemens Partner
   - ISO 9001:2015
