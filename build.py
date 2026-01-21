@@ -78,11 +78,18 @@ def get_blog_posts(all_pages):
     for page in all_pages:
         # Check if it's a blog post (in /blog/ but not the index)
         if page['url'].startswith('/blog/') and page['url'] != '/blog/':
+            # Convert date to string for consistent sorting
+            date_val = page['frontmatter'].get('date', '')
+            if hasattr(date_val, 'strftime'):
+                date_val = date_val.strftime('%Y-%m-%d')
+            elif date_val:
+                date_val = str(date_val)
+
             post_data = {
                 'url': page['url'],
                 'title': page['frontmatter'].get('title', 'Untitled'),
                 'description': page['frontmatter'].get('description', ''),
-                'date': page['frontmatter'].get('date', ''),
+                'date': date_val,
                 'author': page['frontmatter'].get('author', ''),
                 'category': page['frontmatter'].get('category', ''),
                 'image': page['frontmatter'].get('image', ''),
