@@ -1,158 +1,108 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Page Hero with Image -->
-<section class="page-hero page-hero-image" style="background-image: url('{{ config.site.base_path }}/static/images/{{ page.hero_image | default('placeholder-hero-industries.svg') }}');">
-    <div class="hero-overlay"></div>
+<!-- Breadcrumb -->
+<section class="breadcrumb-section">
     <div class="container">
-        <nav class="breadcrumb">
+        <nav class="breadcrumb-flat">
             <a href="{{ config.site.base_path }}/">Home</a>
-            <span class="breadcrumb-sep">/</span>
+            <span>/</span>
             <a href="{{ config.site.base_path }}/industries/">Industries</a>
-            <span class="breadcrumb-sep">/</span>
+            <span>/</span>
             <span>{{ page.short_title or page.title }}</span>
         </nav>
-        <h1 class="page-title">{{ page.hero_title or page.title }}</h1>
-        <p class="page-subtitle">{{ page.hero_subtitle }}</p>
     </div>
 </section>
 
-<!-- Main Content with Sidebar -->
-<section class="section section-warm">
+<!-- Page Header -->
+<section class="page-header-flat">
     <div class="container">
-        <div class="content-with-sidebar">
-            <!-- Main Content Area -->
-            <div class="content-main">
-                <!-- Featured Image -->
-                {% set industry_images = {
-                    'automotive': 'placeholder-industry-automotive.svg',
-                    'medical': 'placeholder-industry-medical.svg',
-                    'consumer': 'placeholder-industry-consumer.svg',
-                    'electronics': 'placeholder-industry-electronics.svg',
-                    'aerospace': 'placeholder-industry-aerospace.svg',
-                    'food-beverage': 'placeholder-industry-food.svg'
-                } %}
-                <div class="content-featured-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ page.featured_image | default(industry_images[page.url.split('/')[-2]] | default('placeholder-industry-automotive.svg')) }}" alt="{{ page.title }}" loading="lazy" width="800" height="600">
-                </div>
+        <div class="page-header-content">
+            <h1>{{ page.hero_title or page.title }}</h1>
+            <p class="page-lead">{{ page.hero_subtitle or page.description }}</p>
+        </div>
+    </div>
+</section>
 
-                <div class="content-body prose">
+<!-- Main Content -->
+<section class="content-section">
+    <div class="container">
+        <div class="content-layout">
+            <div class="content-main-flat">
+                <div class="prose">
                     {{ content | safe }}
                 </div>
+
+                {% if page.solutions %}
+                <div class="solutions-flat">
+                    <h2>Automation Solutions for {{ page.short_title or page.title }}</h2>
+                    <div class="solutions-grid-flat">
+                        {% for solution in page.solutions %}
+                        <div class="solution-card-flat">
+                            <h3>{{ solution.name }}</h3>
+                            <p>{{ solution.description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.challenges %}
+                <div class="challenges-flat">
+                    <h2>Industry Challenges We Solve</h2>
+                    <div class="challenges-list">
+                        {% for challenge in page.challenges %}
+                        <div class="challenge-item-flat">
+                            <h3>{{ challenge.title }}</h3>
+                            <p>{{ challenge.description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
 
-            <!-- Right Sidebar -->
-            <aside class="content-sidebar">
-                <div class="sidebar-inner">
-                    <div class="sidebar-widget">
-                        <h3>Industries We Serve</h3>
-                        <ul class="sidebar-nav">
-                            {% for industry in config.industries %}
-                            <li>
-                                <a href="{{ config.site.base_path }}{{ industry.url }}" class="{% if industry.url == page.url %}active{% endif %}">
-                                    {{ industry.name }}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+            <aside class="content-aside">
+                <div class="aside-block">
+                    <h3>Other Industries</h3>
+                    <ul class="aside-links">
+                        {% for industry in config.industries %}
+                        {% if industry.url != page.url %}
+                        <li><a href="{{ config.site.base_path }}{{ industry.url }}">{{ industry.name }} →</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
 
-                    <div class="sidebar-widget sidebar-cta">
-                        <h3>Need Help?</h3>
-                        <p>Our engineers understand {{ page.short_title or page.title | lower }} manufacturing challenges.</p>
-                        <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary btn-sm btn-block">Get a Quote</a>
-                        <p class="sidebar-phone">
-                            <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">
-                                {{ config.social.phone }}
-                            </a>
-                        </p>
-                    </div>
+                <div class="aside-block">
+                    <h3>Our Solutions</h3>
+                    <ul class="aside-links">
+                        {% for sol in config.solutions[:8] %}
+                        <li><a href="{{ config.site.base_path }}{{ sol.url }}">{{ sol.name }} →</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
 
-                    <div class="sidebar-widget">
-                        <h3>Quick Links</h3>
-                        <ul class="sidebar-nav">
-                            <li><a href="{{ config.site.base_path }}/solutions/">Our Capabilities</a></li>
-                            <li><a href="{{ config.site.base_path }}/about/">About Us</a></li>
-                            <li><a href="{{ config.site.base_path }}/blog/">Latest News</a></li>
-                        </ul>
-                    </div>
+                <div class="aside-cta">
+                    <p>Need automation for {{ page.short_title or page.title | lower }}?</p>
+                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat btn-block">Get a Quote</a>
+                    <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="aside-phone">{{ config.social.phone }}</a>
                 </div>
             </aside>
         </div>
     </div>
 </section>
 
-{% if page.solutions %}
-<!-- Solutions Section -->
-<section class="section section-light">
+<!-- Solutions for this Industry -->
+<section class="related-section">
     <div class="container">
-        <div class="section-header text-center">
-            <span class="section-label">Solutions</span>
-            <h2 class="section-title">Automation for {{ page.short_title or page.title }}</h2>
-            <p class="section-subtitle">Tailored solutions that address your industry's unique requirements</p>
-        </div>
-        <div class="solutions-grid">
-            {% for solution in page.solutions %}
-            <div class="solution-card">
-                <h3>{{ solution.name }}</h3>
-                <p>{{ solution.description }}</p>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
-{% if page.challenges %}
-<!-- Challenges Section -->
-<section class="section">
-    <div class="container">
-        <div class="section-header text-center">
-            <span class="section-label">Challenges</span>
-            <h2 class="section-title">Industry Challenges We Solve</h2>
-        </div>
-        <div class="challenges-list">
-            {% for challenge in page.challenges %}
-            <div class="challenge-item">
-                <div class="challenge-icon"></div>
-                <div>
-                    <h3>{{ challenge.title }}</h3>
-                    <p>{{ challenge.description }}</p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
-<!-- Related Content Section -->
-<section class="section section-alt related-content" data-test="related_content">
-    <div class="container">
-        <div class="section-header text-center">
-            <span class="section-label">Our Solutions</span>
-            <h2 class="section-title">Solutions for {{ page.short_title or page.title }}</h2>
-            <p class="section-subtitle">Explore the automation solutions we apply in this industry</p>
-        </div>
-        <div class="related-grid">
-            {% set sol_images = {
-                'robotic-cells': 'placeholder-capability-robotic-cells.svg',
-                'welding': 'placeholder-capability-welding.svg',
-                'test-systems': 'placeholder-capability-test-systems.svg',
-                'assembly': 'placeholder-capability-assembly.svg',
-                'custom-automation': 'placeholder-capability-custom.svg',
-                'material-handling': 'placeholder-capability-material-handling.svg'
-            } %}
+        <h2>Solutions for {{ page.short_title or page.title }}</h2>
+        <div class="related-list">
             {% for sol in config.solutions %}
-            <a href="{{ config.site.base_path }}{{ sol.url }}" class="related-item" data-content-id="{{ sol.name | lower | replace(' ', '-') }}">
-                <div class="related-item-inner">
-                    <div class="related-image">
-                        <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy" width="400" height="300">
-                    </div>
-                    <h3>{{ sol.name }}</h3>
-                    <p>{{ sol.description }}</p>
-                    <span class="related-link">Learn More</span>
-                </div>
+            <a href="{{ config.site.base_path }}{{ sol.url }}" class="related-link-item">
+                <span class="related-link-name">{{ sol.name }}</span>
+                <span class="related-link-desc">{{ sol.description }}</span>
+                <span class="related-link-arrow">→</span>
             </a>
             {% endfor %}
         </div>
@@ -160,28 +110,14 @@
 </section>
 
 <!-- Other Industries -->
-<section class="section section-warm">
+<section class="industries-section-flat">
     <div class="container">
-        <div class="section-header text-center">
-            <span class="section-label">More Industries</span>
-            <h2 class="section-title">Other Industries We Serve</h2>
-        </div>
-        <div class="industries-grid">
-            {% set ind_images = {
-                'automotive': 'placeholder-industry-automotive.svg',
-                'medical': 'placeholder-industry-medical.svg',
-                'consumer': 'placeholder-industry-consumer.svg',
-                'electronics': 'placeholder-industry-electronics.svg',
-                'aerospace': 'placeholder-industry-aerospace.svg',
-                'food-beverage': 'placeholder-industry-food.svg'
-            } %}
+        <h2>Other Industries We Serve</h2>
+        <div class="industries-grid-flat">
             {% for industry in config.industries %}
             {% if industry.url != page.url %}
-            <a href="{{ config.site.base_path }}{{ industry.url }}" class="industry-card">
-                <div class="industry-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ ind_images[industry.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ industry.name }}" loading="lazy" width="400" height="300">
-                </div>
-                <h3>{{ industry.name }}</h3>
+            <a href="{{ config.site.base_path }}{{ industry.url }}" class="industry-link-flat">
+                {{ industry.name }} →
             </a>
             {% endif %}
             {% endfor %}
@@ -190,15 +126,12 @@
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="section-cta-flat">
     <div class="container">
-        <div class="cta-content">
-            <h2>Ready to Discuss Your {{ page.short_title or page.title }} Project?</h2>
-            <p>Our team understands the unique requirements of {{ page.short_title or page.title | lower }} manufacturing. Let's talk about your automation needs.</p>
-            <div class="cta-buttons">
-                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
-                <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="btn btn-outline-white btn-lg">Call Us</a>
-            </div>
+        <div class="cta-flat-content">
+            <h2>Ready to discuss your {{ page.short_title or page.title | lower }} automation project?</h2>
+            <p>Our team understands the unique requirements of {{ page.short_title or page.title | lower }} manufacturing.</p>
+            <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Contact Us</a>
         </div>
     </div>
 </section>

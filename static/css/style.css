@@ -4775,3 +4775,420 @@ button:disabled {
 .section-cta-flat .btn-primary-flat:hover {
     background: var(--accent-teal-dark);
 }
+
+/* ================================
+   Flat Page Layout Styles
+   ================================ */
+
+/* Breadcrumb */
+.breadcrumb-section {
+    padding: 1rem 0;
+    background: var(--light-bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.breadcrumb-flat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-flat a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.breadcrumb-flat a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-flat span {
+    color: var(--text-light);
+}
+
+/* Page Header Flat */
+.page-header-flat {
+    padding: 3rem 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.page-header-content h1 {
+    font-size: 2.25rem;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.page-lead {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Content Section */
+.content-section {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.content-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+}
+
+.content-main-flat .prose {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.content-main-flat .prose h2 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.content-main-flat .prose h3 {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.content-main-flat .prose p {
+    margin-bottom: 1rem;
+}
+
+.content-main-flat .prose ul,
+.content-main-flat .prose ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.content-main-flat .prose li {
+    margin-bottom: 0.5rem;
+}
+
+.content-main-flat .prose a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.content-main-flat .prose a:hover {
+    text-decoration: underline;
+}
+
+/* Features Flat */
+.features-flat,
+.applications-flat,
+.benefits-flat,
+.solutions-flat,
+.challenges-flat {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.features-flat h2,
+.applications-flat h2,
+.benefits-flat h2,
+.solutions-flat h2,
+.challenges-flat h2 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.features-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text);
+}
+
+.features-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+/* Applications List */
+.applications-list,
+.benefits-list,
+.challenges-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.application-item,
+.benefit-item-flat,
+.challenge-item-flat {
+    padding: 1.25rem;
+    background: var(--light-bg);
+    border-left: 3px solid var(--primary);
+}
+
+.application-item h3,
+.benefit-item-flat h3,
+.challenge-item-flat h3 {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.application-item p,
+.benefit-item-flat p,
+.challenge-item-flat p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Solutions Grid Flat */
+.solutions-grid-flat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.solution-card-flat {
+    padding: 1.25rem;
+    background: var(--light-bg);
+    border-left: 3px solid var(--accent-teal);
+}
+
+.solution-card-flat h3 {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.solution-card-flat p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Content Aside */
+.content-aside {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+.aside-block {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.aside-block h3 {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.aside-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-links li {
+    margin-bottom: 0.5rem;
+}
+
+.aside-links a {
+    font-size: 0.9rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.aside-links a:hover {
+    color: var(--primary);
+}
+
+.aside-cta {
+    background: var(--light-bg);
+    padding: 1.5rem;
+}
+
+.aside-cta p {
+    font-size: 0.95rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.aside-cta .btn-block {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.aside-phone {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Related Section */
+.related-section {
+    padding: 3rem 0;
+    background: var(--light-bg);
+    border-top: 1px solid var(--border);
+}
+
+.related-section h2 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.related-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.related-link-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.25rem 1rem;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+}
+
+.related-link-item:hover {
+    background: var(--white);
+}
+
+.related-link-name {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+.related-link-desc {
+    grid-column: 1;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.related-link-arrow {
+    grid-row: 1 / 3;
+    align-self: center;
+    color: var(--primary);
+    font-size: 1.25rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.related-link-item:hover .related-link-arrow {
+    opacity: 1;
+}
+
+/* Industries Section Flat */
+.industries-section-flat {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.industries-section-flat h2 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.industries-grid-flat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.industry-link-flat {
+    padding: 0.75rem 1.25rem;
+    background: var(--light-bg);
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.industry-link-flat:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .content-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .content-aside {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .aside-block {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .aside-cta {
+        grid-column: 1 / -1;
+    }
+
+    .features-list,
+    .applications-list,
+    .benefits-list,
+    .challenges-list,
+    .solutions-grid-flat {
+        grid-template-columns: 1fr;
+    }
+
+    .related-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-aside {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header-content h1 {
+        font-size: 1.75rem;
+    }
+}
