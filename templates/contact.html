@@ -159,7 +159,11 @@
         submitBtn.textContent = 'Sending...';
         formStatus.innerHTML = '';
 
-        // Collect form data
+        // Collect form data - using HubSpot default field names
+        const projectType = document.getElementById('project_type').value;
+        const messageText = document.getElementById('message').value;
+        const fullMessage = projectType ? `[Project Type: ${projectType}]\n\n${messageText}` : messageText;
+
         const formData = {
             fields: [
                 { name: 'firstname', value: document.getElementById('firstname').value },
@@ -167,8 +171,7 @@
                 { name: 'email', value: document.getElementById('email').value },
                 { name: 'phone', value: document.getElementById('phone').value || '' },
                 { name: 'company', value: document.getElementById('company').value },
-                { name: 'project_type', value: document.getElementById('project_type').value || '' },
-                { name: 'message', value: document.getElementById('message').value }
+                { name: 'message', value: fullMessage }
             ],
             context: {
                 pageUri: window.location.href,
