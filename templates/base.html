@@ -253,16 +253,9 @@
     <!-- Scripts (deferred for performance) -->
     <script src="{{ config.site.base_path }}/static/js/main.js" defer></script>
 
-    <!-- Google Analytics 4 - Loaded at end of body for performance -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S337NW9CQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-1S337NW9CQ');
-    </script>
+    <!-- Google Analytics handled by Cloudflare Zaraz -->
 
-    <!-- A/B Testing & Analytics -->
+    <!-- A/B Testing -->
     <script>
     (function() {
         // A/B Test Configuration
