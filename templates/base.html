@@ -17,16 +17,73 @@
     <meta name="author" content="{{ config.site.author }}">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title }}{{ config.seo.default_title_suffix }}">
     <meta property="og:description" content="{{ page.description or config.seo.default_description }}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{% if page.template == 'blog-post.html' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ config.site.url }}{{ page.url }}">
-    {% if page.image %}
-    <meta property="og:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image }}">
-    {% endif %}
+    <meta property="og:site_name" content="{{ config.site.name }}">
+    <meta property="og:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image | default('og-default.svg') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}{{ config.seo.default_title_suffix }}">
+    <meta name="twitter:description" content="{{ page.description or config.seo.default_description }}">
+    <meta name="twitter:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image | default('og-default.svg') }}">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ config.site.url }}{{ page.url }}">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "{{ config.site.name }}",
+        "url": "{{ config.site.url }}",
+        "logo": "{{ config.site.url }}/static/images/logo.png",
+        "description": "{{ config.seo.default_description }}",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "{{ config.social.phone }}",
+            "contactType": "sales",
+            "email": "{{ config.social.email }}"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ config.social.address }}"
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    {% if page.url != '/' %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "{{ config.site.url }}"
+            }
+            {% set parts = page.url.strip('/').split('/') %}
+            {% for part in parts %}
+            ,{
+                "@type": "ListItem",
+                "position": {{ loop.index + 1 }},
+                "name": "{{ part | replace('-', ' ') | title }}",
+                "item": "{{ config.site.url }}/{{ parts[:loop.index] | join('/') }}/"
+            }
+            {% endfor %}
+        ]
+    }
+    </script>
+    {% endif %}
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ config.site.base_path }}/static/images/favicon.png">

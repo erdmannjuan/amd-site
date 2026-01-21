@@ -8,6 +8,36 @@
         font-weight: 600;
     }
 </style>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description or '' }}",
+    "image": "{{ config.site.url }}/static/images/{{ page.image | default('og-default.svg') }}",
+    "datePublished": "{{ page.date }}",
+    "dateModified": "{{ page.date }}",
+    "author": {
+        "@type": "Organization",
+        "name": "{{ config.site.name }}",
+        "url": "{{ config.site.url }}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ config.site.name }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ config.site.url }}/static/images/logo.png"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ config.site.url }}{{ page.url }}"
+    }
+}
+</script>
 {% endblock %}
 
 {% block content %}
