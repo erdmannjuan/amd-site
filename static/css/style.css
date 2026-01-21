@@ -149,6 +149,24 @@ img {
     align-items: center;
 }
 
+.top-bar-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.top-bar-nav a {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: var(--transition);
+}
+
+.top-bar-nav a:hover {
+    color: var(--secondary);
+}
+
 .top-bar-contact {
     display: flex;
     gap: 1.5rem;
