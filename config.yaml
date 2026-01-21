@@ -99,5 +99,5 @@ colors:
 # HubSpot Integration
 # Get these values from your HubSpot form embed code
 hubspot:
-  portal_id: "YOUR_PORTAL_ID"  # Replace with your HubSpot Portal ID (e.g., "12345678")
-  form_id: "YOUR_FORM_ID"      # Replace with your HubSpot Form ID (e.g., "abc123-def456-...")
+  portal_id: "7739025"
+  form_id: "cd38877d-8396-4826-b571-3b52287f2f84"
