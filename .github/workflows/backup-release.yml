@@ -1,0 +1,72 @@
+name: Bi-Weekly Site Backup
+
+on:
+  schedule:
+    # Every 2 weeks on Sunday at 3am UTC
+    - cron: '0 3 * * 0/2'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml markdown jinja2 csscompressor
+
+      - name: Build site
+        run: python build.py
+
+      - name: Create backup archive
+        run: |
+          DATE=$(date '+%Y-%m-%d')
+          # Archive the built output
+          tar -czvf "amd-site-backup-${DATE}.tar.gz" output/
+          # Archive the source (excluding .git and output)
+          tar --exclude='.git' --exclude='output' -czvf "amd-site-source-${DATE}.tar.gz" .
+
+      - name: Generate release notes
+        id: notes
+        run: |
+          DATE=$(date '+%Y-%m-%d')
+          echo "date=${DATE}" >> $GITHUB_OUTPUT
+
+          # Count pages
+          PAGE_COUNT=$(find output -name "index.html" | wc -l)
+
+          # Get sizes
+          OUTPUT_SIZE=$(du -sh output/ | cut -f1)
+          SOURCE_SIZE=$(du -sh --exclude='.git' --exclude='output' . | cut -f1 || du -sh . | cut -f1)
+
+          echo "## Backup Summary" > notes.md
+          echo "" >> notes.md
+          echo "- **Date:** ${DATE}" >> notes.md
+          echo "- **Pages:** ${PAGE_COUNT}" >> notes.md
+          echo "- **Built site size:** ${OUTPUT_SIZE}" >> notes.md
+          echo "" >> notes.md
+          echo "### Included Archives" >> notes.md
+          echo "- \`amd-site-backup-${DATE}.tar.gz\` - Built site (ready to deploy)" >> notes.md
+          echo "- \`amd-site-source-${DATE}.tar.gz\` - Source files" >> notes.md
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: backup-${{ steps.notes.outputs.date }}
+          name: "Site Backup - ${{ steps.notes.outputs.date }}"
+          body_path: notes.md
+          files: |
+            amd-site-backup-*.tar.gz
+            amd-site-source-*.tar.gz
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

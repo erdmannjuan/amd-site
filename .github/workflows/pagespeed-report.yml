@@ -1,0 +1,94 @@
+name: Daily PageSpeed Report
+
+on:
+  schedule:
+    # 9pm EST = 02:00 UTC (adjust to 01:00 for EDT/daylight saving)
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  pagespeed-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run PageSpeed Tests
+        id: pagespeed
+        run: |
+          SITE_URL="https://amdmachines.com"
+
+          # Pages to test
+          PAGES=(
+            "/"
+            "/solutions/"
+            "/industries/"
+            "/services/"
+            "/about/"
+            "/contact/"
+            "/blog/"
+          )
+
+          echo "# PageSpeed Report - $(date '+%Y-%m-%d %H:%M EST')" > report.md
+          echo "" >> report.md
+          echo "| Page | Mobile | Desktop | LCP | TBT | CLS |" >> report.md
+          echo "|------|--------|---------|-----|-----|-----|" >> report.md
+
+          ALL_PASSED=true
+
+          for page in "${PAGES[@]}"; do
+            echo "Testing: ${SITE_URL}${page}"
+
+            # Mobile test
+            MOBILE_RESULT=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${SITE_URL}${page}&strategy=mobile&category=performance" 2>/dev/null)
+
+            if echo "$MOBILE_RESULT" | grep -q '"error"'; then
+              echo "API error for ${page}, skipping..."
+              continue
+            fi
+
+            MOBILE_SCORE=$(echo "$MOBILE_RESULT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(int(d.get('lighthouseResult',{}).get('categories',{}).get('performance',{}).get('score',0)*100))" 2>/dev/null || echo "N/A")
+            LCP=$(echo "$MOBILE_RESULT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('lighthouseResult',{}).get('audits',{}).get('largest-contentful-paint',{}).get('displayValue','N/A'))" 2>/dev/null || echo "N/A")
+            TBT=$(echo "$MOBILE_RESULT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('lighthouseResult',{}).get('audits',{}).get('total-blocking-time',{}).get('displayValue','N/A'))" 2>/dev/null || echo "N/A")
+            CLS=$(echo "$MOBILE_RESULT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('lighthouseResult',{}).get('audits',{}).get('cumulative-layout-shift',{}).get('displayValue','N/A'))" 2>/dev/null || echo "N/A")
+
+            # Desktop test
+            DESKTOP_RESULT=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${SITE_URL}${page}&strategy=desktop&category=performance" 2>/dev/null)
+            DESKTOP_SCORE=$(echo "$DESKTOP_RESULT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(int(d.get('lighthouseResult',{}).get('categories',{}).get('performance',{}).get('score',0)*100))" 2>/dev/null || echo "N/A")
+
+            # Check if scores are below threshold
+            if [ "$MOBILE_SCORE" != "N/A" ] && [ "$MOBILE_SCORE" -lt 70 ]; then
+              ALL_PASSED=false
+              MOBILE_SCORE="⚠️ ${MOBILE_SCORE}"
+            fi
+
+            echo "| ${page} | ${MOBILE_SCORE} | ${DESKTOP_SCORE} | ${LCP} | ${TBT} | ${CLS} |" >> report.md
+
+            # Rate limit protection
+            sleep 2
+          done
+
+          echo "" >> report.md
+          echo "---" >> report.md
+          echo "*Tested at $(date '+%Y-%m-%d %H:%M UTC')*" >> report.md
+
+          # Output report
+          cat report.md
+
+          # Set output for issue creation
+          echo "report<<EOF" >> $GITHUB_OUTPUT
+          cat report.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          if [ "$ALL_PASSED" = false ]; then
+            echo "status=warning" >> $GITHUB_OUTPUT
+          else
+            echo "status=passed" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create or Update Issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "📊 PageSpeed Report - ${{ github.run_id }}"
+          content-filepath: report.md
+          labels: |
+            pagespeed
+            automated
