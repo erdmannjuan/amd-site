@@ -5,12 +5,27 @@
 <section class="hero">
     <div class="hero-overlay"></div>
     <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">{{ page.hero_title or "Custom Automated Manufacturing Solutions" }}</h1>
-            <p class="hero-subtitle">{{ page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals" }}</p>
-            <div class="hero-buttons">
-                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
-                <a href="{{ config.site.base_path }}/capabilities/" class="btn btn-outline-white btn-lg">Explore Capabilities</a>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">{{ page.hero_title or "Custom Automated Manufacturing Solutions" }}</h1>
+                <p class="hero-subtitle">{{ page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals" }}</p>
+                <div class="hero-buttons">
+                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+                    <a href="{{ config.site.base_path }}/capabilities/" class="btn btn-outline-white btn-lg">Explore Capabilities</a>
+                </div>
+            </div>
+            <div class="hero-sidebar">
+                <div class="hero-sidebar-card">
+                    <div class="hero-sidebar-image">
+                        <img src="{{ config.site.base_path }}/static/images/placeholder-hero-featured.svg" alt="Featured Project">
+                    </div>
+                    <div class="hero-sidebar-content">
+                        <span class="hero-sidebar-label">Featured Project</span>
+                        <h3>Automotive Assembly Line</h3>
+                        <p>High-speed robotic assembly system delivering 120 units per hour with 99.8% quality rate.</p>
+                        <a href="{{ config.site.base_path }}/capabilities/robotic-cells/" class="hero-sidebar-link">View Case Study</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

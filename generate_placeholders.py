@@ -15,6 +15,7 @@ PLACEHOLDERS = [
     ("placeholder-hero-about.svg", "004", 1920, 600, "About page hero"),
     ("placeholder-hero-contact.svg", "005", 1920, 600, "Contact page hero"),
     ("placeholder-hero-blog.svg", "006", 1920, 600, "Blog landing hero"),
+    ("placeholder-hero-featured.svg", "007", 400, 200, "Homepage hero featured card"),
 
     # Capability images
     ("placeholder-capability-robotic-cells.svg", "010", 800, 600, "Robotic cells capability"),

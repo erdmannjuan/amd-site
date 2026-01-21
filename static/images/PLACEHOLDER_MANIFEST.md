@@ -10,6 +10,7 @@ Replace these placeholder images with final designs.
 | 004 | placeholder-hero-about.svg | 1920x600 | About page hero |
 | 005 | placeholder-hero-contact.svg | 1920x600 | Contact page hero |
 | 006 | placeholder-hero-blog.svg | 1920x600 | Blog landing hero |
+| 007 | placeholder-hero-featured.svg | 400x200 | Homepage hero featured card |
 | 010 | placeholder-capability-robotic-cells.svg | 800x600 | Robotic cells capability |
 | 011 | placeholder-capability-welding.svg | 800x600 | Welding automation capability |
 | 012 | placeholder-capability-test-systems.svg | 800x600 | Test systems capability |
