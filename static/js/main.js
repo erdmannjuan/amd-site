@@ -84,18 +84,24 @@
 
         if (!headerWrapper) return;
 
-        function handleScroll() {
-            const currentScroll = window.pageYOffset;
+        let ticking = false;
 
-            // Add scrolled class when past threshold
+        function updateHeader() {
+            const currentScroll = window.pageYOffset;
             if (currentScroll > CONFIG.scrollThreshold) {
                 headerWrapper.classList.add('scrolled');
             } else {
                 headerWrapper.classList.remove('scrolled');
             }
+            ticking = false;
         }
 
-        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateHeader);
+                ticking = true;
+            }
+        }, { passive: true });
     }
 
     // ===========================================
