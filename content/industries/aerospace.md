@@ -1,7 +1,7 @@
 ---
-title: Aerospace Automation | AMD Automation
-description: Automation solutions for aerospace manufacturing meeting AS9100 requirements. Assembly, testing, and inspection for aircraft and defense components.
-keywords: aerospace automation, AS9100 automation, aircraft manufacturing, defense automation, aerospace assembly
+title: Aerospace Manufacturing Automation | AS9100 Certified Solutions
+description: "AS9100-compliant aerospace automation: precision assembly, NDT testing & inspection systems for aircraft and defense components. NADCAP-ready processes."
+keywords: aerospace manufacturing automation, AS9100 automation systems, aircraft component assembly, defense manufacturing automation, aerospace testing equipment, NADCAP automation
 template: industry.html
 short_title: Aerospace
 hero_title: Aerospace Manufacturing Automation

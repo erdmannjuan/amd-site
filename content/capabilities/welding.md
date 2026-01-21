@@ -1,7 +1,7 @@
 ---
-title: Welding Automation | AMD Automation
-description: Automated MIG, TIG, spot welding, and laser welding systems that improve weld quality and throughput. Custom welding automation solutions.
-keywords: welding automation, robotic welding, MIG welding, TIG welding, spot welding, laser welding, weld quality
+title: Robotic Welding Systems | MIG, TIG, Spot & Laser Welding Automation
+description: Custom robotic welding systems for MIG, TIG, spot & laser welding. Improve weld quality, increase throughput & reduce costs with automated welding solutions.
+keywords: robotic welding systems, automated MIG welding, robotic TIG welding, spot welding automation, laser welding systems, welding robot integrator, arc welding automation
 template: capability.html
 short_title: Welding Automation
 hero_title: Welding Automation Systems

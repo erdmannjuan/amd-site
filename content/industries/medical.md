@@ -1,7 +1,7 @@
 ---
-title: Medical Device Automation | AMD Automation
-description: FDA-compliant automation for medical device manufacturing. Assembly, testing, and packaging systems meeting 21 CFR Part 11 requirements.
-keywords: medical device automation, FDA automation, medical assembly, pharmaceutical automation, 21 CFR Part 11
+title: Medical Device Manufacturing Automation | FDA & ISO 13485 Compliant
+description: "FDA-compliant medical device automation: assembly, testing & packaging systems. ISO 13485 certified processes meeting 21 CFR Part 11 requirements."
+keywords: medical device automation, FDA compliant automation, ISO 13485 automation, medical assembly systems, pharmaceutical automation equipment, cleanroom automation
 template: industry.html
 short_title: Medical Devices
 hero_title: Medical Device Manufacturing Automation

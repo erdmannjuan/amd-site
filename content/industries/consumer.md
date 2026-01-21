@@ -1,7 +1,7 @@
 ---
-title: Consumer Products Automation | AMD Automation
-description: Flexible automation for consumer product manufacturing. Assembly, packaging, and inspection systems for high-mix production environments.
-keywords: consumer products automation, consumer goods manufacturing, flexible automation, high-mix assembly
+title: Consumer Products Automation | High-Volume Assembly & Packaging Systems
+description: "Flexible automation for consumer products: high-volume assembly, packaging & inspection systems. Quick changeover solutions for high-mix manufacturing."
+keywords: consumer products automation, consumer goods manufacturing automation, high-volume assembly systems, packaging automation equipment, product inspection systems
 template: industry.html
 short_title: Consumer Products
 hero_title: Consumer Products Automation

@@ -1,7 +1,7 @@
 ---
-title: Assembly Machines | AMD Automation
-description: Flexible and dedicated assembly systems for high-volume production. Custom assembly automation for complex multi-component products.
-keywords: assembly machines, assembly automation, automated assembly, production assembly, component assembly
+title: Automated Assembly Machines | High-Speed Assembly Systems & Equipment
+description: Custom automated assembly machines for high-volume manufacturing. Flexible & dedicated assembly systems for complex multi-component products. Turnkey solutions.
+keywords: automated assembly machines, assembly automation equipment, high-speed assembly systems, automated assembly lines, precision assembly machines, component assembly automation
 template: capability.html
 short_title: Assembly Machines
 hero_title: Assembly Automation

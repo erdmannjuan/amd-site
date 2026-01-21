@@ -1,7 +1,7 @@
 ---
-title: Contact AMD Automation | Request a Quote
-description: Contact AMD Automation for custom automation solutions. Request a quote, schedule a facility tour, or discuss your manufacturing automation project.
-keywords: contact AMD Automation, automation quote, automation consultation, custom machine quote
+title: Contact Us | Request a Free Automation Quote | AMD Automation
+description: Request a free quote for custom automation. Contact AMD Automation to discuss your robotic cells, welding systems, or assembly machine project. Response within 24 hours.
+keywords: automation quote request, contact automation company, custom machine quote, automation consultation, robotic cell quote, manufacturing automation inquiry
 template: contact.html
 hero_title: Let's Build Something Together
 hero_subtitle: Contact our team to discuss your automation project

@@ -1,7 +1,7 @@
 ---
-title: Electronics Manufacturing Automation | AMD Automation
-description: Precision automation for electronics assembly. PCB handling, testing, conformal coating, and box build automation for electronics manufacturers.
-keywords: electronics automation, PCB automation, electronics assembly, electronics testing, conformal coating
+title: Electronics Manufacturing Automation | PCB Assembly & Test Systems
+description: "Precision electronics automation: PCB handling, automated testing, conformal coating & box build systems. ESD-safe solutions for electronics manufacturing."
+keywords: electronics manufacturing automation, PCB assembly automation, electronics test systems, conformal coating equipment, box build automation, ESD safe automation
 template: industry.html
 short_title: Electronics
 hero_title: Electronics Manufacturing Automation

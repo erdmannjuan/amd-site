@@ -1,7 +1,7 @@
 ---
-title: Automotive Automation | AMD Automation
-description: Custom automation solutions for automotive manufacturers. Robotic welding, assembly, testing, and material handling for Tier 1, 2, and 3 suppliers.
-keywords: automotive automation, automotive manufacturing, robotic welding automotive, assembly automation automotive
+title: Automotive Manufacturing Automation | Tier 1, 2 & 3 Supplier Solutions
+description: Custom automotive automation for OEMs and Tier 1, 2, 3 suppliers. Robotic welding, powertrain assembly, EV battery systems & end-of-line testing solutions.
+keywords: automotive manufacturing automation, automotive assembly systems, Tier 1 supplier automation, robotic welding automotive, EV battery automation, powertrain assembly automation
 template: industry.html
 short_title: Automotive
 hero_title: Automotive Manufacturing Automation

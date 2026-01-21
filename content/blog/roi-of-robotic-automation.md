@@ -1,7 +1,7 @@
 ---
-title: Calculating the ROI of Robotic Automation
-description: Learn how to accurately calculate the return on investment for robotic automation projects, including hidden costs and benefits many overlook.
-keywords: automation ROI, robot payback, automation cost analysis, manufacturing investment
+title: How to Calculate ROI of Robotic Automation | Payback Period & Cost Analysis
+description: Step-by-step guide to calculating robotic automation ROI. Includes payback period formula, hidden costs, labor savings & productivity gains. Free ROI calculator tips.
+keywords: robotic automation ROI calculator, automation payback period, robot cost analysis, manufacturing automation investment, automation cost justification, labor savings automation
 template: blog-post.html
 category: Business
 author: AMD Engineering Team

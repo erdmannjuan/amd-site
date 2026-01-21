@@ -1,7 +1,7 @@
 ---
-title: About AMD Automation | Custom Manufacturing Automation
-description: AMD Automation has 25+ years of experience designing and building custom automated machines. Learn about our team, values, and commitment to engineering excellence.
-keywords: about AMD Automation, automation company, custom machine builder, automation engineering
+title: About AMD Automation | 25+ Years of Custom Machine Building Excellence
+description: "AMD Automation: 25+ years, 1,400+ custom machines built. FANUC authorized integrator specializing in robotic cells, welding automation & assembly systems. Meet our team."
+keywords: about AMD Automation, custom machine builder, automation engineering company, FANUC authorized integrator, robotic system integrator, turnkey automation provider
 template: about.html
 hero_title: About AMD Automation
 hero_subtitle: Engineering excellence in custom automation for over 25 years

@@ -1,7 +1,7 @@
 ---
-title: How to Choose the Right Robot for Your Manufacturing Application
-description: A comprehensive guide to selecting between articulated, SCARA, delta, and collaborative robots based on your specific application requirements.
-keywords: robot selection, articulated robot, SCARA robot, delta robot, collaborative robot, cobot
+title: How to Choose the Right Industrial Robot | Articulated vs SCARA vs Cobot Guide
+description: "Complete guide to choosing industrial robots: articulated, SCARA, delta & collaborative robots compared. Payload, reach, speed & application selection criteria explained."
+keywords: how to choose industrial robot, articulated robot vs SCARA, collaborative robot selection, cobot vs industrial robot, robot payload guide, robot reach comparison
 template: blog-post.html
 category: Robotics
 author: AMD Engineering Team

@@ -1,7 +1,7 @@
 ---
-title: Robotic Cells | AMD Automation
-description: Custom robotic cell solutions for welding, assembly, machine tending, and material handling. Turnkey robotic automation from design to deployment.
-keywords: robotic cells, robotic automation, robot integration, welding robots, assembly robots, machine tending
+title: Custom Robotic Cells & Robot Integration | FANUC Authorized Integrator
+description: Turnkey robotic cell design & integration for welding, assembly, machine tending & material handling. FANUC authorized integrator with 25+ years experience.
+keywords: custom robotic cells, robot system integrator, FANUC robot integration, robotic welding cells, robotic assembly cells, machine tending robots, turnkey robotic systems
 template: capability.html
 short_title: Robotic Cells
 hero_title: Robotic Cell Solutions

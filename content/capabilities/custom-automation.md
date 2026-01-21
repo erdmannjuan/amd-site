@@ -1,7 +1,7 @@
 ---
-title: Custom Automation | AMD Automation
-description: Bespoke automation solutions designed specifically for your unique manufacturing challenges. One-of-a-kind machines built to your requirements.
-keywords: custom automation, bespoke machines, special purpose machines, custom manufacturing equipment
+title: Custom Automation Equipment | Special Purpose Machine Builder
+description: Custom automation equipment & special purpose machines designed for your unique manufacturing challenges. Turnkey solutions from concept to installation.
+keywords: custom automation equipment, special purpose machine builder, bespoke manufacturing equipment, custom machine design, OEM automation equipment, turnkey automation systems
 template: capability.html
 short_title: Custom Automation
 hero_title: Custom Automation Solutions

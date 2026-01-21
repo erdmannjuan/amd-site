@@ -1,7 +1,7 @@
 ---
-title: Material Handling | AMD Automation
-description: Automated conveyors, pick-and-place systems, palletizing, and part transfer solutions for efficient material flow.
-keywords: material handling, conveyors, pick and place, palletizing, automated material flow, part transfer
+title: Material Handling Automation | Conveyors, Palletizers & Pick-and-Place
+description: "Automated material handling systems: conveyors, robotic palletizers, pick-and-place & part transfer solutions. Optimize material flow & reduce labor costs."
+keywords: material handling automation, automated conveyor systems, robotic palletizing, pick and place robots, automated part transfer, material flow optimization
 template: capability.html
 short_title: Material Handling
 hero_title: Material Handling Automation

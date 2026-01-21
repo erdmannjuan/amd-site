@@ -1,7 +1,7 @@
 ---
-title: Integrating Vision Systems with Industrial Robots
-description: How machine vision enhances robotic flexibility, enables bin picking, and improves quality inspection in automated manufacturing.
-keywords: machine vision, robot vision, bin picking, vision guided robotics, 2D vision, 3D vision
+title: Robot Vision Systems Integration Guide | 2D/3D Vision & Bin Picking
+description: Complete guide to integrating vision systems with industrial robots. 2D vs 3D vision comparison, bin picking setup, vision-guided robotics & quality inspection applications.
+keywords: robot vision system integration, machine vision robotics, 3D bin picking robot, vision guided robot, 2D vs 3D robot vision, automated visual inspection
 template: blog-post.html
 category: Technology
 author: AMD Engineering Team

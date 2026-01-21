@@ -1,7 +1,7 @@
 ---
-title: Test Systems | AMD Automation
-description: End-of-line test equipment including leak testing, vision inspection, functional testing, and quality verification systems.
-keywords: test systems, leak testing, vision inspection, functional testing, end-of-line testing, quality control automation
+title: Automated Test Systems | Leak Testing, Vision Inspection & EOL Testing
+description: "Custom end-of-line test equipment: leak testing, vision inspection, functional testing & quality verification. Ensure 100% product quality with automated testing."
+keywords: automated test systems, end-of-line testing equipment, leak test machines, vision inspection systems, functional test equipment, quality control automation, EOL testing
 template: capability.html
 short_title: Test Systems
 hero_title: Automated Test Systems

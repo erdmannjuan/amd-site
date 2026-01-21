@@ -1,7 +1,7 @@
 ---
-title: Food & Beverage Automation | AMD Automation
-description: Sanitary automation for food and beverage manufacturing. Packaging, palletizing, and material handling meeting food safety requirements.
-keywords: food automation, beverage automation, food packaging, sanitary automation, food safety
+title: Food & Beverage Automation | Sanitary Packaging & Palletizing Systems
+description: "Sanitary food & beverage automation: packaging, palletizing & material handling systems. FDA food-safe & USDA compliant solutions for food manufacturing."
+keywords: food and beverage automation, sanitary packaging systems, food palletizing robots, FDA food safe automation, USDA compliant equipment, food processing automation
 template: industry.html
 short_title: Food & Beverage
 hero_title: Food & Beverage Automation
