@@ -89,11 +89,16 @@
                     {% if page.related_posts %}
                     <div class="related-posts">
                         {% for related in page.related_posts %}
-                        <a href="{{ config.site.base_path }}{{ related.url }}" class="related-post">
-                            <h4>{{ related.title }}</h4>
-                            {% if related.description %}
-                            <p>{{ related.description }}</p>
-                            {% endif %}
+                        <a href="{{ config.site.base_path }}{{ related.url }}" class="related-post-card">
+                            <div class="related-post-image">
+                                <img src="{{ config.site.base_path }}/static/images/{{ related.image | default('placeholder-blog-thumb.svg') }}" alt="{{ related.title }}" loading="lazy" width="280" height="140">
+                            </div>
+                            <div class="related-post-content">
+                                <h4>{{ related.title }}</h4>
+                                {% if related.description %}
+                                <p>{{ related.description }}</p>
+                                {% endif %}
+                            </div>
                         </a>
                         {% endfor %}
                     </div>

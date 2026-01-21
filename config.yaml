@@ -81,10 +81,9 @@ navigation:
     url: "/contact/"
 
 social:
-  phone: "(555) 123-4567"
-  email: "info@amdautomation.com"
-  address: "123 Industrial Way, City, State 12345"
-  linkedin: "https://linkedin.com/company/amdautomation"
+  phone: "+1 832 745 1292"
+  email: "sales@amdmachines.com"
+  address: "420 N Wabash Ave, Chicago, IL 60611"
 
 # Company stats for homepage
 stats:

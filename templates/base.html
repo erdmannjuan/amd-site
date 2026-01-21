@@ -172,39 +172,45 @@
                         <span class="logo-amd">AMD</span><br><span class="logo-machines">MACHINES</span>
                     </a>
                     <p>{{ config.site.tagline }}</p>
-                    <div class="footer-social">
-                        {% if config.social.linkedin %}<a href="{{ config.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>{% endif %}
-                    </div>
                 </div>
 
                 <div class="footer-section">
                     <h4>Capabilities</h4>
                     <ul class="footer-links">
-                        {% for item in config.navigation %}
-                        {% if item.children %}
-                        {% for child in item.children[:4] %}
-                        <li><a href="{{ config.site.base_path }}{{ child.url }}">{{ child.name }}</a></li>
-                        {% endfor %}
-                        {% endif %}
-                        {% endfor %}
+                        <li><a href="{{ config.site.base_path }}/capabilities/robotic-cells/">Robotic Cells</a></li>
+                        <li><a href="{{ config.site.base_path }}/capabilities/welding/">Welding Automation</a></li>
+                        <li><a href="{{ config.site.base_path }}/capabilities/assembly/">Assembly Machines</a></li>
+                        <li><a href="{{ config.site.base_path }}/capabilities/test-systems/">Test Systems</a></li>
+                        <li><a href="{{ config.site.base_path }}/capabilities/custom-automation/">Custom Automation</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Industries</h4>
                     <ul class="footer-links">
-                        {% for item in config.navigation %}
-                        <li><a href="{{ config.site.base_path }}{{ item.url }}">{{ item.name }}</a></li>
-                        {% endfor %}
+                        <li><a href="{{ config.site.base_path }}/industries/automotive/">Automotive</a></li>
+                        <li><a href="{{ config.site.base_path }}/industries/medical/">Medical Devices</a></li>
+                        <li><a href="{{ config.site.base_path }}/industries/aerospace/">Aerospace</a></li>
+                        <li><a href="{{ config.site.base_path }}/industries/electronics/">Electronics</a></li>
+                        <li><a href="{{ config.site.base_path }}/industries/consumer/">Consumer Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="{{ config.site.base_path }}/about/">About Us</a></li>
+                        <li><a href="{{ config.site.base_path }}/blog/">Resources & Blog</a></li>
+                        <li><a href="{{ config.site.base_path }}/contact/">Contact</a></li>
                         <li><a href="{{ config.site.base_path }}/privacy-policy/">Privacy Policy</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer-section footer-contact">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
                         <li>
-                            <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ config.social.phone }}</a>
+                            <a href="tel:+18327451292">{{ config.social.phone }}</a>
                         </li>
                         <li>
                             <a href="mailto:{{ config.social.email }}">{{ config.social.email }}</a>
