@@ -24,8 +24,22 @@
     </div>
 </section>
 
+<!-- Quick Nav Pills -->
+<section class="quick-nav-pills">
+    <div class="container">
+        <div class="pills-scroll">
+            <span class="pills-label">Jump to:</span>
+            <a href="#overview" class="pill">Overview</a>
+            {% if page.solutions %}<a href="#solutions" class="pill">Solutions</a>{% endif %}
+            {% if page.challenges %}<a href="#challenges" class="pill">Challenges</a>{% endif %}
+            <a href="#all-solutions" class="pill">All Solutions</a>
+            <a href="#other-industries" class="pill">Other Industries</a>
+        </div>
+    </div>
+</section>
+
 <!-- Main Content -->
-<section class="content-section">
+<section class="content-section" id="overview">
     <div class="container">
         <div class="content-layout">
             <div class="content-main-flat">
@@ -34,7 +48,7 @@
                 </div>
 
                 {% if page.solutions %}
-                <div class="solutions-flat">
+                <div class="solutions-flat" id="solutions">
                     <h2>Automation Solutions for {{ page.short_title or page.title }}</h2>
                     <div class="solutions-grid-flat">
                         {% for solution in page.solutions %}
@@ -48,7 +62,7 @@
                 {% endif %}
 
                 {% if page.challenges %}
-                <div class="challenges-flat">
+                <div class="challenges-flat" id="challenges">
                     <h2>Industry Challenges We Solve</h2>
                     <div class="challenges-list">
                         {% for challenge in page.challenges %}
@@ -60,49 +74,77 @@
                     </div>
                 </div>
                 {% endif %}
+
+                <!-- Mid-content CTA -->
+                <div class="mid-content-cta">
+                    <div class="mid-cta-content">
+                        <strong>Working in {{ page.short_title or page.title | lower }}?</strong>
+                        <p>Let's discuss your specific automation challenges.</p>
+                    </div>
+                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Get a Quote</a>
+                </div>
             </div>
 
             <aside class="content-aside">
+                <!-- Top Solutions for This Industry -->
+                <div class="aside-block aside-paired">
+                    <h3>Top Solutions for {{ page.short_title or page.title }}</h3>
+                    <ul class="paired-list">
+                        {% for sol in config.solutions[:5] %}
+                        <li>
+                            <a href="{{ config.site.base_path }}{{ sol.url }}">
+                                <span class="paired-name">{{ sol.name }}</span>
+                                <span class="paired-arrow">→</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <a href="{{ config.site.base_path }}/solutions/" class="aside-more">All solutions →</a>
+                </div>
+
+                <!-- Other Industries -->
                 <div class="aside-block">
-                    <h3>Other Industries</h3>
-                    <ul class="aside-links">
-                        {% for industry in config.industries %}
+                    <h3>Related Industries</h3>
+                    <div class="industry-pills">
+                        {% for industry in config.industries[:6] %}
                         {% if industry.url != page.url %}
-                        <li><a href="{{ config.site.base_path }}{{ industry.url }}">{{ industry.name }} →</a></li>
+                        <a href="{{ config.site.base_path }}{{ industry.url }}" class="industry-pill">{{ industry.name }}</a>
                         {% endif %}
                         {% endfor %}
-                    </ul>
+                    </div>
                 </div>
 
-                <div class="aside-block">
-                    <h3>Our Solutions</h3>
-                    <ul class="aside-links">
-                        {% for sol in config.solutions[:8] %}
-                        <li><a href="{{ config.site.base_path }}{{ sol.url }}">{{ sol.name }} →</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
+                <!-- Quick Contact -->
                 <div class="aside-cta">
-                    <p>Need automation for {{ page.short_title or page.title | lower }}?</p>
-                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat btn-block">Get a Quote</a>
+                    <p><strong>{{ page.short_title or page.title }} automation expert?</strong></p>
+                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat btn-block">Talk to Us</a>
                     <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="aside-phone">{{ config.social.phone }}</a>
+                </div>
+
+                <!-- Related Reading -->
+                <div class="aside-block">
+                    <h3>Related Reading</h3>
+                    <ul class="aside-articles">
+                        <li><a href="{{ config.site.base_path }}/blog/factory-automation-high-mix-low-volume/">High-Mix Low-Volume Automation →</a></li>
+                        <li><a href="{{ config.site.base_path }}/blog/custom-automation-vs-standard-equipment/">Custom vs Standard Equipment →</a></li>
+                    </ul>
                 </div>
             </aside>
         </div>
     </div>
 </section>
 
-<!-- Solutions for this Industry -->
-<section class="related-section">
+<!-- Solutions for This Industry -->
+<section class="also-viewed-section" id="all-solutions">
     <div class="container">
         <h2>Solutions for {{ page.short_title or page.title }}</h2>
-        <div class="related-list">
+        <p class="section-subtitle-sm">Explore automation technologies we apply in this industry</p>
+        <div class="also-viewed-grid">
             {% for sol in config.solutions %}
-            <a href="{{ config.site.base_path }}{{ sol.url }}" class="related-link-item">
-                <span class="related-link-name">{{ sol.name }}</span>
-                <span class="related-link-desc">{{ sol.description }}</span>
-                <span class="related-link-arrow">→</span>
+            <a href="{{ config.site.base_path }}{{ sol.url }}" class="also-viewed-card">
+                <h3>{{ sol.name }}</h3>
+                <p>{{ sol.description }}</p>
+                <span class="also-viewed-link">Learn more →</span>
             </a>
             {% endfor %}
         </div>
@@ -110,9 +152,9 @@
 </section>
 
 <!-- Other Industries -->
-<section class="industries-section-flat">
+<section class="industries-section-flat" id="other-industries">
     <div class="container">
-        <h2>Other Industries We Serve</h2>
+        <h2>Explore Other Industries</h2>
         <div class="industries-grid-flat">
             {% for industry in config.industries %}
             {% if industry.url != page.url %}

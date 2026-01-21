@@ -9,93 +9,218 @@
             <h1 class="hero-title">{{ page.hero_title or "Custom Automated Manufacturing Solutions" }}</h1>
             <p class="hero-subtitle">{{ page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals" }}</p>
             <div class="hero-buttons">
-                <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Request a Quote</a>
-                <a href="{{ config.site.base_path }}/solutions/" class="btn btn-text-light">Explore Solutions →</a>
+                <a href="#solutions-finder" class="btn btn-primary-flat">Find Your Solution</a>
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-text-light">Request a Quote →</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Introduction Section -->
-<section class="section-intro">
+<!-- Solutions Finder Quiz -->
+<section class="finder-section" id="solutions-finder">
     <div class="container">
-        <div class="intro-content">
-            <div class="intro-text">
-                <h2>Engineering Excellence Since 1993</h2>
-                <p>AMD Automation designs and builds custom automated manufacturing systems for companies across North America. With over 30 years of experience and 2,500+ machines delivered, we bring proven expertise to every project.</p>
-                <a href="{{ config.site.base_path }}/about/" class="link-arrow">About our company →</a>
+        <div class="finder-header">
+            <h2>What are you trying to automate?</h2>
+            <p>Select your primary need and we'll show you relevant solutions</p>
+        </div>
+        <div class="finder-options">
+            <a href="{{ config.site.base_path }}/solutions/robotic-cells/" class="finder-option" data-category="handling">
+                <span class="finder-icon">🤖</span>
+                <span class="finder-label">Material Handling & Loading</span>
+                <span class="finder-desc">Pick, place, load machines, move parts</span>
+            </a>
+            <a href="{{ config.site.base_path }}/solutions/assembly/" class="finder-option" data-category="assembly">
+                <span class="finder-icon">🔧</span>
+                <span class="finder-label">Assembly & Fastening</span>
+                <span class="finder-desc">Build products, insert components, fasten</span>
+            </a>
+            <a href="{{ config.site.base_path }}/solutions/welding/" class="finder-option" data-category="joining">
+                <span class="finder-icon">⚡</span>
+                <span class="finder-label">Welding & Joining</span>
+                <span class="finder-desc">Weld, bond, seal, join materials</span>
+            </a>
+            <a href="{{ config.site.base_path }}/solutions/test-systems/" class="finder-option" data-category="testing">
+                <span class="finder-icon">✓</span>
+                <span class="finder-label">Testing & Inspection</span>
+                <span class="finder-desc">Verify quality, detect defects, measure</span>
+            </a>
+            <a href="{{ config.site.base_path }}/solutions/machine-vision/" class="finder-option" data-category="vision">
+                <span class="finder-icon">👁</span>
+                <span class="finder-label">Vision & Guidance</span>
+                <span class="finder-desc">See, inspect, guide robots, read codes</span>
+            </a>
+            <a href="{{ config.site.base_path }}/solutions/palletizing/" class="finder-option" data-category="packaging">
+                <span class="finder-icon">📦</span>
+                <span class="finder-label">Packaging & Palletizing</span>
+                <span class="finder-desc">Pack, palletize, prepare for shipping</span>
+            </a>
+        </div>
+        <div class="finder-footer">
+            <p>Not sure? <a href="{{ config.site.base_path }}/solutions/">Browse all solutions →</a> or <a href="{{ config.site.base_path }}/contact/">talk to an engineer →</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof Bar -->
+<section class="proof-bar">
+    <div class="container">
+        <div class="proof-items">
+            <div class="proof-item">
+                <span class="proof-number">30+</span>
+                <span class="proof-label">Years Experience</span>
             </div>
-            <div class="intro-stats">
-                <div class="intro-stat">
-                    <span class="stat-num">30+</span>
-                    <span class="stat-text">Years Experience</span>
-                </div>
-                <div class="intro-stat">
-                    <span class="stat-num">2,500+</span>
-                    <span class="stat-text">Machines Built</span>
-                </div>
-                <div class="intro-stat">
-                    <span class="stat-num">150+</span>
-                    <span class="stat-text">Team Members</span>
-                </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+                <span class="proof-number">2,500+</span>
+                <span class="proof-label">Machines Delivered</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+                <span class="proof-number">150+</span>
+                <span class="proof-label">Engineers & Technicians</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+                <span class="proof-number">12</span>
+                <span class="proof-label">Industries Served</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Solutions Section -->
-<section class="section-solutions" id="solutions-section">
+<!-- Popular Solutions -->
+<section class="popular-section">
     <div class="container">
         <div class="section-header-flat">
-            <h2>Our Solutions</h2>
-            <p>Comprehensive automation solutions tailored to your specific manufacturing needs</p>
+            <h2>Popular Solutions</h2>
+            <p>Most requested automation systems</p>
         </div>
-        <div class="solutions-list">
-            {% set sol_images = {
-                'robot': 'placeholder-capability-robotic-cells.svg',
-                'welding': 'placeholder-capability-welding.svg',
-                'test': 'placeholder-capability-test-systems.svg',
-                'assembly': 'placeholder-capability-assembly.svg',
-                'custom': 'placeholder-capability-custom.svg',
-                'handling': 'placeholder-capability-material-handling.svg',
-                'vision': 'placeholder-solution-vision.svg'
-            } %}
-            {% for sol in config.solutions %}
-            <a href="{{ config.site.base_path }}{{ sol.url }}" class="solution-item">
-                <div class="solution-item-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.icon] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy">
-                </div>
-                <div class="solution-item-content">
-                    <h3>{{ sol.name }}</h3>
-                    <p>{{ sol.description }}</p>
-                    <span class="link-arrow">Read more →</span>
-                </div>
+        <div class="popular-grid">
+            <a href="{{ config.site.base_path }}/solutions/robotic-cells/" class="popular-card">
+                <span class="popular-badge">Most Popular</span>
+                <h3>Robotic Cells</h3>
+                <p>Flexible robotic workcells for welding, assembly, machine tending, and material handling.</p>
+                <span class="popular-link">Explore →</span>
             </a>
-            {% endfor %}
+            <a href="{{ config.site.base_path }}/solutions/assembly/" class="popular-card">
+                <h3>Assembly Systems</h3>
+                <p>Semi-automatic and fully automatic assembly lines with error-proofing and verification.</p>
+                <span class="popular-link">Explore →</span>
+            </a>
+            <a href="{{ config.site.base_path }}/solutions/machine-vision/" class="popular-card">
+                <span class="popular-badge">Trending</span>
+                <h3>Machine Vision</h3>
+                <p>AI-powered inspection, measurement, and robot guidance systems.</p>
+                <span class="popular-link">Explore →</span>
+            </a>
+            <a href="{{ config.site.base_path }}/solutions/test-systems/" class="popular-card">
+                <h3>Test Systems</h3>
+                <p>Leak testing, electrical testing, functional verification, and end-of-line testing.</p>
+                <span class="popular-link">Explore →</span>
+            </a>
         </div>
-        <div class="section-footer">
-            <a href="{{ config.site.base_path }}/solutions/" class="link-arrow-lg">View all solutions →</a>
+        <div class="section-more">
+            <a href="{{ config.site.base_path }}/solutions/" class="link-arrow-lg">View all 15+ solutions →</a>
         </div>
     </div>
 </section>
 
-<!-- Industries Section -->
-<section class="section-industries" id="industries-section">
+<!-- Industry Navigator -->
+<section class="industry-navigator">
     <div class="container">
         <div class="section-header-flat">
-            <h2>Industries We Serve</h2>
-            <p>Delivering automation solutions across diverse manufacturing sectors</p>
+            <h2>Find Solutions for Your Industry</h2>
+            <p>We understand your industry's unique requirements</p>
         </div>
-        <div class="industries-list">
-            {% for ind in config.industries %}
-            <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-item">
-                <span class="industry-name">{{ ind.name }}</span>
-                <span class="industry-arrow">→</span>
+        <div class="industry-tabs">
+            <a href="{{ config.site.base_path }}/industries/automotive/" class="industry-tab">
+                <span class="tab-name">Automotive</span>
+                <span class="tab-examples">Powertrain, body, interior, EV</span>
             </a>
-            {% endfor %}
+            <a href="{{ config.site.base_path }}/industries/medical/" class="industry-tab">
+                <span class="tab-name">Medical Devices</span>
+                <span class="tab-examples">Implants, disposables, instruments</span>
+            </a>
+            <a href="{{ config.site.base_path }}/industries/aerospace/" class="industry-tab">
+                <span class="tab-name">Aerospace</span>
+                <span class="tab-examples">Structures, engines, interiors</span>
+            </a>
+            <a href="{{ config.site.base_path }}/industries/electronics/" class="industry-tab">
+                <span class="tab-name">Electronics</span>
+                <span class="tab-examples">PCB, assembly, testing</span>
+            </a>
+            <a href="{{ config.site.base_path }}/industries/consumer/" class="industry-tab">
+                <span class="tab-name">Consumer Products</span>
+                <span class="tab-examples">Packaging, assembly, quality</span>
+            </a>
+            <a href="{{ config.site.base_path }}/industries/food-beverage/" class="industry-tab">
+                <span class="tab-name">Food & Beverage</span>
+                <span class="tab-examples">Packaging, handling, inspection</span>
+            </a>
         </div>
-        <div class="section-footer">
-            <a href="{{ config.site.base_path }}/industries/" class="link-arrow-lg">View all industries →</a>
+        <div class="industry-more">
+            <a href="{{ config.site.base_path }}/industries/">View all 12 industries →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Recently Added / Featured Content -->
+<section class="featured-section">
+    <div class="container">
+        <div class="featured-grid">
+            <div class="featured-main">
+                <span class="featured-badge">From Our Blog</span>
+                <h3>How Custom Automated Machines Are Designed</h3>
+                <p>Go behind the scenes of our engineering process—from concept through commissioning.</p>
+                <a href="{{ config.site.base_path }}/blog/how-custom-automated-machines-are-designed/" class="link-arrow">Read the article →</a>
+            </div>
+            <div class="featured-side">
+                <h4>Also Popular</h4>
+                <ul class="featured-list">
+                    <li><a href="{{ config.site.base_path }}/blog/roi-of-robotic-automation/">Calculating ROI of Robotic Automation →</a></li>
+                    <li><a href="{{ config.site.base_path }}/blog/automation-cells-vs-production-lines/">Cells vs. Production Lines →</a></li>
+                    <li><a href="{{ config.site.base_path }}/blog/choosing-right-robot-for-your-application/">Choosing the Right Robot →</a></li>
+                </ul>
+                <a href="{{ config.site.base_path }}/blog/" class="link-arrow">All articles →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How We Work -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header-flat">
+            <h2>How We Work</h2>
+            <p>From your challenge to your solution</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <span class="step-number">1</span>
+                <h3>Discover</h3>
+                <p>We learn your products, processes, and goals</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <span class="step-number">2</span>
+                <h3>Design</h3>
+                <p>Our engineers create your custom solution</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <span class="step-number">3</span>
+                <h3>Build</h3>
+                <p>We manufacture and test in our facility</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+                <span class="step-number">4</span>
+                <h3>Deploy</h3>
+                <p>Installation, training, and ongoing support</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="{{ config.site.base_path }}/about/" class="link-arrow">Learn more about our process →</a>
         </div>
     </div>
 </section>
@@ -106,7 +231,10 @@
         <div class="cta-flat-content">
             <h2>Ready to discuss your project?</h2>
             <p>Our engineering team is ready to evaluate your requirements and recommend the right automation approach.</p>
-            <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Contact Us</a>
+            <div class="cta-buttons-row">
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Contact Us</a>
+                <a href="tel:+15551234567" class="btn btn-text-dark">Or call: (555) 123-4567</a>
+            </div>
         </div>
     </div>
 </section>
