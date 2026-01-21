@@ -18,7 +18,7 @@
             <article class="blog-card">
                 {% if post.image %}
                 <div class="blog-card-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ post.image }}" alt="{{ post.title }}">
+                    <img src="{{ config.site.base_path }}/static/images/{{ post.image }}" alt="{{ post.title }}" loading="lazy" width="800" height="450">
                 </div>
                 {% endif %}
                 <div class="blog-card-body">

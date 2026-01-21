@@ -64,7 +64,7 @@
                         {% for cap in config.capabilities %}
                         <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card">
                             <div class="capability-image">
-                                <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.icon] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}">
+                                <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.icon] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}" loading="lazy" width="400" height="300">
                             </div>
                             <h3>{{ cap.name }}</h3>
                             <p>{{ cap.description }}</p>
@@ -93,7 +93,7 @@
                         {% for ind in config.industries %}
                         <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-card">
                             <div class="industry-image">
-                                <img src="{{ config.site.base_path }}/static/images/{{ ind_images[ind.icon] | default('placeholder-card-1.svg') }}" alt="{{ ind.name }}">
+                                <img src="{{ config.site.base_path }}/static/images/{{ ind_images[ind.icon] | default('placeholder-card-1.svg') }}" alt="{{ ind.name }}" loading="lazy" width="400" height="300">
                             </div>
                             <h3>{{ ind.name }}</h3>
                         </a>
@@ -117,7 +117,7 @@
                     <!-- Featured Project -->
                     <div class="sidebar-widget sidebar-featured">
                         <div class="sidebar-featured-image">
-                            <img src="{{ config.site.base_path }}/static/images/placeholder-hero-featured.svg" alt="Featured Project">
+                            <img src="{{ config.site.base_path }}/static/images/placeholder-hero-featured.svg" alt="Featured Project" loading="lazy" width="400" height="200">
                         </div>
                         <div class="sidebar-featured-content">
                             <span class="sidebar-label">Featured Project</span>

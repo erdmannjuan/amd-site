@@ -52,7 +52,7 @@
             <article class="article-content">
                 {% if page.image %}
                 <div class="article-featured-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ page.image }}" alt="{{ page.title }}">
+                    <img src="{{ config.site.base_path }}/static/images/{{ page.image }}" alt="{{ page.title }}" loading="lazy" width="800" height="450">
                 </div>
                 {% endif %}
 

@@ -20,13 +20,13 @@
             <div class="equipment-gallery">
                 {% if page.images %}
                 <div class="main-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ page.images[0] }}" alt="{{ page.title }}" id="main-img">
+                    <img src="{{ config.site.base_path }}/static/images/{{ page.images[0] }}" alt="{{ page.title }}" id="main-img" width="600" height="400">
                 </div>
                 {% if page.images|length > 1 %}
                 <div class="thumbnail-row">
                     {% for img in page.images %}
                     <div class="thumbnail {% if loop.first %}active{% endif %}" onclick="changeImage('{{ config.site.base_path }}/static/images/{{ img }}', this)">
-                        <img src="{{ config.site.base_path }}/static/images/{{ img }}" alt="{{ page.title }} - Image {{ loop.index }}">
+                        <img src="{{ config.site.base_path }}/static/images/{{ img }}" alt="{{ page.title }} - Image {{ loop.index }}" loading="lazy" width="100" height="75">
                     </div>
                     {% endfor %}
                 </div>
@@ -93,7 +93,7 @@
             {% for related in page.related_pages %}
             <a href="{{ config.site.base_path }}{{ related.url }}" class="related-card">
                 {% if related.image %}
-                <img src="{{ config.site.base_path }}/static/images/{{ related.image }}" alt="{{ related.title }}">
+                <img src="{{ config.site.base_path }}/static/images/{{ related.image }}" alt="{{ related.title }}" loading="lazy" width="400" height="300">
                 {% endif %}
                 <h3>{{ related.title }}</h3>
                 <p>{{ related.excerpt }}</p>

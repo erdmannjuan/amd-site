@@ -25,7 +25,7 @@
             <div class="content-main">
                 <!-- Featured Image -->
                 <div class="content-featured-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ page.featured_image | default('placeholder-capability-' ~ (page.slug | default('robotic-cells')) ~ '.svg') }}" alt="{{ page.title }}">
+                    <img src="{{ config.site.base_path }}/static/images/{{ page.featured_image | default('placeholder-capability-' ~ (page.slug | default('robotic-cells')) ~ '.svg') }}" alt="{{ page.title }}" loading="lazy" width="800" height="600">
                 </div>
 
                 <div class="content-body prose">
@@ -155,7 +155,7 @@
             <a href="{{ config.site.base_path }}{{ cap.url }}" class="related-item" data-content-id="{{ cap.name | lower | replace(' ', '-') }}">
                 <div class="related-item-inner">
                     <div class="related-image">
-                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}">
+                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}" loading="lazy" width="400" height="300">
                     </div>
                     <h3>{{ cap.name }}</h3>
                     <p>{{ cap.description }}</p>

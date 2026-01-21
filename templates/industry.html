@@ -33,7 +33,7 @@
                     'food-beverage': 'placeholder-industry-food.svg'
                 } %}
                 <div class="content-featured-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ page.featured_image | default(industry_images[page.url.split('/')[-2]] | default('placeholder-industry-automotive.svg')) }}" alt="{{ page.title }}">
+                    <img src="{{ config.site.base_path }}/static/images/{{ page.featured_image | default(industry_images[page.url.split('/')[-2]] | default('placeholder-industry-automotive.svg')) }}" alt="{{ page.title }}" loading="lazy" width="800" height="600">
                 </div>
 
                 <div class="content-body prose">
@@ -147,7 +147,7 @@
             <a href="{{ config.site.base_path }}{{ cap.url }}" class="related-item" data-content-id="{{ cap.name | lower | replace(' ', '-') }}">
                 <div class="related-item-inner">
                     <div class="related-image">
-                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}">
+                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}" loading="lazy" width="400" height="300">
                     </div>
                     <h3>{{ cap.name }}</h3>
                     <p>{{ cap.description }}</p>
@@ -179,7 +179,7 @@
             {% if industry.url != page.url %}
             <a href="{{ config.site.base_path }}{{ industry.url }}" class="industry-card">
                 <div class="industry-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ ind_images[industry.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ industry.name }}">
+                    <img src="{{ config.site.base_path }}/static/images/{{ ind_images[industry.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ industry.name }}" loading="lazy" width="400" height="300">
                 </div>
                 <h3>{{ industry.name }}</h3>
             </a>

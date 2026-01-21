@@ -26,7 +26,7 @@
                 <a href="{{ config.site.base_path }}{{ equip.url }}" class="card equipment-card">
                     <div class="card-image">
                         {% if equip.frontmatter.images %}
-                        <img src="{{ config.site.base_path }}/static/images/{{ equip.frontmatter.images[0] }}" alt="{{ equip.frontmatter.title }}">
+                        <img src="{{ config.site.base_path }}/static/images/{{ equip.frontmatter.images[0] }}" alt="{{ equip.frontmatter.title }}" loading="lazy" width="400" height="300">
                         {% else %}
                         <div class="card-placeholder">
                             <span>No Image</span>

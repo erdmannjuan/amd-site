@@ -90,7 +90,7 @@
             <a href="{{ config.site.base_path }}{{ related.url }}" class="related-item" data-content-id="{{ related.title | lower | replace(' ', '-') }}">
                 <div class="related-item-inner">
                     {% if related.image %}
-                    <img src="{{ config.site.base_path }}/static/images/{{ related.image }}" alt="{{ related.title }}">
+                    <img src="{{ config.site.base_path }}/static/images/{{ related.image }}" alt="{{ related.title }}" loading="lazy" width="400" height="300">
                     {% endif %}
                     <h3>{{ related.title }}</h3>
                     <p>{{ related.excerpt }}</p>
