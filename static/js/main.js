@@ -360,6 +360,37 @@
     }
 
     // ===========================================
+    // HOMEPAGE STICKY SIDEBAR
+    // ===========================================
+    function initHomepageSidebar() {
+        const stickyEl = document.querySelector('.sidebar-sticky');
+        const container = document.querySelector('.homepage-grid');
+
+        if (!stickyEl || !container || window.innerWidth <= 992) return;
+
+        const offset = 112; // header + padding
+
+        window.addEventListener('scroll', function() {
+            if (window.innerWidth <= 992) return;
+
+            const containerRect = container.getBoundingClientRect();
+            const stickyHeight = stickyEl.offsetHeight;
+
+            // When container top goes above the offset point
+            if (containerRect.top < offset && containerRect.bottom > stickyHeight + offset) {
+                stickyEl.classList.add('is-sticky');
+                stickyEl.classList.remove('is-bottom');
+            } else if (containerRect.bottom <= stickyHeight + offset) {
+                stickyEl.classList.remove('is-sticky');
+                stickyEl.classList.add('is-bottom');
+            } else {
+                stickyEl.classList.remove('is-sticky');
+                stickyEl.classList.remove('is-bottom');
+            }
+        }, { passive: true });
+    }
+
+    // ===========================================
     // INITIALIZE ALL
     // ===========================================
     document.addEventListener('DOMContentLoaded', function() {
@@ -370,6 +401,7 @@
         initSmoothScroll();
         initRelatedContentAB();
         initSidebarNav();
+        initHomepageSidebar();
     });
 
     // Expose ABTest for external use
