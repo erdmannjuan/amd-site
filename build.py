@@ -236,6 +236,12 @@ def build_site():
         if headers_src.exists():
             shutil.copy(headers_src, OUTPUT_DIR / '_headers')
             print("  ✓ Copied _headers file")
+
+        # Copy _redirects file for URL redirects (Netlify/Cloudflare)
+        redirects_src = BASE_DIR / '_redirects'
+        if redirects_src.exists():
+            shutil.copy(redirects_src, OUTPUT_DIR / '_redirects')
+            print("  ✓ Copied _redirects file")
     
     pages = get_all_pages(CONTENT_DIR)
     print(f"\n  Found {len(pages)} page(s) to build:\n")

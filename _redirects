@@ -1,0 +1,43 @@
+# 301 Redirects - Old amdmachines.com URLs to new structure
+# Format: old-path new-path status-code
+
+# About page
+/about-us/ /about/ 301
+
+# Solutions (automated-solutions -> solutions)
+/automated-solutions/ /solutions/ 301
+/automated-solutions/welding/ /solutions/welding/ 301
+/automated-solutions/robotic-cells/ /solutions/robotic-cells/ 301
+/automated-solutions/test-systems/ /solutions/test-systems/ 301
+/automated-solutions/custom-automation-equipment/ /solutions/custom-automation/ 301
+/automated-solutions/flexible-assembly-machines/ /solutions/assembly/ 301
+/automated-solutions/leak-detection/ /solutions/test-systems/ 301
+
+# Root-level solution pages to /solutions/
+/material-handling/ /solutions/material-handling/ 301
+/robotic-screwdriving/ /solutions/screwdriving/ 301
+/bin-picking/ /solutions/bin-picking/ 301
+/interactive-assembly-line/ /solutions/assembly/ 301
+
+# Industries
+/industries/automotive-auto-parts/ /industries/automotive/ 301
+/industries/manufacturing/ /industries/general-manufacturing/ 301
+
+# Blog redirects (old slugs to new equivalents)
+/blog/automated-assembly-machines-a-selection-guide/ /blog/automated-assembly-machines/ 301
+/blog/understanding-vision-inspection-systems/ /blog/introduction-to-machine-vision-for-manufacturing/ 301
+/blog/ins-outs-helium-leak-testing-equipment/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
+/blog/facts-about-hot-plate-welding/ /blog/heat-staking-and-hot-plate-welding-applications/ 301
+/blog/what-does-a-fully-automated-assembly-line-look-like/ /blog/automated-assembly-machines/ 301
+/blog/what-can-vision-measuring-systems-accomplish/ /blog/dimensional-inspection-with-cmms-and-vision/ 301
+/blog/understanding-rotor-and-stator-tests-for-electric-motors/ /blog/electrical-testing-in-automated-production/ 301
+/blog/how-to-choose-the-right-leak-testing-equipment-for-your-application/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
+
+# Missing pages - redirect to closest equivalent
+/ebooks/ /blog/ 301
+/amd-mexico/ /contact/ 301
+/case-studies/cnc-machining/ /solutions/machine-tending/ 301
+/case-studies/ /blog/ 301
+
+# Catch any UTM parameters (these pass through automatically, but explicit for clarity)
+# /?utm_source=* passes through to / automatically
