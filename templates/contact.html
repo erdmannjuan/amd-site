@@ -60,7 +60,11 @@
             <!-- Contact Form -->
             <div class="contact-form-wrapper">
                 <h2>Request a Quote</h2>
-                <p>Fill out the form below and we'll get back to you within one business day.</p>
+                <div class="response-time-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                    <span>We respond in under 3 hours during weekdays</span>
+                </div>
+                <p>Fill out the form below and our engineering team will reach out to discuss your project.</p>
 
                 <form class="contact-form" id="contact-form">
                     <div class="form-row">
@@ -192,7 +196,7 @@
             );
 
             if (response.ok) {
-                formStatus.innerHTML = '<p class="success">Thank you! Your request has been submitted. We\'ll be in touch within one business day.</p>';
+                formStatus.innerHTML = '<p class="success">Thank you! Your request has been submitted. Expect a response from our team within 3 hours during weekdays.</p>';
                 form.reset();
             } else {
                 const errorData = await response.json();

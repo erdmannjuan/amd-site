@@ -587,6 +587,111 @@ img {
     box-shadow: var(--shadow-md);
 }
 
+.btn-orange {
+    background: var(--accent-orange);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.btn-orange:hover {
+    background: var(--accent-orange-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(251, 85, 40, 0.4);
+}
+
+/* Quick Contact Banner */
+.quick-contact-banner {
+    background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-dark) 100%);
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.quick-contact-banner .banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--white);
+}
+
+.quick-contact-banner .banner-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.quick-contact-banner .banner-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--white);
+}
+
+.quick-contact-banner .banner-text h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    color: var(--white);
+}
+
+.quick-contact-banner .banner-text p {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.95;
+    color: var(--white);
+}
+
+.quick-contact-banner .banner-text .response-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: rgba(255,255,255,0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.35rem;
+}
+
+.quick-contact-banner .btn {
+    background: var(--white);
+    color: var(--accent-orange);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.quick-contact-banner .btn:hover {
+    background: var(--off-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 600px) {
+    .quick-contact-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem;
+    }
+
+    .quick-contact-banner .banner-content {
+        flex-direction: column;
+    }
+
+    .quick-contact-banner .btn {
+        width: 100%;
+    }
+}
+
 .btn-secondary {
     background: var(--secondary);
     color: var(--white);
@@ -2610,7 +2715,40 @@ button:disabled {
 .contact-info > p,
 .contact-form-wrapper > p {
     color: var(--text-light);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Response Time Badge */
+.response-time-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-orange-light);
+    color: var(--accent-orange-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.response-time-badge svg {
+    stroke: var(--accent-orange);
+}
+
+.form-response-time {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--accent-orange);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.form-response-time svg {
+    stroke: var(--accent-orange);
+    flex-shrink: 0;
 }
 
 .contact-methods {
