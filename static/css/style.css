@@ -247,13 +247,15 @@ img {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     line-height: 1;
     letter-spacing: 0.02em;
     color: var(--dark);
-    display: flex;
+    display: inline-flex;
     align-items: baseline;
     gap: 0.35rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid var(--primary);
 }
 
 .logo-amd {
@@ -1570,12 +1572,14 @@ img {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     color: var(--white);
     text-decoration: none;
-    display: block;
+    display: inline-block;
     line-height: 1.1;
     margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid var(--primary);
 }
 
 .footer-logo .logo-amd,
