@@ -711,14 +711,29 @@ img {
 
 .section-subtitle {
     font-size: 1.15rem;
-    color: var(--text-light);
+    color: var(--text);
     line-height: 1.7;
     max-width: 700px;
     margin: 0 auto;
 }
 
-.section-dark .section-subtitle {
-    color: rgba(255,255,255,0.8);
+.section-dark .section-subtitle,
+.section-navy .section-subtitle,
+.section-primary .section-subtitle {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Ensure good contrast on gray backgrounds */
+.section-gray .section-title,
+.section-light .section-title,
+.homepage-section-gray .section-title {
+    color: var(--dark);
+}
+
+.section-gray .section-subtitle,
+.section-light .section-subtitle,
+.homepage-section-gray .section-subtitle {
+    color: var(--text);
 }
 
 /* ================================
@@ -939,7 +954,7 @@ img {
 
 .stat-label {
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.9);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 500;
@@ -1008,11 +1023,13 @@ img {
 /* Homepage Sidebar */
 .homepage-sidebar {
     position: relative;
+    align-self: start;
 }
 
 .sidebar-sticky {
+    position: -webkit-sticky;
     position: sticky;
-    top: calc(var(--header-height) + 2rem);
+    top: 100px;
 }
 
 .sidebar-widget {
@@ -1259,7 +1276,7 @@ img {
 }
 
 .capability-card p {
-    color: var(--text-light);
+    color: var(--text);
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -1881,7 +1898,7 @@ img {
 }
 
 .footer-section p {
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.9);
     font-size: 0.95rem;
     line-height: 1.7;
 }
@@ -1924,7 +1941,7 @@ img {
 }
 
 .footer-links a {
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.9);
     font-size: 0.95rem;
     transition: var(--transition);
     display: inline-flex;
@@ -1956,8 +1973,16 @@ img {
     align-items: flex-start;
     gap: 0.75rem;
     margin-bottom: 1rem;
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.9);
     font-size: 0.95rem;
+}
+
+.contact-info a {
+    color: rgba(255,255,255,0.9);
+}
+
+.contact-info a:hover {
+    color: var(--white);
 }
 
 .contact-info li span:first-child {
@@ -1988,17 +2013,17 @@ img {
 }
 
 .footer-bottom p {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.85);
     font-size: 0.875rem;
     margin: 0;
 }
 
 .footer-bottom a {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.85);
 }
 
 .footer-bottom a:hover {
-    color: var(--secondary);
+    color: var(--white);
 }
 
 .footer-social {
