@@ -3489,17 +3489,17 @@ button:disabled {
    ================================ */
 .capabilities-showcase,
 .solutions-showcase {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .capability-showcase-item,
 .solution-showcase-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 200px 1fr;
+    gap: 1.25rem;
     align-items: center;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-light);
 }
 
 .capability-showcase-item:last-child,
@@ -3509,7 +3509,8 @@ button:disabled {
 
 .capability-showcase-item.layout-right,
 .solution-showcase-item.layout-right {
-    direction: rtl;
+    direction: ltr;
+    grid-template-columns: 200px 1fr;
 }
 
 .capability-showcase-item.layout-right > *,
@@ -3520,18 +3521,19 @@ button:disabled {
 .capability-showcase-image,
 .solution-showcase-image {
     position: relative;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-sm);
+    max-height: 120px;
 }
 
 .capability-showcase-image img,
 .solution-showcase-image img {
     width: 100%;
-    height: 100%;
+    height: 120px;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .capability-showcase-image:hover img,
@@ -3547,7 +3549,7 @@ button:disabled {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 0.75rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -3561,29 +3563,23 @@ button:disabled {
 .solution-showcase-overlay span {
     color: var(--white);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .capability-showcase-content,
 .solution-showcase-content {
-    padding: 1rem 0;
+    padding: 0;
 }
 
 .capability-number,
 .solution-number {
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--accent-teal);
-    opacity: 0.3;
-    line-height: 1;
-    margin-bottom: 0.5rem;
+    display: none;
 }
 
 .capability-showcase-content h2,
 .solution-showcase-content h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
     color: var(--dark);
 }
 
@@ -3601,26 +3597,30 @@ button:disabled {
 
 .capability-desc,
 .solution-desc {
-    font-size: 1.05rem;
-    color: var(--text);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.capability-showcase-content .btn,
+.solution-showcase-content .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
 }
 
 .capability-resources,
 .solution-resources {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
+    display: none;
 }
 
 .capability-resources h4,
 .solution-resources h4 {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--text-muted);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .capability-resources ul,
@@ -3632,13 +3632,13 @@ button:disabled {
 
 .capability-resources li,
 .solution-resources li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .capability-resources a,
 .solution-resources a {
     color: var(--accent-teal);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -3713,23 +3713,43 @@ button:disabled {
 @media (max-width: 900px) {
     .capability-showcase-item,
     .solution-showcase-item {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-columns: 120px 1fr;
+        gap: 1rem;
     }
 
     .capability-showcase-item.layout-right,
     .solution-showcase-item.layout-right {
         direction: ltr;
+        grid-template-columns: 120px 1fr;
     }
 
-    .capability-number,
-    .solution-number {
-        font-size: 2.5rem;
+    .capability-showcase-image img,
+    .solution-showcase-image img {
+        height: 80px;
+    }
+
+    .capability-showcase-image,
+    .solution-showcase-image {
+        max-height: 80px;
     }
 
     .capability-showcase-content h2,
     .solution-showcase-content h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .capability-desc,
+    .solution-desc {
+        font-size: 0.85rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .capability-showcase-content .btn,
+    .solution-showcase-content .btn {
+        display: none;
     }
 }
 
