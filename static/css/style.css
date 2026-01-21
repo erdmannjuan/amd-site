@@ -291,6 +291,16 @@ img {
     color: inherit;
 }
 
+/* Mobile logo - 20% smaller */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 2.4rem;
+        gap: 0.3rem;
+        padding-bottom: 0.4rem;
+        border-bottom-width: 6px;
+    }
+}
+
 /* Enhanced Navigation */
 .main-nav {
     display: flex;
