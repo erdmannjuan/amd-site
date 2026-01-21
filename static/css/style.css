@@ -200,8 +200,8 @@ img {
     }
 }
 
-/* Main Header */
-.site-header {
+/* Header Wrapper - Makes entire double-line header sticky */
+.header-wrapper {
     position: sticky;
     top: 0;
     left: 0;
@@ -209,11 +209,21 @@ img {
     z-index: 1000;
     background: var(--white);
     transition: var(--transition);
+}
+
+.header-wrapper.scrolled {
+    box-shadow: var(--shadow-md);
+}
+
+/* Main Header */
+.site-header {
+    background: var(--white);
+    transition: var(--transition);
     border-bottom: 1px solid var(--border-light);
 }
 
 .site-header.scrolled {
-    box-shadow: var(--shadow-md);
+    box-shadow: none;
 }
 
 .header-top {

@@ -80,29 +80,19 @@
     // HEADER SCROLL BEHAVIOR
     // ===========================================
     function initHeaderScroll() {
-        const header = document.querySelector('.site-header');
-        let lastScroll = 0;
+        const headerWrapper = document.querySelector('.header-wrapper');
 
-        if (!header) return;
+        if (!headerWrapper) return;
 
         function handleScroll() {
             const currentScroll = window.pageYOffset;
 
             // Add scrolled class when past threshold
             if (currentScroll > CONFIG.scrollThreshold) {
-                header.classList.add('scrolled');
+                headerWrapper.classList.add('scrolled');
             } else {
-                header.classList.remove('scrolled');
+                headerWrapper.classList.remove('scrolled');
             }
-
-            // Hide/show header on scroll direction (optional)
-            if (currentScroll > lastScroll && currentScroll > 200) {
-                header.classList.add('header-hidden');
-            } else {
-                header.classList.remove('header-hidden');
-            }
-
-            lastScroll = currentScroll;
         }
 
         window.addEventListener('scroll', handleScroll, { passive: true });
