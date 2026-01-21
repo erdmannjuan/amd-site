@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero - Compact -->
+<section class="page-hero page-hero-compact">
+    <div class="container">
+        <span class="section-label">{{ page.label or "What We Offer" }}</span>
+        <h1 class="page-title">{{ page.hero_title or "Our Services" }}</h1>
+        <p class="page-subtitle">{{ page.hero_subtitle or "Comprehensive automation services to support your manufacturing operations" }}</p>
+    </div>
+</section>
+
+<!-- Services Visual Grid -->
+<section class="section solutions-showcase">
+    <div class="container">
+        {% set svc_images = {
+            'programming': 'placeholder-capability-robotic-cells.svg',
+            'optimization': 'placeholder-capability-test-systems.svg',
+            'spare-parts': 'placeholder-capability-material-handling.svg',
+            'digital-twins': 'placeholder-capability-custom.svg',
+            'upgrades': 'placeholder-capability-welding.svg',
+            'training': 'placeholder-capability-assembly.svg',
+            'maintenance': 'placeholder-solution-vision.svg',
+            'consulting': 'placeholder-capability-test-systems.svg'
+        } %}
+
+        {% set svc_blogs = {
+            'programming': [
+                {'title': 'Programming Industrial Robots: Online vs Offline', 'url': '/blog/programming-industrial-robots-online-vs-offline-methods/'},
+                {'title': 'The Role of AI in Smart Manufacturing', 'url': '/blog/the-role-of-ai-in-smart-manufacturing/'}
+            ],
+            'optimization': [
+                {'title': 'ROI of Robotic Automation', 'url': '/blog/roi-of-robotic-automation/'},
+                {'title': 'Factory Automation for High-Mix Low-Volume', 'url': '/blog/factory-automation-high-mix-low-volume/'}
+            ],
+            'spare-parts': [
+                {'title': 'Industrial Automation Equipment Explained', 'url': '/blog/industrial-automation-equipment-explained/'}
+            ],
+            'digital-twins': [
+                {'title': 'Digital Twin Adoption Doubles in Manufacturing', 'url': '/blog/digital-twin-adoption-doubles-in-manufacturing/'},
+                {'title': 'The Role of AI in Smart Manufacturing', 'url': '/blog/the-role-of-ai-in-smart-manufacturing/'}
+            ],
+            'upgrades': [
+                {'title': 'Custom vs Standard Automation Equipment', 'url': '/blog/custom-automation-vs-standard-equipment/'}
+            ],
+            'training': [
+                {'title': 'What Is Industrial Automation', 'url': '/blog/what-is-industrial-automation/'}
+            ],
+            'maintenance': [
+                {'title': 'AI Predictive Maintenance Reduces Unplanned Downtime', 'url': '/blog/ai-predictive-maintenance-reduces-unplanned-downtime-50/'}
+            ],
+            'consulting': [
+                {'title': 'Manufacturing Automation Systems', 'url': '/blog/manufacturing-automation-systems-concept-to-commissioning/'},
+                {'title': 'How Custom Automated Machines Are Designed', 'url': '/blog/how-custom-automated-machines-are-designed/'}
+            ]
+        } %}
+
+        {% for svc in config.services_featured %}
+        <div class="solution-showcase-item {% if loop.index is odd %}layout-left{% else %}layout-right{% endif %}">
+            <div class="solution-showcase-image">
+                <a href="{{ config.site.base_path }}{{ svc.url }}">
+                    <img src="{{ config.site.base_path }}/static/images/{{ svc_images[svc.icon] | default('placeholder-card-1.svg') }}" alt="{{ svc.name }}" loading="lazy" width="600" height="400">
+                    <div class="solution-showcase-overlay">
+                        <span>Learn About {{ svc.name }}</span>
+                    </div>
+                </a>
+            </div>
+            <div class="solution-showcase-content">
+                <span class="solution-number">0{{ loop.index }}</span>
+                <h2><a href="{{ config.site.base_path }}{{ svc.url }}">{{ svc.name }}</a></h2>
+                <p class="solution-desc">{{ svc.description }}</p>
+                <a href="{{ config.site.base_path }}{{ svc.url }}" class="btn btn-outline">Learn More</a>
+
+                {% if svc_blogs[svc.icon] %}
+                <div class="solution-resources">
+                    <h4>Related Resources</h4>
+                    <ul>
+                        {% for blog in svc_blogs[svc.icon] %}
+                        <li><a href="{{ config.site.base_path }}{{ blog.url }}">{{ blog.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- All Services Grid -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Complete Offering</span>
+            <h2 class="section-title">All Services</h2>
+        </div>
+        <div class="all-solutions-grid">
+            {% for svc in config.all_services %}
+            <a href="{{ config.site.base_path }}{{ svc.url }}" class="all-solution-card">
+                <span class="all-solution-name">{{ svc.name }}</span>
+                <span class="all-solution-arrow">&rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose AMD Services -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Why AMD</span>
+            <h2 class="section-title">The AMD Advantage</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon" style="background: var(--accent-teal);">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                </div>
+                <h3>Rapid Response</h3>
+                <p>24/7 support availability with fast turnaround on critical service requests to minimize your downtime.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background: var(--accent-orange);">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Deep Expertise</h3>
+                <p>Our engineers have 30+ years combined experience across all major robot brands and automation platforms.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background: var(--accent-teal);">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h3>Full-Service Support</h3>
+                <p>From programming to maintenance, parts to training, we provide comprehensive lifecycle support.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background: var(--accent-orange);">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Trusted Partner</h3>
+                <p>Authorized integrator for major brands with direct access to OEM support and resources.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content from markdown (if any) -->
+{% if content %}
+<section class="section section-alt">
+    <div class="container">
+        <div class="content-body content-card">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section cta-accent">
+    <div class="container">
+        <h2>Need Service Support?</h2>
+        <p>Contact our team for fast, expert assistance with your automation systems.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Get Support</a>
+    </div>
+</section>
+{% endblock %}
