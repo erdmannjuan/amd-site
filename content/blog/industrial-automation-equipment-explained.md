@@ -32,7 +32,7 @@ Six-axis articulated robots resemble a human arm with rotational joints. They of
 - Complex path capabilities
 - Typical payloads from 5 to 500+ kg
 
-Articulated robots dominate [welding](/capabilities/welding/), material handling, and assembly applications. Leading manufacturers include FANUC, ABB, KUKA, and Yaskawa.
+Articulated robots dominate [welding](/solutions/welding/), material handling, and assembly applications. Leading manufacturers include FANUC, ABB, KUKA, and Yaskawa.
 
 ### SCARA Robots
 
@@ -214,7 +214,7 @@ Vision systems connect to automation through:
 - Database storage for images and data
 - MES integration for traceability
 
-[Machine vision systems](/capabilities/machine-vision/) are essential for quality assurance in automated manufacturing.
+[Machine vision systems](/solutions/machine-vision/) are essential for quality assurance in automated manufacturing.
 
 ## Control Systems
 

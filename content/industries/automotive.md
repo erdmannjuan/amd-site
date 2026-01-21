@@ -38,21 +38,21 @@ AMD Automation has deep roots in automotive manufacturing, serving OEMs and Tier
 Our team has delivered hundreds of automation systems for automotive applications:
 
 ### Body-in-White & Structural Welding
-Our [robotic welding systems](/capabilities/welding/) handle high-volume production of:
+Our [robotic welding systems](/solutions/welding/) handle high-volume production of:
 - Chassis frames and crossmembers
 - Body structural assemblies
 - Subframes and cradles
 - Exhaust systems and catalytic converters
 
 ### Powertrain Assembly Automation
-Precision [assembly machines](/capabilities/assembly/) for:
+Precision [assembly machines](/solutions/assembly/) for:
 - Engine block and head assembly
 - Transmission assembly and testing
 - Electric motor and generator assembly
 - Torque converter and clutch assembly
 
 ### End-of-Line Testing Systems
-Our [automated test systems](/capabilities/test-systems/) ensure quality with:
+Our [automated test systems](/solutions/test-systems/) ensure quality with:
 - Leak testing for powertrain components
 - Functional testing for electronics and actuators
 - Vision inspection for surface defects
@@ -89,6 +89,6 @@ We've delivered automation solutions to leading automotive manufacturers and sup
 
 We serve suppliers at every level, from large Tier 1 system integrators to smaller Tier 3 component manufacturers. Our solutions scale to match your production volumes and investment requirements.
 
-Whether you need a single [robotic cell](/capabilities/robotic-cells/) or a complete production line, AMD Automation delivers automotive-grade quality and reliability.
+Whether you need a single [robotic cell](/solutions/robotic-cells/) or a complete production line, AMD Automation delivers automotive-grade quality and reliability.
 
 **Ready to automate your automotive manufacturing?** [Contact us](/contact/) for a free consultation and quote.

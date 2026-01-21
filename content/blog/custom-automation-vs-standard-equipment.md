@@ -61,12 +61,12 @@ If you're using the same equipment as competitors, you won't gain a competitive 
 
 ## Understanding Custom Automation
 
-[Custom automation](/capabilities/custom-machines/) is purpose-built machinery designed specifically for your product and process. AMD Automation designs and builds custom automated systems including:
+[Custom automation](/solutions/custom-automation/) is purpose-built machinery designed specifically for your product and process. AMD Automation designs and builds custom automated systems including:
 
 - Custom assembly machines
-- Specialized [robotic cells](/capabilities/robotic-cells/)
+- Specialized [robotic cells](/solutions/robotic-cells/)
 - Unique material handling systems
-- Custom [welding systems](/capabilities/welding/)
+- Custom [welding systems](/solutions/welding/)
 - Integrated production lines
 
 ### Advantages of Custom Automation

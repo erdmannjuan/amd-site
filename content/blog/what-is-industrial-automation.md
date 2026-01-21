@@ -43,7 +43,7 @@ These systems can be reprogrammed to accommodate different products. CNC machine
 
 ### Flexible Automation
 
-The most advanced type, flexible automation systems can switch between products with minimal changeover time. [Robotic cells](/capabilities/robotic-cells/) with quick-change tooling exemplify this approach, ideal for high-mix manufacturing environments.
+The most advanced type, flexible automation systems can switch between products with minimal changeover time. [Robotic cells](/solutions/robotic-cells/) with quick-change tooling exemplify this approach, ideal for high-mix manufacturing environments.
 
 ## How Automation Improves Manufacturing Productivity
 
@@ -61,7 +61,7 @@ Automated systems operate at consistent speeds without fatigue. A robot can perf
 Human operators are skilled but variable. Automation eliminates this variability:
 
 - Every part receives identical processing
-- [Vision systems](/capabilities/machine-vision/) catch defects in real-time
+- [Vision systems](/solutions/machine-vision/) catch defects in real-time
 - Process parameters are precisely controlled
 - Statistical process control data is automatically collected
 
@@ -104,7 +104,7 @@ From simple proximity switches to sophisticated 3D vision cameras, sensors provi
 
 ### Industrial Robots
 
-[Articulated robots](/capabilities/robotic-cells/), SCARA robots, delta robots, and collaborative robots each serve different applications. Robot selection depends on payload, reach, speed, and precision requirements.
+[Articulated robots](/solutions/robotic-cells/), SCARA robots, delta robots, and collaborative robots each serve different applications. Robot selection depends on payload, reach, speed, and precision requirements.
 
 ### Material Handling
 
@@ -114,7 +114,7 @@ Conveyors, automated guided vehicles (AGVs), and gantry systems move materials b
 
 ### Automotive Manufacturing
 
-The automotive industry pioneered industrial automation. Today's vehicle assembly plants use thousands of robots for [welding](/capabilities/welding/), painting, and assembly operations.
+The automotive industry pioneered industrial automation. Today's vehicle assembly plants use thousands of robots for [welding](/solutions/welding/), painting, and assembly operations.
 
 ### Electronics Assembly
 
@@ -154,7 +154,7 @@ Not every process should be automated. Focus on operations where:
 
 ### Partner with Automation Experts
 
-[Custom automation solutions](/capabilities/custom-machines/) require expertise in mechanical design, controls engineering, and integration. Working with experienced automation integrators like AMD Automation ensures successful implementation.
+[Custom automation solutions](/solutions/custom-automation/) require expertise in mechanical design, controls engineering, and integration. Working with experienced automation integrators like AMD Automation ensures successful implementation.
 
 ### Plan for the Future
 

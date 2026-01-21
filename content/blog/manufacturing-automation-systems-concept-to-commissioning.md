@@ -126,7 +126,7 @@ Design automation controls:
 
 - PLC programming approach
 - Robot program development
-- [Vision system](/capabilities/machine-vision/) configuration
+- [Vision system](/solutions/machine-vision/) configuration
 - HMI screen design
 - Safety system programming
 - Communication protocols

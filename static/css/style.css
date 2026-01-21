@@ -4106,3 +4106,327 @@ button:disabled {
     font-size: 0.9rem;
     border-left: 3px solid var(--accent-teal);
 }
+
+/* ================================
+   Homepage - New Full Width Layout
+   ================================ */
+
+/* Quick Navigation Section */
+.quick-nav-section {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.quick-nav-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quick-nav-header h2 {
+    font-size: 1.75rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.quick-nav-header p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.quick-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.quick-nav-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-nav-solutions {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-teal-dark) 100%);
+    color: var(--white);
+}
+
+.quick-nav-industries {
+    background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-dark) 100%);
+    color: var(--white);
+}
+
+.quick-nav-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.quick-nav-icon {
+    flex-shrink: 0;
+    opacity: 0.9;
+}
+
+.quick-nav-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: inherit;
+}
+
+.quick-nav-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.quick-nav-arrow {
+    font-size: 1.5rem;
+    margin-left: auto;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.quick-nav-card:hover .quick-nav-arrow {
+    transform: translateX(5px);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .quick-nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-nav-card {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .quick-nav-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Homepage Solutions Grid */
+.homepage-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.homepage-solution-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.homepage-solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.homepage-solution-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.homepage-solution-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.homepage-solution-card:hover .homepage-solution-image img {
+    transform: scale(1.1);
+}
+
+.homepage-solution-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,48,135,0.6) 0%, transparent 50%);
+}
+
+.homepage-solution-content {
+    padding: 1.25rem;
+}
+
+.homepage-solution-content h3 {
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.homepage-solution-content p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.homepage-solution-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-teal);
+}
+
+@media (max-width: 1024px) {
+    .homepage-solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .homepage-solutions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Homepage Industries Grid */
+.homepage-industries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.homepage-industry-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-decoration: none;
+    aspect-ratio: 16/10;
+}
+
+.homepage-industry-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.homepage-industry-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.homepage-industry-card:hover .homepage-industry-image img {
+    transform: scale(1.1);
+}
+
+.homepage-industry-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.homepage-industry-overlay span {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+    .homepage-industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-industries-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Section CTA */
+.section-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+/* Section Dark */
+.section-dark {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-bg) 100%);
+    color: var(--white);
+}
+
+.section-label-light {
+    color: var(--accent-teal);
+    background: rgba(0, 183, 133, 0.15);
+}
+
+.section-title-light {
+    color: var(--white);
+}
+
+/* Why AMD Grid */
+.why-amd-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.why-amd-item {
+    text-align: center;
+}
+
+.why-amd-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-teal);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+
+.why-amd-item h3 {
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.why-amd-item p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .why-amd-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-amd-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-amd-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

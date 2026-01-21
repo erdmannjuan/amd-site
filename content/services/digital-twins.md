@@ -66,7 +66,7 @@ We work with industry-leading simulation tools:
 ## Digital Twin Applications
 
 ### New System Design & Validation
-Before building your [robotic cell](/capabilities/robotic-cells/) or [welding system](/capabilities/welding/), we create a complete digital twin to:
+Before building your [robotic cell](/solutions/robotic-cells/) or [welding system](/solutions/welding/), we create a complete digital twin to:
 
 - Validate robot selection and placement
 - Optimize cell layout and floor space

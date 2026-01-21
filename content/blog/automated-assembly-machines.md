@@ -57,7 +57,7 @@ Linear systems are preferred when future expansion is likely or when operations 
 
 ### Robotic Assembly Cells
 
-[Industrial robots](/capabilities/robotic-cells/) perform assembly operations with programmable flexibility. Robots can:
+[Industrial robots](/solutions/robotic-cells/) perform assembly operations with programmable flexibility. Robots can:
 
 - Handle multiple product variants with program changes
 - Perform complex motions impossible with fixed automation
@@ -144,7 +144,7 @@ A process taking 2 minutes manually may cycle in 15 seconds automated—an 8x im
 Consistency is automation's core strength:
 
 - Every assembly receives identical processing
-- [Vision systems](/capabilities/machine-vision/) verify component presence and orientation
+- [Vision systems](/solutions/machine-vision/) verify component presence and orientation
 - Force and torque monitoring catches assembly errors
 - Real-time data enables statistical process control
 
@@ -238,7 +238,7 @@ Document specifications for:
 
 ### Engage Experienced Partners
 
-[Custom assembly automation](/capabilities/custom-machines/) requires expertise across multiple disciplines:
+[Custom assembly automation](/solutions/custom-automation/) requires expertise across multiple disciplines:
 - Mechanical engineering for fixtures and tooling
 - Controls engineering for PLCs and HMI
 - Robot programming and integration

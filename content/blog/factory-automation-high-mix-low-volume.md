@@ -130,7 +130,7 @@ Traditional vibratory feeders are designed for specific parts. Flexible alternat
 
 ### Modular Assembly Cells
 
-[Robotic cells](/capabilities/robotic-cells/) designed for flexibility:
+[Robotic cells](/solutions/robotic-cells/) designed for flexibility:
 
 - Standardized cell platforms that accept different tooling
 - Quick-change end-of-arm tooling
@@ -272,7 +272,7 @@ Results:
 
 ## Getting Started with HMLV Automation
 
-AMD Automation has extensive experience helping manufacturers automate high-mix, low-volume production. Our [custom automation solutions](/capabilities/custom-machines/) are designed for the flexibility HMLV environments demand.
+AMD Automation has extensive experience helping manufacturers automate high-mix, low-volume production. Our [custom automation solutions](/solutions/custom-automation/) are designed for the flexibility HMLV environments demand.
 
 We serve manufacturers across industries including [aerospace](/industries/aerospace/), [medical devices](/industries/medical/), and contract manufacturing where product mix is a daily reality.
 
