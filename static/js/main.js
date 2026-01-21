@@ -81,7 +81,6 @@
     // ===========================================
     function initHeaderScroll() {
         const header = document.querySelector('.site-header');
-        const topBar = document.querySelector('.header-top-bar');
         let lastScroll = 0;
 
         if (!header) return;
@@ -92,10 +91,8 @@
             // Add scrolled class when past threshold
             if (currentScroll > CONFIG.scrollThreshold) {
                 header.classList.add('scrolled');
-                if (topBar) topBar.classList.add('hidden');
             } else {
                 header.classList.remove('scrolled');
-                if (topBar) topBar.classList.remove('hidden');
             }
 
             // Hide/show header on scroll direction (optional)

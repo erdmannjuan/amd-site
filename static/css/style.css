@@ -133,14 +133,8 @@ img {
 /* Header Top Bar */
 .header-top-bar {
     background: var(--primary-dark);
-    padding: 0.6rem 0;
+    padding: 0.5rem 0;
     font-size: 0.85rem;
-    transition: var(--transition);
-}
-
-.header-top-bar.hidden {
-    transform: translateY(-100%);
-    opacity: 0;
 }
 
 .top-bar-content {
