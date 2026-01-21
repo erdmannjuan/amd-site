@@ -102,7 +102,7 @@ def get_blog_posts(all_pages):
     return posts
 
 
-def build_page(page, config, env, all_pages, posts=None):
+def build_page(page, config, env, all_pages, posts=None, categories=None):
     """Build a single page"""
     page_data = {
         'title': 'Untitled',
@@ -123,6 +123,7 @@ def build_page(page, config, env, all_pages, posts=None):
         config=config,
         all_pages=all_pages,
         posts=posts or [],
+        categories=categories or [],
         year=datetime.now().year
     )
 
@@ -186,9 +187,12 @@ def build_site():
     # Extract blog posts for blog templates
     posts = get_blog_posts(pages)
 
+    # Extract unique categories from posts
+    categories = sorted(set(p.get('category', '') for p in posts if p.get('category')))
+
     built_pages = []
     for page in pages:
-        page_data = build_page(page, config, env, pages, posts)
+        page_data = build_page(page, config, env, pages, posts, categories)
         built_pages.append(page_data)
     
     generate_sitemap(built_pages, config)

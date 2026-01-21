@@ -10,12 +10,46 @@
     </div>
 </section>
 
-<!-- Blog Grid -->
-<section class="section">
+<!-- Blog Filters -->
+<section class="blog-filters-section">
     <div class="container">
-        <div class="blog-grid">
+        <div class="blog-filters">
+            <div class="filter-group">
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    {% for category in categories|sort %}
+                    <option value="{{ category }}">{{ category }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="date-filter">Date Range</label>
+                <select id="date-filter">
+                    <option value="">All Time</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="search-filter">Search</label>
+                <input type="text" id="search-filter" placeholder="Search articles...">
+            </div>
+            <div class="filter-results">
+                <span id="results-count">{{ posts|length }}</span> articles
+                <button id="clear-filters" class="btn-link" style="display: none;">Clear filters</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Grid -->
+<section class="section blog-section">
+    <div class="container">
+        <div class="blog-grid" id="blog-grid">
             {% for post in posts %}
-            <article class="blog-card">
+            <article class="blog-card" data-category="{{ post.category or '' }}" data-date="{{ post.date or '' }}" data-title="{{ post.title|lower }}" data-description="{{ post.description|lower }}">
                 {% if post.image %}
                 <div class="blog-card-image">
                     <img src="{{ config.site.base_path }}/static/images/{{ post.image }}" alt="{{ post.title }}" loading="lazy" width="800" height="450">
@@ -40,6 +74,9 @@
             </div>
             {% endfor %}
         </div>
+        <div class="blog-empty" id="no-results" style="display: none;">
+            <p>No articles match your filters. Try adjusting your search criteria.</p>
+        </div>
     </div>
 </section>
 
@@ -51,4 +88,103 @@
         <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Subscribe</a>
     </div>
 </section>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryFilter = document.getElementById('category-filter');
+    const dateFilter = document.getElementById('date-filter');
+    const searchFilter = document.getElementById('search-filter');
+    const clearBtn = document.getElementById('clear-filters');
+    const resultsCount = document.getElementById('results-count');
+    const blogGrid = document.getElementById('blog-grid');
+    const noResults = document.getElementById('no-results');
+    const cards = document.querySelectorAll('.blog-card');
+
+    function filterCards() {
+        const category = categoryFilter.value.toLowerCase();
+        const year = dateFilter.value;
+        const search = searchFilter.value.toLowerCase().trim();
+
+        let visibleCount = 0;
+
+        cards.forEach(function(card) {
+            const cardCategory = (card.dataset.category || '').toLowerCase();
+            const cardDate = card.dataset.date || '';
+            const cardTitle = card.dataset.title || '';
+            const cardDescription = card.dataset.description || '';
+
+            let showCard = true;
+
+            // Category filter
+            if (category && cardCategory !== category) {
+                showCard = false;
+            }
+
+            // Date filter
+            if (year && !cardDate.startsWith(year)) {
+                showCard = false;
+            }
+
+            // Search filter
+            if (search && !cardTitle.includes(search) && !cardDescription.includes(search)) {
+                showCard = false;
+            }
+
+            if (showCard) {
+                card.style.display = '';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        resultsCount.textContent = visibleCount;
+
+        // Show/hide no results message
+        if (visibleCount === 0) {
+            noResults.style.display = 'block';
+            blogGrid.style.display = 'none';
+        } else {
+            noResults.style.display = 'none';
+            blogGrid.style.display = '';
+        }
+
+        // Show/hide clear button
+        if (category || year || search) {
+            clearBtn.style.display = 'inline';
+        } else {
+            clearBtn.style.display = 'none';
+        }
+    }
+
+    function clearFilters() {
+        categoryFilter.value = '';
+        dateFilter.value = '';
+        searchFilter.value = '';
+        filterCards();
+    }
+
+    categoryFilter.addEventListener('change', filterCards);
+    dateFilter.addEventListener('change', filterCards);
+    searchFilter.addEventListener('input', filterCards);
+    clearBtn.addEventListener('click', clearFilters);
+
+    // Check URL params for initial filter
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlCategory = urlParams.get('category');
+    const urlYear = urlParams.get('year');
+
+    if (urlCategory) {
+        categoryFilter.value = urlCategory;
+    }
+    if (urlYear) {
+        dateFilter.value = urlYear;
+    }
+    if (urlCategory || urlYear) {
+        filterCards();
+    }
+});
+</script>
 {% endblock %}
