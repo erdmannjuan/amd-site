@@ -756,19 +756,11 @@ img {
     z-index: 1;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 4rem;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-}
-
 .hero-content {
-    padding: 4rem 0;
     position: relative;
     z-index: 5;
+    max-width: 650px;
+    padding: 5rem 0;
 }
 
 .hero-title {
@@ -794,95 +786,16 @@ img {
     gap: 1rem;
 }
 
-/* Hero Sidebar */
-.hero-sidebar {
-    position: relative;
-    z-index: 10;
-}
-
-.hero-sidebar-card {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-.hero-sidebar-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.hero-sidebar-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-sidebar-content {
-    padding: 1.5rem;
-}
-
-.hero-sidebar-label {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--primary);
-    background: var(--primary-light);
-    padding: 0.25rem 0.75rem;
-    border-radius: var(--radius-sm);
-    margin-bottom: 0.75rem;
-}
-
-.hero-sidebar-content h3 {
-    color: var(--dark);
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero-sidebar-content p {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.hero-sidebar-link {
-    color: var(--primary);
-    font-weight: 600;
-    font-size: 0.9rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.hero-sidebar-link::after {
-    content: '→';
-    transition: var(--transition);
-}
-
-.hero-sidebar-link:hover::after {
-    transform: translateX(4px);
-}
-
-@media (max-width: 992px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .hero-sidebar {
-        max-width: 400px;
-    }
-}
-
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
         padding-top: calc(var(--header-height) + 2rem);
         padding-bottom: 3rem;
         text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
     }
 
     .hero::before {
@@ -1045,12 +958,238 @@ img {
 }
 
 /* ================================
+   Homepage Layout with Sticky Sidebar
+   ================================ */
+.homepage-layout {
+    background: var(--white);
+    padding: 4rem 0;
+}
+
+.homepage-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 3rem;
+    align-items: start;
+}
+
+.homepage-main {
+    min-width: 0;
+}
+
+.homepage-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.homepage-section:first-child {
+    padding-top: 0;
+}
+
+.homepage-section:last-child {
+    border-bottom: none;
+}
+
+.homepage-section-gray {
+    background: var(--light-bg);
+    margin: 0 -2rem;
+    padding: 3rem 2rem;
+    border-radius: var(--radius-lg);
+}
+
+.homepage-section .section-header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.homepage-section .section-subtitle {
+    margin: 0;
+}
+
+/* Homepage Sidebar */
+.homepage-sidebar {
+    position: relative;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+}
+
+.sidebar-widget {
+    background: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-widget:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-widget h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.sidebar-featured {
+    padding: 0;
+    overflow: hidden;
+}
+
+.sidebar-featured-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+.sidebar-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-featured-content {
+    padding: 1.25rem;
+}
+
+.sidebar-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    background: var(--primary-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-featured-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.sidebar-featured-content p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.sidebar-link {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.sidebar-link:hover {
+    color: var(--primary-dark);
+}
+
+.sidebar-link::after {
+    content: '→';
+    transition: var(--transition);
+}
+
+.sidebar-link:hover::after {
+    transform: translateX(3px);
+}
+
+.sidebar-cta-widget {
+    background: var(--primary);
+    border-color: var(--primary);
+    text-align: center;
+}
+
+.sidebar-cta-widget h4 {
+    color: var(--white);
+}
+
+.sidebar-cta-widget p {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-cta-widget .btn {
+    margin-bottom: 1rem;
+}
+
+.sidebar-phone {
+    margin: 0;
+}
+
+.sidebar-phone a {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+}
+
+.sidebar-phone a:hover {
+    color: var(--white);
+}
+
+/* Responsive Homepage Layout */
+@media (max-width: 992px) {
+    .homepage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-sidebar {
+        order: -1;
+    }
+
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .sidebar-widget {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-sticky {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-section-gray {
+        margin: 0 -1rem;
+        padding: 2rem 1rem;
+    }
+}
+
+/* Compact Industries Grid for Homepage */
+.industries-grid-compact {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .industries-grid-compact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================================
    Cards - Capabilities & Industries
    ================================ */
 .capabilities-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.homepage-section .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .capability-card {
