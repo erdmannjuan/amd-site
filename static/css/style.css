@@ -6551,3 +6551,249 @@ button:disabled {
         justify-content: center;
     }
 }
+
+/* ================================
+   ITAR Notice Styles
+   ================================ */
+
+/* ITAR Link in Header & Footer */
+.itar-notice-link {
+    background: rgba(251, 85, 40, 0.15);
+    color: #FB5528 !important;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600 !important;
+    border: 1px solid rgba(251, 85, 40, 0.3);
+}
+
+.itar-notice-link:hover {
+    background: rgba(251, 85, 40, 0.25);
+    color: #fff !important;
+}
+
+.mega-footer-legal .itar-notice-link {
+    background: rgba(251, 85, 40, 0.2);
+    color: #FB5528 !important;
+}
+
+.mega-footer-legal .itar-notice-link:hover {
+    background: rgba(251, 85, 40, 0.35);
+    color: #fff !important;
+}
+
+/* ITAR Page Hero */
+.itar-hero {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+.itar-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(251, 85, 40, 0.2);
+    color: var(--accent-orange);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-lg);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(251, 85, 40, 0.3);
+}
+
+.itar-badge svg {
+    stroke: var(--accent-orange);
+}
+
+.itar-title {
+    color: var(--white);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.itar-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ITAR Content Wrapper */
+.itar-content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ITAR Warning Banner */
+.itar-warning-banner {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+    border: 2px solid #ffc107;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+}
+
+.itar-warning-banner .warning-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: #ffc107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itar-warning-banner .warning-icon svg {
+    stroke: #000;
+}
+
+.itar-warning-banner .warning-content h3 {
+    color: #856404;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.itar-warning-banner .warning-content p {
+    color: #856404;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ITAR Content Styles */
+.itar-content {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.itar-content h2 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.itar-content h2:first-child {
+    margin-top: 0;
+}
+
+.itar-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.itar-content ul li {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.itar-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.itar-content ol li {
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.itar-content strong {
+    color: var(--dark);
+}
+
+.itar-content hr {
+    border: none;
+    border-top: 1px solid var(--border-light);
+    margin: 2rem 0;
+}
+
+.itar-content em {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ITAR Contact Box */
+.itar-contact-box {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.itar-contact-box h3 {
+    color: var(--white);
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+.itar-contact-box > p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1.25rem;
+}
+
+.itar-contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+}
+
+.itar-contact-email svg {
+    stroke: var(--accent-orange);
+    flex-shrink: 0;
+}
+
+.itar-contact-email a {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.itar-contact-email a:hover {
+    color: var(--accent-orange);
+}
+
+.itar-contact-note {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* ITAR Mobile Responsiveness */
+@media (max-width: 768px) {
+    .itar-hero {
+        padding: 3rem 0 2rem;
+    }
+
+    .itar-warning-banner {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .itar-content {
+        padding: 1.5rem;
+    }
+
+    .itar-contact-email {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

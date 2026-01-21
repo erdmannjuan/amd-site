@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- ITAR Notice Header -->
+<section class="itar-hero">
+    <div class="container">
+        <div class="itar-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            <span>Regulatory Compliance Notice</span>
+        </div>
+        <h1 class="itar-title">{{ page.title }}</h1>
+        <p class="itar-subtitle">{{ page.description }}</p>
+    </div>
+</section>
+
+<!-- ITAR Content -->
+<section class="section">
+    <div class="container">
+        <div class="itar-content-wrapper">
+            <!-- Warning Banner -->
+            <div class="itar-warning-banner">
+                <div class="warning-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                </div>
+                <div class="warning-content">
+                    <h3>Important Security Notice</h3>
+                    <p><strong>Do NOT share any sensitive materials, controlled technical data, or ITAR-regulated information</strong> with AMD Automation or Robot Labor LLC via email or any unsecured communication channel without the use of an approved secure transfer method.</p>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="itar-content prose">
+                {{ content | safe }}
+            </div>
+
+            <!-- Contact Box -->
+            <div class="itar-contact-box">
+                <h3>ITAR Inquiries</h3>
+                <p>For questions regarding ITAR compliance or to discuss your requirements for defense-related automation projects:</p>
+                <div class="itar-contact-email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:robotlaborllc@gmail.com">robotlaborllc@gmail.com</a>
+                </div>
+                <p class="itar-contact-note">Please do not include any controlled or sensitive information in your initial inquiry.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
