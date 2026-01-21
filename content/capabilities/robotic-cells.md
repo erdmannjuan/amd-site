@@ -40,25 +40,51 @@ benefits:
     description: Quick changeover capabilities allow adaptation to multiple products and variants.
 ---
 
-AMD Automation designs and builds turnkey robotic cells tailored to your specific manufacturing requirements. Our experienced team handles every aspect from initial concept through installation and training.
+AMD Automation designs and builds turnkey robotic cells tailored to your specific manufacturing requirements. As a **FANUC Authorized System Integrator** with over 25 years of experience, our team handles every aspect from initial concept through installation, training, and ongoing support.
 
-## Our Approach
+## Custom Robotic Cell Design Process
 
-We start by understanding your production goals, part characteristics, and facility constraints. Our engineers then design a complete solution that optimizes cycle time, quality, and operator ergonomics.
+We start by understanding your production goals, part characteristics, and facility constraints. Our engineers then design a complete robotic automation solution that optimizes cycle time, quality, and operator ergonomics.
 
 Every robotic cell we build undergoes rigorous testing at our facility before shipping. We verify cycle times, quality metrics, and safety systems to ensure your system performs as expected from day one.
 
-## Technology Partners
+## Robot Brands We Integrate
 
-We integrate robots from all major manufacturers including FANUC, ABB, KUKA, Yaskawa, and Universal Robots. This allows us to select the optimal robot for your application rather than being limited to a single brand.
+We integrate industrial robots from all major manufacturers, allowing us to select the optimal robot for your application:
 
-## Turnkey Delivery
+- **FANUC** - Industry-leading reliability for welding, material handling, and assembly
+- **ABB** - High-speed robots for picking, packing, and palletizing applications
+- **KUKA** - Heavy payload robots for automotive and aerospace manufacturing
+- **Yaskawa Motoman** - Arc welding specialists with excellent motion control
+- **Universal Robots** - Collaborative robots (cobots) for human-robot collaboration
+- **Epson** - SCARA and 6-axis robots for precision assembly
 
-Our turnkey approach means you receive a complete, tested system ready for production. This includes:
+## Robotic Cell Components
+
+Our complete robotic cells include all necessary components for production-ready automation:
+
+- **Industrial robots** sized for your payload and reach requirements
+- **End-of-arm tooling (EOAT)** custom-designed for your parts
+- **Safety systems** including light curtains, area scanners, and safety PLCs
+- **Robot positioners** for optimal part presentation
+- **Fixturing and workholding** for secure part location
+- **Vision systems** for part identification and quality inspection
+- **PLC controls** integrated with your existing systems
+- **HMI interfaces** for operator interaction and monitoring
+
+## Turnkey Robotic Cell Delivery
+
+Our turnkey approach means you receive a complete, tested system ready for production:
 
 - Mechanical design and fabrication
 - Electrical controls and programming
-- Safety systems and compliance
-- Installation and commissioning
+- Safety systems and compliance documentation
+- Factory acceptance testing (FAT)
+- Installation and commissioning at your facility
 - Operator and maintenance training
-- Ongoing technical support
+- Spare parts packages
+- Ongoing technical support and service
+
+## Industries Served
+
+Our robotic cells serve manufacturers across diverse industries including [automotive](/industries/automotive/), [medical devices](/industries/medical/), [aerospace](/industries/aerospace/), [electronics](/industries/electronics/), and [consumer products](/industries/consumer/).

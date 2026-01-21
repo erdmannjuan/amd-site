@@ -40,28 +40,61 @@ benefits:
     description: Automation addresses welder shortages while maintaining quality standards.
 ---
 
-AMD Automation specializes in custom welding automation systems that solve the challenges of modern manufacturing: labor shortages, quality requirements, and production demands.
+AMD Automation specializes in custom robotic welding systems that solve the challenges of modern manufacturing: skilled welder shortages, strict quality requirements, and increasing production demands. Our [robotic cells](/capabilities/robotic-cells/) integrate seamlessly into your production environment.
 
-## Welding Processes
+## Robotic Welding Processes
 
-Our team has deep expertise across all major welding processes:
+Our team has deep expertise across all major automated welding processes:
 
-**MIG/MAG Welding** - Gas metal arc welding for high-speed production of steel and aluminum components. We integrate advanced power sources with adaptive controls for optimal results.
+### MIG/MAG Welding (GMAW)
+Gas metal arc welding for high-speed production of steel and aluminum components. We integrate advanced power sources from Lincoln Electric, Miller, and Fronius with adaptive controls for optimal results. Ideal for [automotive](/industries/automotive/) frames, brackets, and structural assemblies.
 
-**TIG Welding** - Gas tungsten arc welding for applications requiring superior weld quality and aesthetics, including stainless steel and exotic materials.
+### TIG Welding (GTAW)
+Gas tungsten arc welding for applications requiring superior weld quality and aesthetics. Perfect for stainless steel, aluminum, and exotic materials in [medical device](/industries/medical/) and [aerospace](/industries/aerospace/) applications.
 
-**Spot Welding** - Resistance spot welding for sheet metal assemblies with precise electrode force and current control.
+### Resistance Spot Welding
+High-speed spot welding for sheet metal assemblies with precise electrode force and current control. Our systems achieve consistent nugget formation across thousands of welds per shift.
 
-**Laser Welding** - High-speed, low-distortion welding for precision applications and thin materials.
+### Laser Welding
+High-speed, low-distortion welding for precision applications and thin materials. Fiber laser and CO2 laser systems available for [electronics](/industries/electronics/) enclosures and precision components.
 
-## Fixturing & Positioning
+## Welding Power Sources & Wire Feeders
 
-Successful welding automation requires more than just a robot. We design and build custom fixtures that locate parts accurately and provide optimal access for the welding torch. Our servo positioners enable multi-axis manipulation for complex weld paths.
+We integrate industry-leading welding equipment:
 
-## Quality Assurance
+- **Lincoln Electric** - PowerWave and PulsePower systems
+- **Miller Electric** - Auto-Axcess and Continuum platforms
+- **Fronius** - TPS/i intelligent welding systems
+- **SKS Welding** - Specialized resistance welding equipment
+- **IPG Photonics** - Fiber laser welding sources
 
-Our welding systems incorporate monitoring technology to verify weld quality in real-time. Arc monitoring, vision inspection, and non-destructive testing can be integrated to ensure your quality standards are met.
+## Custom Welding Fixturing & Positioning
 
-## Training & Support
+Successful welding automation requires more than just a robot. We design and build custom fixtures that:
 
-We provide comprehensive training for your operators and maintenance personnel. Our support team is available to help optimize your welding parameters and troubleshoot any issues that arise.
+- Locate parts accurately within ±0.5mm tolerance
+- Provide optimal torch access for complex weld paths
+- Enable quick changeover between part variants
+- Include clamping for distortion control
+
+Our servo positioners enable multi-axis manipulation for circumferential welds, tilting, and rotation.
+
+## Weld Quality Monitoring Systems
+
+Our welding systems incorporate real-time monitoring to verify quality:
+
+- **Arc monitoring** - Voltage, current, and wire feed tracking
+- **Seam tracking** - Laser and through-arc sensing for joint following
+- **Vision inspection** - Post-weld bead inspection and measurement
+- **Weld data logging** - Complete traceability for quality records
+
+## Training & Ongoing Support
+
+We provide comprehensive training for your operators and maintenance personnel, including:
+
+- Robot programming and operation
+- Welding parameter optimization
+- Preventive maintenance procedures
+- Troubleshooting common issues
+
+Our support team is available to help optimize your welding processes and provide ongoing technical assistance.

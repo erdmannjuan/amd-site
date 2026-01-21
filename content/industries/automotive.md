@@ -31,38 +31,64 @@ challenges:
     description: We optimize automation investments to deliver strong ROI against competitive pricing targets.
 ---
 
-AMD Automation has deep roots in automotive manufacturing, serving OEMs and suppliers at every tier level. We understand the unique demands of automotive production: high volumes, tight quality standards, and relentless cost pressure.
+AMD Automation has deep roots in automotive manufacturing, serving OEMs and Tier 1, 2, and 3 suppliers for over 25 years. We understand the unique demands of automotive production: high volumes, tight quality standards, and relentless cost pressure.
 
-## Automotive Experience
+## Automotive Automation Solutions
 
-Our team has delivered hundreds of automation systems for automotive applications including:
+Our team has delivered hundreds of automation systems for automotive applications:
 
-- Structural welding for chassis, frames, and body components
-- Powertrain assembly for engines, transmissions, and electric motors
-- Suspension and steering component assembly
-- Interior trim assembly and inspection
-- Under-hood component assembly
-- EV battery module and pack assembly
+### Body-in-White & Structural Welding
+Our [robotic welding systems](/capabilities/welding/) handle high-volume production of:
+- Chassis frames and crossmembers
+- Body structural assemblies
+- Subframes and cradles
+- Exhaust systems and catalytic converters
 
-## Meeting Automotive Standards
+### Powertrain Assembly Automation
+Precision [assembly machines](/capabilities/assembly/) for:
+- Engine block and head assembly
+- Transmission assembly and testing
+- Electric motor and generator assembly
+- Torque converter and clutch assembly
+
+### End-of-Line Testing Systems
+Our [automated test systems](/capabilities/test-systems/) ensure quality with:
+- Leak testing for powertrain components
+- Functional testing for electronics and actuators
+- Vision inspection for surface defects
+- Torque and force measurement
+
+### EV Battery Systems Automation
+Specialized automation for electric vehicle production:
+- Battery cell handling and sorting
+- Module assembly with laser welding
+- Battery pack assembly and sealing
+- High-voltage testing and validation
+
+## Meeting Automotive Quality Standards
 
 Automotive manufacturing demands rigorous quality systems. Our automation solutions support:
 
-- IATF 16949 quality management requirements
-- OEM-specific approval processes (PPAP, APQP)
-- Full data traceability for every part
-- Statistical process control integration
-- Error-proofing at every operation
+- **IATF 16949** quality management requirements
+- **PPAP and APQP** approval processes
+- **Full data traceability** for every part produced
+- **Statistical process control (SPC)** integration
+- **Poka-yoke** error-proofing at every operation
 
-## Supporting the EV Transition
+## Automotive Industry Expertise
 
-As the industry shifts to electric vehicles, we're helping manufacturers adapt with automation for:
+We've delivered automation solutions to leading automotive manufacturers and suppliers including projects for:
 
-- Battery cell handling and module assembly
-- Battery pack welding and sealing
-- Motor and inverter assembly
-- Thermal management system assembly
+- Major North American OEMs
+- Japanese and European transplants
+- Tier 1 system suppliers (seating, interiors, powertrain)
+- Tier 2 component manufacturers
+- Tier 3 parts suppliers
 
-## Tier 1, 2, and 3 Suppliers
+## Tier 1, 2, and 3 Supplier Solutions
 
 We serve suppliers at every level, from large Tier 1 system integrators to smaller Tier 3 component manufacturers. Our solutions scale to match your production volumes and investment requirements.
+
+Whether you need a single [robotic cell](/capabilities/robotic-cells/) or a complete production line, AMD Automation delivers automotive-grade quality and reliability.
+
+**Ready to automate your automotive manufacturing?** [Contact us](/contact/) for a free consultation and quote.
