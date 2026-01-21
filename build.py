@@ -190,22 +190,52 @@ def build_site():
 
 
 def generate_sitemap(pages, config):
-    """Generate sitemap.xml"""
+    """Generate sitemap.xml with priority and changefreq for SEO"""
     sitemap_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
     sitemap_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    
+
+    today = datetime.now().strftime('%Y-%m-%d')
+
     for page in pages:
+        url = page['url']
+
+        # Skip 404 and other utility pages
+        if url in ['/404/', '/privacy-policy/']:
+            continue
+
+        # Determine priority and changefreq based on page type
+        if url == '/':
+            priority = '1.0'
+            changefreq = 'weekly'
+        elif url in ['/solutions/', '/industries/', '/blog/', '/about/', '/contact/']:
+            priority = '0.9'
+            changefreq = 'weekly'
+        elif url.startswith('/solutions/') or url.startswith('/industries/'):
+            priority = '0.8'
+            changefreq = 'monthly'
+        elif url.startswith('/blog/'):
+            priority = '0.7'
+            changefreq = 'monthly'
+        elif url.startswith('/services/'):
+            priority = '0.6'
+            changefreq = 'monthly'
+        else:
+            priority = '0.5'
+            changefreq = 'monthly'
+
         sitemap_content += f'''  <url>
-    <loc>{config['site']['url']}{page['url']}</loc>
-    <lastmod>{datetime.now().strftime('%Y-%m-%d')}</lastmod>
+    <loc>{config['site']['url']}{url}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>{changefreq}</changefreq>
+    <priority>{priority}</priority>
   </url>\n'''
-    
+
     sitemap_content += '</urlset>'
-    
+
     sitemap_path = OUTPUT_DIR / 'sitemap.xml'
     with open(sitemap_path, 'w') as f:
         f.write(sitemap_content)
-    
+
     print("  ✓ Generated sitemap.xml")
 
 
