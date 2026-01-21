@@ -35,15 +35,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Critical CSS - Inlined for fast FCP -->
-    <style>{% include 'critical.css' %}</style>
-
-    <!-- Fonts - Load synchronously to prevent layout shift (small impact, prevents CLS) -->
+    <!-- Fonts - Load with display:swap -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
 
-    <!-- Main CSS - Loaded async to prevent render blocking -->
-    <link rel="preload" href="{{ config.site.base_path }}/static/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ config.site.base_path }}/static/css/style.css"></noscript>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ config.site.base_path }}/static/css/style.css">
 
     {% block head_extra %}{% endblock %}
 </head>
