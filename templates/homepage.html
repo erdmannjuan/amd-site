@@ -2,61 +2,55 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero hero-home">
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-content">
             <h1 class="hero-title">{{ page.hero_title or "Custom Automated Manufacturing Solutions" }}</h1>
             <p class="hero-subtitle">{{ page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals" }}</p>
             <div class="hero-buttons">
-                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
-                <a href="{{ config.site.base_path }}/solutions/" class="btn btn-outline-white btn-lg">Explore Solutions</a>
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Request a Quote</a>
+                <a href="{{ config.site.base_path }}/solutions/" class="btn btn-text-light">Explore Solutions →</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Quick Navigation Buttons -->
-<section class="section quick-nav-section">
+<!-- Introduction Section -->
+<section class="section-intro">
     <div class="container">
-        <div class="quick-nav-header">
-            <h2>Find Your Solution</h2>
-            <p>Browse by what you need or the industry you're in</p>
-        </div>
-        <div class="quick-nav-grid">
-            <a href="#solutions-section" class="quick-nav-card quick-nav-solutions">
-                <div class="quick-nav-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        <div class="intro-content">
+            <div class="intro-text">
+                <h2>Engineering Excellence Since 1993</h2>
+                <p>AMD Automation designs and builds custom automated manufacturing systems for companies across North America. With over 30 years of experience and 2,500+ machines delivered, we bring proven expertise to every project.</p>
+                <a href="{{ config.site.base_path }}/about/" class="link-arrow">About our company →</a>
+            </div>
+            <div class="intro-stats">
+                <div class="intro-stat">
+                    <span class="stat-num">30+</span>
+                    <span class="stat-text">Years Experience</span>
                 </div>
-                <div class="quick-nav-content">
-                    <h3>Browse by Solution</h3>
-                    <p>Robotic cells, welding, assembly, test systems & more</p>
+                <div class="intro-stat">
+                    <span class="stat-num">2,500+</span>
+                    <span class="stat-text">Machines Built</span>
                 </div>
-                <span class="quick-nav-arrow">→</span>
-            </a>
-            <a href="#industries-section" class="quick-nav-card quick-nav-industries">
-                <div class="quick-nav-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20"/><path d="M5 20V8l7-4 7 4v12"/><path d="M9 20v-4h6v4"/><path d="M9 12h.01"/><path d="M15 12h.01"/></svg>
+                <div class="intro-stat">
+                    <span class="stat-num">150+</span>
+                    <span class="stat-text">Team Members</span>
                 </div>
-                <div class="quick-nav-content">
-                    <h3>Browse by Industry</h3>
-                    <p>Automotive, medical, aerospace, electronics & more</p>
-                </div>
-                <span class="quick-nav-arrow">→</span>
-            </a>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Solutions Section -->
-<section class="section section-alt" id="solutions-section">
+<section class="section-solutions" id="solutions-section">
     <div class="container">
-        <div class="section-header">
-            <span class="section-label">What We Do</span>
-            <h2 class="section-title">Our Solutions</h2>
-            <p class="section-subtitle">Comprehensive automation solutions tailored to your specific manufacturing needs</p>
+        <div class="section-header-flat">
+            <h2>Our Solutions</h2>
+            <p>Comprehensive automation solutions tailored to your specific manufacturing needs</p>
         </div>
-        <div class="homepage-solutions-grid">
+        <div class="solutions-list">
             {% set sol_images = {
                 'robot': 'placeholder-capability-robotic-cells.svg',
                 'welding': 'placeholder-capability-welding.svg',
@@ -67,117 +61,52 @@
                 'vision': 'placeholder-solution-vision.svg'
             } %}
             {% for sol in config.solutions %}
-            <a href="{{ config.site.base_path }}{{ sol.url }}" class="homepage-solution-card">
-                <div class="homepage-solution-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.icon] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy" width="400" height="250">
-                    <div class="homepage-solution-overlay"></div>
+            <a href="{{ config.site.base_path }}{{ sol.url }}" class="solution-item">
+                <div class="solution-item-image">
+                    <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.icon] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy">
                 </div>
-                <div class="homepage-solution-content">
+                <div class="solution-item-content">
                     <h3>{{ sol.name }}</h3>
                     <p>{{ sol.description }}</p>
-                    <span class="homepage-solution-link">Learn More →</span>
+                    <span class="link-arrow">Read more →</span>
                 </div>
             </a>
             {% endfor %}
         </div>
-        <div class="section-cta">
-            <a href="{{ config.site.base_path }}/solutions/" class="btn btn-primary btn-lg">View All Solutions</a>
+        <div class="section-footer">
+            <a href="{{ config.site.base_path }}/solutions/" class="link-arrow-lg">View all solutions →</a>
         </div>
     </div>
 </section>
 
 <!-- Industries Section -->
-<section class="section" id="industries-section">
+<section class="section-industries" id="industries-section">
     <div class="container">
-        <div class="section-header">
-            <span class="section-label">Who We Serve</span>
-            <h2 class="section-title">Industries We Serve</h2>
-            <p class="section-subtitle">Delivering automation solutions across diverse manufacturing sectors</p>
+        <div class="section-header-flat">
+            <h2>Industries We Serve</h2>
+            <p>Delivering automation solutions across diverse manufacturing sectors</p>
         </div>
-        <div class="homepage-industries-grid">
-            {% set ind_images = {
-                'car': 'placeholder-industry-automotive.svg',
-                'medical': 'placeholder-industry-medical.svg',
-                'consumer': 'placeholder-industry-consumer.svg',
-                'electronics': 'placeholder-industry-electronics.svg',
-                'aerospace': 'placeholder-industry-aerospace.svg',
-                'food': 'placeholder-industry-food.svg',
-                'energy': 'placeholder-industry-energy.svg',
-                'heavy-equipment': 'placeholder-industry-heavy.svg',
-                'pharma': 'placeholder-industry-pharma.svg',
-                'defense': 'placeholder-industry-defense.svg',
-                'appliances': 'placeholder-industry-appliances.svg',
-                'general': 'placeholder-industry-general.svg'
-            } %}
+        <div class="industries-list">
             {% for ind in config.industries %}
-            <a href="{{ config.site.base_path }}{{ ind.url }}" class="homepage-industry-card">
-                <div class="homepage-industry-image">
-                    <img src="{{ config.site.base_path }}/static/images/{{ ind_images[ind.icon] | default('placeholder-card-1.svg') }}" alt="{{ ind.name }}" loading="lazy" width="400" height="200">
-                    <div class="homepage-industry-overlay">
-                        <span>{{ ind.name }}</span>
-                    </div>
-                </div>
+            <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-item">
+                <span class="industry-name">{{ ind.name }}</span>
+                <span class="industry-arrow">→</span>
             </a>
             {% endfor %}
         </div>
-        <div class="section-cta">
-            <a href="{{ config.site.base_path }}/industries/" class="btn btn-outline btn-lg">View All Industries</a>
+        <div class="section-footer">
+            <a href="{{ config.site.base_path }}/industries/" class="link-arrow-lg">View all industries →</a>
         </div>
     </div>
 </section>
-
-<!-- Why AMD Section -->
-<section class="section section-dark">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label section-label-light">Why Choose Us</span>
-            <h2 class="section-title section-title-light">Engineering Excellence</h2>
-        </div>
-        <div class="why-amd-grid">
-            <div class="why-amd-item">
-                <div class="why-amd-number">30+</div>
-                <h3>Years Experience</h3>
-                <p>Three decades of solving complex manufacturing challenges</p>
-            </div>
-            <div class="why-amd-item">
-                <div class="why-amd-number">2,500+</div>
-                <h3>Machines Built</h3>
-                <p>Proven track record of successful automation projects</p>
-            </div>
-            <div class="why-amd-item">
-                <div class="why-amd-number">150+</div>
-                <h3>Team Members</h3>
-                <p>Expert engineers, designers, and technicians</p>
-            </div>
-            <div class="why-amd-item">
-                <div class="why-amd-number">100%</div>
-                <h3>Custom Solutions</h3>
-                <p>Every system designed for your specific needs</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Content from markdown (if any) -->
-{% if content %}
-<section class="section">
-    <div class="container">
-        <div class="content-body content-card">
-            {{ content | safe }}
-        </div>
-    </div>
-</section>
-{% endif %}
 
 <!-- CTA Section -->
-<section class="cta-section cta-accent">
+<section class="section-cta-flat">
     <div class="container">
-        <div class="cta-content">
-            <h2>Ready to Automate Your Production?</h2>
-            <p>Let's discuss how AMD Machines can help you improve efficiency, reduce costs, and increase throughput.</p>
-            <div class="cta-buttons">
-                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Get a Free Consultation</a>
-            </div>
+        <div class="cta-flat-content">
+            <h2>Ready to discuss your project?</h2>
+            <p>Our engineering team is ready to evaluate your requirements and recommend the right automation approach.</p>
+            <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Contact Us</a>
         </div>
     </div>
 </section>
