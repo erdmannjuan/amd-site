@@ -113,24 +113,26 @@
     </div>
 </section>
 
-<!-- More Articles -->
-<section class="section section-alt">
+<!-- More Articles with A/B Testing -->
+<section class="section section-alt related-content" data-test="related_content">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header text-center">
+            <span class="section-label">Keep Reading</span>
             <h2 class="section-title">More from the Blog</h2>
         </div>
-        <div class="blog-grid blog-grid-small">
-            {% for post in posts[:3] %}
+        <div class="related-grid">
+            {% for post in posts[:4] %}
             {% if post.url != page.url %}
-            <article class="blog-card">
-                <div class="blog-card-body">
+            <a href="{{ config.site.base_path }}{{ post.url }}" class="related-item" data-content-id="{{ post.title | lower | replace(' ', '-') | truncate(30, True, '') }}">
+                <div class="related-item-inner">
                     {% if post.category %}
-                    <span class="blog-category">{{ post.category }}</span>
+                    <span class="related-category">{{ post.category }}</span>
                     {% endif %}
-                    <h3><a href="{{ config.site.base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+                    <h3>{{ post.title }}</h3>
                     <p>{{ post.description }}</p>
+                    <span class="related-link">Read Article →</span>
                 </div>
-            </article>
+            </a>
             {% endif %}
             {% endfor %}
         </div>

@@ -51,6 +51,25 @@
     {% block head_extra %}{% endblock %}
 </head>
 <body>
+    <!-- Header Top Bar -->
+    <div class="header-top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-contact">
+                    <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">
+                        <span class="top-bar-icon">📞</span> {{ config.social.phone }}
+                    </a>
+                    <a href="mailto:{{ config.social.email }}">
+                        <span class="top-bar-icon">✉️</span> {{ config.social.email }}
+                    </a>
+                </div>
+                <div class="top-bar-location">
+                    <span class="top-bar-icon">📍</span> {{ config.social.address }}
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="site-header">
         <div class="container">
@@ -58,19 +77,34 @@
                 <a href="{{ config.site.base_path }}/" class="logo">
                     <span class="logo-text">{{ config.site.name }}</span>
                 </a>
-                
+
                 <nav class="main-nav" id="main-nav">
                     <ul class="nav-list">
                         {% for item in config.navigation %}
-                        <li class="nav-item">
-                            <a href="{{ config.site.base_path }}{{ item.url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
+                        <li class="nav-item{% if item.children %} has-dropdown{% endif %}">
+                            <a href="{{ config.site.base_path }}{{ item.url }}" class="nav-link {% if page.url == item.url or (item.url != '/' and page.url and page.url.startswith(item.url)) %}active{% endif %}">
                                 {{ item.name }}
+                                {% if item.children %}<span class="dropdown-arrow">▼</span>{% endif %}
                             </a>
+                            {% if item.children %}
+                            <div class="dropdown-menu">
+                                <div class="dropdown-content">
+                                    {% for child in item.children %}
+                                    <a href="{{ config.site.base_path }}{{ child.url }}" class="dropdown-item">
+                                        <span class="dropdown-item-title">{{ child.name }}</span>
+                                        {% if child.description %}<span class="dropdown-item-desc">{{ child.description }}</span>{% endif %}
+                                    </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
                         </li>
                         {% endfor %}
                     </ul>
                 </nav>
-                
+
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary header-cta">Get a Quote</a>
+
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
@@ -85,36 +119,103 @@
         {% block content %}{% endblock %}
     </main>
     
+    <!-- Footer CTA Section -->
+    <section class="footer-cta">
+        <div class="container">
+            <div class="footer-cta-grid">
+                <div class="footer-cta-content">
+                    <h2>Ready to Automate Your Production?</h2>
+                    <p>Let's discuss how custom automation solutions can transform your manufacturing operations. Our engineers are ready to help you increase efficiency, quality, and throughput.</p>
+                    <div class="footer-cta-features">
+                        <div class="cta-feature">
+                            <span class="cta-feature-icon">✓</span>
+                            <span>Free Consultation</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="cta-feature-icon">✓</span>
+                            <span>Custom Solutions</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="cta-feature-icon">✓</span>
+                            <span>Expert Engineering</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cta-form">
+                    <h3>Request a Quote</h3>
+                    <form class="quick-contact-form" id="footer-contact-form">
+                        <div class="form-row">
+                            <input type="text" name="firstname" placeholder="First Name *" required>
+                            <input type="text" name="lastname" placeholder="Last Name *" required>
+                        </div>
+                        <input type="email" name="email" placeholder="Email *" required>
+                        <input type="text" name="company" placeholder="Company *" required>
+                        <input type="tel" name="phone" placeholder="Phone">
+                        <textarea name="message" placeholder="Tell us about your project..." rows="3"></textarea>
+                        <div id="footer-form-status" class="form-status"></div>
+                        <button type="submit" class="btn btn-primary btn-block">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>{{ config.site.name }}</h3>
+                <div class="footer-section footer-about">
+                    <a href="{{ config.site.base_path }}/" class="footer-logo">{{ config.site.name }}</a>
                     <p>{{ config.site.tagline }}</p>
+                    <div class="footer-social">
+                        {% if config.social.linkedin %}<a href="{{ config.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>{% endif %}
+                    </div>
                 </div>
-                
+
+                <div class="footer-section">
+                    <h4>Capabilities</h4>
+                    <ul class="footer-links">
+                        {% for item in config.navigation %}
+                        {% if item.children %}
+                        {% for child in item.children[:4] %}
+                        <li><a href="{{ config.site.base_path }}{{ child.url }}">{{ child.name }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         {% for item in config.navigation %}
                         <li><a href="{{ config.site.base_path }}{{ item.url }}">{{ item.name }}</a></li>
                         {% endfor %}
+                        <li><a href="{{ config.site.base_path }}/privacy-policy/">Privacy Policy</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
-                        <li>📞 {{ config.social.phone }}</li>
-                        <li>✉️ {{ config.social.email }}</li>
-                        <li>📍 {{ config.social.address }}</li>
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ config.social.phone }}</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">✉️</span>
+                            <a href="mailto:{{ config.social.email }}">{{ config.social.email }}</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <span>{{ config.social.address }}</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; {{ year }} {{ config.site.name }}. All rights reserved. | <a href="{{ config.site.base_path }}/privacy-policy/">Privacy Policy</a></p>
+                <p>&copy; {{ year }} {{ config.site.name }}. All rights reserved.</p>
             </div>
         </div>
     </footer>

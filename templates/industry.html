@@ -14,23 +14,66 @@
     </div>
 </section>
 
-<!-- Main Content -->
-<section class="section">
+<!-- Main Content with Sidebar -->
+<section class="section section-warm">
     <div class="container">
-        <div class="industry-content">
-            <div class="content-body">
-                {{ content | safe }}
+        <div class="content-with-sidebar">
+            <!-- Main Content Area -->
+            <div class="content-main">
+                <div class="content-body prose">
+                    {{ content | safe }}
+                </div>
             </div>
+
+            <!-- Right Sidebar -->
+            <aside class="content-sidebar">
+                <div class="sidebar-inner">
+                    <div class="sidebar-widget">
+                        <h3>Industries We Serve</h3>
+                        <ul class="sidebar-nav">
+                            {% for industry in config.industries %}
+                            <li>
+                                <a href="{{ config.site.base_path }}{{ industry.url }}" class="{% if industry.url == page.url %}active{% endif %}">
+                                    {{ industry.name }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget sidebar-cta">
+                        <h3>Need Help?</h3>
+                        <p>Our engineers understand {{ page.short_title or page.title | lower }} manufacturing challenges.</p>
+                        <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary btn-sm btn-block">Get a Quote</a>
+                        <p class="sidebar-phone">
+                            <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">
+                                {{ config.social.phone }}
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Quick Links</h3>
+                        <ul class="sidebar-nav">
+                            <li><a href="{{ config.site.base_path }}/capabilities/">Our Capabilities</a></li>
+                            <li><a href="{{ config.site.base_path }}/about/">About Us</a></li>
+                            <li><a href="{{ config.site.base_path }}/blog/">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
         </div>
     </div>
 </section>
 
 {% if page.solutions %}
 <!-- Solutions Section -->
-<section class="section section-alt">
+<section class="section section-light">
     <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Solutions for {{ page.short_title or page.title }}</h2>
+        <div class="section-header text-center">
+            <span class="section-label">Solutions</span>
+            <h2 class="section-title">Automation for {{ page.short_title or page.title }}</h2>
+            <p class="section-subtitle">Tailored solutions that address your industry's unique requirements</p>
         </div>
         <div class="solutions-grid">
             {% for solution in page.solutions %}
@@ -48,13 +91,14 @@
 <!-- Challenges Section -->
 <section class="section">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header text-center">
+            <span class="section-label">Challenges</span>
             <h2 class="section-title">Industry Challenges We Solve</h2>
         </div>
         <div class="challenges-list">
             {% for challenge in page.challenges %}
             <div class="challenge-item">
-                <div class="challenge-icon">&#10003;</div>
+                <div class="challenge-icon">✓</div>
                 <div>
                     <h3>{{ challenge.title }}</h3>
                     <p>{{ challenge.description }}</p>
@@ -66,28 +110,58 @@
 </section>
 {% endif %}
 
-<!-- Related Capabilities -->
-<section class="section section-alt">
+<!-- Related Content Section with A/B Testing -->
+<section class="section section-alt related-content" data-test="related_content">
     <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Capabilities for {{ page.short_title or page.title }}</h2>
-            <p class="section-subtitle">Explore the automation technologies we apply in this industry</p>
+        <div class="section-header text-center">
+            <span class="section-label">Our Capabilities</span>
+            <h2 class="section-title">Technologies for {{ page.short_title or page.title }}</h2>
+            <p class="section-subtitle">Explore the automation solutions we apply in this industry</p>
         </div>
-        <div class="capabilities-grid">
+        <div class="related-grid">
             {% for cap in config.capabilities %}
-            <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card">
-                <div class="capability-icon">
-                    {% if cap.icon == 'robot' %}&#129302;{% endif %}
-                    {% if cap.icon == 'welding' %}&#128293;{% endif %}
-                    {% if cap.icon == 'test' %}&#128269;{% endif %}
-                    {% if cap.icon == 'assembly' %}&#9881;{% endif %}
-                    {% if cap.icon == 'custom' %}&#128736;{% endif %}
-                    {% if cap.icon == 'handling' %}&#128230;{% endif %}
+            <a href="{{ config.site.base_path }}{{ cap.url }}" class="related-item" data-content-id="{{ cap.name | lower | replace(' ', '-') }}">
+                <div class="related-item-inner">
+                    <div class="related-icon">
+                        {% if cap.icon == 'robot' %}🤖{% endif %}
+                        {% if cap.icon == 'welding' %}🔥{% endif %}
+                        {% if cap.icon == 'test' %}🔍{% endif %}
+                        {% if cap.icon == 'assembly' %}⚙️{% endif %}
+                        {% if cap.icon == 'custom' %}🔧{% endif %}
+                        {% if cap.icon == 'handling' %}📦{% endif %}
+                    </div>
+                    <h3>{{ cap.name }}</h3>
+                    <p>{{ cap.description }}</p>
+                    <span class="related-link">Learn More →</span>
                 </div>
-                <h3>{{ cap.name }}</h3>
-                <p>{{ cap.description }}</p>
-                <span class="card-link">Learn More &rarr;</span>
             </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Other Industries -->
+<section class="section section-warm">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-label">More Industries</span>
+            <h2 class="section-title">Other Industries We Serve</h2>
+        </div>
+        <div class="industries-grid">
+            {% for industry in config.industries %}
+            {% if industry.url != page.url %}
+            <a href="{{ config.site.base_path }}{{ industry.url }}" class="industry-card">
+                <div class="industry-icon">
+                    {% if industry.icon == 'car' %}🚗{% endif %}
+                    {% if industry.icon == 'medical' %}🏥{% endif %}
+                    {% if industry.icon == 'consumer' %}🛒{% endif %}
+                    {% if industry.icon == 'electronics' %}💻{% endif %}
+                    {% if industry.icon == 'aerospace' %}✈️{% endif %}
+                    {% if industry.icon == 'food' %}🍽️{% endif %}
+                </div>
+                <h3>{{ industry.name }}</h3>
+            </a>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -96,9 +170,14 @@
 <!-- CTA Section -->
 <section class="cta-section">
     <div class="container">
-        <h2>Ready to Discuss Your {{ page.short_title or page.title }} Project?</h2>
-        <p>Our team understands the unique requirements of {{ page.short_title or page.title | lower }} manufacturing.</p>
-        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+        <div class="cta-content">
+            <h2>Ready to Discuss Your {{ page.short_title or page.title }} Project?</h2>
+            <p>Our team understands the unique requirements of {{ page.short_title or page.title | lower }} manufacturing. Let's talk about your automation needs.</p>
+            <div class="cta-buttons">
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+                <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="btn btn-outline-white btn-lg">Call Us</a>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock %}
