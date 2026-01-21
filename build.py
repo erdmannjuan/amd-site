@@ -131,6 +131,68 @@ def get_related_posts(page_data, posts, max_related=3):
     return related
 
 
+POSTS_PER_PAGE = 12  # Number of blog posts per page
+
+
+def build_blog_index_pages(config, env, posts, categories):
+    """Build paginated blog index pages"""
+    total_posts = len(posts)
+    total_pages = (total_posts + POSTS_PER_PAGE - 1) // POSTS_PER_PAGE
+    built_pages = []
+
+    for page_num in range(1, total_pages + 1):
+        start_idx = (page_num - 1) * POSTS_PER_PAGE
+        end_idx = start_idx + POSTS_PER_PAGE
+        page_posts = posts[start_idx:end_idx]
+
+        # Pagination data
+        pagination = {
+            'current_page': page_num,
+            'total_pages': total_pages,
+            'total_posts': total_posts,
+            'has_prev': page_num > 1,
+            'has_next': page_num < total_pages,
+            'prev_url': '/blog/' if page_num == 2 else f'/blog/page/{page_num - 1}/' if page_num > 1 else None,
+            'next_url': f'/blog/page/{page_num + 1}/' if page_num < total_pages else None,
+            'pages': list(range(1, total_pages + 1))
+        }
+
+        page_data = {
+            'title': 'Automation Insights & Industry Blog' if page_num == 1 else f'Blog - Page {page_num}',
+            'description': 'Expert perspectives on manufacturing automation, robotics, and industry trends.',
+            'template': 'blog.html',
+            'url': '/blog/' if page_num == 1 else f'/blog/page/{page_num}/',
+            'hero_title': 'Automation Insights',
+            'hero_subtitle': 'Expert perspectives on manufacturing automation, robotics, and industry trends',
+            'label': 'Blog'
+        }
+
+        template = env.get_template('blog.html')
+        rendered = template.render(
+            page=page_data,
+            content='',
+            config=config,
+            posts=page_posts,
+            categories=categories,
+            pagination=pagination,
+            year=datetime.now().year
+        )
+
+        if page_num == 1:
+            output_path = OUTPUT_DIR / 'blog' / 'index.html'
+        else:
+            output_path = OUTPUT_DIR / 'blog' / 'page' / str(page_num) / 'index.html'
+
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(rendered)
+
+        print(f"  ✓ Built: {page_data['url']}")
+        built_pages.append(page_data)
+
+    return built_pages
+
+
 def build_page(page, config, env, all_pages, posts=None, categories=None):
     """Build a single page"""
     page_data = {
@@ -157,6 +219,7 @@ def build_page(page, config, env, all_pages, posts=None, categories=None):
         all_pages=all_pages,
         posts=posts or [],
         categories=categories or [],
+        pagination=None,
         year=datetime.now().year
     )
 
@@ -254,9 +317,16 @@ def build_site():
 
     built_pages = []
     for page in pages:
+        # Skip blog index - we build it separately with pagination
+        if page['url'] == '/blog/':
+            continue
         page_data = build_page(page, config, env, pages, posts, categories)
         built_pages.append(page_data)
-    
+
+    # Build paginated blog index pages
+    blog_pages = build_blog_index_pages(config, env, posts, categories)
+    built_pages.extend(blog_pages)
+
     generate_sitemap(built_pages, config)
     
     print(f"\n✅ Build complete! Output in: {OUTPUT_DIR}\n")

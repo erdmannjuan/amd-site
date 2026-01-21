@@ -13,20 +13,8 @@
 <!-- Industries Visual Grid -->
 <section class="section industries-showcase">
     <div class="container">
-        {% set ind_images = {
-            'car': 'placeholder-industry-automotive.svg',
-            'medical': 'placeholder-industry-medical.svg',
-            'consumer': 'placeholder-industry-consumer.svg',
-            'electronics': 'placeholder-industry-electronics.svg',
-            'aerospace': 'placeholder-industry-aerospace.svg',
-            'food': 'placeholder-industry-food.svg',
-            'energy': 'placeholder-industry-energy.svg',
-            'heavy-equipment': 'placeholder-industry-heavy.svg',
-            'pharma': 'placeholder-industry-pharma.svg',
-            'defense': 'placeholder-industry-defense.svg',
-            'appliances': 'placeholder-industry-appliances.svg',
-            'general': 'placeholder-industry-general.svg'
-        } %}
+        {# Use CSS-based placeholders to eliminate image HTTP requests #}
+        {% set ind_images = {} %}
 
         {% set ind_descriptions = {
             'car': 'Powertrain, body assembly, and component manufacturing automation for Tier 1 suppliers and OEMs.',
@@ -91,7 +79,13 @@
             <div class="industry-showcase-card">
                 <div class="industry-showcase-image">
                     <a href="{{ config.site.base_path }}{{ ind.url }}">
-                        <img src="{{ config.site.base_path }}/static/images/{{ ind_images[ind.icon] | default('placeholder-card-1.svg') }}" alt="{{ ind.name }}" loading="lazy" width="400" height="280">
+                        {% if ind_images[ind.icon] %}
+                        <img src="{{ config.site.base_path }}/static/images/{{ ind_images[ind.icon] }}" alt="{{ ind.name }}" loading="lazy" width="400" height="280">
+                        {% else %}
+                        <div class="industry-placeholder" data-industry="{{ ind.name }}">
+                            <span class="industry-placeholder-text">{{ ind.name }}</span>
+                        </div>
+                        {% endif %}
                         <div class="industry-showcase-overlay"></div>
                     </a>
                 </div>
