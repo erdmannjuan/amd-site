@@ -203,7 +203,7 @@ img {
     color: rgba(255,255,255,0.75);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .header-top-bar {
         display: none;
     }
