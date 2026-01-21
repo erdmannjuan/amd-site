@@ -129,6 +129,12 @@ img {
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
 /* ================================
    Enhanced Header & Navigation
    ================================ */
