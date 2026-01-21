@@ -22,7 +22,7 @@
     <meta property="og:type" content="{% if page.template == 'blog-post.html' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ config.site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ config.site.name }}">
-    <meta property="og:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image | default('og-default.png') }}">
+    <meta property="og:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image | default('og-default.jpg') }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page.title }}{{ config.seo.default_title_suffix }}">
     <meta name="twitter:description" content="{{ page.description or config.seo.default_description }}">
-    <meta name="twitter:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image | default('og-default.png') }}">
+    <meta name="twitter:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image | default('og-default.jpg') }}">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ config.site.url }}{{ page.url }}">
@@ -92,9 +92,15 @@
     <link rel="icon" sizes="192x192" href="{{ config.site.base_path }}/static/images/android-chrome-192x192.png">
     <meta name="theme-color" content="#003087">
 
-    <!-- DNS Prefetch & Preconnect for Fonts -->
+    <!-- DNS Prefetch & Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google.com">
+
+    <!-- Preload critical resources -->
+    {% if page.url == '/' %}
+    <link rel="preload" href="{{ config.site.base_path }}/static/images/hero-automation.jpg" as="image" fetchpriority="high">
+    {% endif %}
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{ config.site.base_path }}/static/css/style.css">
@@ -316,80 +322,41 @@
 
     <!-- Google Analytics handled by Cloudflare Zaraz -->
 
-    <!-- A/B Testing -->
+    <!-- Lightweight Analytics (A/B tracking via Cloudflare Zaraz) -->
     <script>
-    (function() {
-        // A/B Test Configuration
-        var AB_TESTS = {
-            'related_content': {
-                variants: ['control', 'variant_a', 'variant_b'],
-                active: true
-            }
-        };
-
-        // Get or assign user to variant
-        function getVariant(testName) {
-            var storageKey = 'ab_' + testName;
-            var variant = localStorage.getItem(storageKey);
-            if (!variant && AB_TESTS[testName]) {
-                var variants = AB_TESTS[testName].variants;
-                variant = variants[Math.floor(Math.random() * variants.length)];
-                localStorage.setItem(storageKey, variant);
-            }
-            return variant;
+    window.abTrack = function(el) {
+        if (typeof gtag === 'function') {
+            gtag('event', 'click', { event_category: 'content', event_label: el.textContent.substring(0,50) });
         }
-
-        // Track event to Google Analytics
-        function trackEvent(category, action, label, value) {
-            if (typeof gtag === 'function') {
-                gtag('event', action, {
-                    'event_category': category,
-                    'event_label': label,
-                    'value': value
-                });
-            }
-        }
-
-        // Track content clicks with A/B variant info
-        function trackContentClick(element) {
-            var contentId = element.getAttribute('data-content-id') || element.textContent.trim().substring(0, 50);
-            var testSection = element.closest('[data-test]');
-            var testName = testSection ? testSection.getAttribute('data-test') : 'unknown';
-            var variant = getVariant(testName);
-
-            trackEvent('content_click', 'click', contentId, 1);
-            trackEvent('ab_test', testName + '_' + variant, contentId, 1);
-
-            // Log for debugging (remove in production)
-            console.log('A/B Track:', testName, variant, contentId);
-        }
-
-        // Initialize tracking on DOM ready
-        document.addEventListener('DOMContentLoaded', function() {
-            // Track clicks on related content
-            var trackableLinks = document.querySelectorAll('[data-test] a, .related-post-card, .related-item');
-            trackableLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    trackContentClick(this);
-                });
-            });
-
-            // Track sidebar related article clicks
-            var sidebarLinks = document.querySelectorAll('.article-related a');
-            sidebarLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    trackEvent('sidebar', 'related_click', this.textContent.trim().substring(0, 50), 1);
-                });
-            });
-
-            // Expose for manual tracking
-            window.abTrack = trackContentClick;
-        });
-    })();
+    };
     </script>
 
-    <!-- Google reCAPTCHA v3 -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdSKVIsAAAAAAcVpAO4PCEzDjEmGOpfo1jK0wMS"></script>
+    <!-- Google reCAPTCHA v3 - Lazy loaded on form interaction for performance -->
+    <script>
+    (function() {
+        var recaptchaLoaded = false;
+        var RECAPTCHA_KEY = '6LdSKVIsAAAAAAcVpAO4PCEzDjEmGOpfo1jK0wMS';
+
+        function loadRecaptcha() {
+            if (recaptchaLoaded) return;
+            recaptchaLoaded = true;
+            var script = document.createElement('script');
+            script.src = 'https://www.google.com/recaptcha/api.js?render=' + RECAPTCHA_KEY;
+            script.async = true;
+            document.head.appendChild(script);
+        }
+
+        // Load reCAPTCHA when user interacts with any form
+        document.addEventListener('focusin', function(e) {
+            if (e.target.closest('form')) loadRecaptcha();
+        }, { once: true });
+
+        // Also load on mouse enter to forms (desktop hover)
+        document.addEventListener('mouseover', function(e) {
+            if (e.target.closest('form')) loadRecaptcha();
+        }, { once: true });
+    })();
+    </script>
 
     {% block scripts_extra %}{% endblock %}
 </body>
