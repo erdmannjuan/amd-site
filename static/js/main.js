@@ -332,18 +332,7 @@
             }
         });
 
-        // Make sidebar sticky on scroll
-        const stickyOffset = 120;
-        const sidebarInner = sidebar.querySelector('.sidebar-inner');
-
-        if (sidebarInner && window.innerWidth > 992) {
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > stickyOffset) {
-                    sidebarInner.style.position = 'sticky';
-                    sidebarInner.style.top = stickyOffset + 'px';
-                }
-            }, { passive: true });
-        }
+        // Sidebar sticky is now handled by CSS only to avoid forced reflow
     }
 
     // ===========================================
@@ -356,14 +345,15 @@
         if (!stickyEl || !container || window.innerWidth <= 992) return;
 
         const offset = 112; // header + padding
+        let ticking = false;
 
-        window.addEventListener('scroll', function() {
-            if (window.innerWidth <= 992) return;
+        // Cache sticky height on init (avoid reading during scroll)
+        const stickyHeight = stickyEl.offsetHeight;
 
+        function updateStickyState() {
             const containerRect = container.getBoundingClientRect();
-            const stickyHeight = stickyEl.offsetHeight;
 
-            // When container top goes above the offset point
+            // Batch writes after read
             if (containerRect.top < offset && containerRect.bottom > stickyHeight + offset) {
                 stickyEl.classList.add('is-sticky');
                 stickyEl.classList.remove('is-bottom');
@@ -373,6 +363,17 @@
             } else {
                 stickyEl.classList.remove('is-sticky');
                 stickyEl.classList.remove('is-bottom');
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (window.innerWidth <= 992) return;
+
+            // Use requestAnimationFrame to batch DOM operations
+            if (!ticking) {
+                requestAnimationFrame(updateStickyState);
+                ticking = true;
             }
         }, { passive: true });
     }

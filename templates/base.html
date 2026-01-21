@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}{{ config.seo.default_title_suffix }}</title>
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S337NW9CQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-1S337NW9CQ');
-    </script>
-
     <!-- Security Meta Tags -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
@@ -50,8 +41,9 @@
     <!-- Preload Critical CSS -->
     <link rel="preload" href="{{ config.site.base_path }}/static/css/style.css" as="style">
 
-    <!-- Fonts with display=swap for better performance -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- Fonts - Async loading to prevent render blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ config.site.base_path }}/static/css/style.css">
@@ -266,6 +258,15 @@
 
     <!-- Scripts (deferred for performance) -->
     <script src="{{ config.site.base_path }}/static/js/main.js" defer></script>
+
+    <!-- Google Analytics 4 - Loaded at end of body for performance -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S337NW9CQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1S337NW9CQ');
+    </script>
 
     <!-- A/B Testing & Analytics -->
     <script>

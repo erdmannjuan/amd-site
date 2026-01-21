@@ -213,6 +213,12 @@ def build_site():
         if cname_src.exists():
             shutil.copy(cname_src, OUTPUT_DIR / 'CNAME')
             print("  ✓ Copied CNAME file")
+
+        # Copy _headers file for cache control (Netlify/Cloudflare)
+        headers_src = BASE_DIR / '_headers'
+        if headers_src.exists():
+            shutil.copy(headers_src, OUTPUT_DIR / '_headers')
+            print("  ✓ Copied _headers file")
     
     pages = get_all_pages(CONTENT_DIR)
     print(f"\n  Found {len(pages)} page(s) to build:\n")
