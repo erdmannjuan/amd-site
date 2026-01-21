@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Page Hero -->
-<section class="page-hero">
+<!-- Page Hero with Image -->
+<section class="page-hero page-hero-image" style="background-image: url('{{ config.site.base_path }}/static/images/{{ page.hero_image | default('placeholder-hero-capabilities.svg') }}');">
+    <div class="hero-overlay"></div>
     <div class="container">
         <nav class="breadcrumb">
-            <a href="{{ config.site.base_path }}/">Home</a> &rsaquo;
-            <a href="{{ config.site.base_path }}/capabilities/">Capabilities</a> &rsaquo;
+            <a href="{{ config.site.base_path }}/">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="{{ config.site.base_path }}/capabilities/">Capabilities</a>
+            <span class="breadcrumb-sep">/</span>
             <span>{{ page.short_title or page.title }}</span>
         </nav>
         <h1 class="page-title">{{ page.hero_title or page.title }}</h1>
@@ -20,6 +23,11 @@
         <div class="content-with-sidebar">
             <!-- Main Content Area -->
             <div class="content-main">
+                <!-- Featured Image -->
+                <div class="content-featured-image">
+                    <img src="{{ config.site.base_path }}/static/images/{{ page.featured_image | default('placeholder-capability-' ~ (page.slug | default('robotic-cells')) ~ '.svg') }}" alt="{{ page.title }}">
+                </div>
+
                 <div class="content-body prose">
                     {{ content | safe }}
                 </div>
@@ -113,7 +121,7 @@
         <div class="benefits-grid">
             {% for benefit in page.benefits %}
             <div class="benefit-item">
-                <div class="benefit-icon">✓</div>
+                <div class="benefit-icon"></div>
                 <div>
                     <h3>{{ benefit.title }}</h3>
                     <p>{{ benefit.description }}</p>
@@ -125,7 +133,7 @@
 </section>
 {% endif %}
 
-<!-- Related Content Section with A/B Testing -->
+<!-- Related Content Section -->
 <section class="section section-alt related-content" data-test="related_content">
     <div class="container">
         <div class="section-header text-center">
@@ -134,21 +142,24 @@
             <p class="section-subtitle">Discover other automation solutions that complement {{ page.short_title or page.title | lower }}</p>
         </div>
         <div class="related-grid">
+            {% set cap_images = {
+                'robotic-cells': 'placeholder-capability-robotic-cells.svg',
+                'welding': 'placeholder-capability-welding.svg',
+                'test-systems': 'placeholder-capability-test-systems.svg',
+                'assembly': 'placeholder-capability-assembly.svg',
+                'custom-automation': 'placeholder-capability-custom.svg',
+                'material-handling': 'placeholder-capability-material-handling.svg'
+            } %}
             {% for cap in config.capabilities %}
             {% if cap.url != page.url %}
             <a href="{{ config.site.base_path }}{{ cap.url }}" class="related-item" data-content-id="{{ cap.name | lower | replace(' ', '-') }}">
                 <div class="related-item-inner">
-                    <div class="related-icon">
-                        {% if cap.icon == 'robot' %}🤖{% endif %}
-                        {% if cap.icon == 'welding' %}🔥{% endif %}
-                        {% if cap.icon == 'test' %}🔍{% endif %}
-                        {% if cap.icon == 'assembly' %}⚙️{% endif %}
-                        {% if cap.icon == 'custom' %}🔧{% endif %}
-                        {% if cap.icon == 'handling' %}📦{% endif %}
+                    <div class="related-image">
+                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}">
                     </div>
                     <h3>{{ cap.name }}</h3>
                     <p>{{ cap.description }}</p>
-                    <span class="related-link">Learn More →</span>
+                    <span class="related-link">Learn More</span>
                 </div>
             </a>
             {% endif %}

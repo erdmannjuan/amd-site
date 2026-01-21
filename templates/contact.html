@@ -21,7 +21,7 @@
 
                 <div class="contact-methods">
                     <div class="contact-method">
-                        <div class="contact-icon">&#128222;</div>
+                        <div class="contact-icon contact-icon-phone"></div>
                         <div>
                             <h3>Phone</h3>
                             <p><a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ config.social.phone }}</a></p>
@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="contact-method">
-                        <div class="contact-icon">&#9993;</div>
+                        <div class="contact-icon contact-icon-email"></div>
                         <div>
                             <h3>Email</h3>
                             <p><a href="mailto:{{ config.social.email }}">{{ config.social.email }}</a></p>
@@ -37,7 +37,7 @@
                     </div>
 
                     <div class="contact-method">
-                        <div class="contact-icon">&#128205;</div>
+                        <div class="contact-icon contact-icon-location"></div>
                         <div>
                             <h3>Address</h3>
                             <p>{{ config.social.address }}</p>

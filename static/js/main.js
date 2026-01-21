@@ -47,7 +47,7 @@
     }
 
     // ===========================================
-    // DROPDOWN MENUS
+    // DROPDOWN MENUS (Mobile only - Desktop uses CSS hover)
     // ===========================================
     function initDropdownMenus() {
         const dropdownItems = document.querySelectorAll('.nav-item.has-dropdown');
@@ -58,25 +58,19 @@
 
             if (!link || !dropdown) return;
 
-            // Desktop: show on hover
-            item.addEventListener('mouseenter', function() {
-                if (window.innerWidth > 992) {
-                    dropdown.classList.add('active');
-                }
-            });
-
-            item.addEventListener('mouseleave', function() {
-                if (window.innerWidth > 992) {
-                    dropdown.classList.remove('active');
-                }
-            });
-
-            // Mobile: toggle on click
+            // Mobile only: toggle on click
             link.addEventListener('click', function(e) {
-                if (window.innerWidth <= 992 && item.classList.contains('has-dropdown')) {
+                if (window.innerWidth <= 992) {
                     e.preventDefault();
-                    dropdown.classList.toggle('active');
+                    // Close other dropdowns
+                    dropdownItems.forEach(other => {
+                        if (other !== item) {
+                            other.classList.remove('dropdown-open');
+                            other.querySelector('.dropdown-menu')?.classList.remove('show');
+                        }
+                    });
                     item.classList.toggle('dropdown-open');
+                    dropdown.classList.toggle('show');
                 }
             });
         });

@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Page Hero -->
-<section class="page-hero">
+<!-- Page Hero with Image -->
+<section class="page-hero page-hero-image" style="background-image: url('{{ config.site.base_path }}/static/images/{{ page.hero_image | default('placeholder-hero-industries.svg') }}');">
+    <div class="hero-overlay"></div>
     <div class="container">
         <nav class="breadcrumb">
-            <a href="{{ config.site.base_path }}/">Home</a> &rsaquo;
-            <a href="{{ config.site.base_path }}/industries/">Industries</a> &rsaquo;
+            <a href="{{ config.site.base_path }}/">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="{{ config.site.base_path }}/industries/">Industries</a>
+            <span class="breadcrumb-sep">/</span>
             <span>{{ page.short_title or page.title }}</span>
         </nav>
         <h1 class="page-title">{{ page.hero_title or page.title }}</h1>
@@ -20,6 +23,19 @@
         <div class="content-with-sidebar">
             <!-- Main Content Area -->
             <div class="content-main">
+                <!-- Featured Image -->
+                {% set industry_images = {
+                    'automotive': 'placeholder-industry-automotive.svg',
+                    'medical': 'placeholder-industry-medical.svg',
+                    'consumer': 'placeholder-industry-consumer.svg',
+                    'electronics': 'placeholder-industry-electronics.svg',
+                    'aerospace': 'placeholder-industry-aerospace.svg',
+                    'food-beverage': 'placeholder-industry-food.svg'
+                } %}
+                <div class="content-featured-image">
+                    <img src="{{ config.site.base_path }}/static/images/{{ page.featured_image | default(industry_images[page.url.split('/')[-2]] | default('placeholder-industry-automotive.svg')) }}" alt="{{ page.title }}">
+                </div>
+
                 <div class="content-body prose">
                     {{ content | safe }}
                 </div>
@@ -98,7 +114,7 @@
         <div class="challenges-list">
             {% for challenge in page.challenges %}
             <div class="challenge-item">
-                <div class="challenge-icon">✓</div>
+                <div class="challenge-icon"></div>
                 <div>
                     <h3>{{ challenge.title }}</h3>
                     <p>{{ challenge.description }}</p>
@@ -110,7 +126,7 @@
 </section>
 {% endif %}
 
-<!-- Related Content Section with A/B Testing -->
+<!-- Related Content Section -->
 <section class="section section-alt related-content" data-test="related_content">
     <div class="container">
         <div class="section-header text-center">
@@ -119,20 +135,23 @@
             <p class="section-subtitle">Explore the automation solutions we apply in this industry</p>
         </div>
         <div class="related-grid">
+            {% set cap_images = {
+                'robotic-cells': 'placeholder-capability-robotic-cells.svg',
+                'welding': 'placeholder-capability-welding.svg',
+                'test-systems': 'placeholder-capability-test-systems.svg',
+                'assembly': 'placeholder-capability-assembly.svg',
+                'custom-automation': 'placeholder-capability-custom.svg',
+                'material-handling': 'placeholder-capability-material-handling.svg'
+            } %}
             {% for cap in config.capabilities %}
             <a href="{{ config.site.base_path }}{{ cap.url }}" class="related-item" data-content-id="{{ cap.name | lower | replace(' ', '-') }}">
                 <div class="related-item-inner">
-                    <div class="related-icon">
-                        {% if cap.icon == 'robot' %}🤖{% endif %}
-                        {% if cap.icon == 'welding' %}🔥{% endif %}
-                        {% if cap.icon == 'test' %}🔍{% endif %}
-                        {% if cap.icon == 'assembly' %}⚙️{% endif %}
-                        {% if cap.icon == 'custom' %}🔧{% endif %}
-                        {% if cap.icon == 'handling' %}📦{% endif %}
+                    <div class="related-image">
+                        <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}">
                     </div>
                     <h3>{{ cap.name }}</h3>
                     <p>{{ cap.description }}</p>
-                    <span class="related-link">Learn More →</span>
+                    <span class="related-link">Learn More</span>
                 </div>
             </a>
             {% endfor %}
@@ -148,16 +167,19 @@
             <h2 class="section-title">Other Industries We Serve</h2>
         </div>
         <div class="industries-grid">
+            {% set ind_images = {
+                'automotive': 'placeholder-industry-automotive.svg',
+                'medical': 'placeholder-industry-medical.svg',
+                'consumer': 'placeholder-industry-consumer.svg',
+                'electronics': 'placeholder-industry-electronics.svg',
+                'aerospace': 'placeholder-industry-aerospace.svg',
+                'food-beverage': 'placeholder-industry-food.svg'
+            } %}
             {% for industry in config.industries %}
             {% if industry.url != page.url %}
             <a href="{{ config.site.base_path }}{{ industry.url }}" class="industry-card">
-                <div class="industry-icon">
-                    {% if industry.icon == 'car' %}🚗{% endif %}
-                    {% if industry.icon == 'medical' %}🏥{% endif %}
-                    {% if industry.icon == 'consumer' %}🛒{% endif %}
-                    {% if industry.icon == 'electronics' %}💻{% endif %}
-                    {% if industry.icon == 'aerospace' %}✈️{% endif %}
-                    {% if industry.icon == 'food' %}🍽️{% endif %}
+                <div class="industry-image">
+                    <img src="{{ config.site.base_path }}/static/images/{{ ind_images[industry.url.split('/')[-2]] | default('placeholder-card-1.svg') }}" alt="{{ industry.name }}">
                 </div>
                 <h3>{{ industry.name }}</h3>
             </a>

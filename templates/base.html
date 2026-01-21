@@ -24,7 +24,7 @@
     <meta name="description" content="{{ page.description or config.seo.default_description }}">
     <meta name="keywords" content="{{ page.keywords or config.seo.default_keywords }}">
     <meta name="author" content="{{ config.site.author }}">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.description or config.seo.default_description }}">
@@ -33,10 +33,10 @@
     {% if page.image %}
     <meta property="og:image" content="{{ config.site.url }}{{ config.site.base_path }}/static/images/{{ page.image }}">
     {% endif %}
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ config.site.url }}{{ page.url }}">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ config.site.base_path }}/static/images/favicon.png">
 
@@ -47,7 +47,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ config.site.base_path }}/static/css/style.css">
-    
+
     {% block head_extra %}{% endblock %}
 </head>
 <body>
@@ -57,14 +57,17 @@
             <div class="top-bar-content">
                 <div class="top-bar-contact">
                     <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">
-                        <span class="top-bar-icon">📞</span> {{ config.social.phone }}
+                        <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        {{ config.social.phone }}
                     </a>
                     <a href="mailto:{{ config.social.email }}">
-                        <span class="top-bar-icon">✉️</span> {{ config.social.email }}
+                        <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        {{ config.social.email }}
                     </a>
                 </div>
                 <div class="top-bar-location">
-                    <span class="top-bar-icon">📍</span> {{ config.social.address }}
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    {{ config.social.address }}
                 </div>
             </div>
         </div>
@@ -84,7 +87,6 @@
                         <li class="nav-item{% if item.children %} has-dropdown{% endif %}">
                             <a href="{{ config.site.base_path }}{{ item.url }}" class="nav-link {% if page.url == item.url or (item.url != '/' and page.url and page.url.startswith(item.url)) %}active{% endif %}">
                                 {{ item.name }}
-                                {% if item.children %}<span class="dropdown-arrow">▼</span>{% endif %}
                             </a>
                             {% if item.children %}
                             <div class="dropdown-menu">
@@ -113,12 +115,12 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
     <main class="site-main">
         {% block content %}{% endblock %}
     </main>
-    
+
     <!-- Footer CTA Section -->
     <section class="footer-cta">
         <div class="container">
@@ -126,20 +128,11 @@
                 <div class="footer-cta-content">
                     <h2>Ready to Automate Your Production?</h2>
                     <p>Let's discuss how custom automation solutions can transform your manufacturing operations. Our engineers are ready to help you increase efficiency, quality, and throughput.</p>
-                    <div class="footer-cta-features">
-                        <div class="cta-feature">
-                            <span class="cta-feature-icon">✓</span>
-                            <span>Free Consultation</span>
-                        </div>
-                        <div class="cta-feature">
-                            <span class="cta-feature-icon">✓</span>
-                            <span>Custom Solutions</span>
-                        </div>
-                        <div class="cta-feature">
-                            <span class="cta-feature-icon">✓</span>
-                            <span>Expert Engineering</span>
-                        </div>
-                    </div>
+                    <ul class="footer-cta-features">
+                        <li>Free Consultation</li>
+                        <li>Custom Solutions</li>
+                        <li>Expert Engineering</li>
+                    </ul>
                 </div>
                 <div class="footer-cta-form">
                     <h3>Request a Quote</h3>
@@ -168,7 +161,7 @@
                     <a href="{{ config.site.base_path }}/" class="footer-logo">{{ config.site.name }}</a>
                     <p>{{ config.site.tagline }}</p>
                     <div class="footer-social">
-                        {% if config.social.linkedin %}<a href="{{ config.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>{% endif %}
+                        {% if config.social.linkedin %}<a href="{{ config.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>{% endif %}
                     </div>
                 </div>
 
@@ -199,17 +192,12 @@
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
                         <li>
-                            <span class="contact-icon">📞</span>
                             <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ config.social.phone }}</a>
                         </li>
                         <li>
-                            <span class="contact-icon">✉️</span>
                             <a href="mailto:{{ config.social.email }}">{{ config.social.email }}</a>
                         </li>
-                        <li>
-                            <span class="contact-icon">📍</span>
-                            <span>{{ config.social.address }}</span>
-                        </li>
+                        <li>{{ config.social.address }}</li>
                     </ul>
                 </div>
             </div>
@@ -219,7 +207,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Scripts -->
     <script src="{{ config.site.base_path }}/static/js/main.js"></script>
     {% block scripts_extra %}{% endblock %}
