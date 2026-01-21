@@ -196,6 +196,23 @@ def build_site():
         shutil.copytree(STATIC_DIR, OUTPUT_DIR / 'static')
         print("  ✓ Copied static files")
 
+        # Minify CSS for production
+        try:
+            import csscompressor
+            css_file = OUTPUT_DIR / 'static' / 'css' / 'style.css'
+            if css_file.exists():
+                original_size = css_file.stat().st_size
+                with open(css_file, 'r') as f:
+                    css_content = f.read()
+                minified = csscompressor.compress(css_content)
+                with open(css_file, 'w') as f:
+                    f.write(minified)
+                new_size = css_file.stat().st_size
+                savings = ((original_size - new_size) / original_size) * 100
+                print(f"  ✓ Minified CSS ({original_size//1024}KB → {new_size//1024}KB, {savings:.0f}% smaller)")
+        except ImportError:
+            print("  ⚠ csscompressor not installed, skipping CSS minification")
+
         # Copy robots.txt to root
         robots_src = STATIC_DIR / 'robots.txt'
         if robots_src.exists():
