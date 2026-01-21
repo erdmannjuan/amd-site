@@ -31,15 +31,15 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ config.site.base_path }}/static/images/favicon.png">
 
-    <!-- DNS Prefetch & Preconnect for Performance -->
+    <!-- Main CSS - Load first to prevent FOUC -->
+    <link rel="stylesheet" href="{{ config.site.base_path }}/static/css/style.css">
+
+    <!-- DNS Prefetch & Preconnect for Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Fonts - Load with display:swap -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="{{ config.site.base_path }}/static/css/style.css">
 
     {% block head_extra %}{% endblock %}
 </head>
