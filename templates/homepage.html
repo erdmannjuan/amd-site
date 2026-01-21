@@ -50,19 +50,22 @@
             <p class="section-subtitle">Comprehensive automation solutions tailored to your specific manufacturing needs</p>
         </div>
         <div class="capabilities-grid">
+            {% set cap_images = {
+                'robot': 'placeholder-capability-robotic-cells.svg',
+                'welding': 'placeholder-capability-welding.svg',
+                'test': 'placeholder-capability-test-systems.svg',
+                'assembly': 'placeholder-capability-assembly.svg',
+                'custom': 'placeholder-capability-custom.svg',
+                'handling': 'placeholder-capability-material-handling.svg'
+            } %}
             {% for cap in config.capabilities %}
             <a href="{{ config.site.base_path }}{{ cap.url }}" class="capability-card">
-                <div class="capability-icon">
-                    {% if cap.icon == 'robot' %}&#129302;{% endif %}
-                    {% if cap.icon == 'welding' %}&#128293;{% endif %}
-                    {% if cap.icon == 'test' %}&#128269;{% endif %}
-                    {% if cap.icon == 'assembly' %}&#9881;{% endif %}
-                    {% if cap.icon == 'custom' %}&#128736;{% endif %}
-                    {% if cap.icon == 'handling' %}&#128230;{% endif %}
+                <div class="capability-image">
+                    <img src="{{ config.site.base_path }}/static/images/{{ cap_images[cap.icon] | default('placeholder-card-1.svg') }}" alt="{{ cap.name }}">
                 </div>
                 <h3>{{ cap.name }}</h3>
                 <p>{{ cap.description }}</p>
-                <span class="card-link">Learn More &rarr;</span>
+                <span class="card-link">Learn More</span>
             </a>
             {% endfor %}
         </div>
@@ -78,19 +81,20 @@
             <p class="section-subtitle">Delivering automation solutions across diverse manufacturing sectors</p>
         </div>
         <div class="industries-grid">
+            {% set ind_images = {
+                'car': 'placeholder-industry-automotive.svg',
+                'medical': 'placeholder-industry-medical.svg',
+                'consumer': 'placeholder-industry-consumer.svg',
+                'electronics': 'placeholder-industry-electronics.svg',
+                'aerospace': 'placeholder-industry-aerospace.svg',
+                'food': 'placeholder-industry-food.svg'
+            } %}
             {% for ind in config.industries %}
             <a href="{{ config.site.base_path }}{{ ind.url }}" class="industry-card">
-                <div class="industry-card-image">
-                    {% if ind.icon == 'car' %}&#128663;{% endif %}
-                    {% if ind.icon == 'medical' %}&#9764;{% endif %}
-                    {% if ind.icon == 'consumer' %}&#127968;{% endif %}
-                    {% if ind.icon == 'electronics' %}&#128187;{% endif %}
-                    {% if ind.icon == 'aerospace' %}&#9992;{% endif %}
-                    {% if ind.icon == 'food' %}&#127828;{% endif %}
+                <div class="industry-image">
+                    <img src="{{ config.site.base_path }}/static/images/{{ ind_images[ind.icon] | default('placeholder-card-1.svg') }}" alt="{{ ind.name }}">
                 </div>
-                <div class="industry-card-body">
-                    <h3>{{ ind.name }}</h3>
-                </div>
+                <h3>{{ ind.name }}</h3>
             </a>
             {% endfor %}
         </div>
