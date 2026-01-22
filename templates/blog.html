@@ -13,10 +13,11 @@
 <!-- Category Filters -->
 <section class="blog-filters-section">
     <div class="container">
-        <div class="category-tabs" id="category-tabs">
-            <button class="category-tab active" data-category="">All</button>
+        <div class="category-tabs">
+            <a href="{{ config.site.base_path }}/blog/" class="category-tab{% if not page.current_category %} active{% endif %}">All</a>
             {% for category in categories|sort %}
-            <button class="category-tab" data-category="{{ category }}">{{ category }}</button>
+            {% set cat_slug = category|lower|replace(' & ', '-')|replace(' ', '-') %}
+            <a href="{{ config.site.base_path }}/blog/category/{{ cat_slug }}/" class="category-tab{% if page.current_category == category %} active{% endif %}">{{ category }}</a>
             {% endfor %}
         </div>
     </div>
@@ -51,9 +52,6 @@
                 <p>No blog posts yet. Check back soon for automation insights and industry updates.</p>
             </div>
             {% endfor %}
-        </div>
-        <div class="blog-empty" id="no-results" style="display: none;">
-            <p>No articles match your filters. Try adjusting your search criteria.</p>
         </div>
 
         {% if pagination and pagination.total_pages > 1 %}
@@ -113,49 +111,3 @@
 </section>
 {% endblock %}
 
-{% block scripts_extra %}
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.category-tab');
-    const cards = document.querySelectorAll('.blog-card');
-    const blogGrid = document.getElementById('blog-grid');
-    const noResults = document.getElementById('no-results');
-
-    function filterByCategory(category) {
-        let visibleCount = 0;
-
-        cards.forEach(function(card) {
-            const cardCategory = card.dataset.category || '';
-            const show = !category || cardCategory === category;
-            card.style.display = show ? '' : 'none';
-            if (show) visibleCount++;
-        });
-
-        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-        blogGrid.style.display = visibleCount === 0 ? 'none' : '';
-    }
-
-    tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-            tabs.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-            filterByCategory(this.dataset.category);
-        });
-    });
-
-    // Handle URL params
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlCategory = urlParams.get('category');
-    if (urlCategory) {
-        const decoded = decodeURIComponent(urlCategory);
-        tabs.forEach(function(tab) {
-            if (tab.dataset.category.toLowerCase() === decoded.toLowerCase()) {
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                filterByCategory(tab.dataset.category);
-            }
-        });
-    }
-});
-</script>
-{% endblock %}

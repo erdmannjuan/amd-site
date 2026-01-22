@@ -194,6 +194,52 @@ def build_blog_index_pages(config, env, posts, categories):
     return built_pages
 
 
+def build_category_pages(config, env, posts, categories):
+    """Build category-specific blog pages"""
+    built_pages = []
+
+    for category in categories:
+        # Filter posts by category
+        cat_posts = [p for p in posts if p.get('category') == category]
+        if not cat_posts:
+            continue
+
+        # Create URL-safe slug
+        cat_slug = category.lower().replace(' & ', '-').replace(' ', '-')
+
+        page_data = {
+            'title': f'{category} - Automation Blog',
+            'description': f'Articles about {category.lower()} in manufacturing automation.',
+            'template': 'blog.html',
+            'url': f'/blog/category/{cat_slug}/',
+            'hero_title': category,
+            'hero_subtitle': f'{len(cat_posts)} articles',
+            'label': 'Blog',
+            'current_category': category
+        }
+
+        template = env.get_template('blog.html')
+        rendered = template.render(
+            page=page_data,
+            content='',
+            config=config,
+            posts=cat_posts,
+            categories=categories,
+            pagination=None,
+            year=datetime.now().year
+        )
+
+        output_path = OUTPUT_DIR / 'blog' / 'category' / cat_slug / 'index.html'
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(rendered)
+
+        print(f"  ✓ Built: {page_data['url']} ({len(cat_posts)} posts)")
+        built_pages.append(page_data)
+
+    return built_pages
+
+
 def build_page(page, config, env, all_pages, posts=None, categories=None):
     """Build a single page"""
     page_data = {
@@ -327,6 +373,10 @@ def build_site():
     # Build paginated blog index pages
     blog_pages = build_blog_index_pages(config, env, posts, categories)
     built_pages.extend(blog_pages)
+
+    # Build category pages
+    category_pages = build_category_pages(config, env, posts, categories)
+    built_pages.extend(category_pages)
 
     generate_sitemap(built_pages, config)
     generate_search_index(posts, config)
