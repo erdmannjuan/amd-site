@@ -1,10 +1,12 @@
 ---
-title: "Functional Testing of Electronic Assemblies"
-description: "Design test systems that verify the functionality of PCBAs and electronic products."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, functional, testing, electronic"
-date: "2025-10-10"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Functional Testing of Electronic Assemblies
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, functional, testing, electronic
+date: '2025-10-10'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/functional-testing-of-electronic-assemblies/

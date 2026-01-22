@@ -1,7 +1,10 @@
 ---
-title: How to Choose the Right Industrial Robot | Articulated vs SCARA vs Cobot Guide
-description: "Complete guide to choosing industrial robots: articulated, SCARA, delta & collaborative robots compared. Payload, reach, speed & application selection criteria explained."
-keywords: how to choose industrial robot, articulated robot vs SCARA, collaborative robot selection, cobot vs industrial robot, robot payload guide, robot reach comparison
+title: How to Choose the Right Industrial Robot | Articulated
+description: 'Complete guide to choosing industrial robots: articulated, SCARA, delta
+  & collaborative robots compared. Payload, reach, speed & application selection criteria
+  explained.'
+keywords: how to choose industrial robot, articulated robot vs SCARA, collaborative
+  robot selection, cobot vs industrial robot, robot payload guide, robot reach comparison
 template: blog-post.html
 category: Robotics
 author: AMD Engineering Team
@@ -9,12 +12,13 @@ author_title: Automation Specialists
 date: 2024-01-15
 read_time: 8
 related_posts:
-  - title: "ROI of Robotic Automation"
-    url: "/blog/roi-of-robotic-automation/"
-    description: "Calculate the true return on investment for your robotic automation project."
-  - title: "Integrating Vision Systems"
-    url: "/blog/integrating-vision-systems-with-robots/"
-    description: "How machine vision enhances robotic flexibility and capability."
+- title: ROI of Robotic Automation
+  url: /blog/roi-of-robotic-automation/
+  description: Calculate the true return on investment for your robotic automation
+    project.
+- title: Integrating Vision Systems
+  url: /blog/integrating-vision-systems-with-robots/
+  description: How machine vision enhances robotic flexibility and capability.
 ---
 
 Selecting the right robot for your manufacturing application is one of the most critical decisions in an automation project. The wrong choice can lead to performance issues, unnecessary costs, and missed production targets. This guide will help you understand the key factors to consider.

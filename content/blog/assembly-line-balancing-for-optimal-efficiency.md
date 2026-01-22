@@ -1,10 +1,12 @@
 ---
-title: "Assembly Line Balancing for Optimal Efficiency"
-description: "Apply line balancing techniques to maximize throughput and minimize operator idle time."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, assembly, balancing, optimal"
-date: "2025-11-03"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Assembly Line Balancing for Optimal Efficiency
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, assembly, balancing, optimal
+date: '2025-11-03'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/assembly-line-balancing-for-optimal-efficiency/

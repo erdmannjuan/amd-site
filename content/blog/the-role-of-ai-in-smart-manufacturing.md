@@ -1,10 +1,12 @@
 ---
-title: "The Role of AI in Smart Manufacturing"
-description: "Understand where artificial intelligence adds value in manufacturing operations."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, smart, manufacturing"
-date: "2025-08-27"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: The Role of AI in Smart Manufacturing
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, smart, manufacturing
+date: '2025-08-27'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/the-role-of-ai-in-smart-manufacturing/

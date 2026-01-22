@@ -1,22 +1,22 @@
 ---
-title: "German Mittelstand Accelerates Automation Amid Labor Challenges"
-description: "Small and medium German manufacturers report 40% increase in automation spending."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-06-05"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: German Mittelstand Accelerates Automation Amid Labor
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Small and medium German manufacturers report 40% increase in automation.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-06-05'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/german-mittelstand-accelerates-automation-amid-labor-challen/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Small and medium German manufacturers report 40% increase in automation spending.
+ Small and medium German manufacturers report 40% increase in automation spending.
 
 ## Key Developments
 
 Small and medium German manufacturers report 40% increase in automation spending.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

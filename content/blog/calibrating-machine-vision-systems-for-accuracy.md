@@ -1,10 +1,12 @@
 ---
-title: "Calibrating Machine Vision Systems for Accuracy"
-description: "Follow best practices for calibrating vision systems to achieve measurement accuracy."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, calibrating, machine, vision"
-date: "2025-11-27"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Calibrating Machine Vision Systems for Accuracy
+description: machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, calibrating, machine, vision
+date: '2025-11-27'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/calibrating-machine-vision-systems-for-accuracy/

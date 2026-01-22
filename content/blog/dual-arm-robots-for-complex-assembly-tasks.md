@@ -1,10 +1,12 @@
 ---
-title: "Dual-Arm Robots for Complex Assembly Tasks"
-description: "Discover how dual-arm robots enable human-like dexterity for intricate assembly operations."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, robots, complex, assembly"
-date: "2025-12-27"
-author: "AMD Automation Team"
-category: "Robotics"
+title: Dual-Arm Robots for Complex Assembly Tasks
+description: Discover how dual-arm robots enable human-like dexterity for intricate
+  assembly operations. In today's competitive manufacturing environment,.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, robots, complex, assembly
+date: '2025-12-27'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/dual-arm-robots-for-complex-assembly-tasks/

@@ -1,22 +1,22 @@
 ---
-title: "Amazon Web Services Launches Dedicated Manufacturing AI Services"
-description: "AWS Industrial ML suite targets predictive maintenance, quality, and optimization."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-03-01"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Amazon Web Services Launches Dedicated Manufacturing AI
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  AWS Industrial ML suite targets predictive maintenance, quality, and.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-03-01'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/amazon-web-services-launches-dedicated-manufacturing-ai-serv/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. AWS Industrial ML suite targets predictive maintenance, quality, and optimization.
+ AWS Industrial ML suite targets predictive maintenance, quality, and optimization.
 
 ## Key Developments
 
 AWS Industrial ML suite targets predictive maintenance, quality, and optimization.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

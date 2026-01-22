@@ -1,10 +1,12 @@
 ---
-title: "Delta Robots for High-Speed Pick and Place Applications"
-description: "Learn why delta robots excel at high-speed sorting, packaging, and pick-and-place operations in food and consumer goods."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, delta, robots, speed"
-date: "2026-01-08"
-author: "AMD Automation Team"
-category: "Robotics"
+title: Delta Robots for High-Speed Pick and Place Applications
+description: Learn why delta robots excel at high-speed sorting, packaging, and pick-and-place
+  operations in food and consumer goods.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, delta, robots, speed
+date: '2026-01-08'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/delta-robots-for-high-speed-pick-and-place-applications/

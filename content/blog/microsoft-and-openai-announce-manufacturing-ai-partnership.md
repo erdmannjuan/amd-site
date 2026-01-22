@@ -1,22 +1,22 @@
 ---
-title: "Microsoft and OpenAI Announce Manufacturing AI Partnership"
-description: "Joint initiative to bring GPT-powered tools to shop floor applications."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-04-18"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Microsoft and OpenAI Announce Manufacturing AI Partnership
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Joint initiative to bring GPT-powered tools to shop floor applications.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-04-18'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/microsoft-and-openai-announce-manufacturing-ai-partnership/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Joint initiative to bring GPT-powered tools to shop floor applications.
+ Joint initiative to bring GPT-powered tools to shop floor applications.
 
 ## Key Developments
 
 Joint initiative to bring GPT-powered tools to shop floor applications.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

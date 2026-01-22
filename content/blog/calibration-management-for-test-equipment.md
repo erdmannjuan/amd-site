@@ -1,10 +1,12 @@
 ---
-title: "Calibration Management for Test Equipment"
-description: "Maintain measurement accuracy with systematic calibration programs."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, calibration, management, equipment"
-date: "2025-09-24"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Calibration Management for Test Equipment
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, calibration, management, equipment
+date: '2025-09-24'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/calibration-management-for-test-equipment/

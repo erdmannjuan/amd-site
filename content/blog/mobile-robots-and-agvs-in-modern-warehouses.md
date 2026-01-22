@@ -1,10 +1,12 @@
 ---
-title: "Mobile Robots and AGVs in Modern Warehouses"
-description: "Explore how autonomous mobile robots are revolutionizing warehouse logistics and intralogistics operations."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, mobile, robots, modern"
-date: "2026-01-06"
-author: "AMD Automation Team"
-category: "Robotics"
+title: Mobile Robots and AGVs in Modern Warehouses
+description: Explore how autonomous mobile robots are revolutionizing warehouse logistics
+  and intralogistics operations. In today's competitive manufacturing.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, mobile, robots, modern
+date: '2026-01-06'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/mobile-robots-and-agvs-in-modern-warehouses/

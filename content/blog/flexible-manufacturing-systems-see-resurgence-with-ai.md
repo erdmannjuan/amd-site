@@ -1,22 +1,22 @@
 ---
-title: "Flexible Manufacturing Systems See Resurgence with AI"
-description: "AI enables new level of flexibility in automated production."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-07-01"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Flexible Manufacturing Systems See Resurgence with AI
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  AI enables new level of flexibility in automated production.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-07-01'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/flexible-manufacturing-systems-see-resurgence-with-ai/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. AI enables new level of flexibility in automated production.
+ AI enables new level of flexibility in automated production.
 
 ## Key Developments
 
 AI enables new level of flexibility in automated production.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

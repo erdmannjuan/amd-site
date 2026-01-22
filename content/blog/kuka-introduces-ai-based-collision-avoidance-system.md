@@ -1,22 +1,22 @@
 ---
-title: "KUKA Introduces AI-Based Collision Avoidance System"
-description: "New system uses real-time AI to prevent collisions in multi-robot cells without pre-programming."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-01-08"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: KUKA Introduces AI-Based Collision Avoidance System
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New system uses real-time AI to prevent collisions in multi-robot cells.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-01-08'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/kuka-introduces-ai-based-collision-avoidance-system/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New system uses real-time AI to prevent collisions in multi-robot cells without pre-programming.
+ New system uses real-time AI to prevent collisions in multi-robot cells without pre-programming.
 
 ## Key Developments
 
 New system uses real-time AI to prevent collisions in multi-robot cells without pre-programming.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

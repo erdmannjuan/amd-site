@@ -1,7 +1,11 @@
 ---
-title: Industrial Automation Equipment Explained - Robots, Presses, Conveyors, and Vision
-description: "Comprehensive guide to industrial automation equipment including robots, servo presses, conveyors, vision systems, PLCs, and safety devices. Learn what each does and when to use them."
-keywords: industrial automation equipment, industrial robots, servo presses, conveyor systems, machine vision, PLC controllers, automation components, factory automation equipment
+title: Industrial Automation Equipment Explained - Robots,
+description: Comprehensive guide to industrial automation equipment including robots,
+  servo presses, conveyors, vision systems, PLCs, and safety devices. Learn what each
+  does and when to use them.
+keywords: industrial automation equipment, industrial robots, servo presses, conveyor
+  systems, machine vision, PLC controllers, automation components, factory automation
+  equipment
 template: blog-post.html
 category: Education
 author: AMD Engineering Team
@@ -9,12 +13,12 @@ author_title: Automation Specialists
 date: 2024-03-05
 read_time: 11
 related_posts:
-  - title: "What Is Industrial Automation"
-    url: "/blog/what-is-industrial-automation/"
-    description: "Introduction to automation and its benefits for manufacturing."
-  - title: "Choosing the Right Robot"
-    url: "/blog/choosing-right-robot-for-your-application/"
-    description: "Guide to selecting the optimal robot for your application."
+- title: What Is Industrial Automation
+  url: /blog/what-is-industrial-automation/
+  description: Introduction to automation and its benefits for manufacturing.
+- title: Choosing the Right Robot
+  url: /blog/choosing-right-robot-for-your-application/
+  description: Guide to selecting the optimal robot for your application.
 ---
 
 Modern manufacturing relies on a variety of specialized automation equipment. Understanding what each component does and when to apply it helps make informed decisions about automation investments. This guide covers the major categories of industrial automation equipment.

@@ -1,22 +1,22 @@
 ---
-title: "Industrial AI Standards Body Releases First Certification Framework"
-description: "New standards provide guidance for validating AI in manufacturing applications."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-09-20"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Industrial AI Standards Body Releases First
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New standards provide guidance for validating AI in manufacturing.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-09-20'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/industrial-ai-standards-body-releases-first-certification-fr/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New standards provide guidance for validating AI in manufacturing applications.
+ New standards provide guidance for validating AI in manufacturing applications.
 
 ## Key Developments
 
 New standards provide guidance for validating AI in manufacturing applications.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

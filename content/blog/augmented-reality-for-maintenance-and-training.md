@@ -1,10 +1,12 @@
 ---
-title: "Augmented Reality for Maintenance and Training"
-description: "Implement AR solutions to guide technicians and train operators."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, augmented, reality, maintenance"
-date: "2025-09-02"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Augmented Reality for Maintenance and Training
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, augmented, reality, maintenance
+date: '2025-09-02'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/augmented-reality-for-maintenance-and-training/

@@ -1,22 +1,22 @@
 ---
-title: "Industrial AR Glasses Integrate AI Assistant"
-description: "Wearable devices provide AI-guided maintenance and operation support."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-06-01"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Industrial AR Glasses Integrate AI Assistant
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Wearable devices provide AI-guided maintenance and operation support.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-06-01'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/industrial-ar-glasses-integrate-ai-assistant/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Wearable devices provide AI-guided maintenance and operation support.
+ Wearable devices provide AI-guided maintenance and operation support.
 
 ## Key Developments
 
 Wearable devices provide AI-guided maintenance and operation support.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

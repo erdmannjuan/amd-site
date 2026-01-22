@@ -1,10 +1,12 @@
 ---
-title: "Test Data Management and Analytics"
-description: "Collect, store, and analyze test data for quality insights and traceability."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, management, analytics"
-date: "2025-09-26"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Test Data Management and Analytics
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, management, analytics
+date: '2025-09-26'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/test-data-management-and-analytics/

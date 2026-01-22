@@ -1,10 +1,12 @@
 ---
-title: "In-Process vs End-of-Line Inspection Trade-offs"
-description: "Balance inspection placement to catch defects early while minimizing production disruption."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, process, inspection, trade"
-date: "2025-10-14"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: In-Process vs End-of-Line Inspection Trade-offs
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, process, inspection, trade
+date: '2025-10-14'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/in-process-vs-end-of-line-inspection-trade-offs/

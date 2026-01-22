@@ -1,10 +1,12 @@
 ---
-title: "Programming Industrial Robots: Online vs Offline Methods"
-description: "Discover the advantages and trade-offs between online teach pendant programming and offline simulation-based robot programming."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, programming, industrial, robots"
-date: "2026-01-12"
-author: "AMD Automation Team"
-category: "Robotics"
+title: 'Programming Industrial Robots: Online vs Offline Methods'
+description: Discover the advantages and trade-offs between online teach pendant programming
+  and offline simulation-based robot programming.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, programming, industrial, robots
+date: '2026-01-12'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/programming-industrial-robots-online-vs-offline-methods/

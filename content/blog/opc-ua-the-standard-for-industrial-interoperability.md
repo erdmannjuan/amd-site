@@ -1,10 +1,12 @@
 ---
-title: "OPC UA: The Standard for Industrial Interoperability"
-description: "Implement OPC UA for secure, standardized communication between automation systems."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, standard, industrial, interoperability"
-date: "2025-09-16"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: 'OPC UA: The Standard for Industrial Interoperability'
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, standard, industrial, interoperability
+date: '2025-09-16'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/opc-ua-the-standard-for-industrial-interoperability/

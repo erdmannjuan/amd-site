@@ -1,10 +1,12 @@
 ---
-title: "Adhesive Dispensing in Automated Assembly"
-description: "Learn best practices for automated adhesive application in bonding and sealing operations."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, adhesive, dispensing, automated"
-date: "2025-11-13"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Adhesive Dispensing in Automated Assembly
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, adhesive, dispensing, automated
+date: '2025-11-13'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/adhesive-dispensing-in-automated-assembly/

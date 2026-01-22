@@ -1,22 +1,22 @@
 ---
-title: "AI Vision Defect Detection Achieves Human Parity in Automotive"
-description: "Studies confirm AI visual inspection now matches experienced human inspectors."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-09-05"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: AI Vision Defect Detection Achieves Human Parity in
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Studies confirm AI visual inspection now matches experienced human.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-09-05'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/ai-vision-defect-detection-achieves-human-parity-in-automoti/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Studies confirm AI visual inspection now matches experienced human inspectors.
+ Studies confirm AI visual inspection now matches experienced human inspectors.
 
 ## Key Developments
 
 Studies confirm AI visual inspection now matches experienced human inspectors.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

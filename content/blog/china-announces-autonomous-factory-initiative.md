@@ -1,22 +1,22 @@
 ---
-title: "China Announces Autonomous Factory Initiative"
-description: "National program targets 10,000 autonomous factories by 2030."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-08-20"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: China Announces Autonomous Factory Initiative
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  National program targets 10,000 autonomous factories by 2030.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-08-20'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/china-announces-autonomous-factory-initiative/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. National program targets 10,000 autonomous factories by 2030.
+ National program targets 10,000 autonomous factories by 2030.
 
 ## Key Developments
 
 National program targets 10,000 autonomous factories by 2030.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

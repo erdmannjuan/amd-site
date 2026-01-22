@@ -1,10 +1,12 @@
 ---
-title: "Understanding Robot Payload Capacity and Reach"
-description: "Master the fundamentals of robot selection by understanding how payload capacity and reach affect your automation project."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, understanding, robot, payload"
-date: "2026-01-16"
-author: "AMD Automation Team"
-category: "Robotics"
+title: Understanding Robot Payload Capacity and Reach
+description: Master the fundamentals of robot selection by understanding how payload
+  capacity and reach affect your automation project.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, understanding, robot, payload
+date: '2026-01-16'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/understanding-robot-payload-capacity-and-reach/

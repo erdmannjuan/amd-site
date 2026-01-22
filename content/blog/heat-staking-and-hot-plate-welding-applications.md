@@ -1,10 +1,12 @@
 ---
-title: "Heat Staking and Hot Plate Welding Applications"
-description: "Discover thermal joining methods for permanent plastic-to-plastic and plastic-to-metal assemblies."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, staking, plate, welding"
-date: "2025-11-09"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Heat Staking and Hot Plate Welding Applications
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, staking, plate, welding
+date: '2025-11-09'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/heat-staking-and-hot-plate-welding-applications/

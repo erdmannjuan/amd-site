@@ -1,10 +1,12 @@
 ---
-title: "Collaborative Robots in Manufacturing: A Complete Guide"
-description: "Learn how cobots are transforming factory floors with safe human-robot collaboration, increased flexibility, and lower implementation costs."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, collaborative, robots, manufacturing"
-date: "2026-01-20"
-author: "AMD Automation Team"
-category: "Robotics"
+title: 'Collaborative Robots in Manufacturing: A Complete Guide'
+description: Learn how cobots are transforming factory floors with safe human-robot
+  collaboration, increased flexibility, and lower implementation costs.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, collaborative, robots, manufacturing
+date: '2026-01-20'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/collaborative-robots-in-manufacturing-a-complete-guide/

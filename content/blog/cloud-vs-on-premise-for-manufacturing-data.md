@@ -1,10 +1,12 @@
 ---
-title: "Cloud vs On-Premise for Manufacturing Data"
-description: "Evaluate cloud and on-premise options for storing and analyzing production data."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, cloud, premise, manufacturing"
-date: "2025-09-08"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Cloud vs On-Premise for Manufacturing Data
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, cloud, premise, manufacturing
+date: '2025-09-08'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/cloud-vs-on-premise-for-manufacturing-data/

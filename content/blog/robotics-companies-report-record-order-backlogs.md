@@ -1,22 +1,22 @@
 ---
-title: "Robotics Companies Report Record Order Backlogs"
-description: "Major robot manufacturers see 12-18 month lead times for new equipment."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-09-28"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Robotics Companies Report Record Order Backlogs
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Major robot manufacturers see 12-18 month lead times for new equipment.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-09-28'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/robotics-companies-report-record-order-backlogs/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Major robot manufacturers see 12-18 month lead times for new equipment.
+ Major robot manufacturers see 12-18 month lead times for new equipment.
 
 ## Key Developments
 
 Major robot manufacturers see 12-18 month lead times for new equipment.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

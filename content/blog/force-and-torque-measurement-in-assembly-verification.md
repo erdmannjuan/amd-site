@@ -1,10 +1,12 @@
 ---
-title: "Force and Torque Measurement in Assembly Verification"
-description: "Use force and torque sensors to verify assembly quality in real-time."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, force, torque, measurement"
-date: "2025-10-08"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Force and Torque Measurement in Assembly Verification
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, force, torque, measurement
+date: '2025-10-08'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/force-and-torque-measurement-in-assembly-verification/

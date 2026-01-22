@@ -1,10 +1,12 @@
 ---
-title: "Press-Fit Assembly: Process Control and Monitoring"
-description: "Master press-fit assembly with force-displacement monitoring for reliable interference fits."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, press, assembly, process"
-date: "2025-11-17"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: 'Press-Fit Assembly: Process Control and Monitoring'
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, press, assembly, process
+date: '2025-11-17'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/press-fit-assembly-process-control-and-monitoring/

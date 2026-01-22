@@ -1,10 +1,12 @@
 ---
-title: "Manual Assembly Workstations with Smart Tools"
-description: "Design ergonomic manual assembly stations enhanced with smart tools and error-proofing."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, manual, assembly, workstations"
-date: "2025-11-05"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Manual Assembly Workstations with Smart Tools
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, manual, assembly, workstations
+date: '2025-11-05'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/manual-assembly-workstations-with-smart-tools/

@@ -1,10 +1,12 @@
 ---
-title: "Dimensional Inspection with CMMs and Vision"
-description: "Choose between coordinate measuring machines and vision systems for dimensional verification."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, dimensional, inspection, vision"
-date: "2025-10-16"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Dimensional Inspection with CMMs and Vision
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, dimensional, inspection, vision
+date: '2025-10-16'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/dimensional-inspection-with-cmms-and-vision/

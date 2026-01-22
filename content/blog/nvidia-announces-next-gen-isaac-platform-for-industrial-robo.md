@@ -1,22 +1,22 @@
 ---
-title: "NVIDIA Announces Next-Gen Isaac Platform for Industrial Robotics"
-description: "NVIDIA unveils Isaac Groot foundation model for humanoid robots and enhanced Isaac Sim capabilities for industrial automation."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-09-15"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: NVIDIA Announces Next-Gen Isaac Platform for Industrial
+description: NVIDIA unveils Isaac Groot foundation model for humanoid robots and enhanced
+  Isaac Sim capabilities for industrial automation.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-09-15'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/nvidia-announces-next-gen-isaac-platform-for-industrial-robo/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. NVIDIA unveils Isaac Groot foundation model for humanoid robots and enhanced Isaac Sim capabilities for industrial automation.
+ NVIDIA unveils Isaac Groot foundation model for humanoid robots and enhanced Isaac Sim capabilities for industrial automation.
 
 ## Key Developments
 
 NVIDIA unveils Isaac Groot foundation model for humanoid robots and enhanced Isaac Sim capabilities for industrial automation.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

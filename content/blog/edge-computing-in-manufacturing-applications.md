@@ -1,10 +1,12 @@
 ---
-title: "Edge Computing in Manufacturing Applications"
-description: "Process data at the machine level for faster response times and reduced bandwidth."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, computing, manufacturing, applications"
-date: "2025-09-14"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Edge Computing in Manufacturing Applications
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, computing, manufacturing, applications
+date: '2025-09-14'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/edge-computing-in-manufacturing-applications/

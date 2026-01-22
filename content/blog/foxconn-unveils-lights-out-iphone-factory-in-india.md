@@ -1,22 +1,22 @@
 ---
-title: "Foxconn Unveils Lights-Out iPhone Factory in India"
-description: "Fully automated facility produces devices with minimal human intervention."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-07-08"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Foxconn Unveils Lights-Out iPhone Factory in India
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Fully automated facility produces devices with minimal human intervention.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-07-08'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/foxconn-unveils-lights-out-iphone-factory-in-india/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Fully automated facility produces devices with minimal human intervention.
+ Fully automated facility produces devices with minimal human intervention.
 
 ## Key Developments
 
 Fully automated facility produces devices with minimal human intervention.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

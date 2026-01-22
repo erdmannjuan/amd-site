@@ -1779,16 +1779,17 @@ img {
 /* Sidebar CTA */
 .sidebar-cta {
     background: var(--accent-orange);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     text-align: left;
+    margin-top: 2rem;
 }
 
 .sidebar-cta h3,
 .sidebar-cta h4 {
     color: var(--white);
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
     border: none;
     padding: 0;
     text-transform: none;
@@ -1796,9 +1797,10 @@ img {
 }
 
 .sidebar-cta p {
-    color: rgba(255,255,255,0.9);
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    color: rgba(255,255,255,0.95);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
 }
 
 .sidebar-cta .btn {
@@ -3558,6 +3560,35 @@ button:disabled {
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+}
+
+/* Related Post Cards without images */
+.related-post-no-image {
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+}
+
+.related-post-category-badge {
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 1rem 1rem 0;
+    border-radius: var(--radius-sm);
+}
+
+.related-post-no-image .related-post-content {
+    padding: 0.75rem 1rem 1rem;
+}
+
+.related-post-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: block;
+    margin-top: 0.25rem;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -6485,23 +6516,25 @@ button:disabled {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding: 1.5rem;
+    padding: 2rem 2.5rem;
     background: var(--primary-light);
-    margin: 2.5rem 0;
-    border-left: 4px solid var(--primary);
+    margin: 3rem 0;
+    border-left: 5px solid var(--primary);
+    border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 .article-cta-content strong {
     display: block;
     color: var(--dark);
-    font-size: 1.1rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .article-cta-content p {
     color: var(--text-light);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
+    line-height: 1.5;
 }
 
 .article-related-solutions {

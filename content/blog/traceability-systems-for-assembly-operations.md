@@ -1,10 +1,12 @@
 ---
-title: "Traceability Systems for Assembly Operations"
-description: "Implement part tracking and data collection for complete assembly traceability."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, traceability, systems, assembly"
-date: "2025-11-01"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Traceability Systems for Assembly Operations
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, traceability, systems, assembly
+date: '2025-11-01'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/traceability-systems-for-assembly-operations/

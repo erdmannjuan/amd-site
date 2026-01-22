@@ -1,10 +1,12 @@
 ---
-title: "Predictive Maintenance with Machine Learning"
-description: "Use sensor data and ML algorithms to predict equipment failures before they occur."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, predictive, maintenance, machine"
-date: "2025-09-12"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Predictive Maintenance with Machine Learning
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, predictive, maintenance, machine
+date: '2025-09-12'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/predictive-maintenance-with-machine-learning/

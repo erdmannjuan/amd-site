@@ -1,10 +1,12 @@
 ---
-title: "Multi-Camera Vision Systems for Complete Inspection"
-description: "Design multi-camera setups for 360-degree inspection coverage of complex parts."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, multi, camera, vision"
-date: "2025-11-23"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Multi-Camera Vision Systems for Complete Inspection
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, multi, camera, vision
+date: '2025-11-23'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/multi-camera-vision-systems-for-complete-inspection/

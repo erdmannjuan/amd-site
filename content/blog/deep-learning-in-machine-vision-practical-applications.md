@@ -1,10 +1,12 @@
 ---
-title: "Deep Learning in Machine Vision: Practical Applications"
-description: "Explore how AI and deep learning are enhancing machine vision capabilities for defect detection and classification."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, learning, machine, vision"
-date: "2025-12-17"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: 'Deep Learning in Machine Vision: Practical Applications'
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, learning, machine, vision
+date: '2025-12-17'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/deep-learning-in-machine-vision-practical-applications/

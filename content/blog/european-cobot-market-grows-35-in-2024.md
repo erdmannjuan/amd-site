@@ -1,22 +1,22 @@
 ---
-title: "European Cobot Market Grows 35% in 2024"
-description: "Collaborative robots see strongest growth in small and medium manufacturers."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-04-10"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: European Cobot Market Grows 35% in 2024
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Collaborative robots see strongest growth in small and medium.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-04-10'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/european-cobot-market-grows-35-in-2024/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Collaborative robots see strongest growth in small and medium manufacturers.
+ Collaborative robots see strongest growth in small and medium manufacturers.
 
 ## Key Developments
 
 Collaborative robots see strongest growth in small and medium manufacturers.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

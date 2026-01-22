@@ -1,22 +1,22 @@
 ---
-title: "AI Quality Traceability Meets Automotive IATF Requirements"
-description: "Automated documentation systems satisfy stringent quality standard requirements."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-11-15"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: AI Quality Traceability Meets Automotive IATF Requirements
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Automated documentation systems satisfy stringent quality standard.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-11-15'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/ai-quality-traceability-meets-automotive-iatf-requirements/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Automated documentation systems satisfy stringent quality standard requirements.
+ Automated documentation systems satisfy stringent quality standard requirements.
 
 ## Key Developments
 
 Automated documentation systems satisfy stringent quality standard requirements.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

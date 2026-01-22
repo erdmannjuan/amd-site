@@ -1,10 +1,12 @@
 ---
-title: "Ultrasonic Welding for Plastic Assembly"
-description: "Understand ultrasonic welding technology for fast, clean joining of thermoplastic components."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, ultrasonic, welding, plastic"
-date: "2025-11-11"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Ultrasonic Welding for Plastic Assembly
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, ultrasonic, welding, plastic
+date: '2025-11-11'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/ultrasonic-welding-for-plastic-assembly/

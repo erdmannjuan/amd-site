@@ -1,10 +1,12 @@
 ---
-title: "IIoT Sensors and Connectivity for Legacy Equipment"
-description: "Connect older machines to modern networks with retrofit sensors and gateways."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, sensors, connectivity, legacy"
-date: "2025-09-18"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: IIoT Sensors and Connectivity for Legacy Equipment
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, sensors, connectivity, legacy
+date: '2025-09-18'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/iiot-sensors-and-connectivity-for-legacy-equipment/

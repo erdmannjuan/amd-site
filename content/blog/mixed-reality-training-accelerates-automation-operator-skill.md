@@ -1,22 +1,22 @@
 ---
-title: "Mixed Reality Training Accelerates Automation Operator Skills"
-description: "VR and AR systems reduce training time for complex automated systems."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-07-05"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Mixed Reality Training Accelerates Automation Operator
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  VR and AR systems reduce training time for complex automated systems.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-07-05'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/mixed-reality-training-accelerates-automation-operator-skill/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. VR and AR systems reduce training time for complex automated systems.
+ VR and AR systems reduce training time for complex automated systems.
 
 ## Key Developments
 
 VR and AR systems reduce training time for complex automated systems.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

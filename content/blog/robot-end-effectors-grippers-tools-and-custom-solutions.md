@@ -1,10 +1,12 @@
 ---
-title: "Robot End Effectors: Grippers, Tools, and Custom Solutions"
-description: "Explore the world of robot end-of-arm tooling from vacuum grippers to custom-designed fixtures for specialized applications."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, robot, effectors, grippers,"
-date: "2026-01-14"
-author: "AMD Automation Team"
-category: "Robotics"
+title: 'Robot End Effectors: Grippers, Tools, and Custom Solutions'
+description: Explore the world of robot end-of-arm tooling from vacuum grippers to
+  custom-designed fixtures for specialized applications.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, robot, effectors, grippers,
+date: '2026-01-14'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/robot-end-effectors-grippers-tools-and-custom-solutions/

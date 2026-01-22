@@ -1,10 +1,12 @@
 ---
-title: "OCR and Barcode Reading in Automated Production"
-description: "Implement optical character recognition and barcode scanning for traceability and quality control."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, barcode, reading, automated"
-date: "2025-12-11"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: OCR and Barcode Reading in Automated Production
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, barcode, reading, automated
+date: '2025-12-11'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/ocr-and-barcode-reading-in-automated-production/

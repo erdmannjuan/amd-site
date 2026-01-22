@@ -1,7 +1,10 @@
 ---
-title: Robot Vision Systems Integration Guide | 2D/3D Vision & Bin Picking
-description: Complete guide to integrating vision systems with industrial robots. 2D vs 3D vision comparison, bin picking setup, vision-guided robotics & quality inspection applications.
-keywords: robot vision system integration, machine vision robotics, 3D bin picking robot, vision guided robot, 2D vs 3D robot vision, automated visual inspection
+title: Robot Vision Systems Integration Guide | 2D/3D Vision &
+description: Complete guide to integrating vision systems with industrial robots.
+  2D vs 3D vision comparison, bin picking setup, vision-guided robotics & quality
+  inspection applications.
+keywords: robot vision system integration, machine vision robotics, 3D bin picking
+  robot, vision guided robot, 2D vs 3D robot vision, automated visual inspection
 template: blog-post.html
 category: Technology
 author: AMD Engineering Team
@@ -9,12 +12,13 @@ author_title: Automation Specialists
 date: 2024-01-01
 read_time: 7
 related_posts:
-  - title: "Choosing the Right Robot"
-    url: "/blog/choosing-right-robot-for-your-application/"
-    description: "A guide to selecting the optimal robot type for your application."
-  - title: "ROI of Robotic Automation"
-    url: "/blog/roi-of-robotic-automation/"
-    description: "Calculate the true return on investment for your robotic automation project."
+- title: Choosing the Right Robot
+  url: /blog/choosing-right-robot-for-your-application/
+  description: A guide to selecting the optimal robot type for your application.
+- title: ROI of Robotic Automation
+  url: /blog/roi-of-robotic-automation/
+  description: Calculate the true return on investment for your robotic automation
+    project.
 ---
 
 Machine vision has transformed what's possible with industrial robotics. By giving robots the ability to "see," we enable applications that were previously impractical or impossible with fixed automation. Here's what you need to know about integrating vision with robots.

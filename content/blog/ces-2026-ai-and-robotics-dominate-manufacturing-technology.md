@@ -1,22 +1,22 @@
 ---
-title: "CES 2026: AI and Robotics Dominate Manufacturing Technology"
-description: "Consumer electronics show features significant industrial automation innovation."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2026-01-05"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: 'CES 2026: AI and Robotics Dominate Manufacturing Technology'
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Consumer electronics show features significant industrial automation.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2026-01-05'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/ces-2026-ai-and-robotics-dominate-manufacturing-technology/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Consumer electronics show features significant industrial automation innovation.
+ Consumer electronics show features significant industrial automation innovation.
 
 ## Key Developments
 
 Consumer electronics show features significant industrial automation innovation.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

@@ -1,22 +1,22 @@
 ---
-title: "OSHA Updates Guidelines for AI-Controlled Safety Systems"
-description: "New framework addresses validation and monitoring of AI in safety-critical applications."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-05-05"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: OSHA Updates Guidelines for AI-Controlled Safety Systems
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New framework addresses validation and monitoring of AI in safety-critical.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-05-05'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/osha-updates-guidelines-for-ai-controlled-safety-systems/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New framework addresses validation and monitoring of AI in safety-critical applications.
+ New framework addresses validation and monitoring of AI in safety-critical applications.
 
 ## Key Developments
 
 New framework addresses validation and monitoring of AI in safety-critical applications.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

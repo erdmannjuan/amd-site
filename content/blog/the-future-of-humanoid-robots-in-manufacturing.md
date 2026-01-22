@@ -1,10 +1,12 @@
 ---
-title: "The Future of Humanoid Robots in Manufacturing"
-description: "Examine the potential role of humanoid robots in flexible manufacturing environments."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, future, humanoid, robots"
-date: "2026-01-02"
-author: "AMD Automation Team"
-category: "Robotics"
+title: The Future of Humanoid Robots in Manufacturing
+description: Examine the potential role of humanoid robots in flexible manufacturing
+  environments. In today's competitive manufacturing environment, understanding.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, future, humanoid, robots
+date: '2026-01-02'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/the-future-of-humanoid-robots-in-manufacturing/

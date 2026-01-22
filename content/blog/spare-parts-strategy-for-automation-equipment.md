@@ -1,10 +1,12 @@
 ---
-title: "Spare Parts Strategy for Automation Equipment"
-description: "Balance inventory investment with uptime requirements for spare parts."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automation maintenance, equipment support, preventive maintenance, spare, parts, strategy"
-date: "2025-03-22"
-author: "AMD Automation Team"
-category: "Maintenance and Support"
+title: Spare Parts Strategy for Automation Equipment
+description: This topic represents an important consideration for manufacturers seeking
+  to improve their operations through automation. Understanding the fundamentals.
+keywords: industrial automation, manufacturing automation, AMD Automation, automation
+  maintenance, equipment support, preventive maintenance, spare, parts, strategy
+date: '2025-03-22'
+author: AMD Automation Team
+category: Maintenance and Support
 read_time: 5
 template: blog-post.html
 url: /blog/spare-parts-strategy-for-automation-equipment/
@@ -14,27 +16,25 @@ url: /blog/spare-parts-strategy-for-automation-equipment/
 
 Balance inventory investment with uptime requirements for spare parts.
 
-This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals helps inform better decisions.
-
 ## Key Concepts
 
-Several fundamental concepts underpin this area:
+Here's what you need to know:
 
-- **Process understanding** - knowing your current state and requirements
-- **Technology options** - available solutions and their capabilities
-- **Implementation factors** - what it takes to deploy successfully
-- **Performance measurement** - how to evaluate results
-- **Continuous improvement** - ongoing optimization and enhancement
+- **Know your process** - document what you're doing now and what needs to change
+- **Pick the right tech** - match equipment to your actual requirements
+- **Plan the rollout** - budget time for debugging and training
+- **Track results** - measure before and after
+- **Keep improving** - automation is never 'done'
 
 ## Benefits and Considerations
 
-Manufacturers should weigh both the benefits and considerations:
+The tradeoffs:
 
 **Benefits:**
-- Improved efficiency and productivity
-- Enhanced quality and consistency
-- Better data and visibility
-- Reduced costs over time
+- Faster cycle times and less rework
+- Fewer defects, tighter tolerances
+- Real-time dashboards showing actual vs. target
+- Lower cost-per-part after payback
 
 **Considerations:**
 - Initial investment requirements
@@ -44,7 +44,7 @@ Manufacturers should weigh both the benefits and considerations:
 
 ## Best Practices
 
-Organizations that succeed with this approach typically:
+What works:
 
 1. Start with clear objectives tied to business goals
 2. Involve stakeholders from multiple functions early
@@ -54,7 +54,7 @@ Organizations that succeed with this approach typically:
 
 ## Getting Started
 
-If you're considering this for your operation:
+Here's how to get started:
 
 - Assess your current state and identify improvement opportunities
 - Define requirements based on your specific needs

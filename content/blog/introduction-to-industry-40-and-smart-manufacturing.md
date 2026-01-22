@@ -1,10 +1,12 @@
 ---
-title: "Introduction to Industry 4.0 and Smart Manufacturing"
-description: "Understand the pillars of Industry 4.0 and how they apply to your manufacturing operation."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, industry, smart, manufacturing"
-date: "2025-09-22"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Introduction to Industry 4.0 and Smart Manufacturing
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, industry, smart, manufacturing
+date: '2025-09-22'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/introduction-to-industry-40-and-smart-manufacturing/

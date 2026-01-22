@@ -1,22 +1,22 @@
 ---
-title: "Global Chip Shortage Accelerates Automation Investments"
-description: "Manufacturers increase automation to reduce labor dependency during component constraints."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-09-05"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Global Chip Shortage Accelerates Automation Investments
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Manufacturers increase automation to reduce labor dependency during.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-09-05'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/global-chip-shortage-accelerates-automation-investments/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Manufacturers increase automation to reduce labor dependency during component constraints.
+ Manufacturers increase automation to reduce labor dependency during component constraints.
 
 ## Key Developments
 
 Manufacturers increase automation to reduce labor dependency during component constraints.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

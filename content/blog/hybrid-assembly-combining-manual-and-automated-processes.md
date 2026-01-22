@@ -1,10 +1,12 @@
 ---
-title: "Hybrid Assembly: Combining Manual and Automated Processes"
-description: "Balance automation investment with flexibility using hybrid assembly approaches."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, hybrid, assembly, combining"
-date: "2025-10-30"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: 'Hybrid Assembly: Combining Manual and Automated Processes'
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, hybrid, assembly, combining
+date: '2025-10-30'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/hybrid-assembly-combining-manual-and-automated-processes/

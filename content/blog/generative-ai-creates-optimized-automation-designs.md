@@ -1,22 +1,22 @@
 ---
-title: "Generative AI Creates Optimized Automation Designs"
-description: "AI tools assist in designing automation cells and layouts."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-05-15"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Generative AI Creates Optimized Automation Designs
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  AI tools assist in designing automation cells and layouts.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-05-15'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/generative-ai-creates-optimized-automation-designs/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. AI tools assist in designing automation cells and layouts.
+ AI tools assist in designing automation cells and layouts.
 
 ## Key Developments
 
 AI tools assist in designing automation cells and layouts.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

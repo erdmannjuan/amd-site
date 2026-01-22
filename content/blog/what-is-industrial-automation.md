@@ -1,7 +1,9 @@
 ---
-title: What Is Industrial Automation and How Does It Improve Manufacturing Productivity
-description: "Learn what industrial automation is, how it works, and how automated manufacturing systems improve productivity, quality, and efficiency in modern factories."
-keywords: industrial automation, what is automation, manufacturing automation, automated manufacturing, factory automation benefits, industrial robots, automation technology
+title: What Is Industrial Automation
+description: Learn what industrial automation is, how it works, and how automated
+  manufacturing systems improve productivity, quality, and efficiency in modern factories.
+keywords: industrial automation, what is automation, manufacturing automation, automated
+  manufacturing, factory automation benefits, industrial robots, automation technology
 template: blog-post.html
 category: Education
 author: AMD Engineering Team
@@ -9,12 +11,12 @@ author_title: Automation Specialists
 date: 2024-02-15
 read_time: 8
 related_posts:
-  - title: "How Custom Automated Machines Are Designed"
-    url: "/blog/how-custom-automated-machines-are-designed/"
-    description: "The complete process from concept to commissioning."
-  - title: "Industrial Automation Equipment Explained"
-    url: "/blog/industrial-automation-equipment-explained/"
-    description: "Comprehensive guide to robots, presses, conveyors, and vision systems."
+- title: How Custom Automated Machines Are Designed
+  url: /blog/how-custom-automated-machines-are-designed/
+  description: The complete process from concept to commissioning.
+- title: Industrial Automation Equipment Explained
+  url: /blog/industrial-automation-equipment-explained/
+  description: Comprehensive guide to robots, presses, conveyors, and vision systems.
 ---
 
 Industrial automation refers to the use of control systems, machinery, and technology to handle manufacturing processes with minimal human intervention. From automotive assembly lines to pharmaceutical packaging, automation has transformed how products are made across every industry.

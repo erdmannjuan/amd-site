@@ -1,10 +1,12 @@
 ---
-title: "Cleanroom Assembly Automation Requirements"
-description: "Design automation systems that meet cleanroom standards for medical and semiconductor assembly."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, cleanroom, assembly, automation"
-date: "2025-10-26"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Cleanroom Assembly Automation Requirements
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, cleanroom, assembly, automation
+date: '2025-10-26'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/cleanroom-assembly-automation-requirements/

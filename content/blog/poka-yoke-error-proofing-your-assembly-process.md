@@ -1,10 +1,12 @@
 ---
-title: "Poka-Yoke: Error-Proofing Your Assembly Process"
-description: "Implement mistake-proofing techniques to eliminate assembly errors and improve quality."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, error, proofing, assembly"
-date: "2025-11-19"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: 'Poka-Yoke: Error-Proofing Your Assembly Process'
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, error, proofing, assembly
+date: '2025-11-19'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/poka-yoke-error-proofing-your-assembly-process/

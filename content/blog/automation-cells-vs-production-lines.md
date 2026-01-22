@@ -1,7 +1,11 @@
 ---
-title: Automation Cells vs Full Production Lines - Cost, Flexibility, and Use Cases
-description: "Compare robotic automation cells vs integrated production lines. Learn the costs, benefits, flexibility trade-offs, and which approach fits your manufacturing needs."
-keywords: automation cells vs production lines, robotic cells, production line automation, manufacturing cells, integrated production lines, automation cell benefits, flexible manufacturing cells
+title: Automation Cells vs Full Production Lines - Cost,
+description: Compare robotic automation cells vs integrated production lines. Learn
+  the costs, benefits, flexibility trade-offs, and which approach fits your manufacturing
+  needs.
+keywords: automation cells vs production lines, robotic cells, production line automation,
+  manufacturing cells, integrated production lines, automation cell benefits, flexible
+  manufacturing cells
 template: blog-post.html
 category: Business
 author: AMD Engineering Team
@@ -9,12 +13,12 @@ author_title: Automation Specialists
 date: 2024-03-15
 read_time: 9
 related_posts:
-  - title: "Automated Assembly Machines"
-    url: "/blog/automated-assembly-machines/"
-    description: "Complete guide to assembly automation applications and benefits."
-  - title: "Factory Automation for High-Mix Low-Volume"
-    url: "/blog/factory-automation-high-mix-low-volume/"
-    description: "Strategies for flexible manufacturing automation."
+- title: Automated Assembly Machines
+  url: /blog/automated-assembly-machines/
+  description: Complete guide to assembly automation applications and benefits.
+- title: Factory Automation for High-Mix Low-Volume
+  url: /blog/factory-automation-high-mix-low-volume/
+  description: Strategies for flexible manufacturing automation.
 ---
 
 When planning automation investments, manufacturers face a fundamental architectural decision: build standalone automation cells or integrate complete production lines? Each approach has distinct advantages, and the right choice depends on your specific situation.

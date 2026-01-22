@@ -1,22 +1,22 @@
 ---
-title: "3D Vision Systems See 50% Price Reduction"
-description: "Competition and volume drive down costs for industrial 3D vision technology."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-06-12"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: 3D Vision Systems See 50% Price Reduction
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Competition and volume drive down costs for industrial 3D vision.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-06-12'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/3d-vision-systems-see-50-price-reduction/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Competition and volume drive down costs for industrial 3D vision technology.
+ Competition and volume drive down costs for industrial 3D vision technology.
 
 ## Key Developments
 
 Competition and volume drive down costs for industrial 3D vision technology.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

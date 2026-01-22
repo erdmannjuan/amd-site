@@ -1,22 +1,22 @@
 ---
-title: "Food Industry Automation Accelerates Amid Labor Challenges"
-description: "Food processors increase automation investment 40% year-over-year."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-12-12"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Food Industry Automation Accelerates Amid Labor Challenges
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Food processors increase automation investment 40% year-over-year.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-12-12'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/food-industry-automation-accelerates-amid-labor-challenges/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Food processors increase automation investment 40% year-over-year.
+ Food processors increase automation investment 40% year-over-year.
 
 ## Key Developments
 
 Food processors increase automation investment 40% year-over-year.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

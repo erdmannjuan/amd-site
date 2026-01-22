@@ -1,10 +1,12 @@
 ---
-title: "X-Ray Inspection for Hidden Defects"
-description: "Explore X-ray and CT inspection for solder joints, castings, and internal features."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, inspection, hidden, defects"
-date: "2025-10-04"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: X-Ray Inspection for Hidden Defects
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, inspection, hidden, defects
+date: '2025-10-04'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/x-ray-inspection-for-hidden-defects/

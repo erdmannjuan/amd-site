@@ -1,10 +1,12 @@
 ---
-title: "2D vs 3D Vision Systems: Capabilities and Applications"
-description: "Compare 2D and 3D machine vision technologies to select the right solution for your inspection or guidance needs."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, vision, systems, capabilities"
-date: "2025-12-19"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: '2D vs 3D Vision Systems: Capabilities and Applications'
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, vision, systems, capabilities
+date: '2025-12-19'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/2d-vs-3d-vision-systems-capabilities-and-applications/

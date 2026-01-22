@@ -1,7 +1,11 @@
 ---
-title: Automated Assembly Machines - Applications, Benefits, and ROI
-description: "Complete guide to automated assembly machines for manufacturing. Learn about types of assembly automation, key applications, benefits, and how to calculate ROI for your operation."
-keywords: automated assembly machines, assembly automation, automatic assembly equipment, robotic assembly, assembly line automation, automated manufacturing assembly, assembly machine benefits
+title: Automated Assembly Machines - Applications, Benefits,
+description: Complete guide to automated assembly machines for manufacturing. Learn
+  about types of assembly automation, key applications, benefits, and how to calculate
+  ROI for your operation.
+keywords: automated assembly machines, assembly automation, automatic assembly equipment,
+  robotic assembly, assembly line automation, automated manufacturing assembly, assembly
+  machine benefits
 template: blog-post.html
 category: Technology
 author: AMD Engineering Team
@@ -9,12 +13,12 @@ author_title: Automation Specialists
 date: 2024-02-25
 read_time: 9
 related_posts:
-  - title: "Automation Cells vs Production Lines"
-    url: "/blog/automation-cells-vs-production-lines/"
-    description: "Compare cells and lines for your assembly application."
-  - title: "Calculating ROI of Robotic Automation"
-    url: "/blog/roi-of-robotic-automation/"
-    description: "Step-by-step guide to justifying automation investments."
+- title: Automation Cells vs Production Lines
+  url: /blog/automation-cells-vs-production-lines/
+  description: Compare cells and lines for your assembly application.
+- title: Calculating ROI of Robotic Automation
+  url: /blog/roi-of-robotic-automation/
+  description: Step-by-step guide to justifying automation investments.
 ---
 
 Automated assembly machines are the backbone of modern manufacturing. From assembling medical devices to building automotive components, these systems combine multiple parts into finished products with speed, precision, and consistency that manual assembly cannot match.

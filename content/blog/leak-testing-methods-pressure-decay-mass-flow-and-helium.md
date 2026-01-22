@@ -1,10 +1,12 @@
 ---
-title: "Leak Testing Methods: Pressure Decay, Mass Flow, and Helium"
-description: "Compare leak testing technologies to select the right method for your application."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, testing, methods, pressure"
-date: "2025-10-20"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: 'Leak Testing Methods: Pressure Decay, Mass Flow, and Helium'
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, testing, methods, pressure
+date: '2025-10-20'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/

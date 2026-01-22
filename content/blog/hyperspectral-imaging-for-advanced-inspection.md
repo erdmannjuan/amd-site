@@ -1,10 +1,12 @@
 ---
-title: "Hyperspectral Imaging for Advanced Inspection"
-description: "Learn about hyperspectral imaging technology for detecting defects invisible to standard cameras."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, hyperspectral, imaging, advanced"
-date: "2025-12-01"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Hyperspectral Imaging for Advanced Inspection
+description: machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, hyperspectral, imaging, advanced
+date: '2025-12-01'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/hyperspectral-imaging-for-advanced-inspection/

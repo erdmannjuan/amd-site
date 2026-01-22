@@ -1,10 +1,12 @@
 ---
-title: "Designing Flexible Assembly Systems for Product Variants"
-description: "Create assembly automation that handles multiple product variants without extensive changeover."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, designing, flexible, assembly"
-date: "2025-11-21"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Designing Flexible Assembly Systems for Product Variants
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, designing, flexible, assembly
+date: '2025-11-21'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/designing-flexible-assembly-systems-for-product-variants/

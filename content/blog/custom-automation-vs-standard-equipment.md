@@ -1,7 +1,11 @@
 ---
-title: Custom Automation vs Standard Automation Equipment - Which Is Right for Your Factory
-description: "Compare custom automation solutions vs off-the-shelf equipment. Learn when to choose custom automated machinery and when standard automation makes sense for your manufacturing needs."
-keywords: custom automation vs standard, custom automated equipment, standard automation equipment, buy vs build automation, custom machinery, off-the-shelf automation, automation equipment selection
+title: Custom Automation vs Standard Automation Equipment -
+description: Compare custom automation solutions vs off-the-shelf equipment. Learn
+  when to choose custom automated machinery and when standard automation makes sense
+  for your manufacturing needs.
+keywords: custom automation vs standard, custom automated equipment, standard automation
+  equipment, buy vs build automation, custom machinery, off-the-shelf automation,
+  automation equipment selection
 template: blog-post.html
 category: Business
 author: AMD Engineering Team
@@ -9,12 +13,12 @@ author_title: Automation Specialists
 date: 2024-02-20
 read_time: 7
 related_posts:
-  - title: "How Custom Automated Machines Are Designed"
-    url: "/blog/how-custom-automated-machines-are-designed/"
-    description: "The complete design and build process for custom automation."
-  - title: "Calculating ROI of Robotic Automation"
-    url: "/blog/roi-of-robotic-automation/"
-    description: "How to evaluate automation investments financially."
+- title: How Custom Automated Machines Are Designed
+  url: /blog/how-custom-automated-machines-are-designed/
+  description: The complete design and build process for custom automation.
+- title: Calculating ROI of Robotic Automation
+  url: /blog/roi-of-robotic-automation/
+  description: How to evaluate automation investments financially.
 ---
 
 When considering automation for your manufacturing operation, one of the first decisions is whether to purchase standard off-the-shelf equipment or invest in custom automation designed specifically for your process. Both approaches have merits—the right choice depends on your specific situation.

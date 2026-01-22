@@ -1,22 +1,22 @@
 ---
-title: "Logistics Industry Reports 200% Growth in AMR Deployments"
-description: "Autonomous mobile robots see explosive growth in warehousing and distribution."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-06-28"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Logistics Industry Reports 200% Growth in AMR Deployments
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Autonomous mobile robots see explosive growth in warehousing and.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-06-28'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/logistics-industry-reports-200-growth-in-amr-deployments/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Autonomous mobile robots see explosive growth in warehousing and distribution.
+ Autonomous mobile robots see explosive growth in warehousing and distribution.
 
 ## Key Developments
 
 Autonomous mobile robots see explosive growth in warehousing and distribution.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

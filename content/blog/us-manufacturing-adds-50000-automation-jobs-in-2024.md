@@ -1,22 +1,22 @@
 ---
-title: "US Manufacturing Adds 50,000 Automation Jobs in 2024"
-description: "BLS data shows automation creating new roles while transforming traditional manufacturing positions."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-01-30"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: US Manufacturing Adds 50,000 Automation Jobs in 2024
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  BLS data shows automation creating new roles while transforming.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-01-30'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/us-manufacturing-adds-50000-automation-jobs-in-2024/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. BLS data shows automation creating new roles while transforming traditional manufacturing positions.
+ BLS data shows automation creating new roles while transforming traditional manufacturing positions.
 
 ## Key Developments
 
 BLS data shows automation creating new roles while transforming traditional manufacturing positions.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

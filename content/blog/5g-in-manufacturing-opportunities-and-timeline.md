@@ -1,10 +1,12 @@
 ---
-title: "5G in Manufacturing: Opportunities and Timeline"
-description: "Explore how 5G networks will enable new automation capabilities."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, manufacturing, opportunities, timeline"
-date: "2025-09-04"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: '5G in Manufacturing: Opportunities and Timeline'
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, manufacturing, opportunities, timeline
+date: '2025-09-04'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/5g-in-manufacturing-opportunities-and-timeline/

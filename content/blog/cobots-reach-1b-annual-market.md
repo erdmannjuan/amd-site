@@ -1,22 +1,22 @@
 ---
-title: "Cobots Reach $1B Annual Market"
-description: "Collaborative robots achieve billion-dollar milestone as adoption accelerates."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-11-15"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Cobots Reach $1B Annual Market
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Collaborative robots achieve billion-dollar milestone as adoption.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-11-15'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/cobots-reach-1b-annual-market/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Collaborative robots achieve billion-dollar milestone as adoption accelerates.
+ Collaborative robots achieve billion-dollar milestone as adoption accelerates.
 
 ## Key Developments
 
 Collaborative robots achieve billion-dollar milestone as adoption accelerates.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

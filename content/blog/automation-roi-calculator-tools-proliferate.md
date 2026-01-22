@@ -1,22 +1,22 @@
 ---
-title: "Automation ROI Calculator Tools Proliferate"
-description: "New software helps manufacturers evaluate automation investment potential."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-09-08"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Automation ROI Calculator Tools Proliferate
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New software helps manufacturers evaluate automation investment potential.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-09-08'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/automation-roi-calculator-tools-proliferate/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New software helps manufacturers evaluate automation investment potential.
+ New software helps manufacturers evaluate automation investment potential.
 
 ## Key Developments
 
 New software helps manufacturers evaluate automation investment potential.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

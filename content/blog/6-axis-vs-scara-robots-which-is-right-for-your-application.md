@@ -1,10 +1,12 @@
 ---
-title: "6-Axis vs SCARA Robots: Which Is Right for Your Application?"
-description: "Compare 6-axis articulated robots and SCARA robots to determine the best fit for your assembly, packaging, or material handling needs."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, scara, robots, which"
-date: "2026-01-18"
-author: "AMD Automation Team"
-category: "Robotics"
+title: '6-Axis vs SCARA Robots: Which Is Right for Your Application?'
+description: Compare 6-axis articulated robots and SCARA robots to determine the best
+  fit for your assembly, packaging, or material handling needs.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, scara, robots, which
+date: '2026-01-18'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/6-axis-vs-scara-robots-which-is-right-for-your-application/

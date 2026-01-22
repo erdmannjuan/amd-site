@@ -1,22 +1,22 @@
 ---
-title: "European Union Approves AI Act Implementation Timeline for Industrial Applications"
-description: "EU releases detailed implementation schedule for AI regulations affecting industrial automation and robotics."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-10-03"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: European Union Approves AI Act Implementation Timeline
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  EU releases detailed implementation schedule for AI regulations affecting.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-10-03'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/european-union-approves-ai-act-implementation-timeline-for-i/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. EU releases detailed implementation schedule for AI regulations affecting industrial automation and robotics.
+ EU releases detailed implementation schedule for AI regulations affecting industrial automation and robotics.
 
 ## Key Developments
 
 EU releases detailed implementation schedule for AI regulations affecting industrial automation and robotics.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

@@ -1,10 +1,12 @@
 ---
-title: "Robot Accuracy vs Repeatability: What's the Difference?"
-description: "Understand the critical distinction between robot accuracy and repeatability for precision applications."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, robot, accuracy, repeatability"
-date: "2025-12-25"
-author: "AMD Automation Team"
-category: "Robotics"
+title: 'Robot Accuracy vs Repeatability: What''s the Difference?'
+description: Understand the critical distinction between robot accuracy and repeatability
+  for precision applications. In today's competitive manufacturing environment,.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, robot, accuracy, repeatability
+date: '2025-12-25'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/robot-accuracy-vs-repeatability-whats-the-difference/

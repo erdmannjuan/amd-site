@@ -1,10 +1,12 @@
 ---
-title: "Color Vision Inspection for Quality Control"
-description: "Learn how color vision systems detect defects and verify product appearance in manufacturing."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, color, vision, inspection"
-date: "2025-12-09"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Color Vision Inspection for Quality Control
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, color, vision, inspection
+date: '2025-12-09'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/color-vision-inspection-for-quality-control/

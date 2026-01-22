@@ -1,10 +1,12 @@
 ---
-title: "Camera Selection for Industrial Vision Applications"
-description: "Navigate the options in industrial cameras from resolution and frame rate to sensor types and interfaces."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, camera, selection, industrial"
-date: "2025-12-13"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Camera Selection for Industrial Vision Applications
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, camera, selection, industrial
+date: '2025-12-13'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/camera-selection-for-industrial-vision-applications/

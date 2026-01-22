@@ -1,22 +1,22 @@
 ---
-title: "Robotic Welding Adoption Surges 45% Year-Over-Year"
-description: "Skilled welder shortage drives rapid automation of welding processes."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-12-10"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Robotic Welding Adoption Surges 45% Year-Over-Year
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Skilled welder shortage drives rapid automation of welding processes.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-12-10'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/robotic-welding-adoption-surges-45-year-over-year/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Skilled welder shortage drives rapid automation of welding processes.
+ Skilled welder shortage drives rapid automation of welding processes.
 
 ## Key Developments
 
 Skilled welder shortage drives rapid automation of welding processes.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

@@ -1,10 +1,12 @@
 ---
-title: "Manufacturing Execution Systems: MES Fundamentals"
-description: "Understand how MES bridges the gap between ERP and shop floor operations."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, manufacturing, execution, systems"
-date: "2025-09-10"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: 'Manufacturing Execution Systems: MES Fundamentals'
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, manufacturing, execution, systems
+date: '2025-09-10'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/manufacturing-execution-systems-mes-fundamentals/

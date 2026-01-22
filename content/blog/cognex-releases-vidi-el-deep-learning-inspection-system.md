@@ -1,22 +1,22 @@
 ---
-title: "Cognex Releases ViDi EL Deep Learning Inspection System"
-description: "New edge-learning platform reduces setup time for visual inspection applications by 90%."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-11-20"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Cognex Releases ViDi EL Deep Learning Inspection System
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New edge-learning platform reduces setup time for visual inspection.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-11-20'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/cognex-releases-vidi-el-deep-learning-inspection-system/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New edge-learning platform reduces setup time for visual inspection applications by 90%.
+ New edge-learning platform reduces setup time for visual inspection applications by 90%.
 
 ## Key Developments
 
 New edge-learning platform reduces setup time for visual inspection applications by 90%.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

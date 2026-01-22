@@ -1,10 +1,12 @@
 ---
-title: "High-Speed Vision Systems for Fast-Moving Products"
-description: "Discover solutions for inspecting products moving at high speeds on production lines."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, speed, vision, systems"
-date: "2025-12-07"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: High-Speed Vision Systems for Fast-Moving Products
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, speed, vision, systems
+date: '2025-12-07'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/high-speed-vision-systems-for-fast-moving-products/

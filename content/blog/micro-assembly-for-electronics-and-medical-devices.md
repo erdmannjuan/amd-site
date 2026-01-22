@@ -1,10 +1,12 @@
 ---
-title: "Micro-Assembly for Electronics and Medical Devices"
-description: "Address the unique challenges of assembling miniature components and devices."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, micro, assembly, electronics"
-date: "2025-10-28"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Micro-Assembly for Electronics and Medical Devices
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, micro, assembly, electronics
+date: '2025-10-28'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/micro-assembly-for-electronics-and-medical-devices/

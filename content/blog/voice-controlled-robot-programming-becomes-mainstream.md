@@ -1,22 +1,22 @@
 ---
-title: "Voice-Controlled Robot Programming Becomes Mainstream"
-description: "Natural language interfaces simplify robot operation."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-11-01"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Voice-Controlled Robot Programming Becomes Mainstream
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Natural language interfaces simplify robot operation.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-11-01'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/voice-controlled-robot-programming-becomes-mainstream/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Natural language interfaces simplify robot operation.
+ Natural language interfaces simplify robot operation.
 
 ## Key Developments
 
 Natural language interfaces simplify robot operation.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

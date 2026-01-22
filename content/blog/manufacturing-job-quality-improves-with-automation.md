@@ -1,22 +1,22 @@
 ---
-title: "Manufacturing Job Quality Improves with Automation"
-description: "Survey shows automated factories offer better wages and working conditions."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2026-01-15"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Manufacturing Job Quality Improves with Automation
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Survey shows automated factories offer better wages and working conditions.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2026-01-15'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/manufacturing-job-quality-improves-with-automation/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Survey shows automated factories offer better wages and working conditions.
+ Survey shows automated factories offer better wages and working conditions.
 
 ## Key Developments
 
 Survey shows automated factories offer better wages and working conditions.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

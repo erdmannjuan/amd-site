@@ -1,22 +1,22 @@
 ---
-title: "Universal Robots Unveils AI Copilot for UR+ Ecosystem"
-description: "New AI assistant helps program and optimize cobot applications through natural language."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-12-12"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Universal Robots Unveils AI Copilot for UR+ Ecosystem
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New AI assistant helps program and optimize cobot applications through.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-12-12'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/universal-robots-unveils-ai-copilot-for-ur+-ecosystem/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New AI assistant helps program and optimize cobot applications through natural language.
+ New AI assistant helps program and optimize cobot applications through natural language.
 
 ## Key Developments
 
 New AI assistant helps program and optimize cobot applications through natural language.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

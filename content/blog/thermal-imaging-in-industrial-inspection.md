@@ -1,10 +1,12 @@
 ---
-title: "Thermal Imaging in Industrial Inspection"
-description: "Explore applications of thermal cameras for predictive maintenance and process monitoring."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, thermal, imaging, industrial"
-date: "2025-12-03"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Thermal Imaging in Industrial Inspection
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, thermal, imaging, industrial
+date: '2025-12-03'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/thermal-imaging-in-industrial-inspection/

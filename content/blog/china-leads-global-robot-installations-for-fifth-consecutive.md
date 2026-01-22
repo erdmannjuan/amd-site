@@ -1,22 +1,22 @@
 ---
-title: "China Leads Global Robot Installations for Fifth Consecutive Year"
-description: "IFR reports China installed 290,000 industrial robots in 2023, representing 52% of global market."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-11-28"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: China Leads Global Robot Installations for Fifth
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  IFR reports China installed 290,000 industrial robots in 2023,.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-11-28'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/china-leads-global-robot-installations-for-fifth-consecutive/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. IFR reports China installed 290,000 industrial robots in 2023, representing 52% of global market.
+ IFR reports China installed 290,000 industrial robots in 2023, representing 52% of global market.
 
 ## Key Developments
 
 IFR reports China installed 290,000 industrial robots in 2023, representing 52% of global market.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

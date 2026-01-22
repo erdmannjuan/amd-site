@@ -1,7 +1,11 @@
 ---
-title: How to Calculate ROI of Robotic Automation | Payback Period & Cost Analysis
-description: Step-by-step guide to calculating robotic automation ROI. Includes payback period formula, hidden costs, labor savings & productivity gains. Free ROI calculator tips.
-keywords: robotic automation ROI calculator, automation payback period, robot cost analysis, manufacturing automation investment, automation cost justification, labor savings automation
+title: How to Calculate ROI of Robotic Automation | Payback
+description: Step-by-step guide to calculating robotic automation ROI. Includes payback
+  period formula, hidden costs, labor savings & productivity gains. Free ROI calculator
+  tips.
+keywords: robotic automation ROI calculator, automation payback period, robot cost
+  analysis, manufacturing automation investment, automation cost justification, labor
+  savings automation
 template: blog-post.html
 category: Business
 author: AMD Engineering Team
@@ -9,12 +13,12 @@ author_title: Automation Specialists
 date: 2024-01-08
 read_time: 6
 related_posts:
-  - title: "Choosing the Right Robot"
-    url: "/blog/choosing-right-robot-for-your-application/"
-    description: "A guide to selecting the optimal robot type for your application."
-  - title: "Common Automation Mistakes"
-    url: "/blog/common-automation-mistakes/"
-    description: "Avoid these pitfalls when implementing your first automation project."
+- title: Choosing the Right Robot
+  url: /blog/choosing-right-robot-for-your-application/
+  description: A guide to selecting the optimal robot type for your application.
+- title: Common Automation Mistakes
+  url: /blog/common-automation-mistakes/
+  description: Avoid these pitfalls when implementing your first automation project.
 ---
 
 When evaluating automation investments, calculating return on investment (ROI) is essential. However, many ROI analyses miss important factors that can significantly impact the true financial picture. Here's how to develop a complete and accurate ROI model.

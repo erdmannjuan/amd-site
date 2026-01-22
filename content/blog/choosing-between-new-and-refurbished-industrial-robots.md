@@ -1,10 +1,12 @@
 ---
-title: "Choosing Between New and Refurbished Industrial Robots"
-description: "Evaluate the pros and cons of purchasing new versus refurbished robots for your automation project."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, choosing, between, refurbished"
-date: "2025-12-31"
-author: "AMD Automation Team"
-category: "Robotics"
+title: Choosing Between New and Refurbished Industrial Robots
+description: Evaluate the pros and cons of purchasing new versus refurbished robots
+  for your automation project. In today's competitive manufacturing environment,.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, choosing, between, refurbished
+date: '2025-12-31'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/choosing-between-new-and-refurbished-industrial-robots/

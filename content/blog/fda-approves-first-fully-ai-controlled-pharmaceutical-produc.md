@@ -1,22 +1,22 @@
 ---
-title: "FDA Approves First Fully AI-Controlled Pharmaceutical Production"
-description: "Breakthrough approval for continuous manufacturing with AI process control."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-06-20"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: FDA Approves First Fully AI-Controlled Pharmaceutical
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Breakthrough approval for continuous manufacturing with AI process control.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-06-20'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/fda-approves-first-fully-ai-controlled-pharmaceutical-produc/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Breakthrough approval for continuous manufacturing with AI process control.
+ Breakthrough approval for continuous manufacturing with AI process control.
 
 ## Key Developments
 
 Breakthrough approval for continuous manufacturing with AI process control.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

@@ -1,22 +1,22 @@
 ---
-title: "ABB and Microsoft Expand Azure-Based Robot Management Platform"
-description: "Partnership extends cloud capabilities for fleet management and predictive maintenance."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-11-12"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: ABB and Microsoft Expand Azure-Based Robot Management
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Partnership extends cloud capabilities for fleet management and predictive.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-11-12'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/abb-and-microsoft-expand-azure-based-robot-management-platfo/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Partnership extends cloud capabilities for fleet management and predictive maintenance.
+ Partnership extends cloud capabilities for fleet management and predictive maintenance.
 
 ## Key Developments
 
 Partnership extends cloud capabilities for fleet management and predictive maintenance.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

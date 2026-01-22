@@ -1,10 +1,12 @@
 ---
-title: "Introduction to Machine Vision for Manufacturing"
-description: "Get started with machine vision technology and understand how cameras and software enable automated inspection and guidance."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, machine, vision, manufacturing"
-date: "2025-12-21"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Introduction to Machine Vision for Manufacturing
+description: Get started with machine vision technology and understand how cameras
+  and software enable automated inspection and guidance.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, machine, vision, manufacturing
+date: '2025-12-21'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/introduction-to-machine-vision-for-manufacturing/

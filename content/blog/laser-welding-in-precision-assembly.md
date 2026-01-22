@@ -1,10 +1,12 @@
 ---
-title: "Laser Welding in Precision Assembly"
-description: "Explore laser welding applications for medical devices, electronics, and precision components."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, laser, welding, precision"
-date: "2025-11-07"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: Laser Welding in Precision Assembly
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, laser, welding, precision
+date: '2025-11-07'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/laser-welding-in-precision-assembly/

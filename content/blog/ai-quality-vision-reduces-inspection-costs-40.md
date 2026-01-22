@@ -1,22 +1,22 @@
 ---
-title: "AI Quality Vision Reduces Inspection Costs 40%"
-description: "Automated inspection replaces expensive manual quality checks."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-08-01"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: AI Quality Vision Reduces Inspection Costs 40%
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Automated inspection replaces expensive manual quality checks.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-08-01'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/ai-quality-vision-reduces-inspection-costs-40/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Automated inspection replaces expensive manual quality checks.
+ Automated inspection replaces expensive manual quality checks.
 
 ## Key Developments
 
 Automated inspection replaces expensive manual quality checks.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

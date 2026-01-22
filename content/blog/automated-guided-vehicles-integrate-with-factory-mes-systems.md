@@ -1,22 +1,22 @@
 ---
-title: "Automated Guided Vehicles Integrate with Factory MES Systems"
-description: "New standards enable seamless AGV coordination with manufacturing execution systems."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-03-28"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Automated Guided Vehicles Integrate with Factory MES Systems
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New standards enable seamless AGV coordination with manufacturing.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-03-28'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/automated-guided-vehicles-integrate-with-factory-mes-systems/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New standards enable seamless AGV coordination with manufacturing execution systems.
+ New standards enable seamless AGV coordination with manufacturing execution systems.
 
 ## Key Developments
 
 New standards enable seamless AGV coordination with manufacturing execution systems.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

@@ -1,10 +1,12 @@
 ---
-title: "Automated Fastening: Screwdriving and Nutrunning Systems"
-description: "Explore automated fastening solutions from handheld tools to fully automated screwdriving cells."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated assembly, assembly line, assembly systems, automated, fastening, screwdriving"
-date: "2025-11-15"
-author: "AMD Automation Team"
-category: "Assembly Automation"
+title: 'Automated Fastening: Screwdriving and Nutrunning Systems'
+description: Automated assembly represents a significant opportunity for manufacturers
+  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  assembly, assembly line, assembly systems, automated, fastening, screwdriving
+date: '2025-11-15'
+author: AMD Automation Team
+category: Assembly Automation
 read_time: 5
 template: blog-post.html
 url: /blog/automated-fastening-screwdriving-and-nutrunning-systems/

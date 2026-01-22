@@ -1,22 +1,22 @@
 ---
-title: "Small Manufacturers Report 3X ROI on Automation Investments"
-description: "SMB automation achieves faster payback than enterprise projects."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-09-12"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Small Manufacturers Report 3X ROI on Automation Investments
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  SMB automation achieves faster payback than enterprise projects.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-09-12'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/small-manufacturers-report-3x-roi-on-automation-investments/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. SMB automation achieves faster payback than enterprise projects.
+ SMB automation achieves faster payback than enterprise projects.
 
 ## Key Developments
 
 SMB automation achieves faster payback than enterprise projects.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

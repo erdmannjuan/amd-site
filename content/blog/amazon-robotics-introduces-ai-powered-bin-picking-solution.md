@@ -1,22 +1,22 @@
 ---
-title: "Amazon Robotics Introduces AI-Powered Bin Picking Solution"
-description: "New system achieves 99.5% pick success rate on random bin contents."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-05-12"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Amazon Robotics Introduces AI-Powered Bin Picking Solution
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  New system achieves 99.5% pick success rate on random bin contents.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-05-12'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/amazon-robotics-introduces-ai-powered-bin-picking-solution/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. New system achieves 99.5% pick success rate on random bin contents.
+ New system achieves 99.5% pick success rate on random bin contents.
 
 ## Key Developments
 
 New system achieves 99.5% pick success rate on random bin contents.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

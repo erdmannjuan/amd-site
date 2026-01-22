@@ -1,22 +1,22 @@
 ---
-title: "Smart Sensors Enable Continuous Process Optimization"
-description: "AI-connected sensors provide real-time process adjustment."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-04-05"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Smart Sensors Enable Continuous Process Optimization
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  AI-connected sensors provide real-time process adjustment.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-04-05'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/smart-sensors-enable-continuous-process-optimization/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. AI-connected sensors provide real-time process adjustment.
+ AI-connected sensors provide real-time process adjustment.
 
 ## Key Developments
 
 AI-connected sensors provide real-time process adjustment.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

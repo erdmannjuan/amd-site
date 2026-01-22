@@ -1,10 +1,12 @@
 ---
-title: "Waterproof and Washdown Robots for Food and Pharma"
-description: "Learn about IP-rated robots designed for hygienic environments in food processing and pharmaceutical manufacturing."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, waterproof, washdown, robots"
-date: "2025-12-23"
-author: "AMD Automation Team"
-category: "Robotics"
+title: Waterproof and Washdown Robots for Food and Pharma
+description: Learn about IP-rated robots designed for hygienic environments in food
+  processing and pharmaceutical manufacturing. In today's competitive manufacturing.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, waterproof, washdown, robots
+date: '2025-12-23'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/waterproof-and-washdown-robots-for-food-and-pharma/

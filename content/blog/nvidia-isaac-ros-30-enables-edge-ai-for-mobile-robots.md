@@ -1,22 +1,22 @@
 ---
-title: "NVIDIA Isaac ROS 3.0 Enables Edge AI for Mobile Robots"
-description: "Open platform brings advanced AI capabilities to industrial mobile robots."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-05-28"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: NVIDIA Isaac ROS 3.0 Enables Edge AI for Mobile Robots
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Open platform brings advanced AI capabilities to industrial mobile robots.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-05-28'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/nvidia-isaac-ros-30-enables-edge-ai-for-mobile-robots/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Open platform brings advanced AI capabilities to industrial mobile robots.
+ Open platform brings advanced AI capabilities to industrial mobile robots.
 
 ## Key Developments
 
 Open platform brings advanced AI capabilities to industrial mobile robots.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

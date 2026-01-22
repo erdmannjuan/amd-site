@@ -1,22 +1,22 @@
 ---
-title: "Major Automakers Commit $50B to AI-Driven Manufacturing by 2030"
-description: "Ford, GM, and Stellantis announce joint initiative for AI-powered quality and flexibility."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-12-18"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Major Automakers Commit $50B to AI-Driven Manufacturing
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Ford, GM, and Stellantis announce joint initiative for AI-powered quality.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-12-18'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/major-automakers-commit-50b-to-ai-driven-manufacturing-by-20/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Ford, GM, and Stellantis announce joint initiative for AI-powered quality and flexibility.
+ Ford, GM, and Stellantis announce joint initiative for AI-powered quality and flexibility.
 
 ## Key Developments
 
 Ford, GM, and Stellantis announce joint initiative for AI-powered quality and flexibility.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

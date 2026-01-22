@@ -1,22 +1,22 @@
 ---
-title: "IFR Reports Global Robot Density Reaches New High"
-description: "World average reaches 162 robots per 10,000 workers; Korea leads at 1,012."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-03-25"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: IFR Reports Global Robot Density Reaches New High
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  World average reaches 162 robots per 10,000 workers; Korea leads at 1,012.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-03-25'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/ifr-reports-global-robot-density-reaches-new-high/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. World average reaches 162 robots per 10,000 workers; Korea leads at 1,012.
+ World average reaches 162 robots per 10,000 workers; Korea leads at 1,012.
 
 ## Key Developments
 
 World average reaches 162 robots per 10,000 workers; Korea leads at 1,012.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

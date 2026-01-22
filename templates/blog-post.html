@@ -104,10 +104,10 @@
                 <!-- Mid-Article CTA -->
                 <div class="article-cta-box">
                     <div class="article-cta-content">
-                        <strong>Ready to automate?</strong>
-                        <p>Our engineering team can help evaluate your automation needs.</p>
+                        <strong>Have a project in mind?</strong>
+                        <p>We'll give you an honest assessment - even if it means recommending a simpler solution.</p>
                     </div>
-                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Get a Quote</a>
+                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Talk to Us</a>
                 </div>
 
                 <!-- Related Solutions -->
@@ -142,14 +142,14 @@
                     {% if page.related_posts %}
                     <div class="related-posts">
                         {% for related in page.related_posts %}
-                        <a href="{{ config.site.base_path }}{{ related.url }}" class="related-post-card">
-                            <div class="related-post-image">
-                                <img src="{{ config.site.base_path }}/static/images/{{ related.image | default('placeholder-blog-thumb.svg') }}" alt="{{ related.title }}" loading="lazy" width="280" height="140">
+                        <a href="{{ config.site.base_path }}{{ related.url }}" class="related-post-card related-post-no-image">
+                            <div class="related-post-category-badge">
+                                {{ related.category | default('Article') }}
                             </div>
                             <div class="related-post-content">
                                 <h4>{{ related.title }}</h4>
-                                {% if related.description %}
-                                <p>{{ related.description }}</p>
+                                {% if related.read_time %}
+                                <span class="related-post-meta">{{ related.read_time }} min read</span>
                                 {% endif %}
                             </div>
                         </a>
@@ -161,8 +161,8 @@
 
                     <!-- CTA Box -->
                     <div class="sidebar-cta">
-                        <h4>Ready to Automate?</h4>
-                        <p>Let's discuss your automation project.</p>
+                        <h4>Need Help With This?</h4>
+                        <p>Our team's built thousands of automation systems. Let's talk about yours.</p>
                         <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary btn-sm">Get a Quote</a>
                     </div>
                 </div>

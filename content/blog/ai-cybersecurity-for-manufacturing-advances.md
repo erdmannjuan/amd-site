@@ -1,22 +1,22 @@
 ---
-title: "AI Cybersecurity for Manufacturing Advances"
-description: "Machine learning detects threats to industrial control systems."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-06-15"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: AI Cybersecurity for Manufacturing Advances
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Machine learning detects threats to industrial control systems.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-06-15'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/ai-cybersecurity-for-manufacturing-advances/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Machine learning detects threats to industrial control systems.
+ Machine learning detects threats to industrial control systems.
 
 ## Key Developments
 
 Machine learning detects threats to industrial control systems.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

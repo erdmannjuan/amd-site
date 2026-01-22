@@ -1,10 +1,12 @@
 ---
-title: "Lighting Techniques for Machine Vision Success"
-description: "Master the fundamentals of vision lighting to achieve reliable and consistent image quality for inspection."
-keywords: "industrial automation, manufacturing automation, AMD Automation, machine vision, industrial vision, automated inspection, lighting, techniques, machine"
-date: "2025-12-15"
-author: "AMD Automation Team"
-category: "Vision Systems"
+title: Lighting Techniques for Machine Vision Success
+description: Machine vision has transformed from a specialized technology to a mainstream
+  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+keywords: industrial automation, manufacturing automation, AMD Automation, machine
+  vision, industrial vision, automated inspection, lighting, techniques, machine
+date: '2025-12-15'
+author: AMD Automation Team
+category: Vision Systems
 read_time: 5
 template: blog-post.html
 url: /blog/lighting-techniques-for-machine-vision-success/

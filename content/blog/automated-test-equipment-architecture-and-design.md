@@ -1,10 +1,12 @@
 ---
-title: "Automated Test Equipment Architecture and Design"
-description: "Design scalable ATE systems with modular fixtures and flexible test sequences."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, automated, equipment, architecture"
-date: "2025-09-28"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Automated Test Equipment Architecture and Design
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, automated, equipment, architecture
+date: '2025-09-28'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/automated-test-equipment-architecture-and-design/

@@ -1,10 +1,12 @@
 ---
-title: "Energy Monitoring and Optimization in Smart Factories"
-description: "Track energy consumption and identify opportunities for efficiency improvements."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, energy, monitoring, optimization"
-date: "2025-08-31"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Energy Monitoring and Optimization in Smart Factories
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, energy, monitoring, optimization
+date: '2025-08-31'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/energy-monitoring-and-optimization-in-smart-factories/

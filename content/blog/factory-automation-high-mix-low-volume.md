@@ -1,7 +1,10 @@
 ---
-title: Factory Automation Equipment for High-Mix, Low-Volume Manufacturing
-description: "How to successfully automate high-mix, low-volume production. Learn strategies, equipment choices, and ROI considerations for flexible manufacturing automation."
-keywords: high mix low volume automation, flexible manufacturing automation, HMLV automation, small batch automation, flexible automation equipment, multi-product automation, changeover automation
+title: Factory Automation Equipment for High-Mix, Low-Volume
+description: How to successfully automate high-mix, low-volume production. Learn strategies,
+  equipment choices, and ROI considerations for flexible manufacturing automation.
+keywords: high mix low volume automation, flexible manufacturing automation, HMLV
+  automation, small batch automation, flexible automation equipment, multi-product
+  automation, changeover automation
 template: blog-post.html
 category: Business
 author: AMD Engineering Team
@@ -9,12 +12,12 @@ author_title: Automation Specialists
 date: 2024-03-10
 read_time: 8
 related_posts:
-  - title: "Automation Cells vs Production Lines"
-    url: "/blog/automation-cells-vs-production-lines/"
-    description: "Compare cells and lines for flexible manufacturing needs."
-  - title: "Custom vs Standard Automation Equipment"
-    url: "/blog/custom-automation-vs-standard-equipment/"
-    description: "When custom automation delivers value for varied production."
+- title: Automation Cells vs Production Lines
+  url: /blog/automation-cells-vs-production-lines/
+  description: Compare cells and lines for flexible manufacturing needs.
+- title: Custom vs Standard Automation Equipment
+  url: /blog/custom-automation-vs-standard-equipment/
+  description: When custom automation delivers value for varied production.
 ---
 
 Traditional automation was designed for high-volume, low-mix production—making millions of identical parts efficiently. But many manufacturers face the opposite challenge: producing smaller quantities of many different products. This high-mix, low-volume (HMLV) environment presents unique automation challenges and opportunities.

@@ -1,10 +1,12 @@
 ---
-title: "Building a Roadmap for Smart Factory Transformation"
-description: "Plan your journey to Industry 4.0 with practical steps and realistic timelines."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, building, roadmap, smart"
-date: "2025-08-25"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Building a Roadmap for Smart Factory Transformation
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, building, roadmap, smart
+date: '2025-08-25'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/building-a-roadmap-for-smart-factory-transformation/

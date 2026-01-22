@@ -1,7 +1,11 @@
 ---
-title: Manufacturing Automation Systems - From Concept to Commissioning
-description: "Complete guide to implementing manufacturing automation systems. Learn the full lifecycle from initial concept through design, build, installation, and production commissioning."
-keywords: manufacturing automation systems, automation implementation, automation commissioning, automation project phases, industrial automation lifecycle, automation system integration, production automation
+title: Manufacturing Automation Systems - From Concept to
+description: Complete guide to implementing manufacturing automation systems. Learn
+  the full lifecycle from initial concept through design, build, installation, and
+  production commissioning.
+keywords: manufacturing automation systems, automation implementation, automation
+  commissioning, automation project phases, industrial automation lifecycle, automation
+  system integration, production automation
 template: blog-post.html
 category: Education
 author: AMD Engineering Team
@@ -9,12 +13,12 @@ author_title: Automation Specialists
 date: 2024-03-20
 read_time: 12
 related_posts:
-  - title: "How Custom Automated Machines Are Designed"
-    url: "/blog/how-custom-automated-machines-are-designed/"
-    description: "Deep dive into the custom automation design process."
-  - title: "Calculating ROI of Robotic Automation"
-    url: "/blog/roi-of-robotic-automation/"
-    description: "How to evaluate and justify automation investments."
+- title: How Custom Automated Machines Are Designed
+  url: /blog/how-custom-automated-machines-are-designed/
+  description: Deep dive into the custom automation design process.
+- title: Calculating ROI of Robotic Automation
+  url: /blog/roi-of-robotic-automation/
+  description: How to evaluate and justify automation investments.
 ---
 
 Implementing a manufacturing automation system is a significant undertaking that transforms production capabilities. Understanding the complete journey from initial concept through production commissioning helps ensure successful outcomes. This guide covers each phase of the automation lifecycle.

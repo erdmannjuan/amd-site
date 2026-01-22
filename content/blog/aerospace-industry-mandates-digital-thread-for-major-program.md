@@ -1,22 +1,22 @@
 ---
-title: "Aerospace Industry Mandates Digital Thread for Major Programs"
-description: "Boeing and Airbus require digital traceability through manufacturing."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-08-12"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Aerospace Industry Mandates Digital Thread for Major
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Boeing and Airbus require digital traceability through manufacturing.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-08-12'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/aerospace-industry-mandates-digital-thread-for-major-program/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Boeing and Airbus require digital traceability through manufacturing.
+ Boeing and Airbus require digital traceability through manufacturing.
 
 ## Key Developments
 
 Boeing and Airbus require digital traceability through manufacturing.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

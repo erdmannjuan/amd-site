@@ -1,22 +1,22 @@
 ---
-title: "Semiconductor Fab Automation Investments Hit Record $18B"
-description: "CHIPS Act funding drives unprecedented automation spending in US chip manufacturing."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-04-25"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Semiconductor Fab Automation Investments Hit Record $18B
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  CHIPS Act funding drives unprecedented automation spending in US chip.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-04-25'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/semiconductor-fab-automation-investments-hit-record-18b/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. CHIPS Act funding drives unprecedented automation spending in US chip manufacturing.
+ CHIPS Act funding drives unprecedented automation spending in US chip manufacturing.
 
 ## Key Developments
 
 CHIPS Act funding drives unprecedented automation spending in US chip manufacturing.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

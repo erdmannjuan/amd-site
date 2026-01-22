@@ -1,10 +1,12 @@
 ---
-title: "Robot Safety Standards: ISO 10218 and TS 15066 Explained"
-description: "Navigate industrial robot safety standards to ensure compliant and safe automation implementations."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, robot, safety, standards"
-date: "2026-01-10"
-author: "AMD Automation Team"
-category: "Robotics"
+title: 'Robot Safety Standards: ISO 10218 and TS 15066 Explained'
+description: Navigate industrial robot safety standards to ensure compliant and safe
+  automation implementations. In today's competitive manufacturing environment,.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, robot, safety, standards
+date: '2026-01-10'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/robot-safety-standards-iso-10218-and-ts-15066-explained/

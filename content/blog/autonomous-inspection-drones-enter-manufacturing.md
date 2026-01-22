@@ -1,22 +1,22 @@
 ---
-title: "Autonomous Inspection Drones Enter Manufacturing"
-description: "AI-powered drones perform visual inspection of large structures and inventory."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2024-09-28"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Autonomous Inspection Drones Enter Manufacturing
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  AI-powered drones perform visual inspection of large structures and.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2024-09-28'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/autonomous-inspection-drones-enter-manufacturing/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. AI-powered drones perform visual inspection of large structures and inventory.
+ AI-powered drones perform visual inspection of large structures and inventory.
 
 ## Key Developments
 
 AI-powered drones perform visual inspection of large structures and inventory.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

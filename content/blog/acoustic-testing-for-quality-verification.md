@@ -1,10 +1,12 @@
 ---
-title: "Acoustic Testing for Quality Verification"
-description: "Detect defects through sound analysis in motors, bearings, and mechanical assemblies."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, acoustic, testing, quality"
-date: "2025-10-06"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Acoustic Testing for Quality Verification
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, acoustic, testing, quality
+date: '2025-10-06'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/acoustic-testing-for-quality-verification/

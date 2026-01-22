@@ -1,22 +1,22 @@
 ---
-title: "5G Private Networks Enable Factory AI Applications"
-description: "Low-latency networks support real-time AI processing across facilities."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-02-01"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: 5G Private Networks Enable Factory AI Applications
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Low-latency networks support real-time AI processing across facilities.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-02-01'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/5g-private-networks-enable-factory-ai-applications/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Low-latency networks support real-time AI processing across facilities.
+ Low-latency networks support real-time AI processing across facilities.
 
 ## Key Developments
 
 Low-latency networks support real-time AI processing across facilities.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

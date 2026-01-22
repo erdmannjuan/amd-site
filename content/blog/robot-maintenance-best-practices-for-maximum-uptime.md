@@ -1,10 +1,12 @@
 ---
-title: "Robot Maintenance Best Practices for Maximum Uptime"
-description: "Implement preventive maintenance strategies to keep your robotic systems running at peak performance."
-keywords: "industrial automation, manufacturing automation, AMD Automation, industrial robots, robotic automation, robot integration, robot, maintenance, practices"
-date: "2026-01-04"
-author: "AMD Automation Team"
-category: "Robotics"
+title: Robot Maintenance Best Practices for Maximum Uptime
+description: Implement preventive maintenance strategies to keep your robotic systems
+  running at peak performance. In today's competitive manufacturing environment,.
+keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+  robots, robotic automation, robot integration, robot, maintenance, practices
+date: '2026-01-04'
+author: AMD Automation Team
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/robot-maintenance-best-practices-for-maximum-uptime/

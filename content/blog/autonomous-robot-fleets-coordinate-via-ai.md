@@ -1,22 +1,22 @@
 ---
-title: "Autonomous Robot Fleets Coordinate via AI"
-description: "Multi-robot systems self-organize for optimal operation."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2026-01-08"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Autonomous Robot Fleets Coordinate via AI
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Multi-robot systems self-organize for optimal operation.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2026-01-08'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/autonomous-robot-fleets-coordinate-via-ai/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Multi-robot systems self-organize for optimal operation.
+ Multi-robot systems self-organize for optimal operation.
 
 ## Key Developments
 
 Multi-robot systems self-organize for optimal operation.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

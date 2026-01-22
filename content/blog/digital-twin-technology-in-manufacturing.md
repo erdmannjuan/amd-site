@@ -1,10 +1,12 @@
 ---
-title: "Digital Twin Technology in Manufacturing"
-description: "Create virtual replicas of physical systems for simulation, monitoring, and optimization."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, digital, technology, manufacturing"
-date: "2025-09-20"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Digital Twin Technology in Manufacturing
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, digital, technology, manufacturing
+date: '2025-09-20'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/digital-twin-technology-in-manufacturing/

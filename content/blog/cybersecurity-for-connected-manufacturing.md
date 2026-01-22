@@ -1,10 +1,12 @@
 ---
-title: "Cybersecurity for Connected Manufacturing"
-description: "Protect your smart factory from cyber threats with defense-in-depth strategies."
-keywords: "industrial automation, manufacturing automation, AMD Automation, smart manufacturing, digital factory, IIoT, cybersecurity, connected, manufacturing"
-date: "2025-09-06"
-author: "AMD Automation Team"
-category: "Industry 4.0"
+title: Cybersecurity for Connected Manufacturing
+description: The fourth industrial revolution transforms manufacturing through connectivity,
+  data, and intelligent systems. Understanding these technologies helps.
+keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+  digital factory, IIoT, cybersecurity, connected, manufacturing
+date: '2025-09-06'
+author: AMD Automation Team
+category: Industry 4.0
 read_time: 5
 template: blog-post.html
 url: /blog/cybersecurity-for-connected-manufacturing/

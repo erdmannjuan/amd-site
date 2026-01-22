@@ -1,22 +1,22 @@
 ---
-title: "Industrial Metaverse Platforms Gain Traction"
-description: "Immersive digital factories support training and optimization."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2026-01-18"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Industrial Metaverse Platforms Gain Traction
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  Immersive digital factories support training and optimization.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2026-01-18'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/industrial-metaverse-platforms-gain-traction/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. Immersive digital factories support training and optimization.
+ Immersive digital factories support training and optimization.
 
 ## Key Developments
 
 Immersive digital factories support training and optimization.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

@@ -1,22 +1,22 @@
 ---
-title: "Pharmaceutical Industry Embraces AI for Cleanroom Automation"
-description: "FDA guidance encourages AI adoption in drug manufacturing with proper validation."
-keywords: "AI automation, robotics news, manufacturing AI, industrial automation, automation trends"
-date: "2025-02-20"
-author: "AMD Automation News Desk"
-category: "Industry News"
+title: Pharmaceutical Industry Embraces AI for Cleanroom Automation
+description: The latest developments in AI and automation continue to reshape manufacturing.
+  FDA guidance encourages AI adoption in drug manufacturing with proper.
+keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
+  trends
+date: '2025-02-20'
+author: AMD Automation News Desk
+category: Industry News
 read_time: 4
 template: blog-post.html
 url: /blog/pharmaceutical-industry-embraces-ai-for-cleanroom-automation/
 ---
 
-The latest developments in AI and automation continue to reshape manufacturing. FDA guidance encourages AI adoption in drug manufacturing with proper validation.
+ FDA guidance encourages AI adoption in drug manufacturing with proper validation.
 
 ## Key Developments
 
 FDA guidance encourages AI adoption in drug manufacturing with proper validation.
-
-Industry analysts note that this development represents a significant step forward for manufacturing automation. The integration of artificial intelligence with traditional automation technologies is accelerating across sectors.
 
 ## Industry Impact
 

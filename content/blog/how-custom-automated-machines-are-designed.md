@@ -1,7 +1,10 @@
 ---
 title: How Custom Automated Machines Are Designed and Built
-description: "Step-by-step guide to the custom automation design and build process. Learn how automation integrators develop custom machinery from concept through commissioning."
-keywords: custom automation design, custom machine building, automation design process, custom machinery development, automation engineering, machine design process, custom equipment manufacturing
+description: Step-by-step guide to the custom automation design and build process.
+  Learn how automation integrators develop custom machinery from concept through commissioning.
+keywords: custom automation design, custom machine building, automation design process,
+  custom machinery development, automation engineering, machine design process, custom
+  equipment manufacturing
 template: blog-post.html
 category: Education
 author: AMD Engineering Team
@@ -9,12 +12,12 @@ author_title: Automation Specialists
 date: 2024-03-01
 read_time: 10
 related_posts:
-  - title: "Custom vs Standard Automation Equipment"
-    url: "/blog/custom-automation-vs-standard-equipment/"
-    description: "When to choose custom automation over off-the-shelf solutions."
-  - title: "Digital Twins & Simulation"
-    url: "/services/digital-twins/"
-    description: "How virtual commissioning accelerates custom machine development."
+- title: Custom vs Standard Automation Equipment
+  url: /blog/custom-automation-vs-standard-equipment/
+  description: When to choose custom automation over off-the-shelf solutions.
+- title: Digital Twins & Simulation
+  url: /services/digital-twins/
+  description: How virtual commissioning accelerates custom machine development.
 ---
 
 Custom automated machinery represents significant engineering investment, but the process of designing and building these systems can seem mysterious to those outside the automation industry. Understanding how custom machines are developed helps set realistic expectations and ensures successful project outcomes.

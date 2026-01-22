@@ -1,10 +1,12 @@
 ---
-title: "Statistical Process Control in Automated Testing"
-description: "Apply SPC methods to test data for process monitoring and continuous improvement."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, statistical, process, control"
-date: "2025-10-12"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: Statistical Process Control in Automated Testing
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, statistical, process, control
+date: '2025-10-12'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/statistical-process-control-in-automated-testing/

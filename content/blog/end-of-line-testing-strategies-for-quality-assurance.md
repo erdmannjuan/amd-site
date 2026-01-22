@@ -1,10 +1,12 @@
 ---
-title: "End-of-Line Testing Strategies for Quality Assurance"
-description: "Design comprehensive end-of-line test systems that catch defects before shipping."
-keywords: "industrial automation, manufacturing automation, AMD Automation, automated testing, quality inspection, test systems, testing, strategies, quality"
-date: "2025-10-22"
-author: "AMD Automation Team"
-category: "Testing and Inspection"
+title: End-of-Line Testing Strategies for Quality Assurance
+description: Quality assurance through automated testing and inspection has become
+  essential for manufacturers facing demanding specifications and cost pressures..
+keywords: industrial automation, manufacturing automation, AMD Automation, automated
+  testing, quality inspection, test systems, testing, strategies, quality
+date: '2025-10-22'
+author: AMD Automation Team
+category: Testing and Inspection
 read_time: 5
 template: blog-post.html
 url: /blog/end-of-line-testing-strategies-for-quality-assurance/
