@@ -90,7 +90,7 @@
 
 <!-- Assembly Expertise Highlight -->
 <section class="expertise-highlight">
-    <div class="expertise-bg" style="background-image: url('{{ config.site.base_path }}/static/images/about-engineering.jpg');"></div>
+    <div class="expertise-bg" data-bg="{{ config.site.base_path }}/static/images/about-engineering.jpg"></div>
     <div class="expertise-overlay"></div>
     <div class="container">
         <div class="expertise-content">
@@ -299,4 +299,28 @@
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+// Lazy load background images
+document.addEventListener('DOMContentLoaded', function() {
+    var lazyBgs = document.querySelectorAll('[data-bg]');
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.style.backgroundImage = 'url(' + entry.target.dataset.bg + ')';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {rootMargin: '100px'});
+        lazyBgs.forEach(function(bg) { observer.observe(bg); });
+    } else {
+        lazyBgs.forEach(function(bg) {
+            bg.style.backgroundImage = 'url(' + bg.dataset.bg + ')';
+        });
+    }
+});
+</script>
 {% endblock %}
