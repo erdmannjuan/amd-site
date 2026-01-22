@@ -1779,34 +1779,37 @@ img {
 /* Sidebar CTA */
 .sidebar-cta {
     background: var(--accent-orange);
-    padding: 2.5rem;
-    border-radius: var(--radius-lg);
-    text-align: left;
-    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    margin-top: 2.5rem;
 }
 
 .sidebar-cta h3,
 .sidebar-cta h4 {
     color: var(--white);
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     border: none;
     padding: 0;
     text-transform: none;
     letter-spacing: normal;
+    font-weight: 600;
 }
 
 .sidebar-cta p {
     color: rgba(255,255,255,0.95);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 .sidebar-cta .btn {
     background: var(--white);
     color: var(--accent-orange);
     border-color: var(--white);
+    width: 100%;
+    font-weight: 600;
 }
 
 .sidebar-cta .btn:hover {
@@ -3564,33 +3567,39 @@ button:disabled {
 
 /* Related Post Cards without images */
 .related-post-no-image {
-    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+    background: var(--white);
+    text-align: center;
+    padding: 1.25rem 1rem;
 }
 
 .related-post-category-badge {
     background: var(--primary);
     color: var(--white);
-    font-size: 0.7rem;
-    font-weight: 600;
+    font-size: 0.6rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 0.5rem 1rem;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.6rem;
     display: inline-block;
-    margin: 1rem 1rem 0;
-    border-radius: var(--radius-sm);
+    border-radius: 3px;
+    margin-bottom: 0.6rem;
 }
 
 .related-post-no-image .related-post-content {
-    padding: 0.75rem 1rem 1rem;
+    padding: 0;
+}
+
+.related-post-no-image .related-post-content h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.25rem;
+    color: var(--dark);
 }
 
 .related-post-meta {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
-    display: block;
-    margin-top: 0.25rem;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 @media (max-width: 1200px) {
