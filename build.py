@@ -7,6 +7,7 @@ Compiles markdown content into a full HTML website.
 import os
 import shutil
 import yaml
+import json
 import markdown
 from datetime import datetime
 from pathlib import Path
@@ -328,8 +329,30 @@ def build_site():
     built_pages.extend(blog_pages)
 
     generate_sitemap(built_pages, config)
-    
+    generate_search_index(posts, config)
+
     print(f"\n✅ Build complete! Output in: {OUTPUT_DIR}\n")
+
+
+def generate_search_index(posts, config):
+    """Generate JSON search index for blog posts"""
+    search_data = []
+
+    for post in posts:
+        search_data.append({
+            'title': post.get('title', ''),
+            'description': post.get('description', ''),
+            'url': post.get('url', ''),
+            'category': post.get('category', ''),
+            'date': post.get('date', ''),
+            'read_time': post.get('read_time', 0)
+        })
+
+    output_path = OUTPUT_DIR / 'blog' / 'search-index.json'
+    with open(output_path, 'w') as f:
+        json.dump(search_data, f)
+
+    print(f"  ✓ Generated search-index.json ({len(search_data)} posts)")
 
 
 def generate_sitemap(pages, config):

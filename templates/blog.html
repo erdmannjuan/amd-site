@@ -10,12 +10,21 @@
     </div>
 </section>
 
-<!-- Blog Filters -->
-<section class="blog-filters-section">
+<!-- Search Bar -->
+<section class="blog-search-section">
     <div class="container">
-        <div class="blog-filters">
+        <div class="blog-search-wrapper">
+            <div class="blog-search-box">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <input type="text" id="blog-search" placeholder="Search {{ pagination.total_posts if pagination else posts|length }} articles..." autocomplete="off">
+                <button id="clear-search" class="clear-search" style="display: none;">×</button>
+            </div>
+            <div class="blog-search-results" id="search-results" style="display: none;">
+                <div class="search-results-list" id="search-results-list"></div>
+            </div>
+        </div>
+        <div class="blog-filter-row">
             <div class="filter-group">
-                <label for="category-filter">Category</label>
                 <select id="category-filter">
                     <option value="">All Categories</option>
                     {% for category in categories|sort %}
@@ -24,26 +33,14 @@
                 </select>
             </div>
             <div class="filter-group">
-                <label for="date-filter">Date Range</label>
                 <select id="date-filter">
-                    <option value="">All Time</option>
+                    <option value="">All Years</option>
                     <option value="2026">2026</option>
                     <option value="2025">2025</option>
                     <option value="2024">2024</option>
                 </select>
             </div>
-            <div class="filter-group">
-                <label for="search-filter">Search</label>
-                <input type="text" id="search-filter" placeholder="Search articles...">
-            </div>
-            <div class="filter-results">
-                {% if pagination %}
-                <span>Showing {{ posts|length }} of {{ pagination.total_posts }} articles</span>
-                {% else %}
-                <span id="results-count">{{ posts|length }}</span> articles
-                {% endif %}
-                <button id="clear-filters" class="btn-link" style="display: none;">Clear filters</button>
-            </div>
+            <button id="clear-filters" class="btn-text" style="display: none;">Clear filters</button>
         </div>
     </div>
 </section>
@@ -142,105 +139,149 @@
 {% block scripts_extra %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Elements
+    const searchInput = document.getElementById('blog-search');
+    const searchResults = document.getElementById('search-results');
+    const searchResultsList = document.getElementById('search-results-list');
+    const clearSearch = document.getElementById('clear-search');
     const categoryFilter = document.getElementById('category-filter');
     const dateFilter = document.getElementById('date-filter');
-    const searchFilter = document.getElementById('search-filter');
-    const clearBtn = document.getElementById('clear-filters');
-    const resultsCount = document.getElementById('results-count');
+    const clearFilters = document.getElementById('clear-filters');
     const blogGrid = document.getElementById('blog-grid');
     const noResults = document.getElementById('no-results');
     const cards = document.querySelectorAll('.blog-card');
 
-    function filterCards() {
-        const category = categoryFilter.value.toLowerCase();
-        const year = dateFilter.value;
-        const search = searchFilter.value.toLowerCase().trim();
+    let searchIndex = null;
+    let searchTimeout = null;
 
+    // Load search index on first search interaction
+    async function loadSearchIndex() {
+        if (searchIndex) return searchIndex;
+        try {
+            const response = await fetch('{{ config.site.base_path }}/blog/search-index.json');
+            searchIndex = await response.json();
+            return searchIndex;
+        } catch (e) {
+            console.error('Failed to load search index:', e);
+            return [];
+        }
+    }
+
+    // Search function
+    async function performSearch(query) {
+        if (!query || query.length < 2) {
+            searchResults.style.display = 'none';
+            clearSearch.style.display = 'none';
+            return;
+        }
+
+        clearSearch.style.display = 'block';
+        const posts = await loadSearchIndex();
+        const q = query.toLowerCase();
+
+        const results = posts.filter(post => {
+            const title = (post.title || '').toLowerCase();
+            const desc = (post.description || '').toLowerCase();
+            const cat = (post.category || '').toLowerCase();
+            return title.includes(q) || desc.includes(q) || cat.includes(q);
+        }).slice(0, 8); // Limit to 8 results
+
+        if (results.length === 0) {
+            searchResultsList.innerHTML = '<div class="search-no-results">No articles found for "' + query + '"</div>';
+        } else {
+            searchResultsList.innerHTML = results.map(post => `
+                <a href="{{ config.site.base_path }}${post.url}" class="search-result-item">
+                    <span class="search-result-category">${post.category || 'Article'}</span>
+                    <span class="search-result-title">${post.title}</span>
+                    <span class="search-result-meta">${post.date || ''} · ${post.read_time || 5} min read</span>
+                </a>
+            `).join('');
+        }
+
+        searchResults.style.display = 'block';
+    }
+
+    // Search input handler with debounce
+    searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => performSearch(this.value.trim()), 200);
+    });
+
+    // Clear search
+    clearSearch.addEventListener('click', function() {
+        searchInput.value = '';
+        searchResults.style.display = 'none';
+        clearSearch.style.display = 'none';
+        searchInput.focus();
+    });
+
+    // Close search results when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.blog-search-wrapper')) {
+            searchResults.style.display = 'none';
+        }
+    });
+
+    // Show results on focus if there's a query
+    searchInput.addEventListener('focus', function() {
+        if (this.value.trim().length >= 2) {
+            performSearch(this.value.trim());
+        }
+    });
+
+    // Keyboard navigation
+    searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            searchResults.style.display = 'none';
+            this.blur();
+        }
+    });
+
+    // Filter cards on current page
+    function filterPageCards() {
+        const category = categoryFilter.value;
+        const year = dateFilter.value;
         let visibleCount = 0;
 
         cards.forEach(function(card) {
-            const cardCategory = (card.dataset.category || '').toLowerCase();
+            const cardCategory = card.dataset.category || '';
             const cardDate = card.dataset.date || '';
-            const cardTitle = card.dataset.title || '';
-            const cardDescription = card.dataset.description || '';
+            let show = true;
 
-            let showCard = true;
+            if (category && cardCategory !== category) show = false;
+            if (year && !cardDate.startsWith(year)) show = false;
 
-            // Category filter
-            if (category && cardCategory !== category) {
-                showCard = false;
-            }
-
-            // Date filter
-            if (year && !cardDate.startsWith(year)) {
-                showCard = false;
-            }
-
-            // Search filter
-            if (search && !cardTitle.includes(search) && !cardDescription.includes(search)) {
-                showCard = false;
-            }
-
-            if (showCard) {
-                card.style.display = '';
-                visibleCount++;
-            } else {
-                card.style.display = 'none';
-            }
+            card.style.display = show ? '' : 'none';
+            if (show) visibleCount++;
         });
 
-        resultsCount.textContent = visibleCount;
-
-        // Show/hide no results message
-        if (visibleCount === 0) {
-            noResults.style.display = 'block';
-            blogGrid.style.display = 'none';
-        } else {
-            noResults.style.display = 'none';
-            blogGrid.style.display = '';
-        }
-
-        // Show/hide clear button
-        if (category || year || search) {
-            clearBtn.style.display = 'inline';
-        } else {
-            clearBtn.style.display = 'none';
-        }
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        blogGrid.style.display = visibleCount === 0 ? 'none' : '';
+        clearFilters.style.display = (category || year) ? 'inline' : 'none';
     }
 
-    function clearFilters() {
+    categoryFilter.addEventListener('change', filterPageCards);
+    dateFilter.addEventListener('change', filterPageCards);
+
+    clearFilters.addEventListener('click', function() {
         categoryFilter.value = '';
         dateFilter.value = '';
-        searchFilter.value = '';
-        filterCards();
-    }
+        filterPageCards();
+    });
 
-    categoryFilter.addEventListener('change', filterCards);
-    dateFilter.addEventListener('change', filterCards);
-    searchFilter.addEventListener('input', filterCards);
-    clearBtn.addEventListener('click', clearFilters);
-
-    // Check URL params for initial filter
+    // Handle URL params
     const urlParams = new URLSearchParams(window.location.search);
     const urlCategory = urlParams.get('category');
-    const urlYear = urlParams.get('year');
-
     if (urlCategory) {
-        // URL decode and find matching option (case-insensitive)
-        const decodedCategory = decodeURIComponent(urlCategory);
+        const decoded = decodeURIComponent(urlCategory);
         const options = categoryFilter.querySelectorAll('option');
         for (let opt of options) {
-            if (opt.value.toLowerCase() === decodedCategory.toLowerCase()) {
+            if (opt.value.toLowerCase() === decoded.toLowerCase()) {
                 categoryFilter.value = opt.value;
                 break;
             }
         }
-    }
-    if (urlYear) {
-        dateFilter.value = urlYear;
-    }
-    if (urlCategory || urlYear) {
-        filterCards();
+        filterPageCards();
     }
 });
 </script>
