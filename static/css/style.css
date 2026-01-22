@@ -5799,20 +5799,15 @@ button:disabled {
 }
 
 .finder-option {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    min-height: 180px;
-    padding: 0.75rem;
-    background-color: var(--dark);
-    background-size: cover;
-    background-position: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: var(--white);
     text-decoration: none;
     border: 2px solid transparent;
     transition: border-color 0.2s, transform 0.2s;
-    overflow: hidden;
 }
 
 .finder-option:hover {
@@ -5820,25 +5815,21 @@ button:disabled {
     transform: translateY(-2px);
 }
 
-.finder-text {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding: 0.5rem 0.75rem;
-    background: #003087;
+.finder-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
 }
 
 .finder-label {
     font-weight: 600;
-    color: #ffffff;
+    color: var(--dark);
     font-size: 1rem;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.25rem;
 }
 
 .finder-desc {
-    font-size: 0.8rem;
-    color: #e0e0e0;
+    font-size: 0.85rem;
+    color: var(--text-light);
 }
 
 .finder-footer {
