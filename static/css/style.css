@@ -5805,7 +5805,7 @@ button:disabled {
     justify-content: flex-end;
     align-items: flex-start;
     min-height: 180px;
-    padding: 0;
+    padding: 0.75rem;
     background-color: var(--dark);
     background-size: cover;
     background-position: center;
@@ -5821,28 +5821,24 @@ button:disabled {
 }
 
 .finder-text {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 0.75rem 1rem;
-    background: rgba(0, 48, 135, 0.9);
-    width: 100%;
-    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    background: #003087;
 }
 
 .finder-label {
     font-weight: 600;
     color: #ffffff;
     font-size: 1rem;
-    margin-bottom: 0.25rem;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    margin-bottom: 0.15rem;
 }
 
 .finder-desc {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #e0e0e0;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 .finder-footer {
