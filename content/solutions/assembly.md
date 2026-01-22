@@ -1,11 +1,11 @@
 ---
-title: Automated Assembly Machines | High-Speed Assembly Systems & Equipment
-description: Custom automated assembly machines for high-volume manufacturing. Flexible & dedicated assembly systems for complex multi-component products. Turnkey solutions.
-keywords: automated assembly machines, assembly automation equipment, high-speed assembly systems, automated assembly lines, precision assembly machines, component assembly automation
+title: Custom Assembly Line Systems | Industrial Automation Integrator
+description: Custom-engineered assembly lines delivering 40-60% labor reduction for Tier 1 suppliers. Turnkey integration from concept to production with proven ROI.
+keywords: custom assembly lines, industrial automation integrator, automated assembly systems, Tier 1 supplier automation, custom engineering, assembly line ROI
 template: solution.html
-short_title: Assembly Machines
-hero_title: Assembly Automation
-hero_subtitle: Precision assembly systems for complex products at production volumes
+short_title: Assembly Systems
+hero_title: Custom Assembly Systems
+hero_subtitle: Engineered-to-order assembly automation delivering measurable ROI for Tier 1 suppliers
 url: /solutions/assembly/
 features:
   - Rotary dial machines

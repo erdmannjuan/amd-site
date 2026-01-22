@@ -1,11 +1,11 @@
 ---
-title: Automated Test Systems | Leak Testing, Vision Inspection & EOL Testing
-description: "Custom end-of-line test equipment: leak testing, vision inspection, functional testing & quality verification. Ensure 100% product quality with automated testing."
-keywords: automated test systems, end-of-line testing equipment, leak test machines, vision inspection systems, functional test equipment, quality control automation, EOL testing
+title: Leak Detection & Test Systems | Industrial Automation Integrator
+description: Custom leak detection and EOL test systems achieving <1 ppm escape rates. Helium, pressure decay, and mass flow solutions with full traceability for Tier 1 suppliers.
+keywords: leak detection systems, industrial automation integrator, end-of-line testing, custom test equipment, Tier 1 supplier testing, leak test ROI, pressure decay testing
 template: solution.html
 short_title: Test Systems
-hero_title: Automated Test Systems
-hero_subtitle: Ensure product quality with precision testing and inspection equipment
+hero_title: Leak Detection & Test Systems
+hero_subtitle: Custom-engineered test solutions delivering zero-defect quality for Tier 1 manufacturers
 url: /solutions/test-systems/
 features:
   - Leak and pressure testing

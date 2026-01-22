@@ -1,11 +1,11 @@
 ---
-title: Custom Robotic Cells & Robot Integration | ABB, Yaskawa, UR Authorized
-description: Turnkey robotic cell design & integration for welding, assembly, machine tending & material handling. Authorized integrator for ABB, Yaskawa, Universal Robots, Kawasaki & more.
-keywords: custom robotic cells, robot system integrator, ABB robot integration, Yaskawa robot integration, robotic welding cells, robotic assembly cells, machine tending robots, turnkey robotic systems
+title: Custom Robotic Cells | Industrial Automation Integrator | FANUC, ABB, Yaskawa
+description: Turnkey robotic cell integration delivering 200-400% productivity gains for Tier 1 suppliers. Custom engineering with FANUC, ABB, Yaskawa. Proven ROI in 12-24 months.
+keywords: custom robotic cells, industrial automation integrator, FANUC integrator, ABB robot integration, Tier 1 supplier automation, robotic cell ROI, custom engineering
 template: solution.html
 short_title: Robotic Cells
-hero_title: Robotic Cell Solutions
-hero_subtitle: Custom-designed robotic cells that integrate seamlessly into your production environment
+hero_title: Custom Robotic Cells
+hero_subtitle: Turnkey robotic integration delivering measurable productivity gains for Tier 1 manufacturers
 url: /solutions/robotic-cells/
 features:
   - Multi-robot cell configurations

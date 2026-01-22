@@ -110,25 +110,64 @@
                     <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Talk to Us</a>
                 </div>
 
-                <!-- Related Solutions -->
+                <!-- Related Solutions - Internal Linking for SEO -->
                 <div class="article-related-solutions">
                     <h3>Explore Related Solutions</h3>
                     <div class="related-solutions-grid">
+                        {% if page.category == 'Robotics' or page.category == 'Assembly' %}
                         <a href="{{ config.site.base_path }}/solutions/robotic-cells/" class="related-solution-link">
-                            <span class="solution-name">Robotic Cells</span>
+                            <span class="solution-name">Custom Robotic Cells</span>
                             <span class="solution-arrow">→</span>
                         </a>
-                        <a href="{{ config.site.base_path }}/solutions/assembly/" class="related-solution-link">
-                            <span class="solution-name">Assembly Systems</span>
+                        <a href="{{ config.site.base_path }}/solutions/welding/" class="related-solution-link">
+                            <span class="solution-name">Welding Automation</span>
                             <span class="solution-arrow">→</span>
                         </a>
+                        {% elif page.category == 'Vision & QC' %}
                         <a href="{{ config.site.base_path }}/solutions/machine-vision/" class="related-solution-link">
-                            <span class="solution-name">Machine Vision</span>
+                            <span class="solution-name">Machine Vision Systems</span>
                             <span class="solution-arrow">→</span>
                         </a>
                         <a href="{{ config.site.base_path }}/solutions/test-systems/" class="related-solution-link">
-                            <span class="solution-name">Test Systems</span>
+                            <span class="solution-name">Leak Detection & Testing</span>
                             <span class="solution-arrow">→</span>
+                        </a>
+                        {% else %}
+                        <a href="{{ config.site.base_path }}/solutions/robotic-cells/" class="related-solution-link">
+                            <span class="solution-name">Custom Robotic Cells</span>
+                            <span class="solution-arrow">→</span>
+                        </a>
+                        <a href="{{ config.site.base_path }}/solutions/assembly/" class="related-solution-link">
+                            <span class="solution-name">Assembly Line Systems</span>
+                            <span class="solution-arrow">→</span>
+                        </a>
+                        {% endif %}
+                        <a href="{{ config.site.base_path }}/solutions/bin-picking/" class="related-solution-link">
+                            <span class="solution-name">Robotic Bin Picking</span>
+                            <span class="solution-arrow">→</span>
+                        </a>
+                        <a href="{{ config.site.base_path }}/case-studies/" class="related-solution-link related-solution-highlight">
+                            <span class="solution-name">View Case Studies</span>
+                            <span class="solution-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services Links - Pass Link Juice to High-Conversion Pages -->
+                <div class="article-services-links">
+                    <h3>Our Services</h3>
+                    <div class="services-links-grid">
+                        <a href="{{ config.site.base_path }}/services/robot-programming/" class="service-link-item">
+                            <span>Robot Programming</span>
+                        </a>
+                        <a href="{{ config.site.base_path }}/services/process-optimization/" class="service-link-item">
+                            <span>Process Optimization</span>
+                        </a>
+                        <a href="{{ config.site.base_path }}/services/consulting/" class="service-link-item">
+                            <span>Consulting & Assessment</span>
+                        </a>
+                        <a href="{{ config.site.base_path }}/contact/" class="service-link-item service-link-cta">
+                            <span>Request a Quote →</span>
                         </a>
                     </div>
                 </div>

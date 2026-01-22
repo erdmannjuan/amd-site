@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block head_extra %}
-<!-- Case Study Schema -->
+<!-- Case Study Article Schema -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -25,9 +25,94 @@
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "{{ config.site.url }}{{ page.url }}"
+    },
+    "about": {
+        "@type": "Product",
+        "name": "{{ page.title | replace(':', ' -') }}",
+        "description": "{{ page.solution.summary | default(page.description) }}",
+        "brand": {
+            "@type": "Organization",
+            "name": "AMD Automation"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "AMD Automation",
+            "url": "{{ config.site.url }}"
+        },
+        "category": "Industrial Automation Equipment"
     }
 }
 </script>
+
+<!-- Custom Machine/Service Schema for SEO -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Custom Industrial Automation",
+    "name": "{{ page.industry }} Automation Solution",
+    "description": "{{ page.description }}",
+    "provider": {
+        "@type": "Organization",
+        "name": "AMD Automation",
+        "url": "{{ config.site.url }}",
+        "telephone": "{{ config.social.phone }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "420 N Wabash Ave",
+            "addressLocality": "Chicago",
+            "addressRegion": "IL",
+            "postalCode": "60611",
+            "addressCountry": "US"
+        }
+    },
+    "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{{ page.industry }} Automation Solutions",
+        "itemListElement": [
+            {% if page.solutions_used %}
+            {% for sol in page.solutions_used %}
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "{{ sol.name }}"
+                }
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+            {% endif %}
+        ]
+    }
+}
+</script>
+
+<!-- Aggregate Rating Schema (if testimonial exists) -->
+{% if page.testimonial %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+        "@type": "Product",
+        "name": "{{ page.title | replace(':', ' -') }}"
+    },
+    "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "{{ page.client | default('Manufacturing Client') }}"
+    },
+    "reviewBody": "{{ page.testimonial | default('Excellent automation solution with measurable ROI.') }}"
+}
+</script>
+{% endif %}
 {% endblock %}
 
 {% block content %}

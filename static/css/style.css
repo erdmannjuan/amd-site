@@ -6565,6 +6565,76 @@ button:disabled {
     opacity: 1;
 }
 
+.related-solution-highlight {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.related-solution-highlight .solution-name {
+    color: var(--white);
+}
+
+.related-solution-highlight .solution-arrow {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.related-solution-highlight:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #0a4a7a 100%);
+}
+
+.related-solution-highlight:hover .solution-arrow {
+    opacity: 1;
+}
+
+/* Services Links - Internal Linking */
+.article-services-links {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--gray-50);
+    border-radius: var(--radius);
+}
+
+.article-services-links h3 {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.services-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.service-link-item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.service-link-item:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.service-link-cta {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.service-link-cta:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: var(--white);
+}
+
 @media (max-width: 600px) {
     .article-cta-box {
         flex-direction: column;

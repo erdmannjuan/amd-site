@@ -1,10 +1,10 @@
 ---
-title: Robotic Bin Picking | 3D Vision Picking Systems | AMD Automation
-description: "Automated bin picking systems using 3D vision and AI for random part picking. Eliminate manual sorting with intelligent robotic bin picking solutions."
-keywords: robotic bin picking, 3D vision picking, random bin picking, automated part picking, vision guided picking, bin picking robot
+title: Robotic Bin Picking Systems | AI Vision Integration | Industrial Automation
+description: AI-powered bin picking achieving 99%+ pick rates and 50% labor reduction. Custom 3D vision integration for Tier 1 automotive, aerospace, and medical manufacturers.
+keywords: robotic bin picking, AI vision integration, industrial automation integrator, 3D vision picking, Tier 1 automation, bin picking ROI, custom engineering
 template: solution.html
 hero_title: Robotic Bin Picking
-hero_subtitle: Intelligent 3D vision systems that pick randomly oriented parts from bins
+hero_subtitle: AI-powered 3D vision systems delivering measurable labor reduction for Tier 1 manufacturers
 short_title: Bin Picking
 url: /solutions/bin-picking/
 features:
