@@ -7638,15 +7638,15 @@ button:disabled {
 
 .sidebar-cta-block {
     background: var(--primary);
-    color: var(--white);
+    color: #ffffff;
 }
 
 .sidebar-cta-block h3 {
-    color: var(--white);
+    color: #ffffff;
 }
 
 .sidebar-cta-block p {
-    opacity: 0.9;
+    color: #e0e0e0;
     margin-bottom: 1rem;
 }
 
@@ -7654,8 +7654,7 @@ button:disabled {
     display: block;
     text-align: center;
     margin-top: 1rem;
-    color: var(--white);
-    opacity: 0.9;
+    color: #ffffff;
     font-size: 0.9rem;
 }
 
