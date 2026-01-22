@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   guide, technical reference, how-to automation, pneumatic, cylinder, sizing
 date: '2024-11-20'
 author: AMD Automation Team
-category: Technical Guides
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/pneumatic-cylinder-sizing-calculations/

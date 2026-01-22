@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   technologies
 date: '2025-03-24'
 author: AMD Automation Team
-category: Maintenance and Support
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/predictive-maintenance-technologies-and-implementation/

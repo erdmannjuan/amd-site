@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, indus
   control, PLC programming, automation control, pneumatics, electric, actuators
 date: '2025-04-19'
 author: AMD Automation Team
-category: Process Control
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/pneumatics-vs-electric-actuators-selection-guide/

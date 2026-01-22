@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   testing, quality inspection, test systems, dimensional, inspection, vision
 date: '2025-10-16'
 author: AMD Automation Team
-category: Testing and Inspection
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/dimensional-inspection-with-cmms-and-vision/

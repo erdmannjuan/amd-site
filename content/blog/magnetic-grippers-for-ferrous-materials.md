@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, mater
   handling automation, conveyor systems, palletizing, magnetic, grippers, ferrous
 date: '2025-07-12'
 author: AMD Automation Team
-category: Material Handling
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/magnetic-grippers-for-ferrous-materials/

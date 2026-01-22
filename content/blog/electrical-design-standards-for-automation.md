@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   design, engineering services, system design, electrical, design, standards
 date: '2025-02-20'
 author: AMD Automation Team
-category: Design and Engineering
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/electrical-design-standards-for-automation/

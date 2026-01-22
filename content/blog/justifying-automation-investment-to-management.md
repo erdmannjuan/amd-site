@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   ROI, manufacturing efficiency, automation investment, justifying, automation, investment
 date: '2025-06-20'
 author: AMD Automation Team
-category: ROI and Business
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/justifying-automation-investment-to-management/

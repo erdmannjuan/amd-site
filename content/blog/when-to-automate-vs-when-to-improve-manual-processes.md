@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   ROI, manufacturing efficiency, automation investment, automate, improve, manual
 date: '2025-06-10'
 author: AMD Automation Team
-category: ROI and Business
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/when-to-automate-vs-when-to-improve-manual-processes/

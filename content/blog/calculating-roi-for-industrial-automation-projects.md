@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   ROI, manufacturing efficiency, automation investment, calculating, industrial, automation
 date: '2025-06-24'
 author: AMD Automation Team
-category: ROI and Business
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/calculating-roi-for-industrial-automation-projects/

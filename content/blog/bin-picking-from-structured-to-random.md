@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, mater
   handling automation, conveyor systems, palletizing, picking, structured, random
 date: '2025-07-16'
 author: AMD Automation Team
-category: Material Handling
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/bin-picking-from-structured-to-random/

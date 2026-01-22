@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   testing, quality inspection, test systems, inspection, hidden, defects
 date: '2025-10-04'
 author: AMD Automation Team
-category: Testing and Inspection
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/x-ray-inspection-for-hidden-defects/

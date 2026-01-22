@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   component
 date: '2024-12-02'
 author: AMD Automation Team
-category: Case Studies
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/renewable-energy-component-manufacturing-scales-up/

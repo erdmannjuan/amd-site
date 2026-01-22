@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   assembly, assembly line, assembly systems, traceability, systems, assembly
 date: '2025-11-01'
 author: AMD Automation Team
-category: Assembly Automation
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/traceability-systems-for-assembly-operations/

@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   reality
 date: '2024-12-30'
 author: AMD Automation Team
-category: Emerging Technologies
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/lights-out-manufacturing-reality-and-requirements/

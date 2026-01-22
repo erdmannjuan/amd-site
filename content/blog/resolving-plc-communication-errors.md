@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   errors
 date: '2024-09-23'
 author: AMD Automation Team
-category: Troubleshooting
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/resolving-plc-communication-errors/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, machi
   vision, industrial vision, automated inspection, lighting, techniques, machine
 date: '2025-12-15'
 author: AMD Automation Team
-category: Vision Systems
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/lighting-techniques-for-machine-vision-success/

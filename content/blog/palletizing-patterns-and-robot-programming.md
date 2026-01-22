@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, mater
   handling automation, conveyor systems, palletizing, palletizing, patterns, robot
 date: '2025-07-20'
 author: AMD Automation Team
-category: Material Handling
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/palletizing-patterns-and-robot-programming/

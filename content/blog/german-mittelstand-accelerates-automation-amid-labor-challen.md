@@ -6,7 +6,7 @@ keywords: AI automation, robotics news, manufacturing AI, industrial automation,
   trends
 date: '2025-06-05'
 author: AMD Automation News Desk
-category: Industry News
+category: News
 read_time: 4
 template: blog-post.html
 url: /blog/german-mittelstand-accelerates-automation-amid-labor-challen/

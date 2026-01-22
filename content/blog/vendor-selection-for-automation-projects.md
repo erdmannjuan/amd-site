@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   ROI, manufacturing efficiency, automation investment, vendor, selection, automation
 date: '2025-06-04'
 author: AMD Automation Team
-category: ROI and Business
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/vendor-selection-for-automation-projects/

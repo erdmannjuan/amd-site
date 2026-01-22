@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   guide, technical reference, how-to automation, robot, changers
 date: '2024-11-06'
 author: AMD Automation Team
-category: Technical Guides
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/complete-guide-to-robot-tool-changers/

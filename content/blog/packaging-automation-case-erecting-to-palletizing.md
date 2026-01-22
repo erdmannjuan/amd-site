@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, mater
   handling automation, conveyor systems, palletizing, packaging, automation, erecting
 date: '2025-07-02'
 author: AMD Automation Team
-category: Material Handling
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/packaging-automation-case-erecting-to-palletizing/

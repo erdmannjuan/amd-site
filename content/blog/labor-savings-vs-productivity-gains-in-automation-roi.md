@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   ROI, manufacturing efficiency, automation investment, labor, savings, productivity
 date: '2025-06-16'
 author: AMD Automation Team
-category: ROI and Business
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/labor-savings-vs-productivity-gains-in-automation-roi/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, machi
   vision, industrial vision, automated inspection, barcode, reading, automated
 date: '2025-12-11'
 author: AMD Automation Team
-category: Vision Systems
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/ocr-and-barcode-reading-in-automated-production/

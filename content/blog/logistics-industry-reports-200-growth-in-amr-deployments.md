@@ -6,7 +6,7 @@ keywords: AI automation, robotics news, manufacturing AI, industrial automation,
   trends
 date: '2025-06-28'
 author: AMD Automation News Desk
-category: Industry News
+category: News
 read_time: 4
 template: blog-post.html
 url: /blog/logistics-industry-reports-200-growth-in-amr-deployments/

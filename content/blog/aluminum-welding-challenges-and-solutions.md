@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, robot
   welding, automated welding, weld automation, aluminum, welding, challenges
 date: '2025-07-30'
 author: AMD Automation Team
-category: Welding Automation
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/aluminum-welding-challenges-and-solutions/

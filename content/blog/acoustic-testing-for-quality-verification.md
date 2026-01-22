@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   testing, quality inspection, test systems, acoustic, testing, quality
 date: '2025-10-06'
 author: AMD Automation Team
-category: Testing and Inspection
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/acoustic-testing-for-quality-verification/

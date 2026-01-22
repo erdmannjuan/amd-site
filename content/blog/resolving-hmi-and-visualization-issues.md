@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   issues
 date: '2024-09-13'
 author: AMD Automation Team
-category: Troubleshooting
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/resolving-hmi-and-visualization-issues/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   assembly, assembly line, assembly systems, ultrasonic, welding, plastic
 date: '2025-11-11'
 author: AMD Automation Team
-category: Assembly Automation
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/ultrasonic-welding-for-plastic-assembly/

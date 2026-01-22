@@ -6,7 +6,7 @@ keywords: AI automation, robotics news, manufacturing AI, industrial automation,
   trends
 date: '2025-01-30'
 author: AMD Automation News Desk
-category: Industry News
+category: News
 read_time: 4
 template: blog-post.html
 url: /blog/us-manufacturing-adds-50000-automation-jobs-in-2024/

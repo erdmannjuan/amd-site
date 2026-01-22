@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, indus
   control, PLC programming, automation control, safety, safety, system
 date: '2025-04-17'
 author: AMD Automation Team
-category: Process Control
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/safety-plc-and-safety-system-design/

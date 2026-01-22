@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, smart
   digital factory, IIoT, standard, industrial, interoperability
 date: '2025-09-16'
 author: AMD Automation Team
-category: Industry 4.0
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/opc-ua-the-standard-for-industrial-interoperability/

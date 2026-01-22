@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   automation
 date: '2025-03-14'
 author: AMD Automation Team
-category: Maintenance and Support
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/documentation-requirements-for-automation-systems/

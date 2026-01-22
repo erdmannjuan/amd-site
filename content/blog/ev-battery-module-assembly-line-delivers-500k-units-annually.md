@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   case study, manufacturing success, automation implementation, battery, module, assembly
 date: '2024-12-14'
 author: AMD Automation Team
-category: Case Studies
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/ev-battery-module-assembly-line-delivers-500k-units-annually/

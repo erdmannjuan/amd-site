@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, manuf
   solutions, industry automation, automotive, supplier, automation
 date: '2025-05-25'
 author: AMD Automation Team
-category: Industry Applications
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/automotive-tier-1-supplier-automation-strategies/

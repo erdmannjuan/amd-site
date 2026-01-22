@@ -6,7 +6,7 @@ keywords: AI automation, robotics news, manufacturing AI, industrial automation,
   trends
 date: '2025-04-05'
 author: AMD Automation News Desk
-category: Industry News
+category: News
 read_time: 4
 template: blog-post.html
 url: /blog/smart-sensors-enable-continuous-process-optimization/

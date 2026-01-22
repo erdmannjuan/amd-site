@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   maintenance, equipment support, preventive maintenance, thermal, monitoring, predictive
 date: '2025-03-04'
 author: AMD Automation Team
-category: Maintenance and Support
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/thermal-monitoring-for-predictive-maintenance/

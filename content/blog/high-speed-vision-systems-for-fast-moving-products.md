@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, machi
   vision, industrial vision, automated inspection, speed, vision, systems
 date: '2025-12-07'
 author: AMD Automation Team
-category: Vision Systems
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/high-speed-vision-systems-for-fast-moving-products/

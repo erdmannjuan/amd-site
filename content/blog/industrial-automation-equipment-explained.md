@@ -7,7 +7,7 @@ keywords: industrial automation equipment, industrial robots, servo presses, con
   systems, machine vision, PLC controllers, automation components, factory automation
   equipment
 template: blog-post.html
-category: Education
+category: Guides
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-03-05

@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   automation
 date: '2024-12-06'
 author: AMD Automation Team
-category: Case Studies
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/semiconductor-packaging-automation-handles-sub-millimeter-parts/

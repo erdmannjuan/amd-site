@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   advances
 date: '2025-01-21'
 author: AMD Automation Team
-category: Emerging Technologies
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/computer-vision-advances-for-manufacturing/

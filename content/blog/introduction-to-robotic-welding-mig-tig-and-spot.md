@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, robot
   welding, automated welding, weld automation, robotic, welding
 date: '2025-08-23'
 author: AMD Automation Team
-category: Welding Automation
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/introduction-to-robotic-welding-mig-tig-and-spot/

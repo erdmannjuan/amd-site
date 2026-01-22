@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   testing, quality inspection, test systems, testing, methods, pressure
 date: '2025-10-20'
 author: AMD Automation Team
-category: Testing and Inspection
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   assembly, assembly line, assembly systems, assembly, simulation, virtual
 date: '2025-10-24'
 author: AMD Automation Team
-category: Assembly Automation
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/assembly-simulation-and-virtual-commissioning/

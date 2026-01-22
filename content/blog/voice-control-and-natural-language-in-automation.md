@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   technology, manufacturing innovation, future of manufacturing, voice, control, natural
 date: '2025-01-09'
 author: AMD Automation Team
-category: Emerging Technologies
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/voice-control-and-natural-language-in-automation/

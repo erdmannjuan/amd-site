@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, manuf
   solutions, industry automation, aerospace, composites, automation
 date: '2025-05-21'
 author: AMD Automation Team
-category: Industry Applications
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/aerospace-composites-automation-layup-to-inspection/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   maintenance, equipment support, preventive maintenance, training, programs, automation
 date: '2025-03-20'
 author: AMD Automation Team
-category: Maintenance and Support
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/training-programs-for-automation-technicians/

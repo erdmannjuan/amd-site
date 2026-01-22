@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   assembly, assembly line, assembly systems, micro, assembly, electronics
 date: '2025-10-28'
 author: AMD Automation Team
-category: Assembly Automation
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/micro-assembly-for-electronics-and-medical-devices/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   maintenance, equipment support, preventive maintenance, remote, support, troubleshooting
 date: '2025-03-18'
 author: AMD Automation Team
-category: Maintenance and Support
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/remote-support-and-troubleshooting-best-practices/

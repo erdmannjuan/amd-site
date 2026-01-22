@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   guide, technical reference, how-to automation, industrial, quality, extraction
 date: '2024-10-31'
 author: AMD Automation Team
-category: Technical Guides
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/industrial-air-quality-and-fume-extraction/

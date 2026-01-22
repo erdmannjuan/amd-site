@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, machi
   vision, industrial vision, automated inspection, vision, systems, capabilities
 date: '2025-12-19'
 author: AMD Automation Team
-category: Vision Systems
+category: Vision & QC
 read_time: 5
 template: blog-post.html
 url: /blog/2d-vs-3d-vision-systems-capabilities-and-applications/

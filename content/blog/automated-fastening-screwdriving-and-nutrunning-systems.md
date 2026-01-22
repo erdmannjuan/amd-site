@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   assembly, assembly line, assembly systems, automated, fastening, screwdriving
 date: '2025-11-15'
 author: AMD Automation Team
-category: Assembly Automation
+category: Assembly
 read_time: 5
 template: blog-post.html
 url: /blog/automated-fastening-screwdriving-and-nutrunning-systems/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   guide, technical reference, how-to automation, grounding, shielding, automation
 date: '2024-10-29'
 author: AMD Automation Team
-category: Technical Guides
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/grounding-and-shielding-for-automation-systems/

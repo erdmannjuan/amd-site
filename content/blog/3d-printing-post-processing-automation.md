@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, manuf
   solutions, industry automation, printing, processing, automation
 date: '2025-04-29'
 author: AMD Automation Team
-category: Industry Applications
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/3d-printing-post-processing-automation/

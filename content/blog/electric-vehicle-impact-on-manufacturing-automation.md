@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, manuf
   trends, automation trends, industry outlook, electric, vehicle, impact
 date: '2024-10-21'
 author: AMD Automation Team
-category: Industry Trends
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/electric-vehicle-impact-on-manufacturing-automation/

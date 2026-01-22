@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   integrates
 date: '2024-12-08'
 author: AMD Automation Team
-category: Case Studies
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/appliance-assembly-line-integrates-15-robot-stations/

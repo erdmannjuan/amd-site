@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, smart
   digital factory, IIoT, building, roadmap, smart
 date: '2025-08-25'
 author: AMD Automation Team
-category: Industry 4.0
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/building-a-roadmap-for-smart-factory-transformation/

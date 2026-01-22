@@ -7,7 +7,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   meets
 date: '2024-12-16'
 author: AMD Automation Team
-category: Case Studies
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/pharmaceutical-packaging-meets-serialization-requirements/

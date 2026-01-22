@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, smart
   digital factory, IIoT, manufacturing, execution, systems
 date: '2025-09-10'
 author: AMD Automation Team
-category: Industry 4.0
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/manufacturing-execution-systems-mes-fundamentals/

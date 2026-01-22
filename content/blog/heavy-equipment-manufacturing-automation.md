@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, manuf
   solutions, industry automation, heavy, equipment, manufacturing
 date: '2025-05-09'
 author: AMD Automation Team
-category: Industry Applications
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/heavy-equipment-manufacturing-automation/

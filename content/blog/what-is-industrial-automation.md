@@ -5,7 +5,7 @@ description: Learn what industrial automation is, how it works, and how automate
 keywords: industrial automation, what is automation, manufacturing automation, automated
   manufacturing, factory automation benefits, industrial robots, automation technology
 template: blog-post.html
-category: Education
+category: Guides
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-02-15

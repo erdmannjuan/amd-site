@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   maintenance, equipment support, preventive maintenance, building, automation, support
 date: '2025-02-26'
 author: AMD Automation Team
-category: Maintenance and Support
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/building-an-automation-support-organization/

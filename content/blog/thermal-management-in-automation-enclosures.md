@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   design, engineering services, system design, thermal, management, automation
 date: '2025-02-12'
 author: AMD Automation Team
-category: Design and Engineering
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/thermal-management-in-automation-enclosures/

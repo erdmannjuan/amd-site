@@ -7,7 +7,7 @@ keywords: automated assembly machines, assembly automation, automatic assembly e
   robotic assembly, assembly line automation, automated manufacturing assembly, assembly
   machine benefits
 template: blog-post.html
-category: Technology
+category: Trends
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-02-25

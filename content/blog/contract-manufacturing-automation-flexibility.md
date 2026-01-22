@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, manuf
   solutions, industry automation, contract, manufacturing, automation
 date: '2025-04-27'
 author: AMD Automation Team
-category: Industry Applications
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/contract-manufacturing-automation-flexibility/

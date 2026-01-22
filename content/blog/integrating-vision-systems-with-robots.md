@@ -6,7 +6,7 @@ description: Complete guide to integrating vision systems with industrial robots
 keywords: robot vision system integration, machine vision robotics, 3D bin picking
   robot, vision guided robot, 2D vs 3D robot vision, automated visual inspection
 template: blog-post.html
-category: Technology
+category: Trends
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-01-01

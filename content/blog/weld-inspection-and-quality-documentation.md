@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, robot
   welding, automated welding, weld automation, inspection, quality, documentation
 date: '2025-07-26'
 author: AMD Automation Team
-category: Welding Automation
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/weld-inspection-and-quality-documentation/

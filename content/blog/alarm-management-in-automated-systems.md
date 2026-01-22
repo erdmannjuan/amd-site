@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, indus
   control, PLC programming, automation control, alarm, management, automated
 date: '2025-04-07'
 author: AMD Automation Team
-category: Process Control
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/alarm-management-in-automated-systems/

@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, smart
   digital factory, IIoT, energy, monitoring, optimization
 date: '2025-08-31'
 author: AMD Automation Team
-category: Industry 4.0
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/energy-monitoring-and-optimization-in-smart-factories/

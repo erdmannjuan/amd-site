@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   case study, manufacturing success, automation implementation, consumer, goods, manufacturer
 date: '2024-12-12'
 author: AMD Automation Team
-category: Case Studies
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/consumer-goods-manufacturer-automates-mixed-case-palletizing/

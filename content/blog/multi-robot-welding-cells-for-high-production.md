@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, robot
   welding, automated welding, weld automation, multi, robot, welding
 date: '2025-08-13'
 author: AMD Automation Team
-category: Welding Automation
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/multi-robot-welding-cells-for-high-production/

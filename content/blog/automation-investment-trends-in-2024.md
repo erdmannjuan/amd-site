@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, manuf
   trends, automation trends, industry outlook, automation, investment, trends
 date: '2024-10-11'
 author: AMD Automation Team
-category: Industry Trends
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/automation-investment-trends-in-2024/

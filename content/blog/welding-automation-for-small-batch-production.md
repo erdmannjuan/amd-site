@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, robot
   welding, automated welding, weld automation, welding, automation, small
 date: '2025-08-01'
 author: AMD Automation Team
-category: Welding Automation
+category: Robotics
 read_time: 5
 template: blog-post.html
 url: /blog/welding-automation-for-small-batch-production/

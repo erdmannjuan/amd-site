@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   case study, manufacturing success, automation implementation, legacy, factory, modernizes
 date: '2024-11-28'
 author: AMD Automation Team
-category: Case Studies
+category: Business
 read_time: 5
 template: blog-post.html
 url: /blog/legacy-factory-modernizes-with-iiot-integration/

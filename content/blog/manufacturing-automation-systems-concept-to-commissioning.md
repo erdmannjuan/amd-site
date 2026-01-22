@@ -7,7 +7,7 @@ keywords: manufacturing automation systems, automation implementation, automatio
   commissioning, automation project phases, industrial automation lifecycle, automation
   system integration, production automation
 template: blog-post.html
-category: Education
+category: Guides
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-03-20

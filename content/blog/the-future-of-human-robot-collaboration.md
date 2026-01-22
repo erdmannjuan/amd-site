@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   technology, manufacturing innovation, future of manufacturing, future, human, robot
 date: '2024-12-28'
 author: AMD Automation Team
-category: Emerging Technologies
+category: Trends
 read_time: 5
 template: blog-post.html
 url: /blog/the-future-of-human-robot-collaboration/

@@ -6,7 +6,7 @@ keywords: custom automation design, custom machine building, automation design p
   custom machinery development, automation engineering, machine design process, custom
   equipment manufacturing
 template: blog-post.html
-category: Education
+category: Guides
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-03-01

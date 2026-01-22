@@ -10,37 +10,14 @@
     </div>
 </section>
 
-<!-- Search Bar -->
-<section class="blog-search-section">
+<!-- Category Filters -->
+<section class="blog-filters-section">
     <div class="container">
-        <div class="blog-search-wrapper">
-            <div class="blog-search-box">
-                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-                <input type="text" id="blog-search" placeholder="Search {{ pagination.total_posts if pagination else posts|length }} articles..." autocomplete="off">
-                <button id="clear-search" class="clear-search" style="display: none;">×</button>
-            </div>
-            <div class="blog-search-results" id="search-results" style="display: none;">
-                <div class="search-results-list" id="search-results-list"></div>
-            </div>
-        </div>
-        <div class="blog-filter-row">
-            <div class="filter-group">
-                <select id="category-filter">
-                    <option value="">All Categories</option>
-                    {% for category in categories|sort %}
-                    <option value="{{ category }}">{{ category }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-            <div class="filter-group">
-                <select id="date-filter">
-                    <option value="">All Years</option>
-                    <option value="2026">2026</option>
-                    <option value="2025">2025</option>
-                    <option value="2024">2024</option>
-                </select>
-            </div>
-            <button id="clear-filters" class="btn-text" style="display: none;">Clear filters</button>
+        <div class="category-tabs" id="category-tabs">
+            <button class="category-tab active" data-category="">All</button>
+            {% for category in categories|sort %}
+            <button class="category-tab" data-category="{{ category }}">{{ category }}</button>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -139,134 +116,31 @@
 {% block scripts_extra %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
-    const searchInput = document.getElementById('blog-search');
-    const searchResults = document.getElementById('search-results');
-    const searchResultsList = document.getElementById('search-results-list');
-    const clearSearch = document.getElementById('clear-search');
-    const categoryFilter = document.getElementById('category-filter');
-    const dateFilter = document.getElementById('date-filter');
-    const clearFilters = document.getElementById('clear-filters');
+    const tabs = document.querySelectorAll('.category-tab');
+    const cards = document.querySelectorAll('.blog-card');
     const blogGrid = document.getElementById('blog-grid');
     const noResults = document.getElementById('no-results');
-    const cards = document.querySelectorAll('.blog-card');
 
-    let searchIndex = null;
-    let searchTimeout = null;
-
-    // Load search index on first search interaction
-    async function loadSearchIndex() {
-        if (searchIndex) return searchIndex;
-        try {
-            const response = await fetch('{{ config.site.base_path }}/blog/search-index.json');
-            searchIndex = await response.json();
-            return searchIndex;
-        } catch (e) {
-            console.error('Failed to load search index:', e);
-            return [];
-        }
-    }
-
-    // Search function
-    async function performSearch(query) {
-        if (!query || query.length < 2) {
-            searchResults.style.display = 'none';
-            clearSearch.style.display = 'none';
-            return;
-        }
-
-        clearSearch.style.display = 'block';
-        const posts = await loadSearchIndex();
-        const q = query.toLowerCase();
-
-        const results = posts.filter(post => {
-            const title = (post.title || '').toLowerCase();
-            const desc = (post.description || '').toLowerCase();
-            const cat = (post.category || '').toLowerCase();
-            return title.includes(q) || desc.includes(q) || cat.includes(q);
-        }).slice(0, 8); // Limit to 8 results
-
-        if (results.length === 0) {
-            searchResultsList.innerHTML = '<div class="search-no-results">No articles found for "' + query + '"</div>';
-        } else {
-            searchResultsList.innerHTML = results.map(post => `
-                <a href="{{ config.site.base_path }}${post.url}" class="search-result-item">
-                    <span class="search-result-category">${post.category || 'Article'}</span>
-                    <span class="search-result-title">${post.title}</span>
-                    <span class="search-result-meta">${post.date || ''} · ${post.read_time || 5} min read</span>
-                </a>
-            `).join('');
-        }
-
-        searchResults.style.display = 'block';
-    }
-
-    // Search input handler with debounce
-    searchInput.addEventListener('input', function() {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => performSearch(this.value.trim()), 200);
-    });
-
-    // Clear search
-    clearSearch.addEventListener('click', function() {
-        searchInput.value = '';
-        searchResults.style.display = 'none';
-        clearSearch.style.display = 'none';
-        searchInput.focus();
-    });
-
-    // Close search results when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.blog-search-wrapper')) {
-            searchResults.style.display = 'none';
-        }
-    });
-
-    // Show results on focus if there's a query
-    searchInput.addEventListener('focus', function() {
-        if (this.value.trim().length >= 2) {
-            performSearch(this.value.trim());
-        }
-    });
-
-    // Keyboard navigation
-    searchInput.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            searchResults.style.display = 'none';
-            this.blur();
-        }
-    });
-
-    // Filter cards on current page
-    function filterPageCards() {
-        const category = categoryFilter.value;
-        const year = dateFilter.value;
+    function filterByCategory(category) {
         let visibleCount = 0;
 
         cards.forEach(function(card) {
             const cardCategory = card.dataset.category || '';
-            const cardDate = card.dataset.date || '';
-            let show = true;
-
-            if (category && cardCategory !== category) show = false;
-            if (year && !cardDate.startsWith(year)) show = false;
-
+            const show = !category || cardCategory === category;
             card.style.display = show ? '' : 'none';
             if (show) visibleCount++;
         });
 
         noResults.style.display = visibleCount === 0 ? 'block' : 'none';
         blogGrid.style.display = visibleCount === 0 ? 'none' : '';
-        clearFilters.style.display = (category || year) ? 'inline' : 'none';
     }
 
-    categoryFilter.addEventListener('change', filterPageCards);
-    dateFilter.addEventListener('change', filterPageCards);
-
-    clearFilters.addEventListener('click', function() {
-        categoryFilter.value = '';
-        dateFilter.value = '';
-        filterPageCards();
+    tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+            tabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            filterByCategory(this.dataset.category);
+        });
     });
 
     // Handle URL params
@@ -274,14 +148,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const urlCategory = urlParams.get('category');
     if (urlCategory) {
         const decoded = decodeURIComponent(urlCategory);
-        const options = categoryFilter.querySelectorAll('option');
-        for (let opt of options) {
-            if (opt.value.toLowerCase() === decoded.toLowerCase()) {
-                categoryFilter.value = opt.value;
-                break;
+        tabs.forEach(function(tab) {
+            if (tab.dataset.category.toLowerCase() === decoded.toLowerCase()) {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                filterByCategory(tab.dataset.category);
             }
-        }
-        filterPageCards();
+        });
     }
 });
 </script>

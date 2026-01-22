@@ -6,7 +6,7 @@ keywords: industrial automation, manufacturing automation, AMD Automation, autom
   troubleshooting, problem solving, debugging automation, fixing, welding, quality
 date: '2024-09-09'
 author: AMD Automation Team
-category: Troubleshooting
+category: Guides
 read_time: 5
 template: blog-post.html
 url: /blog/fixing-welding-quality-problems/
