@@ -7675,7 +7675,7 @@ button:disabled {
 }
 
 .section-header-center p {
-    color: var(--text-muted);
+    color: var(--text-light);
 }
 
 .case-studies-grid {
@@ -7724,10 +7724,11 @@ button:disabled {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: var(--dark);
+    font-weight: 600;
 }
 
 .case-card-content p {
-    color: var(--text-muted);
+    color: #555555;
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 1rem;
