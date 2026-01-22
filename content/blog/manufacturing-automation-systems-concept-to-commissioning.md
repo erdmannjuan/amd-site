@@ -1,8 +1,6 @@
 ---
 title: Manufacturing Automation Systems - From Concept to
-description: Complete guide to implementing manufacturing automation systems. Learn
-  the full lifecycle from initial concept through design, build, installation, and
-  production commissioning.
+description: Guide to implementing manufacturing automation systems from concept through design, build, and commissioning.
 keywords: manufacturing automation systems, automation implementation, automation
   commissioning, automation project phases, industrial automation lifecycle, automation
   system integration, production automation

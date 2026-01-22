@@ -1,6 +1,6 @@
 ---
 title: Robotic Machine Tending | CNC Automation | AMD Automation
-description: "Automated machine tending solutions for CNC machines, presses, injection molding, and other production equipment. 24/7 unattended operation with robotic loading."
+description: "Automated machine tending for CNC machines, presses, and injection molding. 24/7 unattended operation with robotic loading."
 keywords: robotic machine tending, CNC automation, automated machine loading, robot machine tending, unattended machining, press tending
 template: solution.html
 hero_title: Robotic Machine Tending

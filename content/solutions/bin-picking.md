@@ -1,6 +1,6 @@
 ---
 title: Robotic Bin Picking Systems | AI Vision Integration | Industrial Automation
-description: AI-powered bin picking achieving 99%+ pick rates and 50% labor reduction. Custom 3D vision integration for Tier 1 automotive, aerospace, and medical manufacturers.
+description: AI-powered bin picking achieving 99%+ pick rates and 50% labor reduction. Custom 3D vision integration for manufacturers.
 keywords: robotic bin picking, AI vision integration, industrial automation integrator, 3D vision picking, Tier 1 automation, bin picking ROI, custom engineering
 template: solution.html
 hero_title: Robotic Bin Picking

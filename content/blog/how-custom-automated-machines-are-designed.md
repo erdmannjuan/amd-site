@@ -1,7 +1,6 @@
 ---
 title: How Custom Automated Machines Are Designed and Built
-description: Step-by-step guide to the custom automation design and build process.
-  Learn how automation integrators develop custom machinery from concept through commissioning.
+description: Step-by-step guide to custom automation design and build. Learn how integrators develop machinery from concept to commissioning.
 keywords: custom automation design, custom machine building, automation design process,
   custom machinery development, automation engineering, machine design process, custom
   equipment manufacturing

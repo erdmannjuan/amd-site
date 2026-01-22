@@ -1,6 +1,6 @@
 ---
 title: Automation Maintenance & Support | 24/7 Service | AMD Automation
-description: "Comprehensive automation maintenance and support services: preventive maintenance, emergency repair, remote diagnostics, service contracts & 24/7 technical support."
+description: "Automation maintenance and support: preventive maintenance, emergency repair, remote diagnostics, and 24/7 technical support."
 keywords: automation maintenance, robot maintenance, preventive maintenance, emergency repair, automation support, service contracts, technical support, remote diagnostics
 template: page.html
 hero_title: Maintenance & Support

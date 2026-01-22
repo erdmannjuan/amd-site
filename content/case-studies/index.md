@@ -80,7 +80,7 @@ case_studies:
         label: "Inspection Time"
       - value: "99.99%"
         label: "Defect Detection"
-  - title: "Appliance Assembly Line Integrates 15 Robot Stations"
+  - title: "Multi-Robot Dishwasher Assembly Line Handles 8 Product Variants"
     url: "/case-studies/appliance-assembly-line/"
     industry: "Consumer Products"
     image: "case-studies/appliance-assembly.jpg"

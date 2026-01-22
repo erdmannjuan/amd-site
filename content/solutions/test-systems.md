@@ -1,6 +1,6 @@
 ---
 title: Leak Detection & Test Systems | Industrial Automation Integrator
-description: Custom leak detection and EOL test systems achieving <1 ppm escape rates. Helium, pressure decay, and mass flow solutions with full traceability for Tier 1 suppliers.
+description: Custom leak detection and EOL test systems achieving <1 ppm escape rates. Helium, pressure decay, and mass flow solutions.
 keywords: leak detection systems, industrial automation integrator, end-of-line testing, custom test equipment, Tier 1 supplier testing, leak test ROI, pressure decay testing
 template: solution.html
 short_title: Test Systems

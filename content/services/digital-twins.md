@@ -1,6 +1,6 @@
 ---
 title: Digital Twins & Simulation | Virtual Commissioning | AMD Automation
-description: "Digital twin technology for manufacturing automation: virtual commissioning, offline robot programming, process simulation & production optimization. Reduce risk & accelerate deployment."
+description: "Digital twin technology for manufacturing: virtual commissioning, offline robot programming, and process simulation to reduce risk."
 keywords: digital twin manufacturing, virtual commissioning, robot simulation software, offline robot programming, FANUC Roboguide, ABB RobotStudio, process simulation, Industry 4.0 digital twin
 template: page.html
 hero_title: Digital Twins & Simulation

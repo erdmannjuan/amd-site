@@ -1,6 +1,6 @@
 ---
 title: Automation Training Services | Robot & PLC Training | AMD Automation
-description: "Professional automation training: robot operation, programming, PLC, vision systems & maintenance. On-site and classroom training for operators, technicians & engineers."
+description: "Professional automation training: robot operation, programming, PLC, vision systems and maintenance for operators and engineers."
 keywords: automation training, robot training, PLC training, FANUC training, ABB training, operator training, maintenance training, industrial training
 template: page.html
 hero_title: Training & Education

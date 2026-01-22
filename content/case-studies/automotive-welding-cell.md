@@ -1,6 +1,6 @@
 ---
 title: "Tier-1 Automotive Supplier Increases Welding Throughput 300%"
-description: "How AMD Automation designed a multi-robot welding cell that tripled production capacity while achieving 99.7% first-pass quality for complex suspension components."
+description: "Multi-robot welding cell that tripled production capacity while achieving 99.7% first-pass quality for suspension components."
 template: case-study.html
 industry: "Automotive"
 tagline: "Multi-robot welding cell delivers 45-second cycle time for complex suspension components"

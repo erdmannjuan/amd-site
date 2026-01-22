@@ -1,5 +1,5 @@
 ---
-title: "Appliance Assembly Line Integrates 15 Robot Stations"
+title: "Multi-Robot Dishwasher Assembly Line Handles 8 Product Variants"
 description: "Fully automated dishwasher assembly line handling 8 product variants with 15 integrated robot stations and 60-second takt time."
 template: case-study.html
 industry: "Consumer Products"

@@ -1,8 +1,6 @@
 ---
 title: Automation Cells vs Full Production Lines - Cost,
-description: Compare robotic automation cells vs integrated production lines. Learn
-  the costs, benefits, flexibility trade-offs, and which approach fits your manufacturing
-  needs.
+description: Compare robotic automation cells vs production lines. Costs, benefits, and flexibility trade-offs explained.
 keywords: automation cells vs production lines, robotic cells, production line automation,
   manufacturing cells, integrated production lines, automation cell benefits, flexible
   manufacturing cells

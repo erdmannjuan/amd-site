@@ -1,6 +1,6 @@
 ---
 title: Automation Upgrades & Retrofits | Robot Refurbishment | AMD Automation
-description: "Extend equipment life with automation upgrades & retrofits: robot refurbishment, control system upgrades, safety system modernization & production line improvements. Maximize ROI on existing equipment."
+description: "Automation upgrades and retrofits: robot refurbishment, control system upgrades, and safety modernization. Maximize ROI on existing equipment."
 keywords: automation upgrades, robot retrofit, robot refurbishment, control system upgrade, PLC migration, safety system upgrade, production line modernization, equipment lifecycle extension
 template: page.html
 hero_title: Upgrades & Retrofits

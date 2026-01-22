@@ -1,8 +1,6 @@
 ---
 title: Automated Assembly Machines - Applications, Benefits,
-description: Complete guide to automated assembly machines for manufacturing. Learn
-  about types of assembly automation, key applications, benefits, and how to calculate
-  ROI for your operation.
+description: Guide to automated assembly machines for manufacturing. Learn about assembly automation types, applications, and ROI.
 keywords: automated assembly machines, assembly automation, automatic assembly equipment,
   robotic assembly, assembly line automation, automated manufacturing assembly, assembly
   machine benefits

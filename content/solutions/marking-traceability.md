@@ -1,6 +1,6 @@
 ---
 title: Marking & Traceability Systems | Laser Marking & Barcodes | AMD Automation
-description: "Automated marking and traceability systems including laser marking, dot peen, inkjet, and barcode/QR code application. Full part genealogy and track-and-trace solutions."
+description: "Automated marking and traceability systems: laser marking, dot peen, inkjet, and barcode/QR code. Full part genealogy."
 keywords: laser marking, traceability systems, barcode automation, QR code marking, dot peen marking, part serialization, track and trace
 template: solution.html
 hero_title: Marking & Traceability

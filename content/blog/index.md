@@ -1,8 +1,6 @@
 ---
 title: Automation Resources & Blog | Technical Guides, Case
-description: 'Expert automation resources: technical guides, case studies, ROI calculators
-  & industry trends. Learn about robotic automation, welding systems & manufacturing
-  best practices.'
+description: 'Automation technical guides, case studies, and industry trends. Learn about robotic automation and manufacturing best practices.'
 keywords: automation blog, robotics technical guides, automation case studies, manufacturing
   automation ROI, industry 4.0 trends, automation best practices
 template: blog.html

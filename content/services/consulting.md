@@ -1,6 +1,6 @@
 ---
 title: Automation Consulting Services | Manufacturing Assessment | AMD Automation
-description: "Expert automation consulting: feasibility studies, ROI analysis, technology assessment, automation roadmaps & project planning. Data-driven recommendations for smart investments."
+description: "Expert automation consulting: feasibility studies, ROI analysis, technology assessment, and automation roadmaps for smart investments."
 keywords: automation consulting, manufacturing consulting, feasibility study, ROI analysis, automation assessment, technology selection, automation roadmap, project planning
 template: page.html
 hero_title: Consulting & Assessment

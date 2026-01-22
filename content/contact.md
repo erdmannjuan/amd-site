@@ -1,6 +1,6 @@
 ---
 title: Contact Us | Request a Free Automation Quote | AMD Automation
-description: Request a free quote for custom automation. Contact AMD Automation to discuss your robotic cells, welding systems, or assembly machine project. Response within 24 hours.
+description: Request a free quote for custom automation. Contact AMD Automation to discuss robotic cells, welding, or assembly projects.
 keywords: automation quote request, contact automation company, custom machine quote, automation consultation, robotic cell quote, manufacturing automation inquiry
 template: contact.html
 hero_title: Let's Build Something Together

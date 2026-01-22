@@ -1,6 +1,6 @@
 ---
 title: Machine Vision Systems | Industrial Vision Inspection | AMD Automation
-description: "Custom machine vision systems for quality inspection, guidance, measurement, and identification. 2D/3D vision, AI-powered defect detection, and robot guidance solutions."
+description: "Custom machine vision systems for quality inspection, guidance, and measurement. 2D/3D vision and AI-powered defect detection."
 keywords: machine vision systems, industrial vision inspection, vision guided robotics, quality inspection automation, defect detection, 2D 3D vision, OCR verification
 template: solution.html
 hero_title: Machine Vision Systems

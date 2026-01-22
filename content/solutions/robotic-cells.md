@@ -1,6 +1,6 @@
 ---
 title: Custom Robotic Cells | Industrial Automation Integrator | FANUC, ABB, Yaskawa
-description: Turnkey robotic cell integration delivering 200-400% productivity gains for Tier 1 suppliers. Custom engineering with FANUC, ABB, Yaskawa. Proven ROI in 12-24 months.
+description: Turnkey robotic cell integration with 200-400% productivity gains. Custom FANUC, ABB, Yaskawa engineering. ROI in 12-24 months.
 keywords: custom robotic cells, industrial automation integrator, FANUC integrator, ABB robot integration, Tier 1 supplier automation, robotic cell ROI, custom engineering
 template: solution.html
 short_title: Robotic Cells

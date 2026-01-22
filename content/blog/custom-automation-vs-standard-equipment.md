@@ -1,8 +1,6 @@
 ---
 title: Custom Automation vs Standard Automation Equipment -
-description: Compare custom automation solutions vs off-the-shelf equipment. Learn
-  when to choose custom automated machinery and when standard automation makes sense
-  for your manufacturing needs.
+description: Compare custom automation vs off-the-shelf equipment. Learn when custom machinery makes sense for manufacturing.
 keywords: custom automation vs standard, custom automated equipment, standard automation
   equipment, buy vs build automation, custom machinery, off-the-shelf automation,
   automation equipment selection

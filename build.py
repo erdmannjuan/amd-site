@@ -199,6 +199,17 @@ def build_category_pages(config, env, posts, categories):
     """Build paginated category-specific blog pages"""
     built_pages = []
 
+    # SEO-friendly descriptions for each category (70-160 chars)
+    category_descriptions = {
+        'Assembly': 'Expert guides on robotic assembly automation, press-fit systems, and precision assembly techniques for manufacturing efficiency.',
+        'Business': 'ROI analysis, automation investment strategies, and business insights for manufacturing decision-makers and plant managers.',
+        'Guides': 'Step-by-step technical guides covering robot programming, PLC setup, vision systems, and industrial automation best practices.',
+        'News': 'Latest industrial automation news, robotics industry updates, and manufacturing technology announcements from AMD Automation.',
+        'Robotics': 'Industrial robotics insights covering FANUC, ABB, and collaborative robots for welding, assembly, and material handling.',
+        'Trends': 'Manufacturing automation trends, Industry 4.0 developments, AI in manufacturing, and smart factory innovations.',
+        'Vision & QC': 'Machine vision systems, quality control automation, inspection technologies, and defect detection solutions.'
+    }
+
     for category in categories:
         # Filter posts by category
         cat_posts = [p for p in posts if p.get('category') == category]
@@ -233,9 +244,12 @@ def build_category_pages(config, env, posts, categories):
                 'base_url': base_url
             }
 
+            # Get category-specific description or fallback
+            cat_desc = category_descriptions.get(category, f'Expert articles about {category.lower()} in industrial automation and manufacturing technology.')
+
             page_data = {
                 'title': f'{category} - Automation Blog' if page_num == 1 else f'{category} - Page {page_num}',
-                'description': f'Articles about {category.lower()} in manufacturing automation.',
+                'description': cat_desc,
                 'template': 'blog.html',
                 'url': base_url if page_num == 1 else f'{base_url}page/{page_num}/',
                 'hero_title': category,

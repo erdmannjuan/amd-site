@@ -1,8 +1,6 @@
 ---
 title: How to Choose the Right Industrial Robot | Articulated
-description: 'Complete guide to choosing industrial robots: articulated, SCARA, delta
-  & collaborative robots compared. Payload, reach, speed & application selection criteria
-  explained.'
+description: 'Guide to choosing industrial robots: articulated, SCARA, delta and cobots compared. Payload, reach, and selection criteria.'
 keywords: how to choose industrial robot, articulated robot vs SCARA, collaborative
   robot selection, cobot vs industrial robot, robot payload guide, robot reach comparison
 template: blog-post.html
