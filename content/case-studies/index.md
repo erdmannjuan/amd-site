@@ -6,27 +6,31 @@ industries:
   - name: "Automotive"
     slug: "automotive"
     icon: "automotive"
-    count: 8
+    count: 3
   - name: "Medical Devices"
     slug: "medical"
     icon: "medical"
-    count: 5
+    count: 1
   - name: "Electronics"
     slug: "electronics"
     icon: "electronics"
-    count: 4
+    count: 1
   - name: "Consumer Products"
     slug: "consumer"
     icon: "consumer"
-    count: 4
+    count: 2
   - name: "Aerospace"
     slug: "aerospace"
     icon: "aerospace"
-    count: 3
+    count: 1
   - name: "Heavy Equipment"
     slug: "heavy-equipment"
     icon: "heavy"
-    count: 3
+    count: 1
+  - name: "Pharmaceutical"
+    slug: "pharmaceutical"
+    icon: "pharma"
+    count: 1
 case_studies:
   - title: "Tier-1 Automotive Supplier Increases Welding Throughput 300%"
     url: "/case-studies/automotive-welding-cell/"
@@ -100,4 +104,52 @@ case_studies:
         label: "Labor Reduction"
       - value: "18mo"
         label: "ROI Payback"
+  - title: "Aerospace Actuator Assembly Achieves AS9100 Certification"
+    url: "/case-studies/aerospace-actuator-assembly/"
+    industry: "Aerospace"
+    image: "case-studies/aerospace-assembly.jpg"
+    description: "Precision assembly cell for flight-critical actuator components with full traceability."
+    key_results:
+      - value: "100%"
+        label: "Traceability"
+      - value: "Zero"
+        label: "Defect Escapes"
+      - value: "AS9100"
+        label: "Certified"
+  - title: "Pharmaceutical Packaging Line Achieves FDA Compliance"
+    url: "/case-studies/pharmaceutical-packaging/"
+    industry: "Pharmaceutical"
+    image: "case-studies/pharma-packaging.jpg"
+    description: "Automated serialization and packaging line meeting DSCSA requirements."
+    key_results:
+      - value: "100%"
+        label: "Serialization"
+      - value: "FDA"
+        label: "Compliant"
+      - value: "200/min"
+        label: "Bottles/Min"
+  - title: "Automotive Powertrain Assembly Line Achieves 99.5% Uptime"
+    url: "/case-studies/automotive-powertrain-assembly/"
+    industry: "Automotive"
+    image: "case-studies/powertrain-assembly.jpg"
+    description: "High-volume transmission assembly line with 32 robot stations."
+    key_results:
+      - value: "99.5%"
+        label: "Uptime"
+      - value: "58s"
+        label: "Takt Time"
+      - value: "32"
+        label: "Robot Stations"
+  - title: "Consumer Electronics Assembly Handles 12 SKUs"
+    url: "/case-studies/consumer-electronics-assembly/"
+    industry: "Consumer Products"
+    image: "case-studies/consumer-electronics.jpg"
+    description: "Flexible robotic assembly cell with zero changeover time."
+    key_results:
+      - value: "12"
+        label: "SKU Variants"
+      - value: "30s"
+        label: "Cycle Time"
+      - value: "Zero"
+        label: "Changeover"
 ---

@@ -271,6 +271,98 @@ def build_category_pages(config, env, posts, categories):
     return built_pages
 
 
+def get_case_studies(all_pages):
+    """Extract case study pages from all pages"""
+    case_studies = []
+    for page in all_pages:
+        if page['url'].startswith('/case-studies/') and page['url'] != '/case-studies/':
+            fm = page['frontmatter']
+            case_studies.append({
+                'url': page['url'],
+                'title': fm.get('title', 'Untitled'),
+                'description': fm.get('description', ''),
+                'industry': fm.get('industry', ''),
+                'tagline': fm.get('tagline', ''),
+                'image': fm.get('hero_image', ''),
+                'key_results': fm.get('key_results', []),
+            })
+    return case_studies
+
+
+def build_case_study_industry_pages(config, env, all_pages):
+    """Build industry-specific case study filter pages"""
+    built_pages = []
+
+    # Get all case studies
+    case_studies = get_case_studies(all_pages)
+    if not case_studies:
+        return built_pages
+
+    # Get unique industries
+    industries = sorted(set(cs.get('industry', '') for cs in case_studies if cs.get('industry')))
+
+    # Industry metadata
+    industry_meta = {
+        'Automotive': {'slug': 'automotive', 'icon': 'automotive', 'description': 'Automation solutions for automotive manufacturing including welding, assembly, and EV production.'},
+        'Medical Devices': {'slug': 'medical', 'icon': 'medical', 'description': 'Precision automation for FDA-regulated medical device manufacturing with full traceability.'},
+        'Electronics': {'slug': 'electronics', 'icon': 'electronics', 'description': 'High-speed automation for electronics assembly, testing, and inspection.'},
+        'Consumer Products': {'slug': 'consumer', 'icon': 'consumer', 'description': 'Flexible automation for high-volume consumer goods and appliance manufacturing.'},
+        'Aerospace': {'slug': 'aerospace', 'icon': 'aerospace', 'description': 'Precision automation for aerospace components meeting AS9100 requirements.'},
+        'Heavy Equipment': {'slug': 'heavy-equipment', 'icon': 'heavy', 'description': 'Robust automation for heavy equipment and agricultural machinery manufacturing.'},
+        'Pharmaceutical': {'slug': 'pharmaceutical', 'icon': 'pharma', 'description': 'Cleanroom-compatible automation for pharmaceutical manufacturing and packaging.'},
+    }
+
+    for industry in industries:
+        meta = industry_meta.get(industry, {'slug': industry.lower().replace(' ', '-'), 'icon': 'general', 'description': f'Automation solutions for {industry.lower()} manufacturing.'})
+        ind_slug = meta['slug']
+
+        # Filter case studies for this industry
+        ind_case_studies = [cs for cs in case_studies if cs.get('industry') == industry]
+        if not ind_case_studies:
+            continue
+
+        # Build industry info for template
+        all_industries_info = []
+        for ind in industries:
+            ind_meta = industry_meta.get(ind, {'slug': ind.lower().replace(' ', '-'), 'icon': 'general'})
+            ind_count = len([cs for cs in case_studies if cs.get('industry') == ind])
+            all_industries_info.append({
+                'name': ind,
+                'slug': ind_meta['slug'],
+                'icon': ind_meta['icon'],
+                'count': ind_count
+            })
+
+        page_data = {
+            'title': f'{industry} Case Studies | Automation Projects',
+            'description': meta['description'],
+            'template': 'case-studies.html',
+            'url': f'/case-studies/{ind_slug}/',
+            'current_industry': industry,
+            'industry_description': meta['description'],
+            'case_studies': ind_case_studies,
+            'industries': all_industries_info,
+        }
+
+        template = env.get_template('case-studies.html')
+        rendered = template.render(
+            page=page_data,
+            content='',
+            config=config,
+            year=datetime.now().year
+        )
+
+        output_path = OUTPUT_DIR / 'case-studies' / ind_slug / 'index.html'
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(rendered)
+
+        print(f"  ✓ Built: {page_data['url']} ({len(ind_case_studies)} case studies)")
+        built_pages.append(page_data)
+
+    return built_pages
+
+
 def build_page(page, config, env, all_pages, posts=None, categories=None):
     """Build a single page"""
     page_data = {
@@ -408,6 +500,10 @@ def build_site():
     # Build category pages
     category_pages = build_category_pages(config, env, posts, categories)
     built_pages.extend(category_pages)
+
+    # Build case study industry filter pages
+    case_study_pages = build_case_study_industry_pages(config, env, pages)
+    built_pages.extend(case_study_pages)
 
     generate_sitemap(built_pages, config)
     generate_search_index(posts, config)
