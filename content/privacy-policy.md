@@ -74,7 +74,7 @@ Depending on your location, you may have the right to:
 - Request deletion of your information
 - Opt out of analytics tracking
 
-To exercise these rights, contact us at {{ config.social.email }}.
+To exercise these rights, [contact us](/contact/).
 
 ### California Residents (CCPA)
 
@@ -94,9 +94,8 @@ We may update this Privacy Policy periodically. Changes will be posted on this p
 
 ### Contact Us
 
-If you have questions about this Privacy Policy, contact us at:
+If you have questions about this Privacy Policy, [contact us](/contact/) or call:
 
 **AMD Automation**
-Email: {{ config.social.email }}
 Phone: {{ config.social.phone }}
 Address: {{ config.social.address }}
