@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero -->
+<section class="case-studies-hero">
+    <div class="container">
+        <span class="section-label">Case Studies</span>
+        <h1>Real Results from Real Projects</h1>
+        <p class="hero-subtitle">See how we've helped manufacturers across industries achieve measurable improvements in productivity, quality, and efficiency.</p>
+    </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="case-studies-stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">2,500+</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Industries Served</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Client Satisfaction</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industry Filter -->
+<section class="case-studies-filter">
+    <div class="container">
+        <div class="filter-tabs">
+            <a href="{{ config.site.base_path }}/case-studies/" class="filter-tab{% if not page.current_industry %} active{% endif %}">All Industries</a>
+            {% for industry in page.industries %}
+            <a href="{{ config.site.base_path }}/case-studies/{{ industry.slug }}/" class="filter-tab{% if page.current_industry == industry.name %} active{% endif %}">{{ industry.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Case Studies Grid -->
+<section class="case-studies-grid-section">
+    <div class="container">
+        {% if page.current_industry %}
+        <div class="industry-header">
+            <h2>{{ page.current_industry }} Projects</h2>
+            <p>{{ page.industry_description }}</p>
+        </div>
+        {% endif %}
+
+        <div class="case-studies-grid">
+            {% for study in page.case_studies %}
+            <a href="{{ config.site.base_path }}{{ study.url }}" class="case-study-card-large">
+                <div class="case-card-image-large" {% if study.image %}style="background-image: url('{{ config.site.base_path }}/static/images/{{ study.image }}')"{% endif %}>
+                    <span class="case-card-badge">{{ study.industry }}</span>
+                </div>
+                <div class="case-card-body">
+                    <h3>{{ study.title }}</h3>
+                    <p>{{ study.description }}</p>
+                    {% if study.key_results %}
+                    <div class="case-card-results">
+                        {% for result in study.key_results[:3] %}
+                        <div class="card-result">
+                            <span class="result-value">{{ result.value }}</span>
+                            <span class="result-label">{{ result.label }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <span class="case-card-cta">View Case Study →</span>
+                </div>
+            </a>
+            {% else %}
+            <div class="no-case-studies">
+                <p>Case studies coming soon. Contact us to learn about our projects in this industry.</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if page.pagination and page.pagination.total_pages > 1 %}
+        <nav class="case-studies-pagination">
+            {% if page.pagination.has_prev %}
+            <a href="{{ config.site.base_path }}{{ page.pagination.prev_url }}" class="pagination-btn">← Previous</a>
+            {% endif %}
+            <span class="pagination-info">Page {{ page.pagination.current_page }} of {{ page.pagination.total_pages }}</span>
+            {% if page.pagination.has_next %}
+            <a href="{{ config.site.base_path }}{{ page.pagination.next_url }}" class="pagination-btn">Next →</a>
+            {% endif %}
+        </nav>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Industries Overview (only on main page) -->
+{% if not page.current_industry %}
+<section class="case-studies-industries">
+    <div class="container">
+        <div class="section-header-center">
+            <h2>Projects by Industry</h2>
+            <p>Explore our work across different manufacturing sectors</p>
+        </div>
+        <div class="industries-card-grid">
+            {% for industry in page.industries %}
+            <a href="{{ config.site.base_path }}/case-studies/{{ industry.slug }}/" class="industry-card">
+                <div class="industry-card-icon">
+                    {% if industry.icon == 'automotive' %}
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3v-6l2-5h10l4 5h2v6h-2m-4 0H9"/></svg>
+                    {% elif industry.icon == 'medical' %}
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-6m-4 0H2m10-10v20m4-14h4a2 2 0 012 2v4a2 2 0 01-2 2h-4m-8-8H4a2 2 0 00-2 2v4a2 2 0 002 2h4"/></svg>
+                    {% elif industry.icon == 'electronics' %}
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/></svg>
+                    {% elif industry.icon == 'aerospace' %}
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    {% elif industry.icon == 'consumer' %}
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    {% elif industry.icon == 'heavy' %}
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                    {% else %}
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    {% endif %}
+                </div>
+                <h3>{{ industry.name }}</h3>
+                <span class="industry-count">{{ industry.count }} Projects</span>
+                <span class="industry-link">View Projects →</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="case-studies-cta">
+    <div class="container">
+        <div class="cta-content-center">
+            <h2>Ready to become our next success story?</h2>
+            <p>Let's discuss how we can help you achieve similar results in your manufacturing operations.</p>
+            <div class="cta-buttons">
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Start Your Project</a>
+                <a href="{{ config.site.base_path }}/solutions/" class="btn btn-outline-white btn-lg">Explore Solutions</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
