@@ -152,8 +152,8 @@
                             <div class="dropdown-menu{% if item.name == 'Solutions' or item.name == 'Industries' %} dropdown-wide{% endif %}">
                                 <div class="dropdown-content">
                                     {% for child in item.children %}
-                                    <a href="{{ config.site.base_path }}{{ child.url }}" class="dropdown-item">
-                                        <span class="dropdown-item-title">{{ child.name }}</span>
+                                    <a href="{{ config.site.base_path }}{{ child.url }}" class="dropdown-item{% if child.featured %} dropdown-item-featured{% endif %}">
+                                        <span class="dropdown-item-title">{{ child.name }}{% if child.featured %}<span class="nav-featured-badge">Core Expertise</span>{% endif %}</span>
                                         {% if child.description %}<span class="dropdown-item-desc">{{ child.description }}</span>{% endif %}
                                     </a>
                                     {% endfor %}
