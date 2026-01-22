@@ -155,7 +155,8 @@ def build_blog_index_pages(config, env, posts, categories):
             'has_next': page_num < total_pages,
             'prev_url': '/blog/' if page_num == 2 else f'/blog/page/{page_num - 1}/' if page_num > 1 else None,
             'next_url': f'/blog/page/{page_num + 1}/' if page_num < total_pages else None,
-            'pages': list(range(1, total_pages + 1))
+            'pages': list(range(1, total_pages + 1)),
+            'base_url': '/blog/'
         }
 
         page_data = {
@@ -195,7 +196,7 @@ def build_blog_index_pages(config, env, posts, categories):
 
 
 def build_category_pages(config, env, posts, categories):
-    """Build category-specific blog pages"""
+    """Build paginated category-specific blog pages"""
     built_pages = []
 
     for category in categories:
@@ -207,35 +208,65 @@ def build_category_pages(config, env, posts, categories):
         # Create URL-safe slug
         cat_slug = category.lower().replace(' & ', '-').replace(' ', '-')
 
-        page_data = {
-            'title': f'{category} - Automation Blog',
-            'description': f'Articles about {category.lower()} in manufacturing automation.',
-            'template': 'blog.html',
-            'url': f'/blog/category/{cat_slug}/',
-            'hero_title': category,
-            'hero_subtitle': f'{len(cat_posts)} articles',
-            'label': 'Blog',
-            'current_category': category
-        }
+        # Paginate category posts
+        total_posts = len(cat_posts)
+        total_pages = (total_posts + POSTS_PER_PAGE - 1) // POSTS_PER_PAGE
 
-        template = env.get_template('blog.html')
-        rendered = template.render(
-            page=page_data,
-            content='',
-            config=config,
-            posts=cat_posts,
-            categories=categories,
-            pagination=None,
-            year=datetime.now().year
-        )
+        for page_num in range(1, total_pages + 1):
+            start_idx = (page_num - 1) * POSTS_PER_PAGE
+            end_idx = start_idx + POSTS_PER_PAGE
+            page_posts = cat_posts[start_idx:end_idx]
 
-        output_path = OUTPUT_DIR / 'blog' / 'category' / cat_slug / 'index.html'
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(rendered)
+            # Base URL for this category
+            base_url = f'/blog/category/{cat_slug}/'
 
-        print(f"  ✓ Built: {page_data['url']} ({len(cat_posts)} posts)")
-        built_pages.append(page_data)
+            # Pagination data
+            pagination = {
+                'current_page': page_num,
+                'total_pages': total_pages,
+                'total_posts': total_posts,
+                'has_prev': page_num > 1,
+                'has_next': page_num < total_pages,
+                'prev_url': base_url if page_num == 2 else f'{base_url}page/{page_num - 1}/' if page_num > 1 else None,
+                'next_url': f'{base_url}page/{page_num + 1}/' if page_num < total_pages else None,
+                'pages': list(range(1, total_pages + 1)),
+                'base_url': base_url
+            }
+
+            page_data = {
+                'title': f'{category} - Automation Blog' if page_num == 1 else f'{category} - Page {page_num}',
+                'description': f'Articles about {category.lower()} in manufacturing automation.',
+                'template': 'blog.html',
+                'url': base_url if page_num == 1 else f'{base_url}page/{page_num}/',
+                'hero_title': category,
+                'hero_subtitle': f'{total_posts} articles',
+                'label': 'Blog',
+                'current_category': category
+            }
+
+            template = env.get_template('blog.html')
+            rendered = template.render(
+                page=page_data,
+                content='',
+                config=config,
+                posts=page_posts,
+                categories=categories,
+                pagination=pagination if total_pages > 1 else None,
+                year=datetime.now().year
+            )
+
+            if page_num == 1:
+                output_path = OUTPUT_DIR / 'blog' / 'category' / cat_slug / 'index.html'
+            else:
+                output_path = OUTPUT_DIR / 'blog' / 'category' / cat_slug / 'page' / str(page_num) / 'index.html'
+
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(rendered)
+
+            if page_num == 1:
+                print(f"  ✓ Built: {page_data['url']} ({total_posts} posts, {total_pages} pages)")
+            built_pages.append(page_data)
 
     return built_pages
 

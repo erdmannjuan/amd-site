@@ -70,13 +70,14 @@
             {% endif %}
 
             <div class="pagination-numbers">
+                {% set base_url = pagination.base_url | default('/blog/') %}
                 {% for page_num in pagination.pages %}
                     {% if page_num == pagination.current_page %}
                     <span class="pagination-num active">{{ page_num }}</span>
                     {% elif page_num == 1 %}
-                    <a href="{{ config.site.base_path }}/blog/" class="pagination-num">{{ page_num }}</a>
+                    <a href="{{ config.site.base_path }}{{ base_url }}" class="pagination-num">{{ page_num }}</a>
                     {% elif page_num <= 3 or page_num > pagination.total_pages - 2 or (page_num >= pagination.current_page - 1 and page_num <= pagination.current_page + 1) %}
-                    <a href="{{ config.site.base_path }}/blog/page/{{ page_num }}/" class="pagination-num">{{ page_num }}</a>
+                    <a href="{{ config.site.base_path }}{{ base_url }}page/{{ page_num }}/" class="pagination-num">{{ page_num }}</a>
                     {% elif page_num == 4 and pagination.current_page > 5 %}
                     <span class="pagination-ellipsis">...</span>
                     {% elif page_num == pagination.total_pages - 2 and pagination.current_page < pagination.total_pages - 4 %}
