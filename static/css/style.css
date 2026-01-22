@@ -5901,12 +5901,41 @@ button:disabled {
     padding: 5rem 0;
     background: linear-gradient(135deg, var(--primary) 0%, #001a4d 100%);
     color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.expertise-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/images/about-engineering.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.expertise-highlight::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 48, 135, 0.9) 0%, rgba(0, 26, 77, 0.95) 100%);
+    z-index: 1;
 }
 
 .expertise-content {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .expertise-badge {
