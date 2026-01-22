@@ -226,7 +226,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const urlYear = urlParams.get('year');
 
     if (urlCategory) {
-        categoryFilter.value = urlCategory;
+        // URL decode and find matching option (case-insensitive)
+        const decodedCategory = decodeURIComponent(urlCategory);
+        const options = categoryFilter.querySelectorAll('option');
+        for (let opt of options) {
+            if (opt.value.toLowerCase() === decodedCategory.toLowerCase()) {
+                categoryFilter.value = opt.value;
+                break;
+            }
+        }
     }
     if (urlYear) {
         dateFilter.value = urlYear;
