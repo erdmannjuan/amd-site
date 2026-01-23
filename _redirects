@@ -37,7 +37,30 @@
 /ebooks/ /blog/ 301
 /amd-mexico/ /contact/ 301
 /case-studies/cnc-machining/ /solutions/machine-tending/ 301
-/case-studies/ /blog/ 301
+/glossary/ /blog/ 301
+/yaskawa-motoman/ /solutions/robotic-cells/ 301
+
+# Industries - additional mappings
+/industries/healthcare/ /industries/medical/ 301
+/industries/aerospace-defense/ /industries/aerospace/ 301
+/industries/building-materials/ /industries/general-manufacturing/ 301
+/industries/electric-motor-assembly/ /industries/electronics/ 301
+
+# Solutions - additional mappings
+/automated-solutions/marking-traceability/ /solutions/marking-traceability/ 301
+/automated-solutions/assembly/ /solutions/assembly/ 301
+/automated-solutions/robotic-cells/cnc-robot-tending-automation/ /solutions/machine-tending/ 301
+/automated-solutions/application-of-technology-to-manual-processes/ /solutions/ 301
+
+# Blog - additional mappings
+/blog/importance-of-end-of-line-equipment-in-the-automotive-industry/ /blog/end-of-line-testing-strategies-for-quality-assurance/ 301
+/blog/role-of-leak-testing-in-automotive-component-assembly/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
+/blog/choosing-the-right-automation-equipment/ /blog/choosing-right-robot-for-your-application/ 301
+/blog/industrial-automation-equipment-is-helping-manufacturing/ /blog/what-is-industrial-automation/ 301
+/blog/boosting-efficiency-robot-cells/ /blog/assembly-line-balancing-for-optimal-efficiency/ 301
+/blog/what-to-know-laser-marking-systems/ /blog/ 301
+/blog/robotic-cells-for-manufacturing-electronics-auto-parts/ /blog/electronics-assembly-automation-trends/ 301
+/blog/what-is-supply-chain-resilience/ /blog/supply-chain-resilience-through-automation/ 301
 
 # Catch any UTM parameters (these pass through automatically, but explicit for clarity)
 # /?utm_source=* passes through to / automatically
