@@ -780,6 +780,20 @@ img {
     transform: translateY(-2px);
 }
 
+.btn-orange {
+    background: #FF6B35;
+    color: var(--white);
+    border: 2px solid #FF6B35;
+}
+
+.btn-orange:hover {
+    background: #E55A2B;
+    border-color: #E55A2B;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+
 .btn-outline {
     background: transparent;
     color: var(--primary);
