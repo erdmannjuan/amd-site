@@ -639,7 +639,7 @@ img {
     gap: 0.5rem;
     padding: 1rem 2rem;
     font-family: var(--font-main);
-    font-size: 0.95rem;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
     border: none;
@@ -1040,11 +1040,11 @@ img {
 }
 
 .hero-subtitle {
-    font-size: 1.15rem;
+    font-size: 24px;
     color: rgba(255,255,255,0.85);
     margin-bottom: 2.5rem;
-    line-height: 1.8;
-    max-width: 500px;
+    line-height: 1.5;
+    max-width: 600px;
 }
 
 .hero-buttons {
