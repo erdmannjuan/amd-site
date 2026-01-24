@@ -5789,7 +5789,7 @@ button:disabled {
 }
 
 .finder-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2.5rem;
 }
 
@@ -5814,8 +5814,8 @@ button:disabled {
 .finder-option {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     padding: 2rem 1.5rem;
     background: var(--white);
     text-decoration: none;
@@ -5844,7 +5844,7 @@ button:disabled {
 }
 
 .finder-footer {
-    text-align: center;
+    text-align: left;
     margin-top: 2rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--border);
