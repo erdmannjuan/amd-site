@@ -3,6 +3,15 @@
    Enhanced Design inspired by SDC & JR Automation
    ================================ */
 
+/* Self-hosted Montserrat font - eliminates render-blocking Google Fonts chain */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('/static/fonts/montserrat-variable.woff2') format('woff2');
+}
+
 /* CSS Variables - AMD Brand Colors */
 :root {
     --primary: #003087;
