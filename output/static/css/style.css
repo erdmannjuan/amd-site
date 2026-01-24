@@ -1071,7 +1071,7 @@ img {
     font-size: 24px;
     color: rgba(255,255,255,0.85);
     margin-bottom: 2.5rem;
-    line-height: 1.5;
+    line-height: 1.4;
     max-width: 600px;
 }
 
@@ -1101,7 +1101,7 @@ img {
     }
 
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         margin-bottom: 1rem;
     }
 
@@ -2971,6 +2971,10 @@ button:disabled {
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .contact-form-wrapper {
+        order: -1;
     }
 }
 
