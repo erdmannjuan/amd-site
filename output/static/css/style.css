@@ -9059,8 +9059,8 @@ button:disabled {
 
 /* Servo Hero */
 .servo-hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #003087 50%, #00B785 100%);
-    padding: 5rem 0 4rem;
+    background: linear-gradient(135deg, #0a0a14 0%, #003087 60%, #004a9f 100%);
+    padding: 6rem 0 5rem;
     color: white;
     position: relative;
     overflow: hidden;
@@ -9073,75 +9073,81 @@ button:disabled {
     right: 0;
     width: 50%;
     height: 100%;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     opacity: 0.5;
 }
 
 .servo-hero-content {
     position: relative;
     z-index: 1;
-    max-width: 700px;
+    max-width: 720px;
 }
 
 .servo-hero .section-label {
-    color: var(--accent-teal);
-    background: rgba(0, 183, 133, 0.15);
-    padding: 0.35rem 1rem;
+    color: #7FDBCA;
+    background: rgba(0, 183, 133, 0.2);
+    padding: 0.4rem 1.25rem;
     border-radius: 50px;
     display: inline-block;
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
     font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 .servo-hero h1 {
     color: white;
     font-size: clamp(2.5rem, 5vw, 3.5rem);
-    margin-bottom: 1rem;
-    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    line-height: 1.15;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .hero-lead {
-    font-size: 1.2rem;
-    color: rgba(255,255,255,0.9);
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    color: #E8EEF5;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
 }
 
 .hero-cta-group {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     flex-wrap: wrap;
 }
 
 .btn-accent {
-    background: var(--accent-teal);
+    background: #00B785;
     color: white;
     border: none;
-    padding: 1rem 2rem;
-    font-weight: 600;
+    padding: 1rem 2.25rem;
+    font-weight: 700;
+    font-size: 1rem;
     border-radius: var(--radius-md);
     transition: var(--transition);
+    box-shadow: 0 4px 14px rgba(0, 183, 133, 0.4);
 }
 
 .btn-accent:hover {
-    background: var(--accent-teal-dark);
+    background: #009970;
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 183, 133, 0.5);
 }
 
 .btn-outline-white {
     background: transparent;
     color: white;
-    border: 2px solid rgba(255,255,255,0.5);
-    padding: 1rem 2rem;
+    border: 2px solid rgba(255,255,255,0.6);
+    padding: 1rem 2.25rem;
     font-weight: 600;
+    font-size: 1rem;
     border-radius: var(--radius-md);
     transition: var(--transition);
 }
 
 .btn-outline-white:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.15);
     border-color: white;
     color: white;
 }
@@ -9149,24 +9155,24 @@ button:disabled {
 .btn-outline-light {
     background: transparent;
     color: white;
-    border: 2px solid rgba(255,255,255,0.5);
-    padding: 1rem 2rem;
+    border: 2px solid rgba(255,255,255,0.6);
+    padding: 1rem 2.25rem;
     font-weight: 600;
     border-radius: var(--radius-md);
 }
 
 .btn-outline-light:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.15);
     border-color: white;
     color: white;
 }
 
 .servo-hero-stats {
     display: flex;
-    gap: 3rem;
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    gap: 4rem;
+    margin-top: 3.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
 }
 
 .hero-stat {
@@ -9175,32 +9181,34 @@ button:disabled {
 
 .stat-number {
     display: block;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: var(--accent-teal);
+    color: #7FDBCA;
     line-height: 1;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .stat-label {
     display: block;
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.8);
-    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #C5D4E8;
+    margin-top: 0.6rem;
+    font-weight: 500;
 }
 
 /* Servo Quick Nav */
 .servo-quick-nav {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
+    background: #ffffff;
+    border-bottom: 2px solid #e0e5eb;
     position: sticky;
     top: 56px;
     z-index: 100;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .nav-scroll {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.75rem;
     overflow-x: auto;
     padding: 1rem 0;
     scrollbar-width: none;
@@ -9211,59 +9219,68 @@ button:disabled {
 }
 
 .nav-pill {
-    padding: 0.5rem 1rem;
-    background: var(--light-bg);
+    padding: 0.6rem 1.25rem;
+    background: #f0f3f7;
     border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3d4852;
     white-space: nowrap;
     transition: var(--transition);
+    border: 1px solid transparent;
 }
 
-.nav-pill:hover,
+.nav-pill:hover {
+    background: #e0e5eb;
+    color: #1a1a2e;
+}
+
 .nav-pill.active {
     background: var(--primary);
     color: white;
 }
 
-/* Servo Overview */
+/* Servo Overview - WHITE BACKGROUND */
 .servo-overview {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: #ffffff;
 }
 
 .overview-grid {
     display: grid;
-    grid-template-columns: 1fr 380px;
-    gap: 3rem;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
     align-items: start;
 }
 
 .overview-content h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 1.75rem;
+    color: #1a1a2e;
 }
 
 .overview-content p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #3d4852;
 }
 
 .overview-highlights {
-    margin: 2rem 0;
+    margin: 2.5rem 0;
 }
 
 .highlight-box {
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent-teal-light) 100%);
-    border-left: 4px solid var(--accent-teal);
-    padding: 1.5rem 2rem;
+    background: #f0f7f4;
+    border-left: 5px solid #00B785;
+    padding: 2rem 2.5rem;
     border-radius: var(--radius-md);
 }
 
 .highlight-box h4 {
-    color: var(--primary);
-    margin-bottom: 1rem;
+    color: #006B4F;
+    margin-bottom: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .highlight-box ul {
@@ -9273,48 +9290,57 @@ button:disabled {
 }
 
 .highlight-box li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
+    padding: 0.6rem 0;
+    padding-left: 2rem;
     position: relative;
+    color: #2d3748;
+    font-size: 1rem;
 }
 
 .highlight-box li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--accent-teal);
+    color: #00B785;
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .overview-sidebar {
     position: sticky;
-    top: 120px;
+    top: 130px;
 }
 
 .sidebar-card {
-    background: var(--white);
+    background: #ffffff;
     border-radius: var(--radius-lg);
-    padding: 1.5rem;
-    box-shadow: var(--shadow-md);
-    margin-bottom: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 1.75rem;
+    border: 1px solid #e8ebf0;
 }
 
 .sidebar-cta {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(145deg, #003087 0%, #002266 100%);
     color: white;
+    border: none;
 }
 
 .sidebar-cta h4 {
     color: white;
+    font-size: 1.2rem;
 }
 
 .sidebar-cta p {
-    color: rgba(255,255,255,0.9);
+    color: #C5D4E8;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .sidebar-card h4 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+    color: #1a1a2e;
 }
 
 .check-list {
@@ -9324,11 +9350,12 @@ button:disabled {
 }
 
 .check-list li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
+    padding: 0.65rem 0;
+    padding-left: 1.75rem;
     position: relative;
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid #f0f3f7;
     font-size: 0.95rem;
+    color: #3d4852;
 }
 
 .check-list li:last-child {
@@ -9339,51 +9366,59 @@ button:disabled {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--accent-teal);
+    color: #00B785;
     font-weight: 700;
 }
 
-/* Servo Applications */
+/* Servo Applications - LIGHT GRAY BACKGROUND */
 .servo-applications {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: #f5f7fa;
+    border-top: 1px solid #e0e5eb;
+    border-bottom: 1px solid #e0e5eb;
 }
 
 .app-section {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border-bottom: 2px dashed #d0d5dd;
 }
 
 .app-section:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .app-header {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: flex-start;
-    margin-bottom: 2rem;
-    padding: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .app-header-blue {
-    background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+    background: linear-gradient(145deg, #003087 0%, #001a4d 100%);
     color: white;
 }
 
 .app-header-teal {
-    background: linear-gradient(135deg, var(--accent-teal) 0%, #008866 100%);
+    background: linear-gradient(145deg, #00896B 0%, #006B4F 100%);
     color: white;
 }
 
 .app-header-orange {
-    background: linear-gradient(135deg, var(--accent-orange) 0%, #d04520 100%);
+    background: linear-gradient(145deg, #E04520 0%, #c03a1b 100%);
     color: white;
 }
 
 .app-icon {
-    width: 80px;
-    height: 80px;
-    background: rgba(255,255,255,0.15);
+    width: 90px;
+    height: 90px;
+    background: rgba(255,255,255,0.2);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -9393,268 +9428,346 @@ button:disabled {
 
 .app-header h3 {
     color: white;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .app-header p {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.95);
     margin: 0;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .app-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .app-item {
-    background: var(--white);
-    padding: 1.5rem;
+    background: #ffffff;
+    padding: 2rem;
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--primary);
-    box-shadow: var(--shadow-sm);
+    border-left: 5px solid var(--primary);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .app-item h4 {
-    font-size: 1.1rem;
-    color: var(--dark);
-    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+    color: #1a1a2e;
+    margin-bottom: 0.85rem;
 }
 
 .app-item p {
-    font-size: 0.95rem;
-    color: var(--text-light);
+    font-size: 1rem;
+    color: #4a5568;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .app-callout {
-    background: var(--primary-light);
-    border: 1px solid var(--primary);
+    background: #e6eef8;
+    border: 2px solid #003087;
     border-radius: var(--radius-md);
-    padding: 1.25rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    color: #1a1a2e;
 }
 
 .app-callout strong {
-    color: var(--primary);
+    color: #003087;
 }
 
-/* Servo Monitoring */
+/* Servo Monitoring - WHITE BACKGROUND */
 .servo-monitoring {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: #ffffff;
+    border-top: 1px solid #e0e5eb;
 }
 
 .monitoring-grid {
     display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 3rem;
+    grid-template-columns: 1fr 420px;
+    gap: 4rem;
     align-items: start;
 }
 
 .monitoring-feature {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e8ebf0;
 }
 
 .monitoring-feature:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .monitoring-feature h3 {
-    font-size: 1.35rem;
-    color: var(--dark);
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid var(--accent-teal);
+    font-size: 1.4rem;
+    color: #1a1a2e;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 4px solid #00B785;
     display: inline-block;
 }
 
 .monitoring-feature p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    color: #3d4852;
 }
 
 .monitoring-feature ul {
     list-style: none;
     padding: 0;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    background: #f8f9fa;
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
 }
 
 .monitoring-feature li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
+    padding: 0.6rem 0;
+    padding-left: 2rem;
     position: relative;
+    color: #2d3748;
+    font-size: 1rem;
 }
 
 .monitoring-feature li::before {
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--accent-teal);
+    color: #00B785;
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .monitoring-sidebar {
     position: sticky;
-    top: 120px;
+    top: 130px;
 }
 
 .sidebar-dark {
-    background: var(--dark);
+    background: #1a1a2e;
     color: white;
+    border: none;
 }
 
 .sidebar-dark h4 {
     color: white;
+    font-size: 1.2rem;
 }
 
 .sidebar-dark p {
-    color: rgba(255,255,255,0.85);
+    color: #C5D4E8;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .sidebar-dark ul {
     list-style: none;
     padding: 0;
-    margin: 1rem 0;
+    margin: 1.25rem 0;
 }
 
 .sidebar-dark li {
-    padding: 0.4rem 0;
-    color: rgba(255,255,255,0.9);
-    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    color: #E8EEF5;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Servo Integration */
+.sidebar-dark li:last-child {
+    border-bottom: none;
+}
+
+/* Servo Integration - DARK BACKGROUND */
 .servo-integration {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: #1a1a2e;
+    border-top: 4px solid #003087;
+}
+
+.servo-integration .section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.servo-integration .section-label {
+    color: #7FDBCA;
+    background: rgba(0, 183, 133, 0.2);
+}
+
+.servo-integration .section-title {
+    color: white;
+}
+
+.servo-integration .section-subtitle {
+    color: #C5D4E8;
+    font-size: 1.15rem;
 }
 
 .integration-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .integration-card {
-    background: var(--white);
-    padding: 2rem;
+    background: #252540;
+    padding: 2.25rem;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     transition: var(--transition);
+    border: 1px solid rgba(255,255,255,0.08);
 }
 
 .integration-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    border-color: rgba(0, 183, 133, 0.3);
 }
 
 .integration-icon {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .icon-blue {
-    background: var(--primary-light);
-    color: var(--primary);
+    background: rgba(0, 48, 135, 0.3);
+    color: #6B9FE8;
 }
 
 .icon-teal {
-    background: var(--accent-teal-light);
-    color: var(--accent-teal);
+    background: rgba(0, 183, 133, 0.2);
+    color: #7FDBCA;
 }
 
 .icon-orange {
-    background: var(--accent-orange-light);
-    color: var(--accent-orange);
+    background: rgba(251, 85, 40, 0.2);
+    color: #FF8A6B;
 }
 
 .icon-purple {
-    background: #f0e6ff;
-    color: #7c3aed;
+    background: rgba(124, 58, 237, 0.2);
+    color: #B794F6;
 }
 
 .integration-card h4 {
-    font-size: 1.15rem;
-    margin-bottom: 0.75rem;
-    color: var(--dark);
+    font-size: 1.2rem;
+    margin-bottom: 0.85rem;
+    color: white;
 }
 
 .integration-card p {
-    font-size: 0.95rem;
-    color: var(--text-light);
+    font-size: 1rem;
+    color: #A8B5C8;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.65;
 }
 
-/* Servo Retrofit */
+/* Servo Retrofit - GRADIENT BACKGROUND */
 .servo-retrofit {
-    padding: 5rem 0;
-    background: linear-gradient(180deg, var(--white) 0%, var(--light-bg) 100%);
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #f5f7fa 0%, #e8ecf2 100%);
+    border-top: 1px solid #d0d5dd;
 }
 
 .retrofit-layout {
     display: grid;
-    grid-template-columns: 1fr 380px;
-    gap: 3rem;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
     align-items: start;
 }
 
 .retrofit-content .lead {
-    font-size: 1.15rem;
-    color: var(--text-light);
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
 }
 
 .retrofit-content h3 {
-    font-size: 1.35rem;
-    color: var(--dark);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #1a1a2e;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #003087;
+    display: inline-block;
+}
+
+.retrofit-content h3:first-of-type {
+    margin-top: 0;
+}
+
+.retrofit-content p {
+    font-size: 1.05rem;
+    color: #3d4852;
+    line-height: 1.75;
 }
 
 .retrofit-content ul {
-    margin: 1rem 0 2rem;
+    margin: 1.25rem 0 2rem;
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius-md);
+    border-left: 4px solid #003087;
 }
 
 .retrofit-content li {
-    padding: 0.4rem 0;
+    padding: 0.5rem 0;
+    color: #2d3748;
+    font-size: 1rem;
 }
 
 .retrofit-cta {
-    background: var(--primary);
+    background: linear-gradient(145deg, #003087 0%, #001a4d 100%);
     color: white;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 8px 24px rgba(0, 48, 135, 0.3);
 }
 
 .retrofit-cta h4 {
     color: white;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
 }
 
 .retrofit-cta p {
-    color: rgba(255,255,255,0.9);
-    margin-bottom: 1.5rem;
+    color: #C5D4E8;
+    margin-bottom: 1.75rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 .retrofit-sidebar {
     position: sticky;
-    top: 120px;
+    top: 130px;
 }
 
 .sidebar-highlight {
-    background: linear-gradient(135deg, var(--accent-teal-light) 0%, #d6f5ed 100%);
-    border: 2px solid var(--accent-teal);
+    background: #ffffff;
+    border: 2px solid #00B785;
+    box-shadow: 0 4px 16px rgba(0, 183, 133, 0.15);
+}
+
+.sidebar-highlight h4 {
+    color: #006B4F;
 }
 
 .service-list {
@@ -9664,8 +9777,8 @@ button:disabled {
 }
 
 .service-list li {
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(0,183,133,0.2);
+    padding: 1.1rem 0;
+    border-bottom: 1px solid #e8f5f1;
 }
 
 .service-list li:last-child {
@@ -9674,169 +9787,185 @@ button:disabled {
 
 .service-list strong {
     display: block;
-    color: var(--dark);
-    margin-bottom: 0.25rem;
+    color: #1a1a2e;
+    margin-bottom: 0.35rem;
+    font-size: 1rem;
 }
 
 .service-list span {
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: #5a6978;
 }
 
-/* Servo Brands */
+/* Servo Brands - WHITE BACKGROUND */
 .servo-brands {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: #ffffff;
+    border-top: 1px solid #e0e5eb;
 }
 
 .brands-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .brand-card {
-    background: var(--white);
+    background: #f8f9fa;
     border-radius: var(--radius-lg);
-    padding: 2.5rem;
-    box-shadow: var(--shadow-md);
+    padding: 2.75rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    border: 1px solid #e8ebf0;
 }
 
 .brand-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .brand-header h3 {
-    font-size: 1.35rem;
-    color: var(--dark);
+    font-size: 1.5rem;
+    color: #1a1a2e;
     margin: 0;
 }
 
 .brand-badge {
-    background: var(--accent-teal);
+    background: #00B785;
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    padding: 0.35rem 0.75rem;
+    padding: 0.4rem 1rem;
     border-radius: 50px;
 }
 
 .brand-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #3d4852;
 }
 
 .brand-card h4 {
-    font-size: 1.05rem;
-    color: var(--dark);
-    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
 }
 
 .brand-card ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 1.25rem;
+    margin: 0 0 1.5rem;
+    background: #ffffff;
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius-sm);
 }
 
 .brand-card li {
-    padding: 0.4rem 0;
-    padding-left: 1.25rem;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
     position: relative;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    color: #2d3748;
 }
 
 .brand-card li::before {
     content: '•';
     position: absolute;
     left: 0;
-    color: var(--primary);
+    color: #003087;
     font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .brand-kistler {
-    border-top: 4px solid #003087;
+    border-top: 5px solid #003087;
 }
 
 .brand-tox {
-    border-top: 4px solid var(--accent-orange);
+    border-top: 5px solid #E04520;
 }
 
 /* Secondary Brands Section */
 .brands-secondary {
-    margin-top: 3rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px dashed #d0d5dd;
 }
 
 .brands-secondary h3 {
-    font-size: 1.5rem;
-    color: var(--dark);
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
 .brands-tiles {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
+    gap: 1.5rem;
 }
 
 .brand-tile {
-    background: var(--white);
-    padding: 1.5rem;
+    background: #f8f9fa;
+    padding: 1.75rem;
     border-radius: var(--radius-md);
-    border-left: 3px solid var(--primary);
-    box-shadow: var(--shadow-sm);
+    border-left: 4px solid #003087;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: var(--transition);
+    border-top: 1px solid #e8ebf0;
+    border-right: 1px solid #e8ebf0;
+    border-bottom: 1px solid #e8ebf0;
 }
 
 .brand-tile:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-left-color: var(--accent-teal);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    border-left-color: #00B785;
 }
 
 .brand-tile h4 {
-    font-size: 1.1rem;
-    color: var(--dark);
-    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    color: #1a1a2e;
+    margin-bottom: 0.65rem;
 }
 
 .brand-tile p {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.55;
+    margin-bottom: 1rem;
 }
 
 .brand-specs {
     display: inline-block;
-    background: var(--light-bg);
-    color: var(--text);
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 0.25rem 0.75rem;
+    background: #e6eef8;
+    color: #003087;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.35rem 0.9rem;
     border-radius: 50px;
 }
 
 .brand-note {
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent-teal-light) 100%);
-    padding: 1.5rem 2rem;
+    background: #f0f7f4;
+    border: 2px solid #00B785;
+    padding: 2rem 2.5rem;
     border-radius: var(--radius-md);
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
 .brand-note p {
     margin: 0;
-    font-size: 1rem;
-    color: var(--text);
+    font-size: 1.1rem;
+    color: #2d3748;
 }
 
 .brand-note strong {
-    color: var(--primary);
+    color: #006B4F;
 }
 
 @media (max-width: 1024px) {
@@ -9851,71 +9980,79 @@ button:disabled {
     }
 }
 
-/* Servo Force Ranges */
+/* Servo Force Ranges - LIGHT GRAY BACKGROUND */
 .servo-force-ranges {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: #f5f7fa;
+    border-top: 1px solid #e0e5eb;
 }
 
 .force-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .force-card {
-    background: var(--white);
+    background: #ffffff;
     border-radius: var(--radius-lg);
-    padding: 2rem;
-    box-shadow: var(--shadow-md);
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     text-align: center;
+    border: 1px solid #e8ebf0;
 }
 
 .force-range {
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: var(--radius-md);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .force-light {
-    background: linear-gradient(135deg, #e6f7ff 0%, #d6f5ed 100%);
+    background: linear-gradient(145deg, #e6f9f4 0%, #d0f0e8 100%);
+    border: 2px solid #00B785;
 }
 
 .force-medium {
-    background: linear-gradient(135deg, var(--primary-light) 0%, #cce0f5 100%);
+    background: linear-gradient(145deg, #e6eef8 0%, #d0e0f5 100%);
+    border: 2px solid #003087;
 }
 
 .force-heavy {
-    background: linear-gradient(135deg, #fff0ec 0%, #ffe0d6 100%);
+    background: linear-gradient(145deg, #fff0ec 0%, #ffe0d6 100%);
+    border: 2px solid #E04520;
 }
 
 .force-value {
     display: block;
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    color: var(--dark);
+    color: #1a1a2e;
     line-height: 1;
 }
 
 .force-label {
     display: block;
-    font-size: 0.85rem;
-    color: var(--text-light);
-    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #5a6978;
+    margin-top: 0.6rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
+    font-weight: 600;
 }
 
 .force-card h4 {
-    font-size: 1.15rem;
-    color: var(--dark);
-    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
 }
 
 .force-card > p {
-    font-size: 0.95rem;
-    color: var(--text-light);
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 1.25rem;
     text-align: left;
+    line-height: 1.6;
 }
 
 .force-card ul {
@@ -9923,89 +10060,121 @@ button:disabled {
     padding: 0;
     margin: 0;
     text-align: left;
+    background: #f8f9fa;
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-sm);
 }
 
 .force-card li {
-    padding: 0.4rem 0;
-    font-size: 0.9rem;
-    color: var(--text);
-    border-bottom: 1px solid var(--border-light);
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #2d3748;
+    border-bottom: 1px solid #e8ebf0;
 }
 
 .force-card li:last-child {
     border-bottom: none;
 }
 
-/* Servo Industries */
+/* Servo Industries - DARK TEAL BACKGROUND */
 .servo-industries {
-    padding: 5rem 0;
+    padding: 6rem 0;
+    background: linear-gradient(145deg, #00896B 0%, #006B4F 100%);
+    border-top: 4px solid #00B785;
+}
+
+.servo-industries .section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.servo-industries .section-label {
+    color: #7FDBCA;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.servo-industries .section-title {
+    color: white;
 }
 
 .servo-industries .industries-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .industry-card {
-    background: var(--white);
-    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.25rem;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     transition: var(--transition);
-    border-left: 4px solid var(--primary);
+    border-left: 5px solid #003087;
     display: block;
 }
 
 .industry-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    border-left-color: var(--accent-teal);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    border-left-color: #1a1a2e;
 }
 
 .industry-card h4 {
-    font-size: 1.15rem;
-    color: var(--dark);
-    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    color: #1a1a2e;
+    margin-bottom: 0.85rem;
 }
 
 .industry-card p {
-    font-size: 0.95rem;
-    color: var(--text-light);
+    font-size: 1rem;
+    color: #4a5568;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
-/* Servo CTA */
+/* Servo CTA - DARK GRADIENT */
 .servo-cta {
-    background: linear-gradient(135deg, var(--dark) 0%, #1a1a2e 50%, var(--primary-dark) 100%);
-    padding: 5rem 0;
+    background: linear-gradient(145deg, #0a0a14 0%, #1a1a2e 40%, #002266 100%);
+    padding: 6rem 0;
     text-align: center;
     color: white;
+    border-top: 4px solid #003087;
 }
 
 .cta-content {
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .servo-cta h2 {
     color: white;
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .servo-cta p {
-    color: rgba(255,255,255,0.9);
-    font-size: 1.15rem;
-    margin-bottom: 2rem;
+    color: #C5D4E8;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
 }
 
 .cta-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.cta-buttons .btn-accent {
+    padding: 1.1rem 2.5rem;
+    font-size: 1.05rem;
+}
+
+.cta-buttons .btn-outline-light {
+    padding: 1.1rem 2.5rem;
+    font-size: 1.05rem;
 }
 
 /* Servo Press Responsive */
@@ -10020,6 +10189,7 @@ button:disabled {
     .monitoring-sidebar,
     .retrofit-sidebar {
         position: static;
+        margin-top: 2rem;
     }
 
     .integration-grid {
@@ -10040,17 +10210,30 @@ button:disabled {
 
     .servo-hero-stats {
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 2.5rem;
+    }
+
+    .servo-applications,
+    .servo-monitoring,
+    .servo-retrofit,
+    .servo-brands,
+    .servo-force-ranges,
+    .servo-industries {
+        padding: 5rem 0;
     }
 }
 
 @media (max-width: 768px) {
     .servo-hero {
-        padding: 3rem 0;
+        padding: 4rem 0 3rem;
     }
 
     .servo-hero h1 {
         font-size: 2rem;
+    }
+
+    .hero-lead {
+        font-size: 1.1rem;
     }
 
     .hero-cta-group {
