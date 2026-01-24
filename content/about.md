@@ -30,7 +30,7 @@ certifications:
 AMD Machines was founded over 30 years ago with a clear mission: build custom automated machines that solve real manufacturing problems. We've earned our reputation one project at a time, delivering reliable automation systems that perform as promised.
 
 <figure class="about-content-image">
-<img src="/static/images/story.png" alt="AMD Machines team and manufacturing facility" width="800" height="280" loading="lazy">
+<img src="/static/images/story.webp" alt="AMD Machines team and manufacturing facility" width="800" height="280" loading="lazy">
 <figcaption>More than 30 years ago, we started by building small automatic assembly stations</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ AMD Machines was founded over 30 years ago with a clear mission: build custom au
 At AMD, engineering isn't just a department—it's our culture. Every project begins with thorough analysis and creative problem-solving. Our team includes specialists in mechanical design, electrical controls, robotics, vision systems, and manufacturing processes.
 
 <figure class="about-content-image">
-<img src="/static/images/about-engineering.jpg" alt="Precision rotary dial assembly machine with multi-station automation built by AMD" width="800" height="280" loading="lazy">
+<img src="/static/images/about-engineering.webp" alt="Precision rotary dial assembly machine with multi-station automation built by AMD" width="800" height="280" loading="lazy">
 <figcaption>Custom rotary dial assembly system - one of 2,500+ machines built</figcaption>
 </figure>
 
@@ -55,6 +55,6 @@ Our 80,000 sq ft facility houses everything needed to design, build, and test co
 - **Ongoing Support** - Training, service, and support for the life of your equipment
 
 <figure class="about-content-image">
-<img src="/static/images/AMDnow.png" alt="AMD Machines facility and team today" width="800" height="280" loading="lazy">
+<img src="/static/images/AMDnow.webp" alt="AMD Machines facility and team today" width="800" height="280" loading="lazy">
 <figcaption>AMD Machines today - 80,000 sq ft of design, fabrication, and testing capabilities</figcaption>
 </figure>
