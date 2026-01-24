@@ -794,6 +794,20 @@ img {
     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
+.btn-green {
+    background: #00896B;
+    color: var(--white);
+    border: 2px solid #00896B;
+}
+
+.btn-green:hover {
+    background: #006B4F;
+    border-color: #006B4F;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 137, 107, 0.4);
+}
+
 .btn-outline {
     background: transparent;
     color: var(--primary);
