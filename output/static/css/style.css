@@ -5801,8 +5801,8 @@ button:disabled {
 
 .finder-header p {
     color: var(--text);
-    font-size: 1.15rem;
-    line-height: 1.7;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 .finder-options {
@@ -5832,14 +5832,14 @@ button:disabled {
 .finder-label {
     font-weight: 600;
     color: var(--dark);
-    font-size: 1.15rem;
-    line-height: 1.5;
+    font-size: 24px;
+    line-height: 1.4;
     margin-bottom: 0.5rem;
 }
 
 .finder-desc {
-    font-size: 1.15rem;
-    line-height: 1.7;
+    font-size: 24px;
+    line-height: 1.5;
     color: var(--text);
 }
 
@@ -5852,8 +5852,8 @@ button:disabled {
 
 .finder-footer p {
     color: var(--text);
-    font-size: 1.15rem;
-    line-height: 1.7;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 .finder-footer a {
