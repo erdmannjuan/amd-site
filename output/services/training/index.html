@@ -111,19 +111,6 @@
     <!-- Main CSS (includes self-hosted font) -->
     <link rel="stylesheet" href="/static/css/style.css?v=20260123c">
 
-    <!-- Ahrefs Analytics -->
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="kGECz4L2toO2boVVwOD6vg" async></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L9GJE3SZY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-7L9GJE3SZY');
-    </script>
-
     
 </head>
 <body>
@@ -965,5 +952,38 @@
     </script>
 
     
+
+    <!-- Analytics - deferred until page is idle for better mobile performance -->
+    <script>
+    (function() {
+        function loadAnalytics() {
+            // Google Analytics
+            var gtag = document.createElement('script');
+            gtag.src = 'https://www.googletagmanager.com/gtag/js?id=G-7L9GJE3SZY';
+            gtag.async = true;
+            document.head.appendChild(gtag);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtagFn(){dataLayer.push(arguments);}
+            window.gtag = gtagFn;
+            gtagFn('js', new Date());
+            gtagFn('config', 'G-7L9GJE3SZY');
+
+            // Ahrefs Analytics
+            var ahrefs = document.createElement('script');
+            ahrefs.src = 'https://analytics.ahrefs.com/analytics.js';
+            ahrefs.dataset.key = 'kGECz4L2toO2boVVwOD6vg';
+            ahrefs.async = true;
+            document.head.appendChild(ahrefs);
+        }
+
+        // Load after page is idle or after 3 seconds, whichever comes first
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadAnalytics, { timeout: 3000 });
+        } else {
+            setTimeout(loadAnalytics, 2000);
+        }
+    })();
+    </script>
 </body>
 </html>
