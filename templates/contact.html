@@ -204,6 +204,14 @@
             );
 
             if (response.ok) {
+                // Track successful form submission in GA4
+                if (typeof gtag === 'function') {
+                    gtag('event', 'form_submission', {
+                        event_category: 'lead',
+                        event_label: 'contact_form',
+                        value: 1
+                    });
+                }
                 formStatus.innerHTML = '<p class="success">Thank you! Your request has been submitted. Expect a response from our team within 3 hours during weekdays.</p>';
                 form.reset();
             } else {

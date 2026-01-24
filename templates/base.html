@@ -357,15 +357,57 @@
     <!-- Scripts (deferred for performance) -->
     <script src="{{ config.site.base_path }}/static/js/main.js" defer></script>
 
-    <!-- Google Analytics handled by Cloudflare Zaraz -->
-
-    <!-- Lightweight Analytics (A/B tracking via Cloudflare Zaraz) -->
+    <!-- GA4 Event Tracking -->
     <script>
-    window.abTrack = function(el) {
-        if (typeof gtag === 'function') {
-            gtag('event', 'click', { event_category: 'content', event_label: el.textContent.substring(0,50) });
-        }
-    };
+    (function() {
+        if (typeof gtag !== 'function') return;
+
+        // Track CTA button clicks
+        document.addEventListener('click', function(e) {
+            var btn = e.target.closest('.btn, .cta-button, [class*="btn-"]');
+            if (btn) {
+                gtag('event', 'cta_click', {
+                    event_category: 'engagement',
+                    event_label: btn.textContent.trim().substring(0, 50),
+                    link_url: btn.href || ''
+                });
+            }
+        });
+
+        // Track phone number clicks
+        document.addEventListener('click', function(e) {
+            var link = e.target.closest('a[href^="tel:"]');
+            if (link) {
+                gtag('event', 'phone_click', {
+                    event_category: 'contact',
+                    event_label: link.href.replace('tel:', '')
+                });
+            }
+        });
+
+        // Track email clicks
+        document.addEventListener('click', function(e) {
+            var link = e.target.closest('a[href^="mailto:"]');
+            if (link) {
+                gtag('event', 'email_click', {
+                    event_category: 'contact',
+                    event_label: link.href.replace('mailto:', '')
+                });
+            }
+        });
+
+        // Track navigation menu clicks
+        document.addEventListener('click', function(e) {
+            var navLink = e.target.closest('.nav-link, .dropdown-item');
+            if (navLink) {
+                gtag('event', 'navigation_click', {
+                    event_category: 'navigation',
+                    event_label: navLink.textContent.trim().substring(0, 50),
+                    link_url: navLink.href || ''
+                });
+            }
+        });
+    })();
     </script>
 
     <!-- Google reCAPTCHA v3 - Lazy loaded on form interaction for performance -->
