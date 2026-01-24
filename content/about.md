@@ -55,6 +55,6 @@ Our 80,000 sq ft facility houses everything needed to design, build, and test co
 - **Ongoing Support** - Training, service, and support for the life of your equipment
 
 <figure class="about-content-image">
-<img src="/static/images/AMDnow.webp" alt="AMD Machines facility and team today" width="800" height="280" loading="lazy">
+<img src="/static/images/AMDnow.webp" alt="AMD Machines facility and team today" width="800" height="280" loading="lazy" style="object-position: center">
 <figcaption>AMD Machines today - 80,000 sq ft of design, fabrication, and testing capabilities</figcaption>
 </figure>
