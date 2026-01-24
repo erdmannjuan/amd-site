@@ -5181,15 +5181,15 @@ button:disabled {
 }
 
 .section-header-flat h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: var(--dark);
     margin-bottom: 0.75rem;
     font-weight: 600;
 }
 
 .section-header-flat p {
-    font-size: 1.1rem;
-    color: var(--text-light);
+    font-size: 1.2rem;
+    color: var(--text);
 }
 
 .solutions-list {
@@ -5794,14 +5794,14 @@ button:disabled {
 }
 
 .finder-header h2 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     color: var(--dark);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .finder-header p {
-    color: var(--text-light);
-    font-size: 1rem;
+    color: var(--text);
+    font-size: 1.15rem;
 }
 
 .finder-options {
@@ -5815,11 +5815,12 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1.5rem;
     background: var(--white);
     text-decoration: none;
     border: 2px solid transparent;
     transition: border-color 0.2s, transform 0.2s;
+    border-radius: var(--radius-md);
 }
 
 .finder-option:hover {
@@ -5827,21 +5828,17 @@ button:disabled {
     transform: translateY(-2px);
 }
 
-.finder-icon {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-
 .finder-label {
     font-weight: 600;
     color: var(--dark);
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
 }
 
 .finder-desc {
-    font-size: 0.85rem;
-    color: var(--text-light);
+    font-size: 1.05rem;
+    color: var(--text);
+    line-height: 1.5;
 }
 
 .finder-footer {
@@ -5905,9 +5902,9 @@ button:disabled {
 
 .proof-label {
     display: block;
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.7);
-    margin-top: 0.25rem;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    margin-top: 0.35rem;
 }
 
 .proof-divider {
@@ -5994,12 +5991,12 @@ button:disabled {
 }
 
 .expertise-intro {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     line-height: 1.7;
     color: #ffffff;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     margin-bottom: 2.5rem;
-    max-width: 700px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -6036,16 +6033,16 @@ button:disabled {
 }
 
 .feature-text h4 {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: #ffffff;
 }
 
 .feature-text p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #c0c0c0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
     margin: 0;
 }
 
@@ -6125,20 +6122,20 @@ button:disabled {
 }
 
 .popular-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--dark);
     margin-bottom: 0.5rem;
 }
 
 .popular-card p {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    line-height: 1.5;
+    font-size: 1.05rem;
+    color: var(--text);
+    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
 .popular-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--primary);
     font-weight: 500;
 }
@@ -6199,13 +6196,13 @@ button:disabled {
 .tab-name {
     font-weight: 600;
     color: var(--dark);
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.35rem;
 }
 
 .tab-examples {
-    font-size: 0.85rem;
-    color: var(--text-light);
+    font-size: 1rem;
+    color: var(--text);
 }
 
 .industry-more {
