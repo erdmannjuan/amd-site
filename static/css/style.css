@@ -9052,3 +9052,973 @@ button:disabled {
         font-size: 1.35rem;
     }
 }
+
+/* ================================
+   Servo Press Page Styles
+   ================================ */
+
+/* Servo Hero */
+.servo-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #003087 50%, #00B785 100%);
+    padding: 5rem 0 4rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.servo-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.servo-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.servo-hero .section-label {
+    color: var(--accent-teal);
+    background: rgba(0, 183, 133, 0.15);
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.servo-hero h1 {
+    color: white;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.hero-lead {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-accent {
+    background: var(--accent-teal);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.btn-accent:hover {
+    background: var(--accent-teal-dark);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.btn-outline-white:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-light {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+}
+
+.btn-outline-light:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: white;
+    color: white;
+}
+
+.servo-hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.hero-stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-teal);
+    line-height: 1;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.8);
+    margin-top: 0.5rem;
+}
+
+/* Servo Quick Nav */
+.servo-quick-nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 56px;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-scroll {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: none;
+}
+
+.nav-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-pill {
+    padding: 0.5rem 1rem;
+    background: var(--light-bg);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.nav-pill:hover,
+.nav-pill.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* Servo Overview */
+.servo-overview {
+    padding: 5rem 0;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3rem;
+    align-items: start;
+}
+
+.overview-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.overview-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.overview-highlights {
+    margin: 2rem 0;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent-teal-light) 100%);
+    border-left: 4px solid var(--accent-teal);
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius-md);
+}
+
+.highlight-box h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.highlight-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlight-box li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.highlight-box li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-teal);
+    font-weight: 700;
+}
+
+.overview-sidebar {
+    position: sticky;
+    top: 120px;
+}
+
+.sidebar-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-cta {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+}
+
+.sidebar-cta h4 {
+    color: white;
+}
+
+.sidebar-cta p {
+    color: rgba(255,255,255,0.9);
+}
+
+.sidebar-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.check-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.95rem;
+}
+
+.check-list li:last-child {
+    border-bottom: none;
+}
+
+.check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-teal);
+    font-weight: 700;
+}
+
+/* Servo Applications */
+.servo-applications {
+    padding: 5rem 0;
+}
+
+.app-section {
+    margin-bottom: 4rem;
+}
+
+.app-section:last-child {
+    margin-bottom: 0;
+}
+
+.app-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+}
+
+.app-header-blue {
+    background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+    color: white;
+}
+
+.app-header-teal {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, #008866 100%);
+    color: white;
+}
+
+.app-header-orange {
+    background: linear-gradient(135deg, var(--accent-orange) 0%, #d04520 100%);
+    color: white;
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.15);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.app-header h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-header p {
+    color: rgba(255,255,255,0.9);
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.app-item {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.app-item h4 {
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+}
+
+.app-item p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.app-callout {
+    background: var(--primary-light);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.app-callout strong {
+    color: var(--primary);
+}
+
+/* Servo Monitoring */
+.servo-monitoring {
+    padding: 5rem 0;
+}
+
+.monitoring-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 3rem;
+    align-items: start;
+}
+
+.monitoring-feature {
+    margin-bottom: 2.5rem;
+}
+
+.monitoring-feature:last-child {
+    margin-bottom: 0;
+}
+
+.monitoring-feature h3 {
+    font-size: 1.35rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent-teal);
+    display: inline-block;
+}
+
+.monitoring-feature p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.monitoring-feature ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.monitoring-feature li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.monitoring-feature li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-teal);
+    font-weight: 700;
+}
+
+.monitoring-sidebar {
+    position: sticky;
+    top: 120px;
+}
+
+.sidebar-dark {
+    background: var(--dark);
+    color: white;
+}
+
+.sidebar-dark h4 {
+    color: white;
+}
+
+.sidebar-dark p {
+    color: rgba(255,255,255,0.85);
+}
+
+.sidebar-dark ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.sidebar-dark li {
+    padding: 0.4rem 0;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+}
+
+/* Servo Integration */
+.servo-integration {
+    padding: 5rem 0;
+}
+
+.integration-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.integration-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.integration-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.integration-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.icon-blue {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.icon-teal {
+    background: var(--accent-teal-light);
+    color: var(--accent-teal);
+}
+
+.icon-orange {
+    background: var(--accent-orange-light);
+    color: var(--accent-orange);
+}
+
+.icon-purple {
+    background: #f0e6ff;
+    color: #7c3aed;
+}
+
+.integration-card h4 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    color: var(--dark);
+}
+
+.integration-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Servo Retrofit */
+.servo-retrofit {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, var(--white) 0%, var(--light-bg) 100%);
+}
+
+.retrofit-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3rem;
+    align-items: start;
+}
+
+.retrofit-content .lead {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.retrofit-content h3 {
+    font-size: 1.35rem;
+    color: var(--dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.retrofit-content ul {
+    margin: 1rem 0 2rem;
+}
+
+.retrofit-content li {
+    padding: 0.4rem 0;
+}
+
+.retrofit-cta {
+    background: var(--primary);
+    color: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    margin-top: 2rem;
+}
+
+.retrofit-cta h4 {
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.retrofit-cta p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.5rem;
+}
+
+.retrofit-sidebar {
+    position: sticky;
+    top: 120px;
+}
+
+.sidebar-highlight {
+    background: linear-gradient(135deg, var(--accent-teal-light) 0%, #d6f5ed 100%);
+    border: 2px solid var(--accent-teal);
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,183,133,0.2);
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.service-list strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+}
+
+.service-list span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Servo Brands */
+.servo-brands {
+    padding: 5rem 0;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.brand-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.brand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+}
+
+.brand-header h3 {
+    font-size: 1.35rem;
+    color: var(--dark);
+    margin: 0;
+}
+
+.brand-badge {
+    background: var(--accent-teal);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+}
+
+.brand-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.brand-card h4 {
+    font-size: 1.05rem;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+}
+
+.brand-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.25rem;
+}
+
+.brand-card li {
+    padding: 0.4rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.brand-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.brand-kistler {
+    border-top: 4px solid #003087;
+}
+
+.brand-tox {
+    border-top: 4px solid var(--accent-orange);
+}
+
+.other-brands {
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.other-brands h4 {
+    display: inline;
+    color: var(--dark);
+}
+
+.other-brands p {
+    display: inline;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Servo Force Ranges */
+.servo-force-ranges {
+    padding: 5rem 0;
+}
+
+.force-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.force-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.force-range {
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+}
+
+.force-light {
+    background: linear-gradient(135deg, #e6f7ff 0%, #d6f5ed 100%);
+}
+
+.force-medium {
+    background: linear-gradient(135deg, var(--primary-light) 0%, #cce0f5 100%);
+}
+
+.force-heavy {
+    background: linear-gradient(135deg, #fff0ec 0%, #ffe0d6 100%);
+}
+
+.force-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1;
+}
+
+.force-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.force-card h4 {
+    font-size: 1.15rem;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+}
+
+.force-card > p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.force-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.force-card li {
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.force-card li:last-child {
+    border-bottom: none;
+}
+
+/* Servo Industries */
+.servo-industries {
+    padding: 5rem 0;
+}
+
+.servo-industries .industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.industry-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary);
+    display: block;
+}
+
+.industry-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--accent-teal);
+}
+
+.industry-card h4 {
+    font-size: 1.15rem;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+}
+
+.industry-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Servo CTA */
+.servo-cta {
+    background: linear-gradient(135deg, var(--dark) 0%, #1a1a2e 50%, var(--primary-dark) 100%);
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.servo-cta h2 {
+    color: white;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.servo-cta p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Servo Press Responsive */
+@media (max-width: 1024px) {
+    .overview-grid,
+    .monitoring-grid,
+    .retrofit-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-sidebar,
+    .monitoring-sidebar,
+    .retrofit-sidebar {
+        position: static;
+    }
+
+    .integration-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brands-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .force-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servo-industries .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servo-hero-stats {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .servo-hero {
+        padding: 3rem 0;
+    }
+
+    .servo-hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+    }
+
+    .servo-hero-stats {
+        gap: 1.5rem;
+    }
+
+    .hero-stat {
+        flex: 1 1 calc(50% - 0.75rem);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .app-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .integration-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servo-industries .industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
