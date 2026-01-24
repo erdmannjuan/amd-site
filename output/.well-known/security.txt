@@ -1,0 +1,6 @@
+# Security contact information
+# See https://securitytxt.org/ for more information
+
+Contact: mailto:info@amdmachines.com
+Preferred-Languages: en
+Canonical: https://amdmachines.com/.well-known/security.txt

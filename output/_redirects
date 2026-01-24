@@ -1,0 +1,67 @@
+# 301 Redirects - Old amdmachines.com URLs to new structure
+# Format: old-path new-path status-code
+
+# About page
+/about-us/ /about/ 301
+
+# Solutions (automated-solutions -> solutions)
+/automated-solutions/ /solutions/ 301
+/automated-solutions/welding/ /solutions/welding/ 301
+/automated-solutions/robotic-cells/ /solutions/robotic-cells/ 301
+/automated-solutions/test-systems/ /solutions/test-systems/ 301
+/automated-solutions/custom-automation-equipment/ /solutions/custom-automation/ 301
+/automated-solutions/flexible-assembly-machines/ /solutions/assembly/ 301
+/automated-solutions/leak-detection/ /solutions/test-systems/ 301
+
+# Root-level solution pages to /solutions/
+/material-handling/ /solutions/material-handling/ 301
+/robotic-screwdriving/ /solutions/screwdriving/ 301
+/bin-picking/ /solutions/bin-picking/ 301
+/interactive-assembly-line/ /solutions/assembly/ 301
+
+# Industries
+/industries/automotive-auto-parts/ /industries/automotive/ 301
+/industries/manufacturing/ /industries/general-manufacturing/ 301
+
+# Blog redirects (old slugs to new equivalents)
+/blog/automated-assembly-machines-a-selection-guide/ /blog/automated-assembly-machines/ 301
+/blog/understanding-vision-inspection-systems/ /blog/introduction-to-machine-vision-for-manufacturing/ 301
+/blog/ins-outs-helium-leak-testing-equipment/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
+/blog/facts-about-hot-plate-welding/ /blog/heat-staking-and-hot-plate-welding-applications/ 301
+/blog/what-does-a-fully-automated-assembly-line-look-like/ /blog/automated-assembly-machines/ 301
+/blog/what-can-vision-measuring-systems-accomplish/ /blog/dimensional-inspection-with-cmms-and-vision/ 301
+/blog/understanding-rotor-and-stator-tests-for-electric-motors/ /blog/electrical-testing-in-automated-production/ 301
+/blog/understanding-rotor-and-stator-tests-for-electric-motor-assembly/ /blog/electrical-testing-in-automated-production/ 301
+/blog/how-to-choose-the-right-leak-testing-equipment-for-your-application/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
+
+# Missing pages - redirect to closest equivalent
+/ebooks/ /blog/ 301
+/amd-mexico/ /contact/ 301
+/case-studies/cnc-machining/ /solutions/machine-tending/ 301
+/glossary/ /blog/ 301
+/yaskawa-motoman/ /solutions/robotic-cells/ 301
+
+# Industries - additional mappings
+/industries/healthcare/ /industries/medical/ 301
+/industries/aerospace-defense/ /industries/aerospace/ 301
+/industries/building-materials/ /industries/general-manufacturing/ 301
+/industries/electric-motor-assembly/ /industries/electronics/ 301
+
+# Solutions - additional mappings
+/automated-solutions/marking-traceability/ /solutions/marking-traceability/ 301
+/automated-solutions/assembly/ /solutions/assembly/ 301
+/automated-solutions/robotic-cells/cnc-robot-tending-automation/ /solutions/machine-tending/ 301
+/automated-solutions/application-of-technology-to-manual-processes/ /solutions/ 301
+
+# Blog - additional mappings
+/blog/importance-of-end-of-line-equipment-in-the-automotive-industry/ /blog/end-of-line-testing-strategies-for-quality-assurance/ 301
+/blog/role-of-leak-testing-in-automotive-component-assembly/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
+/blog/choosing-the-right-automation-equipment/ /blog/choosing-right-robot-for-your-application/ 301
+/blog/industrial-automation-equipment-is-helping-manufacturing/ /blog/what-is-industrial-automation/ 301
+/blog/boosting-efficiency-robot-cells/ /blog/assembly-line-balancing-for-optimal-efficiency/ 301
+/blog/what-to-know-laser-marking-systems/ /blog/ 301
+/blog/robotic-cells-for-manufacturing-electronics-auto-parts/ /blog/electronics-assembly-automation-trends/ 301
+/blog/what-is-supply-chain-resilience/ /blog/supply-chain-resilience-through-automation/ 301
+
+# Catch any UTM parameters (these pass through automatically, but explicit for clarity)
+# /?utm_source=* passes through to / automatically

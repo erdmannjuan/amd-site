@@ -1,0 +1,10 @@
+# Robots.txt for AMD Machines
+# https://amdmachines.com
+# Note: AI bot access is managed by Cloudflare AI Audit
+
+# Allow all standard crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://amdmachines.com/sitemap.xml

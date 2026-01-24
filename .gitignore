@@ -24,8 +24,8 @@ ENV/
 .DS_Store?
 Thumbs.db
 
-# Build output (generated on each build)
-output/
+# Build output - NOT ignored, pushed for Cloudflare Pages deployment
+# output/
 
 # Environment and secrets
 .env
