@@ -9224,7 +9224,7 @@ button:disabled {
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #3d4852;
+    color: #1a202c;
     white-space: nowrap;
     transition: var(--transition);
     border: 1px solid transparent;
@@ -9263,7 +9263,7 @@ button:disabled {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: #3d4852;
+    color: #1a202c;
 }
 
 .overview-highlights {
@@ -9293,8 +9293,8 @@ button:disabled {
     padding: 0.6rem 0;
     padding-left: 2rem;
     position: relative;
-    color: #2d3748;
-    font-size: 1rem;
+    color: #1a202c;
+    font-size: 1.05rem;
 }
 
 .highlight-box li::before {
@@ -9355,7 +9355,7 @@ button:disabled {
     position: relative;
     border-bottom: 1px solid #f0f3f7;
     font-size: 0.95rem;
-    color: #3d4852;
+    color: #1a202c;
 }
 
 .check-list li:last-child {
@@ -9463,7 +9463,7 @@ button:disabled {
 
 .app-item p {
     font-size: 1rem;
-    color: #4a5568;
+    color: #1a202c;
     margin: 0;
     line-height: 1.7;
 }
@@ -9520,7 +9520,7 @@ button:disabled {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.25rem;
-    color: #3d4852;
+    color: #1a202c;
 }
 
 .monitoring-feature ul {
@@ -9536,7 +9536,7 @@ button:disabled {
     padding: 0.6rem 0;
     padding-left: 2rem;
     position: relative;
-    color: #2d3748;
+    color: #1a202c;
     font-size: 1rem;
 }
 
@@ -9673,7 +9673,7 @@ button:disabled {
 
 .integration-card p {
     font-size: 1rem;
-    color: #A8B5C8;
+    color: #E8EEF5;
     margin: 0;
     line-height: 1.65;
 }
@@ -9694,7 +9694,7 @@ button:disabled {
 
 .retrofit-content .lead {
     font-size: 1.2rem;
-    color: #4a5568;
+    color: #1a202c;
     margin-bottom: 2.5rem;
     line-height: 1.7;
 }
@@ -9715,7 +9715,7 @@ button:disabled {
 
 .retrofit-content p {
     font-size: 1.05rem;
-    color: #3d4852;
+    color: #1a202c;
     line-height: 1.75;
 }
 
@@ -9729,7 +9729,7 @@ button:disabled {
 
 .retrofit-content li {
     padding: 0.5rem 0;
-    color: #2d3748;
+    color: #1a202c;
     font-size: 1rem;
 }
 
@@ -9794,7 +9794,7 @@ button:disabled {
 
 .service-list span {
     font-size: 0.9rem;
-    color: #5a6978;
+    color: #374151;
 }
 
 /* Servo Brands - WHITE BACKGROUND */
@@ -9845,7 +9845,7 @@ button:disabled {
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
-    color: #3d4852;
+    color: #1a202c;
 }
 
 .brand-card h4 {
@@ -9868,7 +9868,7 @@ button:disabled {
     padding-left: 1.5rem;
     position: relative;
     font-size: 1rem;
-    color: #2d3748;
+    color: #1a202c;
 }
 
 .brand-card li::before {
@@ -9934,7 +9934,7 @@ button:disabled {
 
 .brand-tile p {
     font-size: 0.95rem;
-    color: #4a5568;
+    color: #1a202c;
     line-height: 1.55;
     margin-bottom: 1rem;
 }
@@ -9961,7 +9961,7 @@ button:disabled {
 .brand-note p {
     margin: 0;
     font-size: 1.1rem;
-    color: #2d3748;
+    color: #1a202c;
 }
 
 .brand-note strong {
@@ -10034,7 +10034,7 @@ button:disabled {
 .force-label {
     display: block;
     font-size: 0.9rem;
-    color: #5a6978;
+    color: #374151;
     margin-top: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -10049,7 +10049,7 @@ button:disabled {
 
 .force-card > p {
     font-size: 1rem;
-    color: #4a5568;
+    color: #1a202c;
     margin-bottom: 1.25rem;
     text-align: left;
     line-height: 1.6;
@@ -10068,7 +10068,7 @@ button:disabled {
 .force-card li {
     padding: 0.5rem 0;
     font-size: 0.95rem;
-    color: #2d3748;
+    color: #1a202c;
     border-bottom: 1px solid #e8ebf0;
 }
 
@@ -10127,7 +10127,7 @@ button:disabled {
 
 .industry-card p {
     font-size: 1rem;
-    color: #4a5568;
+    color: #1a202c;
     margin: 0;
     line-height: 1.6;
 }
