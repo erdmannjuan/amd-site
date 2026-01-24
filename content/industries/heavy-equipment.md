@@ -1,5 +1,5 @@
 ---
-title: Heavy Equipment Manufacturing Automation | AMD Automation
+title: Heavy Equipment Manufacturing Automation | AMD Machines
 description: "Automation solutions for heavy equipment manufacturing: construction, agricultural, and mining equipment. Large-scale welding, machining, and assembly."
 keywords: heavy equipment automation, construction equipment manufacturing, agricultural equipment automation, mining equipment assembly, large component welding
 template: industry.html
@@ -25,7 +25,7 @@ challenges:
     description: Structural welds must meet strict quality standards for safety and durability.
 ---
 
-Heavy equipment manufacturing requires automation that handles oversized components, delivers structural weld quality, and adapts to varying production volumes. AMD Automation provides solutions scaled for construction, agricultural, and mining equipment production.
+Heavy equipment manufacturing requires automation that handles oversized components, delivers structural weld quality, and adapts to varying production volumes. AMD Machines provides solutions scaled for construction, agricultural, and mining equipment production.
 
 ## Structural Welding Automation
 

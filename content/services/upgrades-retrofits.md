@@ -1,5 +1,5 @@
 ---
-title: Automation Upgrades & Retrofits | Robot Refurbishment | AMD Automation
+title: Automation Upgrades & Retrofits | Robot Refurbishment | AMD Machines
 description: "Automation upgrades and retrofits: robot refurbishment, control system upgrades, and safety modernization. Maximize ROI on existing equipment."
 keywords: automation upgrades, robot retrofit, robot refurbishment, control system upgrade, PLC migration, safety system upgrade, production line modernization, equipment lifecycle extension
 template: page.html
@@ -9,7 +9,7 @@ label: Upgrades & Retrofits
 url: /services/upgrades-retrofits/
 ---
 
-Your existing automation equipment represents a significant investment. AMD Automation helps you extend equipment life, improve performance, and add new capabilities through strategic upgrades and retrofits. Often, upgrading existing systems delivers better ROI than complete replacement.
+Your existing automation equipment represents a significant investment. AMD Machines helps you extend equipment life, improve performance, and add new capabilities through strategic upgrades and retrofits. Often, upgrading existing systems delivers better ROI than complete replacement.
 
 ## Why Upgrade vs. Replace?
 

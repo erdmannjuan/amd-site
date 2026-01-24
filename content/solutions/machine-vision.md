@@ -1,5 +1,5 @@
 ---
-title: Machine Vision Systems | Industrial Vision Inspection | AMD Automation
+title: Machine Vision Systems | Industrial Vision Inspection | AMD Machines
 description: "Custom machine vision systems for quality inspection, guidance, and measurement. 2D/3D vision and AI-powered defect detection."
 keywords: machine vision systems, industrial vision inspection, vision guided robotics, quality inspection automation, defect detection, 2D 3D vision, OCR verification
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Add vision to existing lines or integrate into new automation systems.
 ---
 
-Machine vision systems use cameras and image processing to perform inspection, guidance, and measurement tasks that traditionally required human vision. AMD Automation designs custom vision solutions that integrate seamlessly with your [robotic cells](/solutions/robotic-cells/) and [assembly systems](/solutions/assembly/).
+Machine vision systems use cameras and image processing to perform inspection, guidance, and measurement tasks that traditionally required human vision. AMD Machines designs custom vision solutions that integrate seamlessly with your [robotic cells](/solutions/robotic-cells/) and [assembly systems](/solutions/assembly/).
 
 ## Vision System Capabilities
 

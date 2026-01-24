@@ -156,7 +156,7 @@ Not every process should be automated. Focus on operations where:
 
 ### Partner with Automation Experts
 
-[Custom automation solutions](/solutions/custom-automation/) require expertise in mechanical design, controls engineering, and integration. Working with experienced automation integrators like AMD Automation ensures successful implementation.
+[Custom automation solutions](/solutions/custom-automation/) require expertise in mechanical design, controls engineering, and integration. Working with experienced automation integrators like AMD Machines ensures successful implementation.
 
 ### Plan for the Future
 
@@ -173,4 +173,4 @@ Industrial automation continues to evolve with:
 
 These technologies are making automation accessible to smaller manufacturers and enabling greater flexibility in production.
 
-**Ready to explore automation for your facility?** [Contact AMD Automation](/contact/) for a consultation on how industrial automation can improve your manufacturing productivity.
+**Ready to explore automation for your facility?** [Contact AMD Machines](/contact/) for a consultation on how industrial automation can improve your manufacturing productivity.

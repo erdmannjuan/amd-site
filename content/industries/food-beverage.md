@@ -31,7 +31,7 @@ challenges:
     description: Maximizing OEE while maintaining food safety standards.
 ---
 
-Food and beverage manufacturing requires automation that prioritizes food safety while delivering the efficiency needed to compete. AMD Automation builds systems that meet both requirements.
+Food and beverage manufacturing requires automation that prioritizes food safety while delivering the efficiency needed to compete. AMD Machines builds systems that meet both requirements.
 
 ## Sanitary Design
 

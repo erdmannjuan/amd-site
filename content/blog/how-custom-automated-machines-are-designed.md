@@ -349,7 +349,7 @@ Regular communication prevents misunderstandings:
 
 ### Experienced Partners
 
-Complex automation requires deep expertise. [AMD Automation](/about/) brings decades of experience across industries including [automotive](/industries/automotive/), [medical devices](/industries/medical/), and [aerospace](/industries/aerospace/).
+Complex automation requires deep expertise. [AMD Machines](/about/) brings decades of experience across industries including [automotive](/industries/automotive/), [medical devices](/industries/medical/), and [aerospace](/industries/aerospace/).
 
 ### Realistic Timelines
 
@@ -369,4 +369,4 @@ Customer involvement improves outcomes:
 - Access to production expertise
 - Availability for reviews and testing
 
-**Ready to discuss a custom automation project?** [Contact AMD Automation](/contact/) to start the conversation. Our team will guide you through the process from concept to production.
+**Ready to discuss a custom automation project?** [Contact AMD Machines](/contact/) to start the conversation. Our team will guide you through the process from concept to production.

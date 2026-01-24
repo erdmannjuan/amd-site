@@ -40,7 +40,7 @@ benefits:
     description: Automation addresses welder shortages while maintaining quality standards.
 ---
 
-AMD Automation specializes in custom robotic welding systems that solve the challenges of modern manufacturing: skilled welder shortages, strict quality requirements, and increasing production demands. Our [robotic cells](/solutions/robotic-cells/) integrate seamlessly into your production environment.
+AMD Machines specializes in custom robotic welding systems that solve the challenges of modern manufacturing: skilled welder shortages, strict quality requirements, and increasing production demands. Our [robotic cells](/solutions/robotic-cells/) integrate seamlessly into your production environment.
 
 ## Robotic Welding Processes
 

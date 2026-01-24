@@ -27,7 +27,7 @@ challenge:
     - "Multiple torque-critical fastening operations"
     - "100% traceability for warranty and recall support"
 solution:
-  summary: "AMD Automation designed a compact, high-density assembly line with 32 robot stations performing simultaneous operations, integrated error-proofing, and comprehensive data collection."
+  summary: "AMD Machines designed a compact, high-density assembly line with 32 robot stations performing simultaneous operations, integrated error-proofing, and comprehensive data collection."
   components:
     - name: "Multi-Robot Assembly Cells"
       description: "Compact cells with multiple robots working simultaneously to maximize throughput while minimizing floor space."
@@ -99,7 +99,7 @@ related_case_studies:
 
 Launching a new transmission program is a high-stakes endeavor. When a Tier 1 powertrain supplier won a major OEM contract, they needed an assembly line capable of producing 800+ units per shift with near-zero defects—all within an existing facility with limited floor space.
 
-AMD Automation designed a high-density assembly line that packs 32 robot stations into a compact footprint while maintaining industry-leading uptime and quality.
+AMD Machines designed a high-density assembly line that packs 32 robot stations into a compact footprint while maintaining industry-leading uptime and quality.
 
 ## Compact Cell Design
 
@@ -138,6 +138,6 @@ The customer has since awarded two additional programs based on this line's succ
 
 ## Customer Testimonial
 
-> "AMD Automation delivered a line that exceeded our expectations in every dimension—quality, throughput, uptime, and floor space. They're our go-to partner for complex assembly programs."
+> "AMD Machines delivered a line that exceeded our expectations in every dimension—quality, throughput, uptime, and floor space. They're our go-to partner for complex assembly programs."
 >
 > — *Plant Manager, Tier 1 Powertrain Supplier*

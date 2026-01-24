@@ -1,7 +1,7 @@
 ---
-title: About AMD Automation | 30+ Years of Custom Machine Building Excellence
-description: "AMD Automation: 30+ years building 2,500+ custom machines. Authorized ABB, Yaskawa, Universal Robots integrator for robotic cells and welding."
-keywords: about AMD Automation, custom machine builder, automation engineering company, robotic system integrator, ABB authorized integrator, Yaskawa integrator
+title: About AMD Machines | 30+ Years of Custom Machine Building Excellence
+description: "AMD Machines: 30+ years building 2,500+ custom machines. Authorized ABB, Yaskawa, Universal Robots integrator for robotic cells and welding."
+keywords: about AMD Machines, custom machine builder, automation engineering company, robotic system integrator, ABB authorized integrator, Yaskawa integrator
 template: about.html
 hero_title: About AMD Machines
 hero_subtitle: Engineering excellence in custom automation for over 30 years
@@ -27,10 +27,10 @@ certifications:
 
 ## Our Story
 
-AMD Automation was founded over 30 years ago with a clear mission: build custom automated machines that solve real manufacturing problems. We've earned our reputation one project at a time, delivering reliable automation systems that perform as promised.
+AMD Machines was founded over 30 years ago with a clear mission: build custom automated machines that solve real manufacturing problems. We've earned our reputation one project at a time, delivering reliable automation systems that perform as promised.
 
 <figure class="about-content-image">
-<img src="/static/images/about-facility.jpg" alt="AMD Automation manufacturing facility with ABB industrial robot and parts handling system" width="800" height="280" loading="lazy">
+<img src="/static/images/about-facility.jpg" alt="AMD Machines manufacturing facility with ABB industrial robot and parts handling system" width="800" height="280" loading="lazy">
 <figcaption>Our 80,000 sq ft facility houses complete design, fabrication, and testing capabilities</figcaption>
 </figure>
 

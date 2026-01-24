@@ -1,5 +1,5 @@
 ---
-title: Automation Spare Parts | OEM Robot Parts & Components | AMD Automation
+title: Automation Spare Parts | OEM Robot Parts & Components | AMD Machines
 description: "Fast delivery on automation spare parts: robot parts, servo motors, drives, PLCs, sensors & end-of-arm tooling. OEM & aftermarket parts with technical support."
 keywords: automation spare parts, robot spare parts, industrial robot parts, FANUC spare parts, servo motor replacement, PLC spare parts, automation components, end of arm tooling parts
 template: page.html
@@ -9,7 +9,7 @@ label: Spare Parts
 url: /services/spare-parts/
 ---
 
-Minimize downtime and keep your automated systems running at peak performance with AMD Automation's comprehensive spare parts program. We stock critical components and have direct relationships with major manufacturers for fast procurement of specialty items.
+Minimize downtime and keep your automated systems running at peak performance with AMD Machines's comprehensive spare parts program. We stock critical components and have direct relationships with major manufacturers for fast procurement of specialty items.
 
 ## Why Choose AMD for Spare Parts?
 

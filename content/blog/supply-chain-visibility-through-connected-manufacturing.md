@@ -2,10 +2,10 @@
 title: Supply Chain Visibility Through Connected Manufacturing
 description: The fourth industrial revolution transforms manufacturing through connectivity,
   data, and intelligent systems. Understanding these technologies helps.
-keywords: industrial automation, manufacturing automation, AMD Automation, smart manufacturing,
+keywords: industrial automation, manufacturing automation, AMD Machines, smart manufacturing,
   digital factory, IIoT, supply, chain, visibility
 date: '2025-08-29'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Trends
 read_time: 5
 template: blog-post.html
@@ -58,6 +58,6 @@ Common obstacles and how to address them:
 - **Security concerns** - apply defense-in-depth cybersecurity strategies
 - **ROI uncertainty** - start with high-impact, measurable projects
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

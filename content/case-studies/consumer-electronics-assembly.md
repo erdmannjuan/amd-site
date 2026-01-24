@@ -27,7 +27,7 @@ challenge:
     - "Need for rapid new product introduction capability"
     - "High labor costs in California manufacturing"
 solution:
-  summary: "AMD Automation designed a flexible assembly cell using collaborative robots with quick-change tooling, vision-guided part handling, and recipe-based programming for instant SKU changeover."
+  summary: "AMD Machines designed a flexible assembly cell using collaborative robots with quick-change tooling, vision-guided part handling, and recipe-based programming for instant SKU changeover."
   components:
     - name: "Collaborative Robot Assembly"
       description: "FANUC CRX cobots with force sensing enable precise assembly operations while working safely alongside operators for loading/unloading."
@@ -105,7 +105,7 @@ Manual assembly was struggling to keep up. Quality varied between operators, and
 
 ## Flexibility Through Technology
 
-AMD Automation designed a cell that embraces variety instead of fighting it:
+AMD Machines designed a cell that embraces variety instead of fighting it:
 
 ### Vision-Guided Part Handling
 The 3D vision system recognizes components regardless of how they're presented. Operators simply refill bins with mixed parts—the robots figure out what's what.
@@ -146,6 +146,6 @@ Three new SKUs have been added since the original 12, with minimal engineering e
 
 ## Customer Testimonial
 
-> "AMD Automation gave us the flexibility we needed to compete. We can respond to market changes in days, not months. The quality improvement was an unexpected bonus."
+> "AMD Machines gave us the flexibility we needed to compete. We can respond to market changes in days, not months. The quality improvement was an unexpected bonus."
 >
 > — *VP of Manufacturing, Consumer Electronics Manufacturer*

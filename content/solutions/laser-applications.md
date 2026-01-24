@@ -1,5 +1,5 @@
 ---
-title: Laser Processing Systems | Cutting, Welding, Marking | AMD Automation
+title: Laser Processing Systems | Cutting, Welding, Marking | AMD Machines
 description: "Industrial laser systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with robotic and gantry motion."
 keywords: laser cutting automation, laser welding systems, laser marking, industrial laser processing, fiber laser automation, robotic laser systems
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Program changes for different products without tooling changes.
 ---
 
-Laser processing provides non-contact precision for cutting, welding, marking, and surface treatment applications. AMD Automation integrates laser systems with [robotic cells](/solutions/robotic-cells/) and gantry motion for complete automated solutions.
+Laser processing provides non-contact precision for cutting, welding, marking, and surface treatment applications. AMD Machines integrates laser systems with [robotic cells](/solutions/robotic-cells/) and gantry motion for complete automated solutions.
 
 ## Laser Technologies
 

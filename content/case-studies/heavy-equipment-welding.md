@@ -27,7 +27,7 @@ challenge:
     - "Large part size (12 feet long) complicating automation"
     - "Multiple weld positions requiring constant part repositioning"
 solution:
-  summary: "AMD Automation engineered a dual-robot welding cell with a 3-axis servo positioner capable of handling parts up to 5,000 lbs, enabling complete welding of excavator booms in a single setup."
+  summary: "AMD Machines engineered a dual-robot welding cell with a 3-axis servo positioner capable of handling parts up to 5,000 lbs, enabling complete welding of excavator booms in a single setup."
   components:
     - name: "Heavy-Duty Servo Positioner"
       description: "Custom 3-axis positioner handles 5,000 lb parts with ±0.1° positioning accuracy, presenting all weld joints at optimal angles."
@@ -99,7 +99,7 @@ related_case_studies:
 
 Heavy equipment manufacturing presents unique automation challenges. Parts are large, heavy, and require extensive welding—often hundreds of linear inches per assembly. A leading excavator manufacturer was struggling to meet production targets while maintaining quality standards.
 
-Each excavator boom required over 200 linear inches of structural welding, taking skilled welders 4+ hours per unit. With demand exceeding capacity and skilled welders in short supply, the manufacturer turned to AMD Automation for a solution.
+Each excavator boom required over 200 linear inches of structural welding, taking skilled welders 4+ hours per unit. With demand exceeding capacity and skilled welders in short supply, the manufacturer turned to AMD Machines for a solution.
 
 ## Engineering for Heavy Fabrication
 
@@ -125,7 +125,7 @@ Different joint configurations require different welding approaches. The Fronius
 
 ## Offline Programming
 
-Programming 200+ inches of weld paths directly on the robot would require days of teaching time and halt production. AMD Automation implemented offline programming using:
+Programming 200+ inches of weld paths directly on the robot would require days of teaching time and halt production. AMD Machines implemented offline programming using:
 
 ### Digital Twin Simulation
 Complete cell geometry imported into ROBOGUIDE allows programmers to develop and optimize weld paths without interrupting production.
@@ -140,6 +140,6 @@ New boom variants can now be programmed in days rather than weeks.
 
 ## Customer Testimonial
 
-> "We didn't think automation was possible for parts this big and complex. AMD Automation proved us wrong. The cell paid for itself in 18 months, and we're finally able to keep up with customer demand."
+> "We didn't think automation was possible for parts this big and complex. AMD Machines proved us wrong. The cell paid for itself in 18 months, and we're finally able to keep up with customer demand."
 >
 > — *Manufacturing Manager, Heavy Equipment Manufacturer*

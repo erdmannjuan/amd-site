@@ -1,5 +1,5 @@
 ---
-title: General Manufacturing Automation | Custom Solutions | AMD Automation
+title: General Manufacturing Automation | Custom Solutions | AMD Machines
 description: "Custom automation solutions for diverse manufacturing applications. If you make it, we can automate it with robotic cells, assembly systems, and testing."
 keywords: general manufacturing automation, custom manufacturing automation, industrial automation systems, production automation, factory automation
 template: industry.html
@@ -25,7 +25,7 @@ challenges:
     description: Automation must grow with production volume and product mix changes.
 ---
 
-Not every manufacturing application fits a standard industry category. AMD Automation designs custom solutions for any manufacturing challenge, combining our expertise across [robotic cells](/solutions/robotic-cells/), [assembly systems](/solutions/assembly/), [welding](/solutions/welding/), and [testing](/solutions/test-systems/).
+Not every manufacturing application fits a standard industry category. AMD Machines designs custom solutions for any manufacturing challenge, combining our expertise across [robotic cells](/solutions/robotic-cells/), [assembly systems](/solutions/assembly/), [welding](/solutions/welding/), and [testing](/solutions/test-systems/).
 
 ## Custom Automation Capabilities
 

@@ -27,7 +27,7 @@ challenge:
     - "High labor cost for 100% inspection requirement"
     - "Pressure to increase throughput without sacrificing quality"
 solution:
-  summary: "AMD Automation implemented an AI-powered automated optical inspection (AOI) system that inspects every component and solder joint in under half a second, with deep learning algorithms trained specifically on the client's product mix."
+  summary: "AMD Machines implemented an AI-powered automated optical inspection (AOI) system that inspects every component and solder joint in under half a second, with deep learning algorithms trained specifically on the client's product mix."
   components:
     - name: "Multi-Angle Inspection Cameras"
       description: "Eight 20-megapixel cameras capture images from multiple angles, enabling inspection of components under chips and shadowed solder joints."
@@ -103,7 +103,7 @@ With boards containing 500+ components and inspection taking over 4 seconds each
 
 Traditional automated optical inspection (AOI) systems rely on explicit programming of acceptable and defective conditions. This approach struggles with the natural variation in electronics manufacturing and generates high rates of false calls that require human review.
 
-AMD Automation implemented a deep learning-based approach:
+AMD Machines implemented a deep learning-based approach:
 
 ### Supervised Learning
 The system was trained on thousands of images of both good and defective boards from actual production. The neural network learned to distinguish acceptable variation from actual defects without explicit programming.
@@ -144,6 +144,6 @@ Incoming component quality issues are immediately visible through increased defe
 
 ## Customer Testimonial
 
-> "We were skeptical that AI could match our best inspectors, but the data doesn't lie. Escape rate dropped from 150 ppm to under 5 ppm, and we're inspecting boards faster than we can make them. AMD Automation's team made the transition seamless."
+> "We were skeptical that AI could match our best inspectors, but the data doesn't lie. Escape rate dropped from 150 ppm to under 5 ppm, and we're inspecting boards faster than we can make them. AMD Machines's team made the transition seamless."
 >
 > — *Quality Director, Electronics Contract Manufacturer*

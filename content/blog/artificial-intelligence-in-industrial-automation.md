@@ -2,11 +2,11 @@
 title: Artificial Intelligence in Industrial Automation
 description: This topic represents an important consideration for manufacturers seeking
   to improve their operations through automation. Understanding the fundamentals.
-keywords: industrial automation, manufacturing automation, AMD Automation, automation
+keywords: industrial automation, manufacturing automation, AMD Machines, automation
   technology, manufacturing innovation, future of manufacturing, artificial, intelligence,
   industrial
 date: '2025-01-25'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Trends
 read_time: 5
 template: blog-post.html
@@ -63,6 +63,6 @@ Here's how to get started:
 - Plan a phased implementation approach
 - Build internal capabilities for long-term success
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

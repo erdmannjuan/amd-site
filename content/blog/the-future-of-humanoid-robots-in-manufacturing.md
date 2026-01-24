@@ -2,10 +2,10 @@
 title: The Future of Humanoid Robots in Manufacturing
 description: Examine the potential role of humanoid robots in flexible manufacturing
   environments. In today's competitive manufacturing environment, understanding.
-keywords: industrial automation, manufacturing automation, AMD Automation, industrial
+keywords: industrial automation, manufacturing automation, AMD Machines, industrial
   robots, robotic automation, robot integration, future, humanoid, robots
 date: '2026-01-02'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Robotics
 read_time: 5
 template: blog-post.html
@@ -54,6 +54,6 @@ As technology continues to advance, we expect to see improvements in ease of pro
 
 The key is to match the technology to your specific needs rather than automating for its own sake. A well-planned implementation delivers value; a rushed one creates problems.
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

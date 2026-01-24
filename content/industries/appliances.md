@@ -1,5 +1,5 @@
 ---
-title: Appliance Manufacturing Automation | AMD Automation
+title: Appliance Manufacturing Automation | AMD Machines
 description: "Automation for major appliance manufacturing: refrigerators, washers, dryers, HVAC equipment. Assembly, welding, testing, and material handling."
 keywords: appliance manufacturing automation, refrigerator assembly, washer dryer automation, HVAC manufacturing, white goods automation
 template: industry.html
@@ -25,7 +25,7 @@ challenges:
     description: High-volume production demands efficient operations and minimal downtime.
 ---
 
-Appliance manufacturing combines high-volume production with product variety, requiring automation that balances efficiency with flexibility. AMD Automation provides solutions for major appliance, HVAC, and white goods manufacturers.
+Appliance manufacturing combines high-volume production with product variety, requiring automation that balances efficiency with flexibility. AMD Machines provides solutions for major appliance, HVAC, and white goods manufacturers.
 
 ## Cabinet and Structure Assembly
 

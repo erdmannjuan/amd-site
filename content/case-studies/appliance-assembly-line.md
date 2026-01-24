@@ -27,7 +27,7 @@ challenge:
     - "Quality issues from operator fatigue on repetitive tasks"
     - "Need to maintain 60-second takt time across all variants"
 solution:
-  summary: "AMD Automation designed a flexible assembly line with 15 robot stations capable of automatic changeover between all 8 product variants, maintaining consistent quality regardless of product mix."
+  summary: "AMD Machines designed a flexible assembly line with 15 robot stations capable of automatic changeover between all 8 product variants, maintaining consistent quality regardless of product mix."
   components:
     - name: "Flexible Fixturing"
       description: "Servo-actuated fixtures automatically adjust for different door sizes and configurations without manual changeover."
@@ -105,7 +105,7 @@ Changeovers between variants took 45+ minutes of manual fixture adjustments. Qua
 
 ## Flexibility by Design
 
-AMD Automation designed the new line from the ground up for flexibility:
+AMD Machines designed the new line from the ground up for flexibility:
 
 ### Automatic Fixture Adjustment
 Every fixture uses servo-driven locators that automatically reposition for the incoming variant. When the MES signals a new model, fixtures reconfigure in seconds—not minutes.
@@ -143,6 +143,6 @@ The line now runs true mixed-model production—different variants can follow ea
 
 ## Customer Testimonial
 
-> "We went from dreading variant changeovers to not even thinking about them. The line builds whatever the schedule calls for, in whatever sequence. AMD Automation delivered the flexibility we needed to compete."
+> "We went from dreading variant changeovers to not even thinking about them. The line builds whatever the schedule calls for, in whatever sequence. AMD Machines delivered the flexibility we needed to compete."
 >
 > — *Plant Manager, Major Appliance Manufacturer*

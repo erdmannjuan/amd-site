@@ -40,7 +40,7 @@ benefits:
     description: Test data reveals trends that enable proactive process improvements.
 ---
 
-AMD Automation designs and builds automated test systems that protect your quality reputation by verifying every product before it ships.
+AMD Machines designs and builds automated test systems that protect your quality reputation by verifying every product before it ships.
 
 ## Test Types
 

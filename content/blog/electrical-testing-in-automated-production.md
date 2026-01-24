@@ -2,10 +2,10 @@
 title: Electrical Testing in Automated Production
 description: Quality assurance through automated testing and inspection has become
   essential for manufacturers facing demanding specifications and cost pressures..
-keywords: industrial automation, manufacturing automation, AMD Automation, automated
+keywords: industrial automation, manufacturing automation, AMD Machines, automated
   testing, quality inspection, test systems, electrical, testing, automated
 date: '2025-10-18'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Vision & QC
 read_time: 5
 template: blog-post.html
@@ -58,6 +58,6 @@ Leverage test data for ongoing improvement:
 - Feed back quality data to upstream processes
 - Use statistical methods to identify trends and issues
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

@@ -1,5 +1,5 @@
 ---
-title: Automated Deburring Systems | Edge Finishing Automation | AMD Automation
+title: Automated Deburring Systems | Edge Finishing Automation | AMD Machines
 description: "Robotic and automated deburring systems for consistent edge finishing. Remove burrs, flash, and sharp edges from machined, stamped, and cast parts."
 keywords: automated deburring, robotic deburring, edge finishing, burr removal, flash removal, deburring automation
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Document force, speed, and cycle parameters for traceability.
 ---
 
-Automated deburring systems remove unwanted material from part edges with precision and consistency. AMD Automation designs deburring cells that integrate with your production line for reliable edge finishing on machined, stamped, and cast components.
+Automated deburring systems remove unwanted material from part edges with precision and consistency. AMD Machines designs deburring cells that integrate with your production line for reliable edge finishing on machined, stamped, and cast components.
 
 ## Deburring Technologies
 

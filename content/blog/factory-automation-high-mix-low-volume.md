@@ -275,7 +275,7 @@ Results:
 
 ## Getting Started with HMLV Automation
 
-AMD Automation has extensive experience helping manufacturers automate high-mix, low-volume production. Our [custom automation solutions](/solutions/custom-automation/) are designed for the flexibility HMLV environments demand.
+AMD Machines has extensive experience helping manufacturers automate high-mix, low-volume production. Our [custom automation solutions](/solutions/custom-automation/) are designed for the flexibility HMLV environments demand.
 
 We serve manufacturers across industries including [aerospace](/industries/aerospace/), [medical devices](/industries/medical/), and contract manufacturing where product mix is a daily reality.
 

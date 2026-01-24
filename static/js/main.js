@@ -1,4 +1,4 @@
-// AMD Automation - Main JavaScript
+// AMD Machines - Main JavaScript
 (function() {
     'use strict';
 

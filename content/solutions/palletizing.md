@@ -1,5 +1,5 @@
 ---
-title: Robotic Palletizing | Automated Case Packing | AMD Automation
+title: Robotic Palletizing | Automated Case Packing | AMD Machines
 description: "Automated palletizing and depalletizing systems for end-of-line packaging. High-speed robotic palletizers, layer forming, and case packing solutions."
 keywords: robotic palletizing, automated palletizing, depalletizing systems, case packing automation, layer palletizing, end of line automation
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Program multiple pallet patterns for different products.
 ---
 
-Robotic palletizing automates the demanding task of building and breaking down pallets at production line speeds. AMD Automation designs palletizing systems that integrate with your packaging lines for efficient end-of-line operations.
+Robotic palletizing automates the demanding task of building and breaking down pallets at production line speeds. AMD Machines designs palletizing systems that integrate with your packaging lines for efficient end-of-line operations.
 
 ## Palletizing Configurations
 

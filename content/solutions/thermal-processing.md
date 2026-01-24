@@ -1,5 +1,5 @@
 ---
-title: Thermal Joining Systems | Ultrasonic & Hot Plate Welding | AMD Automation
+title: Thermal Joining Systems | Ultrasonic & Hot Plate Welding | AMD Machines
 description: "Automated thermal joining for plastics: ultrasonic welding, hot plate welding, vibration welding, and spin welding. Clean, strong joints without fasteners."
 keywords: ultrasonic welding, hot plate welding, plastic welding automation, vibration welding, spin welding, thermal joining
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: No fumes, adhesives, or residue in the assembly.
 ---
 
-Thermal joining processes create strong, permanent bonds between plastic components without fasteners or adhesives. AMD Automation designs automated [welding systems](/solutions/welding/) using ultrasonic, hot plate, vibration, and spin welding technologies.
+Thermal joining processes create strong, permanent bonds between plastic components without fasteners or adhesives. AMD Machines designs automated [welding systems](/solutions/welding/) using ultrasonic, hot plate, vibration, and spin welding technologies.
 
 ## Thermal Joining Technologies
 

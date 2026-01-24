@@ -27,7 +27,7 @@ challenge:
     - "15 different bottle sizes and label configurations"
     - "Aggregation from unit to case to pallet level"
 solution:
-  summary: "AMD Automation integrated a complete serialization and packaging solution including high-speed labeling, vision verification, aggregation, and a validated serialization software platform."
+  summary: "AMD Machines integrated a complete serialization and packaging solution including high-speed labeling, vision verification, aggregation, and a validated serialization software platform."
   components:
     - name: "High-Speed Serialization"
       description: "Print-and-apply labeling system generates unique serial numbers at 200+ bottles per minute with real-time verification."
@@ -141,6 +141,6 @@ The complete system was validated per GAMP 5 guidelines:
 
 ## Customer Testimonial
 
-> "AMD Automation delivered a serialization solution that exceeded our speed requirements while ensuring FDA compliance. The system has processed over 50 million units flawlessly."
+> "AMD Machines delivered a serialization solution that exceeded our speed requirements while ensuring FDA compliance. The system has processed over 50 million units flawlessly."
 >
 > — *VP of Operations, Pharmaceutical Manufacturer*

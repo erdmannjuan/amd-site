@@ -2,10 +2,10 @@
 title: Laser Welding in Precision Assembly
 description: Automated assembly represents a significant opportunity for manufacturers
   to improve quality, reduce costs, and increase capacity. The challenge lies in.
-keywords: industrial automation, manufacturing automation, AMD Automation, automated
+keywords: industrial automation, manufacturing automation, AMD Machines, automated
   assembly, assembly line, assembly systems, laser, welding, precision
 date: '2025-11-07'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Assembly
 read_time: 5
 template: blog-post.html
@@ -59,6 +59,6 @@ Assembly automation investments pay back through:
 
 Document baseline metrics before implementation to measure actual improvements.
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

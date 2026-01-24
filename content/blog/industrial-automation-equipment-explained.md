@@ -409,6 +409,6 @@ Selecting appropriate automation equipment requires consideration of:
 - What are lifecycle costs?
 - What is the resale or reuse value?
 
-AMD Automation helps clients select and integrate the right equipment for each application. Our experience across [multiple industries](/industries/) means we understand which technologies deliver results.
+AMD Machines helps clients select and integrate the right equipment for each application. Our experience across [multiple industries](/industries/) means we understand which technologies deliver results.
 
 **Need help selecting automation equipment?** [Contact us](/contact/) for a consultation. We'll evaluate your requirements and recommend the optimal equipment configuration for your application.

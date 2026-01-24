@@ -1,5 +1,5 @@
 ---
-title: Energy Industry Automation | Solar, Wind, Battery Manufacturing | AMD Automation
+title: Energy Industry Automation | Solar, Wind, Battery Manufacturing | AMD Machines
 description: "Custom automation for energy sector manufacturing: solar panel production, wind turbine components, battery assembly, and power generation equipment."
 keywords: energy industry automation, solar panel manufacturing, wind turbine automation, battery assembly automation, renewable energy manufacturing
 template: industry.html
@@ -25,7 +25,7 @@ challenges:
     description: Safety-critical applications demand full process documentation and component traceability.
 ---
 
-The energy sector demands automation that handles large components, maintains strict quality standards, and adapts to rapidly evolving technologies. AMD Automation provides solutions for battery manufacturing, renewable energy equipment, and traditional power generation components.
+The energy sector demands automation that handles large components, maintains strict quality standards, and adapts to rapidly evolving technologies. AMD Machines provides solutions for battery manufacturing, renewable energy equipment, and traditional power generation components.
 
 ## Battery Manufacturing Automation
 

@@ -36,7 +36,7 @@ benefits:
     description: Remove repetitive reaching and lifting from operator tasks.
 ---
 
-Robotic bin picking combines 3D vision, AI algorithms, and precise robot control to automatically pick randomly oriented parts from bins and containers. AMD Automation designs bin picking systems that integrate with your [machine tending](/solutions/machine-tending/), [assembly](/solutions/assembly/), and [material handling](/solutions/material-handling/) operations.
+Robotic bin picking combines 3D vision, AI algorithms, and precise robot control to automatically pick randomly oriented parts from bins and containers. AMD Machines designs bin picking systems that integrate with your [machine tending](/solutions/machine-tending/), [assembly](/solutions/assembly/), and [material handling](/solutions/material-handling/) operations.
 
 ## How Bin Picking Works
 

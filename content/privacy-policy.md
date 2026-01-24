@@ -1,6 +1,6 @@
 ---
-title: Privacy Policy | AMD Automation
-description: AMD Automation's privacy policy explaining how we collect, use, and protect your information.
+title: Privacy Policy | AMD Machines
+description: AMD Machines's privacy policy explaining how we collect, use, and protect your information.
 keywords: privacy policy, data protection, cookies, analytics
 template: page.html
 ---
@@ -9,7 +9,7 @@ template: page.html
 
 **Last Updated: January 2025**
 
-AMD Automation ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard information when you visit our website.
+AMD Machines ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard information when you visit our website.
 
 ### Information We Collect
 
@@ -96,6 +96,6 @@ We may update this Privacy Policy periodically. Changes will be posted on this p
 
 If you have questions about this Privacy Policy, [contact us](/contact/) or call:
 
-**AMD Automation**
+**AMD Machines**
 Phone: {{ config.social.phone }}
 Address: {{ config.social.address }}

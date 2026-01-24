@@ -2,10 +2,10 @@
 title: Magnetic Grippers for Ferrous Materials
 description: This topic represents an important consideration for manufacturers seeking
   to improve their operations through automation. Understanding the fundamentals.
-keywords: industrial automation, manufacturing automation, AMD Automation, material
+keywords: industrial automation, manufacturing automation, AMD Machines, material
   handling automation, conveyor systems, palletizing, magnetic, grippers, ferrous
 date: '2025-07-12'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Assembly
 read_time: 5
 template: blog-post.html
@@ -62,6 +62,6 @@ Here's how to get started:
 - Plan a phased implementation approach
 - Build internal capabilities for long-term success
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

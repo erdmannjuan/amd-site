@@ -90,7 +90,7 @@ Develop preliminary automation concepts:
 
 ### Vendor Selection
 
-If using external integrators like AMD Automation:
+If using external integrators like AMD Machines:
 
 - Request for proposal development
 - Vendor evaluation criteria
@@ -446,6 +446,6 @@ Working with knowledgeable integrators:
 - Proven project execution
 - Long-term support capability
 
-AMD Automation brings decades of experience implementing manufacturing automation systems across [automotive](/industries/automotive/), [medical device](/industries/medical/), [aerospace](/industries/aerospace/), [electronics](/industries/electronics/), [consumer products](/industries/consumer/), and [food and beverage](/industries/food-beverage/) industries.
+AMD Machines brings decades of experience implementing manufacturing automation systems across [automotive](/industries/automotive/), [medical device](/industries/medical/), [aerospace](/industries/aerospace/), [electronics](/industries/electronics/), [consumer products](/industries/consumer/), and [food and beverage](/industries/food-beverage/) industries.
 
 **Ready to begin your automation journey?** [Contact us](/contact/) to discuss your project. We'll guide you from concept through production commissioning and beyond.

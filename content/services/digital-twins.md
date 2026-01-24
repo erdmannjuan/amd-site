@@ -1,5 +1,5 @@
 ---
-title: Digital Twins & Simulation | Virtual Commissioning | AMD Automation
+title: Digital Twins & Simulation | Virtual Commissioning | AMD Machines
 description: "Digital twin technology for manufacturing: virtual commissioning, offline robot programming, and process simulation to reduce risk."
 keywords: digital twin manufacturing, virtual commissioning, robot simulation software, offline robot programming, FANUC Roboguide, ABB RobotStudio, process simulation, Industry 4.0 digital twin
 template: page.html
@@ -9,7 +9,7 @@ label: Digital Twins
 url: /services/digital-twins/
 ---
 
-AMD Automation leverages digital twin technology and advanced simulation software to design, validate, and optimize your automation systems before physical construction begins. This Industry 4.0 approach reduces project risk, accelerates deployment, and enables continuous improvement throughout the system lifecycle.
+AMD Machines leverages digital twin technology and advanced simulation software to design, validate, and optimize your automation systems before physical construction begins. This Industry 4.0 approach reduces project risk, accelerates deployment, and enables continuous improvement throughout the system lifecycle.
 
 ## What is a Digital Twin?
 

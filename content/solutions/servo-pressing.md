@@ -1,5 +1,5 @@
 ---
-title: Servo Press Systems | Force-Controlled Assembly | AMD Automation
+title: Servo Press Systems | Force-Controlled Assembly | AMD Machines
 description: "Precision servo press systems for force and position controlled assembly. Press-fit, crimping, and staking applications."
 keywords: servo press systems, force controlled assembly, press fit automation, precision pressing, crimping automation, interference fit assembly
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Programmable profiles for multiple products on single press.
 ---
 
-Servo press systems provide precise force and position control for [assembly operations](/solutions/assembly/) requiring verified pressing. AMD Automation designs servo press stations that ensure consistent, traceable press-fit assembly.
+Servo press systems provide precise force and position control for [assembly operations](/solutions/assembly/) requiring verified pressing. AMD Machines designs servo press stations that ensure consistent, traceable press-fit assembly.
 
 ## Servo Press Technology
 

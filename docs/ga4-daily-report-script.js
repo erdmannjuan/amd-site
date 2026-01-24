@@ -1,5 +1,5 @@
 /**
- * AMD Automation - Daily GA4 Analytics Report
+ * AMD Machines - Daily GA4 Analytics Report
  *
  * This script queries Google Analytics 4 and sends a daily email report
  * with visitor data in Excel format.
@@ -16,7 +16,7 @@
 const CONFIG = {
   GA4_PROPERTY_ID: '520875139',
   EMAIL_TO: 'je@amdmachines.com',
-  EMAIL_SUBJECT: 'AMD Automation - Daily Visitor Report',
+  EMAIL_SUBJECT: 'AMD Machines - Daily Visitor Report',
   TIMEZONE: 'America/New_York'
 };
 
@@ -173,7 +173,7 @@ function createExcelReport(data, reportDate) {
 
   // Add summary sheet
   const summarySheet = ss.insertSheet('Summary');
-  summarySheet.getRange('A1').setValue('AMD Automation - Daily Analytics Report');
+  summarySheet.getRange('A1').setValue('AMD Machines - Daily Analytics Report');
   summarySheet.getRange('A1').setFontSize(16).setFontWeight('bold');
   summarySheet.getRange('A3').setValue('Report Date:');
   summarySheet.getRange('B3').setValue(reportDate);
@@ -208,7 +208,7 @@ function sendReportEmail(excelBlob, reportDate, rowCount) {
 
   const htmlBody = `
     <div style="font-family: Arial, sans-serif; max-width: 600px;">
-      <h2 style="color: #1574c4;">AMD Automation - Daily Visitor Report</h2>
+      <h2 style="color: #1574c4;">AMD Machines - Daily Visitor Report</h2>
       <p>Please find attached the visitor analytics report for <strong>${reportDate}</strong>.</p>
 
       <h3>Quick Summary</h3>
@@ -224,7 +224,7 @@ function sendReportEmail(excelBlob, reportDate, rowCount) {
       </ul>
 
       <p style="color: #666; font-size: 12px; margin-top: 30px;">
-        This is an automated report from AMD Automation website analytics.
+        This is an automated report from AMD Machines website analytics.
       </p>
     </div>
   `;
@@ -246,7 +246,7 @@ function sendEmptyReport(reportDate) {
     subject: CONFIG.EMAIL_SUBJECT + ' - No Data - ' + reportDate,
     htmlBody: `
       <div style="font-family: Arial, sans-serif;">
-        <h2 style="color: #1574c4;">AMD Automation - Daily Report</h2>
+        <h2 style="color: #1574c4;">AMD Machines - Daily Report</h2>
         <p>No visitor data was recorded for <strong>${reportDate}</strong>.</p>
         <p>This could mean there were no visitors, or GA4 data is still processing.</p>
       </div>
@@ -260,7 +260,7 @@ function sendEmptyReport(reportDate) {
 function sendErrorNotification(error) {
   MailApp.sendEmail({
     to: CONFIG.EMAIL_TO,
-    subject: 'AMD Automation Report - ERROR',
+    subject: 'AMD Machines Report - ERROR',
     body: 'An error occurred while generating the daily report:\n\n' + error.toString()
   });
 }

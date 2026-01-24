@@ -40,7 +40,7 @@ benefits:
     description: Reliable automated handling keeps production running smoothly.
 ---
 
-AMD Automation designs material handling systems that move your products efficiently through manufacturing, from raw materials to finished goods.
+AMD Machines designs material handling systems that move your products efficiently through manufacturing, from raw materials to finished goods.
 
 ## Conveyor Systems
 

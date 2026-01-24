@@ -31,7 +31,7 @@ challenges:
     description: Serial number tracking through every manufacturing step.
 ---
 
-Electronics manufacturing demands precision, cleanliness, and comprehensive testing. AMD Automation builds systems that handle sensitive electronic assemblies while ensuring quality at every step.
+Electronics manufacturing demands precision, cleanliness, and comprehensive testing. AMD Machines builds systems that handle sensitive electronic assemblies while ensuring quality at every step.
 
 ## ESD-Safe Design
 

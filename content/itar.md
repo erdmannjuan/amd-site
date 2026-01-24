@@ -1,13 +1,13 @@
 ---
 title: "ITAR Compliance Notice"
-description: "International Traffic in Arms Regulations (ITAR) compliance information for AMD Automation"
+description: "International Traffic in Arms Regulations (ITAR) compliance information for AMD Machines"
 template: itar.html
 url: /itar/
 ---
 
 ## Current ITAR Compliance Status
 
-**AMD Automation is currently NOT compliant with International Traffic in Arms Regulations (ITAR).**
+**AMD Machines is currently NOT compliant with International Traffic in Arms Regulations (ITAR).**
 
 Our manufacturing operations are conducted outside of the United States, which means we cannot currently accept projects involving:
 
@@ -23,7 +23,7 @@ The International Traffic in Arms Regulations (ITAR) is a set of United States g
 
 ## Our Path Forward
 
-AMD Automation recognizes the importance of serving customers in defense and aerospace industries who require ITAR-compliant automation solutions. We are actively developing plans to establish U.S.-based manufacturing capabilities to service ITAR-regulated industries.
+AMD Machines recognizes the importance of serving customers in defense and aerospace industries who require ITAR-compliant automation solutions. We are actively developing plans to establish U.S.-based manufacturing capabilities to service ITAR-regulated industries.
 
 **Current Initiatives:**
 
@@ -57,7 +57,7 @@ All communications should be limited to general project descriptions and contact
 
 This notice is provided for informational purposes only and does not constitute legal advice. Organizations requiring ITAR-compliant services should consult with qualified legal counsel and compliance professionals to ensure their specific requirements are met.
 
-AMD Automation makes no representations regarding the timeline for achieving ITAR compliance. The information on this page is subject to change without notice.
+AMD Machines makes no representations regarding the timeline for achieving ITAR compliance. The information on this page is subject to change without notice.
 
 ---
 

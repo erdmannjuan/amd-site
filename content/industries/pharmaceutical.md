@@ -1,5 +1,5 @@
 ---
-title: Pharmaceutical Manufacturing Automation | AMD Automation
+title: Pharmaceutical Manufacturing Automation | AMD Machines
 description: "Automation for pharmaceutical and biotech manufacturing: drug packaging, medical device assembly, clean room automation, and laboratory automation."
 keywords: pharmaceutical automation, drug packaging automation, clean room automation, biotech manufacturing, pharma assembly automation
 template: industry.html
@@ -25,7 +25,7 @@ challenges:
     description: Serialization and track-and-trace requirements demand complete batch documentation.
 ---
 
-Pharmaceutical manufacturing demands automation that meets strict regulatory requirements, operates in clean room environments, and maintains complete traceability. AMD Automation provides validated solutions for drug packaging, device assembly, and laboratory automation.
+Pharmaceutical manufacturing demands automation that meets strict regulatory requirements, operates in clean room environments, and maintains complete traceability. AMD Machines provides validated solutions for drug packaging, device assembly, and laboratory automation.
 
 ## Packaging Automation
 

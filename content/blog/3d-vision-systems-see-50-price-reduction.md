@@ -5,7 +5,7 @@ description: The latest developments in AI and automation continue to reshape ma
 keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
   trends
 date: '2025-06-12'
-author: AMD Automation News Desk
+author: AMD Machines News Desk
 category: News
 read_time: 4
 template: blog-post.html
@@ -27,11 +27,11 @@ This advancement has implications across multiple manufacturing sectors:
 - **Consumer Goods**: Faster changeover and higher mix production become more practical
 - **Medical Devices**: Validated AI applications can improve both quality and throughput
 
-## AMD Automation Perspective
+## AMD Machines Perspective
 
 Lower costs make 3D vision accessible for more applications. AMD expands 3D-guided robot applications for our customers.
 
-At AMD Automation, we continuously evaluate emerging technologies to bring practical solutions to our customers. Our focus remains on proven approaches that deliver measurable results.
+At AMD Machines, we continuously evaluate emerging technologies to bring practical solutions to our customers. Our focus remains on proven approaches that deliver measurable results.
 
 ## What This Means for Manufacturers
 
@@ -46,7 +46,7 @@ Manufacturers should consider:
 
 The pace of AI advancement in manufacturing continues to accelerate. Staying informed about these developments helps manufacturers make better automation decisions.
 
-[Contact AMD Automation](/contact/) to discuss how these technologies might apply to your manufacturing challenges.
+[Contact AMD Machines](/contact/) to discuss how these technologies might apply to your manufacturing challenges.
 
 ## Sources
 
@@ -54,4 +54,4 @@ The pace of AI advancement in manufacturing continues to accelerate. Staying inf
 - A3 Association
 - Quality Digest
 
-*This article reflects AMD Automation's perspective on industry developments. Information is current as of the publication date.*
+*This article reflects AMD Machines's perspective on industry developments. Information is current as of the publication date.*

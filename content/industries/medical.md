@@ -31,7 +31,7 @@ challenges:
     description: Tight process control ensures consistent quality for every device produced.
 ---
 
-Medical device manufacturing demands the highest levels of precision, cleanliness, and documentation. AMD Automation builds automation systems that meet these requirements while delivering the productivity you need.
+Medical device manufacturing demands the highest levels of precision, cleanliness, and documentation. AMD Machines builds automation systems that meet these requirements while delivering the productivity you need.
 
 ## Regulatory Expertise
 

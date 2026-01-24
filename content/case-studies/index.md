@@ -1,6 +1,6 @@
 ---
 title: "Case Studies | Real Automation Success Stories"
-description: "Explore AMD Automation case studies showcasing measurable results across automotive, medical device, electronics, and other manufacturing industries."
+description: "Explore AMD Machines case studies showcasing measurable results across automotive, medical device, electronics, and other manufacturing industries."
 template: case-studies.html
 industries:
   - name: "Automotive"

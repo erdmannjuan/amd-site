@@ -1,5 +1,5 @@
 ---
-title: Automated Dispensing Systems | Adhesive & Sealant Application | AMD Automation
+title: Automated Dispensing Systems | Adhesive & Sealant Application | AMD Machines
 description: "Precision dispensing systems for adhesives, sealants, lubricants, and coatings. Robotic and gantry dispensing with volumetric control and vision guidance."
 keywords: automated dispensing, adhesive dispensing, sealant application, robotic dispensing, precision dispensing, glue dispensing automation
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Program multiple patterns for different products on same system.
 ---
 
-Automated dispensing systems apply adhesives, sealants, lubricants, and coatings with precision control. AMD Automation designs dispensing stations that integrate with your [assembly operations](/solutions/assembly/) for consistent, efficient material application.
+Automated dispensing systems apply adhesives, sealants, lubricants, and coatings with precision control. AMD Machines designs dispensing stations that integrate with your [assembly operations](/solutions/assembly/) for consistent, efficient material application.
 
 ## Dispensing Technologies
 

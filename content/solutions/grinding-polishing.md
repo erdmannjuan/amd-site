@@ -1,5 +1,5 @@
 ---
-title: Automated Grinding & Polishing | Surface Finishing Automation | AMD Automation
+title: Automated Grinding & Polishing | Surface Finishing Automation | AMD Machines
 description: "Robotic grinding and polishing systems for consistent surface finishing. Achieve precise surface quality on metal, plastic, and composite components."
 keywords: automated grinding, robotic polishing, surface finishing, automated buffing, metal polishing automation, grinding automation
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Precision force control prevents gouging and over-grinding.
 ---
 
-Automated grinding and polishing systems deliver consistent surface finishes that manual operations cannot match. AMD Automation designs finishing cells that combine [robotic flexibility](/solutions/robotic-cells/) with process expertise for reliable surface quality.
+Automated grinding and polishing systems deliver consistent surface finishes that manual operations cannot match. AMD Machines designs finishing cells that combine [robotic flexibility](/solutions/robotic-cells/) with process expertise for reliable surface quality.
 
 ## Surface Finishing Technologies
 

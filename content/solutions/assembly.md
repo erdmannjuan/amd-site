@@ -40,7 +40,7 @@ benefits:
     description: In-process verification catches errors before they become scrap.
 ---
 
-AMD Automation builds custom assembly machines that bring together multiple components into finished products with speed, precision, and reliability.
+AMD Machines builds custom assembly machines that bring together multiple components into finished products with speed, precision, and reliability.
 
 ## Machine Configurations
 

@@ -27,7 +27,7 @@ challenge:
     - "100% electrical testing and traceability required"
     - "24/7 operation with minimal downtime"
 solution:
-  summary: "AMD Automation designed a comprehensive battery module assembly line integrating cell handling, module assembly, welding, testing, and packaging—all with built-in safety systems for high-voltage operations."
+  summary: "AMD Machines designed a comprehensive battery module assembly line integrating cell handling, module assembly, welding, testing, and packaging—all with built-in safety systems for high-voltage operations."
   components:
     - name: "Automated Cell Handling"
       description: "Vision-guided robots sort, orient, and stack cylindrical cells with polarity verification and voltage testing at each step."
@@ -103,7 +103,7 @@ related_case_studies:
 
 The electric vehicle revolution is creating unprecedented demand for battery manufacturing capacity. When a leading EV battery manufacturer secured contracts to supply modules for three major automakers, they needed to build production capability from the ground up—and fast.
 
-AMD Automation was selected to design and build a complete battery module assembly line capable of producing 500,000 modules annually, with the flexibility to scale to 750,000 as demand grows.
+AMD Machines was selected to design and build a complete battery module assembly line capable of producing 500,000 modules annually, with the flexibility to scale to 750,000 as demand grows.
 
 ## Safety-First Design
 
@@ -162,6 +162,6 @@ The modular design allows capacity expansion without major reconstruction:
 
 ## Customer Testimonial
 
-> "AMD Automation delivered a production line that met our aggressive timeline while exceeding our quality and safety requirements. Their understanding of high-voltage battery manufacturing was evident in every design decision. We're already planning the next line expansion with them."
+> "AMD Machines delivered a production line that met our aggressive timeline while exceeding our quality and safety requirements. Their understanding of high-voltage battery manufacturing was evident in every design decision. We're already planning the next line expansion with them."
 >
 > — *Director of Manufacturing, EV Battery Manufacturer*

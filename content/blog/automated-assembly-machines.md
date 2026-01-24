@@ -266,6 +266,6 @@ Establish plans for:
 
 ## Getting Started
 
-Whether you're automating a single assembly operation or planning a complete production line, AMD Automation has the experience to deliver results. Our team has designed and built assembly automation for [medical devices](/industries/medical/), [automotive components](/industries/automotive/), [consumer products](/industries/consumer/), and more.
+Whether you're automating a single assembly operation or planning a complete production line, AMD Machines has the experience to deliver results. Our team has designed and built assembly automation for [medical devices](/industries/medical/), [automotive components](/industries/automotive/), [consumer products](/industries/consumer/), and more.
 
 **Ready to explore assembly automation?** [Contact us](/contact/) for a consultation. We'll evaluate your assembly requirements and recommend the approach that delivers the best ROI for your operation.

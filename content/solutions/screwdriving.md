@@ -1,5 +1,5 @@
 ---
-title: Robotic Screwdriving | Automated Fastening Systems | AMD Automation
+title: Robotic Screwdriving | Automated Fastening Systems | AMD Machines
 description: "Automated screwdriving and fastening systems for high-volume assembly. Torque-controlled screwdriving with full traceability and error-proofing."
 keywords: robotic screwdriving, automated fastening, torque controlled assembly, screw feeding systems, automated screw insertion, fastening automation
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Multi-spindle systems fasten multiple screws simultaneously.
 ---
 
-Automated screwdriving systems ensure consistent, traceable fastening in high-volume [assembly operations](/solutions/assembly/). AMD Automation designs screwdriving cells that integrate torque control, automatic feeding, and verification for reliable fastening.
+Automated screwdriving systems ensure consistent, traceable fastening in high-volume [assembly operations](/solutions/assembly/). AMD Machines designs screwdriving cells that integrate torque control, automatic feeding, and verification for reliable fastening.
 
 ## Screwdriving System Components
 

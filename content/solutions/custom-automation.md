@@ -40,7 +40,7 @@ benefits:
     description: One partner handles design, build, installation, and support.
 ---
 
-AMD Automation excels at solving manufacturing challenges that don't fit standard automation solutions. When you need something that doesn't exist, we create it.
+AMD Machines excels at solving manufacturing challenges that don't fit standard automation solutions. When you need something that doesn't exist, we create it.
 
 ## Why Custom?
 

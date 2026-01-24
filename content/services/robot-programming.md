@@ -1,5 +1,5 @@
 ---
-title: Robot Programming Services | Online & Offline Programming | AMD Automation
+title: Robot Programming Services | Online & Offline Programming | AMD Machines
 description: "Expert robot programming services for FANUC, ABB, KUKA, Yaskawa & Universal Robots. Online, offline, and teach pendant programming with path optimization."
 keywords: robot programming, FANUC programming, ABB programming, KUKA programming, offline programming, teach pendant, robot simulation, path optimization
 template: page.html
@@ -9,7 +9,7 @@ label: Programming
 url: /services/robot-programming/
 ---
 
-Unlock the full potential of your robotic systems with AMD Automation's expert programming services. Whether you need new programs developed, existing programs optimized, or your team trained in programming best practices, our certified robot programmers deliver results.
+Unlock the full potential of your robotic systems with AMD Machines's expert programming services. Whether you need new programs developed, existing programs optimized, or your team trained in programming best practices, our certified robot programmers deliver results.
 
 ## Programming Capabilities
 

@@ -31,7 +31,7 @@ challenges:
     description: Systems designed for production programs spanning decades.
 ---
 
-Aerospace manufacturing demands uncompromising quality, complete traceability, and systems built to support long production programs. AMD Automation delivers automation solutions that meet these exacting requirements.
+Aerospace manufacturing demands uncompromising quality, complete traceability, and systems built to support long production programs. AMD Machines delivers automation solutions that meet these exacting requirements.
 
 ## AS9100 Quality
 

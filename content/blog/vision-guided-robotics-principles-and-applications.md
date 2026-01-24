@@ -2,10 +2,10 @@
 title: 'Vision-Guided Robotics: Principles and Applications'
 description: Machine vision has transformed from a specialized technology to a mainstream
   manufacturing tool. Modern systems combine high-resolution imaging, powerful.
-keywords: industrial automation, manufacturing automation, AMD Automation, machine
+keywords: industrial automation, manufacturing automation, AMD Machines, machine
   vision, industrial vision, automated inspection, vision, guided, robotics
 date: '2025-12-05'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Vision & QC
 read_time: 5
 template: blog-post.html
@@ -58,6 +58,6 @@ For successful vision system deployment:
 - Build in adequate time for algorithm development and tuning
 - Train operators to understand and respond to vision system outputs
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

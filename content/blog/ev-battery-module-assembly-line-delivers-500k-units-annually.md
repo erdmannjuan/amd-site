@@ -2,10 +2,10 @@
 title: EV Battery Module Assembly Line Delivers 500K Units Annually
 description: This topic represents an important consideration for manufacturers seeking
   to improve their operations through automation. Understanding the fundamentals.
-keywords: industrial automation, manufacturing automation, AMD Automation, automation
+keywords: industrial automation, manufacturing automation, AMD Machines, automation
   case study, manufacturing success, automation implementation, battery, module, assembly
 date: '2024-12-14'
-author: AMD Automation Team
+author: AMD Machines Team
 category: Business
 read_time: 5
 template: blog-post.html
@@ -62,6 +62,6 @@ Here's how to get started:
 - Plan a phased implementation approach
 - Build internal capabilities for long-term success
 
-## Partner With AMD Automation
+## Partner With AMD Machines
 
-AMD Automation brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.

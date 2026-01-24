@@ -1,4 +1,4 @@
-# AMD Automation - SEO Alt Text Guidelines
+# AMD Machines - SEO Alt Text Guidelines
 
 ## Alt Text Pattern Templates
 

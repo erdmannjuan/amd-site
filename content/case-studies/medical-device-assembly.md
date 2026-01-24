@@ -1,6 +1,6 @@
 ---
 title: "Medical Device Assembly Line Achieves ISO 13485 Compliance"
-description: "AMD Automation delivers cleanroom-compatible surgical instrument assembly system with 100% traceability and 0.1mm precision for FDA-regulated manufacturing."
+description: "AMD Machines delivers cleanroom-compatible surgical instrument assembly system with 100% traceability and 0.1mm precision for FDA-regulated manufacturing."
 template: case-study.html
 industry: "Medical Devices"
 tagline: "Cleanroom-compatible assembly system for surgical instruments with full traceability"
@@ -27,7 +27,7 @@ challenge:
     - "Multiple inspection points with documented quality gates"
     - "Validation protocols (IQ/OQ/PQ) required before production"
 solution:
-  summary: "AMD Automation designed a modular assembly system integrating precision robotics, vision inspection, and a comprehensive data collection architecture that satisfies FDA regulatory requirements while achieving production targets."
+  summary: "AMD Machines designed a modular assembly system integrating precision robotics, vision inspection, and a comprehensive data collection architecture that satisfies FDA regulatory requirements while achieving production targets."
   components:
     - name: "Cleanroom-Compatible Robots"
       description: "FANUC CR-7iA/L collaborative robots with ISO Class 5 rated covers and FDA-compliant lubricants for operation in controlled environments."
@@ -149,6 +149,6 @@ The FDA inspection following validation resulted in zero Form 483 observations�
 
 ## Customer Testimonial
 
-> "AMD Automation understood our regulatory requirements from day one. They didn't just build a machine—they delivered a validated manufacturing system that passed FDA inspection with flying colors. The electronic DHR has transformed our quality operations."
+> "AMD Machines understood our regulatory requirements from day one. They didn't just build a machine—they delivered a validated manufacturing system that passed FDA inspection with flying colors. The electronic DHR has transformed our quality operations."
 >
 > — *VP of Operations, Medical Device Manufacturer*

@@ -1,5 +1,5 @@
 ---
-title: Defense Industry Automation | Military Manufacturing | AMD Automation
+title: Defense Industry Automation | Military Manufacturing | AMD Machines
 description: "Automation for defense and military manufacturing: munitions assembly, vehicle components, electronics, and aerospace defense systems."
 keywords: defense manufacturing automation, military equipment automation, munitions assembly, defense contractor automation, military vehicle manufacturing
 template: industry.html
@@ -25,7 +25,7 @@ challenges:
     description: Military specifications require extensive process documentation and validation.
 ---
 
-Defense manufacturing demands automation that meets stringent security requirements, delivers zero-defect quality, and complies with military specifications. AMD Automation provides secure solutions for defense contractors and military equipment manufacturers.
+Defense manufacturing demands automation that meets stringent security requirements, delivers zero-defect quality, and complies with military specifications. AMD Machines provides secure solutions for defense contractors and military equipment manufacturers.
 
 ## Munitions and Ordnance
 

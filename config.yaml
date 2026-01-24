@@ -3,15 +3,15 @@
 # ===========================================
 
 site:
-  name: "AMD Automation"
+  name: "AMD Machines"
   tagline: "Custom Automated Manufacturing Solutions"
   url: "https://amdmachines.com"
   base_path: ""
-  author: "AMD Automation"
+  author: "AMD Machines"
 
 seo:
-  default_title_suffix: " | AMD Automation"
-  default_description: "AMD Automation designs and builds custom automated machines, robotic cells, and welding systems. 30+ years of manufacturing automation expertise."
+  default_title_suffix: " | AMD Machines"
+  default_description: "AMD Machines designs and builds custom automated machines, robotic cells, and welding systems. 30+ years of manufacturing automation expertise."
   default_keywords: "automation, robotic cells, welding automation, custom machines, manufacturing automation"
 
 navigation:

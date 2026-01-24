@@ -354,7 +354,7 @@ Think about where your business is heading:
 
 ### Consult Experienced Partners
 
-AMD Automation has implemented both [automation cells](/solutions/robotic-cells/) and integrated production lines across industries. We help clients evaluate options objectively based on their specific circumstances.
+AMD Machines has implemented both [automation cells](/solutions/robotic-cells/) and integrated production lines across industries. We help clients evaluate options objectively based on their specific circumstances.
 
 Our experience spans [automotive](/industries/automotive/), [medical devices](/industries/medical/), [aerospace](/industries/aerospace/), and other industries where both approaches deliver value in appropriate situations.
 

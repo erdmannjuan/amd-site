@@ -31,7 +31,7 @@ challenges:
     description: We deliver automation quickly to meet tight product launch schedules.
 ---
 
-Consumer products manufacturing requires automation that can handle product variety, seasonal demand swings, and constant pressure to reduce costs. AMD Automation builds flexible systems that meet these challenges.
+Consumer products manufacturing requires automation that can handle product variety, seasonal demand swings, and constant pressure to reduce costs. AMD Machines builds flexible systems that meet these challenges.
 
 ## Flexible Manufacturing
 

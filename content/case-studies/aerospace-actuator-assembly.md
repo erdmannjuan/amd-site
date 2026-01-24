@@ -27,7 +27,7 @@ challenge:
     - "Process validation required for every assembly operation"
     - "Zero defect tolerance for flight-critical components"
 solution:
-  summary: "AMD Automation designed a precision assembly cell with integrated torque monitoring, vision verification, and comprehensive data collection that meets aerospace quality requirements while improving throughput."
+  summary: "AMD Machines designed a precision assembly cell with integrated torque monitoring, vision verification, and comprehensive data collection that meets aerospace quality requirements while improving throughput."
   components:
     - name: "Precision Torque Assembly"
       description: "DC electric torque tools with real-time monitoring and automatic documentation of every fastener installation."
@@ -131,6 +131,6 @@ Any out-of-spec condition immediately stops production and alerts supervision.
 
 ## Customer Testimonial
 
-> "AMD Automation understood our AS9100 requirements and built a system that makes compliance automatic. We passed certification on the first attempt, and our customer audits have been flawless."
+> "AMD Machines understood our AS9100 requirements and built a system that makes compliance automatic. We passed certification on the first attempt, and our customer audits have been flawless."
 >
 > — *Quality Director, Aerospace Tier 1 Supplier*

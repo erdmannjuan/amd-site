@@ -31,7 +31,7 @@ challenges:
     description: We optimize automation investments to deliver strong ROI against competitive pricing targets.
 ---
 
-AMD Automation has deep roots in automotive manufacturing, serving OEMs and Tier 1, 2, and 3 suppliers for over 30 years. We understand the unique demands of automotive production: high volumes, tight quality standards, and relentless cost pressure.
+AMD Machines has deep roots in automotive manufacturing, serving OEMs and Tier 1, 2, and 3 suppliers for over 30 years. We understand the unique demands of automotive production: high volumes, tight quality standards, and relentless cost pressure.
 
 ## Automotive Automation Solutions
 
@@ -89,6 +89,6 @@ We've delivered automation solutions to leading automotive manufacturers and sup
 
 We serve suppliers at every level, from large Tier 1 system integrators to smaller Tier 3 component manufacturers. Our solutions scale to match your production volumes and investment requirements.
 
-Whether you need a single [robotic cell](/solutions/robotic-cells/) or a complete production line, AMD Automation delivers automotive-grade quality and reliability.
+Whether you need a single [robotic cell](/solutions/robotic-cells/) or a complete production line, AMD Machines delivers automotive-grade quality and reliability.
 
 **Ready to automate your automotive manufacturing?** [Contact us](/contact/) for a free consultation and quote.

@@ -1,5 +1,5 @@
 ---
-title: Automated Packaging Systems | Cartoning & Case Packing | AMD Automation
+title: Automated Packaging Systems | Cartoning & Case Packing | AMD Machines
 description: "End-of-line packaging automation including cartoning, case packing, wrapping, and palletizing. Increase throughput with reliable packaging systems."
 keywords: packaging automation, cartoning machines, case packing, robotic packaging, end of line automation, automated wrapping
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Quick changeover between package sizes and formats.
 ---
 
-Automated packaging systems handle your products from production through shipping-ready pallets. AMD Automation designs packaging lines that maintain your production throughput with reliable cartoning, case packing, and [palletizing](/solutions/palletizing/) systems.
+Automated packaging systems handle your products from production through shipping-ready pallets. AMD Machines designs packaging lines that maintain your production throughput with reliable cartoning, case packing, and [palletizing](/solutions/palletizing/) systems.
 
 ## Packaging Technologies
 

@@ -1,16 +1,16 @@
-# AMD Automation Website - Claude Context Prompt
+# AMD Machines Website - Claude Context Prompt
 
-Use this prompt when starting a new chat about the AMD Automation website.
+Use this prompt when starting a new chat about the AMD Machines website.
 
 ---
 
 ## PROMPT TO COPY:
 
 ```
-I need help with my AMD Automation website (amdautomation.com). Here's the context:
+I need help with my AMD Machines website (amdautomation.com). Here's the context:
 
 ## Site Overview
-- **Company**: AMD Automation - custom assembly machines and automation systems
+- **Company**: AMD Machines - custom assembly machines and automation systems
 - **Core Expertise**: Assembly Systems (this is our main specialty, highlighted on homepage)
 - **Domain**: amdautomation.com
 - **Repository**: github.com/erdmannjuan/amd-site

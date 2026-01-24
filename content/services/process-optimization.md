@@ -1,5 +1,5 @@
 ---
-title: Process Optimization Services | Manufacturing Efficiency | AMD Automation
+title: Process Optimization Services | Manufacturing Efficiency | AMD Machines
 description: "Optimize manufacturing processes for higher throughput and quality. Cycle time reduction, OEE improvement, and lean consulting."
 keywords: process optimization, manufacturing optimization, cycle time reduction, OEE improvement, lean manufacturing, production efficiency, throughput improvement
 template: page.html
@@ -9,7 +9,7 @@ label: Optimization
 url: /services/process-optimization/
 ---
 
-Transform your manufacturing performance with AMD Automation's process optimization services. Our engineers analyze your current operations and implement targeted improvements that deliver measurable results in throughput, quality, and cost reduction.
+Transform your manufacturing performance with AMD Machines's process optimization services. Our engineers analyze your current operations and implement targeted improvements that deliver measurable results in throughput, quality, and cost reduction.
 
 ## Optimization Services
 

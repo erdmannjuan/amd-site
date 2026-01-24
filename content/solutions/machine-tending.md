@@ -1,5 +1,5 @@
 ---
-title: Robotic Machine Tending | CNC Automation | AMD Automation
+title: Robotic Machine Tending | CNC Automation | AMD Machines
 description: "Automated machine tending for CNC machines, presses, and injection molding. 24/7 unattended operation with robotic loading."
 keywords: robotic machine tending, CNC automation, automated machine loading, robot machine tending, unattended machining, press tending
 template: solution.html
@@ -36,7 +36,7 @@ benefits:
     description: Remove operators from repetitive, ergonomically challenging tasks.
 ---
 
-Machine tending automation keeps your production equipment running with consistent, reliable part loading and unloading. AMD Automation designs [robotic cells](/solutions/robotic-cells/) that tend CNC machines, presses, and other production equipment for maximum utilization.
+Machine tending automation keeps your production equipment running with consistent, reliable part loading and unloading. AMD Machines designs [robotic cells](/solutions/robotic-cells/) that tend CNC machines, presses, and other production equipment for maximum utilization.
 
 ## Machine Tending Configurations
 

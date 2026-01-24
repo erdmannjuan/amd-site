@@ -27,7 +27,7 @@ challenge:
     - "Floor space constraints limiting expansion options"
     - "Need to maintain production during installation"
 solution:
-  summary: "AMD Automation designed a compact dual-robot welding cell with an integrated rotary positioner that maximizes floor space utilization while enabling continuous production through load/unload during welding cycles."
+  summary: "AMD Machines designed a compact dual-robot welding cell with an integrated rotary positioner that maximizes floor space utilization while enabling continuous production through load/unload during welding cycles."
   components:
     - name: "Dual FANUC Arc Mate Robots"
       description: "Two coordinated welding robots working simultaneously on opposite sides of the part, cutting cycle time in half compared to single-robot approaches."
@@ -97,7 +97,7 @@ related_case_studies:
 
 ## Project Overview
 
-A leading Tier-1 automotive supplier approached AMD Automation with a critical capacity challenge. Their suspension control arm production line was bottlenecked at the welding station, where skilled manual welders could only produce 120 parts per shift—far short of the 400+ parts their OEM customers now required.
+A leading Tier-1 automotive supplier approached AMD Machines with a critical capacity challenge. Their suspension control arm production line was bottlenecked at the welding station, where skilled manual welders could only produce 120 parts per shift—far short of the 400+ parts their OEM customers now required.
 
 The stakes were high: failure to meet demand would mean lost business worth over $15M annually.
 
@@ -130,6 +130,6 @@ The cell achieved full production rate within 30 days of installation, ahead of 
 
 ## Customer Testimonial
 
-> "AMD Automation delivered exactly what they promised—a turnkey solution that tripled our capacity without adding floor space. The quality improvement was an unexpected bonus that's saving us significant rework costs."
+> "AMD Machines delivered exactly what they promised—a turnkey solution that tripled our capacity without adding floor space. The quality improvement was an unexpected bonus that's saving us significant rework costs."
 >
 > — *Operations Director, Tier-1 Automotive Supplier*
