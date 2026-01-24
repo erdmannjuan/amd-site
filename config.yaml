@@ -163,6 +163,18 @@ navigation:
       - name: "Consulting"
         url: "/services/consulting/"
         description: "Feasibility studies & ROI analysis"
+  - name: "Tooling"
+    url: "/tooling/"
+    children:
+      - name: "Press Tooling"
+        url: "/tooling/#press-tooling"
+        description: "Progressive dies, transfer dies, servo press tooling"
+      - name: "Assembly Fixtures"
+        url: "/tooling/#assembly-fixtures"
+        description: "Custom jigs and fixtures for precision assembly"
+      - name: "Welding Fixtures"
+        url: "/tooling/#welding-fixtures"
+        description: "MIG, TIG & robotic welding jigs and positioners"
   - name: "Resources"
     url: "/blog/"
     children:

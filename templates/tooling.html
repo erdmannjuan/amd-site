@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Hero - Compact -->
+<section class="page-hero page-hero-compact">
+    <div class="container">
+        <span class="section-label">{{ page.label or "Tooling Services" }}</span>
+        <h1 class="page-title">{{ page.hero_title or "Custom Tooling Solutions" }}</h1>
+        <p class="page-subtitle">{{ page.hero_subtitle or "Design and manufacturing of press toolings, assembly fixtures, and welding jigs" }}</p>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="section">
+    <div class="container">
+        <div class="tooling-intro">
+            <div class="tooling-intro-content">
+                <h2>Precision Tooling for Manufacturing Excellence</h2>
+                <p>AMD Machines offers comprehensive tooling design and manufacturing services. From prototype toolings ready in <strong>4-6 weeks</strong> to production-grade tooling for high-volume manufacturing, we deliver solutions that ensure quality, repeatability, and efficiency.</p>
+                <p>With 30+ years of automation expertise, we understand how tooling integrates with your complete manufacturing process. Our in-house design and fabrication capabilities mean faster turnaround and tighter control over quality.</p>
+                <div class="tooling-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number">4-6</span>
+                        <span class="highlight-label">Weeks for Prototype Tooling</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">30+</span>
+                        <span class="highlight-label">Years Experience</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">100%</span>
+                        <span class="highlight-label">In-House Capability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tooling Types -->
+<section class="section section-alt" id="press-tooling">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Our Capabilities</span>
+            <h2 class="section-title">Tooling Solutions</h2>
+        </div>
+        <div class="tooling-cards">
+            <div class="tooling-card">
+                <div class="tooling-card-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <path d="M12 8v8M8 12h8"/>
+                    </svg>
+                </div>
+                <h3>Press Tooling</h3>
+                <p>Custom dies and tooling for stamping, forming, and pressing operations. We specialize in servo press tooling for precision force and position control.</p>
+                <ul class="tooling-features">
+                    <li>Progressive dies</li>
+                    <li>Transfer dies</li>
+                    <li>Compound dies</li>
+                    <li>Servo press tooling</li>
+                    <li>Stamping dies</li>
+                    <li>Forming tools</li>
+                </ul>
+            </div>
+            <div class="tooling-card" id="assembly-fixtures">
+                <div class="tooling-card-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                </div>
+                <h3>Assembly Fixtures</h3>
+                <p>Precision fixtures and jigs for manual or automated assembly operations. Designed for accuracy, repeatability, and operator efficiency.</p>
+                <ul class="tooling-features">
+                    <li>Assembly jigs</li>
+                    <li>Holding fixtures</li>
+                    <li>Locating fixtures</li>
+                    <li>Inspection fixtures</li>
+                    <li>Poka-yoke (error-proofing)</li>
+                    <li>Quick-change fixtures</li>
+                </ul>
+            </div>
+            <div class="tooling-card" id="welding-fixtures">
+                <div class="tooling-card-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>Welding Fixtures</h3>
+                <p>Robust fixtures for MIG, TIG, spot, and robotic welding applications. Designed to maintain part position during thermal distortion.</p>
+                <ul class="tooling-features">
+                    <li>MIG/TIG welding jigs</li>
+                    <li>Robotic welding fixtures</li>
+                    <li>Spot welding fixtures</li>
+                    <li>Positioners & manipulators</li>
+                    <li>Tack welding fixtures</li>
+                    <li>Multi-station fixtures</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Prototype vs Production -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Flexible Options</span>
+            <h2 class="section-title">Prototype or Production</h2>
+        </div>
+        <div class="comparison-grid">
+            <div class="comparison-card comparison-prototype">
+                <div class="comparison-badge">Fast Turnaround</div>
+                <h3>Prototype Tooling</h3>
+                <div class="comparison-leadtime">
+                    <span class="leadtime-number">4-6</span>
+                    <span class="leadtime-unit">Weeks</span>
+                </div>
+                <p>Perfect for validation, testing, and low-volume initial production runs.</p>
+                <ul class="comparison-features">
+                    <li>Rapid design iterations</li>
+                    <li>Cost-effective materials</li>
+                    <li>Proof of concept validation</li>
+                    <li>Process development</li>
+                    <li>Small batch production</li>
+                </ul>
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-outline">Get Prototype Quote</a>
+            </div>
+            <div class="comparison-card comparison-production">
+                <div class="comparison-badge">High Volume</div>
+                <h3>Production Tooling</h3>
+                <div class="comparison-leadtime">
+                    <span class="leadtime-number">8-12</span>
+                    <span class="leadtime-unit">Weeks</span>
+                </div>
+                <p>Built for durability and high-volume manufacturing with long service life.</p>
+                <ul class="comparison-features">
+                    <li>Production-grade materials</li>
+                    <li>Extended tool life</li>
+                    <li>High-volume capability</li>
+                    <li>Precision tolerances</li>
+                    <li>Full documentation</li>
+                </ul>
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary">Get Production Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why AMD Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Why Choose Us</span>
+            <h2 class="section-title">The AMD Advantage</h2>
+        </div>
+        <div class="advantages-grid">
+            <div class="advantage-item">
+                <div class="advantage-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                </div>
+                <h4>Fast Turnaround</h4>
+                <p>Prototype tooling in 4-6 weeks. Our in-house capabilities eliminate delays from external vendors.</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h4>Quality Assured</h4>
+                <p>ISO 9001:2015 processes ensure consistent quality from design through delivery.</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <h4>Automation Integration</h4>
+                <p>Tooling designed to integrate seamlessly with automated systems for maximum efficiency.</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h4>Expert Engineering</h4>
+                <p>Our team brings 30+ years of tooling and automation experience to every project.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content from markdown (if any) -->
+{% if content %}
+<section class="section">
+    <div class="container">
+        <div class="content-body content-card">
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section cta-accent">
+    <div class="container">
+        <h2>Ready to Discuss Your Tooling Project?</h2>
+        <p>Contact our engineering team to discuss your tooling requirements. We'll help you choose the right solution for your timeline and budget.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Tooling Quote</a>
+    </div>
+</section>
+{% endblock %}
