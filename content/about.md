@@ -3,7 +3,7 @@ title: About AMD Automation | 30+ Years of Custom Machine Building Excellence
 description: "AMD Automation: 30+ years building 2,500+ custom machines. Authorized ABB, Yaskawa, Universal Robots integrator for robotic cells and welding."
 keywords: about AMD Automation, custom machine builder, automation engineering company, robotic system integrator, ABB authorized integrator, Yaskawa integrator
 template: about.html
-hero_title: About AMD Automation
+hero_title: About AMD Machines
 hero_subtitle: Engineering excellence in custom automation for over 30 years
 label: About Us
 company_values:
