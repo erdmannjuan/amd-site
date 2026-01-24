@@ -53,3 +53,8 @@ Our 80,000 sq ft facility houses everything needed to design, build, and test co
 - **Collaborative Design** - Your input shapes the solution at every stage
 - **Quality Execution** - Careful fabrication, thorough testing, proper documentation
 - **Ongoing Support** - Training, service, and support for the life of your equipment
+
+<figure class="about-content-image">
+<img src="/static/images/AMDnow.png" alt="AMD Machines facility and team today" width="800" height="280" loading="lazy">
+<figcaption>AMD Machines today - 80,000 sq ft of design, fabrication, and testing capabilities</figcaption>
+</figure>
