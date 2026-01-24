@@ -29,6 +29,11 @@ certifications:
 
 AMD Automation was founded over 30 years ago with a clear mission: build custom automated machines that solve real manufacturing problems. We've earned our reputation one project at a time, delivering reliable automation systems that perform as promised.
 
+<figure class="about-content-image">
+<img src="/static/images/about-facility.jpg" alt="AMD Automation manufacturing facility with ABB industrial robot and parts handling system" width="800" height="280" loading="lazy">
+<figcaption>Our 80,000 sq ft facility houses complete design, fabrication, and testing capabilities</figcaption>
+</figure>
+
 ## Engineering-Driven
 
 At AMD, engineering isn't just a department—it's our culture. Every project begins with thorough analysis and creative problem-solving. Our team includes specialists in mechanical design, electrical controls, robotics, vision systems, and manufacturing processes.
