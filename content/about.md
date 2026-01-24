@@ -31,7 +31,7 @@ AMD Machines was founded over 30 years ago with a clear mission: build custom au
 
 <figure class="about-content-image">
 <img src="/static/images/story.png" alt="AMD Machines team and manufacturing facility" width="800" height="280" loading="lazy">
-<figcaption>Our 80,000 sq ft facility houses complete design, fabrication, and testing capabilities</figcaption>
+<figcaption>More than 30 years ago, we started by building small automatic assembly stations</figcaption>
 </figure>
 
 ## Engineering-Driven
