@@ -1,4 +1,17 @@
-# Cache static assets for 1 year (immutable content)
+# Security headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# HTML pages - short cache, must revalidate
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Cache static assets for 1 year (versioned via query string)
 /static/css/*
   Cache-Control: public, max-age=31536000, immutable
 
@@ -11,7 +24,3 @@
 # Cache fonts
 /static/fonts/*
   Cache-Control: public, max-age=31536000, immutable
-
-# HTML pages - cache briefly, revalidate
-/*
-  Cache-Control: public, max-age=3600, must-revalidate
