@@ -3,7 +3,10 @@
 {% block content %}
 <!-- Hero with Facility Image -->
 <section class="about-hero">
-    <div class="about-hero-bg" style="background-image: url('/static/images/facility-hero.jpg');"></div>
+    <picture class="about-hero-bg-picture">
+        <source srcset="/static/images/facility-hero.webp" type="image/webp">
+        <img src="/static/images/facility-hero.jpg" alt="" class="about-hero-bg-img">
+    </picture>
     <div class="about-hero-overlay"></div>
     <div class="container">
         <div class="about-hero-content">
@@ -36,7 +39,10 @@
         {% for story in page.story_sections %}
         <div class="story-block {% if loop.index is odd %}story-block-normal{% else %}story-block-reverse{% endif %} {% if loop.index == 3 %}story-block-tall{% endif %}">
             <div class="story-image {% if loop.index == 3 %}story-image-tall{% endif %}">
-                <img src="{{ story.image }}" alt="{{ story.image_alt }}" loading="{% if loop.index == 1 %}eager{% else %}lazy{% endif %}">
+                <picture>
+                    <source srcset="{{ story.image | replace('.jpeg', '.webp') }}" type="image/webp">
+                    <img src="{{ story.image }}" alt="{{ story.image_alt }}" loading="{% if loop.index == 1 %}eager{% else %}lazy{% endif %}">
+                </picture>
                 <span class="story-caption">{{ story.caption }}</span>
             </div>
             <div class="story-content">
