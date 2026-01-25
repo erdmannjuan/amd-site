@@ -1290,12 +1290,12 @@ img {
 
     .logos-track {
         gap: 2rem;
-        -webkit-animation-duration: 40s;
-        animation-duration: 40s;
+        -webkit-animation: scroll-logos 40s linear infinite;
+        animation: scroll-logos 40s linear infinite;
     }
 
     .logos-track img {
-        height: 22px;
+        height: 26px;
     }
 
     .logos-carousel-label {
