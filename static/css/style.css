@@ -1189,13 +1189,6 @@ img {
     opacity: 0.5;
     flex-shrink: 0;
     filter: grayscale(100%) brightness(0.3);
-    transition: filter 0.3s ease, opacity 0.3s ease;
-    will-change: filter, opacity;
-}
-
-.logos-track img:hover {
-    filter: grayscale(0%) brightness(1);
-    opacity: 1;
 }
 
 @keyframes scroll-logos {
