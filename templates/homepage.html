@@ -100,37 +100,45 @@
 <script>
 (function() {
     var track = document.querySelector('.logos-track');
-    var firstSet = track.querySelectorAll('img:not(.delayed)');
+    var isMobile = window.innerWidth <= 768;
     var delayedSet = track.querySelectorAll('img.delayed');
-    var loaded = 0;
-    var total = firstSet.length;
 
-    function onFirstSetLoaded() {
-        // Start animation immediately
+    if (!isMobile) {
+        // Desktop: load all images immediately, start animation
+        delayedSet.forEach(function(img) {
+            img.src = img.dataset.src;
+        });
         track.classList.add('animated');
-        // Load second set after 500ms
-        setTimeout(function() {
-            delayedSet.forEach(function(img) {
-                img.src = img.dataset.src;
-            });
-        }, 500);
-    }
+    } else {
+        // Mobile: wait for first set, then load rest
+        var firstSet = track.querySelectorAll('img:not(.delayed)');
+        var loaded = 0;
 
-    function checkFirstSet() {
-        loaded++;
-        if (loaded >= total) {
-            onFirstSetLoaded();
+        function onFirstSetLoaded() {
+            track.classList.add('animated');
+            setTimeout(function() {
+                delayedSet.forEach(function(img) {
+                    img.src = img.dataset.src;
+                });
+            }, 500);
         }
-    }
 
-    firstSet.forEach(function(img) {
-        if (img.complete) {
-            checkFirstSet();
-        } else {
-            img.addEventListener('load', checkFirstSet);
-            img.addEventListener('error', checkFirstSet);
+        function checkFirstSet() {
+            loaded++;
+            if (loaded >= firstSet.length) {
+                onFirstSetLoaded();
+            }
         }
-    });
+
+        firstSet.forEach(function(img) {
+            if (img.complete) {
+                checkFirstSet();
+            } else {
+                img.addEventListener('load', checkFirstSet);
+                img.addEventListener('error', checkFirstSet);
+            }
+        });
+    }
 })();
 </script>
 
