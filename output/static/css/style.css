@@ -693,9 +693,9 @@ img {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     font-family: var(--font-main);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     border: none;
@@ -1196,7 +1196,7 @@ img {
 .logos-carousel-label {
     text-align: left;
     color: var(--text);
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.5;
     margin-top: 1rem;
     max-width: var(--container-max);
@@ -1270,7 +1270,7 @@ img {
     }
 
     .logos-carousel-label {
-        font-size: 24px;
+        font-size: 22px;
         margin-top: 1rem;
         padding: 0 1.25rem;
         text-align: left;
@@ -5984,14 +5984,14 @@ button:disabled {
 }
 
 .finder-header h2 {
-    font-size: 2.25rem;
+    font-size: 2.1rem;
     color: var(--dark);
     margin-bottom: 0.75rem;
 }
 
 .finder-header p {
     color: var(--text);
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.5;
 }
 
@@ -6022,13 +6022,13 @@ button:disabled {
 .finder-label {
     font-weight: 600;
     color: var(--dark);
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.4;
     margin-bottom: 0.5rem;
 }
 
 .finder-desc {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.5;
     color: var(--text);
 }
@@ -6042,7 +6042,7 @@ button:disabled {
 
 .finder-footer p {
     color: var(--text);
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.5;
 }
 
