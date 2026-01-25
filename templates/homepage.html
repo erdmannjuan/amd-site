@@ -97,6 +97,28 @@
     </div>
     <p class="logos-carousel-label">Trusted by Manufacturers and Engineers Across North America for More than <span class="highlight-years">30 Years</span></p>
 </section>
+<script>
+(function() {
+    var track = document.querySelector('.logos-track');
+    var imgs = track.querySelectorAll('img');
+    var loaded = 0;
+    var total = imgs.length;
+    function checkAllLoaded() {
+        loaded++;
+        if (loaded >= total) {
+            track.classList.add('animated');
+        }
+    }
+    imgs.forEach(function(img) {
+        if (img.complete) {
+            checkAllLoaded();
+        } else {
+            img.addEventListener('load', checkAllLoaded);
+            img.addEventListener('error', checkAllLoaded);
+        }
+    });
+})();
+</script>
 
 <!-- Solutions Finder Quiz -->
 <section class="finder-section" id="solutions-finder">

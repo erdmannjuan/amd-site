@@ -1175,6 +1175,9 @@ img {
     align-items: center;
     gap: 3rem;
     width: max-content;
+}
+
+.logos-track.animated {
     -webkit-animation: scroll-logos 60s linear infinite;
     animation: scroll-logos 60s linear infinite;
 }
@@ -1290,6 +1293,9 @@ img {
 
     .logos-track {
         gap: 2rem;
+    }
+
+    .logos-track.animated {
         -webkit-animation: scroll-logos 40s linear infinite;
         animation: scroll-logos 40s linear infinite;
     }
