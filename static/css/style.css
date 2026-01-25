@@ -1174,8 +1174,13 @@ img {
     flex-wrap: nowrap;
     align-items: center;
     gap: 3rem;
-    animation: scroll-logos 60s linear infinite;
+    animation: scroll-logos 30s linear infinite;
     width: max-content;
+}
+
+/* Pause animation on hover for better UX */
+.logos-carousel-section:hover .logos-track {
+    animation-play-state: paused;
 }
 
 .logos-track img {
@@ -1185,6 +1190,7 @@ img {
     flex-shrink: 0;
     filter: grayscale(100%) brightness(0.3);
     transition: filter 0.3s ease, opacity 0.3s ease;
+    will-change: filter, opacity;
 }
 
 .logos-track img:hover {
