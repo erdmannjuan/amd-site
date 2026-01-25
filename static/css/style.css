@@ -5908,39 +5908,47 @@ button:disabled {
 }
 
 .logos-carousel-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .logos-carousel {
     display: flex;
     align-items: center;
-    gap: 3rem;
-    animation: scroll-logos 40s linear infinite;
-    width: max-content;
+    justify-content: center;
+    gap: 2.5rem;
 }
 
-.logos-carousel img {
+.logo-slot {
+    position: relative;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-slot img {
     height: 28px;
     width: auto;
+    max-width: 120px;
     opacity: 0.5;
-    flex-shrink: 0;
-    transition: opacity 0.2s ease;
     filter: grayscale(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.logos-carousel img:hover {
+.logo-slot img.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.logo-slot img.fade-in {
+    opacity: 0.5;
+    transform: translateY(0);
+}
+
+.logo-slot img:hover {
     opacity: 0.8;
-}
-
-@keyframes scroll-logos {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
 }
 
 @media (max-width: 768px) {
@@ -5954,12 +5962,12 @@ button:disabled {
     }
 
     .logos-carousel {
-        gap: 2rem;
-        animation-duration: 30s;
+        gap: 1.5rem;
     }
 
-    .logos-carousel img {
+    .logo-slot img {
         height: 22px;
+        max-width: 80px;
     }
 }
 

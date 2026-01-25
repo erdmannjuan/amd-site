@@ -24,44 +24,83 @@
     <p class="logos-carousel-label">Trusted by Manufacturers and Engineers Across North America</p>
     <div class="logos-carousel-wrapper">
         <div class="logos-carousel" id="logosCarousel">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/bosch.png" alt="Bosch" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/panasonic.png" alt="Panasonic" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/valeo.png" alt="Valeo" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/thyssenkrupp.png" alt="ThyssenKrupp" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/hitachi.png" alt="Hitachi" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/mazda.png" alt="Mazda" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/tenneco.png" alt="Tenneco" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/aam.png" alt="AAM" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/grammer.png" alt="Grammer" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/monroe.png" alt="Monroe" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/vibracoustic.png" alt="Vibracoustic" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/bticino.png" alt="BTicino" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/woco.png" alt="Woco" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/borgwarner.png" alt="BorgWarner" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/pferd.png" alt="Pferd" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/ats-automation.png" alt="ATS Automation" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/brose.png" alt="Brose" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/hella.png" alt="Hella" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/eaton.png" alt="Eaton" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/faurecia.png" alt="Faurecia" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/flex-n-gate.png" alt="Flex-N-Gate" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/gabriel.png" alt="Gabriel" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/imi-norgren.png" alt="IMI Norgren" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/kaeser.png" alt="Kaeser" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/kostal.png" alt="Kostal" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/meritor.png" alt="Meritor" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/shape.png" alt="Shape" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/sensata.png" alt="Sensata" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/mitutoyo.png" alt="Mitutoyo" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/texas-instruments.png" alt="Texas Instruments" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/mabe.png" alt="Mabe" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/bbs.png" alt="BBS" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/abctechnologies.png" alt="ABC Technologies" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/plastikon.png" alt="Plastikon" loading="lazy">
-            <img src="{{ config.site.base_path }}/static/images/logos-color/arburg.png" alt="Arburg" loading="lazy">
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/bosch.png" alt="Bosch"></div>
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/panasonic.png" alt="Panasonic"></div>
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/valeo.png" alt="Valeo"></div>
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/hitachi.png" alt="Hitachi"></div>
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/mazda.png" alt="Mazda"></div>
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/tenneco.png" alt="Tenneco"></div>
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/borgwarner.png" alt="BorgWarner"></div>
+            <div class="logo-slot"><img src="{{ config.site.base_path }}/static/images/logos-color/eaton.png" alt="Eaton"></div>
         </div>
     </div>
 </section>
+<script>
+(function() {
+    var allLogos = [
+        '{{ config.site.base_path }}/static/images/logos-color/bosch.png',
+        '{{ config.site.base_path }}/static/images/logos-color/panasonic.png',
+        '{{ config.site.base_path }}/static/images/logos-color/valeo.png',
+        '{{ config.site.base_path }}/static/images/logos-color/hitachi.png',
+        '{{ config.site.base_path }}/static/images/logos-color/mazda.png',
+        '{{ config.site.base_path }}/static/images/logos-color/tenneco.png',
+        '{{ config.site.base_path }}/static/images/logos-color/borgwarner.png',
+        '{{ config.site.base_path }}/static/images/logos-color/eaton.png',
+        '{{ config.site.base_path }}/static/images/logos-color/thyssenkrupp.png',
+        '{{ config.site.base_path }}/static/images/logos-color/aam.png',
+        '{{ config.site.base_path }}/static/images/logos-color/grammer.png',
+        '{{ config.site.base_path }}/static/images/logos-color/monroe.png',
+        '{{ config.site.base_path }}/static/images/logos-color/vibracoustic.png',
+        '{{ config.site.base_path }}/static/images/logos-color/bticino.png',
+        '{{ config.site.base_path }}/static/images/logos-color/woco.png',
+        '{{ config.site.base_path }}/static/images/logos-color/pferd.png',
+        '{{ config.site.base_path }}/static/images/logos-color/ats-automation.png',
+        '{{ config.site.base_path }}/static/images/logos-color/brose.png',
+        '{{ config.site.base_path }}/static/images/logos-color/hella.png',
+        '{{ config.site.base_path }}/static/images/logos-color/faurecia.png',
+        '{{ config.site.base_path }}/static/images/logos-color/flex-n-gate.png',
+        '{{ config.site.base_path }}/static/images/logos-color/gabriel.png',
+        '{{ config.site.base_path }}/static/images/logos-color/imi-norgren.png',
+        '{{ config.site.base_path }}/static/images/logos-color/kaeser.png',
+        '{{ config.site.base_path }}/static/images/logos-color/kostal.png',
+        '{{ config.site.base_path }}/static/images/logos-color/meritor.png',
+        '{{ config.site.base_path }}/static/images/logos-color/shape.png',
+        '{{ config.site.base_path }}/static/images/logos-color/sensata.png',
+        '{{ config.site.base_path }}/static/images/logos-color/mitutoyo.png',
+        '{{ config.site.base_path }}/static/images/logos-color/texas-instruments.png',
+        '{{ config.site.base_path }}/static/images/logos-color/mabe.png',
+        '{{ config.site.base_path }}/static/images/logos-color/bbs.png',
+        '{{ config.site.base_path }}/static/images/logos-color/abctechnologies.png',
+        '{{ config.site.base_path }}/static/images/logos-color/plastikon.png',
+        '{{ config.site.base_path }}/static/images/logos-color/arburg.png'
+    ];
+    var visibleCount = 8;
+    var currentIndex = visibleCount;
+    var slots = document.querySelectorAll('.logo-slot');
+
+    function swapLogo() {
+        var slotIndex = Math.floor(Math.random() * visibleCount);
+        var slot = slots[slotIndex];
+        var img = slot.querySelector('img');
+
+        img.classList.add('fade-out');
+
+        setTimeout(function() {
+            img.src = allLogos[currentIndex];
+            img.classList.remove('fade-out');
+            img.classList.add('fade-in');
+
+            currentIndex = (currentIndex + 1) % allLogos.length;
+
+            setTimeout(function() {
+                img.classList.remove('fade-in');
+            }, 500);
+        }, 500);
+    }
+
+    setInterval(swapLogo, 2000);
+})();
+</script>
 
 <!-- Solutions Finder Quiz -->
 <section class="finder-section" id="solutions-finder">
@@ -369,11 +408,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Duplicate logos carousel for seamless loop
-    var carousel = document.getElementById('logosCarousel');
-    if (carousel) {
-        carousel.innerHTML += carousel.innerHTML;
-    }
 });
 </script>
 {% endblock %}
