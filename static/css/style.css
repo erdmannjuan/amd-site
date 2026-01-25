@@ -1170,33 +1170,42 @@ img {
 }
 
 .logos-track {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
+    width: max-content;
+    -webkit-animation: scroll-logos 60s linear infinite;
+    animation: scroll-logos 60s linear infinite;
+}
+
+.logos-track img {
     height: 28px;
-    width: 100%;
-    background-image: url('/static/images/logos-sprite.webp');
-    background-repeat: repeat-x;
-    background-size: 5476px 28px;
-    background-position: 0 center;
+    width: auto;
     opacity: 0.5;
+    flex-shrink: 0;
     filter: grayscale(100%) brightness(0.3);
-    -webkit-animation: scroll-logos-sprite 60s linear infinite;
-    animation: scroll-logos-sprite 60s linear infinite;
 }
 
-@-webkit-keyframes scroll-logos-sprite {
+@-webkit-keyframes scroll-logos {
     0% {
-        background-position: 0 center;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
     100% {
-        background-position: -5476px center;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
     }
 }
 
-@keyframes scroll-logos-sprite {
+@keyframes scroll-logos {
     0% {
-        background-position: 0 center;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
     100% {
-        background-position: -5476px center;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
     }
 }
 
@@ -1280,18 +1289,30 @@ img {
     }
 
     .logos-track {
+        /* Switch to sprite on mobile to fix iOS disappearing images */
+        display: block;
+        width: 100%;
         height: 22px;
+        background-image: url('/static/images/logos-sprite.webp');
+        background-repeat: repeat-x;
         background-size: 4303px 22px;
-        -webkit-animation-duration: 40s;
-        animation-duration: 40s;
+        background-position: 0 center;
+        opacity: 0.5;
+        filter: grayscale(100%) brightness(0.3);
+        -webkit-animation: scroll-logos-mobile 40s linear infinite;
+        animation: scroll-logos-mobile 40s linear infinite;
     }
 
-    @-webkit-keyframes scroll-logos-sprite {
+    .logos-track img {
+        display: none;
+    }
+
+    @-webkit-keyframes scroll-logos-mobile {
         0% { background-position: 0 center; }
         100% { background-position: -4303px center; }
     }
 
-    @keyframes scroll-logos-sprite {
+    @keyframes scroll-logos-mobile {
         0% { background-position: 0 center; }
         100% { background-position: -4303px center; }
     }
