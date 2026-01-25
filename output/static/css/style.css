@@ -1177,7 +1177,7 @@ img {
 }
 
 .logos-track img {
-    height: 36px;
+    height: 31px;
     width: auto;
     opacity: 0.5;
     flex-shrink: 0;
@@ -1266,7 +1266,7 @@ img {
     }
 
     .logos-track img {
-        height: 28px;
+        height: 24px;
     }
 
     .logos-carousel-label {
