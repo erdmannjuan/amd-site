@@ -1182,6 +1182,11 @@ img {
     animation: scroll-logos 60s linear infinite;
 }
 
+.logos-track.js-animated {
+    animation: none !important;
+    -webkit-animation: none !important;
+}
+
 .logos-track img {
     height: 28px;
     width: auto;

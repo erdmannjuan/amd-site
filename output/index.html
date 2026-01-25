@@ -610,7 +610,30 @@
 <script>
 (function() {
     var track = document.querySelector('.logos-track');
-    track.classList.add('animated');
+    var isMobile = window.innerWidth <= 768;
+
+    if (!isMobile) {
+        track.classList.add('animated');
+    } else {
+        // JS animation for mobile to prevent iOS image unloading
+        track.classList.add('js-animated');
+        var position = 0;
+        var speed = 50; // pixels per second
+        var lastTime = performance.now();
+        var trackWidth = track.scrollWidth / 2;
+
+        function animate(currentTime) {
+            var delta = (currentTime - lastTime) / 1000;
+            lastTime = currentTime;
+            position -= speed * delta;
+            if (position <= -trackWidth) {
+                position += trackWidth;
+            }
+            track.style.transform = 'translateX(' + position + 'px)';
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    }
 })();
 </script>
 
