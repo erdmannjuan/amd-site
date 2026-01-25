@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 
+{% block head_extra %}
+<!-- Preload LCP hero image for about page -->
+<link rel="preload" href="/static/images/facility-hero-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+<link rel="preload" href="/static/images/facility-hero.webp" as="image" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
+{% endblock %}
+
 {% block content %}
 <!-- Hero with Facility Image -->
 <section class="about-hero">
     <picture class="about-hero-bg-picture">
-        <source srcset="/static/images/facility-hero.webp" type="image/webp">
-        <img src="/static/images/facility-hero.jpg" alt="" class="about-hero-bg-img">
+        <source srcset="/static/images/facility-hero-mobile.webp 800w, /static/images/facility-hero.webp 1920w" sizes="100vw" type="image/webp">
+        <img src="/static/images/facility-hero.jpg" alt="" class="about-hero-bg-img" width="1920" height="888" fetchpriority="high" decoding="async">
     </picture>
     <div class="about-hero-overlay"></div>
     <div class="container">
@@ -41,7 +47,7 @@
             <div class="story-image {% if loop.index == 3 %}story-image-tall{% endif %}">
                 <picture>
                     <source srcset="{{ story.image | replace('.jpeg', '.webp') }}" type="image/webp">
-                    <img src="{{ story.image }}" alt="{{ story.image_alt }}" loading="{% if loop.index == 1 %}eager{% else %}lazy{% endif %}">
+                    <img src="{{ story.image }}" alt="{{ story.image_alt }}" loading="{% if loop.index == 1 %}eager{% else %}lazy{% endif %}" decoding="async" width="900" height="450">
                 </picture>
                 <span class="story-caption">{{ story.caption }}</span>
             </div>

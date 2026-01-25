@@ -111,6 +111,10 @@
     <link rel="stylesheet" href="/static/css/style.css?v=20260125">
 
     
+<!-- Preload LCP hero image for about page -->
+<link rel="preload" href="/static/images/facility-hero-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
+<link rel="preload" href="/static/images/facility-hero.webp" as="image" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
+
 </head>
 <body>
     <!-- Combined Sticky Header Wrapper -->
@@ -536,8 +540,8 @@
 <!-- Hero with Facility Image -->
 <section class="about-hero">
     <picture class="about-hero-bg-picture">
-        <source srcset="/static/images/facility-hero.webp" type="image/webp">
-        <img src="/static/images/facility-hero.jpg" alt="" class="about-hero-bg-img">
+        <source srcset="/static/images/facility-hero-mobile.webp 800w, /static/images/facility-hero.webp 1920w" sizes="100vw" type="image/webp">
+        <img src="/static/images/facility-hero.jpg" alt="" class="about-hero-bg-img" width="1920" height="888" fetchpriority="high" decoding="async">
     </picture>
     <div class="about-hero-overlay"></div>
     <div class="container">
@@ -583,7 +587,7 @@
             <div class="story-image ">
                 <picture>
                     <source srcset="/static/images/STORY/2012.webp" type="image/webp">
-                    <img src="/static/images/STORY/2012.jpeg" alt="AMD Machines early team in our first workshop" loading="eager">
+                    <img src="/static/images/STORY/2012.jpeg" alt="AMD Machines early team in our first workshop" loading="eager" decoding="async" width="900" height="450">
                 </picture>
                 <span class="story-caption">Where it all started — our founding team in the original workshop</span>
             </div>
@@ -597,7 +601,7 @@
             <div class="story-image ">
                 <picture>
                     <source srcset="/static/images/STORY/2015.webp" type="image/webp">
-                    <img src="/static/images/STORY/2015.jpeg" alt="Growing AMD Machines team shipping automation equipment" loading="lazy">
+                    <img src="/static/images/STORY/2015.jpeg" alt="Growing AMD Machines team shipping automation equipment" loading="lazy" decoding="async" width="900" height="450">
                 </picture>
                 <span class="story-caption">Our expanded team preparing systems for shipment</span>
             </div>
@@ -611,7 +615,7 @@
             <div class="story-image story-image-tall">
                 <picture>
                     <source srcset="/static/images/STORY/2018.webp" type="image/webp">
-                    <img src="/static/images/STORY/2018.jpeg" alt="AMD Machines team in front of our new dedicated facility" loading="lazy">
+                    <img src="/static/images/STORY/2018.jpeg" alt="AMD Machines team in front of our new dedicated facility" loading="lazy" decoding="async" width="900" height="450">
                 </picture>
                 <span class="story-caption">Moving into our new facility — the team that built AMD into an industry leader</span>
             </div>
@@ -625,7 +629,7 @@
             <div class="story-image ">
                 <picture>
                     <source srcset="/static/images/STORY/2023.webp" type="image/webp">
-                    <img src="/static/images/STORY/2023.jpeg" alt="AMD Machines team and expanded facilities with new branding" loading="lazy">
+                    <img src="/static/images/STORY/2023.jpeg" alt="AMD Machines team and expanded facilities with new branding" loading="lazy" decoding="async" width="900" height="450">
                 </picture>
                 <span class="story-caption">AMD Machines today — a full-service automation partner with 70,000 sq ft across three facilities</span>
             </div>
