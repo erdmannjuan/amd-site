@@ -1178,11 +1178,6 @@ img {
     width: max-content;
 }
 
-/* Pause animation on hover for better UX */
-.logos-carousel-section:hover .logos-track {
-    animation-play-state: paused;
-}
-
 .logos-track img {
     height: 28px;
     width: auto;
