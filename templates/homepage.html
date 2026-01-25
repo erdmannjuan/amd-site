@@ -7,7 +7,7 @@
     <div class="container">
         <div class="hero-content">
             <h1 class="hero-title">{{ page.hero_title or "Custom Automated Manufacturing Solutions" }}</h1>
-            <p class="hero-subtitle">{{ page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals" }}</p>
+            <p class="hero-subtitle">{{ (page.hero_subtitle or "From concept to execution, we design and build automated systems that power your production goals")|safe }}</p>
             <div class="hero-buttons">
                 <a href="#solutions-finder" class="btn btn-green">Find Your Solution</a>
                 <a href="{{ config.site.base_path }}/contact/" class="btn btn-orange">Request a Quote →</a>
