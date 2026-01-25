@@ -1137,6 +1137,19 @@ img {
     gap: 1rem;
 }
 
+.hero-social-proof {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-proof-text {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+}
+
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
@@ -1177,6 +1190,15 @@ img {
 
     .hero-sidebar {
         margin: 0;
+    }
+
+    .hero-social-proof {
+        margin-top: 1.5rem;
+        justify-content: flex-start;
+    }
+
+    .social-proof-text {
+        font-size: 0.875rem;
     }
 }
 
