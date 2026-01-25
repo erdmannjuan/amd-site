@@ -1171,6 +1171,8 @@ img {
 
 .logos-track {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 3rem;
     animation: scroll-logos 60s linear infinite;
     width: max-content;
