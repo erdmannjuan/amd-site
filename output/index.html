@@ -616,16 +616,11 @@
     var total = firstSet.length;
 
     function onFirstSetLoaded() {
-        // After first set loads, wait 500ms then load delayed set
+        // Start animation immediately
+        track.classList.add('animated');
+        // Load second set after 500ms
         setTimeout(function() {
-            var delayedLoaded = 0;
             delayedSet.forEach(function(img) {
-                img.onload = img.onerror = function() {
-                    delayedLoaded++;
-                    if (delayedLoaded >= delayedSet.length) {
-                        track.classList.add('animated');
-                    }
-                };
                 img.src = img.dataset.src;
             });
         }, 500);
