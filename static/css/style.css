@@ -5892,6 +5892,60 @@ button:disabled {
    Homepage Engagement Components
    ================================ */
 
+/* Customer Logos Section */
+.customer-logos {
+    padding: 3rem 0;
+    background: var(--primary);
+}
+
+.logos-label {
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 3rem;
+}
+
+.logo-item {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.logo-item:hover {
+    opacity: 1;
+}
+
+.logo-item img {
+    height: 32px;
+    width: auto;
+    max-width: 120px;
+}
+
+@media (max-width: 768px) {
+    .customer-logos {
+        padding: 2rem 0;
+    }
+
+    .logos-grid {
+        gap: 1.5rem 2rem;
+    }
+
+    .logo-item img {
+        height: 24px;
+        max-width: 100px;
+    }
+}
+
 /* Solutions Finder Quiz */
 .finder-section {
     padding: 4rem 0;
