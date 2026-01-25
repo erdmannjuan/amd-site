@@ -1288,8 +1288,8 @@ img {
     }
 
     .logos-track.animated {
-        -webkit-animation: scroll-logos 40s linear infinite;
-        animation: scroll-logos 40s linear infinite;
+        -webkit-animation: scroll-logos 20s linear infinite;
+        animation: scroll-logos 20s linear infinite;
     }
 
     .logos-track img {
