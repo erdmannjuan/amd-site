@@ -1192,6 +1192,10 @@ img {
     filter: grayscale(100%) brightness(0.3);
 }
 
+.logos-track img.delayed:not([src]) {
+    display: none;
+}
+
 @-webkit-keyframes scroll-logos {
     0% { left: 0; }
     100% { left: -50%; }
