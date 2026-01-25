@@ -24,18 +24,72 @@
     </div>
 </section>
 
-<!-- Main Content - Compact Card -->
-<section class="section">
+<!-- Story Timeline Section -->
+{% if page.story_sections %}
+<section class="section about-story-section">
     <div class="container">
-        <div class="about-content-card">
-            {{ content | safe }}
+        <div class="section-header">
+            <span class="section-label">Our Journey</span>
+            <h2 class="section-title">The AMD Story</h2>
+        </div>
+
+        {% for story in page.story_sections %}
+        <div class="story-block {% if loop.index is odd %}story-block-normal{% else %}story-block-reverse{% endif %}">
+            <div class="story-image">
+                <img src="{{ story.image }}" alt="{{ story.image_alt }}" loading="{% if loop.index == 1 %}eager{% else %}lazy{% endif %}">
+                <span class="story-caption">{{ story.caption }}</span>
+            </div>
+            <div class="story-content">
+                <h3 class="story-title">{{ story.title }}</h3>
+                <p class="story-text">{{ story.content }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Facilities Section -->
+{% if page.facilities_content %}
+<section class="section section-alt">
+    <div class="container">
+        <div class="facilities-block">
+            <div class="facilities-content">
+                <span class="section-label">Our Facilities</span>
+                <h2>World-Class Manufacturing Capabilities</h2>
+                <p>{{ page.facilities_content }}</p>
+            </div>
+            {% if page.approach %}
+            <div class="approach-grid">
+                {% for item in page.approach %}
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        {% if loop.index == 1 %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        {% elif loop.index == 2 %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        {% elif loop.index == 3 %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                        {% else %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        {% endif %}
+                    </div>
+                    <div class="approach-text">
+                        <strong>{{ item.title }}</strong>
+                        <span>{{ item.description }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </div>
 </section>
+{% endif %}
 
 <!-- Values Section -->
 {% if page.company_values %}
-<section class="section section-alt">
+<section class="section">
     <div class="container">
         <div class="section-header">
             <span class="section-label">What Drives Us</span>
@@ -66,7 +120,7 @@
 
 <!-- Certifications -->
 {% if page.certifications %}
-<section class="section">
+<section class="section section-alt">
     <div class="container">
         <div class="section-header">
             <span class="section-label">Partnerships</span>
