@@ -1298,6 +1298,10 @@ img {
         height: 26px;
     }
 
+    .logos-track img.hide-mobile {
+        display: none;
+    }
+
     .logos-carousel-label {
         font-size: 22px;
         margin-top: 1rem;
