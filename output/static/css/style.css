@@ -4690,6 +4690,149 @@ button:disabled {
 /* ================================
    About Page Styles
    ================================ */
+
+/* About Hero with Facility Image */
+.about-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,48,135,0.85) 0%, rgba(0,32,102,0.75) 100%);
+    z-index: 2;
+}
+
+.about-hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.about-hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.about-hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.section-label-light {
+    color: var(--accent-teal);
+    background: rgba(0,183,133,0.15);
+}
+
+.about-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.about-hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-hero-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.about-hero-stat {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(10px);
+    min-width: 120px;
+}
+
+.about-hero-stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.about-hero-stat-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 968px) {
+    .about-hero {
+        min-height: 400px;
+    }
+
+    .about-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-hero-text {
+        max-width: 100%;
+    }
+
+    .about-hero-title {
+        font-size: 2.25rem;
+    }
+
+    .about-hero-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-hero-stat {
+        min-width: 100px;
+        padding: 1rem;
+    }
+
+    .about-hero-stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-stats {
+        gap: 1rem;
+    }
+
+    .about-hero-stat {
+        flex: 1 1 40%;
+        min-width: auto;
+    }
+}
+
+/* Legacy stats section (keeping for backwards compat) */
 .about-stats-section {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     padding: 3rem 0;
@@ -4923,17 +5066,17 @@ button:disabled {
 
 /* Story Timeline Section */
 .about-story-section {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .story-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
     align-items: center;
-    margin-bottom: 4rem;
-    padding-bottom: 4rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--border-light);
 }
 
@@ -4960,11 +5103,17 @@ button:disabled {
 
 .story-image img {
     width: 100%;
-    height: 320px;
+    height: 280px;
     object-fit: cover;
     object-position: center;
     display: block;
     transition: transform 0.4s ease;
+}
+
+/* Taller image for third story block (team + logo) */
+.story-image-tall img {
+    height: 380px;
+    object-position: top;
 }
 
 .story-block:hover .story-image img {
@@ -5097,7 +5246,7 @@ button:disabled {
 @media (max-width: 968px) {
     .story-block {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .story-block-reverse {
@@ -5105,7 +5254,11 @@ button:disabled {
     }
 
     .story-image img {
-        height: 280px;
+        height: 240px;
+    }
+
+    .story-image-tall img {
+        height: 300px;
     }
 
     .facilities-block {
@@ -5124,12 +5277,16 @@ button:disabled {
 
 @media (max-width: 600px) {
     .story-block {
-        margin-bottom: 3rem;
-        padding-bottom: 3rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 
     .story-image img {
-        height: 220px;
+        height: 200px;
+    }
+
+    .story-image-tall img {
+        height: 260px;
     }
 
     .story-title {

@@ -1,25 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Page Hero - Compact -->
-<section class="page-hero page-hero-compact">
+<!-- Hero with Facility Image -->
+<section class="about-hero">
+    <div class="about-hero-bg" style="background-image: url('/static/images/facility-hero.jpg');"></div>
+    <div class="about-hero-overlay"></div>
     <div class="container">
-        <span class="section-label">{{ page.label or "About Us" }}</span>
-        <h1 class="page-title">{{ page.hero_title or "About AMD Machines" }}</h1>
-        <p class="page-subtitle">{{ page.hero_subtitle or "30+ years of engineering excellence in custom automation" }}</p>
-    </div>
-</section>
-
-<!-- Stats Section - Prominent -->
-<section class="about-stats-section">
-    <div class="container">
-        <div class="about-stats-grid">
-            {% for stat in config.stats %}
-            <div class="about-stat-item">
-                <div class="about-stat-number">{{ stat.number }}</div>
-                <div class="about-stat-label">{{ stat.label }}</div>
+        <div class="about-hero-content">
+            <div class="about-hero-text">
+                <span class="section-label section-label-light">{{ page.label or "About Us" }}</span>
+                <h1 class="about-hero-title">{{ page.hero_title or "About AMD Machines" }}</h1>
+                <p class="about-hero-subtitle">{{ page.hero_subtitle or "30+ years of engineering excellence in custom automation" }}</p>
             </div>
-            {% endfor %}
+            <div class="about-hero-stats">
+                {% for stat in config.stats %}
+                <div class="about-hero-stat">
+                    <div class="about-hero-stat-number">{{ stat.number }}</div>
+                    <div class="about-hero-stat-label">{{ stat.label }}</div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>
@@ -34,8 +34,8 @@
         </div>
 
         {% for story in page.story_sections %}
-        <div class="story-block {% if loop.index is odd %}story-block-normal{% else %}story-block-reverse{% endif %}">
-            <div class="story-image">
+        <div class="story-block {% if loop.index is odd %}story-block-normal{% else %}story-block-reverse{% endif %} {% if loop.index == 3 %}story-block-tall{% endif %}">
+            <div class="story-image {% if loop.index == 3 %}story-image-tall{% endif %}">
                 <img src="{{ story.image }}" alt="{{ story.image_alt }}" loading="{% if loop.index == 1 %}eager{% else %}lazy{% endif %}">
                 <span class="story-caption">{{ story.caption }}</span>
             </div>
