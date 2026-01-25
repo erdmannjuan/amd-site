@@ -1175,6 +1175,8 @@ img {
     align-items: center;
     gap: 3rem;
     width: max-content;
+    position: relative;
+    left: 0;
 }
 
 .logos-track.animated {
@@ -1191,25 +1193,13 @@ img {
 }
 
 @-webkit-keyframes scroll-logos {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-50%, 0, 0);
-        transform: translate3d(-50%, 0, 0);
-    }
+    0% { left: 0; }
+    100% { left: -50%; }
 }
 
 @keyframes scroll-logos {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-50%, 0, 0);
-        transform: translate3d(-50%, 0, 0);
-    }
+    0% { left: 0; }
+    100% { left: -50%; }
 }
 
 .logos-carousel-label {
