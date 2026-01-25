@@ -43,9 +43,9 @@ At AMD, engineering isn't just a department—it's our culture. Every project be
 <figcaption>Custom rotary dial assembly system - one of 2,500+ machines built</figcaption>
 </figure>
 
-## Our Facility
+## Our Facilities
 
-Our 80,000 sq ft facility houses everything needed to design, build, and test complete automation systems—from engineering offices with advanced CAD tools to large assembly bays and dedicated testing areas. Every system undergoes thorough testing before shipping.
+Our 70,000 sq ft across three facilities in Central Mexico houses everything needed to design, build, and test complete automation systems—from engineering offices with advanced CAD tools to large assembly bays and dedicated testing areas. Every system undergoes thorough testing before shipping. Our sales office in downtown Chicago provides local support for customers across North America.
 
 ## Our Approach
 
@@ -56,5 +56,5 @@ Our 80,000 sq ft facility houses everything needed to design, build, and test co
 
 <figure class="about-content-image">
 <img src="/static/images/AMDnow.webp" alt="AMD Machines facility and team today" width="800" height="280" loading="lazy" style="object-position: center">
-<figcaption>AMD Machines today - 80,000 sq ft of design, fabrication, and testing capabilities</figcaption>
+<figcaption>AMD Machines today - 70,000 sq ft across three facilities in Central Mexico</figcaption>
 </figure>
