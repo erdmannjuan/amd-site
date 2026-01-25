@@ -519,7 +519,7 @@
             <h1 class="hero-title">Your Partner for Custom Automated Manufacturing Solutions</h1>
             <p class="hero-subtitle">From concept to execution, we design and build<br>automated systems that power your production goals</p>
             <div class="hero-buttons">
-                <a href="#solutions-finder" class="btn btn-green">Find Your Solution</a>
+                <a href="https://www.amdmachines.com/solutions/" class="btn btn-green">Find Your Solution</a>
                 <a href="/contact/" class="btn btn-orange">Request a Quote →</a>
             </div>
         </div>
@@ -620,12 +620,15 @@
         var position = 0;
         var speed = 50; // pixels per second
         var lastTime = performance.now();
-        var trackWidth = track.scrollWidth / 2;
 
         function animate(currentTime) {
             var delta = (currentTime - lastTime) / 1000;
             lastTime = currentTime;
             position -= speed * delta;
+
+            // Recalculate trackWidth each frame (handles image loading)
+            var trackWidth = track.scrollWidth / 2;
+
             if (position <= -trackWidth) {
                 position += trackWidth;
             }
