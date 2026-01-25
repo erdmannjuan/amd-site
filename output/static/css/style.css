@@ -1175,8 +1175,6 @@ img {
     align-items: center;
     gap: 3rem;
     width: max-content;
-    position: relative;
-    left: 0;
 }
 
 .logos-track.animated {
@@ -1197,13 +1195,13 @@ img {
 }
 
 @-webkit-keyframes scroll-logos {
-    0% { left: 0; }
-    100% { left: -50%; }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 @keyframes scroll-logos {
-    0% { left: 0; }
-    100% { left: -50%; }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 .logos-carousel-label {
