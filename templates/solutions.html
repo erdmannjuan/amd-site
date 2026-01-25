@@ -14,13 +14,23 @@
 <section class="section solutions-showcase">
     <div class="container">
         {% set sol_images = {
-            'robot': 'placeholder-capability-robotic-cells.svg',
-            'welding': 'placeholder-capability-welding.svg',
-            'test': 'placeholder-capability-test-systems.svg',
-            'assembly': 'placeholder-capability-assembly.svg',
-            'custom': 'placeholder-capability-custom.svg',
-            'handling': 'placeholder-capability-material-handling.svg',
-            'vision': 'placeholder-solution-vision.svg'
+            'robot': 'solutions/robotic-cells-automation.webp',
+            'welding': 'solutions/welding-automation-systems.webp',
+            'test': 'solutions/test-inspection-systems.webp',
+            'assembly': 'solutions/assembly-automation-systems.webp',
+            'custom': 'solutions/assembly-automation-systems.webp',
+            'handling': 'solutions/material-handling-automation.webp',
+            'vision': 'solutions/machine-vision-inspection.webp'
+        } %}
+
+        {% set sol_alts = {
+            'robot': 'Custom robotic cell with industrial robot for automated manufacturing',
+            'welding': 'Automated welding system with robotic welder in production environment',
+            'test': 'Automated test and inspection station for quality control',
+            'assembly': 'Custom automated assembly system with multi-station production line',
+            'custom': 'Custom automation solution designed for specific manufacturing needs',
+            'handling': 'Automated material handling system with conveyor and robotics',
+            'vision': 'Machine vision inspection system with camera for quality verification'
         } %}
 
         {% set sol_blogs = {
@@ -56,7 +66,7 @@
         <div class="solution-showcase-item {% if loop.index is odd %}layout-left{% else %}layout-right{% endif %}">
             <div class="solution-showcase-image">
                 <a href="{{ config.site.base_path }}{{ sol.url }}">
-                    <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.icon] | default('placeholder-card-1.svg') }}" alt="{{ sol.name }}" loading="lazy" width="600" height="400">
+                    <img src="{{ config.site.base_path }}/static/images/{{ sol_images[sol.icon] | default('placeholder-card-1.svg') }}" alt="{{ sol_alts[sol.icon] | default(sol.name ~ ' automation solution') }}" loading="lazy" width="1200" height="800">
                     <div class="solution-showcase-overlay">
                         <span>Explore {{ sol.name }}</span>
                     </div>
