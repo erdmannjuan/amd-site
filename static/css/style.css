@@ -6020,6 +6020,125 @@ button:disabled {
     }
 }
 
+/* Data Showcase Section - Ahrefs inspired */
+.data-showcase {
+    padding: 5rem 0;
+    background: #0a0a14;
+}
+
+.data-showcase-header {
+    text-align: left;
+    margin-bottom: 4rem;
+    max-width: 600px;
+}
+
+.data-showcase-header h2 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+}
+
+.data-showcase-intro {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.data-showcase-link {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FF8A6B;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.data-showcase-link:hover {
+    color: #FFB59A;
+}
+
+.data-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.data-metric-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: left;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.data-metric-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.15);
+}
+
+.data-metric-number {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+}
+
+.data-metric-plus,
+.data-metric-unit {
+    font-size: 2rem;
+    color: #FF8A6B;
+    margin-left: 0.1em;
+}
+
+.data-metric-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.data-metric-source {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.5);
+}
+
+@media (max-width: 1024px) {
+    .data-metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .data-showcase {
+        padding: 3rem 0;
+    }
+
+    .data-showcase-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .data-metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .data-metric-card {
+        padding: 1.5rem;
+    }
+
+    .data-metric-number {
+        font-size: 2.5rem;
+    }
+}
+
 /* Assembly Expertise Highlight */
 .expertise-highlight {
     padding: 5rem 0;
