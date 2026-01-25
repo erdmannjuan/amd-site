@@ -1074,7 +1074,7 @@ img {
    ================================ */
 .hero {
     position: relative;
-    min-height: 90vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     background: var(--primary);
@@ -1111,7 +1111,7 @@ img {
     position: relative;
     z-index: 5;
     max-width: 650px;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .hero-title {
@@ -1148,6 +1148,61 @@ img {
     font-size: 1rem;
     color: rgba(255,255,255,0.7);
     font-weight: 500;
+}
+
+/* Customer Logos Carousel */
+.logos-carousel-section {
+    background: #f8f9fa;
+    padding: 2.5rem 0;
+    overflow: hidden;
+}
+
+.logos-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.logos-carousel {
+    overflow: hidden;
+}
+
+.logos-track {
+    display: flex;
+    gap: 3rem;
+    animation: scroll-logos 60s linear infinite;
+    width: max-content;
+}
+
+.logos-track img {
+    height: 36px;
+    width: auto;
+    opacity: 0.5;
+    flex-shrink: 0;
+    filter: grayscale(100%) brightness(0.3);
+}
+
+@keyframes scroll-logos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logos-carousel-label {
+    text-align: left;
+    color: var(--text);
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
 }
 
 @media (max-width: 768px) {
@@ -1199,6 +1254,31 @@ img {
 
     .social-proof-text {
         font-size: 0.875rem;
+    }
+
+    .logos-carousel-section {
+        padding: 1.5rem 0;
+    }
+
+    .logos-track {
+        gap: 2rem;
+        animation-duration: 80s;
+    }
+
+    .logos-track img {
+        height: 28px;
+    }
+
+    .logos-carousel-label {
+        font-size: 24px;
+        margin-top: 1rem;
+        padding: 0 1.25rem;
+        text-align: left;
+    }
+
+    .hero-trusted-text {
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
     }
 }
 
@@ -5891,85 +5971,6 @@ button:disabled {
 /* ================================
    Homepage Engagement Components
    ================================ */
-
-/* Customer Logos Carousel - Ahrefs Style */
-.logos-carousel-section {
-    padding: 2rem 0;
-    background: #f9fafb;
-    overflow: hidden;
-}
-
-.logos-carousel-label {
-    text-align: center;
-    color: #6b7280;
-    font-size: 0.875rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.logos-carousel-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.logos-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-}
-
-.logo-slot {
-    position: relative;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-slot img {
-    height: 28px;
-    width: auto;
-    max-width: 120px;
-    opacity: 0.5;
-    filter: grayscale(100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.logo-slot img.fade-out {
-    opacity: 0;
-    transform: translateY(-10px);
-}
-
-.logo-slot img.fade-in {
-    opacity: 0.5;
-    transform: translateY(0);
-}
-
-.logo-slot img:hover {
-    opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    .logos-carousel-section {
-        padding: 1.5rem 0;
-    }
-
-    .logos-carousel-label {
-        font-size: 0.75rem;
-        margin-bottom: 1rem;
-    }
-
-    .logos-carousel {
-        gap: 1.5rem;
-    }
-
-    .logo-slot img {
-        height: 22px;
-        max-width: 80px;
-    }
-}
 
 /* Solutions Finder Quiz */
 .finder-section {
