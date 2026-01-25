@@ -6026,7 +6026,7 @@ button:disabled {
 
 .finder-label {
     font-weight: 600;
-    color: var(--dark);
+    color: var(--primary);
     font-size: 22px;
     line-height: 1.4;
     margin-bottom: 0.5rem;
