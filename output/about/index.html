@@ -98,12 +98,17 @@
     <!-- Preload LCP image -->
     
 
-    <!-- Preload font for faster text rendering -->
-    <link rel="preload" href="/static/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/static/fonts/ibm-plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload CSS to reduce render-blocking -->
+    <link rel="preload" href="/static/css/style.css?v=20260125" as="style">
 
-    <!-- Main CSS (includes self-hosted font) -->
-    <link rel="stylesheet" href="/static/css/style.css?v=20260124t">
+    <!-- Preload critical fonts (matching PageSpeed critical chain) -->
+    <link rel="preload" href="/static/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/ibm-plex-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/static/css/style.css?v=20260125">
 
     
 </head>
@@ -579,8 +584,8 @@
 <figcaption>Custom rotary dial assembly system - one of 2,500+ machines built</figcaption>
 </figure>
 
-<h2 id="our-facility">Our Facility</h2>
-<p>Our 80,000 sq ft facility houses everything needed to design, build, and test complete automation systems—from engineering offices with advanced CAD tools to large assembly bays and dedicated testing areas. Every system undergoes thorough testing before shipping.</p>
+<h2 id="our-facilities">Our Facilities</h2>
+<p>Our 70,000 sq ft across three facilities in Central Mexico houses everything needed to design, build, and test complete automation systems—from engineering offices with advanced CAD tools to large assembly bays and dedicated testing areas. Every system undergoes thorough testing before shipping. Our sales office in downtown Chicago provides local support for customers across North America.</p>
 <h2 id="our-approach">Our Approach</h2>
 <ul>
 <li><strong>Thorough Discovery</strong> - We understand your process, challenges, and goals</li>
@@ -590,7 +595,7 @@
 </ul>
 <figure class="about-content-image">
 <img src="/static/images/AMDnow.webp" alt="AMD Machines facility and team today" width="800" height="280" loading="lazy" style="object-position: center">
-<figcaption>AMD Machines today - 80,000 sq ft of design, fabrication, and testing capabilities</figcaption>
+<figcaption>AMD Machines today - 70,000 sq ft across three facilities in Central Mexico</figcaption>
 </figure>
         </div>
     </div>

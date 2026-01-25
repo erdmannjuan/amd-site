@@ -1170,34 +1170,33 @@ img {
 }
 
 .logos-track {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 3rem;
-    animation: scroll-logos 60s linear infinite;
-    width: max-content;
-}
-
-.logos-track img {
     height: 28px;
-    width: auto;
+    width: 100%;
+    background-image: url('/static/images/logos-sprite.webp');
+    background-repeat: repeat-x;
+    background-size: 5476px 28px;
+    background-position: 0 center;
     opacity: 0.5;
-    flex-shrink: 0;
     filter: grayscale(100%) brightness(0.3);
-    transition: filter 0.3s ease, opacity 0.3s ease;
+    -webkit-animation: scroll-logos-sprite 60s linear infinite;
+    animation: scroll-logos-sprite 60s linear infinite;
 }
 
-.logos-track img:hover {
-    filter: grayscale(0%) brightness(1);
-    opacity: 1;
-}
-
-@keyframes scroll-logos {
+@-webkit-keyframes scroll-logos-sprite {
     0% {
-        transform: translateX(0);
+        background-position: 0 center;
     }
     100% {
-        transform: translateX(-50%);
+        background-position: -5476px center;
+    }
+}
+
+@keyframes scroll-logos-sprite {
+    0% {
+        background-position: 0 center;
+    }
+    100% {
+        background-position: -5476px center;
     }
 }
 
@@ -1281,12 +1280,20 @@ img {
     }
 
     .logos-track {
-        gap: 2rem;
-        animation-duration: 80s;
+        height: 22px;
+        background-size: 4303px 22px;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
     }
 
-    .logos-track img {
-        height: 22px;
+    @-webkit-keyframes scroll-logos-sprite {
+        0% { background-position: 0 center; }
+        100% { background-position: -4303px center; }
+    }
+
+    @keyframes scroll-logos-sprite {
+        0% { background-position: 0 center; }
+        100% { background-position: -4303px center; }
     }
 
     .logos-carousel-label {

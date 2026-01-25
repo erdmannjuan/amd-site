@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block head_extra %}
+<link rel="preload" href="{{ config.site.base_path }}/static/images/logos-sprite.webp" as="image" type="image/webp">
+{% endblock %}
+
 {% block content %}
 <!-- Hero Section -->
 <section class="hero hero-home">
@@ -20,81 +24,7 @@
 <section class="logos-carousel-section">
     <div class="logos-carousel-wrapper">
         <div class="logos-carousel" id="logosCarousel">
-            <div class="logos-track">
-                <!-- First 10 logos load eager (visible on initial load) -->
-                <img src="{{ config.site.base_path }}/static/images/logos-color/bosch.webp" alt="Bosch">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/panasonic.webp" alt="Panasonic">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/hitachi.webp" alt="Hitachi">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/mazda.webp" alt="Mazda">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/tenneco.webp" alt="Tenneco">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/borgwarner.webp" alt="BorgWarner">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/eaton.webp" alt="Eaton">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/thyssenkrupp.webp" alt="ThyssenKrupp">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/grammer.webp" alt="Grammer">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/monroe.webp" alt="Monroe">
-                <!-- Remaining logos lazy load -->
-                <img src="{{ config.site.base_path }}/static/images/logos-color/vibracoustic.webp" alt="Vibracoustic">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/bticino.webp" alt="BTicino">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/woco.webp" alt="Woco">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/pferd.webp" alt="Pferd">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/ats-automation.webp" alt="ATS Automation">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/brose.webp" alt="Brose">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/hella.webp" alt="Hella">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/faurecia.webp" alt="Faurecia">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/flex-n-gate.webp" alt="Flex-N-Gate">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/gabriel.webp" alt="Gabriel">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/imi-norgren.webp" alt="IMI Norgren">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/kaeser.webp" alt="Kaeser">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/kostal.webp" alt="Kostal">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/meritor.webp" alt="Meritor">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/sensata.webp" alt="Sensata">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/mitutoyo.webp" alt="Mitutoyo">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/texas-instruments.webp" alt="Texas Instruments">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/mabe.webp" alt="Mabe">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/abctechnologies.webp" alt="ABC Technologies">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/plastikon.webp" alt="Plastikon">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/arburg.webp" alt="Arburg">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/valeo.webp" alt="Valeo">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/aam.webp" alt="AAM">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/shape.webp" alt="Shape">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/bbs.webp" alt="BBS">
-                <!-- Duplicate set for seamless loop (all lazy, served from cache) -->
-                <img src="{{ config.site.base_path }}/static/images/logos-color/bosch.webp" alt="Bosch">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/panasonic.webp" alt="Panasonic">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/hitachi.webp" alt="Hitachi">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/mazda.webp" alt="Mazda">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/tenneco.webp" alt="Tenneco">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/borgwarner.webp" alt="BorgWarner">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/eaton.webp" alt="Eaton">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/thyssenkrupp.webp" alt="ThyssenKrupp">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/grammer.webp" alt="Grammer">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/monroe.webp" alt="Monroe">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/vibracoustic.webp" alt="Vibracoustic">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/bticino.webp" alt="BTicino">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/woco.webp" alt="Woco">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/pferd.webp" alt="Pferd">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/ats-automation.webp" alt="ATS Automation">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/brose.webp" alt="Brose">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/hella.webp" alt="Hella">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/faurecia.webp" alt="Faurecia">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/flex-n-gate.webp" alt="Flex-N-Gate">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/gabriel.webp" alt="Gabriel">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/imi-norgren.webp" alt="IMI Norgren">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/kaeser.webp" alt="Kaeser">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/kostal.webp" alt="Kostal">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/meritor.webp" alt="Meritor">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/sensata.webp" alt="Sensata">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/mitutoyo.webp" alt="Mitutoyo">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/texas-instruments.webp" alt="Texas Instruments">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/mabe.webp" alt="Mabe">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/abctechnologies.webp" alt="ABC Technologies">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/plastikon.webp" alt="Plastikon">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/arburg.webp" alt="Arburg">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/valeo.webp" alt="Valeo">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/aam.webp" alt="AAM">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/shape.webp" alt="Shape">
-                <img src="{{ config.site.base_path }}/static/images/logos-color/bbs.webp" alt="BBS">
-            </div>
+            <div class="logos-track" role="img" aria-label="Customer logos: Bosch, Panasonic, Hitachi, Mazda, Tenneco, BorgWarner, Eaton, ThyssenKrupp, Grammer, Monroe, Vibracoustic, BTicino, Woco, Pferd, ATS Automation, Brose, Hella, Faurecia, Flex-N-Gate, Gabriel, IMI Norgren, Kaeser, Kostal, Meritor, Sensata, Mitutoyo, Texas Instruments, Mabe, ABC Technologies, Plastikon, Arburg, Valeo, AAM, Shape, BBS"></div>
         </div>
     </div>
     <p class="logos-carousel-label">Trusted by Manufacturers and Engineers Across North America for More than <span class="highlight-years">30 Years</span></p>

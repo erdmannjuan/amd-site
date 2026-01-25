@@ -105,12 +105,17 @@
     <!-- Preload LCP image -->
     
 
-    <!-- Preload font for faster text rendering -->
-    <link rel="preload" href="/static/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/static/fonts/ibm-plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload CSS to reduce render-blocking -->
+    <link rel="preload" href="/static/css/style.css?v=20260125" as="style">
 
-    <!-- Main CSS (includes self-hosted font) -->
-    <link rel="stylesheet" href="/static/css/style.css?v=20260124t">
+    <!-- Preload critical fonts (matching PageSpeed critical chain) -->
+    <link rel="preload" href="/static/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/ibm-plex-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/static/css/style.css?v=20260125">
 
     
 </head>

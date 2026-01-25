@@ -98,12 +98,17 @@
     <!-- Preload LCP image -->
     
 
-    <!-- Preload font for faster text rendering -->
-    <link rel="preload" href="/static/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/static/fonts/ibm-plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload CSS to reduce render-blocking -->
+    <link rel="preload" href="/static/css/style.css?v=20260125" as="style">
 
-    <!-- Main CSS (includes self-hosted font) -->
-    <link rel="stylesheet" href="/static/css/style.css?v=20260124t">
+    <!-- Preload critical fonts (matching PageSpeed critical chain) -->
+    <link rel="preload" href="/static/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/ibm-plex-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/static/css/style.css?v=20260125">
 
     
 </head>
@@ -545,10 +550,21 @@
         
 
         
+
+        
         <div class="solution-showcase-item layout-left">
             <div class="solution-showcase-image">
                 <a href="/solutions/robotic-cells/">
-                    <img src="/static/images/placeholder-capability-robotic-cells.svg" alt="Robotic Cells" loading="lazy" width="600" height="400">
+                    
+                    
+                    
+                    <img src="/static/images/solutions/robotic-cells-automation-small.webp"
+                         srcset="/static/images/solutions/robotic-cells-automation-small.webp 420w,
+                                 /static/images/solutions/robotic-cells-automation-medium.webp 600w"
+                         sizes="(max-width: 480px) 90vw, 210px"
+                         alt="Custom robotic cell with industrial robot for automated manufacturing"
+                         loading="lazy" width="420" height="280">
+                    
                     <div class="solution-showcase-overlay">
                         <span>Explore Robotic Cells</span>
                     </div>
@@ -578,7 +594,16 @@
         <div class="solution-showcase-item layout-right">
             <div class="solution-showcase-image">
                 <a href="/solutions/welding/">
-                    <img src="/static/images/placeholder-capability-welding.svg" alt="Welding Automation" loading="lazy" width="600" height="400">
+                    
+                    
+                    
+                    <img src="/static/images/solutions/welding-automation-systems-small.webp"
+                         srcset="/static/images/solutions/welding-automation-systems-small.webp 420w,
+                                 /static/images/solutions/welding-automation-systems-medium.webp 600w"
+                         sizes="(max-width: 480px) 90vw, 210px"
+                         alt="Automated welding system with robotic welder in production environment"
+                         loading="lazy" width="420" height="280">
+                    
                     <div class="solution-showcase-overlay">
                         <span>Explore Welding Automation</span>
                     </div>
@@ -608,7 +633,16 @@
         <div class="solution-showcase-item layout-left">
             <div class="solution-showcase-image">
                 <a href="/solutions/test-systems/">
-                    <img src="/static/images/placeholder-capability-test-systems.svg" alt="Test &amp; Inspection" loading="lazy" width="600" height="400">
+                    
+                    
+                    
+                    <img src="/static/images/solutions/test-inspection-systems-small.webp"
+                         srcset="/static/images/solutions/test-inspection-systems-small.webp 420w,
+                                 /static/images/solutions/test-inspection-systems-medium.webp 600w"
+                         sizes="(max-width: 480px) 90vw, 210px"
+                         alt="Automated test and inspection station for quality control"
+                         loading="lazy" width="420" height="280">
+                    
                     <div class="solution-showcase-overlay">
                         <span>Explore Test &amp; Inspection</span>
                     </div>
@@ -636,7 +670,16 @@
         <div class="solution-showcase-item layout-right">
             <div class="solution-showcase-image">
                 <a href="/solutions/assembly/">
-                    <img src="/static/images/placeholder-capability-assembly.svg" alt="Assembly Systems" loading="lazy" width="600" height="400">
+                    
+                    
+                    
+                    <img src="/static/images/solutions/assembly-automation-systems-small.webp"
+                         srcset="/static/images/solutions/assembly-automation-systems-small.webp 420w,
+                                 /static/images/solutions/assembly-automation-systems-medium.webp 600w"
+                         sizes="(max-width: 480px) 90vw, 210px"
+                         alt="Custom automated assembly system with multi-station production line"
+                         loading="lazy" width="420" height="280">
+                    
                     <div class="solution-showcase-overlay">
                         <span>Explore Assembly Systems</span>
                     </div>
@@ -666,7 +709,16 @@
         <div class="solution-showcase-item layout-left">
             <div class="solution-showcase-image">
                 <a href="/solutions/machine-vision/">
-                    <img src="/static/images/placeholder-solution-vision.svg" alt="Machine Vision" loading="lazy" width="600" height="400">
+                    
+                    
+                    
+                    <img src="/static/images/solutions/machine-vision-inspection-small.webp"
+                         srcset="/static/images/solutions/machine-vision-inspection-small.webp 420w,
+                                 /static/images/solutions/machine-vision-inspection-medium.webp 600w"
+                         sizes="(max-width: 480px) 90vw, 210px"
+                         alt="Machine vision inspection system with camera for quality verification"
+                         loading="lazy" width="420" height="280">
+                    
                     <div class="solution-showcase-overlay">
                         <span>Explore Machine Vision</span>
                     </div>
@@ -696,7 +748,16 @@
         <div class="solution-showcase-item layout-right">
             <div class="solution-showcase-image">
                 <a href="/solutions/material-handling/">
-                    <img src="/static/images/placeholder-capability-material-handling.svg" alt="Material Handling" loading="lazy" width="600" height="400">
+                    
+                    
+                    
+                    <img src="/static/images/solutions/material-handling-automation-small.webp"
+                         srcset="/static/images/solutions/material-handling-automation-small.webp 420w,
+                                 /static/images/solutions/material-handling-automation-medium.webp 600w"
+                         sizes="(max-width: 480px) 90vw, 210px"
+                         alt="Automated material handling system with conveyor and robotics"
+                         loading="lazy" width="420" height="280">
+                    
                     <div class="solution-showcase-overlay">
                         <span>Explore Material Handling</span>
                     </div>

@@ -76,14 +76,21 @@
     <link rel="preload" href="/static/images/hero-automation.jpg" as="image" fetchpriority="high">
     
 
-    <!-- Preload font for faster text rendering -->
-    <link rel="preload" href="/static/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/static/fonts/ibm-plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload CSS to reduce render-blocking -->
+    <link rel="preload" href="/static/css/style.css?v=20260125" as="style">
 
-    <!-- Main CSS (includes self-hosted font) -->
-    <link rel="stylesheet" href="/static/css/style.css?v=20260124t">
+    <!-- Preload critical fonts (matching PageSpeed critical chain) -->
+    <link rel="preload" href="/static/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/ibm-plex-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/static/css/style.css?v=20260125">
 
     
+<link rel="preload" href="/static/images/logos-sprite.webp" as="image" type="image/webp">
+
 </head>
 <body>
     <!-- Combined Sticky Header Wrapper -->
@@ -525,56 +532,11 @@
 <section class="logos-carousel-section">
     <div class="logos-carousel-wrapper">
         <div class="logos-carousel" id="logosCarousel">
-            <div class="logos-track">
-                <img src="/static/images/logos-color/bosch.png" alt="Bosch">
-                <img src="/static/images/logos-color/panasonic.png" alt="Panasonic">
-                <img src="/static/images/logos-color/hitachi.png" alt="Hitachi">
-                <img src="/static/images/logos-color/mazda.png" alt="Mazda">
-                <img src="/static/images/logos-color/tenneco.png" alt="Tenneco">
-                <img src="/static/images/logos-color/borgwarner.png" alt="BorgWarner">
-                <img src="/static/images/logos-color/eaton.png" alt="Eaton">
-                <img src="/static/images/logos-color/thyssenkrupp.png" alt="ThyssenKrupp">
-                <img src="/static/images/logos-color/grammer.png" alt="Grammer">
-                <img src="/static/images/logos-color/monroe.png" alt="Monroe">
-                <img src="/static/images/logos-color/vibracoustic.png" alt="Vibracoustic">
-                <img src="/static/images/logos-color/bticino.png" alt="BTicino">
-                <img src="/static/images/logos-color/woco.png" alt="Woco">
-                <img src="/static/images/logos-color/pferd.png" alt="Pferd">
-                <img src="/static/images/logos-color/ats-automation.png" alt="ATS Automation">
-                <img src="/static/images/logos-color/brose.png" alt="Brose">
-                <img src="/static/images/logos-color/hella.png" alt="Hella">
-                <img src="/static/images/logos-color/faurecia.png" alt="Faurecia">
-                <img src="/static/images/logos-color/flex-n-gate.png" alt="Flex-N-Gate">
-                <img src="/static/images/logos-color/gabriel.png" alt="Gabriel">
-                <img src="/static/images/logos-color/imi-norgren.png" alt="IMI Norgren">
-                <img src="/static/images/logos-color/kaeser.png" alt="Kaeser">
-                <img src="/static/images/logos-color/kostal.png" alt="Kostal">
-                <img src="/static/images/logos-color/meritor.png" alt="Meritor">
-                <img src="/static/images/logos-color/sensata.png" alt="Sensata">
-                <img src="/static/images/logos-color/mitutoyo.png" alt="Mitutoyo">
-                <img src="/static/images/logos-color/texas-instruments.png" alt="Texas Instruments">
-                <img src="/static/images/logos-color/mabe.png" alt="Mabe">
-                <img src="/static/images/logos-color/abctechnologies.png" alt="ABC Technologies">
-                <img src="/static/images/logos-color/plastikon.png" alt="Plastikon">
-                <img src="/static/images/logos-color/arburg.png" alt="Arburg">
-                <img src="/static/images/logos-color/valeo.png" alt="Valeo">
-                <img src="/static/images/logos-color/aam.png" alt="AAM">
-                <img src="/static/images/logos-color/shape.png" alt="Shape">
-                <img src="/static/images/logos-color/bbs.png" alt="BBS">
-            </div>
+            <div class="logos-track" role="img" aria-label="Customer logos: Bosch, Panasonic, Hitachi, Mazda, Tenneco, BorgWarner, Eaton, ThyssenKrupp, Grammer, Monroe, Vibracoustic, BTicino, Woco, Pferd, ATS Automation, Brose, Hella, Faurecia, Flex-N-Gate, Gabriel, IMI Norgren, Kaeser, Kostal, Meritor, Sensata, Mitutoyo, Texas Instruments, Mabe, ABC Technologies, Plastikon, Arburg, Valeo, AAM, Shape, BBS"></div>
         </div>
     </div>
     <p class="logos-carousel-label">Trusted by Manufacturers and Engineers Across North America for More than <span class="highlight-years">30 Years</span></p>
 </section>
-<script>
-(function() {
-    var track = document.querySelector('.logos-track');
-    if (track) {
-        // Duplicate logos for seamless loop
-        track.innerHTML += track.innerHTML;
-    }
-})();
-</script>
 
 <!-- Solutions Finder Quiz -->
 <section class="finder-section" id="solutions-finder">
