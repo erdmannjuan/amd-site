@@ -1153,7 +1153,7 @@ img {
 /* Customer Logos Carousel */
 .logos-carousel-section {
     background: #f8f9fa;
-    padding: 2.5rem 0;
+    padding: 1.25rem 0;
     overflow: hidden;
 }
 
@@ -1177,7 +1177,7 @@ img {
 }
 
 .logos-track img {
-    height: 31px;
+    height: 28px;
     width: auto;
     opacity: 0.5;
     flex-shrink: 0;
@@ -1198,7 +1198,7 @@ img {
     color: var(--text);
     font-size: 24px;
     line-height: 1.5;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     max-width: var(--container-max);
     margin-left: auto;
     margin-right: auto;
@@ -1257,7 +1257,7 @@ img {
     }
 
     .logos-carousel-section {
-        padding: 1.5rem 0;
+        padding: 1rem 0;
     }
 
     .logos-track {
@@ -1266,7 +1266,7 @@ img {
     }
 
     .logos-track img {
-        height: 24px;
+        height: 22px;
     }
 
     .logos-carousel-label {
