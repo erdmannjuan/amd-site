@@ -1289,32 +1289,13 @@ img {
     }
 
     .logos-track {
-        /* Switch to sprite on mobile to fix iOS disappearing images */
-        display: block;
-        width: 100%;
-        height: 22px;
-        background-image: url('/static/images/logos-sprite.webp');
-        background-repeat: repeat-x;
-        background-size: 4303px 22px;
-        background-position: 0 center;
-        opacity: 0.5;
-        filter: grayscale(100%) brightness(0.3);
-        -webkit-animation: scroll-logos-mobile 40s linear infinite;
-        animation: scroll-logos-mobile 40s linear infinite;
+        gap: 2rem;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
     }
 
     .logos-track img {
-        display: none;
-    }
-
-    @-webkit-keyframes scroll-logos-mobile {
-        0% { background-position: 0 center; }
-        100% { background-position: -4303px center; }
-    }
-
-    @keyframes scroll-logos-mobile {
-        0% { background-position: 0 center; }
-        100% { background-position: -4303px center; }
+        height: 22px;
     }
 
     .logos-carousel-label {
