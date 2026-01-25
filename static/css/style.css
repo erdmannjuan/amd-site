@@ -1300,6 +1300,10 @@ img {
 
     .logos-track img {
         height: 26px;
+        filter: none;
+        opacity: 0.6;
+        -webkit-transform: none;
+        transform: none;
     }
 
     .logos-track img.hide-mobile {
