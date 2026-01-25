@@ -5931,6 +5931,10 @@ button:disabled {
     max-width: 120px;
 }
 
+.logo-filter img {
+    filter: brightness(0) invert(1);
+}
+
 @media (max-width: 768px) {
     .customer-logos {
         padding: 2rem 0;
