@@ -5892,11 +5892,19 @@ button:disabled {
    Homepage Engagement Components
    ================================ */
 
-/* Customer Logos Carousel */
+/* Customer Logos Carousel - Ahrefs Style */
 .logos-carousel-section {
-    padding: 0.75rem 0;
-    background: var(--primary);
+    padding: 2rem 0;
+    background: #f9fafb;
     overflow: hidden;
+}
+
+.logos-carousel-label {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 .logos-carousel-wrapper {
@@ -5908,21 +5916,22 @@ button:disabled {
 .logos-carousel {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     animation: scroll-logos 40s linear infinite;
     width: max-content;
 }
 
 .logos-carousel img {
-    height: 24px;
+    height: 28px;
     width: auto;
-    opacity: 0.6;
+    opacity: 0.5;
     flex-shrink: 0;
     transition: opacity 0.2s ease;
+    filter: grayscale(100%);
 }
 
 .logos-carousel img:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 @keyframes scroll-logos {
@@ -5936,16 +5945,21 @@ button:disabled {
 
 @media (max-width: 768px) {
     .logos-carousel-section {
-        padding: 0.5rem 0;
+        padding: 1.5rem 0;
+    }
+
+    .logos-carousel-label {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
     }
 
     .logos-carousel {
-        gap: 1.5rem;
+        gap: 2rem;
         animation-duration: 30s;
     }
 
     .logos-carousel img {
-        height: 18px;
+        height: 22px;
     }
 }
 
