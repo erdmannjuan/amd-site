@@ -1244,6 +1244,10 @@ img {
         width: 100%;
         clip-path: none;
         opacity: 0.5;
+        background: linear-gradient(135deg, rgba(0,48,135,0.35) 0%, rgba(15,15,26,0.3) 100%),
+                    url('/static/images/hero-automation-mobile.jpg');
+        background-size: cover;
+        background-position: center;
     }
 
     .hero-title {
