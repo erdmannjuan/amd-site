@@ -195,6 +195,10 @@ navigation:
         description: "Industry news and updates"
   - name: "About"
     url: "/about/"
+    children:
+      - name: "Yaskawa Motoman Partner"
+        url: "/yaskawa-motoman/"
+        description: "Authorized integrator for Mexico"
   - name: "Contact"
     url: "/contact/"
 
