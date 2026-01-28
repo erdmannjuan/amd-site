@@ -1090,8 +1090,7 @@ img {
     right: 0;
     width: 55%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0,48,135,0.35) 0%, rgba(15,15,26,0.3) 100%),
-                url('/static/images/hero-automation.jpg');
+    background: url('/static/images/hero-automation.jpg');
     background-size: cover;
     background-position: center;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
@@ -1099,12 +1098,7 @@ img {
 }
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.5" fill="rgba(255,255,255,0.05)"/></svg>');
-    background-size: 40px 40px;
-    pointer-events: none;
-    z-index: 1;
+    display: none;
 }
 
 .hero-content {
@@ -1243,9 +1237,7 @@ img {
     .hero::before {
         width: 100%;
         clip-path: none;
-        opacity: 0.5;
-        background: linear-gradient(135deg, rgba(0,48,135,0.35) 0%, rgba(15,15,26,0.3) 100%),
-                    url('/static/images/hero-automation-mobile.jpg');
+        background: url('/static/images/hero-automation-mobile.jpg');
         background-size: cover;
         background-position: center;
     }
