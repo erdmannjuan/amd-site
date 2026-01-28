@@ -604,7 +604,7 @@
             <div class="article-header-row">
                 <div class="article-meta-inline">
                     <span class="date">2025-10-16</span>
-                    <span class="read-time">5 min read</span>
+                    <span class="read-time">8 min read</span>
                 </div>
                 <div class="share-buttons-top">
                     <button class="share-btn" onclick="copyLink()" title="Copy link">
@@ -642,45 +642,188 @@
                 
 
                 <div class="article-body" id="article-body">
-                    <h2 id="understanding-automated-testing">Understanding Automated Testing</h2>
-<p>Choose between coordinate measuring machines and vision systems for dimensional verification.</p>
-<p>Quality assurance through automated testing and inspection has become essential for manufacturers facing demanding specifications and cost pressures. Automated systems provide the consistency and data capture that manual inspection cannot match.</p>
-<h2 id="test-strategy-development">Test Strategy Development</h2>
-<p>Develop a comprehensive test strategy by:</p>
+                    <h2 id="why-dimensional-inspection-matters">Why Dimensional Inspection Matters</h2>
+<p>Every manufactured part has dimensions that must fall within specified tolerances for the product to function correctly. A bore that is 0.05 mm too small will not accept its mating shaft. A gasket groove that is 0.1 mm too shallow will leak. A bracket mounting hole that is 0.5 mm out of position will not align with its fastener.</p>
+<p>Dimensional inspection verifies that parts meet their geometric specifications. The two dominant technologies for automated dimensional inspection are <strong>coordinate measuring machines (CMMs)</strong> and <strong>machine vision systems</strong>. Each has distinct strengths, limitations, and ideal applications. Choosing the right technology — or the right combination — is critical to building an effective quality system.</p>
+<h2 id="coordinate-measuring-machines-cmms">Coordinate Measuring Machines (CMMs)</h2>
+<p>A CMM measures the physical geometry of a part by moving a probe across its surface and recording 3D coordinates at each contact point. These coordinates are then compared against the nominal CAD model to determine dimensional accuracy.</p>
+<h3 id="types-of-cmms">Types of CMMs</h3>
 <ul>
-<li><strong>Identifying critical parameters</strong> that affect product function and safety</li>
-<li><strong>Determining test methods</strong> appropriate for each parameter</li>
-<li><strong>Setting pass/fail limits</strong> based on specifications and process capability</li>
-<li><strong>Establishing sampling rates</strong> balancing coverage and throughput</li>
-<li><strong>Planning data collection</strong> for traceability and analysis</li>
+<li><strong>Bridge CMM</strong>: The most common type. A horizontal bridge moves along the Y-axis while the probe moves along X and Z. Typical accuracy: ±1.5 to ±3.0 µm. Best for medium-sized parts in a climate-controlled lab.</li>
+<li><strong>Gantry CMM</strong>: A large-scale version of the bridge design for measuring large parts like automotive body panels, aircraft components, or castings. Working volumes up to 5m × 10m × 3m.</li>
+<li><strong>Horizontal arm CMM</strong>: The probe is mounted on a horizontal arm that extends from a vertical column. Used for large, heavy parts like engine blocks or transmission housings. Slightly lower accuracy than bridge types.</li>
+<li><strong>Portable arm CMM</strong>: A manually operated articulating arm with 6 or 7 axes of freedom. Taken to the part rather than the part to the machine. Accuracy: ±25 to ±75 µm. Used for on-machine verification and large fabricated structures.</li>
 </ul>
-<h2 id="test-technologies">Test Technologies</h2>
-<p>Common automated test methods include:</p>
-<ol>
-<li><strong>Electrical testing</strong> - continuity, isolation, and functional tests</li>
-<li><strong>Leak testing</strong> - pressure decay, mass flow, and tracer gas methods</li>
-<li><strong>Dimensional inspection</strong> - contact and non-contact measurement</li>
-<li><strong>Visual inspection</strong> - camera-based defect detection</li>
-<li><strong>Functional testing</strong> - verifying product operation</li>
-</ol>
-<h2 id="system-architecture">System Architecture</h2>
-<p>Automated test systems typically include:</p>
+<h3 id="how-they-work">How They Work</h3>
+<p><strong>Touch-trigger probing</strong>: The probe contacts the surface at discrete points. Each touch records a single XYZ coordinate. Measurements are built from collections of points — three points define a plane, four points define a circle, and so on. Slower but reliable and well-understood.</p>
+<p><strong>Continuous scanning</strong>: The probe maintains constant contact and continuously streams coordinate data as it sweeps across the surface. Captures thousands of points per second. Provides much more complete surface data, which is essential for form measurements like roundness and cylindricity.</p>
+<h3 id="gdt-measurements">GD&amp;T Measurements</h3>
+<p>CMMs excel at measuring geometric dimensioning and tolerancing (GD&amp;T) characteristics:</p>
 <ul>
-<li><strong>Test fixtures</strong> that interface with products under test</li>
-<li><strong>Instrumentation</strong> for measurement and stimulus generation</li>
-<li><strong>Control systems</strong> that sequence tests and collect data</li>
-<li><strong>Material handling</strong> to load, position, and unload products</li>
-<li><strong>Data management</strong> for storage, analysis, and reporting</li>
+<li><strong>Flatness</strong>: How close a surface is to a perfect plane</li>
+<li><strong>Perpendicularity</strong>: How close a surface or axis is to 90° relative to a datum</li>
+<li><strong>Position</strong>: Location of a feature (hole, slot, boss) relative to datums</li>
+<li><strong>Runout</strong>: How much a surface deviates from a perfect axis of rotation</li>
+<li><strong>Concentricity</strong>: How well two cylindrical features share a common axis</li>
+<li><strong>Profile of a surface</strong>: How closely a complex surface matches its nominal shape</li>
 </ul>
-<h2 id="continuous-improvement">Continuous Improvement</h2>
-<p>Leverage test data for ongoing improvement:</p>
+<h3 id="pros-and-cons">Pros and Cons</h3>
+<p><strong>Strengths</strong>:
+- Accuracy: ±1-3 µm for lab-grade bridge CMMs
+- Can measure complex 3D geometry including internal features (bores, channels)
+- Full GD&amp;T capability
+- Well-established measurement uncertainty methods (ISO 10360)
+- Accepted as reference measurement by most industries</p>
+<p><strong>Limitations</strong>:
+- Slow: A typical first-article inspection can take 30-60 minutes per part
+- Requires climate-controlled environment (20°C ±1°C) for highest accuracy
+- Contact measurement can mark soft surfaces
+- Expensive: $100K-$500K+ for lab-grade systems
+- Requires skilled programmers and operators</p>
+<p><strong>Best for</strong>: First article inspection, complex parts with tight tolerances, GD&amp;T compliance, supplier qualification, root cause analysis of dimensional issues.</p>
+<h2 id="machine-vision-systems">Machine Vision Systems</h2>
+<p>Machine vision uses cameras, lenses, lighting, and software to capture and analyze images of parts. Vision systems measure by extracting dimensional information from images rather than physical contact.</p>
+<h3 id="components">Components</h3>
 <ul>
-<li>Monitor test yields and failure modes over time</li>
-<li>Correlate test results with process parameters</li>
-<li>Adjust test limits based on process capability</li>
-<li>Feed back quality data to upstream processes</li>
-<li>Use statistical methods to identify trends and issues</li>
+<li><strong>Cameras</strong>: Area scan (capture full frame) or line scan (capture one row at a time as the part moves past). Resolution ranges from VGA (640×480) to 25+ megapixels.</li>
+<li><strong>Lenses</strong>: Telecentric lenses eliminate perspective distortion and are preferred for precision measurement. Standard lenses are used when perspective error is acceptable.</li>
+<li><strong>Lighting</strong>: The most critical and underestimated component. Backlighting for edge measurement, ring lights for surface inspection, structured light for 3D measurement. Lighting design makes or breaks a vision application.</li>
+<li><strong>Software</strong>: Pattern matching, edge detection, blob analysis, OCR, and dimensional measurement algorithms. Modern systems include deep learning for defect classification.</li>
 </ul>
+<h3 id="2d-vision-measurement">2D Vision Measurement</h3>
+<p>2D vision works with a single camera looking at the part from one direction. It excels at:</p>
+<ul>
+<li><strong>Edge detection</strong>: Measuring lengths, widths, diameters, and positions of features visible in the camera's field of view</li>
+<li><strong>Pattern matching</strong>: Locating parts and features regardless of position or orientation</li>
+<li><strong>Presence/absence verification</strong>: Confirming that components, labels, fasteners, or seals are present</li>
+<li><strong>OCR and barcode reading</strong>: Reading date codes, serial numbers, and barcodes for traceability</li>
+</ul>
+<p><strong>Accuracy</strong>: Depends on field of view and camera resolution. A typical high-resolution setup achieves ±0.01 to ±0.05 mm.</p>
+<h3 id="3d-vision-measurement">3D Vision Measurement</h3>
+<p>3D vision captures height information in addition to XY position:</p>
+<ul>
+<li><strong>Structured light</strong>: Projects a pattern (stripes, dots, or grids) onto the part surface. The distortion of the pattern reveals the surface shape. Accuracy: ±0.01 to ±0.1 mm depending on field of view.</li>
+<li><strong>Stereo vision</strong>: Two cameras view the part from different angles. Triangulation calculates depth for each point. Used for bin picking and coarse dimensional verification.</li>
+<li><strong>Laser triangulation</strong>: A laser line projected onto the surface is viewed by a camera at an angle. The displacement of the line reveals the surface profile. Excellent for inline measurement of height, step, gap, and flush.</li>
+</ul>
+<h3 id="pros-and-cons_1">Pros and Cons</h3>
+<p><strong>Strengths</strong>:
+- Fast: Captures and analyzes an image in milliseconds. Enables 100% inline inspection at production speed.
+- Non-contact: No risk of marking or damaging parts
+- Flexible: A single camera system can measure multiple features simultaneously
+- Generates images that can be archived for traceability and root cause analysis
+- Cost-effective at high volumes: $10K-$100K per station</p>
+<p><strong>Limitations</strong>:
+- Accuracy limited by field of view — larger FOV means lower accuracy
+- Sensitive to lighting conditions, surface reflectivity, and contamination
+- Limited 3D capability compared to CMMs
+- Cannot measure internal features (bores, channels) without line-of-sight
+- Setup and validation require vision engineering expertise</p>
+<p><strong>Best for</strong>: High-volume production, 100% inline inspection, presence/absence verification, position and orientation measurement, surface defect detection.</p>
+<h2 id="cmm-vs-vision-decision-guide">CMM vs Vision: Decision Guide</h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>CMM</th>
+<th>Vision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>±1-3 µm (lab), ±5-10 µm (shop floor)</td>
+<td>±10-100 µm typical</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>30-60 min per part (first article)</td>
+<td>Milliseconds per inspection</td>
+</tr>
+<tr>
+<td><strong>Throughput</strong></td>
+<td>Sample inspection only</td>
+<td>100% inline capable</td>
+</tr>
+<tr>
+<td><strong>3D capability</strong></td>
+<td>Full 3D including internal features</td>
+<td>Surface only (without special fixturing)</td>
+</tr>
+<tr>
+<td><strong>GD&amp;T</strong></td>
+<td>Full GD&amp;T compliance</td>
+<td>Limited (2D features, basic 3D)</td>
+</tr>
+<tr>
+<td><strong>Environment</strong></td>
+<td>Climate-controlled lab preferred</td>
+<td>Shop floor compatible</td>
+</tr>
+<tr>
+<td><strong>Contact</strong></td>
+<td>Contact (may mark surfaces)</td>
+<td>Non-contact</td>
+</tr>
+<tr>
+<td><strong>Part size</strong></td>
+<td>mm to meters (depends on CMM type)</td>
+<td>Limited by camera FOV</td>
+</tr>
+<tr>
+<td><strong>Operator skill</strong></td>
+<td>High (programming, operation)</td>
+<td>Low (after setup)</td>
+</tr>
+<tr>
+<td><strong>Cost per measurement</strong></td>
+<td>High (labor-intensive)</td>
+<td>Low (automated)</td>
+</tr>
+<tr>
+<td><strong>Investment</strong></td>
+<td>$100K-$500K+</td>
+<td>$10K-$100K per station</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-to-use-a-cmm">When to Use a CMM</h3>
+<ul>
+<li>First article inspection and supplier qualification</li>
+<li>Complex GD&amp;T measurements (true position, profile, runout)</li>
+<li>Tight tolerances below ±0.01 mm</li>
+<li>Low-volume or job-shop production</li>
+<li>Root cause dimensional analysis</li>
+</ul>
+<h3 id="when-to-use-vision">When to Use Vision</h3>
+<ul>
+<li>High-volume production requiring 100% inspection</li>
+<li>Go/no-go dimensional checks at production speed</li>
+<li>Presence/absence verification</li>
+<li>Surface defect detection</li>
+<li>Part identification and traceability (OCR, barcodes)</li>
+</ul>
+<h3 id="when-to-use-both">When to Use Both</h3>
+<p>Many manufacturers use both technologies in a complementary strategy: CMMs for first article inspection, process setup, and periodic audits; vision systems for 100% inline inspection during production. The CMM validates the process, and the vision system monitors it.</p>
+<h2 id="integrating-inspection-into-automated-production">Integrating Inspection Into Automated Production</h2>
+<p>When inspection is part of an automated assembly or machining line, consider:</p>
+<ul>
+<li><strong>Inspection station placement</strong>: Position inspection after critical operations so defects are caught before additional value is added</li>
+<li><strong>Part handling</strong>: Use robots, conveyors, or indexing systems to present parts to the inspection system in a repeatable orientation</li>
+<li><strong>Reject handling</strong>: Design automated reject mechanisms (diverters, reject bins) to remove non-conforming parts without stopping the line</li>
+<li><strong>Data integration</strong>: Connect inspection results to your MES or quality database for SPC, traceability, and trend analysis</li>
+<li><strong>Calibration and maintenance</strong>: Schedule regular calibration cycles. Vision systems need periodic lighting and lens cleaning. CMMs need annual calibration per ISO 10360.</li>
+</ul>
+<h2 id="how-amd-machines-builds-inspection-systems">How AMD Machines Builds Inspection Systems</h2>
+<p>AMD Machines integrates both CMM and vision technologies into automated production systems. Our capabilities include:</p>
+<ul>
+<li><strong>Inline vision inspection stations</strong> with 2D and 3D measurement for high-volume production</li>
+<li><strong>Automated CMM loading</strong> with robotic part handling for unattended measurement</li>
+<li><strong>Multi-camera inspection cells</strong> that measure multiple features simultaneously</li>
+<li><strong>Vision-guided robotics</strong> that combine measurement with robotic handling for adaptive assembly</li>
+<li><strong>Complete data integration</strong> connecting inspection results to plant quality systems</li>
+</ul>
+<p>We help our customers determine the right inspection technology for their application, design the system, and validate measurement capability before production begins.</p>
 <h2 id="partner-with-amd-machines">Partner With AMD Machines</h2>
 <p>AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. <a href="/contact/">Contact us</a> to discuss your automation needs.</p>
                 </div>
