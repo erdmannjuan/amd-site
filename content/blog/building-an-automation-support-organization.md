@@ -14,79 +14,77 @@ template: blog-post.html
 url: /blog/building-an-automation-support-organization/
 ---
 
-## Why an Automation Support Organization Matters
+## The Gap Between Installation and Long-Term Performance
 
-Installing automation equipment is the beginning of the journey, not the end. Once a robotic welding cell, automated assembly line, or vision inspection system goes live, the real challenge shifts to keeping it running reliably shift after shift. The companies that get the most out of their automation investments are the ones that build dedicated support organizations capable of maintaining, troubleshooting, and continuously improving their equipment.
+Getting automation equipment installed and running is a milestone worth celebrating. But in our experience building over 2,500 custom machines, we have seen a clear pattern: the manufacturers who extract the most value from their automation investments are not necessarily the ones who buy the most advanced equipment. They are the ones who build capable internal support organizations around that equipment.
 
-Without a structured support team, manufacturers fall into a reactive pattern. Equipment goes down, production stops, and whoever is available scrambles to diagnose the problem. Downtime costs pile up. Parts get ordered overnight at premium prices. The same failures repeat because nobody documented the root cause or implemented a corrective action. This cycle erodes the ROI that justified the automation investment in the first place.
+The distinction matters because automation systems are not static. Tooling wears. Sensors drift. Process conditions shift with material lot variations. Software requires updates as products evolve. Without a dedicated team managing these realities, even well-designed equipment degrades in performance over time. Uptime drops from the 95%+ target into the low 80s. Quality escapes increase. Cycle times creep upward as operators apply band-aid fixes that accumulate into significant inefficiency.
 
-A well-built automation support organization breaks this cycle. It provides the structure, skills, and processes needed to keep equipment availability above 95% and drive continuous improvement across the production floor.
+We have watched plants go through this cycle, and we have also watched plants avoid it entirely by investing in the organizational structure that keeps equipment performing at its design intent. Here is how they do it.
 
-## Core Roles and Team Structure
+## Defining the Core Roles
 
-The foundation of any automation support organization is the people. Building the right team means defining clear roles and ensuring you have coverage across the key technical disciplines.
+An effective automation support organization requires people with distinct but overlapping skill sets. The specific team size depends on your equipment count and shift schedule, but the roles themselves are consistent across operations of all sizes.
 
-**Automation Technicians** form the front line. These are the people who respond to equipment faults, perform routine maintenance tasks, and handle basic troubleshooting. A strong automation technician understands mechanical systems, electrical circuits, and has working knowledge of PLC logic. They can pull up a ladder diagram, identify which input or output is faulting, and trace the problem back to a sensor, actuator, or wiring issue.
+**Automation Technicians** are the front line. These individuals respond to equipment faults, perform scheduled maintenance tasks, and handle first-level troubleshooting. A capable automation technician reads ladder logic, interprets fault code histories, traces wiring, and understands mechanical assemblies well enough to identify worn components before they cause a failure. In most plants, you need one technician for every five to eight automated cells on a given shift.
 
-**Controls Engineers** handle the more complex problems. When a technician encounters a fault that requires program modifications, servo tuning adjustments, or network configuration changes, the controls engineer steps in. They also lead efforts to optimize cycle times, implement new product variants, and integrate equipment with plant-level systems like MES or SCADA platforms.
+**Controls Engineers** handle the problems that exceed technician-level troubleshooting. This includes PLC program modifications, servo tuning, robot path optimization, HMI development, and network diagnostics. Controls engineers also lead process improvements — reducing cycle time, adding new product variants, or integrating equipment with plant-level MES and SCADA systems. Most operations running 10 to 25 automated cells need one or two controls engineers.
 
-**Mechanical and Electrical Specialists** round out the team. Mechanical specialists handle preventive maintenance on gearboxes, bearings, linear guides, and pneumatic systems. Electrical specialists manage panel maintenance, drive replacements, and power distribution issues. In smaller operations, these roles may overlap with the technician role, but as your automation footprint grows, dedicated specialists become necessary.
+**Mechanical and Electrical Specialists** address discipline-specific maintenance. Mechanical specialists manage gearbox rebuilds, linear guide replacements, pneumatic system overhauls, and precision alignment tasks. Electrical specialists handle panel maintenance, drive replacements, cable management, and power quality issues. In smaller operations these responsibilities fold into the technician role, but as your automation footprint grows beyond 15 cells, dedicated specialists pay for themselves through faster repair times and fewer repeat failures.
 
-**A Support Manager or Coordinator** ties everything together. This role owns the maintenance schedule, manages the spare parts inventory, tracks key performance metrics, and serves as the liaison between production and the support team. Without this coordination role, even skilled technicians end up working in silos.
+**A Support Coordinator** ties the organization together. This role owns the maintenance schedule, manages spare parts inventory, tracks performance metrics, coordinates with production scheduling for planned downtime windows, and serves as the primary liaison between the support team and plant management. Without this coordination function, even skilled technicians operate in silos and critical tasks fall through the cracks.
 
-For most mid-size manufacturing operations running 10 to 20 automated cells, a team of four to six technicians, one or two controls engineers, and a support coordinator provides adequate coverage for two-shift operations. Scale up proportionally as your equipment count grows.
+## Developing and Retaining Technical Skills
 
-## Building Technical Capabilities
+Hiring good people is the starting point, but keeping their skills current is an ongoing requirement. Automation technology evolves continuously. The technician who was proficient on a specific robot platform five years ago may have limited experience with the vision systems, collaborative robots, or edge computing devices being deployed today.
 
-Having the right people is only half the equation. Those people need the right skills, and skills need continuous development. Automation technology evolves constantly, and a technician trained five years ago on a specific robot platform may be unfamiliar with the vision systems, collaborative robots, or edge computing devices being installed today.
+Structured [training programs for automation technicians](/blog/training-programs-for-automation-technicians/) should operate on multiple levels. Equipment-specific training from the OEM during installation and commissioning gives your team familiarity with the exact hardware and software they will maintain daily. Vendor certification programs build deeper expertise on specific platforms. Cross-training within the team ensures that knowledge of any single system is never held by only one person.
 
-Effective [training programs for automation technicians](/blog/training-programs-for-automation-technicians/) should cover multiple layers. Start with equipment-specific training provided by the OEM during installation and commissioning. This gives your team familiarity with the specific hardware and software they will be maintaining daily. Then build broader skills through vendor certification programs, community college courses, and hands-on cross-training within the team.
+One of the most effective development methods we have observed is structured mentorship during live troubleshooting. Pair a junior technician with an experienced one during a real equipment fault. The senior technician narrates their diagnostic process — why they checked that particular sensor first, what the fault history pattern suggests, how they narrowed the root cause from a system-level symptom to a specific component. This hands-on approach builds diagnostic intuition that no classroom curriculum can replicate.
 
-One approach that works well is pairing junior technicians with experienced team members during troubleshooting events. The experienced technician talks through their diagnostic process out loud — why they checked that sensor first, what the fault code history tells them, how they narrowed down the root cause. This mentorship accelerates skill development far more effectively than classroom training alone.
+Equally important is capturing tribal knowledge in written form. When a senior technician discovers that a specific robot axis develops backlash after 18 months, or that a particular sensor requires threshold adjustment with seasonal ambient light changes, that information belongs in a shared maintenance database. Knowledge that exists only in someone's head leaves with them when they retire or change roles.
 
-Document tribal knowledge. When a senior technician discovers that a particular robot axis tends to develop backlash after 18 months, or that a specific sensor needs its detection threshold adjusted seasonally due to ambient light changes, that information should go into a shared maintenance database, not stay locked in one person's head.
+## Preventive Maintenance as the Backbone
 
-## Preventive Maintenance as the Foundation
+Reactive maintenance — waiting for equipment to break before addressing it — is the most expensive strategy available. Every hour of unplanned downtime carries direct production loss costs plus indirect costs in expedited parts, overtime labor, missed customer deliveries, and the cascade effects of disrupted scheduling.
 
-Reactive maintenance — waiting for equipment to break before fixing it — is the most expensive approach. Every hour of unplanned downtime carries direct costs in lost production and indirect costs in expedited parts, overtime labor, and missed delivery commitments.
+A disciplined [preventive maintenance program](/blog/preventive-maintenance-programs-for-automation/) catches wear and degradation before they cause failures. The fundamentals include regular inspections, lubrication schedules, filter changes, belt tension verification, and calibration checks. For robotic systems, add cable dress-out inspection, TCP accuracy verification, tool changer maintenance, and servo motor temperature trending.
 
-A structured [preventive maintenance program](/blog/preventive-maintenance-programs-for-automation/) reduces unplanned downtime by catching wear and degradation before it causes a failure. The basics include regular inspections, lubrication schedules, filter changes, belt tension checks, and calibration verification. For robotic systems, this extends to checking cable dress-out condition, verifying TCP accuracy, inspecting tool changers, and monitoring servo motor temperatures.
+Organize PM tasks into daily, weekly, monthly, and annual tiers. Daily checks are quick visual inspections and basic verifications that operators perform at shift start. Weekly and monthly tasks require technician skills and short planned downtime windows. Annual tasks are comprehensive overhauls aligned with plant shutdown schedules.
 
-Organize preventive maintenance tasks into daily, weekly, monthly, and annual schedules. Daily tasks are quick visual inspections and basic checks that operators can perform at the start of each shift. Weekly and monthly tasks require technician-level skills and may need short planned downtime windows. Annual tasks are more extensive overhauls that align with planned shutdown periods.
+The key discipline is tracking PM completion rates and correlating them against unplanned downtime data. If a cell experiences repeated failures despite adherence to the PM schedule, the schedule itself needs revision. Either the intervals are too long, or the task list misses a critical inspection point. Continuous refinement of PM schedules based on actual equipment behavior is what separates adequate maintenance programs from excellent ones.
 
-Track completion rates and correlate them against unplanned downtime data. If a particular cell keeps having breakdowns despite following the PM schedule, the schedule itself may need adjustment — either the intervals are too long or the task list is missing a critical inspection point.
+## Spare Parts Management
 
-## Spare Parts Strategy
+A technician who correctly diagnoses a failure but cannot get the replacement part for eight weeks has not actually solved the problem. Spare parts management is a critical function that directly impacts mean time to repair.
 
-Nothing undermines a support organization faster than having a technician diagnose a problem correctly, only to discover the replacement part is eight weeks out on backorder. A thoughtful [spare parts strategy](/blog/spare-parts-strategy-for-automation-equipment/) is essential for maintaining high equipment availability.
+Categorize components by criticality and lead time. Servo drives, specialty sensors, custom-machined tooling components, and other items with long procurement lead times and high impact on equipment availability belong in your on-site inventory. Standard components available from local distributors within 24 hours can be ordered as needed. Everything between these extremes requires judgment based on your risk tolerance and budget.
 
-Start by categorizing components based on criticality and lead time. Critical components with long lead times — servo drives, specialty sensors, custom machined parts — should be stocked on-site. Standard components available from local distributors within 24 hours can be ordered as needed. Everything in between requires judgment based on your specific risk tolerance and budget.
+Work with your equipment integrator during the [commissioning phase](/blog/commissioning-and-startup-best-practices/) to obtain recommended spare parts lists. An experienced integrator identifies the components most likely to need replacement over a five-year horizon and specifies exact part numbers, quantities, and reorder points. This information is vastly more useful during initial startup than when you are scrambling to identify an obsolete part number during a production-critical breakdown.
 
-Work with your equipment integrator during the design phase to get recommended spare parts lists. A good integrator will identify the components most likely to need replacement and specify exact part numbers, quantities, and suggested reorder points. This information is far more valuable during commissioning than scrambling to identify parts during a breakdown six months later.
+## Tracking Performance With Meaningful Metrics
 
-## Metrics That Drive Improvement
+A support organization without metrics operates on intuition rather than data. At minimum, track four key indicators:
 
-A support organization without metrics is operating blind. At minimum, track these key performance indicators:
+- **Overall Equipment Effectiveness (OEE)** combines availability, performance, and quality into a single percentage representing how well equipment is utilized relative to its theoretical maximum.
+- **Mean Time Between Failures (MTBF)** measures how long equipment runs between unplanned stops. An increasing trend confirms that preventive efforts are working.
+- **Mean Time to Repair (MTTR)** measures how quickly equipment returns to production after a failure. This metric reflects technician skill, spare parts availability, diagnostic documentation quality, and organizational response processes.
+- **PM Completion Rate** tracks the percentage of scheduled preventive maintenance tasks completed on time. Consistent rates below 90% indicate resource or scheduling constraints that need management attention.
 
-- **Overall Equipment Effectiveness (OEE)** — the combination of availability, performance, and quality that gives a single number representing how well equipment is being utilized.
-- **Mean Time Between Failures (MTBF)** — how long equipment runs between unplanned stops. An increasing MTBF means your preventive efforts are working.
-- **Mean Time to Repair (MTTR)** — how long it takes to get equipment back in production after a failure. This reflects technician skill, spare parts availability, and documentation quality.
-- **PM Completion Rate** — the percentage of scheduled preventive maintenance tasks completed on time. Anything below 90% indicates resource or scheduling problems.
+Review these metrics monthly with both the support team and production leadership. Focus on trends rather than individual data points. A single bad week may reflect an unusual event, but a declining three-month trend demands root cause investigation and corrective action.
 
-Review these metrics monthly with the support team and production leadership. Look for trends, not just individual data points. A single bad week may be an anomaly, but a declining three-month trend demands investigation and action.
+## Scaling Support Alongside Your Automation Roadmap
 
-## Scaling With Your Automation Footprint
+One of the most common mistakes we see manufacturers make is adding automated equipment without proportionally growing their support capability. The result is predictable: technicians spread too thin, preventive maintenance schedules slip, and unplanned downtime increases — exactly the outcomes the support organization was built to prevent.
 
-As manufacturers add more automated equipment, the support organization must scale accordingly. The mistake many companies make is adding machines without proportionally adding support capability. The result is technicians spread too thin, preventive maintenance falling behind, and unplanned downtime creeping upward.
-
-Plan your support organization growth alongside your automation roadmap. If you are adding three new robotic cells next year, budget for the additional technician headcount and training needed to support them. Factor in the ramp-up period where new equipment typically requires more attention as infant mortality failures are identified and resolved.
+Plan support organization growth in parallel with your automation roadmap. If three new robotic cells are coming online next year, budget for the additional technician headcount and training required to support them. Factor in the ramp-up period where new equipment typically demands extra attention as infant mortality issues surface and get resolved.
 
 ## Getting Started
 
-If you do not have a formal automation support organization today, start with the basics. Assign clear ownership for equipment maintenance. Establish a preventive maintenance schedule for your most critical equipment. Begin tracking downtime events and their root causes. Build a spare parts inventory for high-criticality components.
+If your plant lacks a formal automation support organization today, start with the fundamentals. Assign clear ownership for equipment maintenance. Establish a preventive maintenance schedule for your highest-value equipment. Begin logging downtime events with root cause analysis. Build a spare parts inventory for critical components with long lead times.
 
-These foundational steps create the structure you can build on as your automation footprint and support capabilities grow together.
+These foundational steps create the organizational structure that grows with your automation footprint and protects the return on every machine you install.
 
 ## Partner With AMD Machines
 
-AMD Machines designs and builds automation systems with long-term supportability in mind. Our engineers work with your team during commissioning to transfer the knowledge needed for effective ongoing support, including detailed documentation, recommended spare parts lists, and hands-on training. [Contact us](/contact/) to discuss how we can help you build automation that stays productive for years after installation.
+AMD Machines designs and builds automation systems with long-term supportability as a core design principle. Our engineers work with your maintenance team during commissioning to transfer the knowledge needed for effective ongoing support — including detailed documentation, recommended spare parts lists, and hands-on training tailored to your team's experience level. [Contact us](/contact/) to discuss how we can help you build automation that delivers sustained performance for years after installation.

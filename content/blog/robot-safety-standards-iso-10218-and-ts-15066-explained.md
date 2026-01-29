@@ -1,204 +1,147 @@
 ---
 title: 'Robot Safety Standards: ISO 10218 and TS 15066 Explained'
-description: Navigate industrial robot safety standards to ensure compliant and safe
-  automation implementations. In today's competitive manufacturing environment,.
-keywords: industrial automation, manufacturing automation, AMD Machines, industrial
-  robots, robotic automation, robot integration, robot, safety, standards
+description: A practical engineering guide to ISO 10218-1, ISO 10218-2, and ISO/TS 15066 robot safety standards covering risk assessment, safeguarding, collaborative operations, and compliance for industrial automation.
+keywords: robot safety standards, ISO 10218, ISO TS 15066, collaborative robot safety, cobot safety, risk assessment robotics, robot safeguarding, industrial robot compliance, PFL force limits, safety-rated monitored stop
 date: '2026-01-10'
 author: AMD Machines Team
 category: Robotics
-read_time: 8
+read_time: 10
 template: blog-post.html
 url: /blog/robot-safety-standards-iso-10218-and-ts-15066-explained/
 ---
 
-## Why Robot Safety Standards Matter
+## Why Robot Safety Standards Exist — and Why Engineers Need to Know Them
 
-Industrial robots are powerful machines. A typical 6-axis robot can exert hundreds of newtons of force and move at speeds exceeding 2 meters per second. Without proper safeguarding, a collision between a robot and a human can cause serious injury or death.
+Every industrial robot on a factory floor is a machine capable of serious harm. A standard 6-axis articulated robot generates hundreds of newtons of force, moves at speeds exceeding two meters per second, and weighs anywhere from 30 to over 2,000 kilograms depending on the payload class. The kinetic energy involved in a collision between a robot and a human body is not theoretical — it is a well-documented cause of workplace fatalities and severe injuries going back decades.
 
-Safety standards exist to define the minimum requirements that robot manufacturers, system integrators, and end users must follow to protect workers. The three foundational standards for industrial robot safety are **ISO 10218-1**, **ISO 10218-2**, and **ISO/TS 15066**. Together, they cover everything from the robot itself to the complete workcell to collaborative applications where humans and robots share workspace.
+Safety standards for robotics are not suggestions. They are codified engineering requirements that define how robots must be designed, how workcells must be integrated, and how collaborative applications must be validated before a single production cycle runs. For system integrators and manufacturers, compliance with these standards is both a legal obligation and a professional responsibility.
 
-Understanding these standards is not optional — it is a legal and ethical requirement for anyone designing, integrating, or operating robotic systems.
+The three foundational documents governing industrial robot safety are **ISO 10218-1**, **ISO 10218-2**, and **ISO/TS 15066**. They form a layered framework: Part 1 addresses the robot itself, Part 2 addresses the integrated system, and TS 15066 provides specific guidance for collaborative applications where humans and robots share workspace. Understanding all three is essential for anyone designing, specifying, or operating robotic equipment.
 
-## ISO 10218-1: Requirements for Robot Manufacturers
+## ISO 10218-1: Safety Requirements for the Robot
 
-**ISO 10218-1:2011** specifies safety requirements for the design and construction of the industrial robot itself. This standard applies to robot manufacturers like FANUC, Yaskawa, ABB, and KUKA.
+**ISO 10218-1:2011** defines the safety requirements that robot manufacturers must meet in the design and construction of the robot hardware and controller. This standard applies to companies like FANUC, Yaskawa, ABB, KUKA, and Universal Robots — the OEMs that build the machines system integrators select for their projects.
 
-### What It Covers
+### Safety-Rated Control Functions
 
-- **Protective stop functions**: The robot must have safety-rated stop functions (Category 0 and Category 1 per IEC 60204-1) that bring the robot to a controlled stop when triggered
-- **Speed and force limiting**: The robot controller must support configurable speed limits that can be enforced by the safety system
-- **Axis limiting**: Hardware and software limits that restrict robot motion to defined zones
-- **Singular point protection**: Prevention of unpredictable motion near kinematic singularities
-- **Emergency stop**: Compliant E-stop circuits that meet IEC 60204-1 requirements
-- **Safety-rated control functions**: Functions like safe speed monitoring, safe standstill monitoring, and safe axis range limiting that are implemented at the required performance level (PLd per ISO 13849-1 or SIL2 per IEC 62061)
+The heart of ISO 10218-1 is its requirements for safety-rated control functions built into the robot controller. These include:
+
+- **Safety-rated monitored stop**: The robot holds position with active monitoring. If the robot drifts beyond a defined tolerance, a protective stop triggers. This function is fundamental to collaborative applications.
+- **Safety-rated soft axis and space limiting**: The controller enforces boundaries on individual joint positions and Cartesian workspace regions. When the robot reaches a configured limit, the safety system intervenes before the mechanical hard stop.
+- **Safety-rated speed monitoring**: The controller continuously monitors TCP (tool center point) speed against a configured threshold. If speed exceeds the limit, the safety system triggers a stop. Performance levels must meet a minimum of PLd per ISO 13849-1 or SIL2 per IEC 62061.
+- **Safe torque off and safe stop functions**: Category 0 stops (immediate power removal) and Category 1 stops (controlled deceleration followed by power removal) per IEC 60204-1 must be available and properly implemented.
+
+### What This Means for Integrators
+
+As a system integrator, you do not design the robot's internal safety architecture — the OEM handles that. But you are responsible for understanding what safety functions the robot provides, at what performance level, and how to properly interface with them. Every robot ships with a safety manual that documents these details. Reading it thoroughly before starting the safety circuit design is not optional — it is the first step in any compliant integration.
+
+The robot's safety functions form the foundation of the complete system safety architecture. If you do not understand their capabilities and limitations, you cannot design an adequate safeguarding system around them.
+
+## ISO 10218-2: Safety Requirements for System Integration
+
+**ISO 10218-2:2011** is the standard most directly relevant to system integrators and end users. It covers the safety requirements for the complete robotic system — the robot, end effector, workpiece handling, fixturing, conveyors, operator interfaces, and all associated safeguarding.
+
+### Risk Assessment: The Core Requirement
+
+The central obligation under ISO 10218-2 is performing and documenting a comprehensive risk assessment for the entire robotic workcell. This is not a checkbox exercise. A proper risk assessment requires engineering judgment applied systematically across every phase of the system's lifecycle.
+
+The process follows ISO 12100 (Safety of Machinery — General Principles for Design):
+
+1. **Define the limits of the machine**: Identify the intended use, foreseeable misuse, space limits, and time limits (lifecycle phases including installation, commissioning, production, maintenance, cleaning, and decommissioning).
+2. **Identify all hazards**: Walk through every operational mode and lifecycle phase. Consider mechanical hazards (crushing, shearing, entanglement, impact, ejection), electrical hazards, thermal hazards, noise, vibration, radiation, and hazards from materials being processed.
+3. **Estimate the risk**: For each identified hazard, evaluate severity of potential harm, frequency of exposure, probability of the hazardous event occurring, and possibility of avoidance.
+4. **Evaluate the risk**: Determine whether each estimated risk is acceptable or requires reduction.
+5. **Reduce unacceptable risks**: Apply the hierarchy of protective measures — inherently safe design first, then safeguarding and complementary protective measures, then information for use (warnings, training, PPE).
+
+The risk assessment is a living document. Any modification to the system — a tool change, a new part program, a layout adjustment, relocation to a different facility — requires a review and potential update of the risk assessment.
+
+### Safeguarding Strategies
+
+ISO 10218-2 describes several safeguarding methods that integrators select based on the risk assessment:
+
+**Perimeter guarding** remains the most common approach for high-speed, high-payload applications. Physical barriers — typically welded steel tube frames with polycarbonate or wire mesh panels — enclose the robot's maximum operating envelope. Access points use interlocked gates with safety-rated switches (tongue, RFID-coded, or trapped-key types per ISO 14119). When a gate opens, the safety system triggers a Category 1 stop.
+
+**Presence-sensing devices** provide safeguarding without physical barriers. Type 4 light curtains (PLe-rated) detect intrusion through a vertical plane of infrared beams and are commonly used at part load/unload stations. Type 3 safety laser scanners monitor 2D floor areas and support multiple configurable zones — useful for implementing speed and separation monitoring in [robotic integration projects](/solutions/robot-integration/).
+
+**Safety-rated speed control** allows personnel to operate near the robot at reduced speed during setup, programming, and maintenance. The operator holds a three-position enabling device (deadman switch) that permits motion only when held in the center position. Releasing or squeezing through the switch triggers an immediate stop.
 
 ### Verification and Validation
 
-ISO 10218-1 requires robot manufacturers to verify that all safety functions perform as specified through testing, analysis, and documentation. The robot must be delivered with a comprehensive safety manual that details all safety-rated functions, their performance levels, and integration requirements.
+Before a system enters production, ISO 10218-2 requires verification that every safety function operates correctly. This includes measuring actual stopping distances and comparing them to the calculated distances used in safeguard positioning, verifying sensor coverage matches the design intent, testing every interlock and E-stop circuit, and confirming that safety PLCs execute the correct logic under all conditions. These measurements and test results must be documented and retained.
 
-As a system integrator, you rely on the robot manufacturer's compliance with ISO 10218-1 as the foundation of your safety system. Always verify that your robot's safety manual documents the specific performance levels of each safety function.
+## ISO/TS 15066: The Collaborative Robot Standard
 
-## ISO 10218-2: Requirements for Integrators and Users
+**ISO/TS 15066:2016** is a technical specification — not a full standard — that provides detailed guidance for collaborative robot applications. It supplements ISO 10218-1 and ISO 10218-2 and does not replace them. Every collaborative installation still requires full compliance with both parts of ISO 10218.
 
-**ISO 10218-2:2011** covers the safety requirements for industrial robot system integration and installation. This is the standard most relevant to system integrators like AMD Machines and to end users operating robotic workcells.
+TS 15066 addresses the specific challenge of applications where humans and robots intentionally occupy the same workspace during normal production operations. It defines four collaborative operation modes, and a given application may use one or more of them.
 
-### Risk Assessment
+### Safety-Rated Monitored Stop
 
-The core requirement of ISO 10218-2 is a **documented risk assessment** for the complete robotic system. This risk assessment must:
+The robot stops and holds position before a human enters the collaborative workspace. No robot motion occurs while the person is present. This is the simplest collaborative mode and is essentially a traditional safeguarded cell with faster restart — the robot does not need to re-home after every operator interaction.
 
-1. **Identify hazards** — Evaluate all hazards present in the robotic workcell, including mechanical, electrical, thermal, noise, radiation, and material hazards
-2. **Estimate risk** — Determine the severity of potential harm and the probability of occurrence for each hazard
-3. **Evaluate risk** — Compare estimated risk against acceptable risk levels
-4. **Reduce risk** — Apply protective measures following the hierarchy: elimination by design, safeguarding, and administrative controls (in that order)
+**Typical application**: An operator loads parts into a fixture while the robot waits. After the operator steps clear, a restart signal (button press, area scanner clear signal) allows the robot to resume at production speed.
 
-The risk assessment is a living document — it must be updated whenever the system is modified, reprogrammed, or relocated.
+### Hand Guiding
 
-### Safeguarding Methods
+The operator physically moves the robot by applying force to a device mounted on the end effector. The robot defaults to a safety-rated monitored stop and only moves in response to direct human input through the guiding device. This mode requires the hand-guiding device to include an enabling switch and emergency stop.
 
-ISO 10218-2 defines several safeguarding approaches:
+**Typical application**: Lead-through programming, where an operator teaches waypoints by physically moving the robot arm. Also used for assisted handling of heavy parts where the robot provides lift support while the operator controls position.
 
-- **Perimeter guarding**: Physical barriers (fencing, panels) that prevent access to the robot's operating space. Access points use interlocked gates that trigger a safety stop when opened.
-- **Presence-sensing devices**: Light curtains, area scanners, and safety mats that detect when a person enters a defined zone and trigger protective stops.
-- **Safety-rated speed control**: Reducing robot speed when safeguarding is partially bypassed (e.g., during setup or maintenance with a reduced-speed enable switch).
-- **Safety-rated monitored stop**: Holding the robot in a safe position while a person is in the collaborative workspace.
+### Speed and Separation Monitoring (SSM)
 
-### Installation and Commissioning
+This mode dynamically adjusts robot speed based on the measured distance between the human and the robot. When the operator is far away, the robot runs at or near production speed. As the operator approaches, the robot decelerates. If the separation distance drops below the minimum protective separation distance, the robot stops.
 
-Before a robotic system enters production, ISO 10218-2 requires:
+The minimum protective separation distance calculation from ISO/TS 15066 accounts for human movement speed, robot stopping distance, sensor response time, and position uncertainty of both the human and the robot. Implementing SSM correctly requires safety-rated sensing (typically laser area scanners) and a controller capable of real-time speed adjustment based on sensor input.
 
-- Verification that all safety functions operate correctly
-- Validation of stopping distances and times
-- Measurement of maximum robot speed and force in safeguarded modes
-- Documentation of all safety settings and configurations
-- Operator training on safe operation, emergency procedures, and hazard awareness
+**Typical application**: Adjacent workstations on an [assembly line](/solutions/automated-assembly-systems/) where a human and robot perform different tasks in close proximity. The robot operates at full speed during normal production but decelerates or stops when the operator reaches into the shared zone.
 
-## ISO/TS 15066: Collaborative Robot Safety
+### Power and Force Limiting (PFL)
 
-**ISO/TS 15066:2016** is a technical specification that provides detailed guidance for collaborative robot applications — systems where humans and robots intentionally share workspace during production operations. It supplements ISO 10218-1 and ISO 10218-2 and does not replace them.
+PFL is the mode most commonly associated with collaborative robots — the cobots from Universal Robots, FANUC CRX, Yaskawa HC series, and others. The robot is designed so that any contact between the robot and a human body does not exceed biomechanical injury thresholds.
 
-### Four Collaborative Operation Modes
-
-ISO/TS 15066 defines four modes of collaborative operation. A system may use one or more of these modes:
-
-### 1. Safety-Rated Monitored Stop
-
-The robot stops and holds position before a human enters the collaborative workspace. The robot does not move while the person is present. Motion resumes only after the person leaves and a restart signal is given.
-
-**Use case**: A worker loads or unloads parts into a robot fixture while the robot is stationary.
-
-### 2. Hand Guiding
-
-A human physically guides the robot by applying force to an end-effector-mounted device. The robot has a safety-rated monitored stop active by default and only moves in response to direct human input.
-
-**Use case**: An operator guides the robot through a path for programming, or moves the robot to assist with a heavy-part handling task.
-
-### 3. Speed and Separation Monitoring (SSM)
-
-The robot operates at full speed when the human is far away and slows down or stops as the human approaches. The system uses sensors (typically laser area scanners) to continuously monitor the separation distance and adjusts robot speed to maintain a safe protective separation distance.
-
-The minimum protective separation distance is calculated using:
-
-**S = Sh + Sr + Ss + C + Zd + Zr**
-
-Where:
-- **Sh** = contribution from human speed
-- **Sr** = contribution from robot stopping distance
-- **Ss** = contribution from robot speed changes during stopping
-- **C** = intrusion distance from the sensing system
-- **Zd** = position uncertainty of the human
-- **Zr** = position uncertainty of the robot
-
-**Use case**: A robot and operator work at adjacent stations on an assembly line. The robot runs at production speed when the operator is at their station but slows or stops if they reach into the robot's area.
-
-### 4. Power and Force Limiting (PFL)
-
-The robot is designed so that contact between the robot and a human does not cause injury. This is achieved by limiting the robot's speed, force, pressure, and momentum to values below injury thresholds.
-
-This is the mode most commonly associated with collaborative robots (cobots) like Universal Robots, FANUC CRX, and Yaskawa HC series.
-
-### PFL Force and Pressure Thresholds
-
-ISO/TS 15066 Table A.2 provides maximum permissible force and pressure values for transient (impact) contact by body region:
+ISO/TS 15066 Annex A provides a table of maximum permissible force and pressure values by body region, based on pain onset research. For example:
 
 | Body Region | Max Transient Force (N) | Max Transient Pressure (N/cm²) |
 |---|---|---|
 | Skull / Forehead | 130 | 110 |
 | Face | 65 | 110 |
-| Neck | 150 | 50 |
-| Back / Shoulders | 210 | 140 |
 | Chest | 140 | 110 |
-| Abdomen | 110 | 110 |
 | Upper arm / Elbow | 150 | 130 |
-| Forearm / Wrist | 160 | 180 |
 | Hand / Fingers | 140 | 200 |
 | Thigh / Knee | 220 | 160 |
-| Lower leg | 130 | 130 |
 
-**Quasi-static (clamping) contact** thresholds are significantly lower — typically 40-65% of the transient values — because sustained compression causes injury at lower forces.
+Quasi-static (clamping) thresholds are significantly lower — typically 40-65% of the transient values — because sustained compression causes tissue damage at lower forces.
 
-These values are biomechanical limits based on pain onset thresholds. Staying below them does not guarantee zero risk; it means the risk of injury is acceptably low.
+For PFL applications, the maximum allowable robot TCP speed depends on the effective mass at the point of contact (robot mass + payload + end effector), the contact geometry, and the applicable force limit. Practically, most PFL cobots operate between 250 mm/s and 1,000 mm/s. Higher payloads mean lower permissible speeds. Every PFL application requires contact force measurement during validation — you cannot rely on manufacturer default settings alone.
 
-### Calculating Safe Speeds
+### A Critical Point About PFL
 
-For PFL applications, the maximum allowable robot speed depends on the robot's effective mass at the point of contact and the applicable force limit. The relationship is:
+PFL does not make the end effector safe. A cobot carrying a sharp tool, a hot welding tip, or an unguarded grinder can cause injury regardless of force limiting. The risk assessment must evaluate the complete system including the tool, the workpiece, and the process. PFL addresses blunt-impact and crushing hazards only.
 
-**F = m × v / Δt**
+## Practical Risk Assessment Process
 
-Where F is the force limit, m is the effective mass (robot + payload + end effector), v is the velocity, and Δt is the contact duration (typically 0.5 seconds for transient contact). Robot manufacturers provide tools to calculate maximum safe speeds for specific configurations.
+Whether you are building a fully guarded workcell or a collaborative application, the risk assessment follows the same structure. Here is how we approach it at AMD Machines on every [robotic integration project](/solutions/robot-integration/):
 
-As a rule of thumb, most PFL cobots operate at speeds between 250 mm/s and 1,000 mm/s depending on payload and expected contact area. Higher payload means lower maximum safe speed.
+1. **Define the application completely** — Robot model, payload, end effector, workpiece, cycle time, production rate, all operational modes (automatic, manual, maintenance, cleaning), and personnel who will interact with the system.
+2. **Identify every hazard** — Walk through each mode of operation. Consider what happens during normal production, during part changeover, during a jam or fault recovery, during maintenance, and during foreseeable misuse.
+3. **Estimate and evaluate risk** — Use a structured risk scoring method. We use a risk graph per ISO 12100 Annex A that considers severity, exposure frequency, and avoidance probability.
+4. **Select and implement protective measures** — Follow the hierarchy strictly. Redesign to eliminate the hazard first. If that is not feasible, add safeguarding. Only rely on training and PPE as a last resort.
+5. **Verify and validate** — Measure stopping distances, test sensor coverage, measure contact forces for PFL applications, verify safety circuit logic, and test every interlock and E-stop.
+6. **Document everything** — The completed risk assessment, safety system design drawings, verification test records, and residual risk documentation form the safety file for the system.
 
-## Risk Assessment Process: Step by Step
+## Common Mistakes in Robot Safety
 
-Whether you are building a fully guarded workcell or a collaborative application, the risk assessment process follows the same structure:
+From decades of robot integration experience, we see these recurring errors:
 
-1. **Define the application** — Document the robot model, payload, end effector, workpiece, cycle, and operating modes (automatic, manual, maintenance)
-2. **Identify the hazards** — Walk through every phase of operation and identify what could cause harm: crushing, impact, shearing, entanglement, ejection of parts, electrical, thermal
-3. **Estimate the risk for each hazard** — Use a risk scoring method (e.g., ISO 12100 Annex A) considering severity, exposure frequency, and avoidance probability
-4. **Apply protective measures** — For each unacceptable risk, select and implement safeguards following the hierarchy: design changes first, then guards and safety devices, then information and training
-5. **Verify effectiveness** — Test that each protective measure works as intended. Measure stopping distances, verify sensor coverage, validate safety circuit performance
-6. **Document everything** — The risk assessment, safety system design, verification results, and residual risks must all be documented and maintained
-
-## Common Safety Components
-
-A compliant robotic safety system typically includes some combination of:
-
-- **Safety PLC or safety controller** — Processes safety inputs and controls safety outputs at the required performance level (PLd/PLe or SIL2/SIL3)
-- **Light curtains** — Type 4 (PLe) devices that detect intrusion through a plane of infrared beams. Used for perimeter access protection.
-- **Laser area scanners** — Type 3 (PLd) devices that monitor a 2D area on the floor. Used for zone-based speed and separation monitoring.
-- **Safety-rated interlock switches** — Monitor guard door positions. Tongue-style or RFID-coded switches prevent bypassing.
-- **Emergency stop buttons** — Category 0 or Category 1 stops accessible from all operator positions.
-- **Enabling devices** — Three-position switches held by personnel during setup and manual operations.
-- **Safety mats** — Pressure-sensitive mats that detect standing or walking in a defined area.
-
-## Compliance Checklist for Manufacturers
-
-Use this checklist when planning or auditing a robotic installation:
-
-- [ ] Risk assessment completed and documented per ISO 10218-2
-- [ ] Robot safety manual reviewed and safety function performance levels verified
-- [ ] Safeguarding method selected based on risk assessment
-- [ ] Safety circuit design meets required performance level (minimum PLd / SIL2)
-- [ ] Emergency stop circuits functional and accessible from all operator positions
-- [ ] Guard interlocks installed and tested (Category coded per ISO 14119)
-- [ ] Stopping distance and time measured and documented
-- [ ] Safety-rated speed monitoring configured and verified
-- [ ] Axis limits configured to restrict motion to the required workspace
-- [ ] Presence-sensing devices positioned per manufacturer specifications (height, angle, range)
-- [ ] Collaborative applications validated against ISO/TS 15066 force and pressure limits
-- [ ] Operator training completed and documented
-- [ ] Safety system documentation package assembled and stored
+- **Skipping the risk assessment update after modifications** — Adding a new part program or changing an end effector changes the risk profile. The risk assessment must be reviewed.
+- **Incorrect safeguard positioning** — Light curtains and scanners positioned too close to the hazard zone allow the robot to reach the operator before it stops. Minimum distance calculations per ISO 13855 must account for approach speed, device response time, and robot stopping time.
+- **Assuming cobots do not need safeguarding** — A cobot does not automatically create a safe application. The end effector, workpiece, process, and environment all contribute to the risk. PFL alone may not be sufficient.
+- **Inadequate stopping distance verification** — Calculated stopping distances must be validated by actual measurement. Brake wear, mechanical compliance, and payload variations can increase actual stopping distances beyond calculated values.
 
 ## How AMD Machines Ensures Compliance
 
-At AMD Machines, safety is engineered into every robotic system from the concept stage. Our process includes:
+Safety engineering is integrated into every phase of our project execution. We perform preliminary risk assessments during concept design, refine them through detailed engineering, and validate them during build and commissioning. Our controls engineers design safety circuits using safety-rated PLCs with validated function blocks, and every system undergoes full safety validation — including stopping distance measurement and force measurement for collaborative applications — before shipment.
 
-- **Risk assessment during design** — We perform a preliminary risk assessment before the first CAD model is created, then refine it throughout the project
-- **Safety circuit design by qualified engineers** — Our controls engineers design safety systems using safety-rated PLCs and validated safety components
-- **Full validation before shipment** — Every system undergoes safety validation including stopping distance measurement, sensor coverage verification, and force measurement for collaborative applications
-- **Documentation packages** — We deliver complete risk assessments, safety system drawings, safety function verification records, and operator training materials with every system
+We deliver complete safety documentation packages with every system: risk assessments, safety circuit drawings, verification test records, and operator training materials. This documentation is not an afterthought — it is a project deliverable with the same level of engineering rigor as the mechanical and controls design.
 
-## Partner With AMD Machines
-
-AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. [Contact us](/contact/) to discuss your automation needs.
+If you are planning a robotic automation project and need guidance on safety standards compliance, [contact our engineering team](/contact/) to discuss your application.

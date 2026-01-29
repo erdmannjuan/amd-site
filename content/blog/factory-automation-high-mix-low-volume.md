@@ -10,7 +10,7 @@ category: Business
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-03-10
-read_time: 8
+read_time: 9
 related_posts:
 - title: Automation Cells vs Production Lines
   url: /blog/automation-cells-vs-production-lines/
@@ -20,263 +20,87 @@ related_posts:
   description: When custom automation delivers value for varied production.
 ---
 
-Traditional automation was designed for high-volume, low-mix production—making millions of identical parts efficiently. But many manufacturers face the opposite challenge: producing smaller quantities of many different products. This high-mix, low-volume (HMLV) environment presents unique automation challenges and opportunities.
+Most factory automation was engineered with a straightforward assumption: one product, one line, millions of cycles. That model works well when demand is predictable and product variety is limited. But a growing number of manufacturers operate in the opposite reality — producing hundreds of different assemblies in batch sizes that range from single units to a few thousand. This high-mix, low-volume (HMLV) environment demands a fundamentally different approach to automation, one that prizes adaptability over raw throughput.
 
-## The HMLV Challenge
+## What Makes HMLV Manufacturing So Difficult to Automate
 
-High-mix, low-volume manufacturers deal with:
+The core challenge is changeover. Every time a line or cell switches from one product to another, there is downtime for fixture swaps, program loading, quality verification, and operator retraining. In a facility running dozens of changeovers per week, that lost time can dwarf whatever cycle-time gains automation provides.
 
-- Dozens or hundreds of different products
-- Batch sizes from one to thousands
-- Frequent changeovers between products
-- Varying processes for different items
-- Demand variability and short lead times
+Beyond changeover frequency, HMLV manufacturers face additional complications:
 
-Traditional fixed automation struggles in this environment. The changeover time between products can consume the time saved by automation, making the investment difficult to justify.
+- **Wide product variety** — tooling and fixturing must accommodate different geometries, materials, and tolerances.
+- **Unpredictable demand** — production schedules shift frequently, making it hard to justify dedicated equipment for any single product.
+- **Strict documentation requirements** — many HMLV shops serve regulated industries like aerospace or medical devices where every assembly needs full traceability.
+- **Short lead times** — customers expect fast turnarounds, leaving little room for lengthy setup procedures.
 
-## Why Automate HMLV Production?
+These factors explain why many HMLV manufacturers have historically relied on skilled manual labor. But labor availability is tightening across every manufacturing sector, and that reality is forcing a reexamination of what flexible automation can accomplish.
 
-Despite the challenges, automation delivers real value in HMLV environments:
+## Why the Investment Still Makes Sense
 
-### Labor Availability
+Even with longer payback periods than high-volume automation, HMLV automation delivers strategic advantages that don't always show up in a simple ROI spreadsheet.
 
-Finding and retaining skilled operators is increasingly difficult. Automation reduces dependence on labor that may not be available.
+**Workforce stability.** Skilled assemblers are increasingly hard to find and retain. A flexible automation cell doesn't call in sick, and it doesn't require months of training when a new product launches. It reduces your exposure to labor-market volatility.
 
-### Quality Consistency
+**Process consistency.** Manual assembly introduces variation — even experienced operators have good days and bad days. Automated systems apply the same force, the same torque, and the same placement every cycle. For operations where consistency directly affects product quality, this alone can justify the investment.
 
-Even with skilled operators, variation exists. Automation delivers consistent quality across product changes.
+**Automatic data capture.** Traceability is table stakes in industries like [medical device manufacturing](/industries/medical/) and aerospace. Automated systems generate timestamped records of every parameter — press forces, torque values, vision inspection results — without relying on operators to fill out paperwork.
 
-### Documentation and Traceability
+**Competitive differentiation.** The ability to quote shorter lead times and accept smaller batch sizes opens doors to business your competitors can't profitably serve.
 
-Many HMLV manufacturers serve aerospace, medical, or other industries requiring extensive documentation. Automated systems capture this data automatically.
+## Equipment Strategies That Work in HMLV Environments
 
-### Competitive Advantage
+### Collaborative Robots as Flexible Labor
 
-Flexible automation enables faster response to customer needs and shorter lead times—key differentiators in HMLV markets.
+Collaborative robots are a natural fit for HMLV work. Their teach-pendant and hand-guided programming makes it practical to create and store programs for dozens of products. When a new batch arrives, the operator selects the corresponding recipe, loads the appropriate fixture, and production resumes with minimal interruption. Cobots can also be physically relocated between workstations, allowing you to address shifting bottlenecks as your product mix changes week to week.
 
-## Strategies for HMLV Automation
+### Vision-Guided Operations
 
-### Design for Quick Changeover
+Machine vision fundamentally changes what's possible in flexible automation. A well-designed [vision system](/blog/introduction-to-machine-vision-for-manufacturing/) can locate parts without precision fixturing, adapt to dimensional variation within tolerance, and verify assembly completeness — all without hardware changeover. In some HMLV applications, vision guidance eliminates the need for product-specific fixtures entirely, collapsing changeover time from minutes to seconds.
 
-The key to HMLV automation success is minimizing changeover time and cost.
+### Modular Fixturing and Quick-Change Tooling
 
-**Modular Fixturing**
-- Master pallets with interchangeable nests
-- Quick-change tooling systems
-- Self-locating fixture plates
-- RFID identification of fixtures
-
-**Software-Based Changeover**
-- Recipe-driven programs for different products
-- Automatic parameter adjustment
-- Vision-guided operations that adapt to part variation
-- Barcode or RFID-initiated changeover
-
-**Mechanical Quick Change**
-- Tool-less fixture changes
-- Quick-disconnect utilities
-- Color-coded components
-- Clear setup documentation
-
-### Prioritize Flexibility Over Speed
-
-In HMLV, maximizing flexibility often trumps minimizing cycle time:
-
-- Accept slightly longer cycle times for easier programming
-- Choose equipment that handles product variation
-- Invest in adaptable tooling rather than optimized single-purpose tools
-- Design for future product variations, not just current parts
-
-### Focus on High-Value Operations
-
-Automate operations where automation adds the most value:
-
-- Quality-critical processes requiring consistency
-- Operations with documentation requirements
-- Hazardous or ergonomically challenging tasks
-- Bottleneck operations constraining throughput
-
-Leave simple, quick operations manual when automation doesn't add proportional value.
-
-## Equipment for Flexible Automation
-
-### Collaborative Robots
-
-[Cobots](/blog/what-is-industrial-automation/) are ideal for HMLV environments:
-
-- Easy programming through hand guidance
-- Quick redeployment between tasks
-- Safe operation alongside workers
-- Lower investment than traditional robots
-
-A cobot can be moved between workstations to address different bottlenecks as product mix changes.
-
-### Vision-Guided Robotics
-
-Vision systems enable flexibility by:
-
-- Locating parts without precise fixturing
-- Adapting to product variations
-- Guiding robots to variable positions
-- Reducing fixture complexity and changeover
-
-Properly implemented vision can eliminate fixture changes entirely for some applications.
+Where dedicated fixtures are still necessary, modular approaches minimize changeover impact. Master pallets with interchangeable nests, quick-disconnect utility connections, and RFID-tagged fixtures that automatically load the correct program all reduce the time and skill required to switch products. The goal is to make changeover so fast and foolproof that operators don't dread it — because dreaded changeovers are the ones that introduce errors.
 
 ### Flexible Feeding Systems
 
-Traditional vibratory feeders are designed for specific parts. Flexible alternatives include:
+Traditional vibratory bowl feeders are designed around a single part geometry. HMLV environments need alternatives: vision-guided bin picking, flex feeders that handle multiple part types, or gravity-fed systems with adjustable guides. The additional cost of a flexible feeder is typically recovered quickly when you factor in the cost of owning and storing dedicated feeders for every product in your catalog.
 
-- Vision-guided bin picking
-- Flexible bowl feeders with adjustable tooling
-- Flex feeders that handle multiple part types
-- Gravity-fed systems with adjustable guides
+## Software and Programming Approaches
 
-### Modular Assembly Cells
+Hardware flexibility means little without software that supports rapid changeover. Three programming strategies have proven effective in HMLV automation:
 
-[Robotic cells](/solutions/robotic-cells/) designed for flexibility:
+**Recipe-driven operation.** The system stores a complete set of parameters — robot paths, force thresholds, inspection criteria, documentation templates — for each product. Changeover becomes a matter of selecting the right recipe, either manually or automatically via barcode scan.
 
-- Standardized cell platforms that accept different tooling
-- Quick-change end-of-arm tooling
-- Mobile cells that can be repositioned
-- Cells designed for multiple product families
+**Parameterized master programs.** Rather than maintaining entirely separate programs for each product, engineers create a single master program with adjustable variables: positional offsets for different part sizes, force settings for different materials, speed profiles for different operations. This dramatically reduces the programming burden when adding new products.
 
-### Adaptive Fixturing
+**Offline programming and simulation.** New product programs are developed in a [simulation environment](/services/digital-twins/) while the cell continues running production. The validated program is downloaded to the controller and verified with a first-article run. This keeps the cell productive while expanding its product repertoire.
 
-Fixtures that adjust to different products:
+## Calculating ROI for HMLV Automation
 
-- Adjustable locating pins on grid plates
-- Vacuum fixturing for sheet products
-- Magnetic fixturing for ferrous parts
-- Compliant fixturing for dimensional variation
+Standard automation ROI models assume steady-state production of a single product. HMLV calculations require additional variables:
 
-## Programming Strategies
+- **Changeover frequency and duration** — both current manual and projected automated changeover times.
+- **Product coverage percentage** — what fraction of your total product volume can the automated cell handle? It's rarely 100%, and that's acceptable.
+- **Program development cost** — each new product requires some engineering time to create fixtures, programs, and inspection routines.
+- **Quality cost avoidance** — reductions in scrap, rework, and warranty claims attributable to process consistency.
+- **Flexibility value** — the revenue enabled by accepting orders you would otherwise decline due to capacity or lead-time constraints.
 
-### Offline Programming
+In our experience, the payback period for well-designed HMLV automation typically runs 18 to 30 months — longer than a dedicated high-volume system, but well within the economic life of the equipment.
 
-Develop robot programs without stopping production:
+## Implementation: Start Focused, Then Scale
 
-- Use [simulation software](/services/digital-twins/) to create new programs
-- Validate programs virtually before downloading
-- Build program libraries for product families
-- Reduce development time for new products
+The most successful HMLV automation programs start with a single cell addressing a specific pain point. Choose a pilot application that represents your typical production challenges, has clear and measurable improvement targets, and is visible enough to build organizational confidence without being so critical that a stumble creates a crisis.
 
-### Parameterized Programs
+Expect iteration. The first few months of production will reveal optimization opportunities that weren't apparent during design. Changeover procedures will get refined, fixture designs will be improved, and operators will develop techniques that complement the automation. Plan for this learning curve rather than expecting perfection on day one.
 
-Create master programs with adjustable parameters:
+Building internal programming capability is also essential. HMLV automation is not a set-and-forget investment — new products will require new programs, and the faster your team can create them, the greater the return on your automation investment.
 
-- Position offsets for different part sizes
-- Speed adjustments for different materials
-- Force settings for different assemblies
-- Single program serves multiple products
+## Practical Example
 
-### Template-Based Development
+A contract manufacturer producing precision assemblies for medical and aerospace customers came to us with a common HMLV challenge: over 200 different assemblies, typical lot sizes of 50 to 500 pieces, strict documentation requirements, and a growing order book they couldn't staff for. We designed three flexible robotic assembly cells with vision-guided part handling, quick-change fixture systems, and barcode-initiated recipe selection. The results were significant — 60% labor reduction in automated operations, changeover times under 10 minutes, automatically generated compliance documentation, and capacity for 30% more volume without additional headcount.
 
-Reuse proven program structures:
+## Moving Forward
 
-- Standard program templates for common operations
-- Copy and modify rather than develop from scratch
-- Consistent structure simplifies maintenance
-- Faster development for new products
+AMD Machines has built [custom automation solutions](/solutions/custom-automation/) for HMLV manufacturers across aerospace, medical devices, consumer products, and contract manufacturing. We understand that flexibility isn't a nice-to-have in these environments — it's the entire point.
 
-## Calculating HMLV Automation ROI
-
-Traditional ROI models assume stable production. HMLV calculations must account for:
-
-### Changeover Impact
-
-- Time spent on changeovers (currently and post-automation)
-- Changeover frequency per day/week
-- Labor required for changeovers
-- Quality losses during changeover
-
-### Mix Variability
-
-- Range of products to be automated
-- Percentage of volume covered by automation
-- Products that still require manual processing
-- Future product development plans
-
-### Learning Curve
-
-- Time to develop programs for new products
-- Training requirements for varied operations
-- Maintenance complexity with varied tooling
-- Documentation requirements per product
-
-### Flexibility Value
-
-- Faster response to customer demands
-- Ability to accept shorter-run orders
-- Reduced lead times as competitive advantage
-- Capacity for future product variations
-
-The ROI calculation for HMLV often shows longer payback than high-volume automation, but the strategic value of flexibility may justify investment regardless.
-
-## Implementation Approach
-
-### Start Small
-
-Begin with a single cell or operation:
-
-- Prove the concept with limited risk
-- Learn what works in your environment
-- Build organizational capability
-- Scale based on demonstrated success
-
-### Choose the Right Pilot
-
-Select an initial project that:
-
-- Has clear automation benefit
-- Represents typical production challenges
-- Is visible enough to demonstrate value
-- Is not so critical that failure is catastrophic
-
-### Plan for Iteration
-
-Expect to optimize over time:
-
-- Initial implementation proves feasibility
-- Production experience reveals improvements
-- New products require program development
-- Continuous improvement drives efficiency
-
-### Build Internal Capability
-
-HMLV automation requires ongoing programming:
-
-- Train operators on basic robot operation
-- Develop internal programming skills
-- Establish relationships with automation partners
-- Build a library of solutions
-
-## Case Example
-
-A contract manufacturer producing precision assemblies for medical and aerospace customers faced challenges:
-
-- 200+ different assemblies
-- Typical lot sizes of 50-500 pieces
-- Strict quality documentation requirements
-- Growing business with labor constraints
-
-Solution implemented:
-
-- Three flexible robotic assembly cells
-- Vision-guided part handling
-- Quick-change fixture systems
-- Barcode-initiated recipe selection
-
-Results:
-
-- 60% labor reduction in automated operations
-- Changeover time under 10 minutes
-- Complete documentation automatically generated
-- Capacity for 30% more volume
-
-## Getting Started with HMLV Automation
-
-AMD Machines has extensive experience helping manufacturers automate high-mix, low-volume production. Our [custom automation solutions](/solutions/custom-automation/) are designed for the flexibility HMLV environments demand.
-
-We serve manufacturers across industries including [aerospace](/industries/aerospace/), [medical devices](/industries/medical/), and contract manufacturing where product mix is a daily reality.
-
-**Facing HMLV automation challenges?** [Contact us](/contact/) to discuss strategies for your specific situation. We'll help develop an approach that delivers automation value even in high-mix environments.
+If your production floor is defined by product variety and your biggest constraint is finding people to build it all, [contact our engineering team](/contact/) to discuss what flexible automation can realistically accomplish for your operation. We'll help you identify the right starting point and build a roadmap that delivers value at each stage.

@@ -9,7 +9,7 @@ category: Business
 author: AMD Engineering Team
 author_title: Automation Specialists
 date: 2024-01-08
-read_time: 5
+read_time: 8
 related_posts:
 - title: Choosing the Right Robot
   url: /blog/choosing-right-robot-for-your-application/
@@ -19,75 +19,101 @@ related_posts:
   description: Avoid these pitfalls when implementing your first automation project.
 ---
 
-Every automation project starts with the same question from the C-suite: "What's the payback?" And most of the time, the engineering team throws together a spreadsheet that compares current labor cost against the equipment quote. That's not an ROI model — it's a guess.
+Every automation investment starts with the same question from leadership: "What's the payback?" It sounds simple, but the answer depends entirely on how honestly you build the model. Over 30 years and 2,500+ machines delivered, we have seen ROI analyses that killed good projects because they missed critical benefits, and we have seen analyses that greenlit bad projects because they glossed over real costs. Both outcomes are avoidable if you build your financial model on solid engineering data rather than wishful thinking.
 
-We've seen automation projects get killed because the ROI analysis was too optimistic (leadership didn't trust it) or too pessimistic (it missed half the benefits). Here's how to build a model that actually holds up under scrutiny.
+Here is how to construct an ROI model that survives scrutiny from finance, operations, and the plant floor.
 
-## Start With Fully Burdened Labor Cost
+## Fully Burdened Labor Cost Is Your Starting Point
 
-This is where most people trip up. They use the operator's hourly wage — say $18/hour — and multiply by shifts. But the real cost of a manufacturing employee is 1.3x to 1.6x their base wage once you factor in benefits, payroll taxes, workers' comp, training, and supervision overhead.
+Most ROI spreadsheets start with the operator's hourly wage and multiply by annual hours. That approach underestimates the true cost of manual labor by 30 to 60 percent.
 
-For a $18/hour operator running two shifts, the math looks like this:
+A manufacturing employee's fully burdened cost includes base wages, benefits (health insurance, retirement contributions), payroll taxes, workers' compensation insurance, training time, supervision overhead, and the cost of managing turnover. In most US manufacturing environments, the burden multiplier falls between 1.3x and 1.6x the base hourly rate.
 
-- Base wage: $18 × 2,080 hours = $37,440/year
-- Burden multiplier (1.45x): $54,288/year fully loaded
-- Two-shift operation removing 2 operators: $108,576/year in direct savings
+Consider a practical example. An operator earning $20 per hour on a two-shift operation:
 
-But here's the thing — don't assume you're eliminating all labor. A [robotic machine tending](/solutions/machine-tending/) cell still needs someone loading raw stock and unloading finished parts in most configurations. A realistic model might show you're removing 1.5 FTEs, not 2. That difference matters when your payback calculation is sitting right at the 24-month threshold.
+- **Base annual wage**: $20 × 2,080 hours = $41,600 per operator
+- **Fully burdened cost at 1.45x**: $60,320 per operator per year
+- **Two operators displaced across two shifts**: $120,640 in annual labor savings
 
-## Quantify the Throughput Gain
+However, the word "displaced" needs precision. A [robotic machine tending](/solutions/machine-tending/) cell typically still requires an operator for material loading, part changeover, and first-piece inspection. In many real-world deployments, you eliminate 1.5 FTEs rather than 2.0 FTEs. That distinction can shift your payback by several months, so be conservative. The operations team will call out inflated assumptions immediately.
 
-Labor savings get all the attention, but throughput improvement is often the bigger driver. If your manual process runs at 45-second cycle times with a FANUC or Yaskawa robot holding 28-second cycle times, that's a 38% capacity increase on the same footprint.
+Also factor in labor availability. In regions with tight labor markets, the cost of unfilled positions — overtime premiums, missed shipments, declined orders — can exceed the direct wage savings from automation. If your plant is running mandatory overtime at 1.5x rates just to meet demand, that premium cost belongs in the model.
 
-Put a dollar value on it. If each finished part generates $2.50 in gross margin and you're gaining 400 additional parts per shift, that's $1,000/shift in incremental margin — roughly $250,000/year on a two-shift operation. Most ROI spreadsheets ignore this entirely because the production manager and the finance team aren't talking to each other.
+## Throughput Gains Often Outweigh Labor Savings
 
-And don't forget uptime. Robots don't call in sick. They don't take breaks. A well-maintained robotic cell runs at 95%+ uptime vs. 80-85% effective utilization for manual operations once you account for breaks, fatigue, shift changeovers, and absenteeism. That gap adds up fast.
+Labor cost reduction dominates most automation business cases, but throughput improvement frequently delivers more value. The problem is that throughput gains are harder to quantify, so they often get left out entirely.
 
-## Account for Quality Savings (They're Real)
+Robots deliver consistent cycle times without fatigue-related slowdowns. If your manual process averages 48-second cycle times (accounting for operator variability, micro-breaks, and end-of-shift fatigue) while an automated cell holds a steady 30-second cycle time, you gain 37.5 percent more output from the same floor space.
 
-Quality improvements are the hardest to quantify but often the most compelling. We worked on an [assembly system](/solutions/assembly/) where manual operators were producing 2.3% scrap on a precision press-fit operation. After automation, scrap dropped to 0.15%.
+Translate that into revenue. If each finished unit carries $3.00 in gross margin and you produce an additional 360 units per shift, that represents $1,080 per shift in incremental margin. On a two-shift, 250-day operation, the throughput gain alone is worth $540,000 per year.
 
-On a line producing 800 parts/day at $12 material cost per part, that scrap reduction saved:
+Uptime compounds the advantage. A well-maintained robotic cell operates at 92 to 97 percent overall equipment effectiveness (OEE). Manual stations typically achieve 78 to 85 percent effective utilization after accounting for breaks, shift changeovers, absenteeism, and fatigue. That 10 to 15 percent uptime gap translates directly to additional output capacity.
 
-- Before: 18.4 rejects/day × $12 = $220.80/day
-- After: 1.2 rejects/day × $12 = $14.40/day
-- Annual savings: ~$52,000
+Make sure your throughput analysis accounts for bottleneck position. If the automated station is not the bottleneck, the throughput gain may not flow directly to finished goods output. Map the value stream first, then calculate the real impact on system throughput.
 
-Then there are the costs you can't easily see: warranty claims, customer chargebacks (especially in automotive — those 8D reports aren't cheap), and the risk of losing a contract over quality escapes. If you're supplying Tier 1 automotive, a single quality incident can cost $50,000-$500,000 in sorting, containment, and penalties.
+## Quality Savings Are Real and Measurable
 
-## Don't Lowball the True Investment Cost
+Quality improvements are frequently treated as "soft savings" and excluded from the ROI model. That is a mistake. Scrap, rework, warranty claims, and customer chargebacks are all quantifiable with historical data your quality team already has.
 
-Here's where optimistic ROI models fall apart. The equipment quote is only 60-75% of total project cost. You need to budget for:
+On a precision [assembly](/solutions/assembly/) operation we automated, manual operators produced 2.3 percent scrap on a press-fit process. After automation with closed-loop force and distance monitoring, scrap dropped to 0.15 percent. For a line producing 800 parts per day at $12 material cost per reject:
 
-- **Integration and installation**: Rigging, utilities, floor prep, safety guarding — typically 10-15% of equipment cost
-- **End-of-arm tooling**: Custom grippers, fixtures, and tool changers can run $15,000-$80,000 depending on complexity
-- **Controls and programming**: PLC integration, HMI development, [robot programming](/services/robot-programming/) — especially if you're tying into an existing line
-- **Ramp-up period**: Plan for 2-4 weeks of reduced output while you debug, optimize cycle times, and train operators
-- **Ongoing costs**: Preventive maintenance (budget 3-5% of equipment cost annually), spare parts inventory, consumables, and service contracts
+- **Before**: 18.4 rejects/day × $12 = $220.80/day in scrap
+- **After**: 1.2 rejects/day × $12 = $14.40/day in scrap
+- **Annual scrap reduction**: approximately $52,000
 
-A $350,000 robot cell quote typically becomes a $450,000-$500,000 total investment by the time it's running at full production rate. Use the real number in your model, not the purchase order.
+Beyond scrap, consider downstream quality costs. In automotive supply chains, a quality escape that reaches the customer can trigger sorting operations, 8D corrective action reports, chargebacks, and in severe cases, production line shutdowns at the OEM. A single incident can cost $50,000 to $500,000. Even one avoided incident per year dramatically improves your ROI calculation.
 
-## Running the Numbers
+Consistent automated processes also generate better [traceability data](/blog/traceability-systems-for-assembly-operations/), which supports root cause analysis, reduces the scope of containment events, and strengthens your position during customer quality audits.
 
-With honest inputs, the payback formula is straightforward:
+## Total Investment Cost — Not Just the Equipment Quote
 
-**Payback Period = Total Investment ÷ Annual Net Benefit**
+Optimistic ROI models fall apart because they use the equipment purchase price as the total investment. In practice, the quoted equipment cost represents only 60 to 75 percent of total project expenditure.
 
-Where Annual Net Benefit = Labor Savings + Throughput Gain + Quality Savings - Ongoing Costs.
+Budget for the full picture:
 
-Using the example numbers above:
-- Total investment: $475,000
-- Labor savings: $108,576
-- Throughput gain: $250,000
-- Quality savings: $52,000
-- Ongoing costs: -$18,000/year
-- **Annual net benefit: $392,576**
-- **Payback: 14.5 months**
+- **Integration and installation**: Rigging, utilities (compressed air, electrical drops), floor preparation, safety guarding, and commissioning. Typically 10 to 15 percent of equipment cost.
+- **End-of-arm tooling**: Custom grippers, fixtures, tool changers, and part-specific nesting. Depending on complexity, tooling runs $15,000 to $80,000 or more for multi-part-number cells.
+- **Controls integration**: PLC programming, HMI development, [vision system integration](/blog/integrating-vision-systems-with-robots/), and communication with upstream and downstream equipment. This scope is frequently underestimated, especially when tying into legacy controls.
+- **Programming and debug**: Robot path programming, cycle time optimization, and edge-case handling. Plan for 2 to 6 weeks depending on process complexity.
+- **Ramp-up costs**: Production runs at reduced efficiency during the first 2 to 4 weeks after installation. Budget for lower throughput and higher scrap rates during this period.
+- **Ongoing annual costs**: Preventive maintenance at 3 to 5 percent of equipment cost per year, spare parts inventory, consumables (welding wire, dispensing materials, grippers), and service contract fees.
 
-For projects where payback isn't as clear-cut (say 30+ months), consider Net Present Value (NPV) or Internal Rate of Return (IRR) analysis. These account for the time value of money and give leadership a better comparison against other capital investments competing for the same budget.
+A $350,000 robotic cell quote typically becomes $450,000 to $525,000 in total installed cost by the time the cell reaches sustained production rates. Use the real number.
 
-Most successful automation projects we see land between 12-24 months payback. If your model shows under 12 months, double-check your assumptions — you might be missing costs. If it's over 36 months, look at whether you're capturing all the throughput and quality benefits.
+## Building the Payback Calculation
 
-Bottom line: a solid ROI model isn't about making the numbers work. It's about building a case that doesn't fall apart six months after installation. Get the inputs right, and the decision usually makes itself.
+With honest inputs assembled, the core formula is straightforward:
 
-If you're evaluating a specific project and want help building the business case, [reach out to our team](/contact/) — we've done this hundreds of times across every major manufacturing sector.
+**Payback Period = Total Installed Cost ÷ Annual Net Benefit**
+
+Where Annual Net Benefit equals the sum of labor savings, throughput gains, and quality savings, minus annual ongoing costs.
+
+Using the figures from the examples above:
+
+- **Total installed cost**: $490,000
+- **Annual labor savings**: $120,640
+- **Annual throughput gain**: $540,000
+- **Annual quality savings**: $52,000
+- **Annual ongoing costs**: -$20,000
+- **Annual net benefit**: $692,640
+- **Simple payback**: 8.5 months
+
+That payback is strong, but not every project looks like this. When payback exceeds 24 months, switch to Net Present Value (NPV) or Internal Rate of Return (IRR) analysis. These methods account for the time value of money and give leadership a fair comparison against other capital projects competing for the same budget. Use your company's weighted average cost of capital (WACC) as the discount rate, typically 8 to 12 percent for mid-size manufacturers.
+
+## Sensitivity Analysis Builds Credibility
+
+A single payback number invites challenge. A sensitivity analysis demonstrates rigor. Present your ROI under three scenarios:
+
+- **Conservative**: Use lower throughput gains, higher costs, and assume only labor savings that are fully committed headcount reductions.
+- **Expected**: Use your best engineering estimates with realistic assumptions about uptime, cycle times, and quality improvement.
+- **Optimistic**: Include benefits like reduced overtime, freed floor space for additional capacity, and improved ergonomics reducing injury claims.
+
+When leadership sees that even the conservative scenario delivers an acceptable payback, the project moves forward with confidence.
+
+## What Good Looks Like
+
+Across the projects we have supported, successful automation investments typically show 12 to 24 month payback periods. If your model shows under 10 months, audit your assumptions — you may be underestimating costs. If payback stretches beyond 36 months, revisit whether you have captured all throughput and quality benefits, and whether the process is truly a good candidate for automation.
+
+The goal is not to make the numbers work. The goal is to build a financial case that holds up six months after installation, when the actual costs and savings are visible to everyone.
+
+If you are evaluating a specific automation project and want help building the business case, [reach out to our team](/contact/). We have done this analysis hundreds of times across automotive, medical device, electronics, consumer products, and heavy equipment manufacturing.
