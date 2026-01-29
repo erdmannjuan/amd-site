@@ -1,10 +1,10 @@
 ---
 title: Servo Press Integration & Custom Servo Press Machine Systems | AMD Machines
-description: "AMD Machines is a servo press integrator specializing in custom servo press machine design, force-displacement monitoring, press-fit automation, and Kistler/TOX integration. Turnkey servo press systems for automotive, medical, and electronics."
-keywords: custom servo press machine, servo press integrator, servo press system integrator, servo press automation supplier, servo press turnkey system, servo press machine builder, servo press assembly station, servo press for manufacturing line, servo press cell integration, servo press for press fit assembly, press fit servo press system, servo press for bearing press fit, force displacement monitoring servo press, servo press with force monitoring, kistler servo press integrator, tox electric servo press integration, servo press retrofit, replace pneumatic press with servo press
+description: "Custom servo press integration from a 30-year machine builder. Kistler, Promess, TOX and Schmidt press-fit systems with force-displacement monitoring for automotive, medical and electronics."
+keywords: servo press integration, custom servo press systems, force-displacement monitoring, press-fit automation, servo press machine builder, Kistler servo press integrator, TOX servo press systems
 template: servo-pressing.html
 hero_title: Servo Press Integration
-hero_subtitle: Custom servo press machine design and integration for press-fit assembly, crimping, forming, and quality-critical pressing applications. Force-displacement monitoring on every cycle.
+hero_subtitle: Turnkey servo press machine design and integration for press-fit assembly, crimping, forming, and quality-critical pressing. Force-displacement monitoring on every single cycle — because one bad press can shut down your customer's line.
 short_title: Servo Press
 label: Precision Assembly
 url: /solutions/servo-pressing/
