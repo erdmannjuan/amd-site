@@ -1,5 +1,6 @@
 # 301 Redirects - Old amdmachines.com URLs to new structure
 # Format: old-path new-path status-code
+# Cloudflare Pages limits: 100 static + 100 dynamic redirects
 
 # About page
 /about-us/ /about/ 301
@@ -12,6 +13,19 @@
 /automated-solutions/custom-automation-equipment/ /solutions/custom-automation/ 301
 /automated-solutions/flexible-assembly-machines/ /solutions/assembly/ 301
 /automated-solutions/leak-detection/ /solutions/test-systems/ 301
+/automated-solutions/marking-traceability/ /solutions/marking-traceability/ 301
+/automated-solutions/assembly/ /solutions/assembly/ 301
+/automated-solutions/robotic-cells/cnc-robot-tending-automation/ /solutions/machine-tending/ 301
+/automated-solutions/application-of-technology-to-manual-processes/ /solutions/ 301
+
+# Old site structure (automated-solutions-1 variant)
+/automated-solutions-1/ /solutions/ 301
+/automated-solutions-1/robotic-cells/ /solutions/robotic-cells/ 301
+/automated-solutions-1/leak-detection/ /solutions/test-systems/ 301
+/automated-solutions-1/welding/ /solutions/welding/ 301
+/automated-solutions-1/custom-automation-equipment/ /solutions/custom-automation/ 301
+/automated-solutions-1/marking-traceability/ /solutions/marking-traceability/ 301
+/automated-solutions-1/application-of-technology-to-manual-processes/ /solutions/ 301
 
 # Root-level solution pages to /solutions/
 /material-handling/ /solutions/material-handling/ 301
@@ -22,6 +36,11 @@
 # Industries
 /industries/automotive-auto-parts/ /industries/automotive/ 301
 /industries/manufacturing/ /industries/general-manufacturing/ 301
+/industries/healthcare/ /industries/medical/ 301
+/industries/aerospace-defense/ /industries/aerospace/ 301
+/industries/building-materials/ /industries/general-manufacturing/ 301
+/industries/electric-motor-assembly/ /industries/electronics/ 301
+/industries/automation-in-the-manufacturing-industry/ /industries/general-manufacturing/ 301
 
 # Blog redirects (old slugs to new equivalents)
 /blog/automated-assembly-machines-a-selection-guide/ /blog/automated-assembly-machines/ 301
@@ -33,27 +52,8 @@
 /blog/understanding-rotor-and-stator-tests-for-electric-motors/ /blog/electrical-testing-in-automated-production/ 301
 /blog/understanding-rotor-and-stator-tests-for-electric-motor-assembly/ /blog/electrical-testing-in-automated-production/ 301
 /blog/how-to-choose-the-right-leak-testing-equipment-for-your-application/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
-
-# Missing pages - redirect to closest equivalent
-/ebooks/ /blog/ 301
-/amd-mexico/ /contact/ 301
-/case-studies/cnc-machining/ /solutions/machine-tending/ 301
-/glossary/ /blog/ 301
-
-# Industries - additional mappings
-/industries/healthcare/ /industries/medical/ 301
-/industries/aerospace-defense/ /industries/aerospace/ 301
-/industries/building-materials/ /industries/general-manufacturing/ 301
-/industries/electric-motor-assembly/ /industries/electronics/ 301
-
-# Solutions - additional mappings
-/automated-solutions/marking-traceability/ /solutions/marking-traceability/ 301
-/automated-solutions/assembly/ /solutions/assembly/ 301
-/automated-solutions/robotic-cells/cnc-robot-tending-automation/ /solutions/machine-tending/ 301
-/automated-solutions/application-of-technology-to-manual-processes/ /solutions/ 301
-
-# Blog - additional mappings
 /blog/importance-of-end-of-line-equipment-in-the-automotive-industry/ /blog/end-of-line-testing-strategies-for-quality-assurance/ 301
+/blog/importance-of-end-of-line-equipment-in-the-automotive-sector/ /blog/end-of-line-testing-strategies-for-quality-assurance/ 301
 /blog/role-of-leak-testing-in-automotive-component-assembly/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
 /blog/choosing-the-right-automation-equipment/ /blog/choosing-right-robot-for-your-application/ 301
 /blog/industrial-automation-equipment-is-helping-manufacturing/ /blog/what-is-industrial-automation/ 301
@@ -61,123 +61,23 @@
 /blog/what-to-know-laser-marking-systems/ /blog/ 301
 /blog/robotic-cells-for-manufacturing-electronics-auto-parts/ /blog/electronics-assembly-automation-trends/ 301
 /blog/what-is-supply-chain-resilience/ /blog/supply-chain-resilience-through-automation/ 301
-
-# Catch any UTM parameters (these pass through automatically, but explicit for clarity)
-# /?utm_source=* passes through to / automatically
-
-# 302 Redirects for broken links - Added Jan 30, 2026
-
-# Solutions - Assembly Related
-/solutions/assembly-systems/ /solutions/assembly/ 302
-/solutions/automated-assembly-systems/ /solutions/assembly/ 302
-/solutions/automated-assembly-lines/ /solutions/assembly/ 302
-/solutions/automated-assembly/ /solutions/assembly/ 302
-/solutions/assembly-automation/ /solutions/assembly/ 302
-/solutions/precision-assembly-automation/ /solutions/assembly/ 302
-/solutions/custom-automated-assembly-systems/ /solutions/assembly/ 302
-/solutions/custom-assembly-systems/ /solutions/assembly/ 302
-/solutions/robotic-assembly-systems/ /solutions/assembly/ 302
-/solutions/robotic-assembly/ /solutions/assembly/ 302
-/solutions/press-fit-assembly-machines/ /solutions/assembly/ 302
-/solutions/press-fit-systems/ /solutions/assembly/ 302
-/solutions/precision-press-systems/ /solutions/assembly/ 302
-
-# Solutions - Robotics Related
-/solutions/robotic-systems/ /solutions/robotic-cells/ 302
-/solutions/robotic-automation/ /solutions/robotic-cells/ 302
-/solutions/robotic-work-cells/ /solutions/robotic-cells/ 302
-/solutions/robot-integration/ /solutions/robotic-cells/ 302
-/solutions/machine-tending-automation/ /solutions/robotic-cells/ 302
-
-# Solutions - Welding Related
-/solutions/robotic-welding/ /solutions/welding/ 302
-/solutions/robotic-welding-systems/ /solutions/welding/ 302
-
-# Solutions - Vision & Quality Related
-/solutions/vision-inspection/ /solutions/machine-vision/ 302
-/solutions/vision-quality/ /solutions/machine-vision/ 302
-/solutions/vision-inspection-systems/ /solutions/machine-vision/ 302
-/solutions/vision-quality-inspection/ /solutions/machine-vision/ 302
-/solutions/vision-inspection-quality/ /solutions/machine-vision/ 302
-/solutions/vision-quality-control/ /solutions/machine-vision/ 302
-/solutions/vision-quality-control-systems/ /solutions/machine-vision/ 302
-/solutions/quality-inspection-systems/ /solutions/machine-vision/ 302
-/solutions/quality-control-systems/ /solutions/machine-vision/ 302
-/solutions/quality-control-inspection-automation/ /solutions/machine-vision/ 302
-/solutions/ai-vision-quality-inspection/ /solutions/machine-vision/ 302
-
-# Solutions - Test & Other
-/solutions/automated-test-equipment/ /solutions/test-systems/ 302
-/solutions/packaging-automation/ /solutions/material-handling/ 302
-
-# Solutions - General/Custom Automation
-/solutions/custom-automation-solutions/ /solutions/ 302
-/solutions/custom-automation-systems/ /solutions/ 302
-/solutions/custom-automation-engineering/ /solutions/ 302
-/solutions/custom-automated-equipment/ /solutions/ 302
-/solutions/turnkey-integration/ /solutions/ 302
-/solutions/turnkey-automation/ /solutions/ 302
-/solutions/controls-engineering/ /solutions/ 302
-/solutions/controls-software-integration/ /solutions/ 302
-/solutions/systems-integration/ /solutions/ 302
-/solutions/performance-optimization/ /services/process-optimization/ 302
-
-# Industries
-/industries/medical-device-automation/ /industries/medical/ 302
-/industries/medical-device-manufacturing/ /industries/medical/ 302
-/industries/medical-devices/ /industries/medical/ 302
-/industries/automotive-automation/ /industries/automotive/ 302
-/industries/automotive-manufacturing/ /industries/automotive/ 302
-/industries/consumer-products/ /industries/consumer/ 302
-
-# Services
-/services/equipment-maintenance/ /services/maintenance-support/ 302
-/services/preventive-maintenance/ /services/maintenance-support/ 302
-/services/system-integration/ /solutions/ 302
-/services/training-and-knowledge-transfer/ /services/training/ 302
-/services/ongoing-support/ /services/maintenance-support/ 302
-
-# Tooling
-/tooling/welding-fixtures/ /tooling/ 302
-
-# Blog
-/blog/machine-vision-quality-inspection-systems/ /solutions/machine-vision/ 302
-/blog/hmi-programming-best-practices/ /blog/ 302
-/blog/automation-and-the-future-of-appliance-manufacturing/ /blog/appliance-assembly-line-automation/ 301
-
-# Crawled 404s - Feb 2026
 /blog/what-is-cnc-machining/ /solutions/machine-tending/ 301
 /blog/customizing-your-automated-assembly-line-equipment-and-brand-alternatives/ /solutions/assembly/ 301
 /blog/how-to-make-your-manufacturing-more-resilient/ /blog/supply-chain-resilience-through-automation/ 301
-/blog/importance-of-end-of-line-equipment-in-the-automotive-sector/ /blog/end-of-line-testing-strategies-for-quality-assurance/ 301
 /blog/videos-gallery/ /blog/ 301
 /blog/category/robotic-cells/ /blog/category/robotics/ 301
 /blog/category/leak-detection/ /blog/ 301
-/blog/what-is-cnc-machining/feed/ /solutions/machine-tending/ 301
-/blog/author/amd/ /blog/ 301
-/blog/author/jerdmannc/ /blog/ 301
-/blog/author/amd/feed/ /blog/ 301
-/blog/author/jerdmannc/feed/ /blog/ 301
-/blog/2023/11/ /blog/ 301
-/blog/2023/12/ /blog/ 301
-/blog/2024/02/ /blog/ 301
-/blog/category/news/page/ /blog/category/news/ 301
-/blog/category/vision-qc/page/ /blog/category/vision-qc/ 301
 /blog/category/ /blog/ 301
 /blog/page/ /blog/ 301
+/blog/automation-and-the-future-of-appliance-manufacturing/ /blog/appliance-assembly-line-automation/ 301
 
-# Case studies
+# Missing pages - redirect to closest equivalent
+/ebooks/ /blog/ 301
+/amd-mexico/ /contact/ 301
+/case-studies/cnc-machining/ /solutions/machine-tending/ 301
 /case-studies/modular-assembly-inspection-cells/ /case-studies/ 301
 /case-studies/cnc-robot-tending/ /solutions/machine-tending/ 301
-
-# Old site structure (automated-solutions-1 variant)
-/automated-solutions-1/ /solutions/ 301
-/automated-solutions-1/robotic-cells/ /solutions/robotic-cells/ 301
-/automated-solutions-1/leak-detection/ /solutions/test-systems/ 301
-/automated-solutions-1/welding/ /solutions/welding/ 301
-/automated-solutions-1/custom-automation-equipment/ /solutions/custom-automation/ 301
-/automated-solutions-1/marking-traceability/ /solutions/marking-traceability/ 301
-/automated-solutions-1/application-of-technology-to-manual-processes/ /solutions/ 301
+/glossary/ /blog/ 301
 
 # Old root-level pages
 /sitemap/ /sitemap.xml 301
@@ -198,8 +98,34 @@
 /what-to-know-laser-marking-systems/ /solutions/marking-traceability/ 301
 /ins-outs-helium-leak-testing-equipment/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
 
-# Industries - old structure without /industries/ prefix
-/industries/automation-in-the-manufacturing-industry/ /industries/general-manufacturing/ 301
-
-# Cloudflare Email Protection
+# 302 Redirects - Industries, Services, Tooling (kept as most commonly hit)
+/industries/medical-device-automation/ /industries/medical/ 302
+/industries/medical-device-manufacturing/ /industries/medical/ 302
+/industries/medical-devices/ /industries/medical/ 302
+/industries/automotive-automation/ /industries/automotive/ 302
+/industries/automotive-manufacturing/ /industries/automotive/ 302
+/industries/consumer-products/ /industries/consumer/ 302
+/services/equipment-maintenance/ /services/maintenance-support/ 302
+/services/preventive-maintenance/ /services/maintenance-support/ 302
+/services/system-integration/ /solutions/ 302
+/services/training-and-knowledge-transfer/ /services/training/ 302
+/services/ongoing-support/ /services/maintenance-support/ 302
+/tooling/welding-fixtures/ /tooling/ 302
+/blog/machine-vision-quality-inspection-systems/ /solutions/machine-vision/ 302
+/blog/hmi-programming-best-practices/ /blog/ 302
 /cdn-cgi/l/email-protection /contact/ 302
+/solutions/performance-optimization/ /services/process-optimization/ 302
+
+# --- Dynamic redirects (use :placeholder or :splat, separate 100-rule limit) ---
+
+# Blog author pages and feeds
+/blog/author/:splat /blog/ 301
+
+# Blog date archives (e.g. /blog/2023/11/)
+/blog/:year/:month/ /blog/ 301
+
+# Blog category pagination (e.g. /blog/category/news/page/)
+/blog/category/:cat/page/ /blog/category/:cat/ 301
+
+# Blog post feeds (e.g. /blog/some-post/feed/)
+/blog/:slug/feed/ /blog/:slug/ 301
