@@ -1,11 +1,12 @@
 # 301 Redirects - Old amdmachines.com URLs to new structure
 # Format: old-path new-path status-code
-# Cloudflare Pages limits: 100 static + 100 dynamic redirects
+# Cloudflare Pages limits: 2,000 static + 100 dynamic redirects
 
 # About page
 /about-us/ /about/ 301
 
 # Solutions (automated-solutions -> solutions)
+/automated-solutions/ /solutions/ 301
 /automated-solutions/welding/ /solutions/welding/ 301
 /automated-solutions/robotic-cells/ /solutions/robotic-cells/ 301
 /automated-solutions/test-systems/ /solutions/test-systems/ 301
@@ -16,6 +17,15 @@
 /automated-solutions/assembly/ /solutions/assembly/ 301
 /automated-solutions/robotic-cells/cnc-robot-tending-automation/ /solutions/machine-tending/ 301
 /automated-solutions/application-of-technology-to-manual-processes/ /solutions/ 301
+
+# Old site structure (automated-solutions-1 variant)
+/automated-solutions-1/ /solutions/ 301
+/automated-solutions-1/robotic-cells/ /solutions/robotic-cells/ 301
+/automated-solutions-1/leak-detection/ /solutions/test-systems/ 301
+/automated-solutions-1/welding/ /solutions/welding/ 301
+/automated-solutions-1/custom-automation-equipment/ /solutions/custom-automation/ 301
+/automated-solutions-1/marking-traceability/ /solutions/marking-traceability/ 301
+/automated-solutions-1/application-of-technology-to-manual-processes/ /solutions/ 301
 
 # Root-level solution pages to /solutions/
 /material-handling/ /solutions/material-handling/ 301
@@ -30,6 +40,7 @@
 /industries/aerospace-defense/ /industries/aerospace/ 301
 /industries/building-materials/ /industries/general-manufacturing/ 301
 /industries/electric-motor-assembly/ /industries/electronics/ 301
+/industries/automation-in-the-manufacturing-industry/ /industries/general-manufacturing/ 301
 
 # Blog redirects (old slugs to new equivalents)
 /blog/automated-assembly-machines-a-selection-guide/ /blog/automated-assembly-machines/ 301
@@ -49,12 +60,43 @@
 /blog/what-to-know-laser-marking-systems/ /blog/ 301
 /blog/robotic-cells-for-manufacturing-electronics-auto-parts/ /blog/electronics-assembly-automation-trends/ 301
 /blog/what-is-supply-chain-resilience/ /blog/supply-chain-resilience-through-automation/ 301
+/blog/what-is-cnc-machining/ /solutions/machine-tending/ 301
+/blog/customizing-your-automated-assembly-line-equipment-and-brand-alternatives/ /solutions/assembly/ 301
+/blog/how-to-make-your-manufacturing-more-resilient/ /blog/supply-chain-resilience-through-automation/ 301
+/blog/videos-gallery/ /blog/ 301
+/blog/category/robotic-cells/ /blog/category/robotics/ 301
+/blog/category/leak-detection/ /blog/ 301
+/blog/category/ /blog/ 301
+/blog/page/ /blog/ 301
+/blog/importance-of-end-of-line-equipment-in-the-automotive-sector/ /blog/end-of-line-testing-strategies-for-quality-assurance/ 301
 /blog/automation-and-the-future-of-appliance-manufacturing/ /blog/appliance-assembly-line-automation/ 301
 
 # Missing pages - redirect to closest equivalent
 /ebooks/ /blog/ 301
 /amd-mexico/ /contact/ 301
 /glossary/ /blog/ 301
+/case-studies/cnc-machining/ /solutions/machine-tending/ 301
+/case-studies/modular-assembly-inspection-cells/ /case-studies/ 301
+/case-studies/cnc-robot-tending/ /solutions/machine-tending/ 301
+
+# Old root-level pages
+/sitemap/ /sitemap.xml 301
+/contact-us/ /contact/ 301
+/project-gallery/ /case-studies/ 301
+/assembly-models-documentation/ /solutions/assembly/ 301
+/appliances/ /industries/appliances/ 301
+/aerospace-defense/ /industries/aerospace/ 301
+/automotive-auto-parts/ /industries/automotive/ 301
+/healthcare/ /industries/medical/ 301
+/what-is-cnc-machining/ /solutions/machine-tending/ 301
+/semi-automatic-solutions/cnc-machining/ /solutions/machine-tending/ 301
+/manufacturing-services/cnc-machining/ /solutions/machine-tending/ 301
+
+# Old root-level blog posts (without /blog/ prefix)
+/what-can-vision-measuring-systems-accomplish/ /blog/dimensional-inspection-with-cmms-and-vision/ 301
+/facts-about-hot-plate-welding/ /blog/heat-staking-and-hot-plate-welding-applications/ 301
+/what-to-know-laser-marking-systems/ /solutions/marking-traceability/ 301
+/ins-outs-helium-leak-testing-equipment/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
 
 # 302 Redirects - Industries, Services, Tooling (kept as most commonly hit)
 /industries/medical-device-automation/ /industries/medical/ 302
