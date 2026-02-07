@@ -64,3 +64,86 @@
 
 # Catch any UTM parameters (these pass through automatically, but explicit for clarity)
 # /?utm_source=* passes through to / automatically
+
+# 302 Redirects for broken links - Added Jan 30, 2026
+
+# Solutions - Assembly Related
+/solutions/assembly-systems/ /solutions/assembly/ 302
+/solutions/automated-assembly-systems/ /solutions/assembly/ 302
+/solutions/automated-assembly-lines/ /solutions/assembly/ 302
+/solutions/automated-assembly/ /solutions/assembly/ 302
+/solutions/assembly-automation/ /solutions/assembly/ 302
+/solutions/precision-assembly-automation/ /solutions/assembly/ 302
+/solutions/custom-automated-assembly-systems/ /solutions/assembly/ 302
+/solutions/custom-assembly-systems/ /solutions/assembly/ 302
+/solutions/robotic-assembly-systems/ /solutions/assembly/ 302
+/solutions/robotic-assembly/ /solutions/assembly/ 302
+/solutions/press-fit-assembly-machines/ /solutions/assembly/ 302
+/solutions/press-fit-systems/ /solutions/assembly/ 302
+/solutions/precision-press-systems/ /solutions/assembly/ 302
+
+# Solutions - Robotics Related
+/solutions/robotic-systems/ /solutions/robotic-cells/ 302
+/solutions/robotic-automation/ /solutions/robotic-cells/ 302
+/solutions/robotic-work-cells/ /solutions/robotic-cells/ 302
+/solutions/robot-integration/ /solutions/robotic-cells/ 302
+/solutions/machine-tending-automation/ /solutions/robotic-cells/ 302
+
+# Solutions - Welding Related
+/solutions/robotic-welding/ /solutions/welding/ 302
+/solutions/robotic-welding-systems/ /solutions/welding/ 302
+
+# Solutions - Vision & Quality Related
+/solutions/vision-inspection/ /solutions/machine-vision/ 302
+/solutions/vision-quality/ /solutions/machine-vision/ 302
+/solutions/vision-inspection-systems/ /solutions/machine-vision/ 302
+/solutions/vision-quality-inspection/ /solutions/machine-vision/ 302
+/solutions/vision-inspection-quality/ /solutions/machine-vision/ 302
+/solutions/vision-quality-control/ /solutions/machine-vision/ 302
+/solutions/vision-quality-control-systems/ /solutions/machine-vision/ 302
+/solutions/quality-inspection-systems/ /solutions/machine-vision/ 302
+/solutions/quality-control-systems/ /solutions/machine-vision/ 302
+/solutions/quality-control-inspection-automation/ /solutions/machine-vision/ 302
+/solutions/ai-vision-quality-inspection/ /solutions/machine-vision/ 302
+
+# Solutions - Test & Other
+/solutions/automated-test-equipment/ /solutions/test-systems/ 302
+/solutions/packaging-automation/ /solutions/material-handling/ 302
+
+# Solutions - General/Custom Automation
+/solutions/custom-automation-solutions/ /solutions/ 302
+/solutions/custom-automation-systems/ /solutions/ 302
+/solutions/custom-automation-engineering/ /solutions/ 302
+/solutions/custom-automated-equipment/ /solutions/ 302
+/solutions/turnkey-integration/ /solutions/ 302
+/solutions/turnkey-automation/ /solutions/ 302
+/solutions/controls-engineering/ /solutions/ 302
+/solutions/controls-software-integration/ /solutions/ 302
+/solutions/systems-integration/ /solutions/ 302
+/solutions/performance-optimization/ /services/process-optimization/ 302
+
+# Industries
+/industries/medical-device-automation/ /industries/medical/ 302
+/industries/medical-device-manufacturing/ /industries/medical/ 302
+/industries/medical-devices/ /industries/medical/ 302
+/industries/automotive-automation/ /industries/automotive/ 302
+/industries/automotive-manufacturing/ /industries/automotive/ 302
+/industries/consumer-products/ /industries/consumer/ 302
+
+# Services
+/services/equipment-maintenance/ /services/maintenance-support/ 302
+/services/preventive-maintenance/ /services/maintenance-support/ 302
+/services/system-integration/ /solutions/ 302
+/services/training-and-knowledge-transfer/ /services/training/ 302
+/services/ongoing-support/ /services/maintenance-support/ 302
+
+# Tooling
+/tooling/welding-fixtures/ /tooling/ 302
+
+# Blog
+/blog/machine-vision-quality-inspection-systems/ /solutions/machine-vision/ 302
+/blog/hmi-programming-best-practices/ /blog/ 302
+/blog/automation-and-the-future-of-appliance-manufacturing/ /blog/appliance-assembly-line-automation/ 301
+
+# Cloudflare Email Protection
+/cdn-cgi/l/email-protection /contact/ 302
