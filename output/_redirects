@@ -129,7 +129,3 @@
 
 # Blog post feeds (e.g. /blog/some-post/feed/)
 /blog/:slug/feed/ /blog/:slug/ 301
-
-# Solutions catch-all: redirect guessed/non-existent solution URLs to hub
-# Real solution pages (e.g. /solutions/assembly/index.html) are served as static files first
-/solutions/:slug /solutions/ 302
