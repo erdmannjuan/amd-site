@@ -1,6 +1,6 @@
 ---
-title: Custom Robotic Cells | Industrial Automation Integrator | FANUC, ABB, Yaskawa
-description: Custom robotic cells engineered for production. FANUC, ABB, KUKA & Yaskawa integration with 200-400% throughput gains and 12-24 month ROI. 2,500+ systems delivered.
+title: Custom Robotic Cells | FANUC, ABB, Yaskawa
+description: Turnkey robotic cells for arc welding, machine tending & assembly. FANUC, ABB, KUKA & Yaskawa integration with 200-400% throughput gains and 12-24 month ROI.
 keywords: custom robotic cells, robotic cell integration, FANUC robot integrator, ABB robotic cell, industrial robot cell design, turnkey robotic automation, robotic workcell engineering
 template: solution.html
 short_title: Robotic Cells
