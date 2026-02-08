@@ -1,6 +1,6 @@
 ---
-title: Industries Served | Automation for Automotive, Medical, Aerospace & More
-description: Custom automation for automotive, medical, aerospace, electronics, and consumer products. Industry-specific expertise since 1998.
+title: Industries We Serve | Custom Automation
+description: Custom automation for automotive, medical, aerospace & electronics manufacturing. 2,500+ machines delivered with industry-specific expertise.
 keywords: industrial automation industries, automotive manufacturing automation, medical device automation, aerospace automation systems, electronics assembly automation, food manufacturing automation
 template: industries.html
 hero_title: Industries We Serve
