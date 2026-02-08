@@ -642,49 +642,56 @@
                 
 
                 <div class="article-body" id="article-body">
-                    <h2 id="about-measuring-automation-success">About Measuring Automation Success</h2>
-<p>Define and track key performance indicators for automation projects.</p>
-<h2 id="key-concepts">Key Concepts</h2>
-<p>Here's what you need to know:</p>
+                    <h2 id="why-measurement-matters-in-automation">Why Measurement Matters in Automation</h2>
+<p>Every automation project starts with a promise: faster cycle times, fewer defects, lower labor costs. But without a structured approach to measuring results, teams end up relying on gut feel rather than data. We have seen projects that delivered tremendous value go unrecognized because nobody tracked the right numbers, and we have seen mediocre implementations get praised simply because the new equipment looked impressive on the floor.</p>
+<p>The gap between perception and reality comes down to KPIs. Key performance indicators give you an objective framework for evaluating whether your <a href="/solutions/custom-automation/">custom automation</a> investment is delivering the returns you expected, and where you need to make adjustments.</p>
+<h2 id="establishing-your-baseline">Establishing Your Baseline</h2>
+<p>Before you can measure improvement, you need to know where you started. This sounds obvious, but it is one of the most commonly skipped steps in automation projects. Engineers get excited about the new system and rush past the baseline data collection phase.</p>
+<p>A solid baseline should capture at least the following for the process you are automating:</p>
 <ul>
-<li><strong>Know your process</strong> - document what you're doing now and what needs to change</li>
-<li><strong>Pick the right tech</strong> - match equipment to your actual requirements</li>
-<li><strong>Plan the rollout</strong> - budget time for debugging and training</li>
-<li><strong>Track results</strong> - measure before and after</li>
-<li><strong>Keep improving</strong> - automation is never 'done'</li>
+<li><strong>Cycle time per unit</strong> — How long does each part or assembly take from start to finish? Measure this across a representative sample, not just the best-case scenario. Include changeover time if you run multiple part numbers.</li>
+<li><strong>First-pass yield</strong> — What percentage of parts come off the line right the first time, with no rework or scrap? This is often more revealing than overall yield because it exposes hidden quality problems.</li>
+<li><strong>Unplanned downtime</strong> — How many hours per shift does the existing process stop unexpectedly? Track the reasons: equipment failures, material shortages, operator errors.</li>
+<li><strong>Labor hours per unit</strong> — How many operator-hours go into producing each part? Include indirect labor like material handling, inspection, and rework.</li>
+<li><strong>Scrap and rework costs</strong> — What are you spending on defective parts? Include both material costs and the labor required to rework salvageable parts.</li>
 </ul>
-<h2 id="benefits-and-considerations">Benefits and Considerations</h2>
-<p>The tradeoffs:</p>
-<p><strong>Benefits:</strong>
-- Faster cycle times and less rework
-- Fewer defects, tighter tolerances
-- Real-time dashboards showing actual vs. target
-- Lower cost-per-part after payback</p>
-<p><strong>Considerations:</strong>
-- Initial investment requirements
-- Implementation complexity
-- Training and change management
-- Ongoing maintenance needs</p>
-<h2 id="best-practices">Best Practices</h2>
-<p>What works:</p>
-<ol>
-<li>Start with clear objectives tied to business goals</li>
-<li>Involve stakeholders from multiple functions early</li>
-<li>Plan for adequate testing and validation</li>
-<li>Invest in training for operators and maintainers</li>
-<li>Establish metrics and monitor progress</li>
-</ol>
-<h2 id="getting-started">Getting Started</h2>
-<p>Here's how to get started:</p>
+<p>Collect this data over a long enough period to account for normal variation. A single shift is not enough. Aim for at least two to four weeks of production data, covering different operators, shifts, and product mixes.</p>
+<h2 id="core-kpis-for-automation-projects">Core KPIs for Automation Projects</h2>
+<p>Once your automated system is running, track these KPIs against your baseline to quantify the impact.</p>
+<h3 id="overall-equipment-effectiveness-oee">Overall Equipment Effectiveness (OEE)</h3>
+<p>OEE is the gold standard for measuring equipment performance. It combines three factors into a single percentage:</p>
 <ul>
-<li>Assess your current state and identify improvement opportunities</li>
-<li>Define requirements based on your specific needs</li>
-<li>Evaluate potential solutions and vendors</li>
-<li>Plan a phased implementation approach</li>
-<li>Build internal capabilities for long-term success</li>
+<li><strong>Availability</strong> — The percentage of planned production time that the equipment is actually running. Availability drops when you have unplanned stops, changeovers, or setup delays.</li>
+<li><strong>Performance</strong> — How fast the equipment runs compared to its theoretical maximum speed. Performance losses come from slow cycles, minor stoppages, and speed reductions.</li>
+<li><strong>Quality</strong> — The percentage of good parts out of total parts produced. This captures scrap and rework in a single number.</li>
 </ul>
+<p>OEE = Availability × Performance × Quality. World-class manufacturing typically targets 85% OEE, but most plants run in the 60-70% range. Even getting from 60% to 75% represents a massive improvement in throughput and cost per part.</p>
+<h3 id="throughput-and-cycle-time">Throughput and Cycle Time</h3>
+<p>Raw throughput — parts per hour or per shift — is the most visible metric on the floor. Track it daily and trend it weekly. More importantly, look at the consistency of your cycle times. An automated system should produce much tighter cycle time distributions than a manual process. If your automated cell has high cycle time variability, that points to a programming issue, a fixturing problem, or an upstream material inconsistency.</p>
+<h3 id="quality-metrics">Quality Metrics</h3>
+<p>Beyond first-pass yield, track defect rates by type. Automated <a href="/solutions/assembly/">assembly systems</a> and <a href="/solutions/test-systems/">test systems</a> should produce detailed process data on every unit. Use that data to build control charts and catch trends before they become scrap events. Statistical process control is far easier to implement when the equipment is already collecting the data automatically.</p>
+<h3 id="return-on-investment">Return on Investment</h3>
+<p>ROI is what leadership cares about most. Calculate it by comparing the total cost of the automation project (equipment, integration, installation, training, ongoing maintenance) against the measurable savings (labor reduction, scrap reduction, throughput increase, quality improvement). Express it as both a payback period in months and an annualized percentage return.</p>
+<p>A common mistake is only counting direct labor savings. The full picture includes reduced rework, lower warranty costs, improved customer satisfaction from better quality, and capacity gains that let you take on additional business without adding floor space.</p>
+<h2 id="setting-targets-and-tracking-progress">Setting Targets and Tracking Progress</h2>
+<p>Setting realistic targets requires understanding both the capability of the equipment and the constraints of your process. Work with your automation integrator during the design phase to establish expected performance levels based on similar installations.</p>
+<p>Structure your targets in tiers:</p>
+<ul>
+<li><strong>Commissioning targets</strong> — What the system should achieve within the first two weeks of production. These are typically conservative, allowing for the learning curve. Expect 70-80% of full performance.</li>
+<li><strong>Ramp-up targets</strong> — Where you should be at 60 and 90 days. By this point, operators are trained, programs are optimized, and most debugging is complete. Expect 85-95% of full performance.</li>
+<li><strong>Steady-state targets</strong> — The long-term performance level, typically reached at 3-6 months. This is what your ROI calculations should be based on.</li>
+</ul>
+<p>Track KPIs on a daily dashboard that is visible to operators, supervisors, and maintenance staff. When people can see the numbers, they pay attention to them. When KPIs are buried in a weekly report that only management reads, problems go unaddressed for days.</p>
+<h2 id="common-measurement-mistakes">Common Measurement Mistakes</h2>
+<p><strong>Tracking too many metrics.</strong> Pick five to seven KPIs that matter most and focus on those. A dashboard with forty metrics is just noise.</p>
+<p><strong>Ignoring soft benefits.</strong> Ergonomic improvements, reduced operator fatigue, and improved workplace safety are real benefits of automation. They are harder to quantify but should still be documented.</p>
+<p><strong>Comparing apples to oranges.</strong> If you change the product mix, add a new part number, or modify the process after automation, your before-and-after comparisons need to account for those changes.</p>
+<p><strong>Measuring too infrequently.</strong> Monthly reports catch problems too late. Daily tracking with weekly reviews is the minimum cadence for a new automation system.</p>
+<h2 id="building-a-culture-of-continuous-improvement">Building a Culture of Continuous Improvement</h2>
+<p>The most successful automation projects we have been part of are the ones where measurement becomes part of the daily routine. Operators know the OEE target and check it throughout their shift. Maintenance teams track mean time between failures and use the data to schedule preventive maintenance. Engineers review process data to identify optimization opportunities.</p>
+<p>This is not about creating bureaucracy. It is about making decisions based on evidence rather than assumptions. When you have good data, the right course of action is usually obvious.</p>
 <h2 id="partner-with-amd-machines">Partner With AMD Machines</h2>
-<p>AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. <a href="/contact/">Contact us</a> to discuss your automation needs.</p>
+<p>AMD Machines has helped manufacturers across industries design, build, and optimize automation systems for over 30 years. We work with our customers not just to deliver equipment, but to ensure that equipment delivers measurable results. <a href="/contact/">Contact us</a> to discuss how we can help you define, track, and achieve the KPIs that matter most for your operation.</p>
                 </div>
 
                 <!-- Mid-Article CTA -->
@@ -756,7 +763,7 @@
                             <div class="related-post-content">
                                 <h4>Calculating ROI for Industrial Automation Projects</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>
@@ -768,7 +775,7 @@
                             <div class="related-post-content">
                                 <h4>Total Cost of Ownership for Robotic Systems</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">8 min read</span>
                                 
                             </div>
                         </a>

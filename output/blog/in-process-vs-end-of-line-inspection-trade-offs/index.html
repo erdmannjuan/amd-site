@@ -642,47 +642,33 @@
                 
 
                 <div class="article-body" id="article-body">
-                    <h2 id="understanding-automated-testing">Understanding Automated Testing</h2>
-<p>Balance inspection placement to catch defects early while minimizing production disruption.</p>
-<p>Quality assurance through automated testing and inspection has become essential for manufacturers facing demanding specifications and cost pressures. Automated systems provide the consistency and data capture that manual inspection cannot match.</p>
-<h2 id="test-strategy-development">Test Strategy Development</h2>
-<p>Develop a comprehensive test strategy by:</p>
-<ul>
-<li><strong>Identifying critical parameters</strong> that affect product function and safety</li>
-<li><strong>Determining test methods</strong> appropriate for each parameter</li>
-<li><strong>Setting pass/fail limits</strong> based on specifications and process capability</li>
-<li><strong>Establishing sampling rates</strong> balancing coverage and throughput</li>
-<li><strong>Planning data collection</strong> for traceability and analysis</li>
-</ul>
-<h2 id="test-technologies">Test Technologies</h2>
-<p>Common automated test methods include:</p>
-<ol>
-<li><strong>Electrical testing</strong> - continuity, isolation, and functional tests</li>
-<li><strong>Leak testing</strong> - pressure decay, mass flow, and tracer gas methods</li>
-<li><strong>Dimensional inspection</strong> - contact and non-contact measurement</li>
-<li><strong>Visual inspection</strong> - camera-based defect detection</li>
-<li><strong>Functional testing</strong> - verifying product operation</li>
-</ol>
-<h2 id="system-architecture">System Architecture</h2>
-<p>Automated test systems typically include:</p>
-<ul>
-<li><strong>Test fixtures</strong> that interface with products under test</li>
-<li><strong>Instrumentation</strong> for measurement and stimulus generation</li>
-<li><strong>Control systems</strong> that sequence tests and collect data</li>
-<li><strong>Material handling</strong> to load, position, and unload products</li>
-<li><strong>Data management</strong> for storage, analysis, and reporting</li>
-</ul>
-<h2 id="continuous-improvement">Continuous Improvement</h2>
-<p>Leverage test data for ongoing improvement:</p>
-<ul>
-<li>Monitor test yields and failure modes over time</li>
-<li>Correlate test results with process parameters</li>
-<li>Adjust test limits based on process capability</li>
-<li>Feed back quality data to upstream processes</li>
-<li>Use statistical methods to identify trends and issues</li>
-</ul>
-<h2 id="partner-with-amd-machines">Partner With AMD Machines</h2>
-<p>AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. <a href="/contact/">Contact us</a> to discuss your automation needs.</p>
+                    <h2 id="the-fundamental-question-where-to-inspect">The Fundamental Question: Where to Inspect</h2>
+<p>Every manufacturer building an automated production line faces a critical decision: where in the process should inspection happen? The answer is rarely straightforward. In-process inspection catches defects at the point of origin, while end-of-line (EOL) testing validates the finished product against functional requirements. Most well-designed systems use a combination of both, but getting the balance right has a direct impact on scrap rates, throughput, and total cost of quality.</p>
+<p>Understanding the trade-offs between these two approaches is essential for anyone specifying or designing an automated assembly or test system. The wrong inspection strategy can mean shipping defective product, scrapping expensive assemblies, or bottlenecking an entire line with unnecessary test stations.</p>
+<h2 id="in-process-inspection-catching-defects-at-the-source">In-Process Inspection: Catching Defects at the Source</h2>
+<p>In-process inspection means verifying quality at individual stations during assembly or manufacturing, rather than waiting until the product is complete. This could be a <a href="/blog/computer-vision-advances-for-manufacturing/">vision system</a> checking component orientation after a pick-and-place operation, a force-displacement sensor monitoring a press-fit as it happens, or a laser micrometer measuring a critical dimension immediately after machining.</p>
+<p>The primary advantage is simple: the sooner you detect a defect, the less value you have added to a bad part. If a press-fit operation at station three produces an out-of-spec interference fit, catching it there means you have invested materials and cycle time for three operations. Catching it at end-of-line means you have invested the full bill of materials and the cycle time of every station in the line. On high-value assemblies—medical devices, automotive safety components, electronics modules—that difference can be substantial.</p>
+<p>In-process inspection also provides immediate feedback to the operation that caused the defect. When a vision system flags a misaligned component, the control system can stop and alert the operator or attempt a rework cycle before the part moves downstream. This closed-loop correction is not possible with end-of-line testing, where the root cause may be separated from the detection point by dozens of operations and several minutes of cycle time.</p>
+<p>There are real drawbacks, however. Each in-process inspection station adds cost, complexity, and potential failure points to the line. Sensors, cameras, and test fixtures require calibration and maintenance. Additional stations increase total line length and may require more floor space. And the inspection itself consumes cycle time—even a half-second check at each of twelve stations adds six seconds to total throughput. On high-volume lines running at aggressive takt times, that overhead matters.</p>
+<h2 id="end-of-line-testing-validating-the-finished-product">End-of-Line Testing: Validating the Finished Product</h2>
+<p>End-of-line testing evaluates the completed assembly against its functional requirements. This is where you run leak tests on sealed housings, electrical continuity checks on wiring harnesses, functional tests on assembled mechanisms, or final dimensional verification on machined components. EOL test stations often replicate the conditions the product will experience in service, providing a true go/no-go determination.</p>
+<p>The strength of EOL testing is that it validates what the customer actually cares about: does the finished product work? A part can pass every in-process check and still fail functionally if there is an interaction between components that only manifests in the assembled state. Leak testing is a classic example—individual seals might measure within spec, but the assembled housing may still leak due to surface finish issues, gasket compression variations, or housing distortion from fastener torque sequences.</p>
+<p>EOL testing also consolidates quality verification into a single location, which simplifies data management and traceability. One <a href="/blog/end-of-line-testing-strategies-for-quality-assurance/">test station</a> can generate a comprehensive test record for each serial number, making it straightforward to meet regulatory documentation requirements common in automotive, medical, and aerospace applications.</p>
+<p>The limitation of a pure EOL strategy is cost exposure. If a defect originates early in the process, every downstream operation adds wasted labor, materials, and machine time to a part that will ultimately be scrapped. On a twenty-station assembly line, a defect introduced at station two means eighteen stations of wasted capacity. At high production volumes, those economics become punishing.</p>
+<h2 id="designing-a-balanced-strategy">Designing a Balanced Strategy</h2>
+<p>The most effective inspection strategies use both approaches, positioned deliberately based on process risk analysis. Here is how we approach this at AMD Machines when designing automated systems for our clients:</p>
+<p><strong>Identify high-risk operations.</strong> Any process step with a known failure mode, tight tolerance, or expensive downstream consequence deserves in-process verification. Press-fits, adhesive dispensing, welding, and component placement are common candidates because defects at these stages are costly or impossible to rework later.</p>
+<p><strong>Evaluate defect detectability.</strong> Some defects are only detectable in the assembled state. Leak integrity, electrical functionality, and dynamic performance testing inherently require a complete or near-complete assembly. These belong at end-of-line.</p>
+<p><strong>Consider the cost-of-escape matrix.</strong> Map each potential defect against two values: the cost to detect it in-process versus the cost if it escapes to EOL or, worse, to the customer. When the cost of escape is high—think safety-critical automotive components or implantable medical devices—in-process inspection at critical stations is justified even if it adds cycle time.</p>
+<p><strong>Balance cycle time budgets.</strong> Every inspection adds time. On lines where takt time is the binding constraint, in-process checks need to fit within the station cycle or run in parallel with the operation. Offline or asynchronous inspection—routing suspect parts to a separate verification station—can preserve line throughput while still catching defects early.</p>
+<p><strong>Leverage data across both layers.</strong> In-process data and EOL results should feed the same <a href="/blog/test-data-management-and-analytics/">data management and analytics</a> platform. Correlating upstream measurements with downstream test outcomes reveals process drift before it causes failures. A gradual shift in press-fit force at station five might predict EOL leak test failures days before they occur, enabling preventive correction rather than reactive scrap.</p>
+<h2 id="practical-implementation-considerations">Practical Implementation Considerations</h2>
+<p>From a controls and integration standpoint, in-process inspection requires tight coordination between the inspection system and the station PLC. The inspection must complete within the station cycle, results must be communicated to the line controller for pass/fail routing, and data must be logged against the part serial number for traceability. This is straightforward on modern platforms but requires careful attention during system design and commissioning.</p>
+<p>EOL test stations tend to be more complex individually, often incorporating multiple test modalities—leak test, electrical test, functional test—in a single fixture. Test fixture design is critical: the fixture must reliably interface with the product, present it to all test instruments, and cycle quickly enough to keep pace with upstream production. Poor fixture design is the most common source of false failures in EOL testing, and false failures erode operator confidence in the system.</p>
+<p>Maintenance and calibration requirements differ as well. In-process sensors typically need periodic calibration verification, while EOL test systems often require master part validation at shift start and periodic intervals. Both require documented procedures and trained maintenance staff.</p>
+<h2 id="making-the-right-call">Making the Right Call</h2>
+<p>There is no universal formula for the optimal mix of in-process and end-of-line inspection. The right answer depends on your product complexity, production volume, defect cost profile, regulatory environment, and available floor space. What matters is making the decision deliberately, based on data and process understanding, rather than defaulting to one extreme.</p>
+<p>At AMD Machines, we design integrated test and inspection strategies as part of every automated system we build. Our engineering team evaluates each process step, identifies the critical quality characteristics, and positions inspection where it delivers the highest return on quality investment. <a href="/contact/">Contact us</a> to discuss how we can help you develop an inspection strategy that balances defect detection, throughput, and cost for your specific application.</p>
                 </div>
 
                 <!-- Mid-Article CTA -->
@@ -754,7 +740,7 @@
                             <div class="related-post-content">
                                 <h4>Introduction to Machine Vision for Manufacturing</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>
@@ -766,7 +752,7 @@
                             <div class="related-post-content">
                                 <h4>2D vs 3D Vision Systems: Capabilities and Applications</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">6 min read</span>
                                 
                             </div>
                         </a>
@@ -778,7 +764,7 @@
                             <div class="related-post-content">
                                 <h4>Deep Learning in Machine Vision: Practical Applications</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>

@@ -12,13 +12,13 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.">
-    <meta name="keywords" content="industrial automation, manufacturing automation, AMD Machines, industrial control, PLC programming, automation control, acquisition, historian, systems">
+    <meta name="description" content="How to design and implement data acquisition and historian systems for automated manufacturing, covering sensor integration, data architecture, and analytics strategies for production optimization.">
+    <meta name="keywords" content="data acquisition, historian systems, manufacturing data, SCADA, process data, production analytics, OPC UA, time-series database, industrial IoT">
     <meta name="author" content="AMD Machines">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Data Acquisition and Historian Systems | AMD Machines">
-    <meta property="og:description" content="This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.">
+    <meta property="og:description" content="How to design and implement data acquisition and historian systems for automated manufacturing, covering sensor integration, data architecture, and analytics strategies for production optimization.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://amdmachines.com/blog/data-acquisition-and-historian-systems/">
     <meta property="og:site_name" content="AMD Machines">
@@ -29,7 +29,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Data Acquisition and Historian Systems | AMD Machines">
-    <meta name="twitter:description" content="This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.">
+    <meta name="twitter:description" content="How to design and implement data acquisition and historian systems for automated manufacturing, covering sensor integration, data architecture, and analytics strategies for production optimization.">
     <meta name="twitter:image" content="https://amdmachines.com/static/images/og-default.jpg">
 
     <!-- Canonical URL -->
@@ -132,7 +132,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Data Acquisition and Historian Systems",
-    "description": "This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.",
+    "description": "How to design and implement data acquisition and historian systems for automated manufacturing, covering sensor integration, data architecture, and analytics strategies for production optimization.",
     "image": "https://amdmachines.com/static/images/og-default.png",
     "datePublished": "2025-04-11",
     "dateModified": "2025-04-11",
@@ -604,7 +604,7 @@
             <div class="article-header-row">
                 <div class="article-meta-inline">
                     <span class="date">2025-04-11</span>
-                    <span class="read-time">5 min read</span>
+                    <span class="read-time">12 min read</span>
                 </div>
                 <div class="share-buttons-top">
                     <button class="share-btn" onclick="copyLink()" title="Copy link">
@@ -642,49 +642,79 @@
                 
 
                 <div class="article-body" id="article-body">
-                    <h2 id="about-data-acquisition-and-historian-systems">About Data Acquisition and Historian Systems</h2>
-<p>Collect and store production data for analysis and compliance.</p>
-<h2 id="key-concepts">Key Concepts</h2>
-<p>Here's what you need to know:</p>
+                    <h2 id="why-data-acquisition-matters-in-modern-manufacturing">Why Data Acquisition Matters in Modern Manufacturing</h2>
+<p>Every automated production line generates data — temperatures, pressures, cycle times, torque values, pass/fail results, robot positions, and hundreds of other variables. The question is whether that data gets captured, stored, and turned into something useful, or whether it simply evaporates at the end of each shift.</p>
+<p>Data acquisition (DAQ) systems and process historians solve this problem by collecting machine-level data in real time and storing it in time-series databases that support long-term trending, root cause analysis, and regulatory compliance. When implemented correctly, these systems become the backbone of continuous improvement programs, giving engineers the evidence they need to optimize processes, reduce scrap, and predict equipment failures before they cause downtime.</p>
+<p>At AMD Machines, we integrate data acquisition into the <a href="/solutions/assembly-automation/">automated systems</a> we build, ensuring that the data infrastructure is designed alongside the mechanical and controls architecture — not bolted on as an afterthought.</p>
+<h2 id="core-components-of-a-daq-system">Core Components of a DAQ System</h2>
+<p>A manufacturing data acquisition system has four main layers, each with its own design considerations.</p>
+<h3 id="sensor-and-field-device-layer">Sensor and Field Device Layer</h3>
+<p>This is where data originates. Sensors, transducers, encoders, load cells, thermocouples, flow meters, and vision systems all produce raw signals that need to be captured. The key decisions at this layer include:</p>
 <ul>
-<li><strong>Know your process</strong> - document what you're doing now and what needs to change</li>
-<li><strong>Pick the right tech</strong> - match equipment to your actual requirements</li>
-<li><strong>Plan the rollout</strong> - budget time for debugging and training</li>
-<li><strong>Track results</strong> - measure before and after</li>
-<li><strong>Keep improving</strong> - automation is never 'done'</li>
+<li><strong>Signal type</strong> — analog (4-20mA, 0-10V), digital (discrete I/O), or fieldbus (EtherNet/IP, PROFINET, IO-Link)</li>
+<li><strong>Sample rate</strong> — how frequently the signal needs to be read to capture meaningful process variation</li>
+<li><strong>Resolution</strong> — the bit depth of analog-to-digital conversion, which determines the smallest detectable change</li>
+<li><strong>Environmental protection</strong> — IP ratings, EMI shielding, and cable routing for harsh plant environments</li>
 </ul>
-<h2 id="benefits-and-considerations">Benefits and Considerations</h2>
-<p>The tradeoffs:</p>
-<p><strong>Benefits:</strong>
-- Faster cycle times and less rework
-- Fewer defects, tighter tolerances
-- Real-time dashboards showing actual vs. target
-- Lower cost-per-part after payback</p>
-<p><strong>Considerations:</strong>
-- Initial investment requirements
-- Implementation complexity
-- Training and change management
-- Ongoing maintenance needs</p>
-<h2 id="best-practices">Best Practices</h2>
-<p>What works:</p>
-<ol>
-<li>Start with clear objectives tied to business goals</li>
-<li>Involve stakeholders from multiple functions early</li>
-<li>Plan for adequate testing and validation</li>
-<li>Invest in training for operators and maintainers</li>
-<li>Establish metrics and monitor progress</li>
-</ol>
-<h2 id="getting-started">Getting Started</h2>
-<p>Here's how to get started:</p>
+<p>A common mistake is over-specifying sample rates. A temperature measurement on a curing oven might need a reading every 5 seconds, while a press force signature during a stamping operation might require 10 kHz sampling to capture the full force curve. Matching sample rate to actual process dynamics avoids both data gaps and storage bloat.</p>
+<h3 id="data-collection-and-aggregation-layer">Data Collection and Aggregation Layer</h3>
+<p>PLCs, PACs, and dedicated DAQ hardware sit at this layer, converting raw sensor data into structured process values. Modern <a href="/blog/plc-memory-types-and-organization/">PLC platforms</a> handle much of this natively — most controllers can timestamp data, buffer it during network interruptions, and push it to higher-level systems via OPC UA or MQTT.</p>
+<p>For high-speed data collection that exceeds PLC scan rates, dedicated DAQ modules from vendors like National Instruments, HBM, or Beckhoff provide multi-channel analog input at sampling rates from kilohertz to megahertz. These modules typically connect to the plant network via EtherCAT or dedicated Ethernet interfaces.</p>
+<p>Edge computing devices are increasingly common at this layer, performing local aggregation, filtering, and compression before forwarding data upstream. This reduces network bandwidth requirements and keeps the historian focused on storing meaningful data rather than raw noise.</p>
+<h3 id="historian-and-storage-layer">Historian and Storage Layer</h3>
+<p>The historian is the central time-series database that stores process data for long-term access. Unlike relational databases designed for transactional workloads, historians are optimized for sequential writes and time-range queries — the two dominant patterns in manufacturing data.</p>
+<p>Leading historian platforms include OSIsoft PI (now AVEVA PI), GE Proficy Historian, Honeywell PHD, Wonderware (AVEVA) Historian, and InfluxDB. Selection criteria include:</p>
 <ul>
-<li>Assess your current state and identify improvement opportunities</li>
-<li>Define requirements based on your specific needs</li>
-<li>Evaluate potential solutions and vendors</li>
-<li>Plan a phased implementation approach</li>
-<li>Build internal capabilities for long-term success</li>
+<li><strong>Compression efficiency</strong> — historians use lossy compression algorithms (like swinging door compression) that dramatically reduce storage requirements while preserving process trends within configurable deadbands</li>
+<li><strong>Query performance</strong> — how quickly engineers can retrieve and visualize years of production data</li>
+<li><strong>Integration ecosystem</strong> — connectors to PLCs, SCADA systems, MES platforms, and analytics tools</li>
+<li><strong>Scalability</strong> — the number of tags (data points) the system can handle, from thousands to millions</li>
+<li><strong>High availability</strong> — failover and redundancy for continuous data capture</li>
 </ul>
+<p>A mid-size automated production line might generate 500 to 2,000 data tags. A large plant with dozens of lines and utility systems can easily exceed 50,000 tags. Sizing the historian correctly from the start prevents painful migrations later.</p>
+<h3 id="visualization-and-analytics-layer">Visualization and Analytics Layer</h3>
+<p>Raw data in a historian has limited value until it is presented in a way that supports decision-making. This layer includes:</p>
+<ul>
+<li><strong>Real-time dashboards</strong> — live process displays showing current machine states, OEE metrics, and alarm summaries</li>
+<li><strong>Trend analysis tools</strong> — overlaying multiple tags across time to identify correlations between process variables</li>
+<li><strong>Statistical process control (SPC)</strong> — control charts that flag when a process is drifting out of specification before it produces defective parts</li>
+<li><strong>Reporting and compliance</strong> — automated batch reports, shift summaries, and regulatory documentation</li>
+</ul>
+<p>Modern analytics platforms add machine learning capabilities on top of historian data, enabling predictive maintenance models that identify bearing degradation, pump cavitation, or motor overheating patterns weeks before failure occurs.</p>
+<h2 id="architecture-decisions-that-matter">Architecture Decisions That Matter</h2>
+<h3 id="polling-vs-exception-based-collection">Polling vs. Exception-Based Collection</h3>
+<p>Polling collects data at fixed intervals regardless of whether values have changed. Exception-based (report-by-exception) collection only transmits data when a value changes beyond a configured deadband. Most historians use exception-based collection to minimize storage, but critical safety and quality parameters may warrant fixed-interval polling to guarantee no gaps exist in the record.</p>
+<h3 id="edge-vs-cloud-storage">Edge vs. Cloud Storage</h3>
+<p>On-premise historians provide low-latency access and keep sensitive production data inside the plant network. Cloud-based historians (or cloud extensions of on-premise systems) enable cross-plant analytics, remote monitoring, and scalable compute for advanced analytics. Many manufacturers adopt a hybrid approach — local historians for real-time operations with cloud replication for enterprise analytics and long-term archival. For more on this decision, see our guide on <a href="/blog/cloud-vs-on-premise-for-manufacturing-data/">cloud vs. on-premise approaches for manufacturing data</a>.</p>
+<h3 id="data-contextualization">Data Contextualization</h3>
+<p>Raw tag data (Tag_12345 = 47.3 at timestamp T) is nearly useless without context. Effective DAQ systems associate each data point with metadata: which machine, which product, which batch, which operator, which recipe. This contextualization — often called an asset model or equipment hierarchy — transforms raw numbers into answers. Instead of asking "what was Tag_12345 at 2pm?", engineers can ask "what was the curing temperature on Line 3 during Batch 4472?"</p>
+<p>Building this context model early in the system design saves enormous effort compared to retroactively mapping tags to equipment after years of data accumulation.</p>
+<h2 id="implementation-best-practices">Implementation Best Practices</h2>
+<h3 id="start-with-the-questions-you-need-to-answer">Start With the Questions You Need to Answer</h3>
+<p>Before selecting hardware or software, define the questions your data system needs to answer. Common examples include:</p>
+<ul>
+<li>What is our actual OEE by line, shift, and product?</li>
+<li>Which process parameters correlate with scrap events?</li>
+<li>Are we meeting regulatory requirements for environmental monitoring?</li>
+<li>What is the mean time between failures for critical equipment?</li>
+<li>How do cycle time distributions change over a tool's wear life?</li>
+</ul>
+<p>These questions drive tag selection, sample rates, retention policies, and visualization requirements. Working backward from desired outputs prevents both over-collection (storing everything "just in case") and under-collection (missing the one variable that explains a quality problem).</p>
+<h3 id="design-for-data-integrity">Design for Data Integrity</h3>
+<p>Data acquisition systems must handle real-world conditions: network interruptions, PLC restarts, time synchronization drift, and sensor failures. Design features that protect data integrity include:</p>
+<ul>
+<li><strong>Store-and-forward buffering</strong> at the edge, so data is not lost during network outages</li>
+<li><strong>NTP or PTP time synchronization</strong> across all devices, ensuring events from different systems can be correlated accurately</li>
+<li><strong>Bad-quality flagging</strong> that marks data from suspect sensors rather than recording false values</li>
+<li><strong>Redundant collection paths</strong> for critical process variables</li>
+</ul>
+<h3 id="plan-retention-and-archival">Plan Retention and Archival</h3>
+<p>Not all data needs to live in the active historian forever. Define retention tiers: high-resolution data for recent production (weeks to months), downsampled data for medium-term trending (months to years), and compressed archives for regulatory compliance (years to decades). Automated lifecycle management moves data between tiers without manual intervention.</p>
+<h2 id="the-roi-of-getting-data-right">The ROI of Getting Data Right</h2>
+<p>Manufacturers who invest in solid data acquisition infrastructure consistently find that the payback extends far beyond the original justification. A system installed for quality traceability ends up driving energy optimization. A historian deployed for regulatory compliance becomes the foundation for predictive maintenance. Data that was collected for one purpose reveals patterns that improve processes in entirely unexpected ways.</p>
+<p>The key is building the infrastructure — sensors, networks, historians, and context models — with enough rigor and flexibility to support uses that have not been imagined yet. That requires treating data acquisition as a core engineering discipline, not as an IT project that happens after the machines are running.</p>
 <h2 id="partner-with-amd-machines">Partner With AMD Machines</h2>
-<p>AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. <a href="/contact/">Contact us</a> to discuss your automation needs.</p>
+<p>AMD Machines designs data acquisition architectures as an integral part of our automation systems. From sensor selection and PLC programming to historian configuration and dashboard development, our engineers build systems that capture the data you need and present it in ways that drive better decisions. <a href="/contact/">Contact us</a> to discuss how we can help you turn production data into a competitive advantage.</p>
                 </div>
 
                 <!-- Mid-Article CTA -->
@@ -756,7 +786,7 @@
                             <div class="related-post-content">
                                 <h4>PLC Programming Fundamentals for Automation</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>
@@ -768,7 +798,7 @@
                             <div class="related-post-content">
                                 <h4>HMI Design Best Practices for Operators</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>
@@ -780,7 +810,7 @@
                             <div class="related-post-content">
                                 <h4>Motion Control: Servo Systems and Applications</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>

@@ -12,13 +12,13 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Custom machine vision systems for quality inspection, guidance, and measurement. 2D/3D vision and AI-powered defect detection.">
-    <meta name="keywords" content="machine vision systems, industrial vision inspection, vision guided robotics, quality inspection automation, defect detection, 2D 3D vision, OCR verification">
+    <meta name="description" content="Industrial machine vision systems for automated inspection, robot guidance, and precision measurement. Cognex, Keyence, and AI-powered defect detection with 99.9% accuracy.">
+    <meta name="keywords" content="machine vision systems, industrial vision inspection, vision guided robotics, quality inspection automation, defect detection systems, 2D 3D vision inspection, automated optical inspection">
     <meta name="author" content="AMD Machines">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Machine Vision Systems | Industrial Vision Inspection | AMD Machines | AMD Machines">
-    <meta property="og:description" content="Custom machine vision systems for quality inspection, guidance, and measurement. 2D/3D vision and AI-powered defect detection.">
+    <meta property="og:description" content="Industrial machine vision systems for automated inspection, robot guidance, and precision measurement. Cognex, Keyence, and AI-powered defect detection with 99.9% accuracy.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amdmachines.com/solutions/machine-vision/">
     <meta property="og:site_name" content="AMD Machines">
@@ -29,7 +29,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Machine Vision Systems | Industrial Vision Inspection | AMD Machines | AMD Machines">
-    <meta name="twitter:description" content="Custom machine vision systems for quality inspection, guidance, and measurement. 2D/3D vision and AI-powered defect detection.">
+    <meta name="twitter:description" content="Industrial machine vision systems for automated inspection, robot guidance, and precision measurement. Cognex, Keyence, and AI-powered defect detection with 99.9% accuracy.">
     <meta name="twitter:image" content="https://amdmachines.com/static/images/og-default.jpg">
 
     <!-- Canonical URL -->
@@ -594,45 +594,98 @@
         <div class="content-layout">
             <div class="content-main-flat">
                 <div class="prose">
-                    <p>Machine vision systems use cameras and image processing to perform inspection, guidance, and measurement tasks that traditionally required human vision. AMD Machines designs custom vision solutions that integrate seamlessly with your <a href="/solutions/robotic-cells/">robotic cells</a> and <a href="/solutions/assembly/">assembly systems</a>.</p>
-<h2 id="vision-system-capabilities">Vision System Capabilities</h2>
-<h3 id="2d-vision-inspection">2D Vision Inspection</h3>
-<p>Standard 2D vision excels at:</p>
+                    <p>I've been integrating machine vision systems for over two decades, and I'll tell you what still surprises me: how many manufacturers are running critical quality checks with nothing but a pair of tired eyes under a magnifying lamp. I've walked into plants where a single inspector is responsible for catching 50-micron defects on parts moving at 30 per minute—and management wonders why they're shipping rejects. Machine vision doesn't get fatigued at hour six, doesn't get distracted by a text message, and doesn't have a bad Monday. It catches defects the same way on part number one as on part number one million.</p>
+<p>At AMD Machines, we've integrated hundreds of vision systems across <a href="/industries/automotive/">automotive</a>, <a href="/industries/medical/">medical device</a>, <a href="/industries/electronics/">electronics</a>, and <a href="/industries/aerospace/">aerospace</a> manufacturing. We're not a camera company—we're automation integrators who understand that the camera is just the starting point. The real work is lighting, optics, algorithms, and integration with your <a href="/solutions/robotic-cells/">robotic cells</a> and <a href="/solutions/assembly/">assembly systems</a> so the whole line runs like clockwork.</p>
+<h2 id="how-industrial-machine-vision-actually-works">How Industrial Machine Vision Actually Works</h2>
+<p>Every machine vision system, no matter how sophisticated, follows the same fundamental pipeline: illuminate, capture, process, decide, act. Sounds simple on paper. In practice, each step has a dozen ways to go wrong—and when you're running at 60 parts per minute, you don't get second chances.</p>
+<h3 id="lighting-the-most-underrated-component">Lighting: The Most Underrated Component</h3>
+<p>Here's something that took me years to fully appreciate: lighting determines about 80% of your vision system's success. You can have the best Cognex In-Sight 3800 camera money can buy, and it'll fail miserably if the lighting doesn't create enough contrast between the feature you're inspecting and the background.</p>
+<p>We design lighting based on the specific defect or feature we need to detect:</p>
 <ul>
-<li>Surface defect detection (scratches, dents, contamination)</li>
-<li>Presence/absence verification</li>
-<li>Label and print quality inspection</li>
-<li>Dimensional measurement in a single plane</li>
-<li>Pattern matching for part identification</li>
+<li><strong>Diffuse dome lighting</strong> — Eliminates specular reflections on shiny surfaces. Essential for inspecting machined aluminum, chrome-plated parts, and polished medical components.</li>
+<li><strong>Darkfield (low-angle) illumination</strong> — Makes surface scratches, dents, and contamination pop against an otherwise dark background. We use this extensively on painted automotive panels and glass substrates.</li>
+<li><strong>Backlighting</strong> — Perfect for dimensional measurement, gap checking, and presence/absence verification on silhouette profiles. Simple, reliable, and fast.</li>
+<li><strong>Structured light and laser line projection</strong> — The foundation of 3D vision. A projected laser line deforms as it crosses surface geometry, and triangulation calculates the height map. Keyence's LJ-X8000 series is our go-to for inline 3D profiling.</li>
+<li><strong>Coaxial lighting</strong> — Light travels along the same axis as the camera lens, producing bright reflections from flat surfaces and dark signals from angled ones. Ideal for reading laser-etched marks on metal surfaces.</li>
 </ul>
-<h3 id="3d-vision-systems">3D Vision Systems</h3>
-<p>When geometry matters, 3D vision provides:</p>
+<p>We prototype lighting during the concept phase using your actual parts—not renderings, not samples from a different lot. Parts change. Lighting that works on a clean prototype often fails on production parts with oil residue, color variation, or surface wear.</p>
+<h3 id="camera-selection-and-optics">Camera Selection and Optics</h3>
+<p>Choosing the right camera comes down to three questions: How much resolution do you need? How fast do you need it? And what's your field of view?</p>
+<p>For most inline inspection applications, we work with <strong>Cognex In-Sight 2800 and 3800 series</strong> smart cameras and <strong>Keyence CV-X and XG-X series</strong> controllers. Both platforms offer excellent image processing libraries, intuitive setup tools, and rock-solid industrial reliability. For high-resolution or high-speed applications, we use <strong>Cognex VisionPro</strong> software with GigE Vision or CoaXPress area-scan cameras from Basler, FLIR, or Teledyne DALSA.</p>
+<p>A quick rule of thumb we use: your pixel size needs to be at least 1/3 the size of the smallest feature you're inspecting. So if you're looking for 100-micron scratches, you need pixels no larger than 33 microns at the part surface. That drives the resolution and lens selection.</p>
+<p>For products moving on a conveyor, <strong>line-scan cameras</strong> are often the better choice. A single Teledyne DALSA Linea camera with 8K resolution can inspect an entire web or panel surface at speeds over 2 meters per second with uniform pixel coverage—no stitching artifacts, no parallax distortion.</p>
+<h3 id="image-processing-and-algorithms">Image Processing and Algorithms</h3>
+<p>This is where the real engineering happens. We select and tune algorithms based on what you need to detect:</p>
 <ul>
-<li>Height measurement and surface profiling</li>
-<li>Volume calculation for fill-level inspection</li>
-<li>Complex geometry verification</li>
-<li>Bin picking with random part orientation</li>
-<li>Weld bead inspection</li>
+<li><strong>Pattern matching</strong> — Locate parts, verify orientation, and measure position offset. Cognex PatMax is the industry standard and handles rotation, scale changes, and partial occlusion remarkably well.</li>
+<li><strong>Edge detection and caliper tools</strong> — Measure distances, gaps, diameters, and angles with sub-pixel accuracy. We routinely achieve ±0.005 mm measurement repeatability with calibrated setups.</li>
+<li><strong>Blob analysis</strong> — Count features, measure areas, and detect contamination or missing material. Fast and effective for presence/absence checks.</li>
+<li><strong>Color inspection</strong> — Verify correct component color, detect discoloration, and sort products by shade. Requires careful color calibration and controlled lighting.</li>
+<li><strong>OCR/OCV</strong> — Read printed, stamped, or laser-marked text and verify it matches expected strings. Critical for lot codes, date codes, and serialization in <a href="/industries/medical/">medical</a> and <a href="/industries/pharmaceutical/">pharmaceutical</a> manufacturing.</li>
 </ul>
-<h3 id="ai-and-deep-learning">AI and Deep Learning</h3>
-<p>Modern AI-powered vision handles:</p>
+<h2 id="3d-vision-when-flat-images-arent-enough">3D Vision: When Flat Images Aren't Enough</h2>
+<p>Two-dimensional vision handles probably 70% of industrial inspection tasks. But when you need height data, volume measurement, or true geometric analysis, you need 3D.</p>
+<p>We integrate several 3D technologies depending on the application:</p>
 <ul>
-<li>Complex defect classification</li>
-<li>Anomaly detection without explicit programming</li>
-<li>Variable appearance inspection (wood grain, textiles)</li>
-<li>Continuous learning from production data</li>
+<li><strong>Laser triangulation profilers</strong> — Keyence LJ-X8000 and Cognex DS1300 displacement sensors. Excellent for weld bead inspection, gap-and-flush measurement, and surface profiling at high speed.</li>
+<li><strong>Structured light scanners</strong> — Project a pattern (typically stripes or dots) and use stereo triangulation to build a dense point cloud. We use these for complex freeform surface inspection on cast and machined parts.</li>
+<li><strong>Time-of-flight cameras</strong> — Fast, lower-resolution 3D for bin picking and large-object guidance. The Keyence 3D-LJV7000 series and ifm O3D cameras handle robot guidance applications where millimeter-level accuracy is sufficient.</li>
+<li><strong>Stereo vision</strong> — Two calibrated cameras compute depth from parallax. We use this with FANUC's 3DV/600 sensor for <a href="/solutions/bin-picking/">bin picking</a> applications where parts arrive in random orientations.</li>
 </ul>
-<h2 id="integration-with-automation">Integration with Automation</h2>
-<p>Machine vision integrates with all AMD automation solutions:</p>
+<p>One of our favorite applications is automated weld bead inspection on <a href="/solutions/welding/">welding</a> cells. A Keyence LJ-X8080 laser profiler scans every weld at line speed, measuring bead width, height, undercut, and porosity. We've replaced manual visual inspection on automotive exhaust manifolds—catching defects that human inspectors missed 15% of the time—and reduced weld-quality escapes to near zero.</p>
+<h2 id="ai-and-deep-learning-vision">AI and Deep Learning Vision</h2>
+<p>Traditional rule-based vision works beautifully when you can define exactly what a defect looks like. But some inspections defy explicit programming: cosmetic surface defects on textured materials, food product appearance, fabric weave irregularities, wood grain variations. That's where deep learning changes the game.</p>
+<p>We deploy AI-powered inspection using <strong>Cognex ViDi</strong> and <strong>Keyence AI inspection modules</strong>. These systems train on images of good and bad parts—typically 50–200 labeled examples—and learn to classify defects the way an experienced human inspector would, but without fatigue or subjectivity.</p>
+<p>On a recent <a href="/industries/consumer/">consumer products</a> line, we deployed a Cognex ViDi system to inspect injection-molded cosmetic housings. The parts had legitimate color variation, texture variation, and gloss variation that made traditional vision algorithms generate false rejects at a 12% rate. After training the deep learning model on 150 labeled images, we dropped false rejects to 0.3% while maintaining a 99.95% true defect detection rate. That's the kind of performance that pays for itself in weeks.</p>
+<h2 id="vision-guided-robotics">Vision-Guided Robotics</h2>
+<p>Bolting a camera to a robot arm doesn't make it "vision-guided." True vision-guided robotics (VGR) requires precise hand-eye calibration, robust part localization algorithms, and real-time communication between the vision system and robot controller.</p>
+<p>We integrate VGR on FANUC, ABB, KUKA, and Yaskawa robots using both fixed-mount and robot-mounted camera configurations:</p>
 <ul>
-<li><strong><a href="/solutions/robotic-cells/">Robotic Cells</a></strong> - Vision-guided picking and placement</li>
-<li><strong><a href="/solutions/assembly/">Assembly Systems</a></strong> - Verification at each assembly step</li>
-<li><strong><a href="/solutions/test-systems/">Test Systems</a></strong> - Visual inspection as part of functional testing</li>
-<li><strong><a href="/solutions/material-handling/">Material Handling</a></strong> - Part identification and routing</li>
+<li><strong>Fixed-mount cameras</strong> capture an image before the robot moves, compute the pick coordinates, and send them to the robot controller. This approach is faster (no camera settling time) and works well when parts arrive in a known plane—on a conveyor, in a tray, or on a fixture.</li>
+<li><strong>Robot-mounted cameras</strong> move with the tool, allowing the robot to "look" at the part from close range. This is essential for large work envelopes, variable part heights, and applications where the camera needs to inspect after the robot places or processes a part.</li>
 </ul>
-<h2 id="industries-served">Industries Served</h2>
-<p>Our vision systems operate across <a href="/industries/automotive/">automotive</a>, <a href="/industries/medical/">medical device</a>, <a href="/industries/electronics/">electronics</a>, and <a href="/industries/aerospace/">aerospace</a> manufacturing where quality requirements demand automated inspection.</p>
-<p>Contact us to discuss how machine vision can improve quality and throughput in your operation.</p>
+<p>FANUC's iRVision system is tightly integrated with the robot controller and handles fixed and robot-mount setups with minimal additional hardware. For more complex applications—multi-camera setups, AI classification, or integration with non-FANUC robots—we use Cognex VisionPro or Keyence XG-X as the vision engine and communicate pick coordinates via Ethernet/IP or socket messaging.</p>
+<h2 id="real-world-application-examples">Real-World Application Examples</h2>
+<h3 id="automotive-powertrain-inspection">Automotive Powertrain Inspection</h3>
+<p>A Tier 1 supplier needed 100% surface inspection on machined aluminum transmission housings. The parts had 14 critical sealing surfaces, each requiring detection of scratches deeper than 30 microns, porosity, and machining burrs.</p>
+<p>We designed a multi-camera inspection station with 8 Cognex In-Sight 3800 cameras, each with custom darkfield lighting optimized for its specific inspection zone. A Keyence LJ-X8080 laser profiler scanned the main gasket surface for flatness and scratch depth. Total inspection time: 4.2 seconds per part, synchronized with the <a href="/solutions/machine-tending/">machine tending</a> robot that loads and unloads the CNC machining center.</p>
+<p><strong>Results:</strong> 99.97% defect detection rate, zero false rejects on scratches over 50 microns, and complete elimination of the 3-person manual inspection team that previously checked every fifth part. Customer PPM complaints related to sealing surface defects dropped from 45 PPM to zero in the first year.</p>
+<h3 id="medical-device-label-verification">Medical Device Label Verification</h3>
+<p>A medical device manufacturer required 100% verification of labels on pre-filled syringes: correct product name, correct dosage, correct lot code, correct expiration date, readable 2D data matrix code, and label placement within ±0.5 mm. FDA 21 CFR Part 11 compliance was mandatory for all inspection records.</p>
+<p>We integrated a Cognex VisionPro system with a 5-megapixel GigE camera and telecentric lens for distortion-free label imaging. OCR algorithms verify every text field against the batch recipe, and a calibrated measurement tool checks label position relative to a datum feature on the syringe barrel. Every image is archived with the inspection result in a 21 CFR Part 11-compliant database.</p>
+<p><strong>Results:</strong> 100% label verification at 120 syringes per minute, 0.1% false reject rate (previously 2.5% with manual inspection), and full electronic batch records accepted by the FDA during a facility audit.</p>
+<h3 id="electronics-solder-joint-inspection">Electronics Solder Joint Inspection</h3>
+<p>A contract electronics manufacturer needed automated optical inspection (AOI) for through-hole solder joints on a power supply PCB. The board had 186 through-hole pins across 12 component types, and the existing AOI system was generating a 15% false call rate, requiring a full-time operator to disposition every flagged board.</p>
+<p>We replaced the legacy AOI with a Cognex ViDi deep learning system trained on 200 boards (good and bad). The system classifies each solder joint as acceptable, insufficient, excess, bridged, or cold—matching the IPC-A-610 criteria the plant already followed.</p>
+<p><strong>Results:</strong> False call rate dropped from 15% to 1.2%, real defect detection improved from 92% to 99.6%, and the disposition operator was redeployed to higher-value work. The system paid for itself in 4 months through reduced rework labor and improved throughput.</p>
+<h2 id="the-roi-of-machine-vision">The ROI of Machine Vision</h2>
+<p>Vision systems deliver ROI through multiple channels, and the total is almost always larger than people expect:</p>
+<p><strong>Reduced scrap and rework</strong> — Catching defects immediately at the source instead of at final inspection or—worse—at the customer. If your scrap rate drops from 2.5% to 0.3% on a product with $12 in material cost at 500,000 units per year, that's a $132,000 annual savings from scrap alone.</p>
+<p><strong>Eliminated manual inspection labor</strong> — A single vision system running 24/7 replaces 3–4 inspectors across three shifts. At $50,000 fully burdened per inspector, that's $150,000–$200,000 per year in direct labor savings.</p>
+<p><strong>Prevented customer escapes</strong> — This is often the largest but hardest-to-quantify benefit. A single quality escape to an automotive OEM can trigger a Level 3 containment, third-party sorting at $80–$150/hour, and potential line shutdowns costing $10,000+ per minute. One prevented escape can justify the entire vision system.</p>
+<p><strong>Process improvement data</strong> — Vision systems generate rich data: defect rates by shift, by cavity, by material lot. That data drives <a href="/services/process-optimization/">process optimization</a> that compounds over time.</p>
+<p>For a typical inline vision inspection station, we see system costs of $50,000–$150,000 depending on complexity, with full payback in <strong>3–9 months</strong> on high-volume lines.</p>
+<h2 id="common-challenges-and-how-we-solve-them">Common Challenges and How We Solve Them</h2>
+<p><strong>"Our parts are too shiny/reflective."</strong> Specular surfaces are the #1 challenge in machine vision. We solve it with diffuse dome lighting, polarizing filters, and multi-angle illumination schemes. We prototype lighting on your actual parts before committing to a design.</p>
+<p><strong>"The defects look different every time."</strong> This is exactly where deep learning shines. Traditional rule-based vision needs explicit defect definitions; AI-based systems learn from examples. We've deployed Cognex ViDi on cosmetic inspections where no two defects look alike, and it outperforms human inspectors.</p>
+<p><strong>"We have too many false rejects."</strong> High false reject rates usually indicate a lighting or algorithm problem, not a camera problem. We tune thresholds using statistical analysis of production data—not just a handful of samples during development. Our target is always under 0.5% false reject rate.</p>
+<p><strong>"We need to inspect at 120+ parts per minute."</strong> Speed requirements drive camera selection, lighting pulse duration, and processing architecture. We've built systems using triggered strobe lighting with exposure times under 50 microseconds to freeze motion at high line speeds. For continuous-motion applications, line-scan cameras eliminate motion blur entirely.</p>
+<p><strong>"Can we add vision to our existing line?"</strong> In many cases, yes. Retrofit vision stations can be inserted into existing conveyors, added to <a href="/solutions/robotic-cells/">robotic cells</a>, or mounted above manual workstations. We evaluate your line layout and recommend the least-disruptive integration approach.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="whats-the-difference-between-a-smart-camera-and-a-pc-based-vision-system">What's the difference between a smart camera and a PC-based vision system?</h3>
+<p>Smart cameras like the Cognex In-Sight 3800 combine the camera, processor, and software in a single IP67-rated package—no separate PC required. They're ideal for single-point inspections with up to moderate complexity. PC-based systems using Cognex VisionPro or Keyence XG-X software handle multi-camera setups, higher resolution, AI processing, and complex measurement routines. We'll recommend the right architecture based on your inspection requirements and budget.</p>
+<h3 id="how-accurate-are-vision-measurement-systems-compared-to-cmms">How accurate are vision measurement systems compared to CMMs?</h3>
+<p>Vision systems typically achieve ±0.005–0.025 mm repeatability depending on resolution, optics, and calibration quality. That's not CMM-level accuracy (±0.001–0.003 mm), but it's more than sufficient for inline process control. The advantage is speed: a vision measurement takes milliseconds, while a CMM probe takes seconds to minutes. We often use vision for 100% inline checking and reserve CMM for periodic correlation audits.</p>
+<h3 id="can-vision-systems-handle-mixed-model-production">Can vision systems handle mixed-model production?</h3>
+<p>Yes. Modern vision systems store multiple inspection programs (recipes) and switch between them automatically based on barcode scans, PLC recipe numbers, or even automatic part identification using pattern matching. We design multi-model systems that switch inspection programs in under 100 milliseconds with zero changeover downtime.</p>
+<h3 id="how-do-you-handle-lighting-changes-over-time-led-aging-ambient-light">How do you handle lighting changes over time (LED aging, ambient light)?</h3>
+<p>We use enclosed inspection stations with controlled lighting whenever possible to eliminate ambient light interference. For LED aging, we specify industrial-grade LED controllers with regulated current output and rated lifetimes of 50,000+ hours. We also build automatic exposure and gain adjustment into our vision programs so the system self-corrects for gradual intensity changes.</p>
+<h3 id="what-data-do-vision-systems-output-and-can-we-integrate-with-our-mes">What data do vision systems output, and can we integrate with our MES?</h3>
+<p>Vision systems output pass/fail results, measurement values, defect classifications, and inspection images. We integrate this data with MES and SCADA platforms via OPC UA, Ethernet/IP, PROFINET, MQTT, or direct database writes (SQL Server, Oracle, PostgreSQL). Every AMD vision system includes a web-based results dashboard for real-time monitoring and historical trending. For medical and automotive traceability requirements, we archive every inspection image linked to the part's serial number or lot code.</p>
+<h3 id="do-we-need-special-training-to-operate-and-maintain-the-system">Do we need special training to operate and maintain the system?</h3>
+<p>We provide comprehensive operator and maintenance training with every vision system. Operators learn to monitor the system, clear faults, and run basic diagnostics. Maintenance staff learn to clean optics, replace lighting, recalibrate cameras, and adjust inspection parameters. For customers who want to develop their own inspection programs, we offer advanced <a href="/services/training/">training courses</a> on Cognex and Keyence platforms.</p>
+<h3 id="what-happens-when-the-vision-system-cant-make-a-decision">What happens when the vision system can't make a decision?</h3>
+<p>We design every system with a clear disposition strategy for marginal parts. Options include automatic re-inspection (rotate the part and look again), routing to a manual review station with the captured image displayed for an operator decision, or automatic rejection with the image flagged for engineering review. The key is that no uncertain part ever reaches the "good" output without a definitive pass.</p>
                 </div>
 
                 
@@ -644,9 +697,9 @@
                         
                         <li>AI-powered defect detection</li>
                         
-                        <li>Vision-guided robotics</li>
+                        <li>Vision-guided robotics (VGR)</li>
                         
-                        <li>Dimensional measurement</li>
+                        <li>Non-contact dimensional measurement</li>
                         
                         <li>OCR and barcode reading</li>
                         
@@ -654,7 +707,7 @@
                         
                         <li>Pattern matching and alignment</li>
                         
-                        <li>Multi-camera systems</li>
+                        <li>Multi-camera and line-scan systems</li>
                         
                     </ul>
                 </div>
@@ -667,22 +720,22 @@
                         
                         <div class="application-item">
                             <h3>Quality Inspection</h3>
-                            <p>Detect surface defects, dimensional variations, and assembly errors at production speed.</p>
+                            <p>Detect surface defects, dimensional variations, and assembly errors at full production speed with 99.9% detection rates.</p>
                         </div>
                         
                         <div class="application-item">
                             <h3>Robot Guidance</h3>
-                            <p>Enable robots to locate, pick, and place parts with sub-millimeter accuracy.</p>
+                            <p>Enable FANUC, ABB, and KUKA robots to locate, pick, and place parts with sub-millimeter accuracy using 2D and 3D vision.</p>
                         </div>
                         
                         <div class="application-item">
                             <h3>Measurement</h3>
-                            <p>Non-contact dimensional verification for critical tolerances and GD&amp;T compliance.</p>
+                            <p>Non-contact dimensional verification for critical tolerances and GD&amp;T compliance down to ±0.005 mm repeatability.</p>
                         </div>
                         
                         <div class="application-item">
                             <h3>Identification</h3>
-                            <p>Read barcodes, QR codes, OCR text, and verify labels for traceability.</p>
+                            <p>Read barcodes, QR codes, data matrix, and OCR text for traceability across automotive, medical, and electronics manufacturing.</p>
                         </div>
                         
                     </div>
@@ -696,22 +749,22 @@
                         
                         <div class="benefit-item-flat">
                             <h3>100% Inspection</h3>
-                            <p>Inspect every part at full production speed without sampling.</p>
+                            <p>Inspect every part at full production speed—no more statistical sampling or missed defects.</p>
                         </div>
                         
                         <div class="benefit-item-flat">
                             <h3>Consistent Quality</h3>
-                            <p>Eliminate human variability in visual inspection decisions.</p>
+                            <p>Eliminate human variability in visual inspection decisions with repeatable, quantifiable pass/fail criteria.</p>
                         </div>
                         
                         <div class="benefit-item-flat">
                             <h3>Data Collection</h3>
-                            <p>Capture images and measurements for traceability and process improvement.</p>
+                            <p>Capture images, measurements, and trend data for traceability, SPC, and continuous process improvement.</p>
                         </div>
                         
                         <div class="benefit-item-flat">
                             <h3>Flexible Integration</h3>
-                            <p>Add vision to existing lines or integrate into new automation systems.</p>
+                            <p>Add vision to existing lines or integrate into new robotic cells, assembly systems, and test stations.</p>
                         </div>
                         
                     </div>

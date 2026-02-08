@@ -12,13 +12,13 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Custom automation for energy sector manufacturing: solar panel production, wind turbine components, battery assembly, and power generation equipment.">
-    <meta name="keywords" content="energy industry automation, solar panel manufacturing, wind turbine automation, battery assembly automation, renewable energy manufacturing">
+    <meta name="description" content="Energy sector automation for battery module assembly, solar panel production, wind turbine components, and power equipment. 30+ years of custom systems for renewable and traditional energy.">
+    <meta name="keywords" content="energy industry automation, battery module assembly automation, solar panel manufacturing automation, wind turbine component automation, EV battery assembly systems, renewable energy manufacturing, power generation equipment automation">
     <meta name="author" content="AMD Machines">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Energy Industry Automation | Solar, Wind, Battery Manufacturing | AMD Machines | AMD Machines">
-    <meta property="og:description" content="Custom automation for energy sector manufacturing: solar panel production, wind turbine components, battery assembly, and power generation equipment.">
+    <meta property="og:description" content="Energy sector automation for battery module assembly, solar panel production, wind turbine components, and power equipment. 30+ years of custom systems for renewable and traditional energy.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amdmachines.com/industries/energy/">
     <meta property="og:site_name" content="AMD Machines">
@@ -29,7 +29,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Energy Industry Automation | Solar, Wind, Battery Manufacturing | AMD Machines | AMD Machines">
-    <meta name="twitter:description" content="Custom automation for energy sector manufacturing: solar panel production, wind turbine components, battery assembly, and power generation equipment.">
+    <meta name="twitter:description" content="Energy sector automation for battery module assembly, solar panel production, wind turbine components, and power equipment. 30+ years of custom systems for renewable and traditional energy.">
     <meta name="twitter:image" content="https://amdmachines.com/static/images/og-default.jpg">
 
     <!-- Canonical URL -->
@@ -568,8 +568,8 @@
 <section class="page-header-flat">
     <div class="container">
         <div class="page-header-content">
-            <h1>Energy Industry</h1>
-            <p class="page-lead">Automation solutions for renewable energy and power generation manufacturing</p>
+            <h1>Energy Industry Automation</h1>
+            <p class="page-lead">Custom automation solutions for battery, solar, wind, and power generation manufacturing</p>
         </div>
     </div>
 </section>
@@ -594,47 +594,80 @@
         <div class="content-layout">
             <div class="content-main-flat">
                 <div class="prose">
-                    <p>The energy sector demands automation that handles large components, maintains strict quality standards, and adapts to rapidly evolving technologies. AMD Machines provides solutions for battery manufacturing, renewable energy equipment, and traditional power generation components.</p>
-<h2 id="battery-manufacturing-automation">Battery Manufacturing Automation</h2>
-<p>Electric vehicle and grid storage batteries require precise, high-volume assembly:</p>
+                    <p>Here's what I've learned after building automation for the energy sector over the past 15 years: this industry doesn't just move fast — it reinvents itself every 3-5 years. When we started building battery assembly systems, everybody was working with cylindrical 18650 cells. Then prismatic cells took over for automotive packs. Then pouch cells gained traction. Now we're seeing 4680 cylindrical cells, solid-state prototypes, and sodium-ion chemistries all coming through the pipeline simultaneously. Solar went from polycrystalline to monocrystalline to PERC to TOPCon to heterojunction (HJT) — each generation requiring different handling, stringing, and inspection approaches.</p>
+<p>If you build rigid, single-purpose automation for energy manufacturing, you'll be ripping it out in three years. That's not a guess — we've seen it happen to competitors' equipment sitting in our customers' plants. At AMD Machines, we've built our energy automation philosophy around one principle: the system you install today has to adapt to the product you'll be making in 2028.</p>
+<h2 id="battery-manufacturing-the-fastest-growing-automation-market-weve-ever-seen">Battery Manufacturing: The Fastest-Growing Automation Market We've Ever Seen</h2>
+<p>Battery manufacturing has exploded. Between EV production scaling up, grid-scale energy storage deployments, and consumer electronics demand, the battery industry is building more gigafactory capacity right now than the entire semiconductor industry built in the last decade. And every one of those gigafactories needs automation — a lot of it.</p>
+<p>We build <a href="/solutions/custom-automation/">custom automation systems</a> for every stage of battery module and pack assembly. Here's what that actually looks like on the production floor.</p>
+<h3 id="cell-handling-and-sorting">Cell Handling and Sorting</h3>
+<p>Before you can build a module, you need to sort incoming cells by capacity, internal resistance, and voltage to ensure matched cells end up in the same module. Mismatched cells degrade pack performance and create thermal imbalance — the number one cause of battery pack warranty failures.</p>
+<p>Our cell sorting systems use FANUC LR Mate 200iD robots with custom vacuum or mechanical grippers handling 2,000-4,000 cells per hour. Each cell gets an individual barcode scan (Keyence SR-2000 series readers), open-circuit voltage measurement, and AC impedance test before it's placed into a sorted tray. The system bins cells into 5-8 capacity grades with a sorting accuracy of ±0.5% SOC. Every cell's test data is recorded and linked to its barcode for full traceability through the rest of the assembly process.</p>
+<p>For pouch and prismatic cells, handling gets more delicate. Pouch cells in particular are sensitive to bending and puncture — we use FANUC CR-7iA collaborative robots with force-limited grippers that apply less than 5N of lateral force during pick-and-place. Cycle time: 8 seconds per cell, including test and sort.</p>
+<h3 id="module-assembly-and-welding">Module Assembly and Welding</h3>
+<p>Module assembly is where the real complexity begins. You're combining 8-24 cells (depending on format and chemistry) into a structural module with electrical interconnects, thermal management, and mechanical retention — all at cycle times that support megawatt-scale annual production.</p>
+<p><strong>Busbar welding</strong> is the critical operation. We've built systems using both laser welding and ultrasonic welding for cell-to-busbar connections, and the right choice depends on your cell format and tab material:</p>
 <ul>
-<li><strong>Cell handling and sorting</strong> - <a href="/solutions/material-handling/">Material handling</a> for cylindrical, prismatic, and pouch cells</li>
-<li><strong>Module welding</strong> - <a href="/solutions/laser-applications/">Laser</a> and resistance <a href="/solutions/welding/">welding</a> for cell interconnects</li>
-<li><strong><a href="/solutions/test-systems/">Testing</a></strong> - Electrical testing, leak detection, and thermal cycling</li>
-<li><strong>Pack assembly</strong> - <a href="/solutions/robotic-cells/">Robotic cells</a> for final battery pack assembly</li>
+<li><strong>Laser welding</strong> (using IPG or Trumpf fiber lasers, 1-4 kW) works best for aluminum and copper tabs on prismatic and pouch cells. We integrate the laser with <a href="/solutions/machine-vision/">machine vision</a> using Cognex In-Sight 9000 cameras for pre-weld tab position verification and post-weld bead inspection. Weld penetration is monitored in real-time using photodiode-based process monitoring. Typical cycle: 0.3 seconds per weld, 48 welds per module, total welding time under 20 seconds.</li>
+<li><strong>Ultrasonic welding</strong> (Branson or Herrmann equipment) is preferred for nickel and nickel-plated steel tabs on cylindrical cells. It's faster than laser for these materials and doesn't generate spatter that could contaminate the cell. We've built cylindrical module lines running 96 ultrasonic welds per module at 0.15 seconds per weld.</li>
 </ul>
-<h2 id="solar-panel-manufacturing">Solar Panel Manufacturing</h2>
-<p>Photovoltaic manufacturing automation includes:</p>
+<p>Between welding stations, <a href="/solutions/robotic-cells/">robotic cells</a> handle thermal interface material (TIM) dispensing using <a href="/solutions/dispensing/">automated dispensing systems</a> with Nordson or Graco equipment. The TIM gap pad or paste fills the space between cells and the cooling plate — and the bead geometry has to be precise, because too little TIM creates hot spots and too much creates assembly interference. Our dispensing systems hold bead width to ±0.3mm and volume to ±2% using closed-loop flow monitoring.</p>
+<p><strong>Real-World Example: EV Battery Module Line</strong>
+We built a complete module assembly line for a Tier 1 automotive battery supplier producing modules for a North American EV platform. The line handles prismatic cells in 12-cell and 16-cell configurations with recipe-driven changeover. Operations include cell stacking with FANUC M-10iD robots, busbar placement, fiber laser welding (IPG YLR-2000), TIM dispensing, compression bonding, side plate fastening with Atlas Copco torque tools, and end-of-line electrical testing. Cycle time: 42 seconds per module. Annual capacity: 250,000 modules. First-pass yield after six months of production: 99.4%.</p>
+<h3 id="pack-assembly-and-testing">Pack Assembly and Testing</h3>
+<p>Battery pack assembly integrates modules into the final structural enclosure with high-voltage wiring, a battery management system (BMS), cooling manifolds, and structural sealing. This is heavy automation — packs weigh 300-600 kg for passenger EVs and up to 2,000 kg for commercial vehicles.</p>
+<p>We use FANUC M-710iC and M-900iB robots (165-700 kg payload) for module insertion, and our <a href="/solutions/servo-pressing/">servo press systems</a> handle gasket compression and mechanical fastening with force-displacement monitoring on every joint. High-voltage testing at the pack level includes insulation resistance testing (hipot), isolation monitoring, and charge/discharge cycling — all performed inside ventilated test enclosures designed to NFPA 855 standards for battery energy storage safety.</p>
+<p>Leak testing on coolant circuits uses helium mass spectrometer methods through our <a href="/solutions/test-systems/">test systems</a>, detecting leaks down to 1×10⁻⁶ mbar·L/s. A coolant leak that develops six months after vehicle delivery causes a thermal runaway risk — so we test every pack, every time, with no sampling.</p>
+<h2 id="solar-panel-manufacturing-automation">Solar Panel Manufacturing Automation</h2>
+<p>Solar manufacturing is a volume game. A modern panel factory produces 2-5 GW of panels per year, which translates to millions of individual panels. The automation has to be fast, precise, and — above all — gentle, because silicon wafers and cells are incredibly fragile.</p>
+<h3 id="cell-handling-and-stringing">Cell Handling and Stringing</h3>
+<p>Solar cells are 150-180 microns thick — about twice the thickness of a human hair. Breaking one costs $0.30-0.50 in material, but more importantly, it stops the line and contaminates downstream processes with silicon fragments. Our cell handling systems use Bernoulli (non-contact) grippers on FANUC SR-3iA SCARA robots that transport cells at 3,000+ cells per hour with breakage rates below 0.05%.</p>
+<p>Stringing — connecting cells in series with tabbing ribbon — is the heart of panel manufacturing. We build custom stringing systems that solder or weld interconnect ribbons to cell busbars at rates of 1,200-1,800 cells per hour per stringer. <a href="/solutions/machine-vision/">Machine vision</a> with Keyence CV-X series cameras inspects solder joint quality and ribbon alignment on every cell.</p>
+<h3 id="lamination-and-framing">Lamination and Framing</h3>
+<p>After stringing, the cell matrix gets laminated between EVA or POE encapsulant sheets and glass. Our lamination handling systems position the stack with ±0.5mm accuracy before it enters the vacuum laminator. Post-lamination, automated framing systems install aluminum frames with corner keys or structural adhesive, and junction box attachment is handled by <a href="/solutions/robotic-cells/">robotic cells</a> with FANUC LR Mate robots.</p>
+<p>End-of-line testing includes electroluminescence (EL) imaging to detect micro-cracks invisible to the human eye, IV curve testing under simulated sunlight, and hipot testing for electrical safety. Our EL inspection systems catch defects that would cause 2-5% power degradation over the panel's 25-year warranty life — defects that visual inspection misses entirely.</p>
+<h2 id="wind-energy-component-manufacturing">Wind Energy Component Manufacturing</h2>
+<p>Wind turbine components are the polar opposite of battery cells — instead of delicate, lightweight parts at high speed, you're dealing with massive steel and composite structures that require heavy-duty automation with enormous work envelopes.</p>
+<h3 id="tower-and-structural-welding">Tower and Structural Welding</h3>
+<p>Wind tower sections are 3-5 meters in diameter and 20-30 meters long, fabricated from 15-40mm steel plate. The circumferential and longitudinal welds on these sections are safety-critical — a weld failure on a 100-meter tower is a catastrophic structural collapse. Our <a href="/solutions/welding/">welding systems</a> for tower manufacturing use ABB IRB 6700 and FANUC M-900iB robots on linear tracks (10-30 meter travel) with Lincoln Electric or Fronius submerged arc and flux-cored welding processes.</p>
+<p>Weld quality is monitored using through-arc seam tracking and real-time voltage/current recording on every pass. Post-weld, automated ultrasonic testing (AUT) verifies internal weld quality per AWS D1.1 and EN 1090-2 standards without manual NDT bottlenecks.</p>
+<h3 id="hub-and-nacelle-assembly">Hub and Nacelle Assembly</h3>
+<p>Turbine hubs and nacelle housings require precision assembly of bearings, gearboxes, generators, and pitch/yaw drive systems — components weighing 2-15 tons each. We build <a href="/solutions/assembly/">assembly systems</a> with heavy-payload FANUC M-2000iA robots (up to 2,300 kg payload) and custom hydraulic manipulators for component positioning, bolting, and alignment verification. Torque fastening on turbine main bolts uses Atlas Copco or Hytorc hydraulic tensioning tools with load verification on every bolt — because a single under-torqued bolt on a main bearing can cause a $500,000 gearbox failure.</p>
+<h2 id="power-generation-and-grid-equipment">Power Generation and Grid Equipment</h2>
+<p>Traditional power generation equipment — transformers, switchgear, circuit breakers, and inverters — represents a steady, high-value automation market. These are complex electromechanical assemblies that benefit from the precision and repeatability of robotic automation.</p>
+<p>We build transformer coil winding systems with servo-controlled tensioning and turn counting, switchgear assembly lines with automated busbar bending and fastening, and circuit breaker <a href="/solutions/test-systems/">test systems</a> that verify trip curves, contact resistance, and dielectric withstand in automated sequences. For power inverters — which are critical for solar, wind, and battery storage installations — we build PCB handling, power module assembly, thermal interface dispensing, and high-voltage testing systems integrated into complete production lines.</p>
+<h2 id="roi-and-business-case-for-energy-automation">ROI and Business Case for Energy Automation</h2>
+<p>Energy manufacturing has some of the strongest automation ROI numbers we see across any industry:</p>
 <ul>
-<li>Cell handling and inspection with <a href="/solutions/machine-vision/">machine vision</a></li>
-<li>Automated stringing and tabbing</li>
-<li>Lamination and framing systems</li>
-<li>End-of-line testing and <a href="/solutions/palletizing/">palletizing</a></li>
+<li><strong>Battery module assembly</strong>: Manual assembly runs 8-12 minutes per module with 2 operators. Our automated lines do it in 42-55 seconds with 1 operator monitoring. Labor savings alone deliver 14-18 month payback at typical energy sector production volumes.</li>
+<li><strong>Solar panel production</strong>: Automated stringing and handling reduces cell breakage from 1.5-2% (manual) to under 0.1%, saving $200,000-$500,000 annually in material waste on a 1 GW line.</li>
+<li><strong>Wind component welding</strong>: Robotic welding improves deposition rates by 40-60% over manual welding and eliminates the skilled welder shortage bottleneck. A single robotic tower welding cell replaces 3-4 manual welding stations.</li>
+<li><strong>Quality improvement</strong>: Automated inspection catches defects that cost 10-50x more to address in the field. A battery pack recall costs $5,000-$15,000 per pack. Catching the defect in-plant costs $50-$200 to rework.</li>
 </ul>
-<h2 id="wind-energy-components">Wind Energy Components</h2>
-<p>Large-scale manufacturing for wind turbines:</p>
-<ul>
-<li>Tower section welding and assembly</li>
-<li>Generator and gearbox assembly</li>
-<li>Blade manufacturing support</li>
-<li>Nacelle component assembly</li>
-</ul>
-<h2 id="power-generation-equipment">Power Generation Equipment</h2>
-<p>Traditional and renewable power equipment:</p>
-<ul>
-<li>Transformer coil winding and assembly</li>
-<li>Switchgear and panel assembly</li>
-<li>Generator component manufacturing</li>
-<li>Turbine component automation</li>
-</ul>
+<p>Typical system payback periods range from 12-24 months depending on production volume and labor market conditions. For gigafactory-scale battery plants, the ROI is often under 12 months because the production volumes are so high that even small per-unit savings multiply quickly.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="can-your-battery-assembly-systems-handle-multiple-cell-formats">Can your battery assembly systems handle multiple cell formats?</h3>
+<p>Yes. We design our battery systems with recipe-driven processes and quick-change tooling that accommodates cylindrical (18650, 21700, 4680), prismatic, and pouch cell formats. Changeover between formats typically takes 30-60 minutes for mechanical tooling swaps, or zero time for recipe-only changes within the same cell format family.</p>
+<h3 id="what-cleanroom-or-dry-room-capabilities-do-your-systems-support">What cleanroom or dry room capabilities do your systems support?</h3>
+<p>Battery electrode and cell assembly require dry room environments with dew points of -40°C to -60°C. We build automation specifically designed for dry room operation — all-stainless-steel construction, low-outgassing materials, sealed servo motors, and dry-air-purged enclosures for sensitive components. Our systems have been operating in Class 10,000 cleanrooms and -50°C dew point dry rooms for multiple battery customers.</p>
+<h3 id="how-do-you-handle-the-safety-requirements-for-high-voltage-battery-systems">How do you handle the safety requirements for high-voltage battery systems?</h3>
+<p>Every battery automation system we build follows NFPA 70E arc flash safety standards, IEC 60204-1 machine safety, and incorporates high-voltage interlocking (HVIL) on all access points. Test enclosures are rated for thermal runaway containment with automated fire suppression, gas detection, and emergency ventilation. Our controls architecture includes redundant safety PLCs (Allen-Bradley GuardLogix or Siemens F-CPU) with safety-rated contactors for high-voltage isolation.</p>
+<h3 id="what-production-rates-can-your-solar-panel-lines-support">What production rates can your solar panel lines support?</h3>
+<p>Our solar automation modules support production rates from 200 MW to 5 GW annually, depending on the cell technology and panel configuration. A typical integrated line (stringing through framing) handles 1,800-2,400 cells per hour per stringer, with parallel stringers scaling to meet your capacity targets. We've built lines supporting 3.2 GW annual output with six parallel stringing stations.</p>
+<h3 id="do-your-wind-component-systems-work-with-both-onshore-and-offshore-turbine-sizes">Do your wind component systems work with both onshore and offshore turbine sizes?</h3>
+<p>Yes. Our welding and assembly systems accommodate onshore turbines (2-6 MW class, tower diameters to 4.5m) and offshore turbines (8-15 MW class, tower diameters to 7m and component weights to 15 tons). The key difference is work envelope and payload capacity — offshore components require larger robots, heavier positioners, and extended-reach welding systems that we configure for each application.</p>
+<h3 id="how-do-you-ensure-traceability-across-the-full-energy-product-lifecycle">How do you ensure traceability across the full energy product lifecycle?</h3>
+<p>Every system we build captures process data at the individual unit level — cell barcodes, weld parameters, torque values, test results, vision inspection images — and stores it in a structured database accessible through OPC-UA or REST API interfaces. Data links to your MES, ERP, or quality database, providing serial-number-level traceability from raw cell to finished product. Our data retention architecture supports the 20-25 year warranty periods typical in solar and battery products.</p>
+<h3 id="can-you-retrofit-existing-manual-production-lines-with-automation">Can you retrofit existing manual production lines with automation?</h3>
+<p>Absolutely. Many of our energy customers start with semi-automated or manual processes and add automation incrementally as production volumes grow. We design retrofit-friendly systems that integrate with existing conveyors, test equipment, and material handling infrastructure. A common approach is automating the highest-value operations first — typically welding, testing, and inspection — while keeping lower-complexity operations manual until volume justifies full automation.</p>
 <h2 id="related-industries">Related Industries</h2>
-<p>Energy manufacturing shares requirements with:</p>
+<p>Energy manufacturing shares technical requirements and process expertise with several industries we serve:</p>
 <ul>
-<li><strong><a href="/industries/automotive/">Automotive</a></strong> - EV battery and motor production</li>
-<li><strong><a href="/industries/heavy-equipment/">Heavy Equipment</a></strong> - Large component handling</li>
-<li><strong><a href="/industries/electronics/">Electronics</a></strong> - Power electronics manufacturing</li>
+<li><strong><a href="/industries/automotive/">Automotive</a></strong> — EV battery and e-motor production uses many of the same assembly, welding, and testing technologies</li>
+<li><strong><a href="/industries/heavy-equipment/">Heavy Equipment</a></strong> — Large-component handling and structural welding for wind and power generation equipment</li>
+<li><strong><a href="/industries/electronics/">Electronics</a></strong> — Power electronics, inverter assembly, and PCB-level manufacturing for energy management systems</li>
+<li><strong><a href="/industries/aerospace/">Aerospace</a></strong> — Composite manufacturing techniques shared between wind blades and aircraft structures</li>
 </ul>
-<p>Contact us to discuss automation for your energy industry manufacturing operation.</p>
+<p>Ready to automate your energy manufacturing operation? <a href="/contact/">Contact us</a> to discuss your specific application and production requirements.</p>
                 </div>
 
                 
@@ -643,23 +676,28 @@
                     <div class="solutions-grid-flat">
                         
                         <div class="solution-card-flat">
-                            <h3>Battery Module Assembly</h3>
-                            <p>Automated cell handling, welding, and module assembly for EV and grid storage batteries.</p>
+                            <h3>Battery Module &amp; Pack Assembly</h3>
+                            <p>Automated cell sorting, stacking, busbar welding, thermal interface dispensing, and high-voltage testing for EV and grid-storage battery packs — cycle times under 45 seconds per module.</p>
                         </div>
                         
                         <div class="solution-card-flat">
                             <h3>Solar Panel Production</h3>
-                            <p>Cell handling, stringing, lamination, and framing automation.</p>
+                            <p>Cell handling, stringing, tabbing, lamination, and framing automation with Cognex vision inspection at every stage and full traceability from wafer to finished panel.</p>
                         </div>
                         
                         <div class="solution-card-flat">
                             <h3>Wind Component Manufacturing</h3>
-                            <p>Large-scale welding and assembly for towers, nacelles, and blades.</p>
+                            <p>Large-envelope robotic welding, precision machining support, and assembly systems for towers, nacelles, hubs, and generator housings up to 15-ton components.</p>
                         </div>
                         
                         <div class="solution-card-flat">
                             <h3>Power Equipment Assembly</h3>
-                            <p>Transformer, switchgear, and electrical equipment manufacturing.</p>
+                            <p>Transformer winding, switchgear assembly, busbar fabrication, and circuit breaker test systems with UL and IEC compliance documentation built into the process.</p>
+                        </div>
+                        
+                        <div class="solution-card-flat">
+                            <h3>Hydrogen &amp; Fuel Cell Assembly</h3>
+                            <p>Membrane electrode assembly (MEA) handling, bipolar plate stacking, and end-plate torquing with leak testing and electrochemical performance verification.</p>
                         </div>
                         
                     </div>
@@ -673,17 +711,22 @@
                         
                         <div class="challenge-item-flat">
                             <h3>Large Component Handling</h3>
-                            <p>Energy equipment often involves oversized components requiring specialized handling and positioning.</p>
+                            <p>Energy components range from delicate 200-micron battery cells to 12-ton wind turbine hubs. Our systems handle the full spectrum with purpose-built fixturing and multi-robot coordination.</p>
                         </div>
                         
                         <div class="challenge-item-flat">
-                            <h3>High-Mix Production</h3>
-                            <p>Multiple product variants and rapidly evolving designs require flexible automation.</p>
+                            <h3>Rapid Technology Evolution</h3>
+                            <p>Battery chemistries, solar cell architectures, and inverter designs change faster than any other industry. We build flexibility into every system so you&#39;re not locked into yesterday&#39;s technology.</p>
                         </div>
                         
                         <div class="challenge-item-flat">
-                            <h3>Quality Traceability</h3>
-                            <p>Safety-critical applications demand full process documentation and component traceability.</p>
+                            <h3>Full Traceability</h3>
+                            <p>Safety-critical energy products demand cell-level, panel-level, and component-level traceability with 20+ year data retention. Our systems capture and store every process parameter automatically.</p>
+                        </div>
+                        
+                        <div class="challenge-item-flat">
+                            <h3>Hazardous Material Handling</h3>
+                            <p>Battery electrolytes, thermal interface materials, and high-voltage systems require specialized safety engineering — from explosion-proof enclosures to automated dry-room compatible equipment.</p>
                         </div>
                         
                     </div>

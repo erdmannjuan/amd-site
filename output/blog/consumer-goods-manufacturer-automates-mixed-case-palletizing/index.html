@@ -12,13 +12,13 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.">
-    <meta name="keywords" content="industrial automation, manufacturing automation, AMD Machines, automation case study, manufacturing success, automation implementation, consumer, goods, manufacturer">
+    <meta name="description" content="How a consumer goods manufacturer deployed robotic mixed-case palletizing to handle diverse SKUs, reduce labor costs, and increase throughput across multiple packaging lines.">
+    <meta name="keywords" content="mixed-case palletizing, robotic palletizing, consumer goods automation, palletizing robot, SKU variety, warehouse automation, end-of-line automation">
     <meta name="author" content="AMD Machines">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Consumer Goods Manufacturer Automates Mixed-Case Palletizing | AMD Machines">
-    <meta property="og:description" content="This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.">
+    <meta property="og:description" content="How a consumer goods manufacturer deployed robotic mixed-case palletizing to handle diverse SKUs, reduce labor costs, and increase throughput across multiple packaging lines.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://amdmachines.com/blog/consumer-goods-manufacturer-automates-mixed-case-palletizing/">
     <meta property="og:site_name" content="AMD Machines">
@@ -29,7 +29,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Consumer Goods Manufacturer Automates Mixed-Case Palletizing | AMD Machines">
-    <meta name="twitter:description" content="This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.">
+    <meta name="twitter:description" content="How a consumer goods manufacturer deployed robotic mixed-case palletizing to handle diverse SKUs, reduce labor costs, and increase throughput across multiple packaging lines.">
     <meta name="twitter:image" content="https://amdmachines.com/static/images/og-default.jpg">
 
     <!-- Canonical URL -->
@@ -132,7 +132,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Consumer Goods Manufacturer Automates Mixed-Case Palletizing",
-    "description": "This topic represents an important consideration for manufacturers seeking to improve their operations through automation. Understanding the fundamentals.",
+    "description": "How a consumer goods manufacturer deployed robotic mixed-case palletizing to handle diverse SKUs, reduce labor costs, and increase throughput across multiple packaging lines.",
     "image": "https://amdmachines.com/static/images/og-default.png",
     "datePublished": "2024-12-12",
     "dateModified": "2024-12-12",
@@ -604,7 +604,7 @@
             <div class="article-header-row">
                 <div class="article-meta-inline">
                     <span class="date">2024-12-12</span>
-                    <span class="read-time">5 min read</span>
+                    <span class="read-time">7 min read</span>
                 </div>
                 <div class="share-buttons-top">
                     <button class="share-btn" onclick="copyLink()" title="Copy link">
@@ -642,49 +642,55 @@
                 
 
                 <div class="article-body" id="article-body">
-                    <h2 id="about-consumer-goods-manufacturer-automates-mixed-case-palletizing">About Consumer Goods Manufacturer Automates Mixed-Case Palletizing</h2>
-<p>Robotic palletizing solution handling diverse product configurations.</p>
-<h2 id="key-concepts">Key Concepts</h2>
-<p>Here's what you need to know:</p>
+                    <h2 id="the-mixed-case-palletizing-challenge">The Mixed-Case Palletizing Challenge</h2>
+<p>Consumer goods manufacturers face a problem that has grown steadily worse over the past two decades: SKU proliferation. Retailers demand more variety, smaller lot sizes, and store-ready pallets built from multiple product types. The traditional approach—dedicated palletizing lines for each product family, with manual labor bridging the gaps—breaks down when you're running 200+ active SKUs across a facility that ships mixed-case pallets to dozens of distribution centers.</p>
+<p>That was the situation facing a mid-sized consumer goods manufacturer producing household cleaning products. Their end-of-line operations had become the bottleneck. Three manual palletizing stations ran two shifts, staffed by teams of four operators each. Turnover exceeded 40% annually. Repetitive strain injuries were climbing. And the real constraint wasn't labor cost alone—it was the inability to build mixed-case pallets accurately and quickly enough to meet retailer shipping requirements.</p>
+<p>The manufacturer needed a system that could handle multiple product sizes and weights within a single palletizing cell, build stable mixed-case pallets according to retailer-specific patterns, and do it at rates that would consolidate three manual stations into a single automated solution.</p>
+<h2 id="defining-the-technical-requirements">Defining the Technical Requirements</h2>
+<p>Before any equipment was specified, the engineering team spent several weeks documenting the actual operational requirements. This upfront work is where most palletizing projects succeed or fail. The key parameters included:</p>
 <ul>
-<li><strong>Know your process</strong> - document what you're doing now and what needs to change</li>
-<li><strong>Pick the right tech</strong> - match equipment to your actual requirements</li>
-<li><strong>Plan the rollout</strong> - budget time for debugging and training</li>
-<li><strong>Track results</strong> - measure before and after</li>
-<li><strong>Keep improving</strong> - automation is never 'done'</li>
+<li><strong>SKU dimensions</strong>: Cases ranged from 8" × 10" × 6" to 24" × 16" × 14", with weights from 5 to 45 pounds</li>
+<li><strong>Throughput target</strong>: 18 cases per minute sustained, with burst capability to 22</li>
+<li><strong>Pallet configurations</strong>: 14 distinct retailer-specific pallet patterns, plus a default mixed-case pattern</li>
+<li><strong>Changeover</strong>: Zero mechanical changeover between SKUs—pattern changes handled entirely in software</li>
+<li><strong>Layer stability</strong>: Interlayer slip sheets on selected patterns, corner boards on all pallets</li>
 </ul>
-<h2 id="benefits-and-considerations">Benefits and Considerations</h2>
-<p>The tradeoffs:</p>
-<p><strong>Benefits:</strong>
-- Faster cycle times and less rework
-- Fewer defects, tighter tolerances
-- Real-time dashboards showing actual vs. target
-- Lower cost-per-part after payback</p>
-<p><strong>Considerations:</strong>
-- Initial investment requirements
-- Implementation complexity
-- Training and change management
-- Ongoing maintenance needs</p>
-<h2 id="best-practices">Best Practices</h2>
-<p>What works:</p>
-<ol>
-<li>Start with clear objectives tied to business goals</li>
-<li>Involve stakeholders from multiple functions early</li>
-<li>Plan for adequate testing and validation</li>
-<li>Invest in training for operators and maintainers</li>
-<li>Establish metrics and monitor progress</li>
-</ol>
-<h2 id="getting-started">Getting Started</h2>
-<p>Here's how to get started:</p>
+<p>The weight range was particularly challenging. A gripper system that handles a 5-pound case of aerosol cans needs a fundamentally different approach than one moving 45-pound cases of liquid detergent bottles. The solution required either a universal gripper or a quick-change system that wouldn't eat into cycle time.</p>
+<h2 id="system-design-and-integration">System Design and Integration</h2>
+<p>The final system centered on a high-payload <a href="/solutions/robotic-cells/">robotic cell</a> with a custom end-of-arm tool designed for the full case range. The EOAT used a combination of vacuum zones and mechanical clamping. Vacuum provided primary grip for lighter cases, while pneumatic clamps engaged automatically for heavier products. A pressure sensor array confirmed grip integrity before any lift, preventing drops that would damage product and create line stoppages.</p>
+<p>The cell layout addressed material flow from three upstream packaging lines converging into a single palletizing station. An accumulation conveyor system fed cases into a sequencing area where a vision system identified each case by barcode and dimensional profile. The sequencing logic was critical—cases had to arrive at the robot in the correct order to build stable pallet layers without requiring the robot to buffer or resequence product.</p>
+<p>The conveyor design incorporated several features specific to mixed-case handling:</p>
 <ul>
-<li>Assess your current state and identify improvement opportunities</li>
-<li>Define requirements based on your specific needs</li>
-<li>Evaluate potential solutions and vendors</li>
-<li>Plan a phased implementation approach</li>
-<li>Build internal capabilities for long-term success</li>
+<li><strong>Singulation section</strong> that separated cases arriving in groups from higher-speed upstream lines</li>
+<li><strong>Right-angle transfer</strong> for routing cases from three inbound lines to the sequencing conveyor</li>
+<li><strong>Dynamic accumulation zone</strong> providing approximately 90 seconds of buffer per line, allowing the robot to absorb brief upstream interruptions without stopping packaging operations</li>
 </ul>
-<h2 id="partner-with-amd-machines">Partner With AMD Machines</h2>
-<p>AMD Machines brings decades of experience to every project. Our engineers understand the challenges manufacturers face and deliver solutions that work in the real world. <a href="/contact/">Contact us</a> to discuss your automation needs.</p>
+<p>Pallet build patterns were stored in the robot controller and selected automatically based on order data pulled from the warehouse management system. When a new pallet order started, the system knew which SKUs would arrive, in what sequence, and which pattern to execute. The operator's role shifted from physical case handling to monitoring the HMI, loading empty pallets, and removing completed ones—though even pallet loading was semi-automated with a pallet dispenser feeding the build station.</p>
+<h2 id="software-and-pattern-management">Software and Pattern Management</h2>
+<p>One of the underappreciated aspects of mixed-case palletizing is the software complexity. Each retailer pattern defines not just where cases go on each layer, but the sequencing rules that determine build order for stability. A heavy case of liquid detergent must go on the bottom layer. Tall, narrow cases need adjacent support. Lighter aerosol cases sit on top.</p>
+<p>The system used offline pallet pattern software that allowed the engineering team to design and simulate new patterns without interrupting production. Each pattern was validated against stability criteria—center of gravity, overhang limits, weight distribution per layer—before being released to the production system. When a retailer changed their pallet specifications, the manufacturer could develop, test, and deploy a new pattern within a day rather than reprogramming the robot on the line.</p>
+<p>This software-driven approach also enabled something manual palletizing never could: perfect consistency. Every pallet built to a given pattern was identical. No variation between shifts, no degradation during overtime hours, no quality issues caused by operator fatigue. Retailer chargebacks for incorrect pallet builds, which had been running around $15,000 per month, dropped to near zero within the first quarter of operation.</p>
+<h2 id="results-and-operational-impact">Results and Operational Impact</h2>
+<p>The system achieved its throughput target of 18 cases per minute within the first month of production. After optimization of conveyor speeds and robot path planning during the second month, sustained rates reached 20 cases per minute with the ability to burst to 24 for short periods during high-demand SKU runs.</p>
+<p>The quantifiable results over the first year of operation:</p>
+<ul>
+<li><strong>Labor reduction</strong>: From 12 operators across two shifts to 2 monitors per shift, redeployed to upstream packaging roles where manual dexterity was still required</li>
+<li><strong>Throughput increase</strong>: 35% more cases palletized per shift compared to the three manual stations combined</li>
+<li><strong>Pallet quality</strong>: Retailer chargebacks for pallet build errors eliminated, saving approximately $180,000 annually</li>
+<li><strong>Injury reduction</strong>: Zero repetitive strain injuries in end-of-line operations, down from an average of 6 per year</li>
+<li><strong>Floor space</strong>: Consolidated from three palletizing stations occupying 2,400 square feet to a single cell requiring 1,100 square feet</li>
+</ul>
+<p>The ROI calculation was straightforward. The total system cost—including the robot, EOAT, conveyors, vision, controls, safety guarding, installation, and commissioning—came to approximately $850,000. Annual labor savings plus chargeback elimination plus injury cost reduction yielded a payback period under 14 months.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>Several insights from this project apply broadly to mixed-case palletizing implementations in <a href="/blog/consumer-goods-packaging-flexibility/">consumer goods packaging</a> environments:</p>
+<p><strong>Invest in upstream sequencing.</strong> The robot itself is rarely the constraint. Getting cases to the robot in the right order, at the right rate, without gaps or bunching, is where most of the engineering effort belongs. The manufacturer initially underestimated the complexity of merging three packaging lines into one palletizing cell and had to redesign the accumulation conveyor section during commissioning.</p>
+<p><strong>Plan for SKU changes from day one.</strong> Consumer goods manufacturers add and discontinue SKUs constantly. The system's case handling envelope—the range of dimensions and weights the EOAT can grip reliably—should be specified with margin beyond the current product line. This manufacturer designed for cases 20% larger and 15% heavier than anything in their current portfolio, which proved wise when they launched a new product line eight months after installation.</p>
+<p><strong>Don't underestimate pattern management.</strong> Retailers change pallet specifications more often than most manufacturers anticipate. Having offline pattern design capability with simulation-based validation prevented production disruptions that would have eroded the throughput gains.</p>
+<p><strong>Validate with real product, not simulations alone.</strong> Case surface finish, label placement, and seal integrity all affect grip reliability. Several case types that gripped perfectly in testing showed issues in production due to label stock variations from different suppliers. The commissioning period should include runs with product from every active supplier.</p>
+<h2 id="applying-these-principles">Applying These Principles</h2>
+<p>Mixed-case palletizing represents one of the higher-complexity applications in end-of-line automation, but the core engineering principles are the same ones that apply to any <a href="/blog/packaging-automation-case-erecting-to-palletizing/">palletizing and packaging automation</a> project: define the full range of operating conditions, design for the worst case rather than the average, and invest in the material handling upstream of the robot at least as heavily as in the robot itself.</p>
+<p>For consumer goods manufacturers dealing with SKU proliferation and labor challenges at end-of-line, robotic mixed-case palletizing has moved from an emerging technology to a proven solution. The key is rigorous upfront engineering to match the system design to the actual—not theoretical—operating requirements of the facility.</p>
+<p>AMD Machines has designed and integrated palletizing systems across consumer goods, food and beverage, and pharmaceutical applications. <a href="/contact/">Contact us</a> to discuss how mixed-case palletizing could address your end-of-line challenges.</p>
                 </div>
 
                 <!-- Mid-Article CTA -->
@@ -756,7 +762,7 @@
                             <div class="related-post-content">
                                 <h4>Calculating ROI for Industrial Automation Projects</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>
@@ -768,7 +774,7 @@
                             <div class="related-post-content">
                                 <h4>Total Cost of Ownership for Robotic Systems</h4>
                                 
-                                <span class="related-post-meta">5 min read</span>
+                                <span class="related-post-meta">8 min read</span>
                                 
                             </div>
                         </a>

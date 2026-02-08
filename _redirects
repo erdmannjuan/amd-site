@@ -2,6 +2,9 @@
 # Format: old-path new-path status-code
 # Cloudflare Pages limits: 2,000 static + 100 dynamic redirects
 
+# Force www to bare domain (canonical domain is amdmachines.com)
+https://www.amdmachines.com/* https://amdmachines.com/:splat 301
+
 # About page
 /about-us/ /about/ 301
 
@@ -98,73 +101,73 @@
 /what-to-know-laser-marking-systems/ /solutions/marking-traceability/ 301
 /ins-outs-helium-leak-testing-equipment/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
 
-# 302 Redirects - Industries, Services, Tooling (kept as most commonly hit)
-/industries/medical-device-automation/ /industries/medical/ 302
-/industries/medical-device-manufacturing/ /industries/medical/ 302
-/industries/medical-devices/ /industries/medical/ 302
-/industries/automotive-automation/ /industries/automotive/ 302
-/industries/automotive-manufacturing/ /industries/automotive/ 302
-/industries/consumer-products/ /industries/consumer/ 302
-/services/equipment-maintenance/ /services/maintenance-support/ 302
-/services/preventive-maintenance/ /services/maintenance-support/ 302
-/services/system-integration/ /solutions/ 302
-/services/training-and-knowledge-transfer/ /services/training/ 302
-/services/ongoing-support/ /services/maintenance-support/ 302
-/tooling/welding-fixtures/ /tooling/ 302
-/blog/machine-vision-quality-inspection-systems/ /solutions/machine-vision/ 302
-/blog/hmi-programming-best-practices/ /blog/ 302
-/solutions/performance-optimization/ /services/process-optimization/ 302
-/cdn-cgi/l/email-protection /contact/ 302
+# 301 Redirects - Industries, Services, Tooling (common URL variations)
+/industries/medical-device-automation/ /industries/medical/ 301
+/industries/medical-device-manufacturing/ /industries/medical/ 301
+/industries/medical-devices/ /industries/medical/ 301
+/industries/automotive-automation/ /industries/automotive/ 301
+/industries/automotive-manufacturing/ /industries/automotive/ 301
+/industries/consumer-products/ /industries/consumer/ 301
+/services/equipment-maintenance/ /services/maintenance-support/ 301
+/services/preventive-maintenance/ /services/maintenance-support/ 301
+/services/system-integration/ /solutions/ 301
+/services/training-and-knowledge-transfer/ /services/training/ 301
+/services/ongoing-support/ /services/maintenance-support/ 301
+/tooling/welding-fixtures/ /tooling/ 301
+/blog/machine-vision-quality-inspection-systems/ /solutions/machine-vision/ 301
+/blog/hmi-programming-best-practices/ /blog/ 301
+/solutions/performance-optimization/ /services/process-optimization/ 301
+/cdn-cgi/l/email-protection /contact/ 301
 
-# 302 Redirects - Solutions (guessed URLs → closest real solution page)
+# 301 Redirects - Solutions (URL variations → canonical solution pages)
 # Assembly
-/solutions/automated-assembly-systems/ /solutions/assembly/ 302
-/solutions/assembly-systems/ /solutions/assembly/ 302
-/solutions/assembly-automation/ /solutions/assembly/ 302
-/solutions/automated-assembly-lines/ /solutions/assembly/ 302
-/solutions/automated-assembly/ /solutions/assembly/ 302
-/solutions/custom-assembly-systems/ /solutions/assembly/ 302
-/solutions/custom-automated-assembly-systems/ /solutions/assembly/ 302
-/solutions/robotic-assembly-systems/ /solutions/assembly/ 302
-/solutions/robotic-assembly/ /solutions/assembly/ 302
-/solutions/precision-assembly-automation/ /solutions/assembly/ 302
-/solutions/press-fit-assembly-machines/ /solutions/servo-pressing/ 302
-/solutions/press-fit-systems/ /solutions/servo-pressing/ 302
-/solutions/precision-press-systems/ /solutions/servo-pressing/ 302
+/solutions/automated-assembly-systems/ /solutions/assembly/ 301
+/solutions/assembly-systems/ /solutions/assembly/ 301
+/solutions/assembly-automation/ /solutions/assembly/ 301
+/solutions/automated-assembly-lines/ /solutions/assembly/ 301
+/solutions/automated-assembly/ /solutions/assembly/ 301
+/solutions/custom-assembly-systems/ /solutions/assembly/ 301
+/solutions/custom-automated-assembly-systems/ /solutions/assembly/ 301
+/solutions/robotic-assembly-systems/ /solutions/assembly/ 301
+/solutions/robotic-assembly/ /solutions/assembly/ 301
+/solutions/precision-assembly-automation/ /solutions/assembly/ 301
+/solutions/press-fit-assembly-machines/ /solutions/servo-pressing/ 301
+/solutions/press-fit-systems/ /solutions/servo-pressing/ 301
+/solutions/precision-press-systems/ /solutions/servo-pressing/ 301
 # Vision / Quality
-/solutions/vision-inspection/ /solutions/machine-vision/ 302
-/solutions/vision-inspection-systems/ /solutions/machine-vision/ 302
-/solutions/vision-quality-inspection/ /solutions/machine-vision/ 302
-/solutions/vision-inspection-quality/ /solutions/machine-vision/ 302
-/solutions/vision-quality-control/ /solutions/machine-vision/ 302
-/solutions/vision-quality-control-systems/ /solutions/machine-vision/ 302
-/solutions/vision-quality/ /solutions/machine-vision/ 302
-/solutions/ai-vision-quality-inspection/ /solutions/machine-vision/ 302
-/solutions/quality-inspection-systems/ /solutions/machine-vision/ 302
-/solutions/quality-control-systems/ /solutions/machine-vision/ 302
-/solutions/quality-control-inspection-automation/ /solutions/machine-vision/ 302
+/solutions/vision-inspection/ /solutions/machine-vision/ 301
+/solutions/vision-inspection-systems/ /solutions/machine-vision/ 301
+/solutions/vision-quality-inspection/ /solutions/machine-vision/ 301
+/solutions/vision-inspection-quality/ /solutions/machine-vision/ 301
+/solutions/vision-quality-control/ /solutions/machine-vision/ 301
+/solutions/vision-quality-control-systems/ /solutions/machine-vision/ 301
+/solutions/vision-quality/ /solutions/machine-vision/ 301
+/solutions/ai-vision-quality-inspection/ /solutions/machine-vision/ 301
+/solutions/quality-inspection-systems/ /solutions/machine-vision/ 301
+/solutions/quality-control-systems/ /solutions/machine-vision/ 301
+/solutions/quality-control-inspection-automation/ /solutions/machine-vision/ 301
 # Robotics
-/solutions/robotic-systems/ /solutions/robotic-cells/ 302
-/solutions/robotic-automation/ /solutions/robotic-cells/ 302
-/solutions/robotic-work-cells/ /solutions/robotic-cells/ 302
-/solutions/robot-integration/ /solutions/robotic-cells/ 302
+/solutions/robotic-systems/ /solutions/robotic-cells/ 301
+/solutions/robotic-automation/ /solutions/robotic-cells/ 301
+/solutions/robotic-work-cells/ /solutions/robotic-cells/ 301
+/solutions/robot-integration/ /solutions/robotic-cells/ 301
 # Welding
-/solutions/robotic-welding-systems/ /solutions/welding/ 302
-/solutions/robotic-welding/ /solutions/welding/ 302
+/solutions/robotic-welding-systems/ /solutions/welding/ 301
+/solutions/robotic-welding/ /solutions/welding/ 301
 # Custom automation / Integration
-/solutions/custom-automation-solutions/ /solutions/custom-automation/ 302
-/solutions/custom-automation-systems/ /solutions/custom-automation/ 302
-/solutions/custom-automation-engineering/ /solutions/custom-automation/ 302
-/solutions/custom-automated-equipment/ /solutions/custom-automation/ 302
-/solutions/turnkey-automation/ /solutions/custom-automation/ 302
-/solutions/turnkey-integration/ /solutions/custom-automation/ 302
-/solutions/controls-engineering/ /solutions/custom-automation/ 302
-/solutions/controls-software-integration/ /solutions/custom-automation/ 302
-/solutions/systems-integration/ /solutions/custom-automation/ 302
+/solutions/custom-automation-solutions/ /solutions/custom-automation/ 301
+/solutions/custom-automation-systems/ /solutions/custom-automation/ 301
+/solutions/custom-automation-engineering/ /solutions/custom-automation/ 301
+/solutions/custom-automated-equipment/ /solutions/custom-automation/ 301
+/solutions/turnkey-automation/ /solutions/custom-automation/ 301
+/solutions/turnkey-integration/ /solutions/custom-automation/ 301
+/solutions/controls-engineering/ /solutions/custom-automation/ 301
+/solutions/controls-software-integration/ /solutions/custom-automation/ 301
+/solutions/systems-integration/ /solutions/custom-automation/ 301
 # Other
-/solutions/machine-tending-automation/ /solutions/machine-tending/ 302
-/solutions/automated-test-equipment/ /solutions/test-systems/ 302
-/solutions/packaging-automation/ /solutions/packaging/ 302
+/solutions/machine-tending-automation/ /solutions/machine-tending/ 301
+/solutions/automated-test-equipment/ /solutions/test-systems/ 301
+/solutions/packaging-automation/ /solutions/packaging/ 301
 
 # --- Dynamic redirects (use :placeholder or :splat, separate 100-rule limit) ---
 

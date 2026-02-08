@@ -12,13 +12,13 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Automation solutions for heavy equipment manufacturing: construction, agricultural, and mining equipment. Large-scale welding, machining, and assembly.">
-    <meta name="keywords" content="heavy equipment automation, construction equipment manufacturing, agricultural equipment automation, mining equipment assembly, large component welding">
+    <meta name="description" content="Heavy equipment automation for construction, agriculture, and mining OEMs. Large-scale robotic welding, high-payload material handling, and structural assembly systems.">
+    <meta name="keywords" content="heavy equipment manufacturing automation, construction equipment automation, agricultural equipment welding, mining equipment assembly, large component robotic welding, high-payload material handling, heavy fabrication automation">
     <meta name="author" content="AMD Machines">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Heavy Equipment Manufacturing Automation | AMD Machines | AMD Machines">
-    <meta property="og:description" content="Automation solutions for heavy equipment manufacturing: construction, agricultural, and mining equipment. Large-scale welding, machining, and assembly.">
+    <meta property="og:description" content="Heavy equipment automation for construction, agriculture, and mining OEMs. Large-scale robotic welding, high-payload material handling, and structural assembly systems.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amdmachines.com/industries/heavy-equipment/">
     <meta property="og:site_name" content="AMD Machines">
@@ -29,7 +29,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Heavy Equipment Manufacturing Automation | AMD Machines | AMD Machines">
-    <meta name="twitter:description" content="Automation solutions for heavy equipment manufacturing: construction, agricultural, and mining equipment. Large-scale welding, machining, and assembly.">
+    <meta name="twitter:description" content="Heavy equipment automation for construction, agriculture, and mining OEMs. Large-scale robotic welding, high-payload material handling, and structural assembly systems.">
     <meta name="twitter:image" content="https://amdmachines.com/static/images/og-default.jpg">
 
     <!-- Canonical URL -->
@@ -568,7 +568,7 @@
 <section class="page-header-flat">
     <div class="container">
         <div class="page-header-content">
-            <h1>Heavy Equipment</h1>
+            <h1>Heavy Equipment Manufacturing Automation</h1>
             <p class="page-lead">Automation for construction, agricultural, and mining equipment manufacturing</p>
         </div>
     </div>
@@ -594,47 +594,165 @@
         <div class="content-layout">
             <div class="content-main-flat">
                 <div class="prose">
-                    <p>Heavy equipment manufacturing requires automation that handles oversized components, delivers structural weld quality, and adapts to varying production volumes. AMD Machines provides solutions scaled for construction, agricultural, and mining equipment production.</p>
-<h2 id="structural-welding-automation">Structural Welding Automation</h2>
-<p>Heavy equipment frames and structural components require robust <a href="/solutions/welding/">welding automation</a>:</p>
+                    <p>Heavy equipment manufacturing is a different animal. I've spent years building automation for shops that fabricate loader booms, weld excavator frames, and assemble 40-ton mining trucks — and the first thing you learn is that nothing about standard industrial automation scales linearly to these applications. The parts are bigger, heavier, and uglier than anything you'd see in an <a href="/industries/automotive/">automotive</a> plant. The tolerances on incoming fabrications can swing by 3-5mm. The weld joints are massive — 3/8" fillet welds running 18 feet long on a loader arm. And the production environment would destroy a typical clean-room robot cell in about a week.</p>
+<p>At AMD Machines, we've been building automation for heavy equipment OEMs and their Tier 1 suppliers for over three decades. We understand that this industry doesn't need the prettiest automation — it needs the toughest. Systems that run reliably in a fabrication shop where ambient temperatures hit 110°F in summer, where grinding dust coats everything, and where a forklift operator might clip a cable tray because the aisle is tight. That's the reality we design for.</p>
+<h2 id="what-makes-heavy-equipment-automation-different">What Makes Heavy Equipment Automation Different</h2>
+<p>If you've automated <a href="/industries/automotive/">automotive</a> components and think heavy equipment is just "bigger automotive," you'll run into trouble fast. Here's what actually differentiates this industry.</p>
+<h3 id="part-size-and-weight-break-the-rules">Part Size and Weight Break the Rules</h3>
+<p>A typical automotive weldment weighs 5-25 kg and fits inside a 1-meter cube. A heavy equipment boom weldment weighs 500-5,000 kg and can be 6 meters long. That changes everything — the robot selection, the positioner design, the fixturing approach, the welding process, and the facility layout.</p>
+<p>Standard six-axis robots on a pedestal can't reach the weld joints on a 5-meter boom. You need FANUC M-710iC/50 or ABB IRB 4600 robots mounted on floor tracks (7-15 meter travel) that follow the part as they weld. The positioner isn't a standard twin-headstock unit — it's a 10,000 kg capacity headstock-tailstock system with a 3-meter faceplate, turning a fixture that weighs as much as a small car.</p>
+<p>We've built welding cells with 20-meter floor tracks, dual robots working simultaneously, and positioners rated for 15,000 lbs. Getting the coordination right between the robot path, the floor-track position, and the positioner rotation so the weld pool stays in position is the hard part. The robot programming is three-dimensional choreography, and getting it wrong means a weld defect buried inside a structural joint that nobody can see until the boom cracks in the field.</p>
+<h3 id="incoming-part-variation-is-enormous">Incoming Part Variation Is Enormous</h3>
+<p>In automotive, stamped parts arrive with ±0.5mm consistency. In heavy equipment, plasma-cut plates, flame-cut gussets, and rolled tubes can vary by ±3mm or more. Weld joints that should have a 2mm root gap might actually have 0-5mm depending on where you measure.</p>
+<p>This variation is the single biggest challenge in heavy equipment welding automation. A robot programmed to a fixed path will produce inconsistent welds when the joint geometry changes from part to part. We solve this with:</p>
 <ul>
-<li>Multi-robot cells for large weldments</li>
-<li>Positioners and manipulators for optimal weld access</li>
-<li>High-deposition MIG and flux-cored welding</li>
-<li>Weld quality monitoring and documentation</li>
+<li><strong>Touch sensing</strong> using the welding wire itself as a probe. Before each weld, the robot touches the joint at multiple points to locate the actual seam position. The program adjusts automatically — no operator intervention required.</li>
+<li><strong>Through-arc seam tracking</strong> that monitors arc voltage and current during welding to follow the joint in real-time. Lincoln Electric's production monitoring and Fronius WeldConnect systems provide adaptive fill that adjusts wire feed speed and travel speed based on the actual gap width.</li>
+<li><strong>Laser seam finding</strong> using Servo-Robot, Meta Vision, or Keyence laser sensors that scan ahead of the torch and build a 3D profile of the joint. This is the gold standard for heavy equipment — it handles the largest variations and gives you the data to quantify incoming part quality over time.</li>
 </ul>
-<h2 id="machine-tending-for-large-parts">Machine Tending for Large Parts</h2>
-<p><a href="/solutions/machine-tending/">Robotic machine tending</a> for heavy equipment components:</p>
+<h3 id="production-volumes-are-all-over-the-map">Production Volumes Are All Over the Map</h3>
+<p>A heavy equipment OEM might build 15,000 skid steers per year on one line and 200 specialty mining trucks per year on another. That range — from reasonable automation volumes down to near-custom production — means you can't apply the same automation strategy across the whole product line.</p>
+<p>We help our customers identify the sweet spot: which product families have enough volume, enough labor content, and enough quality risk to justify robotic automation. Sometimes the answer is a fully automated multi-robot welding cell. Sometimes it's a semi-automated system with a robot handling the long structural welds while an operator manually finishes the short, hard-to-reach joints. And sometimes the answer is better fixturing and a skilled welder — not everything needs a robot.</p>
+<h2 id="structural-welding-the-core-application">Structural Welding: The Core Application</h2>
+<p><a href="/solutions/welding/">Robotic welding</a> is the highest-value automation application in heavy equipment manufacturing. The welds are large, the labor cost is high (skilled welders command $28-40/hour in most markets), and the quality requirements are strict. A structural weld failure on a loader boom or excavator frame isn't a warranty inconvenience — it's a safety hazard that can result in injury, equipment destruction, and catastrophic liability.</p>
+<h3 id="multi-robot-welding-cells">Multi-Robot Welding Cells</h3>
+<p>Our typical heavy equipment weld cell includes:</p>
 <ul>
-<li>Large CNC mill and lathe loading</li>
-<li>Casting and forging handling from <a href="/solutions/bin-picking/">bins</a></li>
-<li>Multi-machine cell configurations</li>
-<li>Integration with part washing and inspection</li>
+<li><strong>Two FANUC Arc Mate 120iD robots</strong> on a shared floor track (10-15 meter travel), each equipped with Lincoln Electric Power Wave R450 or Fronius TPS 500i welding power sources</li>
+<li><strong>Headstock-tailstock positioner</strong> rated for 5,000-15,000 lbs with servo-driven rotation and FANUC coordinated motion control</li>
+<li><strong>Touch sensing and through-arc seam tracking</strong> on every weld joint for automatic path compensation</li>
+<li><strong>Weld quality monitoring</strong> recording voltage, amperage, wire feed speed, travel speed, and heat input on every pass</li>
+<li><strong>Dual-station configuration</strong> so the operator loads the next weldment on the idle side while the robots weld the current part</li>
 </ul>
-<h2 id="assembly-automation">Assembly Automation</h2>
-<p>Assembly solutions scaled for heavy equipment:</p>
+<p><strong>Real-World Example: Excavator Boom Welding Cell</strong></p>
+<p>We built a dual-robot welding cell for a construction equipment OEM producing excavator booms in three size classes (20-ton, 30-ton, and 45-ton). The largest boom is 4.8 meters long and weighs 2,800 kg fully fixtured. Two FANUC Arc Mate 120iD robots on a 12-meter floor track perform 85% of the structural welds — 180+ weld passes per boom on the largest variant. The positioner rotates the boom through eight indexed positions to keep weld joints in the flat or horizontal position. Touch sensing locates every joint before welding, compensating for the ±3mm plate variation that's inherent to plasma-cut parts. Cycle time: 4.2 hours for the largest boom (down from 14 hours manual). First-pass weld quality: 97.8% — and the 2.2% that need repair are consistently the same difficult-access joints that we intentionally left for manual finishing.</p>
+<h3 id="welding-process-selection">Welding Process Selection</h3>
+<p>Heavy equipment welding is predominantly GMAW (MIG/MAG) and FCAW (flux-cored), with some SAW (submerged arc) for heavy plate joints:</p>
 <ul>
-<li><a href="/solutions/servo-pressing/">Servo pressing</a> for bearing and bushing installation</li>
-<li><a href="/solutions/screwdriving/">Automated fastening</a> with torque documentation</li>
-<li><a href="/solutions/dispensing/">Dispensing</a> for sealants and adhesives</li>
-<li>Guided assembly with <a href="/solutions/machine-vision/">vision verification</a></li>
+<li><strong>GMAW pulse</strong> for plate thicknesses under 12mm. Fronius PMC (Pulse Multi Control) and Lincoln Surface Tension Transfer modes reduce spatter and heat input while maintaining deposition rates of 4-6 kg/hour per robot.</li>
+<li><strong>FCAW</strong> for plate thicknesses over 12mm where deposition rate matters most. Dual-shield flux-cored wire (Lincoln Outershield 71M, ESAB Dual Shield II 71 Ultra) delivers 6-10 kg/hour with excellent out-of-position performance. For heavy frame welds requiring multi-pass fills, FCAW cuts cycle time by 30-40% compared to solid wire GMAW.</li>
+<li><strong>Tandem welding</strong> for long, straight joints on heavy plate. Two wires feeding into the same puddle at deposition rates of 12-15 kg/hour. We've used tandem GMAW on mining truck frame rails where a single fillet weld runs 3 meters and the required leg size is 12mm — tandem completes it in one pass instead of three.</li>
 </ul>
-<h2 id="material-handling">Material Handling</h2>
-<p>Moving large, heavy components requires specialized <a href="/solutions/material-handling/">material handling</a>:</p>
+<h3 id="weld-quality-to-aws-d11-and-d143">Weld Quality to AWS D1.1 and D14.3</h3>
+<p>Structural welds on heavy equipment must meet AWS D1.1 (Structural Welding Code — Steel) or D14.3 (Specification for Welding of Earthmoving, Construction, and Agricultural Equipment). These aren't suggestions — they're contractual requirements, and your OEM customer's quality team will audit weld procedures, operator/robot qualifications, and inspection records.</p>
+<p>We develop Welding Procedure Specifications (WPS) qualified per AWS standards for every joint type on the weldment. Robot weld programs are locked to qualified parameters — the operator can't adjust wire feed speed, voltage, or travel speed outside the qualified range without engineering authorization. Every weld is monitored and recorded, creating a data trail that satisfies the most demanding quality audit.</p>
+<h2 id="machine-tending-for-large-components">Machine Tending for Large Components</h2>
+<p>Heavy equipment components — castings, forgings, and machined housings — often weigh 50-500 kg, which puts them beyond the reach of standard <a href="/solutions/machine-tending/">machine tending</a> setups. We build systems using:</p>
 <ul>
-<li>High-payload robots (500+ kg)</li>
-<li>Overhead gantry systems</li>
-<li>AGVs and heavy-duty conveyors</li>
-<li>Specialized grippers and fixtures</li>
+<li><strong>High-payload robots</strong>: FANUC M-900iB/700 (700 kg payload) and M-2000iA (1,350 kg payload) for the heaviest components. KUKA KR 1000 Titan is another option we integrate for extreme payload applications.</li>
+<li><strong>Custom grippers</strong> engineered for specific casting geometries with pneumatic or hydraulic actuation and force-sensing for reliable gripping on rough, unmachined surfaces. A casting grip point that works on the CAD model might not work on the actual casting with 2mm of flash and 1mm of mold shift — we prototype and test every gripper.</li>
+<li><strong>Multi-machine cells</strong> where one robot tends two or three CNC machining centers. For a hydraulic valve body, the robot loads Machine 1 (rough bore), unloads and transfers to Machine 2 (finish bore and face), then to Machine 3 (cross-hole drilling) — all with automated chip blowoff and in-process gauging between operations.</li>
 </ul>
+<p><strong>Real-World Example: Axle Housing Machine Tending</strong></p>
+<p>For an agricultural equipment manufacturer, we built a robotic machine tending cell for rear axle housings. Each housing is a ductile iron casting weighing 185 kg. A FANUC M-900iB/360 robot with a custom dual-gripper loads and unloads two Mazak HCN-8800 horizontal machining centers. The robot handles raw castings from a gravity roller conveyor, loads them into hydraulic fixtures in the machines, and places finished parts on an outfeed conveyor for washing and inspection. Cell cycle time: 12 minutes per housing (two housings in parallel). The cell runs three shifts with one operator monitoring both machines and performing visual inspection on finished parts. Throughput increased 40% compared to the previous manual loading operation, and ergonomic injury claims from handling 185 kg castings dropped to zero.</p>
+<h2 id="assembly-and-fastening">Assembly and Fastening</h2>
+<p>Heavy equipment assembly involves large structural fasteners, hydraulic fitting installation, bearing and bushing press-fits, and sealant application. We build <a href="/solutions/assembly/">assembly systems</a> that handle these operations with torque traceability, force monitoring, and process documentation.</p>
+<h3 id="drivetrain-and-axle-assembly">Drivetrain and Axle Assembly</h3>
+<p>Heavy equipment drivetrains — transmissions, axles, final drives — require the same precision assembly as <a href="/industries/automotive/">automotive powertrains</a> but at larger scale. <a href="/solutions/servo-pressing/">Servo press systems</a> handle bearing and seal installations with force-displacement monitoring. <a href="/solutions/screwdriving/">Automated fastening systems</a> with Atlas Copco Power Focus 8000 controllers manage critical bolted joints — axle housing cap bolts, ring gear bolts, and bearing preload fasteners — with multi-step tightening strategies and full torque-angle documentation.</p>
+<h3 id="hydraulic-system-assembly">Hydraulic System Assembly</h3>
+<p>Hydraulics are the lifeblood of heavy equipment, and every fitting, hose, and valve connection must be leak-free. We integrate <a href="/solutions/dispensing/">dispensing systems</a> for thread sealant application, automated torque wrenches for fitting installation, and <a href="/solutions/test-systems/">test systems</a> for pressure testing assembled hydraulic circuits at working pressure (typically 3,000-5,000 PSI for mobile hydraulics).</p>
+<h2 id="material-handling-for-heavy-components">Material Handling for Heavy Components</h2>
+<p>Moving 500-5,000 kg components through a production facility requires purpose-built <a href="/solutions/material-handling/">material handling</a> systems:</p>
+<ul>
+<li><strong>Overhead gantry robots</strong> spanning 10-20 meters for transferring large weldments between stations. We build custom gantries with FANUC or ABB robot arms on overhead travel axes, providing the reach and payload that no floor-mounted robot can match.</li>
+<li><strong>Floor-track robots</strong> with FANUC M-900 and M-2000 series for point-to-point transfers and machine loading.</li>
+<li><strong>Heavy-duty conveyors</strong> — chain-on-edge, slat, and powered roller conveyors rated for 10,000+ lbs for moving frames and weldments through multi-station welding and assembly lines.</li>
+<li><strong>Custom fixtures and grippers</strong> for every handling point. A boom weldment doesn't have convenient grip features — we design custom cradles, clamping systems, and vacuum-assist grippers that handle the part securely without damaging weld surfaces or machined features.</li>
+</ul>
+<h2 id="test-and-inspection-systems">Test and Inspection Systems</h2>
+<h3 id="structural-weld-inspection">Structural Weld Inspection</h3>
+<p>Beyond the real-time weld monitoring on every robot cell, we build dedicated weld inspection stations:</p>
+<ul>
+<li><strong>Ultrasonic testing (UT)</strong> integration for critical structural joints. Automated UT scanning of boom pivot welds, frame-to-axle tower joints, and other fatigue-critical connections using Olympus OmniScan systems with phased array probes.</li>
+<li><strong><a href="/solutions/machine-vision/">Machine vision</a></strong> for weld bead geometry measurement. Keyence LJ-X8000 series laser profilers measure bead width, height, and undercut on external welds — catching visual defects before the part moves to paint.</li>
+<li><strong>Magnetic particle inspection (MPI)</strong> stations with automated magnetization and UV inspection for surface crack detection on machined and ground surfaces.</li>
+</ul>
+<h3 id="hydraulic-and-pressure-testing">Hydraulic and Pressure Testing</h3>
+<p>Every hydraulic cylinder, valve, manifold, and assembled circuit gets pressure tested before it leaves the plant. Our <a href="/solutions/test-systems/">test systems</a> handle:</p>
+<ul>
+<li><strong>Proof pressure testing</strong> at 1.5x working pressure for hydraulic cylinders and valves</li>
+<li><strong>Leak testing</strong> using pressure decay methods with test pressures up to 10,000 PSI</li>
+<li><strong>Functional testing</strong> of control valves — spool stroke, flow rate, pressure regulation, and response time verification</li>
+</ul>
+<h2 id="roi-and-business-case">ROI and Business Case</h2>
+<p>Heavy equipment automation ROI depends heavily on the application and volume, but the numbers consistently justify investment in the right applications:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Manual / Semi-Auto</th>
+<th>Fully Automated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Welding labor cost per boom</td>
+<td>$280-$560</td>
+<td>$65-$120</td>
+</tr>
+<tr>
+<td>Weld cycle time (large weldment)</td>
+<td>12-16 hours</td>
+<td>3.5-5 hours</td>
+</tr>
+<tr>
+<td>First-pass weld quality</td>
+<td>88-93%</td>
+<td>96-99%</td>
+</tr>
+<tr>
+<td>Machine tending throughput</td>
+<td>4-6 parts/shift</td>
+<td>8-12 parts/shift</td>
+</tr>
+<tr>
+<td>Ergonomic injury rate</td>
+<td>Industry average</td>
+<td>Near zero for automated tasks</td>
+</tr>
+</tbody>
+</table>
+<p>For a typical heavy equipment welding operation producing 3,000 boom and frame assemblies per year:</p>
+<ul>
+<li><strong>Welding labor reduction</strong>: Replacing 4 skilled welders with 1 robot operator saves $280,000-$400,000/year (at $35-45/hour fully loaded, two-shift operation). Welders are scarce — the American Welding Society projects a shortage of 360,000 welders by 2027 — so this isn't just a cost saving, it's a capacity survival strategy.</li>
+<li><strong>Cycle time reduction</strong>: Going from 14 hours manual to 4.5 hours robotic on a large weldment triples effective capacity from the same floor space. That's a second welding line you don't have to build — saving $2-4 million in capital and facility expansion.</li>
+<li><strong>Quality improvement</strong>: Reducing weld repair rate from 10% to 2% saves 240 rework hours/year at $50/hour burdened rate = $12,000/year direct, plus eliminates the schedule disruption of pulling parts back through the shop.</li>
+<li><strong>Safety and ergonomics</strong>: Heavy equipment welding is physically brutal — overhead welding, confined spaces, extreme heat. Removing welders from the worst positions reduces workers' compensation exposure and improves retention in a labor market where every welder who quits takes six months to replace.</li>
+<li><strong>Typical payback</strong>: 14-24 months for high-volume welding cells, 24-36 months for mixed-volume cells with multiple fixture sets.</li>
+</ul>
+<h2 id="common-challenges-and-how-we-solve-them">Common Challenges and How We Solve Them</h2>
+<h3 id="our-parts-vary-too-much-for-robots">"Our parts vary too much for robots"</h3>
+<p>This is the objection we hear most often, and it was valid 15 years ago. Today's seam-tracking and adaptive welding technology handles the variation inherent in heavy fabrications. Touch sensing compensates for ±5mm joint position errors. Through-arc tracking follows the seam in real-time. Laser sensors profile the joint and adjust parameters on the fly. We routinely automate weldments on plasma-cut parts that manual welders were compensating for by eye — and the robot does it more consistently because it doesn't get tired at hour 10 of a shift.</p>
+<h3 id="we-dont-have-enough-volume-to-justify-automation">"We don't have enough volume to justify automation"</h3>
+<p>Maybe. But consider: a single skilled welder costs $75,000-$95,000/year fully loaded. A robotic welding cell that replaces two welders and increases throughput by 200% pays for itself even at surprisingly low volumes. We've justified cells producing as few as 800 large weldments per year when the labor content per part is high enough. The break-even math is simple: if the labor savings per part multiplied by annual volume exceeds the annual cost of the cell (depreciation + maintenance + consumables), it's a win.</p>
+<h3 id="we-cant-find-programmers-who-understand-heavy-equipment-welding">"We can't find programmers who understand heavy equipment welding"</h3>
+<p>Neither can anyone else — it's a niche skill set. That's why we provide complete robot programming as part of every system we deliver, and we offer <a href="/services/robot-programming/">robot programming services</a> and <a href="/services/training/">training programs</a> to develop your internal capability. Our training covers not just button-pushing, but the welding metallurgy and process knowledge needed to troubleshoot and optimize heavy equipment welding programs.</p>
+<h3 id="our-shop-environment-will-destroy-the-equipment">"Our shop environment will destroy the equipment"</h3>
+<p>We design for it. IP67-rated connectors on everything. Armored cable trays. Positive-pressure robot dress packs that keep grinding dust out of the wrist. Stainless steel shielding on sensors and cameras. Heavy-duty perimeter guarding rated for forklift impact. We've had cells running in foundry environments, outdoor mining equipment yards, and heavy fabrication shops for 15+ years. The equipment survives because we don't pretend it's going into a clean room.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="what-size-components-can-your-welding-cells-handle">What size components can your welding cells handle?</h3>
+<p>We've built cells handling weldments from 50 kg to over 7,000 kg, with lengths up to 6 meters. Floor-track robots provide unlimited reach along the length axis, and headstock-tailstock positioners rated up to 15,000 lbs rotate the part for optimal weld position access. For truly oversized components, we design gantry-mounted robots that travel overhead. There's no practical upper limit on part size — the question is whether the production volume justifies the investment.</p>
+<h3 id="which-robot-brands-do-you-use-for-heavy-equipment-applications">Which robot brands do you use for heavy equipment applications?</h3>
+<p>We're a FANUC Authorized System Integrator and FANUC is our primary platform. The Arc Mate 120iD is our workhorse for welding, and the M-900iB and M-2000iA series handle high-payload material handling and machine tending. We also integrate ABB robots (the IRB 6700 series for large-envelope welding) and KUKA (the KR Quantec and KR 1000 Titan for extreme payload applications). Yaskawa Motoman is another platform we work with, particularly their AR-series welding robots. Robot selection is always application-driven.</p>
+<h3 id="can-you-automate-welding-on-parts-with-significant-fit-up-variation">Can you automate welding on parts with significant fit-up variation?</h3>
+<p>Yes — this is our specialty in heavy equipment. We use a combination of touch sensing, through-arc seam tracking, and laser seam finding to compensate for the ±3-5mm variation typical of plasma-cut and flame-cut fabrications. The robot finds the actual joint position before welding and adjusts the path in real-time during welding. We also provide data feedback to your fabrication shop — if the seam-tracking data shows a consistent offset on a particular part feature, that tells your plasma table needs recalibration or your fixture needs adjustment.</p>
+<h3 id="what-welding-processes-do-your-systems-support">What welding processes do your systems support?</h3>
+<p>GMAW (MIG/MAG), FCAW (flux-cored), MCAW (metal-cored), tandem welding, and SAW (submerged arc). We integrate welding power sources from Lincoln Electric (Power Wave R450, S500), Fronius (TPS 500i, TPS 600i), and Miller (Auto-Axcess). Process selection depends on plate thickness, joint type, position, and cycle time requirements. Most heavy equipment structural welding uses either pulsed GMAW for thinner plate or dual-shield FCAW for heavy plate and multi-pass joints.</p>
+<h3 id="how-do-you-handle-fixture-changeover-for-multiple-part-variants">How do you handle fixture changeover for multiple part variants?</h3>
+<p>We design fixture systems based on your product mix. For families with similar geometry (e.g., three boom sizes sharing the same basic shape), we use modular fixtures with adjustable locators and clamps that accommodate the range. For dissimilar parts, we use quick-change fixture plates on the positioner with Schunk VERO-S zero-point clamping — changeover takes 5-10 minutes. Each fixture carries an RFID tag that automatically loads the correct robot program, weld sequence, and quality parameters.</p>
+<h3 id="do-you-provide-ongoing-support-after-installation">Do you provide ongoing support after installation?</h3>
+<p>Every system includes commissioning support, operator training, and a warranty period. After that, we offer <a href="/services/maintenance-support/">maintenance and support services</a> including preventive maintenance contracts, remote diagnostics, spare parts supply, and 24/7 emergency support. We also offer <a href="/services/training/">training services</a> to develop your internal robot programming and maintenance capability. For customers running multiple AMD cells, we provide dedicated support engineers who know your specific systems.</p>
+<h3 id="whats-the-floor-space-requirement-for-a-typical-heavy-equipment-welding-cell">What's the floor space requirement for a typical heavy equipment welding cell?</h3>
+<p>A dual-robot, dual-station welding cell for large weldments typically requires 15m x 8m (about 50' x 26') including the safety perimeter, operator load stations, and maintenance access. The exact footprint depends on part size, positioner configuration, and floor-track length. We provide 3D facility layouts during the proposal phase using RobotStudio (ABB) or ROBOGUIDE (FANUC) simulation, so you can verify the cell fits your available space before we finalize the design.</p>
 <h2 id="related-industries">Related Industries</h2>
-<p>Heavy equipment shares manufacturing challenges with:</p>
+<p>Heavy equipment manufacturing shares automation challenges with several industries we serve:</p>
 <ul>
-<li><strong><a href="/industries/automotive/">Automotive</a></strong> - Frame and chassis welding</li>
-<li><strong><a href="/industries/aerospace/">Aerospace</a></strong> - Large structural assembly</li>
-<li><strong><a href="/industries/energy/">Energy</a></strong> - Wind turbine and power equipment</li>
+<li><strong><a href="/industries/automotive/">Automotive</a></strong> — Frame welding, powertrain assembly, and high-volume production techniques</li>
+<li><strong><a href="/industries/aerospace/">Aerospace</a></strong> — Large structural assembly and NDT inspection for critical components</li>
+<li><strong><a href="/industries/energy/">Energy</a></strong> — Wind turbine, pipeline, and power generation equipment fabrication</li>
+<li><strong><a href="/industries/defense/">Defense</a></strong> — Military vehicle production with strict quality and traceability requirements</li>
 </ul>
-<p>Contact us to discuss automation for your heavy equipment manufacturing operation.</p>
+<p>If you're running a heavy equipment manufacturing operation and you're losing welders faster than you can hire them, struggling with weld quality consistency, or simply can't get enough throughput from your current floor space, <a href="/contact/">contact us</a> to discuss your application. We'll evaluate your parts, your volumes, and your production environment — and give you an honest assessment of where automation makes sense and where it doesn't.</p>
                 </div>
 
                 
@@ -644,22 +762,32 @@
                         
                         <div class="solution-card-flat">
                             <h3>Structural Welding</h3>
-                            <p>Large-scale robotic welding for frames, booms, and structural components.</p>
+                            <p>Multi-robot MIG/MAG and flux-cored welding cells for frames, booms, buckets, and chassis components — handling weldments up to 15,000 lbs with headstock-tailstock positioners and floor-track robots.</p>
                         </div>
                         
                         <div class="solution-card-flat">
-                            <h3>Component Machining</h3>
-                            <p>Automated machine tending for castings, forgings, and large machined parts.</p>
+                            <h3>Large Component Machine Tending</h3>
+                            <p>High-payload robotic machine tending for castings, forgings, and machined components weighing up to 500 kg, with automated deburring and in-process gauging.</p>
                         </div>
                         
                         <div class="solution-card-flat">
-                            <h3>Assembly Systems</h3>
-                            <p>Guided assembly and torque tool systems for subassembly and final assembly.</p>
+                            <h3>Structural Assembly</h3>
+                            <p>Servo press-fit, automated fastening, and dispensing systems for drivetrain, axle, and final assembly operations with full torque traceability.</p>
                         </div>
                         
                         <div class="solution-card-flat">
-                            <h3>Material Handling</h3>
-                            <p>Heavy payload handling for large components throughout production.</p>
+                            <h3>Heavy Material Handling</h3>
+                            <p>Gantry robots, floor-track systems, and custom grippers for moving large structural components between welding, machining, paint, and assembly operations.</p>
+                        </div>
+                        
+                        <div class="solution-card-flat">
+                            <h3>Test and Inspection</h3>
+                            <p>Hydraulic pressure testing, leak detection, dimensional verification, and weld quality inspection for structural and powertrain components.</p>
+                        </div>
+                        
+                        <div class="solution-card-flat">
+                            <h3>Surface Preparation</h3>
+                            <p>Automated grinding, deburring, and surface finishing for cast and fabricated components prior to paint and assembly.</p>
                         </div>
                         
                     </div>
@@ -672,18 +800,23 @@
                     <div class="challenges-list">
                         
                         <div class="challenge-item-flat">
-                            <h3>Large Component Size</h3>
-                            <p>Heavy equipment parts often exceed standard robot reach and payload capacities.</p>
+                            <h3>Oversized Components</h3>
+                            <p>Heavy equipment parts regularly exceed standard robot reach and payload envelopes. Our systems use floor-track robots, gantry systems, and custom positioners to handle weldments up to 20 feet long and 15,000 lbs.</p>
                         </div>
                         
                         <div class="challenge-item-flat">
-                            <h3>Mix of High and Low Volume</h3>
-                            <p>Some components run in high volume while others are low-volume or custom.</p>
+                            <h3>Mixed Volume Production</h3>
+                            <p>Product lines span from 50 units/year specialty machines to 10,000 units/year compact equipment — demanding flexible automation that justifies investment across the full range.</p>
                         </div>
                         
                         <div class="challenge-item-flat">
-                            <h3>Weld Quality Requirements</h3>
-                            <p>Structural welds must meet strict quality standards for safety and durability.</p>
+                            <h3>Structural Weld Integrity</h3>
+                            <p>Boom, frame, and chassis welds are safety-critical structural joints tested to AWS D1.1 and D14.3 standards. Our welding systems deliver consistent penetration and bead profiles with real-time quality monitoring.</p>
+                        </div>
+                        
+                        <div class="challenge-item-flat">
+                            <h3>Harsh Production Environment</h3>
+                            <p>Heavy fabrication shops run hot, dusty, and loud. Our systems are built with IP67-rated components, heavy-duty cable management, and maintenance-friendly layouts that survive the environment.</p>
                         </div>
                         
                     </div>

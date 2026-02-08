@@ -12,13 +12,13 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Industrial laser systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with robotic and gantry motion.">
-    <meta name="keywords" content="laser cutting automation, laser welding systems, laser marking, industrial laser processing, fiber laser automation, robotic laser systems">
+    <meta name="description" content="Custom laser processing systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with FANUC robots and precision gantries.">
+    <meta name="keywords" content="laser cutting automation, laser welding systems, laser marking industrial, fiber laser integration, robotic laser cell, laser surface treatment, automated laser processing">
     <meta name="author" content="AMD Machines">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Laser Processing Systems | Cutting, Welding, Marking | AMD Machines | AMD Machines">
-    <meta property="og:description" content="Industrial laser systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with robotic and gantry motion.">
+    <meta property="og:description" content="Custom laser processing systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with FANUC robots and precision gantries.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amdmachines.com/solutions/laser-applications/">
     <meta property="og:site_name" content="AMD Machines">
@@ -29,7 +29,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Laser Processing Systems | Cutting, Welding, Marking | AMD Machines | AMD Machines">
-    <meta name="twitter:description" content="Industrial laser systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with robotic and gantry motion.">
+    <meta name="twitter:description" content="Custom laser processing systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with FANUC robots and precision gantries.">
     <meta name="twitter:image" content="https://amdmachines.com/static/images/og-default.jpg">
 
     <!-- Canonical URL -->
@@ -594,62 +594,101 @@
         <div class="content-layout">
             <div class="content-main-flat">
                 <div class="prose">
-                    <p>Laser processing provides non-contact precision for cutting, welding, marking, and surface treatment applications. AMD Machines integrates laser systems with <a href="/solutions/robotic-cells/">robotic cells</a> and gantry motion for complete automated solutions.</p>
-<h2 id="laser-technologies">Laser Technologies</h2>
-<h3 id="fiber-lasers">Fiber Lasers</h3>
-<p>Ideal for metal processing:</p>
+                    <p>I'll be blunt: lasers changed manufacturing more than any other technology in the last 30 years, and most shops still aren't taking full advantage of them. After integrating laser cutting, welding, marking, and surface treatment systems across every major manufacturing sector, I've watched fiber lasers go from exotic curiosities to the workhorse tool on production floors worldwide. The technology has matured to the point where a 6 kW fiber laser costs less than a high-end CNC machining center—and it can cut, weld, mark, and clean without ever touching the workpiece.</p>
+<p>At AMD Machines, we don't sell lasers. We integrate complete laser processing systems—source, optics, motion platform, safety enclosure, fume extraction, process monitoring, and quality verification—into production-ready cells that hit your cycle time on day one. We've built laser systems around FANUC and ABB robots, precision Cartesian gantries, and high-speed galvo scanners, and we've learned which combinations actually work for which applications. That's the knowledge that separates a laser system that runs reliably at 98%+ uptime from one that's a constant maintenance headache.</p>
+<h2 id="how-industrial-laser-processing-works">How Industrial Laser Processing Works</h2>
+<p>Every laser processing system has four core subsystems, and getting any one of them wrong undermines the whole system.</p>
+<h3 id="the-laser-source">The Laser Source</h3>
+<p>The source generates the photons. For production applications, you're choosing between three families:</p>
+<p><strong>Fiber lasers</strong> dominate metal processing and are our most frequently integrated source. IPG Photonics, TRUMPF, and nLIGHT fiber lasers deliver 1,060–1,080 nm wavelength light through a fiber-optic cable directly to the processing head—no mirrors to align, no gas to replenish, and wall-plug efficiency of 40–50% (compared to 10–15% for CO2). We integrate fiber lasers from 200 W for precision marking and micro-welding up to 12 kW for heavy plate cutting and deep-penetration welding. A 2 kW IPG YLR-2000 has run over 40,000 hours on one of our automotive welding cells without a single service call on the source itself.</p>
+<p><strong>CO2 lasers</strong> still earn their place for non-metal cutting—plastics, textiles, wood, and paper—where the 10.6 µm wavelength absorbs far better than near-infrared fiber wavelengths. We integrate TRUMPF and Coherent CO2 sources from 100 W to 6 kW. They require more maintenance than fiber (gas replenishment, mirror alignment, beam path purging), but for organic material cutting, they remain the right tool.</p>
+<p><strong>UV and green lasers</strong> handle heat-sensitive applications where even fiber lasers deposit too much thermal energy. UV lasers (355 nm) from Coherent and TRUMPF ablate material through photochemical bond-breaking rather than thermal melting—producing virtually zero heat affected zone (HAZ). We use them for <a href="/industries/medical/">medical device</a> micro-machining, ceramic scribing, glass cutting, and fine marking on plastics where discoloration from heat is unacceptable.</p>
+<h3 id="the-beam-delivery-and-optics">The Beam Delivery and Optics</h3>
+<p>Getting the laser energy to the workpiece precisely is where most integration challenges live. The processing head contains the focusing optics, and the choice of focal length, spot size, and depth of focus determines what the system can do.</p>
+<p>For cutting, we use cutting heads from Precitec (ProCutter 2.0) and TRUMPF with auto-focus, capacitive height sensing, and protective cover slides. These heads maintain the correct standoff distance (0.5–1.5 mm) from the workpiece surface as the part geometry changes—critical for consistent cut quality.</p>
+<p>For welding, we integrate wobble welding heads that oscillate the beam in circular, figure-eight, or linear patterns at frequencies up to 300 Hz. Wobble welding broadens the effective weld seam from 0.3 mm (straight fiber spot) to 1.5–3.0 mm—filling gaps, reducing porosity, and improving joint aesthetics. We've had excellent results with IPG D30 and Precitec WobbleLine heads on battery and automotive welding applications.</p>
+<p>For marking and scanning applications, <strong>galvo scan heads</strong> from SCANLAB, RAYLASE, and II-VI deflect the beam across a 2D field using high-speed mirror galvanometers. These heads reach marking speeds of 8 m/s and can engrave a Data Matrix code in under 200 ms. We integrate them into production lines where marking is one station in a larger <a href="/solutions/assembly/">assembly system</a>.</p>
+<h3 id="the-motion-platform">The Motion Platform</h3>
+<p>The motion platform positions the workpiece relative to the laser beam. We select from three approaches:</p>
+<p><strong>6-axis robotic cells</strong> using FANUC M-20iD, ABB IRB 4600, or KUKA KR series robots give maximum flexibility for 3D laser processing. A FANUC M-20iD/25 carrying a laser welding head can follow complex 3D seam paths at 100+ mm/s with ±0.05 mm path repeatability. We build <a href="/solutions/robotic-cells/">robotic laser cells</a> for automotive body welding, aerospace trim cutting, and multi-surface marking where the beam needs to reach multiple faces of a complex part.</p>
+<p><strong>Precision gantry systems</strong> with linear motor or ball screw drives deliver higher speed and better accuracy for 2D processing. A linear motor gantry hits positioning speeds of 2 m/s with ±0.005 mm repeatability—significantly better than any articulated robot. We use these for flat sheet cutting, PCB processing, and high-speed scanning applications in <a href="/industries/electronics/">electronics manufacturing</a>.</p>
+<p><strong>Fixed-station systems</strong> with rotary indexing or conveyor-fed workpiece presentation are our choice for high-volume dedicated applications. The laser head stays fixed while parts move through the processing zone—simple, compact, and fast. These integrate naturally into <a href="/solutions/assembly/">assembly lines</a> where laser processing is one station among many.</p>
+<h3 id="safety-and-fume-extraction">Safety and Fume Extraction</h3>
+<p>Laser safety isn't optional—it's Class 4 radiation that can cause instant, permanent eye damage and ignite flammable materials. Every system we build meets ANSI Z136.1 and IEC 60825-1 standards with:</p>
 <ul>
-<li>High efficiency and low maintenance</li>
-<li>Excellent beam quality for fine features</li>
-<li>1-20+ kW for cutting and welding</li>
-<li>Fast response for high-speed applications</li>
+<li><strong>Class 1 safety enclosures</strong> with interlocked doors and laser-rated viewing windows (OD 7+ at the process wavelength)</li>
+<li><strong>Fume extraction</strong> sized for the specific material and process—metal welding fumes require different filtration than plastic cutting vapors</li>
+<li><strong>Light curtains and area scanners</strong> for larger enclosures where door interlocking alone isn't practical</li>
+<li><strong>Beam dump and shutter systems</strong> that safely terminate the beam when the system isn't actively processing</li>
 </ul>
-<h3 id="co2-lasers">CO2 Lasers</h3>
-<p>For non-metals and organic materials:</p>
+<h2 id="laser-processes-deep-dive">Laser Processes: Deep Dive</h2>
+<h3 id="laser-cutting">Laser Cutting</h3>
+<p>Laser cutting replaces mechanical cutting, stamping, and waterjet for applications where precision, speed, and minimal HAZ matter. A 4 kW fiber laser cuts 3 mm mild steel at 8 m/min with a kerf width of 0.15 mm and HAZ under 0.1 mm. Try matching that with a plasma torch.</p>
+<p>We build laser cutting systems for:</p>
 <ul>
-<li>Plastics, wood, textiles, paper</li>
-<li>Engraving and cutting</li>
-<li>Large format processing</li>
-<li>Established, reliable technology</li>
+<li><strong>Automotive trim cutting</strong> — 3D robot-guided cutting of hydroformed tubes, stamped panels, and composite parts. A FANUC M-20iD with a Precitec cutting head trims flash from injection-molded bumper covers at 4 m/min with ±0.2 mm accuracy.</li>
+<li><strong>Medical tube cutting</strong> — 5-axis laser cutting of stents, hypotubes, and cannulae from stainless steel and nitinol tubes as small as 0.5 mm OD. UV lasers cut with zero burr and HAZ under 10 µm.</li>
+<li><strong>Sheet metal processing</strong> — Flat sheet cutting integrated with automated <a href="/solutions/material-handling/">material handling</a> for lights-out operation. We've integrated systems that process 500+ unique part geometries per shift from nested sheet layouts.</li>
 </ul>
-<h3 id="uv-and-green-lasers">UV and Green Lasers</h3>
-<p>For sensitive materials:</p>
+<h3 id="laser-welding">Laser Welding</h3>
+<p>Laser welding delivers speed, depth of penetration, and minimal distortion that resistance and arc welding simply can't match. A 3 kW fiber laser produces a keyhole weld 3 mm deep at 3 m/min in steel—with a heat affected zone 5–10x narrower than MIG welding. That means less distortion, less post-weld machining, and stronger joints in many applications.</p>
+<p>Key applications we've integrated:</p>
 <ul>
-<li>Cold ablation with minimal heat</li>
-<li>Electronics and medical applications</li>
-<li>Glass and ceramic processing</li>
-<li>Fine marking on plastics</li>
+<li><strong>Battery module assembly</strong> — Welding copper and aluminum bus bars for EV battery packs. Wobble welding with a 2 kW fiber laser joins 0.3 mm copper foils to nickel-plated tabs at 500 mm/s with real-time power monitoring to detect micro-porosity. This is one of the fastest-growing application areas we're seeing.</li>
+<li><strong>Automotive body-in-white</strong> — Remote laser welding with galvo scanning heads running on ABB IRB 6700 robots. The scanner moves the beam between weld locations in milliseconds—no robot motion needed between closely spaced welds. One cell produces 40+ spot welds per minute compared to 12–15 with resistance welding.</li>
+<li><strong>Hermetic sealing for medical and electronics</strong> — Seam welding titanium and stainless steel enclosures for implantable devices and sensor housings. Weld penetration controlled to ±0.05 mm depth to prevent internal damage to sensitive components.</li>
 </ul>
-<h2 id="laser-processes">Laser Processes</h2>
-<h3 id="cutting">Cutting</h3>
+<h3 id="laser-marking">Laser Marking</h3>
+<p>Laser marking produces permanent, high-contrast marks without consumables—no ink, no labels, no stamps to wear out. A fiber laser marks a 10x10 mm Data Matrix code on anodized aluminum in 150 ms. Over a million parts, that's zero consumable cost versus $0.02–$0.05 per label.</p>
+<p>We integrate marking into production systems for <a href="/solutions/marking-traceability/">traceability</a> requirements across <a href="/industries/automotive/">automotive</a> (AIAG standards), <a href="/industries/medical/">medical</a> (FDA UDI), and <a href="/industries/aerospace/">aerospace</a> (FAA requirements). Every mark gets verified by a <a href="/solutions/machine-vision/">machine vision</a> system—typically a Cognex DataMan 370 or Keyence SR-2000—that reads and grades the code per ISO 15415/15416 standards before the part leaves the station.</p>
+<h3 id="laser-surface-treatment">Laser Surface Treatment</h3>
+<p>Laser cleaning, texturing, and hardening are newer applications that are replacing chemical processes in many facilities:</p>
 <ul>
-<li>Metals: steel, aluminum, copper, titanium</li>
-<li>Non-metals: plastics, composites, fabrics</li>
-<li>2D and 3D contour cutting</li>
-<li>Integration with <a href="/solutions/material-handling/">material handling</a></li>
+<li><strong>Laser cleaning</strong> removes rust, oxide, paint, and contaminants from metal surfaces without abrasives or chemicals. We've replaced phosphate wash systems with 200 W pulsed fiber lasers that clean automotive steel at 5 m²/hour—eliminating chemical disposal costs and environmental liability.</li>
+<li><strong>Laser texturing</strong> creates controlled surface roughness for improved adhesion before bonding or coating. A textured surface can increase bond strength by 200–300% compared to smooth ground surfaces.</li>
+<li><strong>Laser hardening</strong> selectively hardens tool steel and cast iron surfaces to 55–62 HRC without quenching media—ideal for wear surfaces on dies, molds, and machine components.</li>
 </ul>
-<h3 id="welding">Welding</h3>
-<ul>
-<li>Keyhole and conduction mode welding</li>
-<li>Hermetic sealing for medical devices</li>
-<li>Battery and electronics assembly</li>
-<li>Complementary to <a href="/solutions/welding/">resistance welding</a></li>
-</ul>
-<h3 id="marking">Marking</h3>
-<ul>
-<li>Part serialization and traceability</li>
-<li>2D codes, barcodes, human-readable text</li>
-<li>Logos and decorative marking</li>
-<li>Integration with <a href="/solutions/machine-vision/">machine vision</a> verification</li>
-</ul>
-<h2 id="industry-applications">Industry Applications</h2>
-<ul>
-<li><strong><a href="/industries/automotive/">Automotive</a></strong> - Body welding, component marking</li>
-<li><strong><a href="/industries/medical/">Medical</a></strong> - Tube cutting, device marking, welding</li>
-<li><strong><a href="/industries/electronics/">Electronics</a></strong> - PCB processing, enclosure marking</li>
-<li><strong><a href="/industries/aerospace/">Aerospace</a></strong> - Precision cutting, surface treatment</li>
-</ul>
-<p>Contact us to discuss laser processing for your manufacturing needs.</p>
+<h2 id="real-world-application-examples">Real-World Application Examples</h2>
+<h3 id="automotive-ev-battery-module-welding">Automotive EV Battery Module Welding</h3>
+<p>A Tier 1 battery manufacturer needed to weld copper-to-nickel bus bar connections on lithium-ion battery modules—1,200 welds per module, with each weld joint carrying 200A+ in operation. Manual resistance welding produced inconsistent joint quality and couldn't keep pace with the 45-second module cycle time.</p>
+<p>We designed a dual-robot cell with two FANUC M-20iD/25 robots, each carrying an IPG D30 wobble welding head fed by a 3 kW IPG fiber laser. The wobble pattern (1.5 mm diameter, 200 Hz circular) compensates for the high reflectivity and thermal conductivity of copper. Each robot welds 600 joints per module at 500 mm/s travel speed, with real-time photodiode monitoring that flags any weld with anomalous emission signatures.</p>
+<p><strong>Results:</strong> 38-second cycle time (vs. 110 seconds with resistance welding), weld pull strength 2.1x the specification minimum, zero cold welds detected in over 3 million joints. The photodiode monitoring system caught 14 developing electrode wear issues before they produced defective welds. The system processes 3 different module variants with automatic recipe changeover.</p>
+<h3 id="medical-nitinol-stent-cutting">Medical Nitinol Stent Cutting</h3>
+<p>A <a href="/industries/medical/">medical device</a> manufacturer producing cardiovascular stents needed to cut complex strut patterns into 1.8 mm OD nitinol tubes with wall thicknesses of 0.12 mm. The strut width was 80 µm—demanding cutting precision well below 10 µm with zero burr and an HAZ that wouldn't compromise the nitinol's superelastic properties.</p>
+<p>We built a 5-axis precision cutting system with a TRUMPF TruMicro 5050 femtosecond laser (ultrashort pulses eliminate thermal effects entirely) and a custom rotary/linear motion stage with 1 µm positioning resolution. A Keyence confocal displacement sensor maps each tube before cutting to compensate for diameter and straightness variations, and the system adjusts the cutting path in real time.</p>
+<p><strong>Results:</strong> Strut width accuracy of ±3 µm (far exceeding the ±10 µm spec), zero measurable HAZ on metallurgical cross-sections, surface roughness Ra &lt; 0.2 µm as-cut (eliminating electropolishing for some product variants). Cycle time of 90 seconds per stent versus 180 seconds on the previous nanosecond laser system. The system passed IQ/OQ/PQ validation and produces stents under FDA 21 CFR Part 820 quality system requirements.</p>
+<h3 id="aerospace-composite-trim-cutting">Aerospace Composite Trim Cutting</h3>
+<p>An <a href="/industries/aerospace/">aerospace</a> structural parts manufacturer needed to trim cured carbon fiber reinforced polymer (CFRP) panels to final dimensions. Mechanical routing created delamination at the cut edges, waterjet introduced moisture into the composite, and manual trimming was slow and inconsistent.</p>
+<p>We integrated a 6-axis ABB IRB 6700 robot carrying a 2 kW IPG fiber laser with a Precitec cutting head into a Class 1 safety enclosure with dedicated HEPA-filtered fume extraction (carbon fiber dust is a serious respiratory hazard). The robot follows trim paths programmed offline from CAD data, and a Cognex 3D vision system locates each panel on the fixture to compensate for part-to-part position variation.</p>
+<p><strong>Results:</strong> Cutting speed of 3 m/min on 2 mm CFRP with zero delamination (confirmed via ultrasonic inspection), edge quality meeting aerospace specification requirements without secondary finishing. Cycle time reduced 65% versus manual trim, and the system handles 12 different panel geometries with automatic program changeover. Scrap rate dropped from 4.2% to 0.3%.</p>
+<h2 id="the-roi-of-laser-processing-automation">The ROI of Laser Processing Automation</h2>
+<p>Laser systems aren't cheap—a production-ready robotic laser cell runs $200,000–$500,000 depending on laser power, process complexity, and safety requirements. Multi-station systems with multiple laser sources can exceed $1M. But the ROI math consistently works because lasers attack costs on multiple fronts simultaneously.</p>
+<p><strong>Consumable elimination</strong> is often the biggest surprise. Laser cutting eliminates saw blades, end mills, and abrasive discs. Laser welding eliminates filler wire and shielding gas (for certain joint configurations). Laser marking eliminates ink, labels, and stamps. Laser cleaning eliminates chemicals, abrasives, and disposal costs. On a high-volume marking application, the consumable savings alone—$0.03/part for labels × 500,000 parts/year = $15,000/year—justify the laser system.</p>
+<p><strong>Speed improvements</strong> drive throughput gains of 2–10x over mechanical alternatives. A laser welding cell producing 40 welds/minute versus 12 with resistance welding doesn't just mean more parts—it means fewer cells, less floor space, and lower capital cost per unit of capacity.</p>
+<p><strong>Quality cost reduction</strong> from consistent, monitored processing. Every laser pulse can be monitored in real time—power, timing, position—and anomalies flagged immediately. You catch defects at the source instead of at end-of-line test or, worse, in the field.</p>
+<p><strong>Flexibility</strong> reduces capital expenditure across your product portfolio. One laser cell can cut, weld, and mark different part numbers with program changes only—no tooling, no changeover hardware. We've built systems that run 50+ part variants on a single cell.</p>
+<p>Typical payback periods: <strong>12–24 months</strong> for systems replacing manual processes, <strong>18–36 months</strong> for systems replacing existing automated alternatives (like resistance welding replaced by laser welding). Battery manufacturing laser systems are paying back in under 12 months given the volume ramps the EV industry is demanding.</p>
+<h2 id="common-challenges-and-how-we-solve-them">Common Challenges and How We Solve Them</h2>
+<p><strong>"Highly reflective materials (copper, aluminum, gold) damage the laser optics."</strong> Back-reflection is real and it will destroy a fiber laser's delivery fiber if you're not careful. We use lasers with back-reflection protection (standard on IPG's QCW and modern CW sources), wobble welding heads that break up the initial reflection geometry, and optimized focal positions that establish the keyhole before full power ramps in. On copper welding, we've also used green (532 nm) lasers from TRUMPF that copper absorbs 5–6x more efficiently than near-infrared—eliminating the reflection problem entirely.</p>
+<p><strong>"We need consistent weld quality on parts with variable fit-up."</strong> Joint gaps and misalignment are the enemy of laser welding. We address this with seam tracking (Precitec ScanTracker or Servo-Robot sensors that follow the joint in real time), wobble welding to broaden the effective weld width, and fixture design that controls gap to within ±0.1 mm. For applications where gap control isn't physically possible, we add cold wire feeding to fill the joint.</p>
+<p><strong>"Laser fumes and spatter contaminate the optics."</strong> Every cutting and welding head we integrate has a cross-jet air knife and protective cover slide system. The air knife deflects fumes and spatter away from the optics, and the cover slide protects the focusing lens. We set up automated cover slide monitoring that alerts operators when the slide needs changing—typically every 8–40 hours depending on the application.</p>
+<p><strong>"We can't justify a dedicated laser cell for our volumes."</strong> We build multi-process laser cells that cut, weld, and mark on the same system—share the capital cost across multiple operations. Quick-change optics and automated recipe selection let one cell serve multiple part families. For very low volumes, we integrate lasers into existing <a href="/solutions/robotic-cells/">robotic cells</a> as an additional end-of-arm tool.</p>
+<p><strong>"Our parts are too big for a standard enclosure."</strong> We design custom enclosures up to 6 m × 4 m × 3 m for large-format laser processing—aerospace panels, automotive body sides, heavy equipment components. Light curtain entries allow conveyor or AGV access without doors, and local exhaust ventilation handles fume extraction across the full processing envelope.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="what-laser-power-do-i-need-for-my-application">What laser power do I need for my application?</h3>
+<p>It depends entirely on the process and material. For marking, 20–50 W fiber lasers handle most metals and plastics. For cutting, figure roughly 1 kW per mm of steel thickness at production speeds (3 mm steel needs ~3 kW). For welding, 1–3 kW covers most thin-material applications (sheet metal, battery foils), while 4–12 kW is needed for deep-penetration welds over 3 mm. We run material trials during the feasibility phase to determine the exact power, speed, and focus parameters for your specific application.</p>
+<h3 id="how-does-laser-welding-compare-to-resistance-welding">How does laser welding compare to resistance welding?</h3>
+<p>Laser welding is faster (3–5x more welds per minute with remote scanning), produces less distortion (narrow HAZ), doesn't require electrode maintenance, and can weld dissimilar metals that resistance welding struggles with. Resistance welding is simpler, cheaper, and more forgiving of joint fit-up variations. For high-volume automotive and battery applications, laser welding is increasingly the default choice. For applications with loose tolerances and simple joint geometry, resistance or <a href="/solutions/welding/">arc welding</a> may be more cost-effective.</p>
+<h3 id="can-you-retrofit-a-laser-into-our-existing-robot-cell">Can you retrofit a laser into our existing robot cell?</h3>
+<p>Often, yes. If your existing FANUC or ABB robot has the payload capacity (a laser welding head weighs 5–15 kg depending on configuration) and reach for the application, we can add a laser processing head, route the fiber optic cable, install a laser source, and build a safety enclosure around the existing cell. We've done this successfully on dozens of cells where adding laser capability extended the useful life and capability of existing robotic equipment. Talk to our <a href="/services/upgrades-retrofits/">upgrades and retrofits</a> team about feasibility.</p>
+<h3 id="what-maintenance-does-a-fiber-laser-require">What maintenance does a fiber laser require?</h3>
+<p>Fiber lasers are remarkably low-maintenance compared to CO2 or lamp-pumped solid-state lasers. There's no laser gas to replenish, no mirrors to align, and no flash lamps to replace. The main maintenance items are: cleaning or replacing the protective cover slide on the processing head (weekly to monthly depending on application), checking and cleaning the delivery fiber connector (quarterly), and replacing the processing head's protective window if damaged. The laser source itself typically runs 80,000–100,000 hours between diode replacements—that's over 10 years of three-shift operation.</p>
+<h3 id="how-do-you-ensure-laser-process-quality-in-production">How do you ensure laser process quality in production?</h3>
+<p>We build multiple layers of quality assurance into every system. <strong>In-process monitoring</strong> uses photodiodes, pyrometers, or high-speed cameras to monitor the laser-material interaction in real time and detect anomalies on every single part. <strong>Post-process inspection</strong> with <a href="/solutions/machine-vision/">machine vision</a> cameras or laser profilers verifies weld bead geometry, cut edge quality, or mark readability. <strong>Statistical process control</strong> tracks key parameters over time and alerts operators to process drift before it produces defective parts. For critical applications in <a href="/industries/medical/">medical</a> and <a href="/industries/aerospace/">aerospace</a>, we implement full parameter logging with traceability linking every process parameter to the individual part serial number.</p>
+<h3 id="whats-the-difference-between-galvo-scanning-and-robot-guided-laser-processing">What's the difference between galvo scanning and robot-guided laser processing?</h3>
+<p>Galvo scan heads use lightweight mirrors to steer the beam across a 2D work field at speeds up to 8 m/s—ideal for marking, remote welding, and surface treatment over a defined area (typically 100–400 mm field). Robot-guided processing physically moves the laser head along the workpiece on a 6-axis robot at speeds up to 500 mm/s—necessary for 3D geometries, large parts, and processes requiring precise standoff distance (cutting, contact welding). Some systems combine both: a robot positions the galvo head at different locations around a large assembly, and the galvo scanner processes the local area at high speed. We call this "scan-on-the-fly" and it's increasingly popular for automotive body welding.</p>
+<h3 id="do-you-integrate-laser-safety-systems">Do you integrate laser safety systems?</h3>
+<p>Every laser system we build includes a complete safety package meeting ANSI Z136.1 and IEC 60825-1 requirements. We design Class 1 enclosures (safe without PPE) with interlocked access doors, laser-rated viewing windows, beam dump systems, and emergency stop circuits that shut down the laser in under 50 ms. For open-architecture applications where full enclosure isn't practical, we design controlled access zones with light curtains, area scanners, and procedural controls. We also provide laser safety officer training and help customers develop their laser safety programs per ANSI standards. Safety isn't an add-on—it's integrated into the system design from day one.</p>
                 </div>
 
                 
@@ -657,21 +696,21 @@
                     <h2>Key Features</h2>
                     <ul class="features-list">
                         
-                        <li>Fiber, CO2, and UV laser sources</li>
+                        <li>Fiber, CO2, and UV laser sources up to 20 kW</li>
                         
-                        <li>Robotic and gantry motion</li>
+                        <li>FANUC and ABB robotic laser cells</li>
                         
-                        <li>Vision-guided positioning</li>
+                        <li>Vision-guided beam positioning via Cognex and Keyence</li>
                         
-                        <li>Process monitoring and control</li>
+                        <li>Real-time process monitoring with photodiode and pyrometer feedback</li>
                         
-                        <li>Fume extraction and safety systems</li>
+                        <li>Class 1 laser safety enclosures with fume extraction</li>
                         
-                        <li>Quick-change optics</li>
+                        <li>Quick-change optics for multi-process flexibility</li>
                         
-                        <li>Multi-axis processing</li>
+                        <li>Multi-axis processing with 6-axis robots and 5-axis gantries</li>
                         
-                        <li>High-speed scanning heads</li>
+                        <li>High-speed galvo scanning heads up to 8 m/s</li>
                         
                     </ul>
                 </div>
@@ -684,22 +723,22 @@
                         
                         <div class="application-item">
                             <h3>Laser Cutting</h3>
-                            <p>Precision cutting of metals, plastics, and composites with minimal heat affected zone.</p>
+                            <p>Precision cutting of metals, plastics, and composites with heat affected zones under 0.1 mm using fiber and CO2 sources from 500 W to 12 kW.</p>
                         </div>
                         
                         <div class="application-item">
                             <h3>Laser Welding</h3>
-                            <p>High-speed, deep-penetration welding for automotive, medical, and electronics.</p>
+                            <p>Keyhole and conduction mode welding at speeds up to 5 m/min for automotive, medical, and battery assembly with real-time seam tracking.</p>
                         </div>
                         
                         <div class="application-item">
                             <h3>Laser Marking</h3>
-                            <p>Permanent part identification for traceability without consumables.</p>
+                            <p>Permanent part identification—Data Matrix, QR, serial numbers—in under 1 second per mark with zero consumables.</p>
                         </div>
                         
                         <div class="application-item">
                             <h3>Surface Treatment</h3>
-                            <p>Cleaning, texturing, and hardening metal surfaces.</p>
+                            <p>Laser cleaning, texturing, and hardening of metal surfaces to replace chemical processes and extend tool life by 200–400%.</p>
                         </div>
                         
                     </div>
@@ -713,22 +752,22 @@
                         
                         <div class="benefit-item-flat">
                             <h3>Non-Contact Process</h3>
-                            <p>No tool wear or contact forces for delicate materials and precision parts.</p>
+                            <p>Zero tool wear and no contact forces—process delicate 0.05 mm foils and hardened steel on the same system without tooling changes.</p>
                         </div>
                         
                         <div class="benefit-item-flat">
                             <h3>Speed</h3>
-                            <p>High processing speeds for production applications.</p>
+                            <p>Processing speeds from 100 mm/s for precision welding up to 8 m/s for galvo marking and scanning applications.</p>
                         </div>
                         
                         <div class="benefit-item-flat">
                             <h3>Precision</h3>
-                            <p>Micron-level accuracy for fine features and tight tolerances.</p>
+                            <p>Spot sizes down to 20 µm and positional accuracy of ±10 µm for micro-machining and fine feature cutting.</p>
                         </div>
                         
                         <div class="benefit-item-flat">
                             <h3>Flexibility</h3>
-                            <p>Program changes for different products without tooling changes.</p>
+                            <p>Switch between cutting, welding, and marking programs in seconds—no mechanical tooling changes, just recipe selection at the HMI.</p>
                         </div>
                         
                     </div>
