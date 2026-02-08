@@ -1,5 +1,5 @@
 ---
-title: Robotic Screwdriving | Automated Fastening Systems | AMD Machines
+title: Robotic Screwdriving | Fastening Automation
 description: "Automated screwdriving systems with torque-angle monitoring, multi-spindle heads, and full traceability. 40-60% faster cycle times with zero missed fasteners."
 keywords: robotic screwdriving, automated fastening systems, torque controlled screwdriving, multi-spindle screwdriving, screw feeding automation, fastening traceability, automated screw insertion
 template: solution.html
