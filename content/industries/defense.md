@@ -1,5 +1,5 @@
 ---
-title: Defense Industry Automation | Military Manufacturing | AMD Machines
+title: Defense Industry Automation | Military Manufacturing
 description: "ITAR-compliant defense manufacturing automation for munitions assembly, armored vehicle production, military electronics, and weapons systems with full MIL-SPEC traceability."
 keywords: defense manufacturing automation, military equipment automation, munitions assembly automation, ITAR compliant automation, defense contractor automation, military vehicle manufacturing, MIL-SPEC automation systems
 template: industry.html

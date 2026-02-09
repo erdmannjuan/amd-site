@@ -1,5 +1,5 @@
 ---
-title: Automation Training Services | Robot & PLC Training | AMD Machines
+title: Automation Training Services | Robot & PLC Training
 description: "Hands-on automation training for FANUC, ABB, KUKA, and Yaskawa robots plus PLC and vision systems. Expert-led programs from engineers with 2,500+ systems delivered."
 keywords: automation training, robot training, PLC training, FANUC training, ABB training, industrial robot programming course, maintenance training
 template: page.html

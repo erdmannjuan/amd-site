@@ -1,5 +1,5 @@
 ---
-title: Contact Us | Request a Free Automation Quote | AMD Machines
+title: Contact Us | Request a Free Automation Quote
 description: Request a free quote for custom automation. Contact AMD Machines to discuss robotic cells, welding, or assembly projects.
 keywords: automation quote request, contact automation company, custom machine quote, automation consultation, robotic cell quote, manufacturing automation inquiry
 template: contact.html

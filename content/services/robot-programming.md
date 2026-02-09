@@ -1,5 +1,5 @@
 ---
-title: Robot Programming Services | Online & Offline Programming | AMD Machines
+title: Robot Programming Services | Online & Offline Programming
 description: "Expert robot programming for FANUC, ABB, KUKA, and Yaskawa. Online teach pendant, offline OLP, and path optimization services from engineers with 2,500+ systems delivered."
 keywords: robot programming, offline robot programming, FANUC programming, ABB RAPID programming, teach pendant programming, robot path optimization, robot simulation
 template: page.html

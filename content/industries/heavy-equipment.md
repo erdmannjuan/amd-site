@@ -1,5 +1,5 @@
 ---
-title: Heavy Equipment Manufacturing Automation | AMD Machines
+title: Heavy Equipment Manufacturing Automation
 description: "Heavy equipment automation for construction, agriculture, and mining OEMs. Large-scale robotic welding, high-payload material handling, and structural assembly systems."
 keywords: heavy equipment manufacturing automation, construction equipment automation, agricultural equipment welding, mining equipment assembly, large component robotic welding, high-payload material handling, heavy fabrication automation
 template: industry.html

@@ -1,5 +1,5 @@
 ---
-title: Thermal Joining Systems | Ultrasonic & Hot Plate Welding | AMD Machines
+title: Thermal Joining Systems | Ultrasonic & Hot Plate Welding
 description: "Custom thermal joining systems: ultrasonic, hot plate, vibration & spin welding automation. Sub-second cycles, hermetic seals, zero consumables."
 keywords: ultrasonic welding automation, hot plate welding systems, vibration welding machine, spin welding equipment, plastic welding automation, thermal joining systems, ultrasonic plastic welder
 template: solution.html

@@ -1,5 +1,5 @@
 ---
-title: Appliance Manufacturing Automation | AMD Machines
+title: Appliance Manufacturing Automation
 description: "Appliance automation for refrigerators, washers, dryers, and HVAC. Assembly lines, robotic welding, leak testing, and packaging systems. 30+ years, 2,500+ machines delivered."
 keywords: appliance manufacturing automation, refrigerator assembly automation, washer dryer production line, HVAC manufacturing automation, white goods automation, appliance leak testing, appliance robotic welding
 template: industry.html

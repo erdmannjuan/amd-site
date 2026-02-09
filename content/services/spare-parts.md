@@ -1,5 +1,5 @@
 ---
-title: Automation Spare Parts | OEM Robot Parts & Components | AMD Machines
+title: Automation Spare Parts | OEM Robot Parts & Components
 description: "OEM automation spare parts for FANUC, ABB, KUKA & Yaskawa robots. Same-day shipping on servo motors, PLCs, drives & EOAT. 30+ years of parts expertise."
 keywords: automation spare parts, robot spare parts, FANUC spare parts, servo motor replacement, PLC spare parts, industrial robot components, end of arm tooling parts
 template: page.html

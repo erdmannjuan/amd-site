@@ -1,5 +1,5 @@
 ---
-title: Robotic Palletizing | Automated Case Packing | AMD Machines
+title: Robotic Palletizing | Automated Case Packing
 description: "Robotic palletizing systems for high-speed end-of-line automation. FANUC, ABB, and KUKA palletizing robots with 10–60 cases/min throughput and 99.8% uptime."
 keywords: robotic palletizing, automated palletizing systems, depalletizing automation, case packing robots, layer palletizing, mixed SKU palletizing, end of line automation
 template: solution.html

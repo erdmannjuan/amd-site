@@ -1,5 +1,5 @@
 ---
-title: Automation Upgrades & Retrofits | Robot Refurbishment | AMD Machines
+title: Automation Upgrades & Retrofits | Robot Refurbishment
 description: "Expert automation upgrades and retrofits: robot refurbishment, PLC migration, control system modernization, and safety upgrades to extend equipment life 10+ years."
 keywords: automation upgrades, robot retrofit, robot refurbishment, control system upgrade, PLC migration, safety system upgrade, production line modernization
 template: page.html

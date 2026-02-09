@@ -1,5 +1,5 @@
 ---
-title: Automation Consulting Services | Manufacturing Assessment | AMD Machines
+title: Automation Consulting Services | Manufacturing Assessment
 description: "Automation consulting from engineers who've built 2,500+ systems. Feasibility studies, ROI analysis, technology selection, and automation roadmaps that actually work."
 keywords: automation consulting, manufacturing consulting, feasibility study, ROI analysis, automation assessment, technology selection, automation roadmap
 template: page.html

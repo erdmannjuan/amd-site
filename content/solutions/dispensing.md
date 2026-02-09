@@ -1,5 +1,5 @@
 ---
-title: Automated Dispensing Systems | Adhesive & Sealant Application | AMD Machines
+title: Automated Dispensing Systems | Adhesive & Sealant Application
 description: "Precision automated dispensing systems for adhesives, sealants, and coatings. Volumetric and servo-driven dispensing with vision-guided path correction and real-time bead inspection."
 keywords: automated dispensing systems, adhesive dispensing automation, sealant application robot, precision dispensing equipment, two-component dispensing, robotic dispensing integration, form-in-place gasket automation
 template: solution.html

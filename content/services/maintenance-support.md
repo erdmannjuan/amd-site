@@ -1,5 +1,5 @@
 ---
-title: Automation Maintenance & Support | 24/7 Service | AMD Machines
+title: Automation Maintenance & Support | 24/7 Service
 description: "Industrial automation maintenance and 24/7 support services — preventive maintenance programs, emergency robot repair, remote diagnostics, and service contracts."
 keywords: automation maintenance, robot maintenance, preventive maintenance, emergency robot repair, automation support services, industrial service contracts, remote diagnostics
 template: page.html

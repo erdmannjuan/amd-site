@@ -1,5 +1,5 @@
 ---
-title: Robotic Machine Tending | CNC Automation | AMD Machines
+title: Robotic Machine Tending | CNC Automation
 description: "Robotic machine tending systems for CNC mills, lathes, presses, and injection molding. Lights-out automation with FANUC and ABB robots for 24/7 unattended production."
 keywords: robotic machine tending, CNC automation, automated machine loading, robot machine tending, unattended machining, CNC robot cell, press tending automation
 template: solution.html

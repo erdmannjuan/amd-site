@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy | AMD Machines
+title: Privacy Policy
 description: AMD Machines's privacy policy explaining how we collect, use, and protect your information.
 keywords: privacy policy, data protection, cookies, analytics
 template: page.html

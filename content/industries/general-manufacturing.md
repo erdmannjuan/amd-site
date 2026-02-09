@@ -1,5 +1,5 @@
 ---
-title: General Manufacturing Automation | Custom Solutions | AMD Machines
+title: General Manufacturing Automation | Custom Solutions
 description: "Custom automation for general manufacturing: robotic cells, assembly systems, vision inspection, and material handling. 2,500+ systems across every manufacturing sector."
 keywords: general manufacturing automation, custom manufacturing automation, industrial automation systems, production automation, factory automation, custom machine builder, special purpose machinery
 template: industry.html

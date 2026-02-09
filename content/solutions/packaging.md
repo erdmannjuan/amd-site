@@ -1,5 +1,5 @@
 ---
-title: Automated Packaging Systems | Cartoning & Case Packing | AMD Machines
+title: Automated Packaging Systems | Cartoning & Case Packing
 description: "Custom automated packaging systems for cartoning, case packing, wrapping, and end-of-line integration. Robotic pick-and-place, vision-guided loading, and rapid changeover for high-mix production."
 keywords: automated packaging systems, robotic case packing, cartoning automation, end of line packaging, vision-guided packaging, high-speed case erecting, automated shrink wrapping
 template: solution.html

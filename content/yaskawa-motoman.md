@@ -1,5 +1,5 @@
 ---
-title: "Yaskawa Motoman Authorized Integrator | AMD Machines"
+title: "Yaskawa Motoman Authorized Integrator"
 description: "AMD Machines is an authorized Yaskawa Motoman integrator delivering custom robotic automation solutions for manufacturing operations in Mexico."
 keywords: "Yaskawa Motoman, authorized integrator, robot integration Mexico, automation Mexico, robotic welding, industrial robots, Motoman robots"
 template: page.html

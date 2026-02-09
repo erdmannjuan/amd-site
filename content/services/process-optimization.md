@@ -1,5 +1,5 @@
 ---
-title: Process Optimization Services | Manufacturing Efficiency | AMD Machines
+title: Process Optimization Services | Manufacturing Efficiency
 description: "Manufacturing process optimization services that deliver 15-40% cycle time reductions and measurable OEE gains. Data-driven analysis from engineers who've optimized 2,500+ systems."
 keywords: process optimization, manufacturing optimization, cycle time reduction, OEE improvement, lean manufacturing, production efficiency, throughput improvement
 template: page.html

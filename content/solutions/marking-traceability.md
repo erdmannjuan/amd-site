@@ -1,5 +1,5 @@
 ---
-title: Marking & Traceability Systems | Laser Marking & Barcodes | AMD Machines
+title: Marking & Traceability Systems | Laser Marking & Barcodes
 description: "Automated marking and traceability systems with laser marking, dot peen, and barcode verification. Full part genealogy, UDI compliance, and MES integration for automotive, medical, and aerospace."
 keywords: laser marking systems, industrial traceability, part serialization automation, dot peen marking, barcode verification, UDI compliance marking, data matrix marking
 template: solution.html

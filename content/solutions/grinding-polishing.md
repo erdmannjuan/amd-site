@@ -1,5 +1,5 @@
 ---
-title: Automated Grinding & Polishing | Surface Finishing Automation | AMD Machines
+title: Automated Grinding & Polishing | Surface Finishing Automation
 description: "Custom robotic grinding and polishing systems with force-controlled finishing. Achieve Ra 0.05μm mirror finishes on metal, composite, and plastic parts."
 keywords: automated grinding systems, robotic polishing, surface finishing automation, force-controlled grinding, CNC grinding cells, metal polishing robots, automated surface finishing
 template: solution.html

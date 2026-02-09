@@ -1,5 +1,5 @@
 ---
-title: Pharmaceutical Manufacturing Automation | AMD Machines
+title: Pharmaceutical Manufacturing Automation
 description: "Pharmaceutical automation systems for drug packaging, clean room assembly, serialization, and FDA-validated manufacturing lines. 30+ years of pharma expertise."
 keywords: pharmaceutical automation, drug packaging automation, clean room automation, pharma manufacturing, FDA validated automation, serialization systems, pharmaceutical robotics
 template: industry.html

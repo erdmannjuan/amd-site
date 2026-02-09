@@ -1,5 +1,5 @@
 ---
-title: Machine Vision Systems | Industrial Vision Inspection | AMD Machines
+title: Machine Vision Systems | Industrial Vision Inspection
 description: "Industrial machine vision systems for automated inspection, robot guidance, and precision measurement. Cognex, Keyence, and AI-powered defect detection with 99.9% accuracy."
 keywords: machine vision systems, industrial vision inspection, vision guided robotics, quality inspection automation, defect detection systems, 2D 3D vision inspection, automated optical inspection
 template: solution.html

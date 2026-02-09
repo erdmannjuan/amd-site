@@ -1,5 +1,5 @@
 ---
-title: Laser Processing Systems | Cutting, Welding, Marking | AMD Machines
+title: Laser Processing Systems | Cutting, Welding, Marking
 description: "Custom laser processing systems for cutting, welding, marking, and surface treatment. Fiber, CO2, and UV laser integration with FANUC robots and precision gantries."
 keywords: laser cutting automation, laser welding systems, laser marking industrial, fiber laser integration, robotic laser cell, laser surface treatment, automated laser processing
 template: solution.html

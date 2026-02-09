@@ -1,5 +1,5 @@
 ---
-title: Automated Deburring Systems | Edge Finishing Automation | AMD Machines
+title: Automated Deburring Systems | Edge Finishing Automation
 description: "Automated robotic deburring systems with force-controlled finishing for machined, cast, and stamped parts. 30+ years building turnkey deburring cells."
 keywords: automated deburring, robotic deburring, edge finishing automation, burr removal systems, force-controlled deburring, CNC deburring cell, flash removal automation
 template: solution.html
