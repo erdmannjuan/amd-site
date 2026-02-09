@@ -184,6 +184,10 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /amd/ / 301
 /gallery/ /case-studies/ 301
 /service-region/ /about/ 301
+/food-beverage/ /industries/food-beverage/ 301
+/service-and-support-region/ /about/ 301
+/amd-celebrates-25-years-of-having-passion-for-engineering/ /about/ 301
+/solutions/deburring/ /solutions/ 301
 
 # --- Dynamic redirects (use :placeholder or :splat, separate 100-rule limit) ---
 
