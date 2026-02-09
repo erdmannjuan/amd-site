@@ -6075,10 +6075,15 @@ button:disabled {
 
 .content-main-flat .prose a {
     color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 48, 135, 0.35);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
 }
 
 .content-main-flat .prose a:hover {
     text-decoration: underline;
+    text-decoration-color: #003087;
 }
 
 /* Features Flat */
@@ -11249,17 +11254,6 @@ button:disabled {
     margin: 0;
 }
 
-/* Prose inline link styling */
-.prose a:not(.btn):not(.cta) {
-    text-decoration: underline !important;
-    text-decoration-color: rgba(0, 48, 135, 0.35);
-    text-underline-offset: 2px;
-    transition: text-decoration-color 0.2s ease;
-}
-
-.prose a:not(.btn):not(.cta):hover {
-    text-decoration-color: #003087;
-}
 
 /* Mexico Responsive */
 @media (max-width: 1100px) {
