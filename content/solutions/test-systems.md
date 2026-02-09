@@ -1,6 +1,6 @@
 ---
-title: Leak Detection & Test Systems | Industrial Automation Integrator
-description: "Custom leak detection and end-of-line test systems with <1 PPM escape rates. Helium, pressure decay, mass flow, and functional test solutions for automotive, medical, and industrial manufacturers."
+title: Leak Detection & Test Systems
+description: "Custom-engineered leak detection and end-of-line test systems achieving <1 PPM escape rates. Pressure decay, helium, mass flow, and functional testing solutions."
 keywords: leak detection systems, end-of-line test systems, pressure decay testing, helium leak testing, automated functional testing, industrial test equipment, EOL test automation
 template: solution.html
 short_title: Test Systems
