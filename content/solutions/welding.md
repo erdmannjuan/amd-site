@@ -1,6 +1,6 @@
 ---
-title: Robotic Welding Systems | MIG, TIG, Spot & Laser Welding Automation
-description: Custom robotic welding systems from AMD Machines. MIG, TIG, spot and laser welding automation with FANUC and ABB robots. 30+ years integrating production welding cells.
+title: Robotic Welding Systems & Automation
+description: Custom robotic welding systems for MIG, TIG, spot & laser applications. FANUC and ABB integration with 30+ years of production welding expertise.
 keywords: robotic welding systems, automated MIG welding, robotic TIG welding, spot welding automation, laser welding systems, welding robot integrator, arc welding automation
 template: solution.html
 short_title: Welding Automation
