@@ -175,7 +175,7 @@
                     <div class="case-study-intro">
                         <div class="client-info">
                             {% if page.client_logo %}
-                            <img src="{{ config.site.base_path }}/static/images/{{ page.client_logo }}" alt="{{ page.client }}" class="client-logo">
+                            <img src="{{ config.site.base_path }}/static/images/{{ page.client_logo }}" alt="{{ page.client }}" class="client-logo" width="200" height="80" loading="lazy">
                             {% endif %}
                             <div class="client-details">
                                 <span class="client-label">Client</span>
@@ -289,7 +289,7 @@
                     <div class="case-gallery">
                         {% for image in page.gallery %}
                         <div class="gallery-item">
-                            <img src="{{ config.site.base_path }}/static/images/{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+                            <img src="{{ config.site.base_path }}/static/images/{{ image.src }}" alt="{{ image.alt }}" loading="lazy" width="800" height="600">
                             {% if image.caption %}<span class="gallery-caption">{{ image.caption }}</span>{% endif %}
                         </div>
                         {% endfor %}
