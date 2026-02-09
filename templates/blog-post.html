@@ -13,12 +13,12 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "headline": "{{ page.title }}",
     "description": "{{ page.description or '' }}",
     "image": "{{ config.site.url }}/static/images/{{ page.image | default('og-default.png') }}",
     "datePublished": "{{ page.date }}",
-    "dateModified": "{{ page.date }}",
+    "dateModified": "{{ page.modified_date or page.date }}",
     "author": {
         "@type": "Organization",
         "name": "{{ config.site.name }}",
