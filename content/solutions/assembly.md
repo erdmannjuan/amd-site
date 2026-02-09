@@ -42,6 +42,16 @@ benefits:
 
 After more than three decades and over 2,500 machines shipped, we've learned something that most automation brochures won't tell you: the hardest part of assembly automation isn't picking the right robot or designing a clever fixture. It's understanding *your* product well enough to build a machine that runs lights-out on second shift without a single quality escape. That's what AMD Machines does—and it's all we've done since day one.
 
+## What Is Assembly Automation?
+
+Assembly automation is the use of purpose-built machinery to join, fasten, and verify multi-component products with minimal human intervention. Instead of operators performing repetitive hand operations at individual workstations, an automated assembly system moves parts through a sequence of precisely controlled stations that feed, orient, place, join, and inspect—every cycle, every time.
+
+The assembly equipment in a typical system spans a wide range of technologies. Rotary dial machines and linear transfer systems form the mechanical backbone, moving workpieces from station to station. Robotic assembly cells handle pick-and-place operations and adapt to part variation. Vibratory feeders and flex feeders orient loose components for reliable presentation. At each station, torque tools drive fasteners, servo presses execute interference fits, vision systems verify placement and detect defects, and press-fit stations monitor force-displacement curves in real time.
+
+What separates assembly automation from manual processes comes down to three things: cycle time, consistency, and traceability. A well-designed automated assembly system holds sub-second repeatability across millions of cycles, captures process data on every single unit, and eliminates the operator-to-operator variation that drives scrap and rework on manual lines. The result is higher throughput, lower cost-per-part, and a complete electronic record of how every product was built.
+
+For a deeper comparison of machine types and how to choose the right one, read our [automated assembly machines selection guide](/blog/automated-assembly-machines/). But not all assembly equipment is created equal—and that's where custom engineering makes the difference.
+
 ## Why Custom Assembly Automation Matters
 
 If you're still running a manual assembly line, you already know the pain. Operator turnover, inconsistent torque values, missed components, and the constant pressure to ship more parts with fewer people. Off-the-shelf assembly equipment can handle simple tasks, but the moment your product has tight tolerances, multiple variants, or regulatory traceability requirements, you need a purpose-built machine.
@@ -54,6 +64,27 @@ The numbers speak for themselves. Across our installed base, customers typically
 - **3–5x increase** in throughput per square foot
 - **Sub-1% scrap rates** on previously 3–5% manual lines
 - **Full payback** in 14–24 months depending on shift utilization
+
+## Manual vs. Automated Assembly
+
+Manual assembly still makes sense for low-volume, high-mix production where volumes don't justify dedicated tooling. But once you're running the same product at scale—tens of thousands of units per year or more—an automated assembly line delivers compounding advantages that manual processes simply can't match.
+
+Here's how the two approaches compare across the factors that matter most:
+
+| Factor | Manual Assembly | Automated Assembly |
+|--------|----------------|-------------------|
+| Cycle Time | 15–60 seconds per unit (operator-dependent) | 1.5–6 seconds per unit (machine-paced) |
+| Labor Cost | 4–8 operators per shift at $55K+/year each | 1 operator monitoring the assembly machine |
+| Quality / Defect Rate | 3–5% scrap typical | Sub-1% scrap with in-process verification |
+| Throughput | 60–200 units/hour per line | 600–2,400 units/hour depending on configuration |
+| Traceability | Paper-based or partial | 100% electronic records, every unit serialized |
+| Changeover Flexibility | Minutes (operator retraining) | Minutes to hours (recipe change or fixture swap) |
+| Upfront Cost | Low (workbenches, hand tools) | $400K–$1.5M depending on complexity |
+| 3-Year TCO | Higher (labor, scrap, quality costs compound) | Lower (40–60% labor savings offset capital) |
+
+The breakeven point depends on your volumes, shift pattern, and product complexity, but across our installed base, most customers recover their full investment in automated assembly within 14–24 months on a two-shift operation. Three-shift plants often see payback in under a year, making the total cost of ownership for an automated assembly line significantly lower than maintaining manual operations over the same period.
+
+Ready to see what automation could save your line? [Get a free quote](/contact/).
 
 ## Automated Assembly Line Configurations
 
@@ -217,3 +248,19 @@ We standardize on Allen-Bradley ControlLogix and CompactLogix PLCs for most appl
 ### How do you handle validation for regulated industries?
 
 For medical device and pharmaceutical customers, we provide full IQ/OQ/PQ documentation packages, GAMP 5 software documentation, 21 CFR Part 11-compliant data systems, and FAT/SAT protocols. Our project managers have led dozens of validated automation projects and understand what your quality team needs to see. Visit our [consulting services](/services/consulting/) page to learn more about our approach to regulated projects.
+
+### What types of assembly automation equipment does AMD Machines integrate?
+
+We integrate a broad range of assembly equipment including rotary dial and indexing machines, linear transfer systems, robotic assembly cells (FANUC, ABB, Yaskawa), vibratory and centrifugal feeders, servo press-fit stations, multi-spindle screwdrivers, precision dispensing systems, and machine vision inspection. Every system is custom-engineered around the customer's specific part geometry, tolerance requirements, and production rate targets—there is no off-the-shelf template.
+
+### How much does an automated assembly system cost?
+
+Custom assembly machines typically range from $250K to $2M+ depending on station count, cycle time requirements, level of inspection, and overall process complexity. Based on our installed base, ROI breakeven falls in the 14–24 month range for two-shift operations, driven primarily by 40–60% labor cost reductions and significant throughput gains. Three-shift plants often recover the investment even faster. Contact us for a budgetary estimate based on your specific requirements.
+
+### What is the difference between a rotary dial and linear transfer assembly line?
+
+Rotary dial machines offer a compact footprint with 4–16 stations arranged around a central indexing table. They excel at high-speed assembly of small parts with a fixed number of variants and can achieve cycle times under 2 seconds. Linear transfer systems are longer and modular, supporting 6–40+ stations with the ability to add, remove, or rearrange stations as your process evolves—making them the better choice for complex multi-step assemblies or when future expansion is planned. Both architectures achieve sub-1% defect rates when properly designed. The right choice depends on part size, station count, cycle time target, and available floor space. We build both and can recommend the best architecture for your application.
+
+### Can existing manual assembly processes be automated?
+
+Yes—converting manual assembly lines into automated systems is exactly what AMD Machines specializes in. With over 30 years of experience and more than 2,500 machines delivered, we have automated virtually every type of hand-assembly operation. Most projects begin with a process audit where our engineers evaluate the manual workflow station by station, identify the highest-impact automation opportunities, and design a phased implementation approach. Even partial automation—targeting just the bottleneck stations or the highest-scrap operations—can deliver significant ROI and serve as a foundation for future expansion.
