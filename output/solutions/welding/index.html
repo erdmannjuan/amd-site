@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the minimum volume to justify robotic welding?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "There\u0027s no magic number, but we generally see positive ROI starting around 5,000\u201310,000 parts per year for a single-part-family cell. Below that, the programming and setup costs are harder to justify unless quality requirements are extreme (aerospace, medical) or the welds are hazardous to perform manually."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How long does it take to switch between part numbers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For cells designed with quick-change fixturing, changeover is typically 5\u201315 minutes for a physical fixture swap. If the parts share a common fixture with adjustable nests, changeover is just a program selection on the pendant \u2014 under 30 seconds."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can a robotic cell handle parts with poor fit-up?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, within limits. Laser seam tracking compensates for gaps up to about 3mm and misalignment up to 2mm in real time. Beyond that, you need to fix the upstream forming or machining process. We always evaluate incoming part quality during the feasibility study because no amount of robot intelligence can overcome parts that simply don\u0027t fit together."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What about welding aluminum? Is it harder to automate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Aluminum welding is absolutely automatable, but it does require specific expertise. The feedability of aluminum wire is trickier (push-pull torch systems are often necessary), and the process window is narrower than steel. We\u0027ve built dozens of aluminum welding cells using pulsed MIG and CMT processes. The key is getting the power source, wire, gas, and torch setup right from the start."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle weld fume extraction?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every cell we build includes fume extraction engineered for the specific welding process and material. For MIG welding steel, we typically use overhead hood extraction or source capture (on-torch extraction). For stainless steel and exotic materials with hexavalent chromium concerns, source capture is mandatory per OSHA standards. We work with extraction system suppliers to ensure compliance with PEL requirements."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What maintenance does a robotic welding cell require?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Plan for daily tip and nozzle checks, weekly cable and liner inspection, monthly full PM including robot axis greasing and positioner checks, and annual calibration verification. We provide detailed PM schedules and maintenance support contracts tailored to your cell\u0027s duty cycle."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you provide operator and maintenance training?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every system we deliver includes comprehensive hands-on training at our facility and at your plant. Operators learn part loading, program selection, basic troubleshooting, and quality checks. Maintenance technicians get deeper training on robot jogging, parameter adjustment, torch maintenance, and diagnostic procedures. We\u0027ve found that investing in thorough training during startup prevents 80% of the support calls we\u0027d otherwise get in the first year."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

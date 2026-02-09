@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle the wide range of appliance sizes on one line?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Servo-driven fixture adjustment is the key. Our systems use servo-actuated clamps, lifts, and locators that reposition automatically based on the model code scanned at line entry. For robotic stations, we use tool-center-point offset tables so the same robot program adapts to different product geometries without separate programs for each model. We\u0027ve built lines handling product width ranges from 24\" to 48\" on the same system."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What robot brands do you use for appliance automation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We\u0027re a FANUC Authorized System Integrator and work extensively with ABB as well. For spot welding, FANUC R-2000iC and ABB IRB 6700 are our go-to platforms \u2014 both offer the reach, payload (80\u2013210 kg), and integrated weld timer interfaces that cabinet welding demands. For material handling and machine tending, we use FANUC M-20 and ABB IRB 2600 series for their speed and compact footprint. For palletizing, FANUC M-410iC and ABB IRB 660 handle the heavy payloads (up to 400 kg) that finished appliances require. We also integrate Yaskawa Motoman and KUKA robots when the application calls for it."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can you integrate with our existing MES and production scheduling?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. We use OPC-UA as our standard communication protocol, interfacing with SAP Manufacturing Execution, Plex, Rockwell Plex, DELMIA Apriso, and other MES platforms. The line receives work orders and model sequence from your scheduling system, and returns production counts, quality data, and OEE metrics in real-time. We define the data exchange requirements during the design phase and validate integration during factory acceptance testing."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you ensure weld quality on cabinet lines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every spot weld is monitored in real-time using mid-frequency inverter controllers that record primary current, voltage, force, and displacement. We set validated limits for each weld based on the material stackup and joint requirements, and the system flags any weld that falls outside the process window. Beyond individual weld monitoring, we implement electrode tip dress scheduling based on weld count and quality trending \u2014 the system automatically dresses or changes electrode caps before quality degrades rather than waiting for a failed weld to trigger maintenance."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the typical lead time for an appliance assembly line?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The scope drives the schedule. A standalone robotic welding or leak test cell is typically 4\u20136 months from order to installation. A multi-station final assembly line with MES integration, vision inspection, and end-of-line testing runs 8\u201314 months. We provide a detailed project schedule during the proposal phase and conduct formal design reviews at concept, preliminary, and critical design milestones. Factory acceptance testing at our facility is standard \u2014 we commission and debug the system in our shop before it ships to your plant."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you provide aftermarket support for appliance automation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We offer maintenance and support packages including preventive maintenance programs, spare parts stocking, remote diagnostics, and on-site service. For high-volume appliance lines where unplanned downtime costs $5,000\u2013$15,000 per hour in lost production, we recommend our proactive maintenance program that includes quarterly inspections, annual calibration verification, and 24/7 remote support access. We also provide training for your maintenance and operations teams."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle energy efficiency requirements for the automation equipment itself?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "This comes up more often now as appliance manufacturers pursue sustainability targets. We design systems with variable-frequency drives on all major motors, LED lighting, auto-sleep modes for idle stations, and efficient pneumatic circuits (minimizing air consumption). On a recent line, we reduced compressed air consumption by 40% versus the customer\u0027s existing equipment by implementing Festo energy-saving circuits and eliminating blow-off operations where vacuum gripping was viable. We also use Omron NX-series controllers with built-in energy monitoring so you can track consumption per unit produced."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

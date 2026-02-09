@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What dispense accuracy can I expect from an automated system?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Volumetric accuracy depends on the pump technology. Piston dispensers deliver \u00b11% or better for dot and shot applications. Progressive cavity pumps hold \u00b11\u20132% for continuous bead dispensing. Jetting valves achieve \u00b13\u20135% on individual dots but average out to better than \u00b12% over a full dispense pattern. These numbers assume proper material temperature control and regular maintenance\u2014a worn progressive cavity stator or a partially blocked needle will degrade accuracy quickly."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle materials that settle or separate?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Filled materials\u2014adhesives with conductive particles, thermal pastes with ceramic fillers\u2014require continuous agitation in the reservoir to prevent settling. We integrate stirred pressure tanks from Nordson EFD and Graco with variable-speed agitators, and we use recirculation loops on long fluid supply lines to keep filler particles evenly distributed. For two-component systems with different-density components, we agitate each reservoir independently."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What cycle times are realistic for dispensing operations?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It varies widely by application. A simple dot dispense takes 0.1\u20130.3 seconds. A 200 mm perimeter gasket bead at 150 mm/s takes about 1.8 seconds including approach and retract. A full PCB conformal coat covering 150 cm\u00b2 takes 5\u20138 seconds with a jetting valve. Potting operations depend on fill volume\u2014a 5 mL cavity fill typically takes 3\u20135 seconds. We optimize cycle time during the design phase and verify it during the factory acceptance test."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can the system handle UV-cure adhesives?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We integrate UV-cure dispensing regularly, especially for medical device and electronics applications. The dispensing system uses amber-tinted reservoirs, opaque tubing, and UV-blocking needle tips to prevent premature cure. We integrate Omron (formerly Loctite/Henkel) UV LED curing systems or Hamamatsu spot curing units downstream of the dispense station for controlled cure exposure. Cure verification uses a UV fluorescence check via machine vision."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How often do dispensing valves need maintenance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Maintenance intervals depend on the material and valve type. Needle valves dispensing clean, unfilled materials can run 1\u20132 million cycles between rebuilds. Progressive cavity pumps on abrasive or filled materials may need rotor/stator replacement every 3\u20136 months. Jetting valves require periodic seal replacement depending on material chemistry\u2014typically every 6\u201312 months. We include preventive maintenance schedules with every system and stock common wear parts for fast turnaround through our spare parts program."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What materials can be dispensed automatically?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nearly any pumpable material: structural epoxies, cyanoacrylates, UV-cure adhesives, RTV silicones, polyurethane sealants, anaerobic thread lockers, thermal greases, conformal coatings, lubricating oils and greases, solder paste, and potting compounds. The key parameter is viscosity\u2014we need to match the pump technology to the material\u0027s rheological properties. We test your specific material during the feasibility phase to confirm dispense performance before committing to a system design. Visit our consulting services page to learn more about our engineering process."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you integrate dispensing into larger assembly systems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "That\u0027s actually how most of our dispensing work happens. The majority of our dispensing stations are integrated into multi-station assembly systems\u2014rotary dials, linear transfer lines, and robotic cells\u2014where dispensing is one operation in a larger assembly sequence. Standalone dispensing cells are less common but we build those too, typically for operations like conformal coating or potting that require dedicated process chambers (vacuum, UV cure, or controlled atmosphere)."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What size robot do I need for my application?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Robot sizing depends on three factors: payload (the weight of your part plus the EOAT), reach (how far the robot needs to extend), and speed (cycle time requirements). As a rule of thumb, choose a robot with a payload rating at least 25% above your maximum load to maintain full speed capability. A FANUC M-20iD handles 25 kg at 1,831 mm reach. A FANUC M-710iC handles 50 kg at 2,050 mm. We always model the application in simulation software (ROBOGUIDE or RobotStudio) to verify reach and cycle time before committing to a robot model."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How long does it take to deploy a robotic cell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A straightforward single-robot cell\u2014machine tending, for example\u2014takes 12\u201316 weeks from purchase order to site acceptance. Multi-robot cells with custom tooling and vision integration typically take 16\u201324 weeks. Complex cells with validation requirements (medical, aerospace) may take 24\u201332 weeks. We provide detailed Gantt charts during the proposal phase."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can I add more robots or stations to the cell later?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, if we plan for it up front. We routinely design cells with expansion provisions\u2014pre-wired I/O, reserved PLC capacity, and floor space allocations for future robots or stations. Adding a robot to an existing cell that wasn\u0027t designed for expansion is possible but significantly more expensive, so it\u0027s always better to discuss your roadmap during the design phase."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What ongoing maintenance does a robotic cell require?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Robots themselves require minimal maintenance: grease replenishment every 3\u20135 years (depending on duty cycle), controller battery replacement annually, and periodic cable inspection. The more maintenance-intensive components are EOAT (gripper pads, vacuum cups, sensors) and part presentation systems (conveyors, feeders). We provide detailed PM schedules and stock critical spare parts for every cell we deliver."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the difference between a robotic cell and a cobot cell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Industrial robotic cells use full-speed robots (up to 2,000 mm/s) inside safety-guarded enclosures. Cobot cells use speed- and force-limited robots that can operate near humans without hard guarding. Industrial cells are faster, more precise, and handle heavier payloads. Cobot cells are simpler to deploy, take less floor space, and cost less\u2014but they\u0027re limited to roughly 20 kg payload and 1,000 mm/s speeds. We\u0027ll recommend the right approach based on your cycle time, payload, and floor plan requirements."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you provide simulation before building the cell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every multi-robot cell and every complex single-robot cell goes through offline simulation using FANUC ROBOGUIDE, ABB RobotStudio, or KUKA.Sim before we cut a single piece of steel. The simulation verifies reach, cycle time, collision avoidance, and multi-robot coordination. We share simulation videos with you during the design review phase so there are no surprises."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do robotic cells connect to our factory network?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All our cells ship with Ethernet connectivity and support EtherNet/IP, PROFINET, or EtherCAT depending on your facility standard. For production data, we provide OPC UA server capability and optional MQTT publishing. HMI data can be pushed to Ignition SCADA, FactoryTalk, or custom dashboards. We\u0027ve integrated cells with SAP, Plex, IQMS, and custom MES platforms using SQL, REST APIs, and flat-file exchanges. Our digital twins and simulation services can further enhance connectivity and operational visibility."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

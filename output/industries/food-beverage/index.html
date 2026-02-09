@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "Can standard industrial robots work in food environments?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Not without significant modification, and even then it\u0027s risky. Standard robots aren\u0027t designed for caustic chemical exposure or high-pressure washdown. FANUC, ABB, and Yaskawa all offer food-grade robot variants with IP67/IP69K ratings, NSF H1 lubricants, and smooth epoxy coatings that eliminate crevices. We always spec food-grade variants for any robot in the product zone \u2014 it costs 15-20% more upfront but avoids contamination risk and premature failure."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle the temperature extremes in our freezer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Freezer automation requires specially rated components \u2014 standard robots and sensors fail at -25\u00b0C. We use cold-storage-rated robots with integrated heaters, low-temperature lubricants, and condensation management systems. Cables and pneumatic components are rated for continuous sub-zero operation. We\u0027ve built palletizing cells that run 24/7 at -20\u00b0C for frozen food customers without issue."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What about allergen cross-contamination between production runs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "This is one of the most critical design considerations. We build systems with tool-less disassembly, COP-compatible removable components, and validated CIP cycles with ATP verification. The HMI enforces allergen changeover procedures \u2014 operators can\u0027t restart production until all verification steps are digitally signed off. We\u0027ve helped GFSI-certified facilities pass allergen audits consistently with this approach."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How quickly can we change between product sizes or formats?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "With servo-driven adjustments and recipe-based controls, most of our systems achieve full format changeover in 10-20 minutes without tools. The operator selects the new SKU on the HMI, and servo axes automatically reposition guides, pusher stops, and gripper widths. Vision systems recalibrate to the new product parameters automatically."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What kind of data do your systems provide for traceability?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every system we build logs production data \u2014 units produced, reject counts and images, inspection results, changeover times, CIP cycle records, and operator actions \u2014 all timestamped and tied to lot/batch numbers. This data integrates with your MES, ERP, or quality management system via OPC-UA, MQTT, or direct database connections. When a customer or auditor needs trace data, you\u0027ve got it."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you work with our existing equipment, or is it a full rip-and-replace?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We integrate with existing lines all the time. Most food manufacturers can\u0027t afford to shut down a line for months. We design systems that tie into existing conveyors, fillers, and packaging machines \u2014 adding robotic cells, vision inspection, and palletizing while minimizing downtime. A typical end-of-line retrofit installs over a planned shutdown weekend with commissioning during the following week."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the typical lifespan of food-grade automation equipment?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "With proper maintenance and regular sanitation, food-grade automation systems last 15-20 years. Robots from FANUC and ABB routinely exceed 80,000 operating hours. We design for serviceability \u2014 components that wear (belts, grippers, sensors) are accessible and replaceable without major disassembly. Our maintenance and support programs help ensure systems run at peak performance throughout their lifespan."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

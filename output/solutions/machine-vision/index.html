@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the difference between a smart camera and a PC-based vision system?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Smart cameras like the Cognex In-Sight 3800 combine the camera, processor, and software in a single IP67-rated package\u2014no separate PC required. They\u0027re ideal for single-point inspections with up to moderate complexity. PC-based systems using Cognex VisionPro or Keyence XG-X software handle multi-camera setups, higher resolution, AI processing, and complex measurement routines. We\u0027ll recommend the right architecture based on your inspection requirements and budget."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How accurate are vision measurement systems compared to CMMs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vision systems typically achieve \u00b10.005\u20130.025 mm repeatability depending on resolution, optics, and calibration quality. That\u0027s not CMM-level accuracy (\u00b10.001\u20130.003 mm), but it\u0027s more than sufficient for inline process control. The advantage is speed: a vision measurement takes milliseconds, while a CMM probe takes seconds to minutes. We often use vision for 100% inline checking and reserve CMM for periodic correlation audits."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can vision systems handle mixed-model production?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Modern vision systems store multiple inspection programs (recipes) and switch between them automatically based on barcode scans, PLC recipe numbers, or even automatic part identification using pattern matching. We design multi-model systems that switch inspection programs in under 100 milliseconds with zero changeover downtime."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle lighting changes over time (LED aging, ambient light)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We use enclosed inspection stations with controlled lighting whenever possible to eliminate ambient light interference. For LED aging, we specify industrial-grade LED controllers with regulated current output and rated lifetimes of 50,000+ hours. We also build automatic exposure and gain adjustment into our vision programs so the system self-corrects for gradual intensity changes."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What data do vision systems output, and can we integrate with our MES?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vision systems output pass/fail results, measurement values, defect classifications, and inspection images. We integrate this data with MES and SCADA platforms via OPC UA, Ethernet/IP, PROFINET, MQTT, or direct database writes (SQL Server, Oracle, PostgreSQL). Every AMD vision system includes a web-based results dashboard for real-time monitoring and historical trending. For medical and automotive traceability requirements, we archive every inspection image linked to the part\u0027s serial number or lot code."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do we need special training to operate and maintain the system?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We provide comprehensive operator and maintenance training with every vision system. Operators learn to monitor the system, clear faults, and run basic diagnostics. Maintenance staff learn to clean optics, replace lighting, recalibrate cameras, and adjust inspection parameters. For customers who want to develop their own inspection programs, we offer advanced training courses on Cognex and Keyence platforms."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What happens when the vision system can\u0027t make a decision?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We design every system with a clear disposition strategy for marginal parts. Options include automatic re-inspection (rotate the part and look again), routing to a manual review station with the captured image displayed for an operator decision, or automatic rejection with the image flagged for engineering review. The key is that no uncertain part ever reaches the \"good\" output without a definitive pass."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

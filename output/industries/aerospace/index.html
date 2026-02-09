@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "Do your systems meet AS9100D requirements?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our systems are designed to support AS9100D compliance at every level. Process control, calibration management, data collection, and documentation are built into the system architecture from the concept phase. We provide complete validation documentation packages including IQ/OQ/PQ protocols, calibration certificates, and user requirement specifications. While the AS9100 certification belongs to your organization, our equipment is designed to make your compliance straightforward."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can you integrate with our existing MES and quality systems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We use OPC-UA as our standard communication protocol, which interfaces with virtually every modern MES platform \u2014 Solumina, SAP Manufacturing Execution, Plex, DELMIA Apriso, and others. For legacy systems, we support OPC-DA, SQL database direct write, and custom API interfaces. We define the data exchange specification during the design phase and validate it during factory acceptance testing."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle ITAR-controlled programs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We understand the requirements of ITAR (International Traffic in Arms Regulations) and work with our customers to implement appropriate controls. This includes restricted network access for ITAR systems (air-gapped or dedicated VLANs), controlled access to PLC programs and HMI recipes, and documentation handling per your facility\u0027s Technology Control Plan. All AMD Machines employees working on ITAR programs are U.S. persons as defined by the regulation."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What robot brands do you integrate for aerospace?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We\u0027re a FANUC Authorized System Integrator and also integrate ABB, KUKA, and Yaskawa robots depending on the application requirements. For aerospace NDT scanning, FANUC\u0027s LR Mate and M-20 series are our most common platforms due to their path accuracy (\u00b10.02 mm repeatability). For larger structural assembly applications, we use ABB IRB 6700 and FANUC M-900 series robots with secondary encoders for enhanced path accuracy. The robot selection is always driven by the application requirements \u2014 reach, payload, accuracy, and clean-room compatibility."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How long do your aerospace systems last?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We design for 20-30 year service life, which matches typical aerospace production program durations. That means specifying industrial-grade components with long availability windows, maintaining spare parts lists with recommended stocking levels, and designing the system architecture so individual components can be replaced without redesigning the entire system. We also provide obsolescence management plans that identify long-lead and end-of-life components and recommend technology refresh schedules."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the typical lead time for an aerospace automation system?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "System complexity drives the timeline. A standalone test cell might be 6\u20138 months from order to acceptance. A multi-station assembly line with full MES integration and validation documentation is typically 10\u201314 months. We provide detailed project schedules during the proposal phase and conduct weekly progress reviews throughout the build. Factory acceptance testing (FAT) is always conducted at our facility before we ship to your site, so we catch issues in our shop \u2014 not on your production floor."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you provide validation documentation for aerospace systems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every aerospace system ships with a comprehensive documentation package: design specifications, electrical schematics, pneumatic/hydraulic diagrams, PLC source code, HMI project files, operator manuals, maintenance manuals, calibration procedures, and spare parts lists. For systems requiring formal validation, we develop and execute IQ (Installation Qualification), OQ (Operational Qualification), and PQ (Performance Qualification) protocols tailored to your quality system requirements. The documentation package is reviewed and approved by your quality team during the design review process."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

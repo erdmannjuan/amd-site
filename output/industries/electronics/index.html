@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What level of ESD protection do your systems provide?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All our electronics automation is designed to ANSI/ESD S20.20 standards. Every material in the board handling path is specified for surface resistivity in the static dissipative range (10\u2075-10\u00b9\u00b9 ohms). Active ionization is used wherever triboelectric charging is unavoidable, and continuous ground monitoring verifies all grounding paths in real time. We provide ESD compliance documentation as part of every system delivery."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can you automate testing for boards with both digital and analog circuits?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Our test systems handle mixed-signal boards routinely. We use NI PXI hardware and Keysight instruments that can verify digital logic, measure analog voltages and currents, test ADC/DAC linearity, and run communication protocol verification \u2014 all in a single automated test sequence. The key is fixture design that provides clean signal paths and adequate shielding between sensitive analog measurements and high-speed digital signals."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle product changeovers on multi-variant lines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Recipe-driven automation. The operator scans a work order or product barcode, and every station on the line automatically adjusts \u2014 fixture positions, test parameters, coating patterns, screw sequences, label content. No manual adjustments, no tool changes. Changeover times are typically under 60 seconds. For more complex changeovers involving different fixture plates, we use quick-change systems with RFID-verified tooling."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What throughput can I expect from an automated test system?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It depends on test complexity, but typical numbers: ICT runs 15-30 seconds per board, functional test runs 30-90 seconds depending on the number of test points, and RF test runs 20-45 seconds depending on protocols tested. With dual-fixture systems (one board testing while the next loads), we achieve effective throughput of 80-200 boards per hour for most applications."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you integrate with our existing MES and traceability systems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We integrate with all major MES platforms including Aegis FactoryLogix, iTAC, Siemens Opcenter, and custom databases. We support standard interfaces (OPC-UA, MQTT, REST APIs, SQL) and work with your IT team during the project to ensure clean data flow from every station to your central traceability database."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can you automate conformal coating for selective coverage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely \u2014 and selective coating is really the only practical approach for most electronics. Our Nordson Asymtek and PVA systems apply coating in precise patterns generated from your PCB CAD data, with \u00b10.25mm path accuracy. Connectors, test points, and thermal interfaces stay clear while everything else gets full coverage. Inline UV fluorescence inspection verifies every board."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What about automating prototype or low-volume production?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For production runs under 500 units, we design flexible robotic cells using FANUC CRX collaborative robots with quick-change tooling. These cells can handle multiple product types with simple changeovers, making automation viable even at volumes where dedicated lines aren\u0027t justified. Test fixtures use modular designs that can be reconfigured for new products without starting from scratch."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

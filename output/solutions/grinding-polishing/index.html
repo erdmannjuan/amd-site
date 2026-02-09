@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What surface finishes can automated systems achieve?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Robotic grinding and polishing can achieve finishes from rough grinding (Ra 6.3\u03bcm) all the way to optical mirror polish (Ra 0.01\u03bcm). The most common targets we see are Ra 0.4-0.8\u03bcm for functional surfaces and Ra 0.05-0.1\u03bcm for cosmetic applications. The finish you can achieve depends on the base material, starting condition, and number of processing stages."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How does force control prevent damage to parts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Force/torque sensors measure contact forces at 1,000+ Hz and feed back to the robot controller, which adjusts position in real time. If the robot encounters an unexpected high spot, it backs off within milliseconds to maintain the target force. Force limits act as a hard safety stop \u2014 if contact force exceeds the programmed maximum, the robot retracts immediately. This prevents the gouging and burn-through that plague manual grinding."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can robots handle parts with complex freeform surfaces?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes \u2014 that\u0027s actually where robots shine compared to fixed automation. A 6-axis robot can approach a surface from any angle, and offline programming tools generate paths directly from CAD data. For parts with tight tolerances on complex geometry \u2014 think turbine blades, implants, or automotive styling surfaces \u2014 we add 3D vision or touch sensing to adapt the path to each individual part."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What about dust and safety compliance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every grinding and polishing cell we build includes OSHA and NFPA-compliant dust extraction. For combustible metal dusts (aluminum, magnesium, titanium), we design to NFPA 652 and 484 standards with spark detection, suppression, and explosion venting. The robot enclosure contains dust at the source, and properly sized collectors maintain negative pressure inside the cell."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How long does it take to change over between part types?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For parts in the same family with similar geometry, changeover typically involves loading a new program and swapping fixtures \u2014 15-30 minutes. For completely different parts, you may need different abrasive media and polishing tools, which can extend changeover to 1-2 hours. We design quick-change fixtures and tool storage to minimize changeover time for high-mix operations."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What robots are best suited for grinding and polishing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For grinding with significant contact forces (\u003e50N), you need a rigid robot with at least 50kg payload capacity \u2014 FANUC M-710iC/50, ABB IRB 6700, or KUKA KR 60 are good choices. For lighter polishing work (\u003c20N), smaller robots like the FANUC M-20iD or Yaskawa GP25 offer faster acceleration and better path accuracy. For collaborative applications where operators work near the cell, FANUC CRX-25iA and ABB GoFa CRB 15000 provide force control with built-in safety features."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the typical ROI timeline for a grinding/polishing cell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most of our customers see payback in 10-18 months based on direct labor savings. When you factor in reduced scrap, improved quality consistency, lower worker\u0027s compensation costs, and increased throughput, the effective payback is often under 12 months. The strongest ROI cases are high-value parts (medical, aerospace) where scrap reduction delivers outsized savings."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

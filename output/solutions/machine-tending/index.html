@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What robots do you use for machine tending?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We primarily integrate FANUC robots for machine tending\u2014the M-10iD, M-20iD, and LR Mate 200iD are our workhorse models covering payloads from 7 kg to 25 kg. For heavier parts (castings, forgings), we use FANUC M-710iC/50 (50 kg payload) or ABB IRB 4600 robots. For shops that want collaborative operation without full safety fencing, we integrate FANUC CRX-10iA/L or CRX-25iA cobots with area scanners. Robot selection depends on part weight, reach requirements, and cycle time targets\u2014we model it all in simulation before committing to hardware."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How long does it take to program a new part number?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For a standard CNC tending operation with vise fixturing, teaching a new part takes 1\u20132 hours, including gripper setup, pick/place positions, and machine interface verification. If you\u0027re using offline programming (we offer FANUC ROBOGUIDE setup as part of our robot programming services), you can program parts without taking the cell offline. For high-mix shops, we create parametric programs where the operator enters part dimensions at the HMI and the robot calculates pick positions, place positions, and gripper jaw settings automatically."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can one robot tend different types of machines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We\u0027ve built cells where a single robot tends a CNC lathe, a CNC mill, and a parts washer in sequence\u2014the part starts as a rough turning, moves to the mill for secondary features, gets washed, and exits the cell as a finished part. The robot uses different grippers for each machine (raw blank vs. semi-finished vs. finished), swapping at an automatic tool changer. The key constraint is cycle time balance\u2014the robot needs enough time to service all machines without creating idle time on any one."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What about chip and coolant management in the cell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "This is one of the top three issues on every machine tending project. Chips accumulate on fixtures, in vises, and on the part itself. We address it at multiple levels: air blast nozzles in the robot path (2\u20133 seconds of directed air), programmable coolant wash stations for internal features, and chip confirmation sensors on fixtures that verify the seating surface is clean before the robot loads the next part. Inside the CNC, we spec high-pressure coolant (70+ bar) to break chips effectively and recommend programmable chip flush cycles between parts."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What safety standards apply to machine tending cells?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Machine tending cells must comply with ANSI/RIA 15.06 (industrial robot safety), ISO 10218-2 (robot system integration), and OSHA machine guarding requirements. We design every cell to Category 3 / Performance Level d (PLd) per ISO 13849 for safety-related control functions. Safeguarding options include hard fencing with interlocked access doors, light curtains for part load/unload openings, and area scanners for collaborative robot applications. Every cell ships with a risk assessment document per ISO 12100 and a safety system validation report."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you provide training for our operators and maintenance team?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every machine tending cell includes operator and maintenance training as part of the project scope. Operators learn cell startup/shutdown procedures, material staging, HMI operation, and basic fault recovery. Maintenance personnel receive training on robot jogging, backup/restore, gripper maintenance, and sensor replacement. We also offer advanced robot programming training for shops that want to teach new part numbers in-house. Our maintenance and support team provides ongoing technical support after installation."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the typical installation timeline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "From purchase order to production, a standard single-machine tending cell takes 16\u201320 weeks. Multi-machine cells and rail systems typically take 20\u201328 weeks. The timeline breaks down roughly as: detailed design (4\u20136 weeks), fabrication and component procurement (6\u201310 weeks), assembly and testing at our facility (3\u20134 weeks), installation and commissioning at your site (1\u20132 weeks), and production ramp-up support (1\u20132 weeks). We perform a full Factory Acceptance Test (FAT) at our facility before shipping\u2014you\u0027re welcome to witness the test and run your actual parts through the system before it leaves our building. Learn more about our engineering approach on our consulting services page."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

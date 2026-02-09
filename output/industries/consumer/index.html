@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "How fast can your assembly systems run?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It depends on the product complexity. For simple snap-fit assemblies (2-4 components), we routinely achieve 45-60 parts per minute on continuous-motion rotary platforms. For more complex assemblies requiring screwdriving, dispensing, or functional testing, typical rates are 4-10 parts per minute per station, with multiple stations running in parallel. We\u0027ll model your throughput requirements during the concept phase and design the system architecture \u2014 rotary, linear, or hybrid \u2014 to hit your rate target with margin."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can your systems handle both rigid and flexible products?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We have significant experience with flexible products \u2014 pouches, bags, tubes, blister packs \u2014 that require different handling approaches than rigid containers. Vacuum pick-and-place with FANUC SCARA robots for flat flexible items, mechanical grippers with compliant fingers for bags and pouches, and gravity-assisted feeding for tubes. The key is the end-of-arm tooling design, and we prototype and validate every gripper before committing to the production design."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What happens when we launch a new product or variant?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "If the new product falls within the physical envelope and process requirements of the existing system, it\u0027s a recipe addition \u2014 typically a few days of engineering time for recipe creation, vision programming, and validation runs. If the new product requires different tooling or handling, we design modular changeover kits that integrate with the existing system. We include provisions for future product variants in the initial system design, so adding products down the road is a planned activity, not a retrofit headache."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle product orientation and feeding?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Product feeding is often the hardest part of consumer products automation. We use a combination of approaches depending on the product: centrifugal bowl feeders for small components, linear vibratory feeders for oriented parts, vision-guided pick from bulk for random orientation, and magazine-style feeding for pre-oriented components. For products with challenging geometries \u2014 think oddly shaped bottles, flexible containers, or products with low centers of gravity \u2014 we prototype and test the feeding solution early in the design process, because a machine that runs beautifully once the product is in the fixture is useless if it can\u0027t reliably get the product into the fixture."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What OEE should we expect from your systems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We design for 85%+ OEE in steady-state operation, and many of our systems exceed 90% once the operators are trained and the recipes are dialed in. That breaks down to approximately 90%+ availability (uptime), 95%+ performance (speed efficiency), and 99%+ quality (first-pass yield). We include OEE tracking in our standard HMI package so you have real-time visibility into exactly where you\u0027re losing effectiveness \u2014 and the data to prioritize your continuous improvement efforts."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you integrate with our ERP and warehouse systems?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We use OPC-UA as our standard communication protocol for upstream (ERP/MES) and downstream (WMS) integration. Production orders flow into the system through the MES interface, and completed production data \u2014 quantities, quality results, lot traceability \u2014 flows back. For warehouse integration, we support automatic pallet label generation with SSCC codes, advance ship notice (ASN) data, and pallet build data for automated warehouse receiving. We\u0027ve integrated with SAP, Oracle, Plex, and Epicor systems, among others."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you support sanitary or washdown environments?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For consumer products that require sanitary or washdown-rated equipment \u2014 personal care, household chemicals, pet food, and similar products \u2014 we design systems using stainless steel construction (304 or 316L), IP65/IP67-rated components, sloped surfaces for drainage, and quick-disassembly features for cleaning access. We follow NFPA 79 and, where applicable, 3-A Sanitary Standards design principles. Our stainless steel fabrication capabilities are in-house, so we control quality on every weld and surface finish."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

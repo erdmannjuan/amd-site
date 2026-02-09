@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What robot brands do you program?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We program FANUC, ABB, KUKA, Yaskawa Motoman, Universal Robots, Kawasaki, and Epson. FANUC and ABB represent about 70% of our programming work, reflecting their market share in North American manufacturing. For less common brands like Staubli, Nachi, or Mitsubishi, we have experienced programmers available for most applications."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can you optimize programs written by another integrator?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, and we do this regularly. We treat it as a no-ego exercise \u2014 the goal is better performance, not criticism. We typically find 15-30% cycle time improvement on programs that weren\u0027t written by experienced optimization specialists. We document every change so your team understands what was modified and why."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How does offline programming accuracy compare to teach pendant programming?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "With a properly calibrated cell model, OLP programs typically achieve path accuracy within 1-3 mm before touchup. After on-robot calibration and touchup, final accuracy is identical to teach pendant programming. The advantage of OLP is speed and zero production downtime during development. For applications requiring sub-0.5 mm path accuracy (like laser processing), we always plan for on-robot touchup time."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you provide program documentation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every program we deliver includes commented source code, a motion point map with physical descriptions, I/O assignment tables, and a process parameter summary. For complex systems, we also provide a programmer\u0027s guide explaining the program architecture, customization points, and troubleshooting procedures. Documentation isn\u0027t optional \u2014 it\u0027s part of the deliverable."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can you train our team to program robots?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. We offer structured training programs from basic teach pendant operation through advanced offline programming and vision integration. Training can happen at your facility on your equipment or at our shop. We recommend hands-on training with the specific applications your team will be maintaining."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the typical timeline for a programming engagement?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It varies widely by scope. A single-robot cell optimization is typically 2-3 days on-site. A new multi-robot system with vision integration might require 3-4 weeks of programming including OLP development and on-site commissioning. We provide detailed timelines during the scoping phase so you can plan production accordingly."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do we get started?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Contact us with your robot brand, application type, and what you\u0027re trying to achieve. If you have existing programs or cell layouts, send those along \u2014 they help us scope the engagement accurately. Initial consultations and scoping calls are always free."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">

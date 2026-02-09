@@ -96,6 +96,82 @@
     </script>
     
 
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            
+            {
+                "@type": "Question",
+                "name": "What size components can your welding cells handle?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We\u0027ve built cells handling weldments from 50 kg to over 7,000 kg, with lengths up to 6 meters. Floor-track robots provide unlimited reach along the length axis, and headstock-tailstock positioners rated up to 15,000 lbs rotate the part for optimal weld position access. For truly oversized components, we design gantry-mounted robots that travel overhead. There\u0027s no practical upper limit on part size \u2014 the question is whether the production volume justifies the investment."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Which robot brands do you use for heavy equipment applications?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We\u0027re a FANUC Authorized System Integrator and FANUC is our primary platform. The Arc Mate 120iD is our workhorse for welding, and the M-900iB and M-2000iA series handle high-payload material handling and machine tending. We also integrate ABB robots (the IRB 6700 series for large-envelope welding) and KUKA (the KR Quantec and KR 1000 Titan for extreme payload applications). Yaskawa Motoman is another platform we work with, particularly their AR-series welding robots. Robot selection is always application-driven."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Can you automate welding on parts with significant fit-up variation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes \u2014 this is our specialty in heavy equipment. We use a combination of touch sensing, through-arc seam tracking, and laser seam finding to compensate for the \u00b13-5mm variation typical of plasma-cut and flame-cut fabrications. The robot finds the actual joint position before welding and adjusts the path in real-time during welding. We also provide data feedback to your fabrication shop \u2014 if the seam-tracking data shows a consistent offset on a particular part feature, that tells your plasma table needs recalibration or your fixture needs adjustment."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What welding processes do your systems support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "GMAW (MIG/MAG), FCAW (flux-cored), MCAW (metal-cored), tandem welding, and SAW (submerged arc). We integrate welding power sources from Lincoln Electric (Power Wave R450, S500), Fronius (TPS 500i, TPS 600i), and Miller (Auto-Axcess). Process selection depends on plate thickness, joint type, position, and cycle time requirements. Most heavy equipment structural welding uses either pulsed GMAW for thinner plate or dual-shield FCAW for heavy plate and multi-pass joints."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "How do you handle fixture changeover for multiple part variants?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We design fixture systems based on your product mix. For families with similar geometry (e.g., three boom sizes sharing the same basic shape), we use modular fixtures with adjustable locators and clamps that accommodate the range. For dissimilar parts, we use quick-change fixture plates on the positioner with Schunk VERO-S zero-point clamping \u2014 changeover takes 5-10 minutes. Each fixture carries an RFID tag that automatically loads the correct robot program, weld sequence, and quality parameters."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "Do you provide ongoing support after installation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every system includes commissioning support, operator training, and a warranty period. After that, we offer maintenance and support services including preventive maintenance contracts, remote diagnostics, spare parts supply, and 24/7 emergency support. We also offer training services to develop your internal robot programming and maintenance capability. For customers running multiple AMD cells, we provide dedicated support engineers who know your specific systems."
+                }
+            },
+            
+            {
+                "@type": "Question",
+                "name": "What\u0027s the floor space requirement for a typical heavy equipment welding cell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A dual-robot, dual-station welding cell for large weldments typically requires 15m x 8m (about 50\u0027 x 26\u0027) including the safety perimeter, operator load stations, and maintenance access. The exact footprint depends on part size, positioner configuration, and floor-track length. We provide 3D facility layouts during the proposal phase using RobotStudio (ABB) or ROBOGUIDE (FANUC) simulation, so you can verify the cell fits your available space before we finalize the design."
+                }
+            }
+            
+        ]
+    }
+    </script>
+    
+
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
