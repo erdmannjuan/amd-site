@@ -1,5 +1,5 @@
 ---
-title: Automated Assembly Line Systems & Equipment | AMD Machines
+title: Automated Assembly Line Systems & Equipment
 description: Custom automated assembly lines with rotary dial, linear transfer & robotic assembly. 40-60% labor savings for Tier 1 suppliers. Get a quote today.
 keywords: custom assembly lines, automated assembly systems, rotary dial assembly machines, linear transfer systems, robotic assembly cells, assembly automation integrator, turnkey assembly solutions
 template: solution.html

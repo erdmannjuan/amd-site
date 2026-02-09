@@ -1,5 +1,5 @@
 ---
-title: Robotic Cells for Manufacturing & Assembly | AMD Machines
+title: Robotic Cells for Manufacturing & Assembly
 description: Custom robotic cells for CNC machine tending, welding & assembly automation. FANUC, ABB & Yaskawa integration. 200-400% throughput gains. Free quote.
 keywords: custom robotic cells, robotic cell integration, FANUC robot integrator, ABB robotic cell, industrial robot cell design, turnkey robotic automation, robotic workcell engineering
 template: solution.html

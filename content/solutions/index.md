@@ -1,5 +1,5 @@
 ---
-title: Automated Assembly & Automation Solutions | AMD Machines
+title: Automated Assembly & Automation Solutions
 description: Automated assembly machines, robotic cells, welding & test systems. Custom-engineered automation solutions for manufacturing. Get a free quote today.
 keywords: industrial automation solutions, robotic cell integration, automated welding systems, end-of-line test equipment, automated assembly machines, machine vision systems
 template: solutions.html

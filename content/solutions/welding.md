@@ -1,5 +1,5 @@
 ---
-title: Welding Automation Systems & Equipment | AMD Machines
+title: Welding Automation Systems & Equipment
 description: Automated welding systems for MIG, TIG, spot & laser applications. FANUC & ABB robotic welding integration. 30+ years expertise. Free consultation.
 keywords: robotic welding systems, automated MIG welding, robotic TIG welding, spot welding automation, laser welding systems, welding robot integrator, arc welding automation
 template: solution.html

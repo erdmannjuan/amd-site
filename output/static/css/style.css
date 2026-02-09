@@ -6075,7 +6075,6 @@ button:disabled {
 
 .content-main-flat .prose a {
     color: var(--primary);
-    text-decoration: none;
 }
 
 .content-main-flat .prose a:hover {
@@ -11251,14 +11250,14 @@ button:disabled {
 }
 
 /* Prose inline link styling */
-.prose a {
-    text-decoration: underline;
+.prose a:not(.btn):not(.cta) {
+    text-decoration: underline !important;
     text-decoration-color: rgba(0, 48, 135, 0.35);
     text-underline-offset: 2px;
     transition: text-decoration-color 0.2s ease;
 }
 
-.prose a:hover {
+.prose a:not(.btn):not(.cta):hover {
     text-decoration-color: #003087;
 }
 
