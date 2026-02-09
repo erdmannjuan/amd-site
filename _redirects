@@ -169,7 +169,26 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /solutions/automated-test-equipment/ /solutions/test-systems/ 301
 /solutions/packaging-automation/ /solutions/packaging/ 301
 
+# Removed pages - wrong content (heavy equipment catalog)
+/products/ /solutions/ 301
+/products/cat-320-excavator/ /solutions/ 301
+
+# Missing pages - redirect to closest equivalent
+/careers/ /about/ 301
+/employment/ /about/ 301
+/employees/ /about/ 301
+/sample/ / 301
+/sample-landing-page/ / 301
+/saftronic/ / 301
+/vn1610/ / 301
+/amd/ / 301
+/gallery/ /case-studies/ 301
+/service-region/ /about/ 301
+
 # --- Dynamic redirects (use :placeholder or :splat, separate 100-rule limit) ---
+
+# Catch-all for any remaining /products/ URLs
+/products/:splat /solutions/ 301
 
 # Blog author pages and feeds
 /blog/author/:splat /blog/ 301
