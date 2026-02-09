@@ -1,6 +1,6 @@
 ---
-title: Material Handling Automation | Conveyors, Palletizers & Pick-and-Place
-description: "Automated material handling systems with conveyors, robotic palletizers, AGVs, and pick-and-place. Reduce labor costs 40-60% and boost throughput across your facility."
+title: Material Handling Automation
+description: "Custom conveyor, palletizing & pick-and-place systems. Cut labor costs 40-60% and boost throughput 30-75%. Proven ROI in 10-18 months."
 keywords: material handling automation, automated conveyor systems, robotic palletizing, pick and place robots, AGV AMR integration, automated part transfer, material flow optimization
 template: solution.html
 short_title: Material Handling
