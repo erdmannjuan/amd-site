@@ -11044,3 +11044,121 @@ button:disabled {
     background: var(--primary-light);
     color: var(--primary);
 }
+
+/* ============================
+   Mexico Page
+   ============================ */
+
+.mexico-hero {
+    padding: 3rem 0 2.5rem;
+    position: relative;
+}
+
+.mexico-hero-credit {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    color: rgba(255,255,255,0.35);
+    font-size: 0.6rem;
+    z-index: 1;
+}
+
+.mexico-contact-bar {
+    background: var(--dark-bg);
+    padding: 1rem 0;
+}
+
+.mexico-contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mexico-contact-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.mexico-content {
+    max-width: 900px;
+}
+
+.mexico-map {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.mexico-map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    display: block;
+}
+
+.mexico-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.mexico-solution-card {
+    display: block;
+    padding: 1.5rem;
+    background: var(--white);
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    border-radius: var(--radius-sm);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.mexico-solution-card:hover {
+    border-left-color: var(--accent-teal);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.mexico-solution-card h3 {
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.mexico-solution-card p {
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 1100px) {
+    .mexico-solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mexico-contact-buttons {
+        flex-direction: column;
+    }
+
+    .mexico-contact-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mexico-map iframe {
+        height: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mexico-solutions-grid {
+        grid-template-columns: 1fr;
+    }
+}

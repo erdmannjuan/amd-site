@@ -1,15 +1,10 @@
 ---
 title: "Automation & Robotics in Mexico"
-description: "AMD Machines operates three facilities in Querétaro, Mexico. 30+ years building custom automation, robotic cells, and welding systems for manufacturers across Mexico."
-keywords: automation Mexico, robotic systems Querétaro, AMD Machines Mexico, custom automation Mexico, industrial automation Querétaro, welding automation Mexico
+description: "AMD operates three facilities in Querétaro, Mexico. 30+ years building custom automation, robotic cells, and welding systems for manufacturers across Mexico."
+keywords: automation Mexico, robotic systems Querétaro, AMD Mexico, custom automation Mexico, industrial automation Querétaro, welding automation Mexico
 template: amd-mexico.html
 hero: true
-hero_title: "AMD Machines in Mexico"
-hero_subtitle: "Three facilities in Querétaro powering automation for manufacturers across Mexico"
-show_sidebar: true
 show_cta: true
-cta_title: "Ready to Start Your Automation Project in Mexico?"
-cta_text: "Our engineering team in Querétaro is ready to discuss your requirements. Contact us for a free consultation."
 ---
 
 ## Mexico's Leading Automation Partner
