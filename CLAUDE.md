@@ -1,4 +1,4 @@
-# AMD Machines Website - AI Agent Context
+## AMD Machines Website - AI Agent Context
 
 ## Quick Reference
 
@@ -15,15 +15,111 @@
 
 ---
 
-## SEO Protection (Read Before Making Changes)
+## SEO Protection (CRITICAL — Read Before Making ANY Changes)
 
-**This site is LIVE and actively ranking in search engines.** Do not modify without explicit approval:
-- URL structures or slugs
-- Page titles or meta descriptions
-- H1 tags or heading hierarchy
-- Internal linking structure
-- Navigation structure
-- Sitemap configuration
+**This site is LIVE and actively ranking in search engines.** Careless changes can destroy rankings that take months to recover. Follow every rule below.
+
+### Domain & URL Rules
+
+1. **Canonical domain is `amdmachines.com` (non-www).** All URLs must use `https://amdmachines.com/...` — never `www.amdmachines.com`. If you reference the site in sitemaps, canonical tags, internal links, or structured data, always use the non-www version.
+
+2. **URL path structure is `/solutions/*` for solution pages.** The old path `/automated-solutions/*` was migrated with 301 redirects. NEVER create new pages under `/automated-solutions/`. All new solution pages go under `/solutions/`.
+
+3. **Never change an existing URL slug.** If a page exists at `/solutions/robotic-cells/`, do not rename it to `/solutions/robotic-cell/` or `/robotic-cells/` or anything else. Changing a URL that Google has indexed causes ranking loss. If you absolutely must change a URL, you MUST add a 301 redirect from the old URL to the new URL in `_redirects`.
+
+4. **Never create duplicate paths.** Before creating any new page, check that no existing page targets the same topic. For example, do not create `/solutions/automated-welding/` if `/solutions/welding/` already exists. One page per topic.
+
+5. **Add 301 redirects in `_redirects` for any URL change.** Format:
+   ```
+   /old-path  /new-path  301
+   ```
+
+### Keyword Targeting Rules (Prevent Cannibalization)
+
+6. **One primary keyword cluster per page.** Every page should target ONE main keyword cluster. Do not create two pages that target the same keyword. This causes "keyword cannibalization" — Google splits authority between pages and both rank worse.
+
+7. **Current keyword-to-page assignments (DO NOT create competing pages):**
+
+   | Primary Keyword Cluster | Assigned Page | Do NOT Target From Other Pages |
+   |------------------------|---------------|-------------------------------|
+   | robotic cell, robot cell, robotic cells | `/solutions/robotic-cells/` | No other page should have "robotic cell" in H1 or title |
+   | welding automation, automated welding | `/solutions/welding/` | No other page should target "welding automation" as primary |
+   | automated assembly, assembly automation, assembly line | `/solutions/assembly/` | No other page should target "assembly automation" as primary |
+   | leak detection, test systems, leak testing | `/solutions/test-systems/` | No other page should target "leak testing" as primary |
+   | machine tending, CNC tending | `/solutions/machine-tending/` | No other page should target "machine tending" as primary |
+   | custom automation, automated equipment | `/solutions/custom-automation/` | No other page should target "custom automation" as primary |
+   | marking, traceability | `/solutions/marking-traceability/` | No other page should target "marking systems" as primary |
+   | industrial automation equipment | `/industries/` | No other page should target "industrial automation equipment" as primary |
+   | automated assembly machines (guide content) | `/blog/automated-assembly-machines-a-selection-guide/` | Blog targets guide/educational intent |
+
+8. **Blog posts SUPPORT solution pages, they don't compete with them.** Blog posts should target educational/informational keywords ("what is...", "how to...", "guide to..."). Solution pages target commercial keywords ("robotic cells", "welding automation"). Every blog post about a solution topic MUST link to the corresponding solution page with descriptive anchor text.
+
+9. **When creating a new page, verify it won't cannibalize existing pages:**
+   - Search the site content for the target keyword
+   - Check if an existing page already ranks for it in Google Search Console
+   - If an existing page covers the topic, EXPAND that page instead of creating a new one
+   - If the new page serves a genuinely different intent (e.g., educational blog vs. commercial solution), proceed but differentiate the title, H1, and primary keywords
+
+### Title Tag & Meta Description Rules
+
+10. **Title tags must be under 60 characters.** Format: `Primary Keyword | Secondary | AMD Machines`
+
+11. **Meta descriptions must be under 155 characters.** Include the primary keyword, a benefit/differentiator, and a call to action.
+
+12. **Every page MUST have a unique title tag and meta description.** No two pages should share the same title or meta. Duplicates confuse Google.
+
+13. **Do not change existing title tags or meta descriptions without checking GSC data first.** A title that looks "bad" might actually be performing well. Always verify current ranking and CTR before changing.
+
+### Internal Linking Rules
+
+14. **Every new page must be linked FROM at least 3 existing pages.** Orphan pages (no internal links pointing to them) will not get crawled or ranked. When creating a new page:
+    - Add a link from the parent hub page (e.g., `/solutions/` for solution pages)
+    - Add a link from at least one related solution page
+    - Add a link from at least one related blog post or industry page
+
+15. **Every new page must link TO at least 2 existing pages.** This distributes authority and helps users navigate. Include contextual links within the body content, not just navigation.
+
+16. **Use descriptive anchor text for internal links.** Write "learn more about our robotic welding systems" — not "click here" or "learn more." The anchor text tells Google what the linked page is about.
+
+17. **Never link to www.amdmachines.com in internal links.** All internal links must use relative paths (`/solutions/robotic-cells/`) or the non-www domain (`https://amdmachines.com/solutions/robotic-cells/`).
+
+### Structured Data Rules
+
+18. **All solution pages must include JSON-LD structured data** (already implemented — do not remove or break it). Types used: LocalBusiness, Service, BreadcrumbList.
+
+19. **All blog posts must include Article structured data.**
+
+20. **Do not duplicate structured data blocks.** One JSON-LD block per schema type per page.
+
+### Heading Hierarchy Rules
+
+21. **Every page has exactly ONE H1 tag.** The H1 must contain the primary keyword for that page. No page should have zero H1s or multiple H1s.
+
+22. **H2 tags define major sections and should include secondary keywords.** Use H2 for section headings, H3 for subsections. Do not skip levels (e.g., H1 → H3 with no H2).
+
+23. **Do not change an H1 without checking what keywords that page ranks for.** The H1 is the strongest on-page ranking signal. Changing it can immediately impact rankings.
+
+### Image Rules
+
+24. **All images must have descriptive alt text** that includes relevant keywords naturally.
+
+25. **All `<img>` tags must include explicit `width` and `height` attributes** to prevent layout shift (CLS).
+
+26. **Hero/above-fold images must be preloaded** with `<link rel="preload" as="image" fetchpriority="high">` in the `<head>`.
+
+### Redirect Reference
+
+Current active redirects (in `_redirects`):
+- `/automated-solutions/*` paths → `/solutions/*` equivalents (301)
+- `www.amdmachines.com/*` → `amdmachines.com/*` (handled by Cloudflare)
+
+When adding new redirects, always use 301 (permanent), never 302 (temporary).
+
+### Sitemap & Crawling
+
+27. **Sitemap must only contain non-www canonical URLs.** The sitemap is auto-generated by `build.py`. Verify after builds that no `www.` URLs appear in `output/sitemap.xml`.
+
+28. **Do not block any non-www page in robots.txt** unless it is intentionally non-indexable (e.g., thank-you pages, test pages).
 
 ---
 

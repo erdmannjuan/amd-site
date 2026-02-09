@@ -1,6 +1,6 @@
 ---
-title: Custom Robotic Cells | FANUC, ABB, Yaskawa
-description: Turnkey robotic cells for arc welding, machine tending & assembly. FANUC, ABB, KUKA & Yaskawa integration with 200-400% throughput gains and 12-24 month ROI.
+title: Robotic Cells for Manufacturing & Assembly | AMD Machines
+description: Custom robotic cells for CNC machine tending, welding & assembly automation. FANUC, ABB & Yaskawa integration. 200-400% throughput gains. Free quote.
 keywords: custom robotic cells, robotic cell integration, FANUC robot integrator, ABB robotic cell, industrial robot cell design, turnkey robotic automation, robotic workcell engineering
 template: solution.html
 short_title: Robotic Cells
@@ -124,7 +124,7 @@ On a recent electronics manufacturing cell, we used a Cognex In-Sight 9912 with 
 
 We standardize on Allen-Bradley ControlLogix and CompactLogix platforms for cell-level control, with Rockwell PanelView Plus or FactoryTalk View HMI. The PLC serves as the cell master, coordinating robot motion, safety systems, vision triggers, and I/O. Communication between the robot controller and PLC runs over EtherNet/IP (FANUC, Yaskawa) or PROFINET (KUKA, ABB).
 
-For Industry 4.0 connectivity, every cell ships with OPC UA capability and optional MQTT publishing for real-time production data. We've integrated robotic cells with SAP, Plex, Ignition SCADA, and custom MES platforms using REST APIs and direct SQL writes.
+For Industry 4.0 connectivity, every cell ships with OPC UA capability and optional MQTT publishing for real-time production data. We've integrated robotic cells with SAP, Plex, Ignition SCADA, and custom MES platforms using REST APIs and direct SQL writes. Explore the [industries using robotic automation](/industries/).
 
 ## Real-World Application: Automotive Transmission Component
 

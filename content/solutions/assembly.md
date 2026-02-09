@@ -1,10 +1,10 @@
 ---
-title: Custom Assembly Line Systems
-description: Custom assembly line systems engineered for Tier 1 suppliers. Rotary dial, linear transfer & robotic cells delivering 40-60% labor savings with proven ROI.
+title: Automated Assembly Line Systems & Equipment | AMD Machines
+description: Custom automated assembly lines with rotary dial, linear transfer & robotic assembly. 40-60% labor savings for Tier 1 suppliers. Get a quote today.
 keywords: custom assembly lines, automated assembly systems, rotary dial assembly machines, linear transfer systems, robotic assembly cells, assembly automation integrator, turnkey assembly solutions
 template: solution.html
 short_title: Assembly Systems
-hero_title: Custom Assembly Systems
+hero_title: Automated Assembly Systems
 hero_subtitle: Engineered-to-order assembly automation delivering measurable ROI for Tier 1 suppliers
 url: /solutions/assembly/
 features:
@@ -55,7 +55,7 @@ The numbers speak for themselves. Across our installed base, customers typically
 - **Sub-1% scrap rates** on previously 3–5% manual lines
 - **Full payback** in 14–24 months depending on shift utilization
 
-## Machine Configurations: Choosing the Right Architecture
+## Automated Assembly Line Configurations
 
 Picking the right machine architecture is the single most important decision in an assembly automation project. Get it wrong and you're stuck with a machine that can't hit rate, can't accommodate your next product variant, or costs twice what it should. Here's how we think about it.
 
@@ -81,9 +81,9 @@ When your volumes don't justify a dedicated dial or transfer line—or when you'
 
 We've deployed robotic cells using FANUC's iRVision integrated vision and Cognex In-Sight cameras for part location, allowing the robot to pick components from random orientations without dedicated fixturing. Combined with Schunk quick-change couplers, a single cell can switch between product families in under two minutes.
 
-**When to choose robotic cells:** Mixed-model production, lower volumes (under 250K/year), frequent product introductions, or when you need the same system to handle assembly, inspection, and packaging.
+**When to choose robotic cells:** Mixed-model production, lower volumes (under 250K/year), frequent product introductions, or when you need the same system to handle assembly, inspection, and packaging. Learn more about our [robotic cell capabilities](/solutions/robotic-cells/).
 
-## Core Assembly Operations We Integrate
+## Assembly Automation Equipment & Operations
 
 ### Press-Fit and Interference Joining
 
@@ -138,7 +138,7 @@ Every AMD assembly machine ships with multiple layers of poka-yoke and in-proces
 - **Barcode and RFID tracking** for serialized product genealogy
 - **MES integration** via OPC UA, MQTT, or direct database writes
 
-We've built systems that meet FDA 21 CFR Part 11 requirements for electronic records in [medical device manufacturing](/industries/medical/), IATF 16949 traceability requirements for [automotive](/industries/automotive/) Tier 1 suppliers, and AS9100 documentation standards for [aerospace](/industries/aerospace/) hardware.
+We've built systems that meet FDA 21 CFR Part 11 requirements for electronic records in [medical device manufacturing](/industries/medical/), IATF 16949 traceability requirements for [automotive](/industries/automotive/) Tier 1 suppliers, and AS9100 documentation standards for [aerospace](/industries/aerospace/) hardware. See all the [industries we serve with automation equipment](/industries/).
 
 ## Real-World Application Examples
 
@@ -166,7 +166,7 @@ We built a hybrid system combining a FANUC LR Mate 200iD/7L robot with a precisi
 
 **Results:** ±0.015 mm actual placement accuracy (better than spec), 15-second cycle time, and a 60% reduction in adhesive waste compared to manual dispensing.
 
-## The ROI of Custom Assembly Automation
+## Assembly Automation ROI & Cost Analysis
 
 Let's talk numbers, because that's what your CFO cares about. Here's a simplified ROI framework we use during concept development:
 
