@@ -1,6 +1,6 @@
 ---
-title: Custom Assembly Line Systems | Industrial Automation Integrator
-description: Custom assembly systems engineered for Tier 1 suppliers. Rotary dial, linear transfer & robotic cells delivering 40-60% labor reduction with proven ROI.
+title: Custom Assembly Line Systems
+description: Custom assembly line systems engineered for Tier 1 suppliers. Rotary dial, linear transfer & robotic cells delivering 40-60% labor savings with proven ROI.
 keywords: custom assembly lines, automated assembly systems, rotary dial assembly machines, linear transfer systems, robotic assembly cells, assembly automation integrator, turnkey assembly solutions
 template: solution.html
 short_title: Assembly Systems
