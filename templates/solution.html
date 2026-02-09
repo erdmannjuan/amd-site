@@ -1,5 +1,24 @@
 {% extends "base.html" %}
 
+{% block head_extra %}
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": {{ (page.hero_title or page.title) | tojson }},
+    "description": {{ page.description | tojson }},
+    "provider": {
+        "@type": "Organization",
+        "name": "AMD Machines",
+        "url": "https://amdmachines.com"
+    },
+    "areaServed": ["US", "MX"],
+    "serviceType": {{ (page.short_title or page.title) | tojson }}
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <!-- Breadcrumb -->
 <section class="breadcrumb-section">
