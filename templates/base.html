@@ -89,28 +89,6 @@
     </script>
     {% endif %}
 
-    {% if page.faq_items %}
-    <!-- FAQPage Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {% for item in page.faq_items %}
-            {
-                "@type": "Question",
-                "name": {{ item.question | tojson }},
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": {{ item.answer | tojson }}
-                }
-            }{% if not loop.last %},{% endif %}
-            {% endfor %}
-        ]
-    }
-    </script>
-    {% endif %}
-
     <!-- Favicons & App Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ config.site.base_path }}/static/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ config.site.base_path }}/static/images/favicon-16x16.png">

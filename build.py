@@ -40,53 +40,6 @@ def parse_frontmatter(content):
     return {}, content
 
 
-def parse_faq_from_markdown(body):
-    """Extract FAQ Q&A pairs from markdown body for FAQPage schema."""
-    match = re.search(r'^##\s+(?:Frequently Asked Questions|FAQ)\s*$', body, re.MULTILINE)
-    if not match:
-        return []
-
-    faq_content = body[match.end():]
-
-    # Stop at the next ## heading (but not ### which are questions)
-    next_h2 = re.search(r'^## [^#]', faq_content, re.MULTILINE)
-    if next_h2:
-        faq_content = faq_content[:next_h2.start()]
-
-    qa_pairs = []
-
-    # Try ### heading format first (e.g. "### What is X?")
-    parts = re.split(r'^###\s+(.+)$', faq_content, flags=re.MULTILINE)
-    if len(parts) > 2:
-        for i in range(1, len(parts), 2):
-            question = parts[i].strip()
-            answer = parts[i + 1].strip() if i + 1 < len(parts) else ''
-            answer = _clean_faq_answer(answer)
-            if question and answer:
-                qa_pairs.append({'question': question, 'answer': answer})
-    else:
-        # Try bold question format (e.g. "**What is X?**")
-        parts = re.split(r'^\*\*(.+?\?)\*\*\s*$', faq_content, flags=re.MULTILINE)
-        for i in range(1, len(parts), 2):
-            question = parts[i].strip()
-            answer = parts[i + 1].strip() if i + 1 < len(parts) else ''
-            answer = _clean_faq_answer(answer)
-            if question and answer:
-                qa_pairs.append({'question': question, 'answer': answer})
-
-    return qa_pairs
-
-
-def _clean_faq_answer(answer):
-    """Strip markdown formatting from FAQ answer text."""
-    answer = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', answer)  # links
-    answer = re.sub(r'\*\*([^*]+)\*\*', r'\1', answer)  # bold
-    answer = re.sub(r'\*([^*]+)\*', r'\1', answer)  # italic
-    answer = re.sub(r'\n{2,}', ' ', answer)
-    answer = re.sub(r'\n', ' ', answer)
-    return answer.strip()
-
-
 def get_all_pages(content_dir):
     """Get all markdown files from content directory"""
     pages = []
@@ -436,11 +389,6 @@ def build_page(page, config, env, all_pages, posts=None, categories=None):
 
     md = markdown.Markdown(extensions=['extra', 'meta', 'toc'])
     html_content = md.convert(page['body'])
-
-    # Parse FAQ section from markdown body
-    faq_items = parse_faq_from_markdown(page['body'])
-    if faq_items:
-        page_data['faq_items'] = faq_items
 
     # Add related posts for blog posts
     if page_data.get('template') == 'blog-post.html' and posts:
