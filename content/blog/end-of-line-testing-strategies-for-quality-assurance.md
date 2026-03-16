@@ -1,7 +1,6 @@
 ---
-title: End-of-Line Testing Strategies for Quality Assurance
-description: Quality assurance through automated testing and inspection has become
-  essential for manufacturers facing demanding specifications and cost pressures..
+title: "End-of-Line Testing: Methods, Equipment & System Design"
+description: "How to design an end-of-line test system — leak, electrical, vision, and functional test methods. Test fixture design, data integration, and first-pass yield optimization."
 keywords: industrial automation, manufacturing automation, AMD Machines, automated
   testing, quality inspection, test systems, testing, strategies, quality
 date: '2025-10-22'

@@ -1,0 +1,30 @@
+IMPORTANT: First read CLAUDE.md in the current directory — it has critical site rules. Also read /Users/juan_erdmann/my-site-generator/seo/2026-03-15-title-meta-rewrites/REFERENCE.md for this specific project's rules.
+
+Read /Users/juan_erdmann/my-site-generator/seo/2026-03-15-title-meta-rewrites/01-current-state.md for the exact file paths and current values of all 7 pages.
+
+Read /Users/juan_erdmann/my-site-generator/seo/2026-03-15-title-meta-rewrites/REFERENCE.md for the new title and description values for each page.
+
+Now do the following:
+
+STEP 1: For each of the 7 files, update ONLY the title and description fields in the YAML frontmatter. Use the exact values from REFERENCE.md. Do NOT change any other frontmatter fields. Do NOT change any body content below the frontmatter closing ---.
+
+STEP 2: Run python3 build.py to rebuild the site.
+
+STEP 3: Verify the build output. For each of the 7 pages, check the built HTML file and confirm:
+- The <title> tag contains the new title (check whether ' | AMD Machines' is appended by the template — if so, the frontmatter title should NOT include it)
+- The <meta name="description"> tag contains the new description
+- The <h1> tag is UNCHANGED from the value in 01-current-state.md
+- No www.amdmachines.com URLs appear in the built HTML
+
+STEP 4: Verify sitemap.xml includes all 7 URLs.
+
+STEP 5: Run git add -A && git commit -m 'Phase 1: Title and meta description rewrites for 7 zero-click pages' && git push
+
+STEP 6: Write a verification report to /Users/juan_erdmann/my-site-generator/seo/2026-03-15-title-meta-rewrites/02-verification.md showing:
+- Each page: old title → new title, old description → new description
+- HTML verification results (title tag, meta tag, H1 unchanged)
+- Sitemap check result
+- Git push result
+- List of 7 URLs to submit for re-indexing in GSC
+
+CRITICAL: Do NOT modify the automated-assembly-machines content file. If you see it, skip it entirely.

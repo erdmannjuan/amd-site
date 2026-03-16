@@ -1,7 +1,6 @@
 ---
-title: Assembly Line Balancing for Optimal Efficiency
-description: Automated assembly represents a significant opportunity for manufacturers
-  to improve quality, reduce costs, and increase capacity. The challenge lies in.
+title: "Assembly Line Balancing: Cycle Time Analysis & Station Optimization"
+description: "How to balance an assembly line — takt time calculation, station loading, bottleneck identification, and buffer sizing. Methods we use across 2,500+ production systems."
 keywords: industrial automation, manufacturing automation, AMD Machines, automated
   assembly, assembly line, assembly systems, assembly, balancing, optimal
 date: '2025-11-03'

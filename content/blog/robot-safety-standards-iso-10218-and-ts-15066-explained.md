@@ -1,6 +1,6 @@
 ---
-title: 'Robot Safety Standards: ISO 10218 and TS 15066 Explained'
-description: A practical engineering guide to ISO 10218-1, ISO 10218-2, and ISO/TS 15066 robot safety standards covering risk assessment, safeguarding, collaborative operations, and compliance for industrial automation.
+title: "ISO 10218 & ISO/TS 15066 Explained: Robot Safety Standards for Integrators"
+description: "Practical guide to ISO 10218 and ISO/TS 15066 robot safety standards — risk assessment, safeguarding requirements, speed and force limits, and what they mean for your cell design."
 keywords: robot safety standards, ISO 10218, ISO TS 15066, collaborative robot safety, cobot safety, risk assessment robotics, robot safeguarding, industrial robot compliance, PFL force limits, safety-rated monitored stop
 date: '2026-01-10'
 author: AMD Machines Team

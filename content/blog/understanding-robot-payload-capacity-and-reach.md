@@ -1,6 +1,6 @@
 ---
-title: Understanding Robot Payload Capacity and Reach
-description: 'Learn how robot payload capacity and reach specs actually work, why rated payload isn''t the whole story, and how to size robots correctly for your application.'
+title: "Robot Payload & Reach: How to Size an Industrial Robot Correctly"
+description: "Why the rated payload on a spec sheet isn't the whole story — wrist moments, inertia loads, EOAT weight, and the 25-30% headroom rule for sizing industrial robots."
 keywords: robot payload capacity, robot reach, robot selection, robot specifications, industrial robot sizing, payload vs reach tradeoff, wrist payload, robot moment load
 date: '2026-01-16'
 author: AMD Machines Team

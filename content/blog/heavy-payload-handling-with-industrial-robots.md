@@ -1,8 +1,6 @@
 ---
-title: Heavy Payload Handling with Industrial Robots
-description: Technical guide to heavy payload handling with industrial robots covering
-  robot selection, end-of-arm tooling, structural considerations, and safety requirements
-  for loads from 100 kg to over 2,000 kg.
+title: "How Robots Handle Heavy Loads: Payload Sizing, Gantries & Floor-Track Systems"
+description: "How industrial robots handle heavy loads from 200 kg to 7,000 kg — payload sizing, floor-track systems, overhead gantries, and EOAT selection. From engineers who've built 2,500+ systems."
 keywords: heavy payload robots, high-payload robot arms, industrial material handling,
   heavy part automation, robot payload capacity, end-of-arm tooling, heavy lifting robots
 date: '2025-06-28'

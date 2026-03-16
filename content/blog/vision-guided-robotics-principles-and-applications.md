@@ -1,8 +1,6 @@
 ---
-title: 'Vision-Guided Robotics: Principles and Applications'
-description: Learn how vision-guided robotics uses cameras and algorithms to give
-  industrial robots real-time spatial awareness for pick-and-place, assembly, and inspection
-  tasks.
+title: "Vision-Guided Robotics: How 2D and 3D Vision Systems Guide Industrial Robots"
+description: "How vision-guided robotics works — 2D vs 3D sensing, calibration methods, part localization, and real-world applications in assembly, bin picking, and machine tending."
 keywords: vision-guided robotics, robot vision systems, machine vision, pick and place
   automation, 2D vision guidance, 3D vision guidance, robot calibration, AMD Machines
 date: '2025-12-05'

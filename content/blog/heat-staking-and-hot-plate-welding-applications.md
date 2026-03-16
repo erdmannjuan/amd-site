@@ -1,6 +1,6 @@
 ---
-title: Heat Staking and Hot Plate Welding Applications
-description: Heat staking and hot plate welding provide fast, clean thermal joining for plastic assemblies. Learn process fundamentals, design guidelines, material selection, and quality control for both methods.
+title: "Hot Plate Welding & Heat Staking: Process Guide for Plastic Assembly"
+description: "Hot plate welding and heat staking for thermoplastic assembly — process parameters, material compatibility, joint design, and equipment selection for production environments."
 keywords: heat staking, hot plate welding, plastic joining, thermal welding, thermoplastic assembly, heat staking boss design, hot plate weld strength, plastic assembly automation
 date: '2025-11-09'
 author: AMD Machines Team
