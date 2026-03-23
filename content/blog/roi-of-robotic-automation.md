@@ -25,8 +25,20 @@ Every automation investment starts with the same question from leadership: "What
 
 Different automation applications produce different payback profiles. If you are evaluating a specific type of automation, start here:
 
-- **[Collaborative Robot (Cobot) Payback Period](/blog/cobot-payback-period/)** — Typical cobot deployments achieve 12 to 24 month payback with lower upfront investment than traditional industrial robots.
-- **[Material Handling Automation ROI](/blog/material-handling-automation-roi/)** — Conveyor, palletizing, and pick-and-place systems deliver 10 to 18 month payback through labor reduction and throughput gains.
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem;">
+<a href="/blog/cobot-payback-period/" style="display: block; padding: 1.5rem; background: #f8f9fb; border-left: 4px solid #00b785; border-radius: 8px; text-decoration: none; transition: background 0.2s, box-shadow 0.2s;">
+<span style="display: inline-block; font-size: 0.8rem; font-weight: 700; color: #00b785; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">12–24 Month Payback</span>
+<span style="display: block; font-size: 1.2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem;">Collaborative Robot (Cobot) ROI</span>
+<span style="display: block; font-size: 0.95rem; color: #555; line-height: 1.5;">Lower upfront investment than traditional robots. See real cobot payback benchmarks by application type.</span>
+<span style="display: block; margin-top: 0.75rem; font-size: 0.95rem; font-weight: 600; color: #003087;">View cobot payback data →</span>
+</a>
+<a href="/blog/material-handling-automation-roi/" style="display: block; padding: 1.5rem; background: #f8f9fb; border-left: 4px solid #003087; border-radius: 8px; text-decoration: none; transition: background 0.2s, box-shadow 0.2s;">
+<span style="display: inline-block; font-size: 0.8rem; font-weight: 700; color: #003087; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">10–18 Month Payback</span>
+<span style="display: block; font-size: 1.2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem;">Material Handling Automation ROI</span>
+<span style="display: block; font-size: 0.95rem; color: #555; line-height: 1.5;">Conveyors, palletizing, and pick-and-place systems. See ROI breakdowns by system type.</span>
+<span style="display: block; margin-top: 0.75rem; font-size: 0.95rem; font-weight: 600; color: #003087;">View material handling ROI →</span>
+</a>
+</div>
 
 For the general ROI framework that applies to any automation project, read on.
 
