@@ -1,8 +1,6 @@
 ---
-title: Introduction to Machine Vision for Manufacturing
-description: A practical guide to machine vision in manufacturing—how cameras, lighting,
-  and software work together to automate inspection, measurement, and robot guidance
-  on the factory floor.
+title: Machine Vision in Manufacturing | System Design Guide
+description: 'How to select cameras, lighting, and software for manufacturing vision systems. Covers inspection, measurement, robot guidance, and PLC integration.'
 keywords: machine vision manufacturing, automated inspection, industrial vision systems,
   vision-guided robotics, quality inspection cameras, machine vision integration
 date: '2025-12-21'

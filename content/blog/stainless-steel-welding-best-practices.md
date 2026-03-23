@@ -1,6 +1,6 @@
 ---
-title: Stainless Steel Welding Best Practices
-description: Proven best practices for welding stainless steel in automated manufacturing, covering shielding gas selection, heat input control, and joint preparation techniques.
+title: Stainless Steel Welding | Heat Input & Distortion Control
+description: 'Control heat input, shielding gas, and distortion when welding stainless steel. Covers joint prep, filler selection, and robotic process parameters.'
 keywords: stainless steel welding, automated welding, robotic welding, TIG welding stainless, MIG welding stainless, weld quality, heat input control, shielding gas
 date: '2025-07-28'
 author: AMD Machines Team

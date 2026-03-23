@@ -1,7 +1,6 @@
 ---
-title: Lighting Techniques for Machine Vision Success
-description: Learn how proper lighting techniques determine machine vision system performance,
-  from backlighting and dark field to structured light and dome illumination for industrial inspection.
+title: 'Machine Vision Lighting | Technique Selection for Inspection'
+description: 'Choose the right lighting for machine vision: backlight, dark field, structured light, and dome illumination for reliable industrial inspection.'
 keywords: machine vision lighting, vision system illumination, backlight inspection,
   dark field lighting, structured light, dome lighting, machine vision, industrial inspection,
   vision lighting techniques, manufacturing quality control

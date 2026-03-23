@@ -1,8 +1,6 @@
 ---
-title: 'Weld Inspection Methods: Visual, UT, and Radiographic'
-description: A practical comparison of visual inspection, ultrasonic testing, and radiographic
-  testing for weld quality assurance in manufacturing, covering capabilities, limitations,
-  and automation considerations.
+title: 'Weld Inspection: Choosing Between VT, UT & RT Methods'
+description: 'When to use visual, ultrasonic, or radiographic weld inspection. Capabilities, limitations, and cost comparison for each NDT method in production.'
 keywords: weld inspection, visual weld inspection, ultrasonic testing, radiographic
   testing, NDT, non-destructive testing, weld quality, automated weld inspection,
   weld defects, manufacturing quality assurance

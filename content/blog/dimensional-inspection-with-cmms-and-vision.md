@@ -1,7 +1,6 @@
 ---
-title: Dimensional Inspection with CMMs and Vision
-description: Quality assurance through automated testing and inspection has become
-  essential for manufacturers facing demanding specifications and cost pressures..
+title: 'Dimensional Inspection: CMM vs Vision vs Laser Scanning'
+description: 'Compare CMM, vision, and laser scanning for dimensional inspection. See which method fits your tolerance, throughput, and part complexity requirements.'
 keywords: industrial automation, manufacturing automation, AMD Machines, automated
   testing, quality inspection, test systems, dimensional, inspection, vision
 date: '2025-10-16'

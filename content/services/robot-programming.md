@@ -1,6 +1,6 @@
 ---
-title: Robot Programming Services | Online & Offline Programming
-description: "Expert robot programming for FANUC, ABB, KUKA, and Yaskawa. Online teach pendant, offline OLP, and path optimization services from engineers with 2,500+ systems delivered."
+title: 'Robot Programming | FANUC, ABB, KUKA & Yaskawa Services'
+description: 'Online and offline robot programming for FANUC, ABB, KUKA, and Yaskawa. Path optimization and simulation from engineers with 2,500+ systems delivered.'
 keywords: robot programming, offline robot programming, FANUC programming, ABB RAPID programming, teach pendant programming, robot path optimization, robot simulation
 template: page.html
 hero_title: Robot Programming

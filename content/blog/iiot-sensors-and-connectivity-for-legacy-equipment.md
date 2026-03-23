@@ -1,8 +1,6 @@
 ---
-title: IIoT Sensors and Connectivity for Legacy Equipment
-description: Practical guide to retrofitting legacy manufacturing equipment with IIoT
-  sensors, edge gateways, and industrial connectivity for real-time monitoring and
-  predictive maintenance.
+title: 'IIoT Retrofit | Sensors & Connectivity for Legacy Equipment'
+description: 'How to retrofit legacy equipment with IIoT sensors, edge gateways, and industrial connectivity for real-time monitoring and predictive maintenance.'
 keywords: IIoT sensors, legacy equipment connectivity, retrofit sensors, industrial
   IoT, edge gateway, predictive maintenance, vibration monitoring, current transformer,
   OPC UA, MQTT

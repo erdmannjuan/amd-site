@@ -1,6 +1,6 @@
 ---
-title: Functional Testing of Electronic Assemblies
-description: How manufacturers design and implement automated functional test systems for PCBAs and electronic assemblies, covering fixture design, test sequencing, instrumentation, and data-driven quality improvement.
+title: 'Functional Testing | Electronic Assembly Test Systems'
+description: 'Design automated functional test systems for PCBAs and electronic assemblies. Fixture design, test sequencing, instrumentation, and data-driven QA.'
 keywords: functional testing, electronic assembly testing, PCBA test systems, automated test equipment, in-circuit testing, boundary scan, flying probe, test fixture design, automated quality inspection
 date: '2025-10-10'
 author: AMD Machines Team

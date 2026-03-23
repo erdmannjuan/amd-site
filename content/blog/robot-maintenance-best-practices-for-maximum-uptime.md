@@ -1,5 +1,5 @@
 ---
-title: Robot Maintenance Best Practices for Maximum Uptime
+title: 'Robot Maintenance | PM Schedules, Grease & Spare Parts Guide'
 description: 'Practical robot maintenance strategies covering daily checks, PM schedules, grease management, and spare parts planning to maximize uptime above 95%.'
 keywords: robot maintenance, preventive maintenance, robot uptime, robot grease, PM schedule, robot calibration, predictive maintenance, spare parts inventory
 date: '2026-01-04'

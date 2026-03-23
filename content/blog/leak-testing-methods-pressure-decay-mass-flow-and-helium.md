@@ -1,8 +1,6 @@
 ---
-title: 'Leak Testing Methods: Pressure Decay, Mass Flow, and Helium'
-description: A technical comparison of pressure decay, mass flow, and helium leak
-  testing methods for automated manufacturing, covering sensitivity, cycle time, and
-  integration considerations.
+title: 'Leak Testing Methods Compared: Pressure Decay, Mass Flow & He'
+description: 'Compare pressure decay, mass flow, and helium leak testing for production. Sensitivity ranges, cycle times, and when to use each method in automation.'
 keywords: leak testing, pressure decay test, mass flow leak test, helium leak testing,
   tracer gas testing, automated leak detection, quality assurance, seal integrity
 date: '2025-10-20'

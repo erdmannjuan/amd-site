@@ -1,8 +1,6 @@
 ---
-title: Time-Sensitive Networking for Industrial Automation
-description: How Time-Sensitive Networking (TSN) enables deterministic, low-latency
-  communication across industrial Ethernet, replacing proprietary fieldbus protocols
-  with a unified standard.
+title: 'TSN for Industrial Automation | Time-Sensitive Networking'
+description: 'How TSN enables deterministic, low-latency Ethernet for industrial automation. Replaces proprietary fieldbus protocols with a unified IEEE 802.1 standard.'
 keywords: time-sensitive networking, TSN, industrial Ethernet, deterministic networking,
   IEEE 802.1, real-time communication, factory automation, industrial control
 date: '2025-03-28'

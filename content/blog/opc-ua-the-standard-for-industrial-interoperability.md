@@ -1,8 +1,6 @@
 ---
-title: 'OPC UA: The Standard for Industrial Interoperability'
-description: OPC UA provides a secure, vendor-neutral communication framework for
-  industrial automation. Learn how this protocol enables interoperability across PLCs,
-  robots, and SCADA systems on the factory floor.
+title: 'OPC UA Guide | Industrial Communication & Interoperability'
+description: 'How OPC UA enables secure, vendor-neutral communication across PLCs, robots, and SCADA systems. Architecture, security model, and integration guide.'
 keywords: OPC UA, industrial interoperability, automation communication protocol,
   IEC 62541, industrial data exchange, SCADA integration, PLC communication, smart
   manufacturing

@@ -1,8 +1,6 @@
 ---
-title: Total Cost of Ownership for Robotic Systems
-description: A practical breakdown of the true costs behind robotic automation, from acquisition
-  and integration through maintenance, training, and end-of-life, helping manufacturers make
-  informed investment decisions.
+title: Robot Total Cost of Ownership | Beyond the Purchase Price
+description: 'Robot hardware is only 25-40% of total investment. See the full 5-phase TCO breakdown: acquisition, integration, operation, maintenance, and end-of-life.'
 keywords: total cost of ownership, robotic systems, automation cost analysis, robot maintenance
   costs, automation investment, manufacturing ROI, robot lifecycle costs
 date: '2025-06-22'

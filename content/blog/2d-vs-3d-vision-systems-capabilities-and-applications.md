@@ -1,8 +1,6 @@
 ---
-title: '2D vs 3D Vision Systems: Capabilities and Applications'
-description: A practical comparison of 2D and 3D machine vision systems for manufacturing,
-  covering technology differences, application fit, and selection criteria for inspection
-  and robot guidance.
+title: '2D vs 3D Vision Systems | Selection Guide for Manufacturing'
+description: 'Compare 2D and 3D machine vision for inspection and robot guidance. Technology differences, application fit, and selection criteria for manufacturing.'
 keywords: 2D vision systems, 3D vision systems, machine vision, automated inspection,
   3D scanning, structured light, stereo vision, robot guidance, quality control
 date: '2025-12-19'

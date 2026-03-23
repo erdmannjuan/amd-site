@@ -1,8 +1,6 @@
 ---
-title: HMI Design Best Practices for Operators
-description: Practical HMI design guidelines for industrial automation, covering screen
-  layout, alarm management, navigation, color standards, and operator-centered interface
-  principles that reduce errors and improve efficiency.
+title: 'HMI Design Best Practices | Screen Layout & Alarm Standards'
+description: 'Industrial HMI design guidelines: screen layout, alarm management, navigation, and color standards. Operator-centered interface design that reduces errors.'
 keywords: HMI design, human machine interface, operator interface, industrial HMI,
   SCADA display, alarm management, HMI best practices, operator screen design
 date: '2025-04-23'

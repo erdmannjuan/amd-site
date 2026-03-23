@@ -1,7 +1,6 @@
 ---
-title: Electrical Panel Design Standards and Best Practices
-description: Practical guide to electrical panel design for industrial automation,
-  covering UL 508A, NFPA 79, wire management, thermal planning, and maintainability.
+title: 'Electrical Panel Design | UL 508A, NFPA 79 & Layout Guide'
+description: 'Electrical panel design for industrial automation: UL 508A, NFPA 79 compliance, wire management, thermal planning, and maintainability best practices.'
 keywords: electrical panel design, UL 508A, NFPA 79, industrial control panel, automation
   electrical standards, panel layout, wire management, control enclosure
 date: '2024-11-08'

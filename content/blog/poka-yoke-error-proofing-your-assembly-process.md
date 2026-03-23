@@ -1,8 +1,6 @@
 ---
-title: 'Poka-Yoke: Error-Proofing Your Assembly Process'
-description: Learn how poka-yoke error-proofing techniques prevent assembly defects
-  at the source using mechanical design, sensors, and vision systems for zero-defect
-  manufacturing.
+title: 'Poka-Yoke | Error-Proofing Methods for Assembly Lines'
+description: 'Poka-yoke techniques that prevent assembly defects at the source using mechanical design, sensors, and vision systems for zero-defect manufacturing.'
 keywords: poka-yoke, error proofing, mistake proofing, assembly quality, zero defect
   manufacturing, assembly error prevention, quality control automation
 date: '2025-11-19'

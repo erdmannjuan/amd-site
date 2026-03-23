@@ -1,7 +1,6 @@
 ---
-title: Safety PLC and Safety System Design
-description: A practical guide to safety PLC architecture, SIL/PLd ratings, safety
-  circuit design, and compliance with ISO 13849 and IEC 62061 for industrial automation.
+title: 'Safety PLC Design | SIL Ratings, ISO 13849 & Architecture'
+description: 'How to design safety PLC systems for industrial automation. Covers SIL/PLd ratings, ISO 13849, IEC 62061, safety circuit architecture, and compliance.'
 keywords: safety PLC, safety system design, ISO 13849, IEC 62061, SIL, performance
   level, safety relay, safety controller, machine safety, risk assessment
 date: '2025-04-17'
