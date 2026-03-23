@@ -21,7 +21,16 @@ related_posts:
 
 Every automation investment starts with the same question from leadership: "What's the payback?" It sounds simple, but the answer depends entirely on how honestly you build the model. Over 30 years and 2,500+ machines delivered, we have seen ROI analyses that killed good projects because they missed critical benefits, and we have seen analyses that greenlit bad projects because they glossed over real costs. Both outcomes are avoidable if you build your financial model on solid engineering data rather than wishful thinking.
 
-Here is how to construct an ROI model that survives scrutiny from finance, operations, and the plant floor.
+## ROI by Automation Type
+
+Different automation applications produce different payback profiles. If you are evaluating a specific type of automation, start here:
+
+- **[Collaborative Robot (Cobot) Payback Period](/blog/cobot-payback-period/)** — Typical cobot deployments achieve 12 to 24 month payback with lower upfront investment than traditional industrial robots.
+- **[Material Handling Automation ROI](/blog/material-handling-automation-roi/)** — Conveyor, palletizing, and pick-and-place systems deliver 10 to 18 month payback through labor reduction and throughput gains.
+
+For the general ROI framework that applies to any automation project, read on.
+
+## How to Build an Automation ROI Model
 
 ## Fully Burdened Labor Cost Is Your Starting Point
 
@@ -121,13 +130,6 @@ When leadership sees that even the conservative scenario delivers an acceptable 
 **Using equipment list prices instead of total installed cost.** Integration, engineering, and custom tooling represent 40 to 60 percent of total project cost. Get actual quotes, not estimates.
 
 **Treating soft benefits as hard savings.** Improved ergonomics, better data visibility, and increased flexibility are real benefits, but present them as qualitative advantages alongside your quantitative analysis rather than forcing a dollar value.
-
-## ROI by Automation Type
-
-Different automation applications produce different payback profiles. Explore detailed ROI analysis for specific automation types:
-
-- **[Collaborative Robot (Cobot) Payback Period](/blog/cobot-payback-period/)** — Typical cobot deployments achieve 12 to 24 month payback with lower upfront investment than traditional industrial robots.
-- **[Material Handling Automation ROI](/blog/material-handling-automation-roi/)** — Conveyor, palletizing, and pick-and-place systems deliver 10 to 18 month payback through labor reduction and throughput gains.
 
 ## What Good Looks Like
 
