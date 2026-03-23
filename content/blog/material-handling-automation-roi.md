@@ -19,6 +19,8 @@ related_posts:
   description: Types of conveyor systems and how to select the right one for your operation.
 ---
 
+<img src="/static/images/material-handling-robotic-cell.jpg" alt="FANUC robotic cell with safety fencing for automated material handling at AMD Machines facility" width="1200" height="800" loading="eager" style="width:100%; height:auto; border-radius:8px; margin-bottom:1.5rem;">
+
 Material handling is one of the most financially compelling targets for automation. Moving parts, loading machines, transferring assemblies between stations, and palletizing finished goods are labor-intensive tasks with straightforward ROI calculations — you can measure the labor hours, count the injuries, and quantify the throughput constraints without complex assumptions.
 
 Most [material handling automation](/solutions/material-handling/) projects achieve payback in 10 to 18 months. Here is how to build the ROI case for your specific application and avoid the modeling mistakes that inflate or undercount the real returns.
