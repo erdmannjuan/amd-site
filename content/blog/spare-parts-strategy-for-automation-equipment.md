@@ -84,7 +84,7 @@ That range is wide because the right number depends on several factors: how many
 
 The calculation that drives this is straightforward. For each critical component, multiply the probability of failure in a given year by the cost of downtime while waiting for the replacement. If that number exceeds the cost of stocking the part, stock it. This is basic expected-value math, but remarkably few plants actually run the numbers.
 
-One important consideration: spare parts investment should be included in your [automation ROI calculations](/blog/calculating-roi-for-industrial-automation-projects/) from the start. Too many project justifications focus exclusively on throughput and labor savings while ignoring the ongoing costs required to sustain those gains.
+One important consideration: spare parts investment should be included in your [automation ROI calculations](/blog/roi-of-robotic-automation/) from the start. Too many project justifications focus exclusively on throughput and labor savings while ignoring the ongoing costs required to sustain those gains.
 
 ## Tying Spare Parts to Your Maintenance Program
 

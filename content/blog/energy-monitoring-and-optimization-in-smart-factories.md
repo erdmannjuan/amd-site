@@ -68,11 +68,11 @@ Energy monitoring sometimes reveals that process parameters have drifted from op
 
 ## Measuring ROI and Setting Targets
 
-Energy optimization projects follow the same [ROI calculation frameworks](/blog/calculating-roi-for-industrial-automation-projects/) as other automation investments, with the advantage of being straightforward to measure. Baseline energy consumption before the project and measured consumption after implementation provide clear savings figures.
+Energy optimization projects follow the same [ROI calculation frameworks](/blog/roi-of-robotic-automation/) as other automation investments, with the advantage of being straightforward to measure. Baseline energy consumption before the project and measured consumption after implementation provide clear savings figures.
 
 Typical results from comprehensive energy monitoring and optimization programs include total energy cost reductions of 10 to 25 percent within the first two years. Demand charge reductions often reach 15 to 30 percent through load management. Compressed air system optimization typically delivers 20 to 35 percent savings in that subsystem alone.
 
-Beyond direct cost savings, energy optimization supports sustainability reporting requirements and can contribute to certifications like ISO 50001, which increasingly matter to customers evaluating supply chain partners.
+Beyond direct cost savings, energy optimization supports sustainability reporting requirements and can contribute to certifications like ISO 50001, which increasingly matter to customers evaluating supply chain partners. For a comprehensive framework on evaluating these returns, see our guide on [calculating ROI for industrial automation projects](/blog/roi-of-robotic-automation/).
 
 ## Getting Started With Energy Monitoring
 

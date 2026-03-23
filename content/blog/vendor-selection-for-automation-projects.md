@@ -91,7 +91,7 @@ A solid contract protects both parties. Key elements to address include:
 - **Change order process**: Changes will happen. Define how they're documented, priced, and approved before they become disputes.
 - **Warranty and support**: Clarify what's covered, for how long, and what response times you can expect. Ask about remote diagnostics capability and spare parts availability.
 
-If you're working through [calculating ROI for your automation project](/blog/calculating-roi-for-industrial-automation-projects/), remember that vendor-related risks—delays, rework, underperformance—directly impact your payback timeline. Building contingency into your financial model for these risks is prudent engineering.
+If you're working through [calculating ROI for your automation project](/blog/roi-of-robotic-automation/), remember that vendor-related risks—delays, rework, underperformance—directly impact your payback timeline. Building contingency into your financial model for these risks is prudent engineering.
 
 ## Building a Long-Term Partnership
 

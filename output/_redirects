@@ -74,6 +74,9 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /blog/importance-of-end-of-line-equipment-in-the-automotive-sector/ /blog/end-of-line-testing-strategies-for-quality-assurance/ 301
 /blog/automation-and-the-future-of-appliance-manufacturing/ /blog/appliance-assembly-line-automation/ 301
 
+# Blog consolidation - duplicate ROI pages
+/blog/calculating-roi-for-industrial-automation-projects/ /blog/roi-of-robotic-automation/ 301
+
 # Missing pages - redirect to closest equivalent
 /ebooks/ /blog/ 301
 

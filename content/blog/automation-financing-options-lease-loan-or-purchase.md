@@ -67,7 +67,7 @@ An equipment loan is straightforward debt financing. A lender provides capital t
 - You want ownership and depreciation benefits but cannot or prefer not to deploy the full purchase price from cash reserves.
 - Interest rates are favorable. Equipment loans are typically secured by the equipment itself, so rates tend to be lower than unsecured business credit.
 - You want to build or maintain a credit history for your business, which can be valuable for future expansion financing.
-- The equipment will generate enough return to comfortably cover the debt service. This is where a disciplined [ROI calculation](/blog/calculating-roi-for-industrial-automation-projects/) becomes essential before signing the loan documents.
+- The equipment will generate enough return to comfortably cover the debt service. This is where a disciplined [ROI calculation](/blog/roi-of-robotic-automation/) becomes essential before signing the loan documents.
 
 **The tradeoffs:**
 

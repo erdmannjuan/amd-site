@@ -58,7 +58,7 @@ Regional manufacturers who invest in training alongside equipment purchases cons
 
 Every automation investment should have a clear financial justification. Calculate the total cost of ownership—not just the equipment price, but installation, integration, training, maintenance, and potential production disruption during implementation. Compare that against quantified benefits: labor savings, scrap reduction, throughput increases, quality improvements, and reduced customer returns.
 
-A disciplined [ROI analysis](/blog/calculating-roi-for-industrial-automation-projects/) keeps projects focused on genuine business value rather than technology for its own sake. It also makes it easier to secure internal approval and, where applicable, to qualify for state or federal incentive programs that require documented economic impact.
+A disciplined [ROI analysis](/blog/roi-of-robotic-automation/) keeps projects focused on genuine business value rather than technology for its own sake. It also makes it easier to secure internal approval and, where applicable, to qualify for state or federal incentive programs that require documented economic impact.
 
 ## Regional Advantages Worth Leveraging
 

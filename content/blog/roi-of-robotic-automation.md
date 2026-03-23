@@ -1,6 +1,6 @@
 ---
-title: How to Calculate ROI of Robotic Automation | Payback
-description: 'Learn how to build an accurate robotic automation ROI model with real numbers — covering labor savings, hidden costs, quality gains, and payback period formulas.'
+title: Robotic Automation ROI Calculator & Payback Guide
+description: 'Calculate automation payback with real numbers from 2,500+ projects. Covers burdened labor costs, throughput gains, quality savings, and sensitivity analysis.'
 keywords: robotic automation ROI calculator, automation payback period, robot cost
   analysis, manufacturing automation investment, automation cost justification, labor
   savings automation, automation total cost of ownership
@@ -109,6 +109,25 @@ A single payback number invites challenge. A sensitivity analysis demonstrates r
 - **Optimistic**: Include benefits like reduced overtime, freed floor space for additional capacity, and improved ergonomics reducing injury claims.
 
 When leadership sees that even the conservative scenario delivers an acceptable payback, the project moves forward with confidence.
+
+## Common Mistakes That Undermine Your ROI Model
+
+**Overstating labor displacement.** Do not assume full elimination of operators if the cell still requires loading, unloading, or monitoring. Claim 1.5 FTEs displaced instead of 2.0 and let actual results exceed the projection. Finance teams respect conservative numbers.
+
+**Ignoring ramp-up time.** New automation rarely hits full production rate on day one. Budget 2 to 4 weeks of commissioning and ramp-up before you start counting savings.
+
+**Forgetting ongoing maintenance.** Automated systems need maintenance at 3 to 5 percent of equipment cost annually. Failing to account for this makes your ROI look better on paper but worse in reality.
+
+**Using equipment list prices instead of total installed cost.** Integration, engineering, and custom tooling represent 40 to 60 percent of total project cost. Get actual quotes, not estimates.
+
+**Treating soft benefits as hard savings.** Improved ergonomics, better data visibility, and increased flexibility are real benefits, but present them as qualitative advantages alongside your quantitative analysis rather than forcing a dollar value.
+
+## ROI by Automation Type
+
+Different automation applications produce different payback profiles. Explore detailed ROI analysis for specific automation types:
+
+- **[Collaborative Robot (Cobot) Payback Period](/blog/cobot-payback-period/)** — Typical cobot deployments achieve 12 to 24 month payback with lower upfront investment than traditional industrial robots.
+- **[Material Handling Automation ROI](/blog/material-handling-automation-roi/)** — Conveyor, palletizing, and pick-and-place systems deliver 10 to 18 month payback through labor reduction and throughput gains.
 
 ## What Good Looks Like
 

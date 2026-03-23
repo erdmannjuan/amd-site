@@ -43,7 +43,7 @@ Traditional automation economics assumed long production runs of identical parts
 
 Flexible automation cells address this reality with modular fixturing, quick-change end-of-arm tooling, and recipe-driven control systems. A well-designed flexible cell might handle 10-15 product variants with changeover times under five minutes, compared to hours or days for dedicated equipment. The per-part cost is higher than a dedicated line at full utilization, but the total cost of ownership is lower when you factor in the capital efficiency of running multiple products through shared equipment.
 
-For manufacturers evaluating this tradeoff, [calculating ROI](/blog/calculating-roi-for-industrial-automation-projects/) requires looking beyond simple cycle-time comparisons. You need to account for changeover losses, inventory carrying costs, floor space utilization, and the capital that would otherwise be tied up in multiple dedicated lines.
+For manufacturers evaluating this tradeoff, [calculating ROI](/blog/roi-of-robotic-automation/) requires looking beyond simple cycle-time comparisons. You need to account for changeover losses, inventory carrying costs, floor space utilization, and the capital that would otherwise be tied up in multiple dedicated lines.
 
 ## Data Infrastructure and Connectivity
 

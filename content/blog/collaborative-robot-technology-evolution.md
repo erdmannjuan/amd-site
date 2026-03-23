@@ -75,7 +75,7 @@ If you are considering cobots for a production application, here is what matters
 - **Reach versus footprint.** Cobots with longer reach require more floor space for their swept volume, which can eat into the space savings you expected from eliminating safety fencing.
 - **Integration ecosystem.** Evaluate the available grippers, vision systems, and software plugins from the manufacturer and third parties. A cobot with a rich ecosystem will be far easier to deploy than one that requires custom development for every peripheral.
 - **Safety certification path.** Understand whether the manufacturer provides application-level safety guidance or just component-level certification. The gap between "this robot is certified" and "this application is safe" can be significant.
-- **Total cost of deployment.** The robot arm is typically 30-40% of the total cell cost. Budget for tooling, programming, risk assessment, safety validation, and operator training. For guidance on building the financial case, our article on [calculating ROI for industrial automation projects](/blog/calculating-roi-for-industrial-automation-projects/) covers the framework in detail.
+- **Total cost of deployment.** The robot arm is typically 30-40% of the total cell cost. Budget for tooling, programming, risk assessment, safety validation, and operator training. For guidance on building the financial case, our article on [calculating ROI for industrial automation projects](/blog/roi-of-robotic-automation/) covers the framework in detail.
 
 ## The Road Ahead
 

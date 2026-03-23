@@ -66,7 +66,7 @@ One of the strongest advantages of modular design is the ability to scale capaci
 
 This works particularly well for parallel process stations. If your bottleneck operation has a 30-second cycle time and you need 15-second takt, you install two parallel modules for that operation. When demand increases and you need 10-second takt, you add a third parallel module. The system controller manages load balancing across parallel stations automatically.
 
-This incremental approach changes the financial profile of automation investment. Instead of a large capital expenditure in year one, you spread the investment across multiple years, better matching cash outflows to revenue growth. The ROI calculation improves because you are not carrying idle capacity. For more on evaluating the financial side, see our guide on [calculating ROI for industrial automation projects](/blog/calculating-roi-for-industrial-automation-projects/).
+This incremental approach changes the financial profile of automation investment. Instead of a large capital expenditure in year one, you spread the investment across multiple years, better matching cash outflows to revenue growth. The ROI calculation improves because you are not carrying idle capacity. For more on evaluating the financial side, see our guide on [calculating ROI for industrial automation projects](/blog/roi-of-robotic-automation/).
 
 ## Common Pitfalls to Avoid
 

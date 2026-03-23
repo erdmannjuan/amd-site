@@ -34,7 +34,7 @@ Several conditions suggest that improving the manual process delivers better ret
 
 **Processes requiring judgment.** Some tasks involve subjective assessment that is difficult to codify—evaluating surface finish quality by touch, adjusting weld parameters based on fit-up conditions, or making disposition decisions on borderline parts. When the decision logic is complex and context-dependent, training operators and providing better tools is often more effective than attempting to replicate human judgment in code.
 
-**Insufficient ROI.** If the [automation ROI calculation](/blog/calculating-roi-for-industrial-automation-projects/) does not close within your capital planning horizon, the numbers are telling you something. Process improvement projects—better workholding, improved ergonomics, optimized material flow—typically cost a fraction of automation projects and can deliver meaningful cycle time and quality improvements.
+**Insufficient ROI.** If the [automation ROI calculation](/blog/roi-of-robotic-automation/) does not close within your capital planning horizon, the numbers are telling you something. Process improvement projects—better workholding, improved ergonomics, optimized material flow—typically cost a fraction of automation projects and can deliver meaningful cycle time and quality improvements.
 
 **Unstable upstream inputs.** If incoming parts vary significantly in dimension, orientation, or condition, the sensing and handling requirements for automation become expensive. Fixing the upstream variability through supplier quality programs or incoming inspection often costs less than engineering an automated system robust enough to handle the variation.
 

@@ -57,7 +57,7 @@ Once the cell is running, ongoing operating costs accumulate steadily:
 - **Labor for tending** — even highly automated cells typically require an operator for loading, unloading, quality checks, and exception handling
 - **Production losses during changeovers** — time spent switching between part numbers, recalibrating sensors, or swapping tooling
 
-Operating costs are ongoing and cumulative, so even small inefficiencies compound over a 10- to 15-year system life. This is why [calculating ROI accurately](/blog/calculating-roi-for-industrial-automation-projects/) requires modeling these recurring expenses rather than just comparing purchase price against labor savings.
+Operating costs are ongoing and cumulative, so even small inefficiencies compound over a 10- to 15-year system life. This is why [calculating ROI accurately](/blog/roi-of-robotic-automation/) requires modeling these recurring expenses rather than just comparing purchase price against labor savings.
 
 ### Maintenance Costs
 
@@ -108,7 +108,7 @@ A practical TCO calculation follows this structure:
 
 **Year N (End-of-Life):** Removal + disposal + transition costs, minus residual value
 
-When you sum these across the expected life of the system — typically 10 to 15 years for a well-maintained industrial robot — you get a number that is often three to five times the initial robot purchase price. That is not a reason to avoid automation. It is a reason to plan for it properly so the investment delivers the returns you projected.
+When you sum these across the expected life of the system — typically 10 to 15 years for a well-maintained industrial robot — you get a number that is often three to five times the initial robot purchase price. That is not a reason to avoid automation. It is a reason to plan for it properly so the investment delivers the returns you projected. For a complete framework on building and validating these returns, see our guide on [calculating ROI for industrial automation projects](/blog/roi-of-robotic-automation/).
 
 ## Where Manufacturers Underestimate Costs
 

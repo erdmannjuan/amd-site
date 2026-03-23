@@ -77,7 +77,7 @@ Appliance assembly automation delivers returns through several channels simultan
 
 But the less visible returns often matter more over time. Defect reduction—moving from 2–3% rework rates to under 0.5%—eliminates scrap cost and warranty exposure. Cycle time consistency enables higher throughput from the same floor space. And the traceability data from automated process controls simplifies root cause analysis when quality issues do arise.
 
-For a deeper look at how to build the financial case, our post on [calculating ROI for industrial automation projects](/blog/calculating-roi-for-industrial-automation-projects/) walks through the methodology we use with customers during project planning.
+For a deeper look at how to build the financial case, our post on [calculating ROI for industrial automation projects](/blog/roi-of-robotic-automation/) walks through the methodology we use with customers during project planning.
 
 ## Lessons from the Field
 

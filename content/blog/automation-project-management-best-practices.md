@@ -87,7 +87,7 @@ Scope creep is the silent killer of automation projects. It rarely arrives as on
 
 Implement a formal change control process. Every change request should document the technical change being proposed, the cost impact, the schedule impact, and the approval. This doesn't need to be bureaucratic — a simple change order form and a weekly review cadence work fine. But it does need to be consistent.
 
-"While we're at it, can we also..." is the most expensive phrase in automation project management. If you're [calculating ROI for your automation project](/blog/calculating-roi-for-industrial-automation-projects/), uncontrolled scope changes are the fastest way to erode your returns.
+"While we're at it, can we also..." is the most expensive phrase in automation project management. If you're [calculating ROI for your automation project](/blog/roi-of-robotic-automation/), uncontrolled scope changes are the fastest way to erode your returns.
 
 ## Invest in Commissioning and Handoff
 

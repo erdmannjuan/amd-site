@@ -81,7 +81,7 @@ The ROI calculation for small batch welding automation looks different from high
 - **Throughput flexibility.** A well-designed cell can shift between part numbers without the bottleneck of waiting for a specific welder who knows that particular job.
 - **Documentation.** Robotic welding generates process data — wire feed speed, voltage, travel speed, heat input — that supports traceability requirements for aerospace, defense, and medical customers.
 
-When evaluating the financial case, it helps to use a structured approach to [calculating ROI for automation projects](/blog/calculating-roi-for-industrial-automation-projects/) that accounts for these less obvious cost savings alongside direct labor reduction.
+When evaluating the financial case, it helps to use a structured approach to [calculating ROI for automation projects](/blog/roi-of-robotic-automation/) that accounts for these less obvious cost savings alongside direct labor reduction.
 
 ## Common Pitfalls
 

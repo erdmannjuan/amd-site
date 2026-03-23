@@ -55,7 +55,7 @@ One of the underappreciated aspects of this DOE initiative is how energy optimiz
 
 But as energy costs rise and sustainability reporting becomes a procurement requirement — particularly for manufacturers supplying to automotive OEMs and defense primes — the energy dimension of automation decisions carries more weight. A well-designed automated system doesn't just reduce labor cost. It runs more consistently than manual operations, eliminates the energy waste of idle equipment, and generates the data needed to optimize consumption continuously.
 
-Manufacturers considering new automation investments should factor energy performance into their planning. Our guide on [calculating ROI for industrial automation projects](/blog/calculating-roi-for-industrial-automation-projects/) covers how to build a comprehensive business case that includes energy and operational efficiency alongside traditional labor and throughput metrics.
+Manufacturers considering new automation investments should factor energy performance into their planning. Our guide on [calculating ROI for industrial automation projects](/blog/roi-of-robotic-automation/) covers how to build a comprehensive business case that includes energy and operational efficiency alongside traditional labor and throughput metrics.
 
 ## What Manufacturers Should Do Now
 
