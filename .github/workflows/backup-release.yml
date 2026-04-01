@@ -58,7 +58,7 @@ jobs:
           echo "- \`amd-site-source-${DATE}.tar.gz\` - Source files" >> notes.md
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: backup-${{ steps.notes.outputs.date }}
           name: "Site Backup - ${{ steps.notes.outputs.date }}"
