@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Applications Hero -->
+<section class="apphub-hero" style="background-image: url('{{ config.site.base_path }}/static/images/applications/hero.webp')">
+    <div class="apphub-hero-overlay"></div>
+    <div class="container">
+        <div class="apphub-hero-content">
+            <span class="apphub-hero-kicker">Automation Applications</span>
+            <h1 class="apphub-hero-title">{{ page.hero_title or "Automation Applications Engineered Around Your Process" }}</h1>
+            <p class="apphub-hero-subtitle">{{ page.hero_subtitle or "Explore the systems we design and build for high-volume manufacturing — engineered around each customer's part geometry, process, cycle time, and quality goals." }}</p>
+            <div class="apphub-hero-actions">
+                <a href="{{ config.site.base_path }}/contact/" class="btn btn-orange btn-lg">Request a Quote</a>
+                <a href="#applications" class="btn btn-outline-light btn-lg">Browse Applications</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Intro / lede -->
+<section class="apphub-intro">
+    <div class="container">
+        <div class="apphub-intro-inner">
+            {% if content %}{{ content | safe }}{% else %}
+            <p>Explore common automation applications designed and built by AMD Machines for high-volume manufacturing environments. Every system is engineered around each customer's part geometry, process requirements, cycle time, quality standards, and production goals.</p>
+            {% endif %}
+        </div>
+        <div class="apphub-stats">
+            {% for stat in config.stats %}
+            <div class="apphub-stat">
+                <span class="apphub-stat-number">{{ stat.number }}</span>
+                <span class="apphub-stat-label">{{ stat.label }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Application categories + cards -->
+<section class="apphub-applications" id="applications">
+    <div class="container">
+        {% for cat in config.applications %}
+        <div class="apphub-category">
+            <div class="apphub-category-header">
+                <h2 class="apphub-category-title">{{ cat.category }}</h2>
+                {% if cat.intro %}<p class="apphub-category-intro">{{ cat.intro }}</p>{% endif %}
+            </div>
+            <div class="apphub-grid">
+                {% for item in cat['items'] %}
+                <a href="{{ config.site.base_path }}/applications/{{ item.slug }}/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('{{ config.site.base_path }}/static/images/applications/{{ item.slug }}.webp')" data-label="{{ item.name }}">
+                        <span class="apphub-card-imagelabel">{{ item.name }}</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">{{ item.name }}</h3>
+                        <p class="apphub-card-blurb">{{ item.blurb }}</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Depth / quality showcase bands -->
+<section class="apphub-feature-band">
+    <div class="container">
+        <div class="apphub-feature">
+            <div class="apphub-feature-media" style="background-image: url('{{ config.site.base_path }}/static/images/applications/showcase-engineering.webp')">
+                <span class="apphub-card-imagelabel">Engineering &amp; Build</span>
+            </div>
+            <div class="apphub-feature-text">
+                <span class="section-label">Built In-House</span>
+                <h2>Designed, built, and commissioned under one roof</h2>
+                <p>Mechanical design, electrical engineering, controls programming, vision integration, and robotics — all from one team. That control over the full stack is how we hit aggressive cycle-time and quality targets without finger-pointing between subcontractors.</p>
+                <a href="{{ config.site.base_path }}/solutions/" class="link-arrow">See our core solutions &rarr;</a>
+            </div>
+        </div>
+        <div class="apphub-feature apphub-feature-reverse">
+            <div class="apphub-feature-media" style="background-image: url('{{ config.site.base_path }}/static/images/applications/showcase-integration.webp')">
+                <span class="apphub-card-imagelabel">Integration &amp; Validation</span>
+            </div>
+            <div class="apphub-feature-text">
+                <span class="section-label">Proven Process</span>
+                <h2>From your toughest part to a running production line</h2>
+                <p>We start with your part, your takt time, and your quality standard — then engineer the feeding, handling, processing, inspection, and data capture around it. Every system ships with the documentation and traceability your customers and auditors expect.</p>
+                <a href="{{ config.site.base_path }}/case-studies/" class="link-arrow">See real project results &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section cta-accent">
+    <div class="container">
+        <h2>Don't see your exact application?</h2>
+        <p>We engineer custom automation for unique challenges. Tell us about your part, process, and production goals — we've built 2,500+ machines over 30 years.</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+    </div>
+</section>
+{% endblock %}

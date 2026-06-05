@@ -1,0 +1,89 @@
+# Application-page population system
+
+Iteratively turns the `/applications/<slug>/` **stubs** into deep, SEO-optimized,
+buyer-focused landing pages — **one page per fresh Claude Code agent** so quality
+never degrades across the batch.
+
+## Files
+| File | Purpose |
+|------|---------|
+| `populate-applications.sh` | The safeguarded runner loop you execute in your terminal. |
+| `application-page-prompt.md` | The gold-standard per-page prompt each agent receives (`{{PAGE}}`/`{{SLUG}}` are substituted per page). |
+| `validate_application_page.py` | Hard quality gate run after every page (word count, links, title/meta length, single-H1, FAQ schema source, no links to removed pages, indexable). |
+
+## Prerequisites
+- [Claude Code CLI](https://docs.claude.com) installed and authenticated (`claude` on your PATH).
+- Python 3 with PyYAML (`pip install pyyaml --break-system-packages`).
+- Run from anywhere inside the repo.
+
+## Quick start
+```bash
+# See progress (no agents launched)
+scripts/populate-applications.sh --status
+
+# See exactly what the next run would do
+scripts/populate-applications.sh --dry-run
+
+# Process the next batch (default 3 pages), with a confirmation prompt
+scripts/populate-applications.sh
+
+# Unattended: process the next 5 pages, no prompt
+MAX_PAGES=5 scripts/populate-applications.sh --yes
+
+# Do a single specific page (great for a first test)
+scripts/populate-applications.sh --page automated-leak-test-stations --yes
+```
+Re-run it as many times as needed — it always resumes from the next unfinished page
+(it reads each page's `status:` / `noindex:` frontmatter to know what's done).
+
+## Why quality stays high
+Each page is handled by its **own `claude` process** (fresh context). The runner never
+asks one agent to do several pages, which is what caused your quality to fall off a cliff
+after page one.
+
+## Safeguards (so you never waste tokens)
+- **Per-page turn cap** — `MAX_TURNS` (default 60) limits agent tool-calls per page.
+- **Per-page timeout** — `TIMEOUT_SECS` (default 1800s) hard-kills a stuck agent.
+- **Batch cap** — `MAX_PAGES` (default 3) limits how many pages per invocation.
+- **Quality gate** — after each page, `validate_application_page.py` must pass.
+- **Build gate** — `python3 build.py` must succeed before the page is accepted.
+- **Halt on first failure** — `HALT_ON_FAIL=1` stops the whole run if anything fails,
+  so a bad agent can't burn tokens across the rest of the batch.
+- **Per-page commit** — each accepted page is committed on its own, so progress is saved
+  and any single page is trivial to revert.
+- **Kill switch** — `touch STOP` in the repo root (or Ctrl-C). The loop exits cleanly
+  after the current page.
+
+## What "done" means (the gate)
+A page only counts as complete when its agent has set `status: complete` + `noindex: false`
+AND it passes: ≥`MIN_WORDS` (800) body words, ≥`MIN_INTERNAL_LINKS` (5) internal links,
+≥`MIN_FAQ` (3) FAQ items in frontmatter, title ≤60 chars, meta ≤155 chars, exactly one H1,
+no links to the removed medical/pharma pages, and a clean site build.
+
+## Tuning (env vars)
+```
+MAX_PAGES=3 MAX_TURNS=60 TIMEOUT_SECS=1800 MODEL=
+PERMISSION_MODE=acceptEdits CLAUDE_EXTRA_ARGS=
+MIN_WORDS=800 MIN_INTERNAL_LINKS=5 MIN_FAQ=3
+HALT_ON_FAIL=1 REVERT_ON_FAIL=0 COMMIT=1
+```
+- For a fully hands-off run you may need broader tool permissions:
+  `CLAUDE_EXTRA_ARGS="--dangerously-skip-permissions" scripts/populate-applications.sh --yes`
+  (only do this in a repo you trust — it lets the agent run tools without prompting).
+- `MODEL=claude-sonnet-4-6` (or another model string) to pin the model.
+
+## SEO architecture (how these pages avoid cannibalizing /solutions/*)
+- **Solution pages keep the broad head terms.** Application pages target **narrower,
+  buyer-intent long-tail clusters** (each page's `primary_keyword`), registered in the
+  keyword map in `CLAUDE.md`.
+- **Pillar ↔ spoke linking:** every application links up to its parent solution and across
+  to siblings; the hub links down. Authority concentrates instead of splitting.
+- **No thin pages indexed:** stubs ship `noindex: true` and are excluded from `sitemap.xml`.
+  A page only becomes indexable when the agent finishes it and the gate passes.
+
+## After the run
+- Drop real images into `static/images/applications/` using the placeholder filenames the
+  pages reference (`<slug>.webp` for hero/cards, `<slug>-1.webp`, `<slug>-2.webp` inline).
+- `python3 build.py`, review locally, then `git push origin main` to deploy.
+
+Logs for each page are in `logs/<slug>.log` (gitignored).

@@ -60,6 +60,39 @@
    - If an existing page covers the topic, EXPAND that page instead of creating a new one
    - If the new page serves a genuinely different intent (e.g., educational blog vs. commercial solution), proceed but differentiate the title, H1, and primary keywords
 
+### Application Pages (`/applications/*`) — Topic-Cluster Architecture
+
+The `/applications/<slug>/` pages are **spokes** that target narrow, buyer-intent, long-tail equipment keywords. They must NOT cannibalize the broad `/solutions/*` head terms. Follow these rules:
+
+- **Solutions = head terms (pillars). Applications = long-tail (spokes).** Never give an application page the same PRIMARY keyword as a solution page. Each application page's `primary_keyword` (in its frontmatter) is authoritative — use ONLY that cluster as primary.
+- **Pillar ↔ spoke linking is mandatory.** Every application page links UP to its parent solution (descriptive anchor) and ACROSS to 2–3 sibling applications; the `/applications/` hub links down to all of them.
+- **No thin pages get indexed.** New application stubs ship with `noindex: true` and `status: stub` in frontmatter; `build.py` excludes `noindex` pages from `sitemap.xml` and `base.html` emits `<meta name="robots" content="noindex, follow">`. A page becomes indexable ONLY when it is fully populated and flips to `status: complete` + `noindex: false`.
+- **Do not change `/solutions/*` titles, H1s, or primary keywords** when building application pages.
+- **Population is automated, one page per fresh agent.** Use `scripts/populate-applications.sh` (per-page prompt in `scripts/application-page-prompt.md`, quality gate in `scripts/validate_application_page.py`). Never populate multiple application pages in a single agent context — quality degrades.
+
+Application page → primary long-tail cluster → parent solution (DO NOT target another row's primary):
+
+   | Application page (`/applications/...`) | Primary long-tail cluster | Parent solution (link up) |
+   |---|---|---|
+   | `custom-assembly-machines` | custom automated assembly machines | `/solutions/assembly/` |
+   | `servo-press-assembly-stations` | servo press assembly stations, press-fit assembly machines | `/solutions/servo-pressing/` |
+   | `robotic-screwdriving-systems` | robotic screwdriving systems, automated fastening | `/solutions/screwdriving/` |
+   | `robotic-welding-cells` | robotic welding cells, automated welding cells | `/solutions/welding/` |
+   | `automated-dispensing-systems` | automated dispensing systems, adhesive/sealant dispensing | `/solutions/dispensing/` |
+   | `automated-leak-test-stations` | automated leak test stations, pressure-decay/helium leak testing | `/solutions/test-systems/` |
+   | `end-of-line-test-systems` | end-of-line test systems, EOL test stands | `/solutions/test-systems/` |
+   | `automated-functional-test-stations` | automated functional test stations, functional testers | `/solutions/test-systems/` |
+   | `machine-vision-inspection-stations` | machine vision inspection stations, automated optical inspection | `/solutions/machine-vision/` |
+   | `part-marking-traceability-systems` | part marking and traceability systems, laser marking stations | `/solutions/marking-traceability/` |
+   | `automated-labeling-stations` | automated labeling stations, print-and-apply labeling | `/solutions/marking-traceability/` |
+   | `robotic-machine-tending-cells` | robotic machine tending cells, CNC tending automation | `/solutions/machine-tending/` |
+   | `robotic-bin-picking-systems` | robotic bin picking systems, 3D vision bin picking | `/solutions/bin-picking/` |
+   | `automated-pick-and-place-systems` | automated pick and place systems, high-speed pick and place | `/solutions/material-handling/` |
+   | `robotic-palletizing-cells` | robotic palletizing cells, automated palletizing systems | `/solutions/palletizing/` |
+   | `flexible-feeding-systems` | flexible feeding systems, vision-based flexible feeders | `/solutions/material-handling/` |
+   | `robotic-deburring-grinding-cells` | robotic deburring and grinding cells, automated edge finishing | `/solutions/deburring/` |
+   | `robotic-polishing-buffing-cells` | robotic polishing and buffing cells, automated surface finishing | `/solutions/grinding-polishing/` |
+
 ### Title Tag & Meta Description Rules
 
 10. **Title tags must be under 60 characters.** Format: `Primary Keyword | Secondary | AMD Machines`

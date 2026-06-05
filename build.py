@@ -557,6 +557,10 @@ def generate_sitemap(pages, config):
     for page in pages:
         url = page['url']
 
+        # Skip noindex pages (e.g. unpublished application stubs awaiting deep content)
+        if page.get('noindex'):
+            continue
+
         # Skip 404 and other utility pages
         if url in ['/404/', '/privacy-policy/']:
             continue

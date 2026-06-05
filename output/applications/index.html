@@ -12,13 +12,14 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Automation applications AMD Machines designs and builds for high-volume manufacturing — assembly, test, vision, welding, robotics, and more.">
+    <meta name="description" content="Automation applications AMD Machines designs and builds for high-volume manufacturing — assembly, leak test, machine vision, welding, robotics, and more.">
     <meta name="keywords" content="automation applications, automated assembly machines, leak test stations, machine vision inspection, robotic welding cells, machine tending, robotic palletizing">
     <meta name="author" content="AMD Machines">
+    
 
     <!-- Open Graph -->
     <meta property="og:title" content="Automation Applications | AMD Machines">
-    <meta property="og:description" content="Automation applications AMD Machines designs and builds for high-volume manufacturing — assembly, test, vision, welding, robotics, and more.">
+    <meta property="og:description" content="Automation applications AMD Machines designs and builds for high-volume manufacturing — assembly, leak test, machine vision, welding, robotics, and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amdmachines.com/applications/">
     <meta property="og:site_name" content="AMD Machines">
@@ -29,7 +30,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Automation Applications | AMD Machines">
-    <meta name="twitter:description" content="Automation applications AMD Machines designs and builds for high-volume manufacturing — assembly, test, vision, welding, robotics, and more.">
+    <meta name="twitter:description" content="Automation applications AMD Machines designs and builds for high-volume manufacturing — assembly, leak test, machine vision, welding, robotics, and more.">
     <meta name="twitter:image" content="https://amdmachines.com/static/images/og-default.jpg">
 
     <!-- Canonical URL -->
@@ -104,7 +105,7 @@
     
 
     <!-- Preload CSS to reduce render-blocking -->
-    <link rel="preload" href="/static/css/style.css?v=20260605" as="style">
+    <link rel="preload" href="/static/css/style.css?v=20260606" as="style">
 
     <!-- Preload critical fonts (matching PageSpeed critical chain) -->
     <link rel="preload" href="/static/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
@@ -113,7 +114,7 @@
     <link rel="preload" href="/static/fonts/ibm-plex-sans-700.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/static/css/style.css?v=20260605">
+    <link rel="stylesheet" href="/static/css/style.css?v=20260606">
 
     
 </head>
@@ -425,74 +426,340 @@
     <!-- Main Content -->
     <main class="site-main">
         
-<!-- Hero Section (if page has hero) -->
-
-<!-- Page Hero -->
-<section class="page-hero">
+<!-- Applications Hero -->
+<section class="apphub-hero" style="background-image: url('/static/images/applications/hero.webp')">
+    <div class="apphub-hero-overlay"></div>
     <div class="container">
-        <h1 class="page-title">Automation Applications</h1>
-        
-        <p class="page-subtitle">Automation applications AMD Machines designs and builds for high-volume manufacturing — assembly, test, vision, welding, robotics, and more.</p>
-        
+        <div class="apphub-hero-content">
+            <span class="apphub-hero-kicker">Automation Applications</span>
+            <h1 class="apphub-hero-title">Automation Applications Engineered Around Your Process</h1>
+            <p class="apphub-hero-subtitle">Explore the systems we design and build for high-volume manufacturing — engineered around each customer&#39;s part geometry, process, cycle time, and quality goals.</p>
+            <div class="apphub-hero-actions">
+                <a href="/contact/" class="btn btn-orange btn-lg">Request a Quote</a>
+                <a href="#applications" class="btn btn-outline-light btn-lg">Browse Applications</a>
+            </div>
+        </div>
     </div>
 </section>
 
+<!-- Intro / lede -->
+<section class="apphub-intro">
+    <div class="container">
+        <div class="apphub-intro-inner">
+            <p>Explore common automation applications designed and built by AMD Machines for high-volume manufacturing environments. Every system is engineered around each customer's part geometry, process requirements, cycle time, quality standards, and production goals — from automated assembly and leak testing to machine vision, robotic welding, and palletizing.</p>
+        </div>
+        <div class="apphub-stats">
+            
+            <div class="apphub-stat">
+                <span class="apphub-stat-number">30+</span>
+                <span class="apphub-stat-label">Years in Operation</span>
+            </div>
+            
+            <div class="apphub-stat">
+                <span class="apphub-stat-number">2,500+</span>
+                <span class="apphub-stat-label">Machines Built</span>
+            </div>
+            
+            <div class="apphub-stat">
+                <span class="apphub-stat-number">150+</span>
+                <span class="apphub-stat-label">Team Members</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
-<!-- Page Content -->
-<section class="section section-warm">
+<!-- Application categories + cards -->
+<section class="apphub-applications" id="applications">
     <div class="container">
         
-        <div class="content-narrow">
-            <div class="content-body prose">
-                <p>Explore common automation applications designed and built by AMD Machines for high-volume manufacturing environments. Our systems are engineered around each customer's part geometry, process requirements, cycle time, quality standards, and production goals.</p>
-<h2 id="assembly-joining">Assembly &amp; Joining</h2>
-<ul>
-<li><strong><a href="/solutions/assembly/">Custom Automated Assembly Machines</a></strong> — turnkey assembly cells and lines built around your part and target cycle time.</li>
-<li><strong><a href="/solutions/servo-pressing/">Servo Press Assembly Stations</a></strong> — force- and position-controlled pressing for repeatable press-fit assembly.</li>
-<li><strong><a href="/solutions/screwdriving/">Robotic Screwdriving Systems</a></strong> — automated fastening with torque and depth verification.</li>
-<li><strong><a href="/solutions/welding/">Robotic Welding Cells</a></strong> — MIG, TIG, spot, and laser welding cells with positioners and fixturing.</li>
-<li><strong><a href="/solutions/dispensing/">Automated Dispensing Systems</a></strong> — adhesive, sealant, and fluid dispensing with closed-loop control.</li>
-</ul>
-<h2 id="test-inspection">Test &amp; Inspection</h2>
-<ul>
-<li><strong><a href="/solutions/test-systems/">Automated Leak Test Stations</a></strong> — pressure-decay, mass-flow, and helium leak testing.</li>
-<li><strong><a href="/solutions/test-systems/">End-of-Line Test Systems</a></strong> — integrated end-of-line verification before product ships.</li>
-<li><strong><a href="/solutions/test-systems/">Automated Functional Test Stations</a></strong> — application-specific functional testing with full data capture.</li>
-<li><strong><a href="/solutions/machine-vision/">Machine Vision Inspection Stations</a></strong> — vision-guided inspection, measurement, and defect detection.</li>
-<li><strong><a href="/solutions/marking-traceability/">Part Marking and Traceability Systems</a></strong> — laser marking, 2D codes, and serialized traceability.</li>
-</ul>
-<h2 id="robotics-material-handling">Robotics &amp; Material Handling</h2>
-<ul>
-<li><strong><a href="/solutions/machine-tending/">Robotic Machine Tending Cells</a></strong> — CNC, press, and injection-molding tending.</li>
-<li><strong><a href="/solutions/bin-picking/">Robotic Bin Picking Systems</a></strong> — 3D vision-guided random bin picking.</li>
-<li><strong><a href="/solutions/material-handling/">Automated Pick-and-Place Systems</a></strong> — high-speed part transfer and placement.</li>
-<li><strong><a href="/solutions/palletizing/">Robotic Palletizing Cells</a></strong> — end-of-line stacking and unstacking.</li>
-</ul>
-<h2 id="finishing">Finishing</h2>
-<ul>
-<li><strong><a href="/solutions/deburring/">Robotic Deburring and Grinding Cells</a></strong> — automated edge and surface finishing.</li>
-<li><strong><a href="/solutions/grinding-polishing/">Robotic Polishing and Buffing Cells</a></strong> — consistent, repeatable surface finishing automation.</li>
-</ul>
-<!--
-TODO (do not publish thin pages just to fill the menu):
-The following requested applications do not yet have dedicated pages. Build a full
-page — or fold the content into the suggested existing solution page — before linking:
-  - Automated Labeling Stations  (candidate: expand /solutions/marking-traceability/ or /solutions/packaging/)
-  - Flexible Feeding Systems      (candidate: expand /solutions/material-handling/ or /solutions/assembly/)
--->
-
-<p>Don't see your exact application? We engineer <a href="/solutions/custom-automation/">custom automation solutions</a> for unique challenges — <a href="/contact/">contact our team</a> to scope your project.</p>
+        <div class="apphub-category">
+            <div class="apphub-category-header">
+                <h2 class="apphub-category-title">Assembly &amp; Joining</h2>
+                <p class="apphub-category-intro">Precision assembly, fastening, and joining systems built around your part.</p>
+            </div>
+            <div class="apphub-grid">
+                
+                <a href="/applications/custom-assembly-machines/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/custom-assembly-machines.webp')" data-label="Custom Automated Assembly Machines">
+                        <span class="apphub-card-imagelabel">Custom Automated Assembly Machines</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Custom Automated Assembly Machines</h3>
+                        <p class="apphub-card-blurb">Turnkey assembly cells and lines engineered around your part geometry, cycle time, and quality targets.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/servo-press-assembly-stations/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/servo-press-assembly-stations.webp')" data-label="Servo Press Assembly Stations">
+                        <span class="apphub-card-imagelabel">Servo Press Assembly Stations</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Servo Press Assembly Stations</h3>
+                        <p class="apphub-card-blurb">Force- and position-controlled pressing for repeatable, fully monitored press-fit assembly.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/robotic-screwdriving-systems/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/robotic-screwdriving-systems.webp')" data-label="Robotic Screwdriving Systems">
+                        <span class="apphub-card-imagelabel">Robotic Screwdriving Systems</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Robotic Screwdriving Systems</h3>
+                        <p class="apphub-card-blurb">Automated fastening with closed-loop torque and depth verification on every joint.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/robotic-welding-cells/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/robotic-welding-cells.webp')" data-label="Robotic Welding Cells">
+                        <span class="apphub-card-imagelabel">Robotic Welding Cells</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Robotic Welding Cells</h3>
+                        <p class="apphub-card-blurb">MIG, TIG, spot, and laser welding cells with positioners, fixturing, and weld monitoring.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/automated-dispensing-systems/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/automated-dispensing-systems.webp')" data-label="Automated Dispensing Systems">
+                        <span class="apphub-card-imagelabel">Automated Dispensing Systems</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Automated Dispensing Systems</h3>
+                        <p class="apphub-card-blurb">Adhesive, sealant, and fluid dispensing with closed-loop bead inspection.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="apphub-category">
+            <div class="apphub-category-header">
+                <h2 class="apphub-category-title">Test &amp; Inspection</h2>
+                <p class="apphub-category-intro">Catch every defect before it ships with automated test and vision.</p>
+            </div>
+            <div class="apphub-grid">
+                
+                <a href="/applications/automated-leak-test-stations/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/automated-leak-test-stations.webp')" data-label="Automated Leak Test Stations">
+                        <span class="apphub-card-imagelabel">Automated Leak Test Stations</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Automated Leak Test Stations</h3>
+                        <p class="apphub-card-blurb">Pressure-decay, mass-flow, and helium leak testing with full data capture.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/end-of-line-test-systems/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/end-of-line-test-systems.webp')" data-label="End-of-Line Test Systems">
+                        <span class="apphub-card-imagelabel">End-of-Line Test Systems</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">End-of-Line Test Systems</h3>
+                        <p class="apphub-card-blurb">Integrated end-of-line verification that confirms every unit before it leaves the line.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/automated-functional-test-stations/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/automated-functional-test-stations.webp')" data-label="Automated Functional Test Stations">
+                        <span class="apphub-card-imagelabel">Automated Functional Test Stations</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Automated Functional Test Stations</h3>
+                        <p class="apphub-card-blurb">Application-specific functional testing that proves the product performs to spec.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/machine-vision-inspection-stations/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/machine-vision-inspection-stations.webp')" data-label="Machine Vision Inspection Stations">
+                        <span class="apphub-card-imagelabel">Machine Vision Inspection Stations</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Machine Vision Inspection Stations</h3>
+                        <p class="apphub-card-blurb">High-speed vision for presence, measurement, defect detection, and verification.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="apphub-category">
+            <div class="apphub-category-header">
+                <h2 class="apphub-category-title">Marking &amp; Traceability</h2>
+                <p class="apphub-category-intro">Permanent identity and full genealogy for every part you build.</p>
+            </div>
+            <div class="apphub-grid">
+                
+                <a href="/applications/part-marking-traceability-systems/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/part-marking-traceability-systems.webp')" data-label="Part Marking &amp; Traceability Systems">
+                        <span class="apphub-card-imagelabel">Part Marking &amp; Traceability Systems</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Part Marking &amp; Traceability Systems</h3>
+                        <p class="apphub-card-blurb">Laser marking, 2D codes, and serialized traceability from raw part to finished goods.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/automated-labeling-stations/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/automated-labeling-stations.webp')" data-label="Automated Labeling Stations">
+                        <span class="apphub-card-imagelabel">Automated Labeling Stations</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Automated Labeling Stations</h3>
+                        <p class="apphub-card-blurb">Print-and-apply labeling with vision verification of placement and code quality.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="apphub-category">
+            <div class="apphub-category-header">
+                <h2 class="apphub-category-title">Robotics &amp; Material Handling</h2>
+                <p class="apphub-category-intro">Robots that load, move, pick, and stack so your people don&#39;t have to.</p>
+            </div>
+            <div class="apphub-grid">
+                
+                <a href="/applications/robotic-machine-tending-cells/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/robotic-machine-tending-cells.webp')" data-label="Robotic Machine Tending Cells">
+                        <span class="apphub-card-imagelabel">Robotic Machine Tending Cells</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Robotic Machine Tending Cells</h3>
+                        <p class="apphub-card-blurb">Lights-out loading and unloading for CNC, press, and injection-molding machines.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/robotic-bin-picking-systems/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/robotic-bin-picking-systems.webp')" data-label="Robotic Bin Picking Systems">
+                        <span class="apphub-card-imagelabel">Robotic Bin Picking Systems</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Robotic Bin Picking Systems</h3>
+                        <p class="apphub-card-blurb">3D vision-guided picking of randomly oriented parts straight from the bin.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/automated-pick-and-place-systems/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/automated-pick-and-place-systems.webp')" data-label="Automated Pick-and-Place Systems">
+                        <span class="apphub-card-imagelabel">Automated Pick-and-Place Systems</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Automated Pick-and-Place Systems</h3>
+                        <p class="apphub-card-blurb">High-speed, high-accuracy part transfer and placement for high-volume lines.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/robotic-palletizing-cells/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/robotic-palletizing-cells.webp')" data-label="Robotic Palletizing Cells">
+                        <span class="apphub-card-imagelabel">Robotic Palletizing Cells</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Robotic Palletizing Cells</h3>
+                        <p class="apphub-card-blurb">End-of-line stacking and unstacking that runs every shift without fatigue.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/flexible-feeding-systems/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/flexible-feeding-systems.webp')" data-label="Flexible Feeding Systems">
+                        <span class="apphub-card-imagelabel">Flexible Feeding Systems</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Flexible Feeding Systems</h3>
+                        <p class="apphub-card-blurb">Vision-based flexible feeders that handle multiple parts with fast changeover.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="apphub-category">
+            <div class="apphub-category-header">
+                <h2 class="apphub-category-title">Finishing</h2>
+                <p class="apphub-category-intro">Consistent, repeatable surface finishing without the manual labor.</p>
+            </div>
+            <div class="apphub-grid">
+                
+                <a href="/applications/robotic-deburring-grinding-cells/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/robotic-deburring-grinding-cells.webp')" data-label="Robotic Deburring &amp; Grinding Cells">
+                        <span class="apphub-card-imagelabel">Robotic Deburring &amp; Grinding Cells</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Robotic Deburring &amp; Grinding Cells</h3>
+                        <p class="apphub-card-blurb">Automated edge and surface finishing with force-controlled tooling.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
+                <a href="/applications/robotic-polishing-buffing-cells/" class="apphub-card">
+                    <div class="apphub-card-media" style="background-image: url('/static/images/applications/robotic-polishing-buffing-cells.webp')" data-label="Robotic Polishing &amp; Buffing Cells">
+                        <span class="apphub-card-imagelabel">Robotic Polishing &amp; Buffing Cells</span>
+                    </div>
+                    <div class="apphub-card-body">
+                        <h3 class="apphub-card-title">Robotic Polishing &amp; Buffing Cells</h3>
+                        <p class="apphub-card-blurb">Repeatable polishing and buffing to consistent surface-finish targets.</p>
+                        <span class="apphub-card-link">Explore application &rarr;</span>
+                    </div>
+                </a>
+                
             </div>
         </div>
         
     </div>
 </section>
 
-<!-- Related Links Section (if any) -->
+<!-- Depth / quality showcase bands -->
+<section class="apphub-feature-band">
+    <div class="container">
+        <div class="apphub-feature">
+            <div class="apphub-feature-media" style="background-image: url('/static/images/applications/showcase-engineering.webp')">
+                <span class="apphub-card-imagelabel">Engineering &amp; Build</span>
+            </div>
+            <div class="apphub-feature-text">
+                <span class="section-label">Built In-House</span>
+                <h2>Designed, built, and commissioned under one roof</h2>
+                <p>Mechanical design, electrical engineering, controls programming, vision integration, and robotics — all from one team. That control over the full stack is how we hit aggressive cycle-time and quality targets without finger-pointing between subcontractors.</p>
+                <a href="/solutions/" class="link-arrow">See our core solutions &rarr;</a>
+            </div>
+        </div>
+        <div class="apphub-feature apphub-feature-reverse">
+            <div class="apphub-feature-media" style="background-image: url('/static/images/applications/showcase-integration.webp')">
+                <span class="apphub-card-imagelabel">Integration &amp; Validation</span>
+            </div>
+            <div class="apphub-feature-text">
+                <span class="section-label">Proven Process</span>
+                <h2>From your toughest part to a running production line</h2>
+                <p>We start with your part, your takt time, and your quality standard — then engineer the feeding, handling, processing, inspection, and data capture around it. Every system ships with the documentation and traceability your customers and auditors expect.</p>
+                <a href="/case-studies/" class="link-arrow">See real project results &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-<!-- CTA Section -->
-
+<!-- CTA -->
+<section class="cta-section cta-accent">
+    <div class="container">
+        <h2>Don't see your exact application?</h2>
+        <p>We engineer custom automation for unique challenges. Tell us about your part, process, and production goals — we've built 2,500+ machines over 30 years.</p>
+        <a href="/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+    </div>
+</section>
 
     </main>
 

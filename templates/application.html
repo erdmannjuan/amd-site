@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% set slug = page.url.strip('/').split('/')[-1] %}
+
+{% block head_extra %}
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "{{ page.title }}",
+    "serviceType": "{{ page.primary_keyword or page.title }}",
+    "description": "{{ page.description or config.seo.default_description }}",
+    "provider": {
+        "@type": "Organization",
+        "name": "{{ config.site.name }}",
+        "url": "{{ config.site.url }}"
+    },
+    "areaServed": "US",
+    "url": "{{ config.site.url }}{{ page.url }}"
+}
+</script>
+{% if page.faq %}
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for item in page.faq %}
+        {
+            "@type": "Question",
+            "name": "{{ item.q }}",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{ item.a }}" }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<!-- Application Hero -->
+<section class="app-page-hero" style="background-image: url('{{ config.site.base_path }}/static/images/applications/{{ slug }}.webp')">
+    <div class="app-page-hero-overlay"></div>
+    <div class="container">
+        <nav class="app-breadcrumb" aria-label="Breadcrumb">
+            <a href="{{ config.site.base_path }}/">Home</a>
+            <span>/</span>
+            <a href="{{ config.site.base_path }}/applications/">Applications</a>
+            <span>/</span>
+            <span class="current">{{ page.short_title or page.title }}</span>
+        </nav>
+        <h1 class="app-page-title">{{ page.hero_title or page.title }}</h1>
+        {% if page.tagline or page.description %}
+        <p class="app-page-subtitle">{{ page.tagline or page.description }}</p>
+        {% endif %}
+        <div class="app-hero-actions">
+            <a href="{{ config.site.base_path }}/contact/" class="btn btn-orange btn-lg">Request a Quote</a>
+            <a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}" class="btn btn-outline-light btn-lg">{{ config.social.phone }}</a>
+        </div>
+    </div>
+</section>
+
+<!-- Application Body -->
+<section class="section section-warm">
+    <div class="container">
+        <div class="content-narrow">
+            <div class="content-body prose">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related (pillar / spoke internal linking) -->
+{% if page.parent_solution or page.related %}
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Explore More</span>
+            <h2 class="section-title">Related Capabilities</h2>
+        </div>
+        <div class="app-related-grid">
+            {% if page.parent_solution %}
+            <a href="{{ config.site.base_path }}{{ page.parent_solution.url }}" class="app-related-card app-related-parent">
+                <span class="app-related-kicker">Solution</span>
+                <span class="app-related-name">{{ page.parent_solution.name }}</span>
+                <span class="app-related-arrow">Explore the full capability &rarr;</span>
+            </a>
+            {% endif %}
+            {% for rel in page.related %}
+            <a href="{{ config.site.base_path }}{{ rel.url }}" class="app-related-card">
+                <span class="app-related-kicker">{{ rel.kicker or 'Application' }}</span>
+                <span class="app-related-name">{{ rel.name }}</span>
+                <span class="app-related-arrow">Learn more &rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA -->
+<section class="cta-section cta-accent">
+    <div class="container">
+        <h2>{{ page.cta_title or "Let's Engineer Your Solution" }}</h2>
+        <p>{{ page.cta_text or "Tell us about your part, cycle time, and quality targets. We've built 2,500+ machines over 30 years — chances are we've solved something similar." }}</p>
+        <a href="{{ config.site.base_path }}/contact/" class="btn btn-white btn-lg">Request a Quote</a>
+    </div>
+</section>
+{% endblock %}
