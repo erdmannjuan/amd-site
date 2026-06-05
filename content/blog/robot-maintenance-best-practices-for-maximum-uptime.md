@@ -63,7 +63,7 @@ Here's a practical PM framework based on operating hours:
 
 If there's one thing that separates well-maintained robots from beaten-up ones, it's grease management. And most facilities get it wrong in one of two ways: they either skip greasing entirely or they over-grease.
 
-Over-greasing is surprisingly common and almost as damaging as under-greasing. Excess grease builds hydraulic pressure inside the gearbox, blows past seals, and ends up dripping onto parts or contaminating your workspace. On a KUKA KR series, we've seen over-greased J4 reducers push grease out through the seal and directly onto product below — a contamination nightmare in [medical device assembly](/case-studies/medical-device-assembly/).
+Over-greasing is surprisingly common and almost as damaging as under-greasing. Excess grease builds hydraulic pressure inside the gearbox, blows past seals, and ends up dripping onto parts or contaminating your workspace. On a KUKA KR series, we've seen over-greased J4 reducers push grease out through the seal and directly onto product below — a contamination nightmare in [medical device assembly](/solutions/assembly/).
 
 The right approach:
 - **Use the exact grease specified** by the manufacturer. FANUC robots typically require Moly White RE00 or equivalent. Mixing grease types causes chemical breakdown.

@@ -47,7 +47,7 @@ But the technology is spreading beyond automotive:
 
 **Pressure vessels and pipe** — ASME code work has always required extensive NDE (non-destructive examination). AI prediction doesn't replace code-mandated inspections, but it dramatically reduces the number of repairs discovered during those inspections. One pressure vessel fabricator reported cutting their repair rate from 4.5% to under 0.5% after deploying through-arc monitoring with ML classification.
 
-**Medical devices** — Laser welding on surgical instruments and implant components demands zero-defect quality. The small weld sizes and exotic materials (titanium, cobalt-chrome) make traditional inspection difficult. AI models trained on spectral emissions from the laser plume can detect contamination and keyhole collapse in real time—critical for [medical device assembly](/case-studies/medical-device-assembly/) where every part gets serialized and traced.
+**Medical devices** — Laser welding on surgical instruments and implant components demands zero-defect quality. The small weld sizes and exotic materials (titanium, cobalt-chrome) make traditional inspection difficult. AI models trained on spectral emissions from the laser plume can detect contamination and keyhole collapse in real time—critical for [medical device assembly](/solutions/assembly/) where every part gets serialized and traced.
 
 ## What You Need to Get Started
 

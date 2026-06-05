@@ -42,7 +42,7 @@ The 30% scrap reduction figure isn't aspirational — it's a conservative averag
 
 **Electronics assembly**: A contract manufacturer running SMT lines deployed AI-powered automated optical inspection (AOI) with deep learning classification. False call rates dropped from 15% to under 2%, which meant operators stopped ignoring alarms. Actual defect escape rate fell by 40%. The ROI was under 8 months on a system that cost roughly $120K per line.
 
-**Medical device manufacturing**: In a [medical device assembly](/case-studies/medical-device-assembly/) environment, AI-driven dimensional inspection replaced manual gauge checks on a critical catheter subassembly. Throughput increased 22% (because gauging was the bottleneck), and scrap fell 28% because the AI system caught subtle surface defects that manual inspection missed roughly 1 in 50 times. In medical, that miss rate is unacceptable.
+**Medical device manufacturing**: In [medical device assembly](/solutions/assembly/), AI-driven dimensional inspection can replace manual gauge checks on precision subassemblies such as catheter components. Throughput improves when gauging is the bottleneck, and scrap drops when the AI system catches subtle surface defects that manual inspection can miss. In medical, that miss rate is unacceptable.
 
 **Automotive welding**: Weld quality monitoring using AI analysis of electrical signatures (current, voltage, resistance curves) now catches cold welds and expulsion in real time. One Tier 1 supplier eliminated an entire destructive testing station — they used to cut apart 5 assemblies per shift for cross-section analysis. The AI system proved more reliable than destructive sampling, and it checked every single weld.
 

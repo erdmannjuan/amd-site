@@ -40,7 +40,7 @@ If you're running [machine vision inspection](/solutions/machine-vision/) on an 
 
 This FDA approval establishes a regulatory precedent for AI systems making those decisions. Industries with validated processes—medical devices, aerospace, automotive safety components—are watching closely.
 
-For medical device manufacturers specifically, the implications are significant. FDA's Quality System Regulation (21 CFR Part 820) shares philosophical DNA with pharma's GMP requirements. If AI process control passes muster for drug manufacturing, expect the Center for Devices and Radiological Health (CDRH) to develop parallel frameworks. Companies already running [medical device assembly](/case-studies/medical-device-assembly/) with high levels of automation are well-positioned to adopt AI process control early.
+For medical device manufacturers specifically, the implications are significant. FDA's Quality System Regulation (21 CFR Part 820) shares philosophical DNA with pharma's GMP requirements. If AI process control passes muster for drug manufacturing, expect the Center for Devices and Radiological Health (CDRH) to develop parallel frameworks. Companies already running [medical device assembly](/solutions/assembly/) with high levels of automation are well-positioned to adopt AI process control early.
 
 The automotive sector won't be far behind. IATF 16949 already accommodates statistical process control—extending that to AI-driven SPC is a natural evolution, especially for safety-critical components where process consistency directly impacts part performance.
 

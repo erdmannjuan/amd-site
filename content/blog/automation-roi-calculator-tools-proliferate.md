@@ -56,7 +56,7 @@ The right approach isn't more complicated—it's more honest. Here's what we rec
 - Throughput gains from consistent cycle times (robots don't slow down at 3 AM)
 - Customer retention from improved delivery reliability
 
-These benefits are real and often significant. One [medical device assembly](/case-studies/medical-device-assembly/) customer found that the quality consistency from robotic assembly reduced their scrap rate from 3.2% to 0.4%—a savings that exceeded the direct labor savings and wasn't in any calculator.
+These benefits are real and often significant. In [medical device assembly](/solutions/assembly/), for example, the quality consistency of robotic assembly can sharply reduce scrap rates—savings that often exceed the direct labor savings and aren't captured in any calculator.
 
 ## When the ROI Is Obviously Good (and When It's Not)
 

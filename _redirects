@@ -39,11 +39,19 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 # Industries
 /industries/automotive-auto-parts/ /industries/automotive/ 301
 /industries/manufacturing/ /industries/general-manufacturing/ 301
-/industries/healthcare/ /industries/medical/ 301
+/industries/healthcare/ /industries/ 301
 /industries/aerospace-defense/ /industries/aerospace/ 301
 /industries/building-materials/ /industries/general-manufacturing/ 301
 /industries/electric-motor-assembly/ /industries/electronics/ 301
 /industries/automation-in-the-manufacturing-industry/ /industries/general-manufacturing/ 301
+
+# Removed misleading medical/pharma content (case studies + industry pages) - 2026-06
+/case-studies/medical-device-assembly/ /case-studies/ 301
+/case-studies/pharmaceutical-packaging/ /case-studies/ 301
+/case-studies/medical/ /case-studies/ 301
+/case-studies/pharmaceutical/ /case-studies/ 301
+/industries/medical/ /industries/ 301
+/industries/pharmaceutical/ /industries/ 301
 
 # Blog redirects (old slugs to new equivalents)
 /blog/automated-assembly-machines-a-selection-guide/ /blog/automated-assembly-machines/ 301
@@ -93,7 +101,7 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /appliances/ /industries/appliances/ 301
 /aerospace-defense/ /industries/aerospace/ 301
 /automotive-auto-parts/ /industries/automotive/ 301
-/healthcare/ /industries/medical/ 301
+/healthcare/ /industries/ 301
 /what-is-cnc-machining/ /solutions/machine-tending/ 301
 /semi-automatic-solutions/cnc-machining/ /solutions/machine-tending/ 301
 /manufacturing-services/cnc-machining/ /solutions/machine-tending/ 301
@@ -105,9 +113,9 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /ins-outs-helium-leak-testing-equipment/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
 
 # 301 Redirects - Industries, Services, Tooling (common URL variations)
-/industries/medical-device-automation/ /industries/medical/ 301
-/industries/medical-device-manufacturing/ /industries/medical/ 301
-/industries/medical-devices/ /industries/medical/ 301
+/industries/medical-device-automation/ /industries/ 301
+/industries/medical-device-manufacturing/ /industries/ 301
+/industries/medical-devices/ /industries/ 301
 /industries/automotive-automation/ /industries/automotive/ 301
 /industries/automotive-manufacturing/ /industries/automotive/ 301
 /industries/consumer-products/ /industries/consumer/ 301

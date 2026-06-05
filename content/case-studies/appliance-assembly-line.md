@@ -90,11 +90,11 @@ related_case_studies:
     industry: "Electronics"
     image: "case-studies/electronics-vision.jpg"
     description: "AI-powered inspection system"
-  - title: "Medical Device Assembly"
-    url: "/case-studies/medical-device-assembly/"
-    industry: "Medical Devices"
-    image: "case-studies/medical-assembly.jpg"
-    description: "Precision assembly with traceability"
+  - title: "Consumer Electronics Assembly"
+    url: "/case-studies/consumer-electronics-assembly/"
+    industry: "Consumer Products"
+    image: "case-studies/consumer-electronics.jpg"
+    description: "Flexible assembly with zero changeover"
 ---
 
 ## Project Overview

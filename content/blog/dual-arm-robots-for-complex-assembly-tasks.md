@@ -64,4 +64,4 @@ Dual-arm makes sense when you genuinely need coordinated bimanual manipulation a
 
 If you're evaluating dual-arm robots for your assembly process, start by documenting every step that currently requires two hands on the shop floor. That's your candidate list. Then look at part weights, tolerances, and cycle time targets to narrow the field.
 
-AMD Machines has integrated dual-arm systems for electronics and [medical device assembly](/case-studies/medical-device-assembly/) applications. [Reach out](/contact/) if you want to discuss whether a dual-arm approach fits your process.
+AMD Machines integrates dual-arm systems for electronics and [precision assembly](/solutions/assembly/) applications. [Reach out](/contact/) if you want to discuss whether a dual-arm approach fits your process.

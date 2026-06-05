@@ -437,6 +437,33 @@ img {
     border-bottom-color: var(--primary);
 }
 
+/* Header CTA button (Request a Quote) */
+.nav-item-cta {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.nav-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.55rem 1.25rem;
+    background: var(--primary);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+    white-space: nowrap;
+}
+
+.nav-cta:hover {
+    filter: brightness(0.92);
+    color: #ffffff;
+}
+
 /* Dropdown Menu */
 .dropdown-arrow {
     font-size: 0.6rem;
@@ -669,6 +696,17 @@ img {
     .nav-link {
         padding: 1rem 0;
         border-bottom: 1px solid var(--border-light);
+    }
+
+    .nav-item-cta {
+        margin-left: 0;
+    }
+
+    .nav-cta {
+        margin-top: 1rem;
+        padding: 0.9rem 1rem;
+        justify-content: center;
+        text-align: center;
     }
 
     .nav-dropdown {

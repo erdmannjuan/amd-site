@@ -1,16 +1,12 @@
 ---
 title: "Case Studies | Real Automation Success Stories"
-description: "Explore AMD Machines case studies showcasing measurable results across automotive, medical device, electronics, and other manufacturing industries."
+description: "Explore AMD Machines case studies showcasing measurable results across automotive, electronics, aerospace, and other manufacturing industries."
 template: case-studies.html
 industries:
   - name: "Automotive"
     slug: "automotive"
     icon: "automotive"
     count: 3
-  - name: "Medical Devices"
-    slug: "medical"
-    icon: "medical"
-    count: 1
   - name: "Electronics"
     slug: "electronics"
     icon: "electronics"
@@ -27,10 +23,6 @@ industries:
     slug: "heavy-equipment"
     icon: "heavy"
     count: 1
-  - name: "Pharmaceutical"
-    slug: "pharmaceutical"
-    icon: "pharma"
-    count: 1
 case_studies:
   - title: "Tier-1 Automotive Supplier Increases Welding Throughput 300%"
     url: "/case-studies/automotive-welding-cell/"
@@ -44,18 +36,6 @@ case_studies:
         label: "Cycle Time"
       - value: "99.7%"
         label: "First-Pass Quality"
-  - title: "Medical Device Assembly Line Achieves ISO 13485 Compliance"
-    url: "/case-studies/medical-device-assembly/"
-    industry: "Medical Devices"
-    image: "case-studies/medical-assembly.jpg"
-    description: "Cleanroom-compatible assembly system for surgical instruments with full traceability."
-    key_results:
-      - value: "100%"
-        label: "Traceability"
-      - value: "0.1mm"
-        label: "Precision"
-      - value: "12mo"
-        label: "ROI Payback"
   - title: "EV Battery Module Line Delivers 500K Units Annually"
     url: "/case-studies/ev-battery-assembly/"
     industry: "Automotive"
@@ -116,18 +96,6 @@ case_studies:
         label: "Defect Escapes"
       - value: "AS9100"
         label: "Certified"
-  - title: "Pharmaceutical Packaging Line Achieves FDA Compliance"
-    url: "/case-studies/pharmaceutical-packaging/"
-    industry: "Pharmaceutical"
-    image: "case-studies/pharma-packaging.jpg"
-    description: "Automated serialization and packaging line meeting DSCSA requirements."
-    key_results:
-      - value: "100%"
-        label: "Serialization"
-      - value: "FDA"
-        label: "Compliant"
-      - value: "200/min"
-        label: "Bottles/Min"
   - title: "Automotive Powertrain Assembly Line Achieves 99.5% Uptime"
     url: "/case-studies/automotive-powertrain-assembly/"
     industry: "Automotive"

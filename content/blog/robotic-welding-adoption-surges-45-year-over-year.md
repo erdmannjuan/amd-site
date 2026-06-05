@@ -30,7 +30,7 @@ The 45% growth isn't coming from one segment. It's spread across three distinct 
 
 **Mid-volume fabrication.** This is where the growth is most dramatic. Shops running 50-500 piece lots of structural steel, equipment frames, or metal enclosures are deploying welding cobots that an operator can program in hours rather than days. The key enabling technology is offline programming software that generates weld paths from CAD models, reducing the programming bottleneck that historically made robotic welding uneconomical for shorter runs. Yaskawa's MotoSim and FANUC's Roboguide let you program a weld offline and transfer it to the robot without tying up production time.
 
-**Specialty and precision welding.** TIG and laser welding applications in aerospace, medical devices, and electronics are seeing increased automation. These aren't high-volume applications — they're high-precision ones where weld consistency matters more than throughput. A [medical device assembly](/case-studies/medical-device-assembly/) might need 50 identical titanium welds per day at 0.5mm bead width. That's not a job for a fatigued human hand at 4 PM on a Friday.
+**Specialty and precision welding.** TIG and laser welding applications in aerospace, medical devices, and electronics are seeing increased automation. These aren't high-volume applications — they're high-precision ones where weld consistency matters more than throughput. A [medical device assembly](/solutions/assembly/) might need 50 identical titanium welds per day at 0.5mm bead width. That's not a job for a fatigued human hand at 4 PM on a Friday.
 
 ## The Economics That Justify the Investment
 

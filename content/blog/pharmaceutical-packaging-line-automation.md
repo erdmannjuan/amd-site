@@ -84,7 +84,7 @@ These numbers are achievable, but they require disciplined integration work duri
 
 ## Lessons From Real Deployments
 
-Having worked on pharmaceutical packaging projects, several patterns emerge consistently. Our [pharmaceutical packaging case study](/case-studies/pharmaceutical-packaging/) illustrates many of these lessons in a real-world FDA-compliant deployment.
+Several patterns emerge consistently across pharmaceutical packaging automation projects.
 
 **Start with the data architecture.** The serialization data flow should be designed before the mechanical layout is finalized. Too many projects treat serialization as an add-on to an existing packaging line, and end up with retrofit headaches.
 
