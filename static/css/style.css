@@ -441,26 +441,30 @@ img {
 .nav-item-cta {
     display: flex;
     align-items: center;
-    margin-left: 0.5rem;
+    margin-left: 0.75rem;
 }
 
 .nav-cta {
     display: inline-flex;
     align-items: center;
-    padding: 0.55rem 1.25rem;
-    background: var(--primary);
-    color: #ffffff;
+    justify-content: center;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
     font-weight: 700;
-    font-size: 0.85rem;
+    line-height: 1;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    color: #ffffff;
+    background: var(--accent-orange);
+    padding: 0.6rem 1.3rem;
     border-radius: var(--radius-md);
     transition: var(--transition-fast);
     white-space: nowrap;
 }
 
-.nav-cta:hover {
-    filter: brightness(0.92);
+.nav-cta:hover,
+.nav-cta:focus {
+    background: var(--accent-orange-dark);
     color: #ffffff;
 }
 
@@ -700,10 +704,11 @@ img {
 
     .nav-item-cta {
         margin-left: 0;
+        margin-top: 0.5rem;
     }
 
     .nav-cta {
-        margin-top: 1rem;
+        width: 100%;
         padding: 0.9rem 1rem;
         justify-content: center;
         text-align: center;
