@@ -280,7 +280,7 @@ for slug in "${QUEUE[@]}"; do
 
   # ---- fresh, isolated agent for THIS page only ----
   cargs=(-p "$PROMPT" --max-turns "$MAX_TURNS" --permission-mode "$PERMISSION_MODE"
-         --allowedTools "Read,Edit,Write,Grep,Glob,WebSearch,WebFetch,Bash(python3 build.py)")
+         --allowedTools "Read,Edit,Write,Grep,Glob,WebSearch,WebFetch,Bash")
   [ -n "$MODEL" ] && cargs+=(--model "$MODEL")
   # shellcheck disable=SC2206
   [ -n "$CLAUDE_EXTRA_ARGS" ] && cargs+=($CLAUDE_EXTRA_ARGS)
