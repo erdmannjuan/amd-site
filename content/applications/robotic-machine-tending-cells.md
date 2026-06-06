@@ -1,5 +1,5 @@
 ---
-title: "Robotic Machine Tending Cells | AMD Machines"
+title: "Robotic Machine Tending Cells"
 short_title: "Robotic Machine Tending Cells"
 description: "Custom robotic machine tending cells for CNC, press, and injection molding. Lights-out loading, in-cell gauging, MES-ready. Request a quote."
 keywords: "robotic machine tending cells, CNC machine tending automation, automated machine tending, robotic CNC loading, lights-out machining cell, robot tended CNC, multi-machine tending cell, linear rail robot cell"

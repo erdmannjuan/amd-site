@@ -68,13 +68,17 @@ def main():
     if fm.get("noindex") not in (False, None, "false", "False"):
         errs.append(f"noindex is '{fm.get('noindex')}', expected false (page must be indexable when complete)")
 
-    # Title / meta lengths
+    # Title / meta lengths — base.html appends " | AMD Machines" (15 chars) to every title
+    TITLE_SUFFIX = " | AMD Machines"
     title = (fm.get("title") or "").strip()
     desc = (fm.get("description") or "").strip()
     if not title:
         errs.append("title is empty")
-    elif len(title) > 60:
-        errs.append(f"title is {len(title)} chars (>60)")
+    else:
+        if re.search(r"\|\s*AMD( Machines)?\s*$", title):
+            errs.append("title must NOT include the brand — the template appends ' | AMD Machines' automatically (would render doubled)")
+        if len(title) + len(TITLE_SUFFIX) > 60:
+            errs.append(f"rendered title would be {len(title) + len(TITLE_SUFFIX)} chars (>60 incl. auto suffix) — keep frontmatter title <=45 chars")
     if not desc:
         errs.append("description is empty")
     elif len(desc) > 155:

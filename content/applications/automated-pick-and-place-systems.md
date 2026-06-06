@@ -1,5 +1,5 @@
 ---
-title: "Automated Pick-and-Place Systems | AMD Machines"
+title: "Automated Pick-and-Place Systems"
 short_title: "Automated Pick-and-Place Systems"
 description: "Custom automated pick-and-place systems — SCARA, delta, six-axis, and gantry — engineered for your part, takt, and accuracy. Request a quote."
 keywords: "automated pick and place systems, high speed pick and place, robotic pick and place machines, delta robot pick and place, scara pick and place, vision guided pick and place, conveyor tracking pick and place"

@@ -1,5 +1,5 @@
 ---
-title: "End-of-Line Test Systems | AMD Machines"
+title: "End-of-Line Test Systems"
 short_title: "End-of-Line Test Systems"
 description: "Custom end-of-line test systems combining leak, functional, vision, and traceability — engineered for line takt and PPM targets. Request a quote."
 keywords: "end-of-line test systems, EOL test stands, end of line test stations, EOL testing equipment, production EOL test platform, combined leak and functional test station, end-of-line verification systems"

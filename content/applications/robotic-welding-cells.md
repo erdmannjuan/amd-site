@@ -1,5 +1,5 @@
 ---
-title: "Robotic Welding Cells | MIG, TIG, Spot & Laser | AMD"
+title: "Robotic Welding Cells | MIG, TIG & Laser"
 short_title: "Robotic Welding Cells"
 description: "Custom robotic welding cells — MIG, TIG, spot, and laser — with positioners, seam tracking, and weld monitoring. Built around your part. Request a quote."
 keywords: "robotic welding cells, automated welding cells, robotic MIG welding cell, robotic TIG welding cell, robotic spot welding cell, robotic laser welding cell, arc welding robot cell"

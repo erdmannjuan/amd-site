@@ -1,5 +1,5 @@
 ---
-title: "Robotic Polishing & Buffing Cells | AMD Machines"
+title: "Robotic Polishing & Buffing Cells"
 short_title: "Robotic Polishing & Buffing Cells"
 description: "Custom robotic polishing and buffing cells — multi-stage surface finishing engineered to your part, Ra target, and takt time. Request a quote."
 keywords: "robotic polishing and buffing cells, automated polishing systems, robotic buffing cells, automated surface finishing, robotic mirror polishing, multi-stage robotic polishing, automated buffing line"

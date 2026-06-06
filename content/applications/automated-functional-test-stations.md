@@ -1,5 +1,5 @@
 ---
-title: "Automated Functional Test Stations | AMD Machines"
+title: "Automated Functional Test Stations"
 short_title: "Automated Functional Test Stations"
 description: "Custom automated functional test stations — actuation, electrical, and performance testing in line takt. Engineered around your part. Request a quote."
 keywords: "automated functional test stations, functional test stand, automated functional testing, electromechanical test station, parametric test station, in-process functional tester, production functional test system"

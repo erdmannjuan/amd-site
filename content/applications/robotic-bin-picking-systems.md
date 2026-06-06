@@ -1,5 +1,5 @@
 ---
-title: "Robotic Bin Picking Systems | 3D Vision | AMD Machines"
+title: "Robotic Bin Picking Systems | 3D Vision"
 short_title: "Robotic Bin Picking Systems"
 description: "Custom robotic bin picking systems — 3D vision-guided picking of randomly oriented parts from bins, totes, and gaylords. Request a quote."
 keywords: "robotic bin picking systems, 3D vision bin picking, random bin picking robots, vision guided bin picking, gaylord bin picking, AI bin picking software"

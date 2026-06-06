@@ -1,5 +1,5 @@
 ---
-title: "Robotic Palletizing Cells | AMD Machines"
+title: "Robotic Palletizing Cells"
 short_title: "Robotic Palletizing Cells"
 description: "Custom robotic palletizing cells — layer, mixed-SKU, and case-pack — engineered for your case spec, takt, and throughput. Request a quote."
 keywords: "robotic palletizing cells, automated palletizing systems, robotic palletizer, end of line palletizing cell, layer palletizing robot, mixed sku palletizing, case packing robot cell, robotic depalletizing"

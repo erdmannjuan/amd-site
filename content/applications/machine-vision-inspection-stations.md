@@ -1,5 +1,5 @@
 ---
-title: "Machine Vision Inspection Stations | AMD Machines"
+title: "Machine Vision Inspection Stations"
 short_title: "Machine Vision Inspection Stations"
 description: "Custom machine vision inspection stations — Cognex, Keyence, AI defect detection, vision-guided robotics. Engineered for your part. Request a quote."
 keywords: "machine vision inspection stations, automated optical inspection systems, AOI station, vision inspection equipment, automated visual inspection, 2D 3D vision inspection, deep learning vision inspection, vision guided robotics"

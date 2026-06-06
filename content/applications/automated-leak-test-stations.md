@@ -1,5 +1,5 @@
 ---
-title: "Automated Leak Test Stations | AMD Machines"
+title: "Automated Leak Test Stations"
 short_title: "Automated Leak Test Stations"
 description: "Custom automated leak test stations — pressure decay, mass flow, and helium — engineered for your part, cycle time, and PPM target. Request a quote."
 keywords: "automated leak test stations, leak test machine, pressure decay leak test station, helium leak test station, mass flow leak tester, automated leak detection equipment, sealed enclosure leak test"

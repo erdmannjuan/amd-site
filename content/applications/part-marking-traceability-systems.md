@@ -1,5 +1,5 @@
 ---
-title: "Part Marking & Traceability Systems | AMD Machines"
+title: "Part Marking & Traceability Systems"
 short_title: "Part Marking & Traceability Systems"
 description: "Custom part marking and traceability systems — fiber laser, dot peen, vision verification, serialized MES data. Request a quote."
 keywords: "part marking and traceability systems, laser marking stations, direct part marking systems, dot peen marking stations, data matrix marking, automated serialization systems, ISO 15415 mark verification, AIAG B-17 marking, MIL-STD-130 IUID marking"

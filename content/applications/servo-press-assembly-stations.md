@@ -1,5 +1,5 @@
 ---
-title: "Servo Press Assembly Stations | AMD Machines"
+title: "Servo Press Assembly Stations"
 short_title: "Servo Press Assembly Stations"
 description: "Custom servo press assembly stations with force-displacement signatures on every cycle. Promess, Kistler, TOX, Schmidt integration. Request a quote."
 keywords: "servo press assembly stations, press-fit assembly machines, force-monitored press fit, servo press systems, force-displacement monitoring, servo press fit station, automated press fit machine, electric press assembly"

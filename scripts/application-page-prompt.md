@@ -41,7 +41,7 @@ Use WebSearch/WebFetch to confirm: what the equipment is, how it works, core sub
 - Optionally wrap ONE key takeaway in `<div class="app-callout">…</div>` for emphasis.
 
 ## Frontmatter updates (in the target file)
-- Refine `title` (<60 chars, primary keyword), `description` (<155: keyword + differentiator + CTA), `keywords` (long-tail cluster), `hero_title`, `tagline`.
+- Refine `title` (≤45 chars, primary keyword, and NO brand — the template automatically appends " | AMD Machines", so including it would render doubled), `description` (<155: keyword + differentiator + CTA), `keywords` (long-tail cluster), `hero_title`, `tagline`.
 - ADD `at_a_glance:` — 6–8 scannable key facts (this renders as a spec strip under the hero):
   ```
   at_a_glance:

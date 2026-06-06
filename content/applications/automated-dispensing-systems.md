@@ -1,5 +1,5 @@
 ---
-title: "Automated Dispensing Systems | AMD Machines"
+title: "Automated Dispensing Systems"
 short_title: "Automated Dispensing Systems"
 description: "Custom automated dispensing systems — adhesive, sealant, and 2K dispensing with vision-verified beads. Engineered to your part and takt. Request a quote."
 keywords: "automated dispensing systems, robotic adhesive dispensing, automated sealant dispensing, fluid dispensing machines, FIPG dispensing system, two-component dispensing equipment, automated bead inspection"

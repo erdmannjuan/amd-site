@@ -1,5 +1,5 @@
 ---
-title: "Flexible Feeding Systems | AMD Machines"
+title: "Flexible Feeding Systems"
 short_title: "Flexible Feeding Systems"
 description: "Custom vision-based flexible feeding systems — high-mix part presentation, fast changeover, engineered to your takt. Request a quote."
 keywords: "flexible feeding systems, vision-based flexible feeders, flexible part feeders, flex feeder systems, Asyril Asycube, FlexiBowl, multi-part flexible feeding, vision-guided part feeding"

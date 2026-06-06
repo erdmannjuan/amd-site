@@ -1,5 +1,5 @@
 ---
-title: "Custom Automated Assembly Machines | AMD Machines"
+title: "Custom Automated Assembly Machines"
 short_title: "Custom Automated Assembly Machines"
 description: "Custom automated assembly machines engineered for your part, cycle time, and quality target — rotary, linear, and robotic. Request a quote."
 keywords: "custom automated assembly machines, custom assembly systems, build-to-print assembly machines, turnkey assembly automation, rotary dial assembly machine, linear transfer assembly system, robotic assembly cell"

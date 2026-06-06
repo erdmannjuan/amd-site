@@ -1,5 +1,5 @@
 ---
-title: "Robotic Deburring & Grinding Cells | AMD Machines"
+title: "Robotic Deburring & Grinding Cells"
 short_title: "Robotic Deburring & Grinding Cells"
 description: "Custom robotic deburring and grinding cells — force-controlled finishing engineered to your part, edge spec, and takt time. Request a quote."
 keywords: "robotic deburring and grinding cells, automated deburring systems, robotic grinding cells, automated edge finishing, force-controlled robotic deburring, robotic edge break cell, automated burr removal"

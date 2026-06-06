@@ -1,5 +1,5 @@
 ---
-title: "Automated Labeling Stations | AMD Machines"
+title: "Automated Labeling Stations"
 short_title: "Automated Labeling Stations"
 description: "Custom automated labeling stations — print-and-apply with tamp, blow, and wipe applicators, plus vision-verified barcodes. Request a quote."
 keywords: "automated labeling stations, print and apply labeling systems, automatic label applicators, print-and-apply labeler, tamp blow labeler, wipe-on labeler, GS1-128 label verification, serialized labeling station"

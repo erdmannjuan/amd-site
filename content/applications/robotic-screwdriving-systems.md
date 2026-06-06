@@ -1,5 +1,5 @@
 ---
-title: "Robotic Screwdriving Systems | AMD Machines"
+title: "Robotic Screwdriving Systems"
 short_title: "Robotic Screwdriving Systems"
 description: "Custom robotic screwdriving systems with closed-loop torque, angle, and depth verification on every joint. Engineered to your takt. Request a quote."
 keywords: "robotic screwdriving systems, automated screwdriving machines, automated fastening systems, robotic screw insertion, multi-spindle screwdriving, torque controlled screwdriving"
