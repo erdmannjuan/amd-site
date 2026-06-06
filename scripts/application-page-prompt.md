@@ -65,6 +65,6 @@ Use WebSearch/WebFetch to confirm: what the equipment is, how it works, core sub
 
 ## Finish (mandatory self-check — your work is rejected if the gate fails)
 - Run `python3 scripts/validate_application_page.py {{PAGE}}` from the repo root. This is the EXACT quality gate the runner applies to your work. If it prints anything other than `VALIDATION: PASS`, fix every reported issue and re-run it until it passes. Pay special attention to character counts: title ≤60, meta description ≤155 — count them, don't eyeball them.
-- Run `python3 build.py` from the repo root; confirm no errors and that `/applications/{{SLUG}}/` builds.
+- Do NOT run `python3 build.py` — the runner builds the site itself under a lock after your work passes (other agents may be working in parallel, and concurrent builds clobber each other).
 - Do NOT git commit (the runner handles commits/validation).
 - End with one line: `DONE: {{SLUG}} — <body word count> words, <table count> tables, <figure count> figures, <faq count> faq, <internal link count> links`.

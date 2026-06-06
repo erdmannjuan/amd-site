@@ -7,9 +7,34 @@ never degrades across the batch.
 ## Files
 | File | Purpose |
 |------|---------|
-| `populate-applications.sh` | The safeguarded runner loop you execute in your terminal. |
+| `populate-applications.sh` | The safeguarded SERIAL runner (one agent at a time, full live streaming). |
+| `populate-parallel.sh` | The PARALLEL runner — N agents at once on different pages, coordinated by an atomic claim board. |
 | `application-page-prompt.md` | The gold-standard per-page prompt each agent receives (`{{PAGE}}`/`{{SLUG}}` are substituted per page). |
 | `validate_application_page.py` | Hard quality gate run after every page (word count, links, title/meta length, single-H1, FAQ schema source, no links to removed pages, indexable). |
+
+## Run multiple bots in parallel
+```bash
+scripts/populate-parallel.sh --board              # show the claim board, do nothing
+scripts/populate-parallel.sh --workers 3 --yes    # 3 agents at once over all pending
+scripts/populate-parallel.sh --workers 4 --limit 8 --yes
+```
+**The claim board (rank 1/2/3):** 1 = finished, 2 = being worked on, 3 = pending start.
+A worker may only begin a page after **atomically claiming it** (a lock in `locks/` —
+the OS guarantees two bots can never claim the same page). The board prints every few
+seconds and is exported to `logs/status-board.csv`, which you can open in Excel/Numbers
+as a read-only progress view.
+
+**Built-in contention safety:** site builds + git commits are serialized behind a global
+lock (concurrent builds would clobber `output/`); builds retry to ride out another
+worker's mid-write moment; any failure halts ALL workers; per-worker traps + a stale-lock
+sweep give the same stop-anything-anytime guarantees as the serial runner.
+
+**Rules of thumb:**
+- **Never run the serial and parallel runners at the same time** (the serial runner
+  doesn't take the global build lock).
+- 2–4 workers is the sweet spot. Parallel agents consume your Claude plan limits
+  N× faster — on a Pro plan, 3+ workers can hit the 5-hour window cap mid-run
+  (harmless: the run halts; resume after the window resets).
 
 ## Prerequisites
 - [Claude Code CLI](https://docs.claude.com) installed and authenticated (`claude` on your PATH).
