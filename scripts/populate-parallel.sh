@@ -69,7 +69,7 @@ export MIN_FIGURES="${MIN_FIGURES:-2}"
 export MIN_TABLES="${MIN_TABLES:-1}"
 export MIN_GLANCE="${MIN_GLANCE:-5}"
 
-DRY_RUN=0; BOARD_ONLY=0; ASSUME_YES=0
+DRY_RUN=0; BOARD_ONLY=0; ASSUME_YES=0; DO_PUSH="${AUTOPUSH:-0}"
 
 c_red() { printf '\033[31m%s\033[0m\n' "$*"; }
 c_grn() { printf '\033[32m%s\033[0m\n' "$*"; }
@@ -82,6 +82,7 @@ while [ $# -gt 0 ]; do
     --limit) LIMIT="${2:-0}"; shift ;;
     --board|--status) BOARD_ONLY=1 ;;
     --dry-run) DRY_RUN=1 ;;
+    --push) DO_PUSH=1 ;;
     --yes|-y) ASSUME_YES=1 ;;
     -h|--help) sed -n '2,40p' "$0"; exit 0 ;;
     *) c_red "Unknown arg: $1"; exit 2 ;;
@@ -347,4 +348,17 @@ if [ -f "$STOP_FILE" ]; then
   rm -f "$STOP_FILE"
 fi
 rm -f "$QUEUE_FILE"
-c_bld "Parallel run complete. Re-run to continue, or push deploys with: git push origin main"
+c_bld "Parallel run complete."
+
+if [ "$DO_PUSH" = 1 ]; then
+  echo "Pushing all committed work to production…"
+  pushed=0
+  for i in 1 2 3; do
+    if git push origin main; then pushed=1; break; fi
+    echo "push failed (attempt $i/3) — retrying in 30s…"; sleep 30
+  done
+  if [ "$pushed" = 1 ]; then c_grn "✔ Pushed to production — Cloudflare deploys in ~1–2 min."
+  else c_red "✖ Push failed 3x — run 'git push origin main' manually."; fi
+else
+  echo "Deploy with: git push origin main   (or use --push next time to do it automatically)"
+fi

@@ -65,7 +65,7 @@ COMMIT="${COMMIT:-1}"
 STREAM="${STREAM:-1}"
 CLAUDE_EXTRA_ARGS="${CLAUDE_EXTRA_ARGS:-}"
 
-DRY_RUN=0; STATUS_ONLY=0; ASSUME_YES=0; ONLY_SLUG=""; LIMIT_OVERRIDE=""; RESET_DIRTY=0
+DRY_RUN=0; STATUS_ONLY=0; ASSUME_YES=0; ONLY_SLUG=""; LIMIT_OVERRIDE=""; RESET_DIRTY=0; DO_PUSH="${AUTOPUSH:-0}"
 
 c_red()  { printf '\033[31m%s\033[0m\n' "$*"; }
 c_grn()  { printf '\033[32m%s\033[0m\n' "$*"; }
@@ -81,6 +81,7 @@ while [ $# -gt 0 ]; do
     --yes|-y) ASSUME_YES=1 ;;
     --no-commit) COMMIT=0 ;;
     --reset-dirty) RESET_DIRTY=1 ;;
+    --push) DO_PUSH=1 ;;
     --limit) LIMIT_OVERRIDE="${2:-}"; shift ;;
     --page) ONLY_SLUG="${2:-}"; shift ;;
     -h|--help) usage ;;
@@ -353,3 +354,14 @@ c_bld "Run complete: $succeeded/$processed page(s) succeeded this run." | tee -a
 remaining=$(( ${#PENDING[@]} - succeeded ))
 echo "  Approx. pending remaining: $remaining   (run again to continue; uses fresh agents)" | tee -a "$RUN_LOG"
 echo "  Tip: scripts/populate-applications.sh --status"
+
+if [ "$DO_PUSH" = 1 ]; then
+  echo "Pushing all committed work to production…"
+  pushed=0
+  for i in 1 2 3; do
+    if git push origin main; then pushed=1; break; fi
+    echo "push failed (attempt $i/3) — retrying in 30s…"; sleep 30
+  done
+  if [ "$pushed" = 1 ]; then c_grn "✔ Pushed to production — Cloudflare deploys in ~1–2 min."
+  else c_red "✖ Push failed 3x — run 'git push origin main' manually."; fi
+fi
