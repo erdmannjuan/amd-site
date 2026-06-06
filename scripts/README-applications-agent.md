@@ -51,8 +51,31 @@ after page one.
   so a bad agent can't burn tokens across the rest of the batch.
 - **Per-page commit** — each accepted page is committed on its own, so progress is saved
   and any single page is trivial to revert.
-- **Kill switch** — `touch STOP` in the repo root (or Ctrl-C). The loop exits cleanly
-  after the current page.
+
+## Live progress
+Every agent's steps stream to your terminal as they happen — tool calls with elapsed
+time, the agent's working notes, and a final line with turn count and approximate cost:
+```
+    [00:03] ▶ agent session started (model: claude-sonnet-4-6)
+    [00:11] → WebSearch: robotic screwdriving torque verification systems
+    [02:40] → Edit: content/applications/robotic-screwdriving-systems.md
+    [07:12] ■ agent finished (success) · 38 turns · ~$1.40
+    Status: 4 complete · 14 pending
+```
+The raw event log is kept in `logs/<slug>.log`. Set `STREAM=0` for the old quiet mode
+(also the fallback if your `claude` CLI is too old for `--output-format stream-json`).
+
+## Stopping safely — you can stop it at ANY time, nothing breaks
+- `touch STOP` (graceful): finishes the current page — validation, build, commit — then exits.
+- **Ctrl-C / `kill <pid>`** (immediate): the trap shuts the agent down and restores the
+  in-flight page to its last committed state before exiting.
+- **`kill -9` / crash / power loss** (hard): the run journals which page is in flight
+  (`logs/.inflight`); the NEXT invocation — even just `--status` — detects the leftover,
+  auto-restores that page, and resumes cleanly.
+- Completed pages are committed the moment they pass, so finished work can never be lost,
+  and nothing reaches the live site until **you** `git push`.
+- Extra net: any other uncommitted application-page changes found at startup are skipped
+  (protects your manual edits); discard interrupted-run leftovers with `--reset-dirty`.
 
 ## What "done" means (the gate)
 A page only counts as complete when its agent has set `status: complete` + `noindex: false`
@@ -65,7 +88,7 @@ medical/pharma pages, and a clean site build.
 ## Tuning (env vars)
 ```
 MAX_PAGES=3 MAX_TURNS=60 TIMEOUT_SECS=1800 MODEL=
-PERMISSION_MODE=acceptEdits CLAUDE_EXTRA_ARGS=
+PERMISSION_MODE=acceptEdits CLAUDE_EXTRA_ARGS= STREAM=1
 MIN_WORDS=550 MAX_WORDS=1600 MIN_INTERNAL_LINKS=5 MIN_FAQ=4
 MIN_FIGURES=2 MIN_TABLES=1 MIN_GLANCE=5
 HALT_ON_FAIL=1 REVERT_ON_FAIL=0 COMMIT=1
