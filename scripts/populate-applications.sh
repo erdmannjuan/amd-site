@@ -43,9 +43,13 @@ MAX_TURNS="${MAX_TURNS:-60}"
 TIMEOUT_SECS="${TIMEOUT_SECS:-1800}"
 MODEL="${MODEL:-}"
 PERMISSION_MODE="${PERMISSION_MODE:-acceptEdits}"
-export MIN_WORDS="${MIN_WORDS:-800}"
+export MIN_WORDS="${MIN_WORDS:-550}"
+export MAX_WORDS="${MAX_WORDS:-1600}"
 export MIN_INTERNAL_LINKS="${MIN_INTERNAL_LINKS:-5}"
-export MIN_FAQ="${MIN_FAQ:-3}"
+export MIN_FAQ="${MIN_FAQ:-4}"
+export MIN_FIGURES="${MIN_FIGURES:-2}"
+export MIN_TABLES="${MIN_TABLES:-1}"
+export MIN_GLANCE="${MIN_GLANCE:-5}"
 HALT_ON_FAIL="${HALT_ON_FAIL:-1}"
 REVERT_ON_FAIL="${REVERT_ON_FAIL:-0}"
 COMMIT="${COMMIT:-1}"
@@ -171,7 +175,7 @@ fi
 
 echo; c_bld "This run will process ${#QUEUE[@]} page(s):"; printf '  - %s\n' "${QUEUE[@]}"
 echo "  Guards: MAX_TURNS=$MAX_TURNS  TIMEOUT=${TIMEOUT_SECS}s  HALT_ON_FAIL=$HALT_ON_FAIL  COMMIT=$COMMIT"
-echo "  Min quality: words>=$MIN_WORDS  internal_links>=$MIN_INTERNAL_LINKS  faq>=$MIN_FAQ"
+echo "  Quality gate: words $MIN_WORDS-$MAX_WORDS  tables>=$MIN_TABLES  figures>=$MIN_FIGURES  glance>=$MIN_GLANCE  faq>=$MIN_FAQ  links>=$MIN_INTERNAL_LINKS"
 
 if [ "$DRY_RUN" = 1 ]; then c_ylw "[dry-run] no agents launched."; exit 0; fi
 

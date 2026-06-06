@@ -56,15 +56,18 @@ after page one.
 
 ## What "done" means (the gate)
 A page only counts as complete when its agent has set `status: complete` + `noindex: false`
-AND it passes: ≥`MIN_WORDS` (800) body words, ≥`MIN_INTERNAL_LINKS` (5) internal links,
-≥`MIN_FAQ` (3) FAQ items in frontmatter, title ≤60 chars, meta ≤155 chars, exactly one H1,
-no links to the removed medical/pharma pages, and a clean site build.
+AND it passes the **visual-first** gate: 550–1,600 body words (skimmable, never a wall of
+text), ≥1 data table, ≥2 figure slots, ≥5 `at_a_glance` items, ≥4 FAQ items in frontmatter
+(FAQ must NOT be duplicated in the body — the template renders the accordion + schema),
+≥5 internal links, title ≤60 chars, meta ≤155 chars, exactly one H1, no links to the removed
+medical/pharma pages, and a clean site build.
 
 ## Tuning (env vars)
 ```
 MAX_PAGES=3 MAX_TURNS=60 TIMEOUT_SECS=1800 MODEL=
 PERMISSION_MODE=acceptEdits CLAUDE_EXTRA_ARGS=
-MIN_WORDS=800 MIN_INTERNAL_LINKS=5 MIN_FAQ=3
+MIN_WORDS=550 MAX_WORDS=1600 MIN_INTERNAL_LINKS=5 MIN_FAQ=4
+MIN_FIGURES=2 MIN_TABLES=1 MIN_GLANCE=5
 HALT_ON_FAIL=1 REVERT_ON_FAIL=0 COMMIT=1
 ```
 - For a fully hands-off run you may need broader tool permissions:

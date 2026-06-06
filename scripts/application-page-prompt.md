@@ -5,59 +5,65 @@ APPLICATION SLUG: {{SLUG}}
 PAGE URL (after build): /applications/{{SLUG}}/
 
 ## Your job
-Turn this stub into the best application landing page on the internet for this topic — deep, technically credible, genuinely engaging, and engineered to win the click from Google search results. A purchaser of automation equipment (a manufacturing engineer, plant manager, or operations leader) should read it and want to talk to AMD Machines.
+Turn this stub into the best application landing page on the internet for this topic — and make it VISUAL-FIRST and SKIMMABLE, not a wall of text. The buyer is a manufacturing engineer, plant manager, or purchaser evaluating capital equipment: they scan, they compare, they look for proof and specifics. Keyword depth lives in headings, tables, and the at-a-glance specs — NOT in long paragraphs. The page must also win the click from Google (compelling title/meta) and read as genuinely expert, not AI filler.
 
 ## Hard rules — read before writing
 1. Modify ONLY the target file `{{PAGE}}`. Do NOT edit any other page's content, title, H1, or keywords. (You MAY read other files.)
-2. First, read these for context and to protect SEO:
-   - The target file `{{PAGE}}` itself (note the frontmatter: `primary_keyword`, `parent_solution`, `related`, `keywords`).
-   - `CLAUDE.md` in the repo root — follow ALL the "SEO Protection" rules, especially the keyword-cannibalization table and the Application Pages keyword map. You MUST target ONLY this page's assigned `primary_keyword` cluster. Do NOT target another page's primary cluster.
-   - The parent solution page named in frontmatter `parent_solution` (under `content/solutions/`) — match its voice and technical register, and link to it.
-   - 2–3 sibling application stubs in `content/applications/` and 2–3 relevant `content/industries/*.md` pages so you can cross-link with accurate anchors.
-3. TRUTHFULNESS (critical): AMD previously had a problem with fabricated case studies. Do NOT invent specific named customers, dollar values, project timelines, testimonials, or claims of work in specific regulated industries. Speak to AMD's genuine general capabilities (30+ years, 2,500+ machines built, in-house mechanical/electrical/controls/vision/robotics). Technical facts about the technology itself (how leak testing works, robot brands, typical spec ranges) should be accurate and may be supported by web research.
-4. Do NOT link to `/industries/medical/` or `/industries/pharmaceutical/` (those pages were removed) or to any `/case-studies/medical-device-assembly/` or `/case-studies/pharmaceutical-packaging/` (removed). 
-5. Keep the title tag under 60 characters and the meta description under 155 characters. Exactly ONE H1 (the template renders it from `hero_title` — so do NOT put an `#` H1 in the markdown body; use `##` and `###` only).
+2. First, read for context and to protect SEO:
+   - The target file `{{PAGE}}` (note frontmatter: `primary_keyword`, `parent_solution`, `related`, `keywords`).
+   - `CLAUDE.md` in the repo root — follow ALL "SEO Protection" rules, especially the keyword-cannibalization tables and the Application Pages architecture. Target ONLY this page's assigned `primary_keyword` cluster.
+   - The parent solution page (under `content/solutions/`) for voice and linking; 2–3 sibling applications and 2–3 `content/industries/*.md` pages for cross-link targets.
+   - `content/applications/automated-leak-test-stations.md` may exist as a populated example for technical register — but YOUR page must be shorter and more structured than that one.
+3. TRUTHFULNESS (critical): AMD previously had fabricated case studies removed. NEVER invent named customers, dollar values, project timelines, testimonials, or specific past projects. Speak to genuine general capabilities (30+ years, 2,500+ machines, in-house mechanical/electrical/controls/vision/robotics). Technology facts (methods, real vendor brands, typical spec ranges) must be accurate — verify with web research.
+4. Do NOT link to `/industries/medical/`, `/industries/pharmaceutical/`, or any removed case-study URL.
+5. Title under 60 characters; meta description under 155. Exactly ONE H1 (the template renders it from `hero_title`) — the markdown body must use `##`/`###` only, never `#`.
 
-## Research phase (do this before writing)
-- Use WebSearch / WebFetch to research the application: what the equipment is, how it works, core components and real vendor/brand names, typical technical specs and ranges, relevant standards, integration considerations, and — importantly — the long-tail keywords and questions buyers actually search for this equipment. Capture the buyer's vocabulary.
-- Skim the current AMD site (the parent solution page, related applications, industries) to mirror voice and find precise internal-link targets.
+## Research phase (before writing)
+Use WebSearch/WebFetch to confirm: what the equipment is, how it works, core subsystems with real vendor/brand names, typical spec ranges, relevant standards, and the long-tail terms and questions buyers actually search. Capture the buyer's vocabulary for headings, tables, and FAQ.
 
-## Write the page (target ~1,200–2,000 words, markdown body, no H1)
-Structure (adapt headings naturally; weave the primary keyword + long-tail variants in naturally, never stuffed):
-- **Opening** (2–3 short paragraphs): what this system is, the problem it solves, and AMD's framing. Put the primary keyword in the first ~100 words.
-- **## What is a [application]?** — a crisp definition section (this wins featured snippets).
-- **## How [application] works** — the process / sequence of operations.
-- **## Key components and technologies** — real subsystems, robot/vision/controls brands, and typical spec ranges.
-- **## Configurations / options** (or types) — how AMD tailors the system.
-- **## Integration, controls, and traceability** — PLC/HMI, data capture, line integration.
-- **## Industries we serve** — link to 2–4 existing `/industries/*` pages (NOT medical/pharma).
-- **## Throughput, cycle time, and ROI considerations** — general guidance, NO fabricated numbers.
-- **## Why AMD Machines** — genuine differentiators.
-- **## Frequently asked questions** — 5–8 buyer questions with substantive answers. ALSO copy these into the `faq:` frontmatter (see below) so FAQ rich-result schema renders.
+## Page structure (body target: 700–1,100 words of markdown — depth through STRUCTURE, not prose)
+- **Opening** — 2 short paragraphs max. What it is, the problem it solves, AMD's angle. Primary keyword in the first ~100 words.
+- **## What is a [application]?** — crisp 2–4 sentence definition (featured-snippet bait), optionally + a 3–5 item bullet list.
+- **## How it works** — a numbered sequence (5–7 tight steps), not paragraphs.
+- **## [Methods/Types/Configurations] comparison** — a MARKDOWN TABLE (required) comparing methods, configurations, or options: columns like Type | Best for | Typical specs | Notes. This is where long-tail keywords concentrate.
+- **## Key components and technologies** — short bullet list with real brands (PLC, robot, instrument, vision, etc.). A second small table is welcome (e.g., Subsystem | Typical hardware).
+- **## Integration, controls, and traceability** — 1 short paragraph + 3–5 bullets.
+- **## Industries we serve** — 1 line + linked bullets to 2–4 existing `/industries/*` pages (NOT medical/pharma).
+- **## Why AMD Machines** — 1 short paragraph + 3–4 bullets of genuine differentiators. End with a CTA line linking to `/contact/`.
+- Do NOT write a FAQ section in the body — FAQ goes ONLY in frontmatter (the template renders it as an accordion and emits FAQ schema). Duplicating it in the body is an error.
 
-## Internal linking (distributes authority — required)
-- Link UP to the parent solution page with a descriptive anchor (e.g. "our [welding automation systems](/solutions/welding/)").
-- Link ACROSS to 2–3 sibling application pages (see `related` in frontmatter and `/applications/` hub).
-- Link to 2–3 relevant solutions / industries / blog posts where natural.
-- Include a clear call-to-action linking to `/contact/`.
-- All internal links must be relative paths (e.g. `/solutions/...`), never `www.` and never absolute to another domain. Use descriptive anchor text, never "click here".
+## Visual elements (required)
+- Insert 2–4 figure slots at natural points using EXACTLY this markup (blank line before and after). They render as styled media slots now and automatically display the real photo the moment the owner drops a file at that path — never a broken image:
 
-## Images (placeholders — the owner will supply real images later)
-- Add 2–3 inline image placeholders in the body using predictable paths and descriptive, keyword-aware alt text and explicit width/height, e.g.:
-  `<figure><img src="/static/images/applications/{{SLUG}}-1.webp" alt="[descriptive alt with keyword]" width="1200" height="800" loading="lazy"><figcaption>[caption]</figcaption></figure>`
-- Use filenames `{{SLUG}}-1.webp`, `{{SLUG}}-2.webp`, etc. Do not invent images that exist; these are placeholders.
+  <figure class="app-figure" style="background-image:url('/static/images/applications/{{SLUG}}-1.webp')" role="img" aria-label="[descriptive alt text with keyword]"><figcaption>[one-line caption describing the photo to be added]</figcaption></figure>
+
+  Use filenames `{{SLUG}}-1.webp`, `{{SLUG}}-2.webp`, `{{SLUG}}-3.webp` in order.
+- Optionally wrap ONE key takeaway in `<div class="app-callout">…</div>` for emphasis.
 
 ## Frontmatter updates (in the target file)
-- Refine `title` (<60 chars, includes primary keyword), `description` (<155 chars: primary keyword + differentiator + CTA), `keywords` (long-tail cluster), `hero_title`, and `tagline` for click-through appeal.
-- Populate a `faq:` list mirroring your FAQ section, each item:
+- Refine `title` (<60 chars, primary keyword), `description` (<155: keyword + differentiator + CTA), `keywords` (long-tail cluster), `hero_title`, `tagline`.
+- ADD `at_a_glance:` — 6–8 scannable key facts (this renders as a spec strip under the hero):
+  ```
+  at_a_glance:
+    - label: "Methods"
+      value: "Pressure decay, mass flow, helium"
+    - label: "Typical cycle time"
+      value: "5–60 s"
+  ```
+  Use truthful, typical-range values for the technology (never fabricated project results).
+- POPULATE `faq:` — 5–8 buyer questions with substantive plain-text answers (no markdown/links — schema-safe):
   ```
   faq:
-    - q: "question text"
-      a: "concise answer in plain text (no markdown/links — schema-safe)"
+    - q: "question"
+      a: "answer"
   ```
-- Set `status: complete` and `noindex: false` (this makes the page indexable and adds it to the sitemap). Leave `parent_solution` and `related` intact (improve names if needed).
+- Optional: `video: "https://www.youtube-nocookie.com/embed/<id>"` ONLY if the owner later provides one — otherwise omit entirely.
+- Set `status: complete` and `noindex: false`. Leave `parent_solution` and `related` intact.
+
+## Internal linking (required, descriptive anchors, relative paths, never www)
+- UP to the parent solution; ACROSS to 2–3 sibling applications; 2–3 relevant solutions/industries/blog links where natural; one `/contact/` CTA.
 
 ## Finish
-- Run `python3 build.py` from the repo root and confirm it completes with no error and builds `/applications/{{SLUG}}/`.
-- Do NOT git commit (the runner script handles commits and validation).
-- End with a single line: `DONE: {{SLUG}} — <word count> words, <internal link count> internal links, faq <N> items`.
+- Run `python3 build.py` from the repo root; confirm no errors and that `/applications/{{SLUG}}/` builds.
+- Do NOT git commit (the runner handles commits/validation).
+- End with one line: `DONE: {{SLUG}} — <body word count> words, <table count> tables, <figure count> figures, <faq count> faq, <internal link count> links`.

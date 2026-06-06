@@ -9,7 +9,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com; frame-ancestors 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Custom automated leak test stations — pressure decay, mass flow, and helium — engineered for your part, cycle time, and PPM target. Request a quote.">
@@ -112,7 +112,7 @@
     
 
     <!-- Preload CSS to reduce render-blocking -->
-    <link rel="preload" href="/static/css/style.css?v=20260606" as="style">
+    <link rel="preload" href="/static/css/style.css?v=20260607" as="style">
 
     <!-- Preload critical fonts (matching PageSpeed critical chain) -->
     <link rel="preload" href="/static/fonts/inter-500.woff2" as="font" type="font/woff2" crossorigin>
@@ -121,7 +121,7 @@
     <link rel="preload" href="/static/fonts/ibm-plex-sans-700.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/static/css/style.css?v=20260606">
+    <link rel="stylesheet" href="/static/css/style.css?v=20260607">
 
     
 <!-- Service Schema -->
@@ -533,124 +533,236 @@
     </div>
 </section>
 
+<!-- At a glance (scannable spec strip) -->
+
+<section class="app-glance-section">
+    <div class="container">
+        <div class="app-glance">
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Test methods</span>
+                <span class="app-glance-value">Pressure decay, mass flow, helium, H₂ tracer</span>
+            </div>
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Sensitivity</span>
+                <span class="app-glance-value">0.1 sccm down to 1×10⁻⁵ sccm and below</span>
+            </div>
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Cycle time</span>
+                <span class="app-glance-value">≈5–60 s by method and volume</span>
+            </div>
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Test pressure</span>
+                <span class="app-glance-value">0.3–10 bar typical</span>
+            </div>
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Configurations</span>
+                <span class="app-glance-value">Standalone, in-line, rotary, multi-lane, robotic</span>
+            </div>
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Instruments</span>
+                <span class="app-glance-value">CTS, ATEQ, InterTech, Uson, Inficon</span>
+            </div>
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Data</span>
+                <span class="app-glance-value">Serialized; OPC UA / MQTT / SQL to MES</span>
+            </div>
+            
+            <div class="app-glance-item">
+                <span class="app-glance-label">Standards</span>
+                <span class="app-glance-value">IATF 16949 MSA, PPAP, Gauge R&amp;R</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
 <!-- Application Body -->
 <section class="section section-warm">
     <div class="container">
         <div class="content-narrow">
             <div class="content-body prose">
-                <p>If you are evaluating <strong>automated leak test stations</strong> for your line, you are usually trying to solve one of three problems: leaks are escaping to the customer and driving PPM, an operator-loaded bench test cannot keep up with takt, or you need serialized data for every part instead of clipboards and sample plans. We build the station around whichever of those is biting you hardest.</p>
-<p>AMD Machines has been designing custom test and inspection equipment for more than thirty years, with over 2,500 machines delivered. An automated leak test station from AMD is engineered around your part — its geometry, sealing surfaces, internal volume, test pressure, target leak rate, and cycle time — and integrated with the controls, vision, and traceability your customers and auditors expect.</p>
-<p>The rest of this page lays out what these stations actually do, how the underlying physics work, the real instrument brands and configurations we deploy, and what to think about when you specify one.</p>
-<figure><img src="/static/images/applications/automated-leak-test-stations-1.webp" alt="Automated leak test station with pressure-decay instrument, sealed fixture, and pass/fail sorting" width="1200" height="800" loading="lazy"><figcaption>A pressure-decay leak test station with rigid nest fixturing, instrument-grade pneumatics, and pass/fail sorting at the outfeed.</figcaption></figure>
+                <p>If you are evaluating <strong>automated leak test stations</strong> for your line, you are usually trying to solve one of three problems: leaks escaping to the customer and driving PPM, an operator-loaded bench test that cannot keep up with takt, or the need for serialized data on every part instead of clipboards and sample plans. We build the station around whichever is biting you hardest.</p>
+<p>AMD Machines has designed custom <a href="/solutions/test-systems/">test and inspection systems</a> for more than thirty years, with over 2,500 machines delivered. An automated leak test station from AMD is engineered around your part — its geometry, sealing surfaces, internal volume, test pressure, target leak rate, and cycle time — and integrated with the controls and traceability your customers and auditors expect.</p>
+<figure class="app-figure" style="background-image:url('/static/images/applications/automated-leak-test-stations-1.webp')" role="img" aria-label="Automated leak test station with pressure-decay instrument, sealed nest fixture, and pass/fail sorting"><figcaption>Pressure-decay leak test station: rigid nest fixturing, instrument-grade pneumatics, and pass/fail sorting at the outfeed.</figcaption></figure>
 
 <h2 id="what-is-an-automated-leak-test-station">What is an automated leak test station?</h2>
-<p>An automated leak test station is a production machine that performs a leak test on every part, without an operator manually loading, sealing, and reading an instrument. The station presents the part to a sealing fixture, clamps it under repeatable force, pressurizes (or evacuates) it through a calibrated path, executes a stabilization-and-measurement sequence on a leak-test instrument, and routes the result — pass, reject, or fault — to a sorter, conveyor, or robot.</p>
-<p>Compared to a hand-held tester at a bench, an automated leak test station does four things differently:</p>
+<p>An automated leak test station is a production machine that leak-tests every part without an operator manually loading, sealing, and reading an instrument. It presents the part to a sealing fixture, clamps it under repeatable force, pressurizes or evacuates it through a calibrated path, executes a stabilization-and-measurement sequence, and routes the result — pass, reject, or fault — to a sorter, conveyor, or robot.</p>
+<p>Compared to a bench tester, an automated station:</p>
 <ul>
-<li>It seals the part the same way every time, eliminating operator-induced compliance variation.</li>
-<li>It runs at fixed, deterministic cycle time, so the test does not become the line's bottleneck.</li>
-<li>It captures serialized data — every part, every reading, timestamped — for SPC and traceability.</li>
-<li>It enforces 100% inspection rather than sampling, which is what most modern PPM targets actually require.</li>
+<li>Seals the part identically every cycle, eliminating operator-induced variation</li>
+<li>Runs at a fixed, deterministic cycle time, so testing never becomes the bottleneck</li>
+<li>Captures serialized data — every part, every reading, timestamped — for SPC and traceability</li>
+<li>Enforces 100% inspection rather than sampling, which is what modern PPM targets require</li>
 </ul>
 <h2 id="how-an-automated-leak-test-station-works">How an automated leak test station works</h2>
-<p>The sequence is conceptually simple and where most of the engineering hides. A typical pressure-decay station executes:</p>
 <ol>
-<li><strong>Part identification</strong> — barcode, datamatrix, or RFID read at infeed; no scan, no test.</li>
-<li><strong>Load and seal</strong> — the part lands in a rigid nest; pneumatic or servo clamps drive sealing tooling against the part's mating surfaces under controlled force.</li>
-<li><strong>Fill</strong> — air or test gas flows into the part through a calibrated orifice or proportional regulator up to the target test pressure (typically 0.3 to 10 bar for industrial work; higher with specialized fixturing).</li>
-<li><strong>Stabilization</strong> — the system holds for a controlled time so adiabatic heating in the cavity dissipates and the fixture, gas, and part reach thermal equilibrium. This is the single most important phase for repeatability.</li>
-<li><strong>Measurement</strong> — the instrument records pressure (for decay), flow rate (for mass flow), or tracer-gas concentration (for helium or hydrogen) over a defined test window and compares the result to upper and lower reject thresholds.</li>
-<li><strong>Vent and unload</strong> — the part is depressurized through a controlled exhaust, the fixture opens, and the part is routed to pass, reject, or rework lanes.</li>
+<li><strong>Part identification</strong> — barcode, DataMatrix, or RFID read at infeed; no scan, no test.</li>
+<li><strong>Load and seal</strong> — the part lands in a rigid nest; pneumatic or servo clamps drive sealing tooling under controlled force.</li>
+<li><strong>Fill</strong> — air or tracer gas flows in through a calibrated path to the target test pressure (typically 0.3–10 bar).</li>
+<li><strong>Stabilization</strong> — a controlled hold lets adiabatic heating dissipate; the single most important phase for repeatability.</li>
+<li><strong>Measurement</strong> — the instrument records pressure decay, flow rate, or tracer-gas concentration against reject thresholds.</li>
+<li><strong>Vent and unload</strong> — controlled exhaust, the fixture opens, and the part routes to pass, reject, or rework.</li>
 </ol>
-<p>Done well, that sequence repeats every few seconds with a Gauge R&amp;R under 10% against the reject threshold. Done poorly, it produces a tester that "passes everything in the morning and rejects everything by afternoon." The difference is fixture design, stabilization sizing, thermal compensation, and instrument selection — exactly the engineering AMD specializes in.</p>
-<h2 id="test-methods-and-which-to-choose">Test methods and which to choose</h2>
-<p>Different parts call for different physics. Most of the stations we build use one of four methods, and many combine two.</p>
-<h3 id="pressure-decay">Pressure decay</h3>
-<p>The workhorse. Seal the part, pressurize, stabilize, and measure the drop. We typically deploy instruments from <strong>Cincinnati Test Systems (CTS)</strong>, <strong>ATEQ</strong>, <strong>InterTech</strong>, or <strong>Uson</strong> depending on the resolution and feature set required. Pressure decay is fast, cost-effective, and well understood. It is the right answer for rigid metal castings, hydraulic blocks, valve bodies with small cavities, and most consumer and industrial enclosures down to roughly 0.1 sccm.</p>
-<h3 id="mass-flow">Mass flow</h3>
-<p>A mass-flow sensor — typically a thermal anemometer in a calibrated bypass — measures the actual rate of air flowing into the part at steady state to make up for the leak. The reading is taken at equilibrium, which sidesteps the adiabatic-heating problem that drives most pressure-decay errors. We use mass flow when the internal volume is large (over ~300 cc), when the part walls are flexible (plastic housings, battery enclosures), or when the application demands higher repeatability than pressure decay can deliver.</p>
-<h3 id="helium-tracer-gas">Helium tracer gas</h3>
-<p>When the required sensitivity is below what pressure-based methods can reach, we move to helium. The part is filled with helium and either placed in a vacuum chamber (outside-in) or sniffed externally with a probe (inside-out). A mass spectrometer leak detector from <strong>Inficon</strong>, <strong>Pfeiffer Vacuum</strong>, or <strong>Agilent</strong> quantifies the helium escape. Vacuum-chamber helium testing reliably detects leaks at 1×10⁻⁵ sccm and below; some configurations reach 1×10⁻⁹ sccm. Common targets: refrigerant components, fuel-system parts, sealed sensors, and any hermetic enclosure.</p>
-<h3 id="forming-gas-hydrogen-tracer">Forming-gas (hydrogen) tracer</h3>
-<p>A 5% hydrogen / 95% nitrogen mix is a lower-cost tracer alternative to helium. Hydrogen sensors from <strong>INFICON Sensistor</strong> reach roughly 1×10⁻⁶ sccm. The gas mix is non-flammable at that concentration and far cheaper per test than helium, making it attractive for high-volume programs that do not need full helium sensitivity.</p>
+<p>Done well, that sequence repeats every few seconds with Gauge R&amp;R under 10% of the reject threshold. The difference between that and a tester that "passes everything in the morning and rejects everything by afternoon" is fixture design, stabilization sizing, thermal compensation, and instrument selection — exactly the engineering AMD does in-house.</p>
+<h2 id="leak-test-methods-compared">Leak test methods compared</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Best for</th>
+<th>Typical sensitivity</th>
+<th>Typical instruments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pressure decay</td>
+<td>Rigid castings, valve bodies, small–mid cavities</td>
+<td>0.1–1 sccm</td>
+<td>CTS Sentinel, ATEQ F5/F520, Uson, InterTech</td>
+</tr>
+<tr>
+<td>Mass flow</td>
+<td>Large volumes (&gt;~300 cc), flexible plastic parts</td>
+<td>to ~0.01 sccm</td>
+<td>CTS, ATEQ mass-flow series</td>
+</tr>
+<tr>
+<td>Helium tracer (vacuum chamber or sniffer)</td>
+<td>Hermetic enclosures, refrigerant and fuel components</td>
+<td>1×10⁻⁵ sccm and below</td>
+<td>Inficon, Pfeiffer Vacuum, Agilent</td>
+</tr>
+<tr>
+<td>Forming gas (5% H₂ / 95% N₂)</td>
+<td>High-volume tracer testing at lower gas cost</td>
+<td>~1×10⁻⁶ sccm</td>
+<td>INFICON Sensistor</td>
+</tr>
+</tbody>
+</table>
+<p>Many production stations combine two methods — a fast pressure-decay gate on every part with scheduled helium audits, or mass flow for the main cavity and pressure decay on a secondary circuit. We size the method to your reject threshold with measurement-system margin, not the other way around.</p>
 <h2 id="key-components-of-an-amd-leak-test-station">Key components of an AMD leak test station</h2>
-<p>A complete automated leak test station is more than the instrument. We engineer and integrate:</p>
 <ul>
-<li><strong>Leak-test instrument</strong> — CTS Sentinel, ATEQ F5/F520, InterTech, Uson, or Inficon mass spec, sized to your sensitivity, volume, and pressure range.</li>
-<li><strong>Sealing fixture and nest</strong> — rigid steel or aluminum tooling with hardened locating surfaces, low-compliance sealing geometry, and clamp force calibrated to seal without distorting the part.</li>
-<li><strong>Pneumatic and gas-handling skid</strong> — instrument-grade regulators, filter-dryers, FRLs, and valve manifolds from <strong>SMC</strong>, <strong>Festo</strong>, or <strong>Parker</strong>, plumbed to minimize dead volume and trapped gas.</li>
-<li><strong>Servo or pneumatic actuation</strong> — for fixture clamping, indexing, and part presentation, with <strong>SMC</strong>, <strong>Festo</strong>, <strong>Bosch Rexroth</strong>, or <strong>SEW</strong> drives where servo control improves repeatability.</li>
-<li><strong>Controls and HMI</strong> — <strong>Allen-Bradley CompactLogix / ControlLogix</strong> or <strong>Siemens S7-1500</strong> PLC, <strong>FactoryTalk View</strong> or <strong>WinCC</strong> HMI, with EtherNet/IP or PROFINET to the instrument.</li>
-<li><strong>Safety system</strong> — SIL-rated dual-channel safety circuits for any test above 7 bar, with light curtains, interlocked guarding, and pressure-relief design reviewed against ISO 13849.</li>
-<li><strong>Sortation and data</strong> — pass/reject diverters, reject bin lockout, serialized logging, and OPC UA / SQL / MQTT push to your MES.</li>
-<li><strong>Optional vision and marking</strong> — integration with our <a href="/applications/machine-vision-inspection-stations/">machine vision inspection stations</a> for pre-test part verification, and with our <a href="/applications/part-marking-traceability-systems/">part marking and traceability systems</a> for post-test serialization.</li>
+<li><strong>Leak-test instrument</strong> — CTS, ATEQ, InterTech, Uson, or Inficon mass spectrometer, sized to sensitivity, volume, and pressure</li>
+<li><strong>Sealing fixture and nest</strong> — rigid tooling, hardened locating surfaces, low-compliance sealing geometry, calibrated clamp force</li>
+<li><strong>Gas-handling skid</strong> — instrument-grade regulators, filter-dryers, and valve manifolds (SMC, Festo, Parker) plumbed for minimum dead volume</li>
+<li><strong>Controls and HMI</strong> — Allen-Bradley CompactLogix/ControlLogix or Siemens S7-1500, with FactoryTalk View or WinCC</li>
+<li><strong>Safety system</strong> — dual-channel circuits per ISO 13849, interlocked guarding, and pressure-relief design for tests above 7 bar</li>
+<li><strong>Sortation and data</strong> — pass/reject diverters, reject-bin lockout, and serialized logging to your MES</li>
+<li><strong>Optional vision and marking</strong> — <a href="/applications/machine-vision-inspection-stations/">machine vision inspection</a> for pre-test verification and <a href="/applications/part-marking-traceability-systems/">part marking and traceability</a> for post-test serialization</li>
 </ul>
-<figure><img src="/static/images/applications/automated-leak-test-stations-2.webp" alt="Helium leak test station with vacuum chamber, mass spectrometer, and serialized data capture" width="1200" height="800" loading="lazy"><figcaption>A vacuum-chamber helium leak test station integrating an Inficon mass spectrometer, gas-handling skid, and serialized PLC-driven sequence.</figcaption></figure>
+<figure class="app-figure" style="background-image:url('/static/images/applications/automated-leak-test-stations-2.webp')" role="img" aria-label="Helium leak test station with vacuum chamber, mass spectrometer, and serialized data capture"><figcaption>Vacuum-chamber helium leak test station: mass spectrometer, gas-handling skid, and serialized PLC-driven test sequence.</figcaption></figure>
 
 <h2 id="configurations-we-build">Configurations we build</h2>
-<p>There is no single "leak tester" — the architecture changes with cycle time, volume, and how the part arrives. Common configurations we deliver:</p>
 <ul>
-<li><strong>Standalone benchtop or pedestal stations</strong> — operator-loaded, used as a cell-level gate or in low-volume / high-mix work.</li>
-<li><strong>In-line single-station testers</strong> — integrated with a powered conveyor, parts indexed in by lift-and-locate or walking beam.</li>
-<li><strong>Rotary-index stations</strong> — 4, 6, or 8 stations on a dial, with load, fill, stabilize, test, vent, and unload split across positions so the overall takt is shorter than the test time.</li>
-<li><strong>Multi-lane parallel testers</strong> — two, four, or more independent fixtures sharing one instrument or each with its own, when test time inherently exceeds takt.</li>
-<li><strong>Robot-tended cells</strong> — a <a href="/solutions/robotic-cells/">robotic cell</a> loads, seals, tests, and sorts, often combined with upstream operations such as <a href="/solutions/assembly/">assembly</a> or <a href="/applications/automated-dispensing-systems/">dispensing</a>.</li>
-<li><strong>Combination test cells</strong> — leak test plus functional test, vision inspection, or marking on a single platform; see our <a href="/applications/end-of-line-test-systems/">end-of-line test systems</a> for that wider EOL pattern.</li>
+<li><strong>Standalone benchtop or pedestal stations</strong> — operator-loaded gates for low-volume, high-mix work</li>
+<li><strong>In-line single-station testers</strong> — integrated with powered conveyors via lift-and-locate or walking-beam indexing</li>
+<li><strong>Rotary-index stations</strong> — 4–8 positions splitting load, fill, stabilize, test, and vent so takt beats test time</li>
+<li><strong>Multi-lane parallel testers</strong> — multiple fixtures sharing one instrument (or one each) when test time exceeds takt</li>
+<li><strong>Robot-tended cells</strong> — a <a href="/solutions/robotic-cells/">robotic cell</a> loads, tests, and sorts, often combined with <a href="/solutions/assembly/">assembly</a> or <a href="/applications/automated-dispensing-systems/">dispensing</a></li>
+<li><strong>Combination test cells</strong> — leak plus functional test, vision, or marking on one platform; see our <a href="/applications/end-of-line-test-systems/">end-of-line test systems</a></li>
 </ul>
 <h2 id="integration-controls-and-traceability">Integration, controls, and traceability</h2>
-<p>The data side is where modern leak test programs live or die. Customers and auditors no longer accept "the green light was on." Every AMD automated leak test station ships with:</p>
+<p>"The green light was on" no longer satisfies customers or auditors. Every AMD automated leak test station ships with:</p>
 <ul>
-<li><strong>Per-part serialized records</strong> — part ID, test pressure, stabilization time, decay or flow reading, pass/fail, operator, timestamp.</li>
-<li><strong>Real-time SPC</strong> — X-bar and R, Cpk, and rule-based trend alarms on the HMI, configurable per part number.</li>
-<li><strong>MES / database integration</strong> — OPC UA, MQTT, ODBC/SQL, or REST push to <strong>Rockwell FactoryTalk</strong>, <strong>AVEVA Wonderware</strong>, <strong>Ignition</strong>, <strong>SAP</strong>, or a custom historian.</li>
-<li><strong>Recipe management</strong> — part-number-driven recipes load fixture clamp force, test pressure, stabilization time, and reject thresholds automatically on barcode scan; no manual changeover, no setup error.</li>
-<li><strong>Audit-grade reporting</strong> — controlled access, electronic sign-off where required, and exportable test reports for <a href="/services/process-optimization/">quality engineering reviews</a>.</li>
+<li><strong>Per-part serialized records</strong> — part ID, test pressure, stabilization time, reading, result, operator, timestamp</li>
+<li><strong>Real-time SPC</strong> — X-bar/R, Cpk, and rule-based trend alarms on the HMI, configurable per part number</li>
+<li><strong>MES integration</strong> — OPC UA, MQTT, ODBC/SQL, or REST push to Rockwell FactoryTalk, AVEVA, Ignition, SAP, or a custom historian</li>
+<li><strong>Recipe management</strong> — part-number-driven setup loads clamp force, pressure, stabilization, and thresholds on barcode scan</li>
+<li><strong>Audit-grade reporting</strong> — controlled access and exportable test reports for <a href="/services/process-optimization/">quality engineering reviews</a></li>
 </ul>
 <h2 id="industries-we-serve">Industries we serve</h2>
-<p>Automated leak test stations show up wherever a sealed cavity has to hold pressure, vacuum, or a fluid. Programs we typically support include:</p>
 <ul>
-<li><a href="/industries/automotive/"><strong>Automotive</strong></a> — transmission valve bodies, intake and EGR manifolds, fuel-system components, brake calipers, EV battery enclosures and cold plates, refrigerant lines, and HVAC components.</li>
-<li><a href="/industries/heavy-equipment/"><strong>Heavy equipment</strong></a> — hydraulic blocks and manifolds, fuel rails, cooling systems, and gearbox housings.</li>
-<li><a href="/industries/aerospace/"><strong>Aerospace and defense</strong></a> — fluid lines, hydraulic actuators, sensor housings, and pressurized components held to FAI and PPAP requirements.</li>
-<li><a href="/industries/electronics/"><strong>Electronics</strong></a> — sealed connectors, IP-rated enclosures, telecom housings, and battery packs.</li>
-<li><a href="/industries/appliances/"><strong>Appliances</strong></a> and <a href="/industries/consumer/"><strong>consumer products</strong></a> — refrigeration circuits, sealed pumps, water-handling components.</li>
+<li><a href="/industries/automotive/"><strong>Automotive</strong></a> — valve bodies, manifolds, fuel and brake components, EV battery enclosures and cold plates</li>
+<li><a href="/industries/heavy-equipment/"><strong>Heavy equipment</strong></a> — hydraulic blocks, fuel rails, cooling systems, gearbox housings</li>
+<li><a href="/industries/aerospace/"><strong>Aerospace and defense</strong></a> — fluid lines, actuators, and sensor housings held to FAI and PPAP requirements</li>
+<li><a href="/industries/electronics/"><strong>Electronics</strong></a> — sealed connectors, IP-rated enclosures, battery packs</li>
+<li><a href="/industries/appliances/"><strong>Appliances</strong></a> and <a href="/industries/consumer/"><strong>consumer products</strong></a> — refrigeration circuits, pumps, water-handling components</li>
 </ul>
-<h2 id="throughput-cycle-time-and-roi-considerations">Throughput, cycle time, and ROI considerations</h2>
-<p>The cost of a leak escape is almost always larger than the cost of the station that would have caught it. A single contained shipment at a Tier 1 customer can erase the budget you saved by deferring an automated tester for a year. With that in mind, when we scope an automated leak test station with a customer we usually walk through:</p>
-<ul>
-<li><strong>Sensitivity vs. cycle time.</strong> The required reject leak rate, stabilization time, and takt together determine whether one station can do it or whether you need a rotary or multi-lane architecture. We size that tradeoff explicitly.</li>
-<li><strong>PPM and escape cost.</strong> What does a single escape cost in containment, sort, and chargeback? That sets the floor for measurement-system capability — we target Gauge R&amp;R under 10% of the reject threshold.</li>
-<li><strong>Labor displacement.</strong> A three-shift automated station typically displaces several inspectors plus the variability they introduce.</li>
-<li><strong>Scrap reduction from SPC.</strong> Real-time trend visibility lets the line correct drift before scrap accumulates — usually a bigger ROI line item than the labor offset.</li>
-<li><strong>Compliance and customer requirements.</strong> IATF 16949 MSA, PPAP-supporting data, and audit-grade traceability often make automated testing a customer-mandated capability, not just an internal upgrade.</li>
-</ul>
-<p>We will not put a fabricated payback number on this page. We will, in a scoping conversation, walk through your specific volumes, escape rates, labor, and quality cost to ground the business case.</p>
+<h2 id="throughput-cycle-time-and-roi">Throughput, cycle time, and ROI</h2>
+<div class="app-callout">The cost of one leak escape at a Tier 1 customer — containment, sorting, chargebacks — routinely exceeds the cost of the station that would have caught it.</div>
+
+<p>When we scope a station we walk through four things: required sensitivity versus cycle time (which decides single-station versus rotary or multi-lane architecture), your PPM target and escape cost (which set the measurement-capability floor — we target Gauge R&amp;R under 10% of the reject threshold), the labor an automated station displaces across shifts, and the scrap you recover by catching drift in real time with SPC. We will not put a fabricated payback number on this page — bring your volumes and quality costs and we will ground the business case together.</p>
 <h2 id="why-amd-machines">Why AMD Machines</h2>
-<p>We are not a leak-test instrument reseller bolting a CTS or ATEQ unit onto a frame. We engineer the whole station — mechanical, electrical, controls, fluid power, vision, and data — in-house, against the part on your bench and the takt on your floor. Thirty-plus years of automation and 2,500+ machines delivered means we have seen the failure modes: the thermal drift on a part coming off a wash, the compliance creep on a thin-wall plastic housing, the seal that wears in 40,000 cycles and starts producing false rejects. We design those out before the station ships.</p>
-<p>When the test system is one piece of a larger line, we are also building the <a href="/solutions/assembly/">assembly automation</a>, <a href="/solutions/robotic-cells/">robotic cells</a>, <a href="/solutions/machine-vision/">machine vision</a>, and <a href="/solutions/marking-traceability/">marking and traceability</a> it integrates with — so the leak tester is not a stranded box but a coherent part of the line.</p>
-<p>If you have a part, a target leak rate, and a takt time, that is enough to start the conversation. <a href="/contact/">Request a quote</a> or send us your part print and we will scope the station around it.</p>
-<h2 id="frequently-asked-questions">Frequently asked questions</h2>
-<h3 id="what-is-an-automated-leak-test-station_1">What is an automated leak test station?</h3>
-<p>An automated leak test station is a custom-engineered machine that seals a part, applies a controlled test pressure or vacuum, and uses an instrument to detect any escape of air or tracer gas. It runs at production cycle time, sorts pass and reject parts automatically, and logs serialized results so every unit shipped has a verified leak-test record.</p>
-<h3 id="what-is-the-difference-between-pressure-decay-mass-flow-and-helium-leak-testing">What is the difference between pressure decay, mass flow, and helium leak testing?</h3>
-<p>Pressure decay seals the part, pressurizes it, and measures how much the pressure drops over a fixed test time — best for moderate sensitivity and small to mid-size cavities. Mass flow measures the actual rate of air bleeding into the part at steady state and shrugs off thermal and compliance noise, which makes it stronger on large or flexible parts. Helium tracer-gas testing is the most sensitive — a mass spectrometer detects helium escaping through micro-leaks down to roughly one part in ten million, used when pressure-based methods cannot reach the required leak rate.</p>
-<h3 id="what-leak-rate-can-an-automated-leak-test-station-detect">What leak rate can an automated leak test station detect?</h3>
-<p>Pressure decay reliably detects leaks in the 0.1 to 1 sccm range on typical industrial parts. Mass flow extends sensitivity to roughly 0.01 sccm. Helium vacuum testing reaches 1×10⁻⁵ sccm and below. The achievable sensitivity always depends on part volume, test pressure, stabilization time, fixture compliance, and ambient temperature stability — we size the system to your specified reject threshold with measurement-system margin.</p>
-<h3 id="how-fast-can-an-automated-leak-test-station-run">How fast can an automated leak test station run?</h3>
-<p>Cycle times range from roughly 5 seconds for simple pressure-decay tests on small rigid parts up to 30 to 60 seconds for high-sensitivity helium tests on large volumes. When the inherent test time exceeds line takt, we design multi-station rotary or parallel-fixture configurations so the throughput of the station matches the line.</p>
-<h3 id="how-do-you-avoid-false-rejects-on-a-leak-tester">How do you avoid false rejects on a leak tester?</h3>
-<p>Most false rejects come from thermal noise, fixture compliance, or insufficient stabilization. We instrument the part temperature, compensate the reject threshold dynamically, design rigid low-compliance nests, validate stabilization time empirically during runoff, and run Gauge R&amp;R studies against known-good and known-bad reference parts before turning the station over to production.</p>
-<h3 id="can-the-leak-test-station-integrate-with-our-mes-and-spc-system">Can the leak test station integrate with our MES and SPC system?</h3>
-<p>Yes. Every AMD test station serializes each test, timestamps the result, and pushes data over OPC UA, MQTT, or direct SQL to your MES, historian, or quality database. We support real-time X-bar and R charting, Cpk calculation, and trend alarming on the HMI, and we routinely integrate with platforms such as Rockwell FactoryTalk, AVEVA Wonderware, Ignition, and SAP.</p>
-<h3 id="can-you-retrofit-a-leak-test-station-into-our-existing-production-line">Can you retrofit a leak test station into our existing production line?</h3>
-<p>Yes. We regularly insert leak test stations into existing conveyors, <a href="/solutions/robotic-cells/">robotic cells</a>, and assembly lines. We survey the available floor space, conveyor height, takt time, and upstream and downstream handoffs, then engineer the fixture, frame, and controls for minimum disruption — many retrofits are installed during a planned shutdown weekend.</p>
-<h3 id="what-standards-and-quality-requirements-do-your-leak-test-stations-support">What standards and quality requirements do your leak test stations support?</h3>
-<p>We design to IATF 16949 measurement-system requirements for automotive programs, including MSA, Gauge R&amp;R, and AIAG SPC. For industrial and aerospace work we follow customer PPAP and FAI requirements, and we provide IQ/OQ/PQ-style validation documentation when the customer's quality system requires it.</p>
-<p>Ready to scope a station against your part? <a href="/contact/">Request a quote</a> and we will walk through your sensitivity target, takt time, and integration constraints together.</p>
+<p>We are not an instrument reseller bolting a CTS or ATEQ unit to a frame. We engineer the entire station in-house — mechanical, electrical, controls, fluid power, vision, and data — against the part on your bench and the takt on your floor:</p>
+<ul>
+<li>30+ years of custom automation and 2,500+ machines delivered</li>
+<li>Fixture, thermal, and stabilization engineering that designs out false rejects before runoff</li>
+<li>Gauge R&amp;R proven against known-good and known-bad master parts before shipment</li>
+<li>One supplier for the <a href="/solutions/assembly/">assembly automation</a>, <a href="/solutions/machine-vision/">machine vision</a>, and <a href="/solutions/marking-traceability/">marking systems</a> the tester integrates with</li>
+</ul>
+<p>Have a part, a target leak rate, and a takt time? That's enough to start. <a href="/contact/">Request a quote</a> or send us your part print and we'll scope the station around it.</p>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Optional video -->
+
+
+<!-- FAQ (rendered from frontmatter -> collapsible + powers FAQ schema) -->
+
+<section class="section app-faq-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Frequently asked questions</h2>
+        </div>
+        <div class="app-faq">
+            
+            <details class="app-faq-item" open>
+                <summary>What is an automated leak test station?</summary>
+                <div class="app-faq-answer"><p>An automated leak test station is a custom-engineered machine that seals a part, applies a controlled test pressure or vacuum, and uses an instrument to detect any escape of air or tracer gas. It runs at production cycle time, sorts pass and reject parts automatically, and logs serialized results so every unit shipped has a verified leak-test record.</p></div>
+            </details>
+            
+            <details class="app-faq-item">
+                <summary>What is the difference between pressure decay, mass flow, and helium leak testing?</summary>
+                <div class="app-faq-answer"><p>Pressure decay seals the part, pressurizes it, and measures how much the pressure drops over a fixed test time — best for moderate sensitivity and small to mid-size cavities. Mass flow measures the actual rate of air bleeding into the part at steady state and shrugs off thermal and compliance noise, which makes it stronger on large or flexible parts. Helium tracer-gas testing is the most sensitive — a mass spectrometer detects helium escaping through micro-leaks down to about one part in ten million, used when pressure-based methods cannot reach the required leak rate.</p></div>
+            </details>
+            
+            <details class="app-faq-item">
+                <summary>What leak rate can an automated leak test station detect?</summary>
+                <div class="app-faq-answer"><p>Pressure decay reliably detects leaks in the 0.1 to 1 sccm range on typical industrial parts. Mass flow extends sensitivity to roughly 0.01 sccm. Helium vacuum testing reaches 1×10⁻⁵ sccm and below. The achievable sensitivity always depends on part volume, test pressure, stabilization time, fixture compliance, and ambient temperature stability — we size the system to your specified reject threshold with measurement-system margin.</p></div>
+            </details>
+            
+            <details class="app-faq-item">
+                <summary>How fast can an automated leak test station run?</summary>
+                <div class="app-faq-answer"><p>Cycle times range from roughly 5 seconds for simple pressure-decay tests on small rigid parts up to 30 to 60 seconds for high-sensitivity helium tests on large volumes. When the inherent test time exceeds line takt, we design multi-station rotary or parallel-fixture configurations so the throughput of the station matches the line.</p></div>
+            </details>
+            
+            <details class="app-faq-item">
+                <summary>How do you avoid false rejects on a leak tester?</summary>
+                <div class="app-faq-answer"><p>Most false rejects come from thermal noise, fixture compliance, or insufficient stabilization. We instrument the part temperature, compensate the reject threshold dynamically, design rigid low-compliance nests, validate stabilization time empirically during runoff, and run Gauge R&amp;R studies against known-good and known-bad reference parts before turning the station over to production.</p></div>
+            </details>
+            
+            <details class="app-faq-item">
+                <summary>Can the leak test station integrate with our MES and SPC system?</summary>
+                <div class="app-faq-answer"><p>Yes. Every AMD test station serializes each test, timestamps the result, and pushes data over OPC UA, MQTT, or direct SQL to your MES, historian, or quality database. We support real-time X-bar and R charting, Cpk calculation, and trend alarming on the HMI, and we routinely integrate with platforms such as Rockwell FactoryTalk, AVEVA Wonderware, Ignition, and SAP.</p></div>
+            </details>
+            
+            <details class="app-faq-item">
+                <summary>Can you retrofit a leak test station into our existing production line?</summary>
+                <div class="app-faq-answer"><p>Yes. We regularly insert leak test stations into existing conveyors, robotic cells, and assembly lines. We survey the available floor space, conveyor height, takt time, and upstream and downstream handoffs, then engineer the fixture, frame, and controls for minimum disruption — many retrofits are installed during a planned shutdown weekend.</p></div>
+            </details>
+            
+            <details class="app-faq-item">
+                <summary>What standards and quality requirements do your leak test stations support?</summary>
+                <div class="app-faq-answer"><p>We design to IATF 16949 measurement-system requirements for automotive programs, including MSA, Gauge R&amp;R, and AIAG SPC. For industrial and aerospace work we follow customer PPAP and FAI requirements, and we provide IQ/OQ/PQ-style validation documentation when the customer&#39;s quality system requires it.</p></div>
+            </details>
+            
+        </div>
+    </div>
+</section>
+
 
 <!-- Related (pillar / spoke internal linking) -->
 

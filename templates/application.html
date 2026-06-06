@@ -63,6 +63,22 @@
     </div>
 </section>
 
+<!-- At a glance (scannable spec strip) -->
+{% if page.at_a_glance %}
+<section class="app-glance-section">
+    <div class="container">
+        <div class="app-glance">
+            {% for item in page.at_a_glance %}
+            <div class="app-glance-item">
+                <span class="app-glance-label">{{ item.label }}</span>
+                <span class="app-glance-value">{{ item.value }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <!-- Application Body -->
 <section class="section section-warm">
     <div class="container">
@@ -73,6 +89,41 @@
         </div>
     </div>
 </section>
+
+<!-- Optional video -->
+{% if page.video %}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">See It Work</span>
+            <h2 class="section-title">{{ page.video_title or "Watch it in action" }}</h2>
+        </div>
+        <div class="app-video">
+            <iframe src="{{ page.video }}" title="{{ page.title }}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- FAQ (rendered from frontmatter -> collapsible + powers FAQ schema) -->
+{% if page.faq %}
+<section class="section app-faq-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Frequently asked questions</h2>
+        </div>
+        <div class="app-faq">
+            {% for item in page.faq %}
+            <details class="app-faq-item"{% if loop.first %} open{% endif %}>
+                <summary>{{ item.q }}</summary>
+                <div class="app-faq-answer"><p>{{ item.a }}</p></div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
 
 <!-- Related (pillar / spoke internal linking) -->
 {% if page.parent_solution or page.related %}
