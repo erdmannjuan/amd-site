@@ -65,7 +65,7 @@ The selection framework is driven by three primary variables: the required leak 
 
 **Consider the production context.** A method that works perfectly in a climate-controlled lab may produce unacceptable false reject rates on a factory floor with 15°C daily temperature swings. [End-of-line testing strategies](/blog/end-of-line-testing-strategies-for-quality-assurance/) must account for the real conditions where the equipment will operate, not ideal conditions.
 
-**Factor in upstream processes.** Parts arriving from welding, brazing, or molding operations carry residual heat and may outgas. These conditions favor mass flow over pressure decay and may require cooling stations upstream of the leak test. Understanding the full line layout is part of the [total automation ecosystem](/blog/the-total-automation-ecosystem-from-design-to-support/) and directly affects test method selection.
+**Factor in upstream processes.** Parts arriving from welding, brazing, or molding operations carry residual heat and may outgas. These conditions favor mass flow over pressure decay and may require cooling stations upstream of the leak test. Understanding the full line layout is part of designing a complete [automated test system](/solutions/test-systems/) and directly affects test method selection.
 
 ## Integration Into Automated Lines
 
