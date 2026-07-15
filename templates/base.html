@@ -259,7 +259,12 @@
                     <p>{{ config.site.tagline }}</p>
                     <ul class="mega-footer-contact">
                         <li><a href="tel:{{ config.social.phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}">{{ config.social.phone }}</a></li>
-                        <li class="address">{{ config.social.address }}</li>
+                        {% for loc in config.social.locations %}
+                        <li class="footer-location">
+                            <span class="footer-location-label">{{ loc.label }}</span>
+                            <span class="address">{{ loc.address }}</span>
+                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
 

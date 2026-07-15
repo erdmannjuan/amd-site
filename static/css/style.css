@@ -8289,8 +8289,26 @@ button:disabled {
 }
 
 .mega-footer-contact .address {
-    color: rgba(255,255,255,0.6);
+    color: #e0e0e0;
     font-size: 0.85rem;
+}
+
+.mega-footer-contact .footer-location {
+    margin-bottom: 0.85rem;
+}
+
+.footer-location-label {
+    display: block;
+    color: var(--accent-teal);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.15rem;
+}
+
+.footer-location .address {
+    display: block;
 }
 
 .mega-footer-col h4 {

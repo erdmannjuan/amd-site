@@ -141,6 +141,13 @@ navigation:
 social:
   phone: "+1 832 745 1292"
   address: "420 N Wabash Ave, Chicago, IL 60611"
+  locations:
+    - label: "Chicago — Sales & Service Hub"
+      address: "420 N Wabash Ave, Chicago, IL 60611"
+    - label: "Houston — Sales & Service"
+      address: "10330 Lake Rd, Suite F6, Houston, TX 77070"
+    - label: "Querétaro, MX — Manufacturing Complex"
+      address: "Acceso C, Nave 22, Parque Industrial Jurica, Querétaro, Qro., México"
   youtube: "https://www.youtube.com/channel/UCWSFjJgRioFRR_kWgVGwG7A"
   facebook: "https://www.facebook.com/Advanced-Manufacturing-Development-101309274851163/"
   linkedin: "https://www.linkedin.com/company/advanced-manufacturing-development/"
