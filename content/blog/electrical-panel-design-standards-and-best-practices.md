@@ -139,6 +139,6 @@ After decades of building, upgrading, and [retrofitting control systems on legac
 
 A well-designed electrical panel is not glamorous, but it is the foundation of a reliable automated system. The standards exist to protect people and equipment. The best practices exist because experienced engineers have learned—often the hard way—what works on a production floor over ten or twenty years of continuous operation.
 
-Whether you are designing a panel for a new custom machine or evaluating the electrical architecture of an existing system, investing the time to get the fundamentals right pays for itself many times over in reduced downtime, faster troubleshooting, and safer operation.
+Whether you are designing a panel for a new custom machine or evaluating the electrical architecture of an existing system, investing the time to get the fundamentals right pays for itself many times over in reduced downtime, faster troubleshooting, and safer operation. Every [custom automation system](/solutions/custom-automation/) AMD Machines builds ships with UL 508A-compliant panels designed and wired in-house, and we handle [control system upgrades and retrofits](/services/upgrades-retrofits/) for existing equipment.
 
 [Contact our engineering team](/contact/) to discuss electrical design standards for your next automation project.

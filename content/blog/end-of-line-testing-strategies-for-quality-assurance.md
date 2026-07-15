@@ -77,4 +77,4 @@ When planning an EOL test system, several practical factors deserve attention ea
 
 ## Partner With AMD Machines
 
-AMD Machines designs and builds automated EOL test systems tailored to your product requirements and production environment. Our engineering team brings decades of experience across electrical, leak, vision, and functional test applications, delivering systems that catch defects reliably and generate the data you need for continuous improvement. [Contact us](/contact/) to discuss your end-of-line testing needs.
+AMD Machines designs and builds [automated leak detection and test systems](/solutions/test-systems/) tailored to your product requirements and production environment. Our engineering team brings decades of experience across electrical, leak, [machine vision](/solutions/machine-vision/), and functional test applications, delivering systems that catch defects reliably and generate the data you need for continuous improvement. [Contact us](/contact/) to discuss your end-of-line testing needs.

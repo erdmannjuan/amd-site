@@ -1,10 +1,10 @@
 ---
-title: Automated Assembly Line Systems & Equipment
-description: Custom automated assembly lines with rotary dial, linear transfer & robotic assembly. 40-60% labor savings for Tier 1 suppliers. Get a quote today.
-keywords: custom assembly lines, automated assembly systems, rotary dial assembly machines, linear transfer systems, robotic assembly cells, assembly automation integrator, turnkey assembly solutions
+title: Automated Assembly Machines & Systems
+description: Custom automated assembly machines — rotary dial, linear transfer & robotic systems. 2,500+ machines built, 14-24 month payback. Get a free quote.
+keywords: automated assembly machines, automated assembly systems, automated assembly machinery, custom assembly lines, rotary dial assembly machines, linear transfer systems, robotic assembly cells, assembly automation integrator
 template: solution.html
 short_title: Assembly Systems
-hero_title: Automated Assembly Systems
+hero_title: Automated Assembly Machines & Systems
 hero_subtitle: Engineered-to-order assembly automation delivering measurable ROI for Tier 1 suppliers
 url: /solutions/assembly/
 features:
@@ -50,7 +50,7 @@ The assembly equipment in a typical system spans a wide range of technologies. R
 
 What separates assembly automation from manual processes comes down to three things: cycle time, consistency, and traceability. A well-designed automated assembly system holds sub-second repeatability across millions of cycles, captures process data on every single unit, and eliminates the operator-to-operator variation that drives scrap and rework on manual lines. The result is higher throughput, lower cost-per-part, and a complete electronic record of how every product was built.
 
-For a deeper comparison of machine types and how to choose the right one, read our [automated assembly machines selection guide](/blog/automated-assembly-machines/). But not all assembly equipment is created equal—and that's where custom engineering makes the difference.
+The comparison table below breaks down how the main machine architectures stack up. But not all assembly equipment is created equal—and that's where custom engineering makes the difference.
 
 ## Why Custom Assembly Automation Matters
 
@@ -113,6 +113,23 @@ When your volumes don't justify a dedicated dial or transfer line—or when you'
 We've deployed robotic cells using FANUC's iRVision integrated vision and Cognex In-Sight cameras for part location, allowing the robot to pick components from random orientations without dedicated fixturing. Combined with Schunk quick-change couplers, a single cell can switch between product families in under two minutes.
 
 **When to choose robotic cells:** Mixed-model production, lower volumes (under 250K/year), frequent product introductions, or when you need the same system to handle assembly, inspection, and packaging. Learn more about our [robotic cell capabilities](/solutions/robotic-cells/).
+
+### Collaborative Robot Stations
+
+Cobots have a place in assembly, but it is narrower than the marketing suggests. A collaborative robot station operates without full safety guarding, allowing an operator to work alongside the robot in a shared workspace. That is a genuine advantage when floor space is constrained, volumes are low, and the process requires a mix of human judgment and automated consistency.
+
+Where cobots actually make sense: low-volume assembly (1,000 to 100,000 units per year), tasks that benefit from operator flexibility combined with robotic repeatability — applying sealant while the operator positions a gasket, or driving fasteners on assemblies that are awkward to fixture. Cycle times run 15 to 45 seconds per assembly. Where cobots do not make sense: high-speed operations where force and speed limitations reduce throughput below manual rates, or fully automated lines where the collaborative capability provides no benefit because no operator is present. We spec cobots when they solve a real problem, not because they look good in a facility tour.
+
+### Assembly Machine Comparison Table
+
+| System Type | Best For | Typical Cycle Time | Volume Sweet Spot | Changeover Time | Relative Cost |
+|---|---|---|---|---|---|
+| Rotary Dial / Indexing | High-volume, balanced ops, compact footprint | 3–8 sec/index | 500K–5M+ units/yr | Hours to days | $$ |
+| Linear Transfer | Scalable, varying cycle times, larger parts | 5–15 sec/station | 100K–2M units/yr | Hours | $$–$$$ |
+| Robotic Cells | Medium volume, high mix, complex motions | 10–30 sec/cycle | 10K–500K units/yr | Minutes | $$$ |
+| Cobot Stations | Low volume, shared workspace | 15–45 sec/cycle | 1K–100K units/yr | Minutes | $ |
+
+The decision between these architectures comes down to three variables: your annual volume, the number and complexity of process steps, and how often the product changes. High volume with stable product design points toward rotary or linear. Frequent changeovers and moderate volumes favor robotic cells. Low volumes with mixed human-automation workflows are where cobots earn their cost back. In practice, many of the systems we build are hybrids — a linear transfer backbone with robotic stations at complex process steps and dedicated fixed tooling at high-speed operations. The architecture should follow the process requirements, not the other way around. For a deeper look at how station timing drives these decisions, see our guide on [assembly line balancing for optimal efficiency](/blog/assembly-line-balancing-for-optimal-efficiency/).
 
 ## Assembly Automation Equipment & Operations
 

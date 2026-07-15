@@ -1,6 +1,6 @@
 ---
-title: Robotic Automation ROI Calculator & Payback Guide
-description: 'Calculate automation payback with real numbers from 2,500+ projects. Covers burdened labor costs, throughput gains, quality savings, and sensitivity analysis.'
+title: Robot ROI Calculator & Real Payback Data
+description: 'Real payback numbers from 2,500+ automation projects — labor, throughput & quality savings, plus a step-by-step ROI model you can apply to your line today.'
 keywords: robotic automation ROI calculator, automation payback period, robot cost
   analysis, manufacturing automation investment, automation cost justification, labor
   savings automation, automation total cost of ownership

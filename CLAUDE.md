@@ -44,13 +44,13 @@
    |------------------------|---------------|-------------------------------|
    | robotic cell, robot cell, robotic cells | `/solutions/robotic-cells/` | No other page should have "robotic cell" in H1 or title |
    | welding automation, automated welding | `/solutions/welding/` | No other page should target "welding automation" as primary |
-   | automated assembly, assembly automation, assembly line | `/solutions/assembly/` | No other page should target "assembly automation" as primary |
+   | automated assembly machines, automated assembly, assembly automation, assembly line | `/solutions/assembly/` | No other page should target "automated assembly machines" or "assembly automation" as primary |
    | leak detection, test systems, leak testing | `/solutions/test-systems/` | No other page should target "leak testing" as primary |
    | machine tending, CNC tending | `/solutions/machine-tending/` | No other page should target "machine tending" as primary |
    | custom automation, automated equipment | `/solutions/custom-automation/` | No other page should target "custom automation" as primary |
    | marking, traceability | `/solutions/marking-traceability/` | No other page should target "marking systems" as primary |
    | industrial automation equipment | `/industries/` | No other page should target "industrial automation equipment" as primary |
-   | automated assembly machines (guide content) | `/blog/automated-assembly-machines-a-selection-guide/` | Blog targets guide/educational intent |
+   | (merged 2026-07) `/blog/automated-assembly-machines/` + selection-guide slug → 301 to `/solutions/assembly/` | `/solutions/assembly/` | Was cannibalizing the head term; do NOT recreate an assembly-machines blog page with commercial intent |
    | automated deburring, robotic deburring | `/solutions/deburring/` | Released 2026-06 (stale redirect removed) |
    | heavy equipment manufacturing automation | `/industries/heavy-equipment/` | Blog post merged + 301'd here 2026-06 |
 

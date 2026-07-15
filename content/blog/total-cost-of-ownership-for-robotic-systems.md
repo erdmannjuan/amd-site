@@ -1,6 +1,6 @@
 ---
-title: Robot Total Cost of Ownership | Beyond the Purchase Price
-description: 'Robot hardware is only 25-40% of total investment. See the full 5-phase TCO breakdown: acquisition, integration, operation, maintenance, and end-of-life.'
+title: 'True Cost of a Robot: 5-Phase TCO Breakdown'
+description: 'The robot is only 25-40% of what you will spend. See the full 5-phase cost breakdown — integration, operation, maintenance — before you budget your project.'
 keywords: total cost of ownership, robotic systems, automation cost analysis, robot maintenance
   costs, automation investment, manufacturing ROI, robot lifecycle costs
 date: '2025-06-22'

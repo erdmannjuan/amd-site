@@ -176,4 +176,4 @@ The result is assembly systems that meet throughput targets from day one and ada
 
 ## Get Started With Your Line Balancing Project
 
-Whether you are designing a new assembly line or rebalancing an existing one to meet changing demand, the engineering principles are the same — but the execution details matter enormously. AMD Machines brings decades of assembly system experience to every project. [Contact us](/contact/) to discuss your throughput targets and let our engineers help you design a line that delivers.
+Whether you are designing a new assembly line or rebalancing an existing one to meet changing demand, the engineering principles are the same — but the execution details matter enormously. AMD Machines brings decades of experience building [custom automated assembly machines and systems](/solutions/assembly/) — from rotary dial machines to 40-station linear transfer lines. [Contact us](/contact/) to discuss your throughput targets and let our engineers help you design a line that delivers.

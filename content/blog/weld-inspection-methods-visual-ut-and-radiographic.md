@@ -117,4 +117,4 @@ Start by mapping your weld joints to their criticality and code requirements. Ap
 
 ## Work With AMD Machines
 
-AMD Machines designs and builds automated inspection and testing systems for manufacturers across industries. Our engineering team understands the practical tradeoffs between inspection methods and can help you integrate the right approach into your production workflow. [Contact us](/contact/) to discuss your weld inspection and quality assurance requirements.
+AMD Machines designs and builds [welding automation systems](/solutions/welding/) with integrated inspection, plus standalone [automated test and inspection systems](/solutions/test-systems/) for manufacturers across industries. Our engineering team understands the practical tradeoffs between inspection methods and can help you integrate the right approach into your production workflow. [Contact us](/contact/) to discuss your weld inspection and quality assurance requirements.

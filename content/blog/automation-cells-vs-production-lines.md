@@ -11,9 +11,9 @@ author_title: Automation Specialists
 date: 2024-03-15
 read_time: 9
 related_posts:
-- title: Automated Assembly Machines
-  url: /blog/automated-assembly-machines/
-  description: Complete guide to assembly automation applications and benefits.
+- title: Assembly Line Balancing for Optimal Efficiency
+  url: /blog/assembly-line-balancing-for-optimal-efficiency/
+  description: How station timing drives throughput on automated lines.
 - title: Factory Automation for High-Mix Low-Volume
   url: /blog/factory-automation-high-mix-low-volume/
   description: Strategies for flexible manufacturing automation.

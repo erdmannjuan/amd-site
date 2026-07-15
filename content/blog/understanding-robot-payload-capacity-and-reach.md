@@ -1,5 +1,5 @@
 ---
-title: "Robot Payload & Reach: How to Size an Industrial Robot Correctly"
+title: "Robot Payload & Reach: How to Size It Right"
 description: "Why the rated payload on a spec sheet isn't the whole story — wrist moments, inertia loads, EOAT weight, and the 25-30% headroom rule for sizing industrial robots."
 keywords: robot payload capacity, robot reach, robot selection, robot specifications, industrial robot sizing, payload vs reach tradeoff, wrist payload, robot moment load
 date: '2026-01-16'

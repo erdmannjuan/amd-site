@@ -1,6 +1,6 @@
 ---
-title: "ISO 10218 & ISO/TS 15066 Explained: Robot Safety Standards for Integrators"
-description: "Practical guide to ISO 10218 and ISO/TS 15066 robot safety standards — risk assessment, safeguarding requirements, speed and force limits, and what they mean for your cell design."
+title: "ISO 10218 & ISO/TS 15066: Robot Safety Guide"
+description: "What ISO 10218 & ISO/TS 15066 actually require — risk assessment, force limits, safeguarding — in plain language from engineers who build compliant cells."
 keywords: robot safety standards, ISO 10218, ISO TS 15066, collaborative robot safety, cobot safety, risk assessment robotics, robot safeguarding, industrial robot compliance, PFL force limits, safety-rated monitored stop
 date: '2026-01-10'
 author: AMD Machines Team
@@ -61,7 +61,7 @@ ISO 10218-2 describes several safeguarding methods that integrators select based
 
 **Perimeter guarding** remains the most common approach for high-speed, high-payload applications. Physical barriers — typically welded steel tube frames with polycarbonate or wire mesh panels — enclose the robot's maximum operating envelope. Access points use interlocked gates with safety-rated switches (tongue, RFID-coded, or trapped-key types per ISO 14119). When a gate opens, the safety system triggers a Category 1 stop.
 
-**Presence-sensing devices** provide safeguarding without physical barriers. Type 4 light curtains (PLe-rated) detect intrusion through a vertical plane of infrared beams and are commonly used at part load/unload stations. Type 3 safety laser scanners monitor 2D floor areas and support multiple configurable zones — useful for implementing speed and separation monitoring in [robotic integration projects](/solutions/robot-integration/).
+**Presence-sensing devices** provide safeguarding without physical barriers. Type 4 light curtains (PLe-rated) detect intrusion through a vertical plane of infrared beams and are commonly used at part load/unload stations. Type 3 safety laser scanners monitor 2D floor areas and support multiple configurable zones — useful for implementing speed and separation monitoring in [custom robotic cells](/solutions/robotic-cells/).
 
 **Safety-rated speed control** allows personnel to operate near the robot at reduced speed during setup, programming, and maintenance. The operator holds a three-position enabling device (deadman switch) that permits motion only when held in the center position. Releasing or squeezing through the switch triggers an immediate stop.
 
@@ -93,7 +93,7 @@ This mode dynamically adjusts robot speed based on the measured distance between
 
 The minimum protective separation distance calculation from ISO/TS 15066 accounts for human movement speed, robot stopping distance, sensor response time, and position uncertainty of both the human and the robot. Implementing SSM correctly requires safety-rated sensing (typically laser area scanners) and a controller capable of real-time speed adjustment based on sensor input.
 
-**Typical application**: Adjacent workstations on an [assembly line](/solutions/automated-assembly-systems/) where a human and robot perform different tasks in close proximity. The robot operates at full speed during normal production but decelerates or stops when the operator reaches into the shared zone.
+**Typical application**: Adjacent workstations on an [automated assembly line](/solutions/assembly/) where a human and robot perform different tasks in close proximity. The robot operates at full speed during normal production but decelerates or stops when the operator reaches into the shared zone.
 
 ### Power and Force Limiting (PFL)
 
@@ -120,7 +120,7 @@ PFL does not make the end effector safe. A cobot carrying a sharp tool, a hot we
 
 ## Practical Risk Assessment Process
 
-Whether you are building a fully guarded workcell or a collaborative application, the risk assessment follows the same structure. Here is how we approach it at AMD Machines on every [robotic integration project](/solutions/robot-integration/):
+Whether you are building a fully guarded workcell or a collaborative application, the risk assessment follows the same structure. Here is how we approach it at AMD Machines on every [robotic cell project](/solutions/robotic-cells/):
 
 1. **Define the application completely** — Robot model, payload, end effector, workpiece, cycle time, production rate, all operational modes (automatic, manual, maintenance, cleaning), and personnel who will interact with the system.
 2. **Identify every hazard** — Walk through each mode of operation. Consider what happens during normal production, during part changeover, during a jam or fault recovery, during maintenance, and during foreseeable misuse.

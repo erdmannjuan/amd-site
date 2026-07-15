@@ -1,6 +1,6 @@
 ---
-title: Cobot Payback Period | 12-24 Month Benchmark Data
-description: 'Collaborative robot payback typically runs 12-24 months. See real cobot ROI benchmarks, cost factors, and how to build a payback model for your application.'
+title: 'Cobot Payback Period: Real 12-24 Month Data'
+description: 'How fast do cobots pay for themselves? Real 12-24 month benchmark data, the 5 factors that move payback, and a simple model to run your own numbers.'
 keywords: cobot payback period, collaborative robot ROI, cobot cost justification,
   collaborative robot payback 12 24 months, cobot investment analysis, cobot total
   cost of ownership

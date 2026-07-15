@@ -1,6 +1,6 @@
 ---
-title: "How Robots Handle Heavy Loads: Payload Sizing, Gantries & Floor-Track Systems"
-description: "How industrial robots handle heavy loads from 200 kg to 7,000 kg — payload sizing, floor-track systems, overhead gantries, and EOAT selection. From engineers who've built 2,500+ systems."
+title: "Heavy Payload Robots: Sizing & Gantries"
+description: "Handling 200 kg to 7,000 kg parts with robots — payload sizing rules, floor tracks vs. gantries, and EOAT selection from 2,500+ real systems."
 keywords: heavy payload robots, high-payload robot arms, industrial material handling,
   heavy part automation, robot payload capacity, end-of-arm tooling, heavy lifting robots
 date: '2025-06-28'

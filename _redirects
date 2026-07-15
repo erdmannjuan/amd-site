@@ -54,11 +54,13 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /industries/pharmaceutical/ /industries/ 301
 
 # Blog redirects (old slugs to new equivalents)
-/blog/automated-assembly-machines-a-selection-guide/ /blog/automated-assembly-machines/ 301
+# Assembly blog page merged into /solutions/assembly/ (2026-07) - was cannibalizing the head term
+/blog/automated-assembly-machines/ /solutions/assembly/ 301
+/blog/automated-assembly-machines-a-selection-guide/ /solutions/assembly/ 301
 /blog/understanding-vision-inspection-systems/ /blog/introduction-to-machine-vision-for-manufacturing/ 301
 /blog/ins-outs-helium-leak-testing-equipment/ /blog/leak-testing-methods-pressure-decay-mass-flow-and-helium/ 301
 /blog/facts-about-hot-plate-welding/ /blog/heat-staking-and-hot-plate-welding-applications/ 301
-/blog/what-does-a-fully-automated-assembly-line-look-like/ /blog/automated-assembly-machines/ 301
+/blog/what-does-a-fully-automated-assembly-line-look-like/ /solutions/assembly/ 301
 /blog/what-can-vision-measuring-systems-accomplish/ /blog/dimensional-inspection-with-cmms-and-vision/ 301
 /blog/understanding-rotor-and-stator-tests-for-electric-motors/ /blog/electrical-testing-in-automated-production/ 301
 /blog/understanding-rotor-and-stator-tests-for-electric-motor-assembly/ /blog/electrical-testing-in-automated-production/ 301

@@ -1,7 +1,7 @@
 ---
-title: 'Automation Upgrades & Retrofits | Extend Equipment Life'
-description: 'PLC migration, robot refurbishment, control modernization, and safety upgrades. Extend automation equipment life 10+ years at 30-50% of replacement cost.'
-keywords: automation upgrades, robot retrofit, robot refurbishment, control system upgrade, PLC migration, safety system upgrade, production line modernization
+title: 'Automation System Upgrades & Retrofits'
+description: 'Automation system upgrades from a 30-year machine builder — PLC migration, robot retrofits, safety modernization at 30-50% of replacement cost. Get a quote.'
+keywords: automation system upgrades, automation system upgrades company, automation system upgrades services, automation upgrades, robot retrofit, robot refurbishment, control system upgrade, PLC migration, safety system upgrade, production line modernization
 template: page.html
 hero_title: Upgrades & Retrofits
 hero_subtitle: Maximize your automation investment with strategic upgrades and modernization

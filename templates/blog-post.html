@@ -101,20 +101,43 @@
                     {{ content | safe }}
                 </div>
 
-                <!-- Mid-Article CTA -->
+                <!-- Mid-Article CTA (category-specific) -->
                 <div class="article-cta-box">
                     <div class="article-cta-content">
+                        {% if page.category == 'Assembly' %}
+                        <strong>Planning an assembly automation project?</strong>
+                        <p>We've built 2,500+ automated assembly machines. Send us your part and volumes — we'll tell you which architecture fits and what it should cost.</p>
+                        {% elif page.category == 'Robotics' %}
+                        <strong>Speccing a robotic cell?</strong>
+                        <p>Our engineers design, build, and commission turnkey robotic cells — including the safety system. Get an honest feasibility assessment, free.</p>
+                        {% elif page.category == 'Vision & QC' %}
+                        <strong>Need inline inspection or test?</strong>
+                        <p>We integrate machine vision and end-of-line test into production systems. Tell us your defect problem — we'll tell you if it's solvable.</p>
+                        {% elif page.category == 'Business' %}
+                        <strong>Want real numbers for your application?</strong>
+                        <p>We'll run a budgetary estimate and payback model against your actual volumes and labor costs — no obligation, engineer to engineer.</p>
+                        {% else %}
                         <strong>Have a project in mind?</strong>
                         <p>We'll give you an honest assessment - even if it means recommending a simpler solution.</p>
+                        {% endif %}
                     </div>
-                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Talk to Us</a>
+                    <a href="{{ config.site.base_path }}/contact/" class="btn btn-primary-flat">Talk to an Engineer</a>
                 </div>
 
                 <!-- Related Solutions - Internal Linking for SEO -->
                 <div class="article-related-solutions">
                     <h3>Explore Related Solutions</h3>
                     <div class="related-solutions-grid">
-                        {% if page.category == 'Robotics' or page.category == 'Assembly' %}
+                        {% if page.category == 'Assembly' %}
+                        <a href="{{ config.site.base_path }}/solutions/assembly/" class="related-solution-link">
+                            <span class="solution-name">Automated Assembly Machines</span>
+                            <span class="solution-arrow">→</span>
+                        </a>
+                        <a href="{{ config.site.base_path }}/solutions/servo-pressing/" class="related-solution-link">
+                            <span class="solution-name">Servo Pressing Systems</span>
+                            <span class="solution-arrow">→</span>
+                        </a>
+                        {% elif page.category == 'Robotics' %}
                         <a href="{{ config.site.base_path }}/solutions/robotic-cells/" class="related-solution-link">
                             <span class="solution-name">Custom Robotic Cells</span>
                             <span class="solution-arrow">→</span>
