@@ -38,7 +38,7 @@ benefits:
 
 I've been designing palletizing systems for the better part of two decades, and here's something that still surprises people: end-of-line palletizing is the single most common automation project we build at AMD Machines. It's not the most glamorous—nobody puts a palletizer on the cover of a trade magazine—but it's where the math works out fastest and most convincingly. You're taking the most physically demanding, repetitive, injury-prone job in the plant and handing it to a robot that'll do it faster, more consistently, and for a fraction of the long-term cost.
 
-At AMD Machines, we've designed and integrated palletizing cells for [food and beverage](/industries/food-beverage/), [consumer products](/industries/consumer/), [pharmaceutical](/industries/pharmaceutical/), and [general manufacturing](/industries/general-manufacturing/) operations. We've built single-line cells that palletize one SKU all day, and we've built multi-line rainbow palletizing systems that assemble mixed-product pallets for retail distribution with zero repacking at the DC. The technology has matured enormously in the last decade, and today's palletizing robots are faster, smarter, and more flexible than anything we had even five years ago.
+At AMD Machines, we've designed and integrated palletizing cells for [food and beverage](/industries/food-beverage/), [consumer products](/industries/consumer/), and [general manufacturing](/industries/general-manufacturing/) operations. We've built single-line cells that palletize one SKU all day, and we've built multi-line rainbow palletizing systems that assemble mixed-product pallets for retail distribution with zero repacking at the DC. The technology has matured enormously in the last decade, and today's palletizing robots are faster, smarter, and more flexible than anything we had even five years ago.
 
 ## Why Manual Palletizing Is Costing You More Than You Think
 
@@ -102,7 +102,7 @@ A complete palletizing cell includes empty pallet dispensing, full pallet discha
 - **Full pallet conveyors** that discharge completed pallets to stretch wrapping or staging
 - **[Stretch wrappers](/solutions/packaging/)** integrated into the cell for fully automated pallet finishing
 
-## Real-World Applications: Three Projects That Show What's Possible
+## Real-World Applications: Two Projects That Show What's Possible
 
 ### Beverage Manufacturer — 6-Line Consolidation
 
@@ -119,14 +119,6 @@ A consumer products company shipping to major retailers needed rainbow pallets�
 We built a vision-guided mixed palletizing cell using an ABB IRB 460 robot with a Cognex In-Sight 3D-L4000 vision system. Cases from multiple conveyor lanes are identified by barcode, and the robot builds mixed pallets according to order-specific patterns optimized by our proprietary software for pallet stability and cube utilization.
 
 **Results:** Throughput increased from 4 to 12 pallets per hour. Order accuracy went from 97% to 99.97%. Chargebacks dropped by 94%. The 8-person warehouse team was redeployed to higher-value positions. Payback: 13 months.
-
-### Pharmaceutical — Validated Palletizing with Full Traceability
-
-A pharmaceutical manufacturer needed palletizing automation that met FDA 21 CFR Part 11 requirements with full case-level traceability. Every case had to be scanned, verified, and logged with the exact pallet position and timestamp. Manual palletizing couldn't provide this level of documentation without adding a dedicated scanning operator at each station.
-
-We integrated a FANUC M-410iC/185 with a Keyence SR-X300 barcode verification system and an Allen-Bradley ControlLogix PLC running serialization logic. Every case is scanned at infeed, verified against the batch record, and its pallet position is logged to the MES system. Rejected cases are automatically diverted. The system generates electronic batch records compliant with 21 CFR Part 11.
-
-**Results:** 100% case-level traceability with zero manual data entry. Eliminated the scanning operator position at each line. Passed FDA audit on the first attempt. Throughput increased from 8 to 14 cases/minute. Payback: 16 months.
 
 ## Common Challenges and How We Solve Them
 

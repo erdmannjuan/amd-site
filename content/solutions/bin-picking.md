@@ -1,6 +1,6 @@
 ---
 title: 'Robotic Bin Picking Systems | 3D AI Vision'
-description: AI-powered robotic bin picking systems with 3D vision achieving 99%+ pick rates. Custom FANUC & ABB integration for automotive, medical, and heavy equipment manufacturers.
+description: AI-powered robotic bin picking systems with 3D vision achieving 99%+ pick rates. Custom FANUC & ABB integration for automotive and heavy equipment.
 keywords: robotic bin picking, 3D vision bin picking, AI vision integration, random bin picking automation, structured bin picking, bin picking ROI, industrial bin picking systems
 template: solution.html
 hero_title: Robotic Bin Picking
@@ -40,7 +40,7 @@ benefits:
 
 I'll be honest with you: five years ago, I would've told most manufacturers to hold off on bin picking. The technology was expensive, the pick rates were inconsistent, and you'd spend more time babysitting the vision system than you saved in labor. That's changed completely. The combination of faster 3D sensors, better AI algorithms, and more capable robot controllers has turned bin picking from a science project into a production-proven solution that pays for itself in under two years.
 
-At AMD Machines, we've deployed bin picking systems across [automotive](/industries/automotive/), [medical](/industries/medical/), [heavy equipment](/industries/heavy-equipment/), and [general manufacturing](/industries/general-manufacturing/) environments. We've learned what works, what doesn't, and—more importantly—what questions you need to answer before you commit to a bin picking project.
+At AMD Machines, we've deployed bin picking systems across [automotive](/industries/automotive/), [heavy equipment](/industries/heavy-equipment/), and [general manufacturing](/industries/general-manufacturing/) environments. We've learned what works, what doesn't, and—more importantly—what questions you need to answer before you commit to a bin picking project.
 
 ## How Modern Bin Picking Actually Works
 
@@ -103,14 +103,6 @@ A Tier 1 transmission supplier was hand-sorting aluminum die-cast housings from 
 We installed a FANUC M-20iD/25 with a Photoneo PhoXi XL 3D scanner mounted on a linear vertical axis. The scanner descends as the bin level drops, maintaining optimal scan distance throughout the entire gaylord. A custom vacuum gripper with four independently sensed Schmalz bellows cups handles the housing geometry.
 
 **Results:** 7.2-second average cycle time (peak demand was 8 seconds), 99.4% first-attempt pick rate, 99.97% overall pick rate including retries. Eliminated all three sorting operators per shift. Full payback in 14 months on a two-shift operation. The system has processed over 1.8 million parts in its first two years with zero lost-time safety incidents—compared to six recordable injuries per year on the manual operation.
-
-### Medical Component Feeding for Assembly
-
-A medical device manufacturer needed to feed small stainless steel components (12 mm diameter, 8 mm tall, 4.5 grams) from bulk totes into a precision [assembly system](/solutions/assembly/). The parts had a complex geometry that defeated every bowl feeder configuration they tried—the asymmetric features caused bridging and jamming at feed rates above 15 parts per minute.
-
-We deployed an ABB IRB 1200-5/0.9 with a Zivid Two M70 camera and a Schunk EGP 25 electric gripper. The small field of view of the M70 gave us the resolution needed to distinguish orientation features on these tiny parts. The robot picks from a shallow presentation tray that's periodically refilled from the bulk tote via a simple belt conveyor.
-
-**Results:** 22 parts per minute sustained feed rate (47% faster than the best bowl feeder attempt), zero jams in over 8 months of production, and the system handles three part variants with a single recipe change—no mechanical changeover required. The vision system also performs an incoming inspection on every part, rejecting out-of-spec components before they reach the assembly stations.
 
 ### Heavy Equipment Forging Sorting
 

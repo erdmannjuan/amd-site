@@ -48,7 +48,7 @@ At its core, every automated finishing system does three things: it controls the
 
 Force control is what separates a good finishing cell from a glorified CNC machine. There are three approaches we use, and each has its place:
 
-**Active force sensing** uses a 6-axis force/torque sensor — typically an ATI or SCHUNK model — mounted between the robot wrist and the tool. The sensor reads contact forces at 1,000 Hz or faster, and the robot controller adjusts position in real time to maintain a target force, usually between 5N and 150N depending on the process. This is what you need for complex freeform surfaces like turbine blades or orthopedic implants. FANUC's integrated Force Sensor with their CR and CRX collaborative robots handles this natively, and we've had excellent results with ABB's Force Control package on IRB 6700 platforms too.
+**Active force sensing** uses a 6-axis force/torque sensor — typically an ATI or SCHUNK model — mounted between the robot wrist and the tool. The sensor reads contact forces at 1,000 Hz or faster, and the robot controller adjusts position in real time to maintain a target force, usually between 5N and 150N depending on the process. This is what you need for complex freeform surfaces like turbine blades. FANUC's integrated Force Sensor with their CR and CRX collaborative robots handles this natively, and we've had excellent results with ABB's Force Control package on IRB 6700 platforms too.
 
 **Passive compliance** uses a pneumatic or spring-loaded floating head that mechanically absorbs force variations. It's simpler and cheaper — a Schunk FDB compliance unit runs a fraction of the cost of a full active setup. Works well for flat or gently curved surfaces where force doesn't need to vary much across the path. We use passive compliance on probably 40% of our grinding cells.
 
@@ -72,7 +72,7 @@ Common configurations include:
 
 - **Robot-held tool**: The robot carries the grinding wheel or belt head and moves it across a fixtured part. Best for large parts and heavy stock removal.
 - **Robot-held part**: The robot picks the part and presents it to a fixed grinding station. Better for smaller parts with complex geometries. Cycle times are typically faster because the tool runs continuously.
-- **Dual-robot cells**: One robot holds the part, the other holds the tool. Maximum flexibility but higher cost and programming complexity. We reserve this for high-value aerospace and medical work.
+- **Dual-robot cells**: One robot holds the part, the other holds the tool. Maximum flexibility but higher cost and programming complexity. We reserve this for high-value aerospace work.
 
 Material removal rates of 0.5-2.0 mm³/s are typical for steel, with surface finishes from Ra 0.8μm to Ra 3.2μm depending on grit selection and process parameters.
 
@@ -104,14 +104,6 @@ Not every finishing job needs a robot. For high-volume [deburring](/solutions/de
 Vibratory finishing excels at edge radiusing (0.1-0.5mm radii), surface smoothing (improving Ra by 50-70%), and burnishing for brightness. Cycle times range from 15 minutes to 4 hours depending on the media, compound, and target finish. We've built continuous flow-through systems that process parts at rates exceeding 500 per hour for high-volume automotive and consumer goods production.
 
 ## Real-World Application Examples
-
-### Orthopedic Implant Finishing — Medical Device Manufacturing
-
-A [medical device manufacturer](/industries/medical/) came to us with a challenge: they were spending 45 minutes per part hand-polishing titanium knee implant components to Ra 0.05μm. Three skilled polishers working full-time couldn't keep up with demand, and consistency was a constant battle — rejection rates ran 12-15% due to surface finish non-conformances.
-
-We designed a dual-robot cell with an ABB IRB 4600 holding the implant and a second robot operating six different polishing stations. A Cognex In-Sight 3D vision system maps each casting before polishing to compensate for dimensional variation. Force control maintains ±0.5N accuracy across complex freeform surfaces.
-
-Results: cycle time dropped to 18 minutes per part. Rejection rate fell below 2%. The cell runs lights-out on second shift, and the polishers were redeployed to higher-skill work. ROI came in at 14 months.
 
 ### Automotive Wheel Finishing — Tier 1 Supplier
 
@@ -156,7 +148,7 @@ Teaching a robot to polish a freeform surface is a massive programming challenge
 The business case for automating grinding and polishing is typically the strongest of any manufacturing automation project. Here's why:
 
 - **Labor savings**: Manual finishing is labor-intensive. A typical 2-robot polishing cell replaces 4-6 operators across two shifts. At fully burdened labor rates of $55,000-$75,000/year per operator, that's $220,000-$450,000 in annual savings.
-- **Consistency and scrap reduction**: Manual finishing rejection rates of 5-15% drop to 1-3% with automation. On high-value parts (medical implants, aerospace components), scrap savings alone can justify the investment.
+- **Consistency and scrap reduction**: Manual finishing rejection rates of 5-15% drop to 1-3% with automation. On high-value parts (aerospace components), scrap savings alone can justify the investment.
 - **Throughput gains**: Automated cells typically achieve 2-3x the throughput of manual operations because they don't fatigue, don't take breaks, and maintain optimal process parameters continuously.
 - **Health and safety**: Grinding and polishing expose workers to noise (often 90-100 dB), vibration (hand-arm vibration syndrome is a real occupational hazard), and respirable dust. Automation eliminates these exposures entirely.
 
@@ -180,7 +172,7 @@ Force/torque sensors measure contact forces at 1,000+ Hz and feed back to the ro
 
 ### Can robots handle parts with complex freeform surfaces?
 
-Yes — that's actually where robots shine compared to fixed automation. A 6-axis robot can approach a surface from any angle, and offline programming tools generate paths directly from CAD data. For parts with tight tolerances on complex geometry — think turbine blades, implants, or automotive styling surfaces — we add 3D vision or touch sensing to adapt the path to each individual part.
+Yes — that's actually where robots shine compared to fixed automation. A 6-axis robot can approach a surface from any angle, and offline programming tools generate paths directly from CAD data. For parts with tight tolerances on complex geometry — think turbine blades or automotive styling surfaces — we add 3D vision or touch sensing to adapt the path to each individual part.
 
 ### What about dust and safety compliance?
 
@@ -196,4 +188,4 @@ For grinding with significant contact forces (>50N), you need a rigid robot with
 
 ### What's the typical ROI timeline for a grinding/polishing cell?
 
-Most of our customers see payback in 10-18 months based on direct labor savings. When you factor in reduced scrap, improved quality consistency, lower worker's compensation costs, and increased throughput, the effective payback is often under 12 months. The strongest ROI cases are high-value parts (medical, aerospace) where scrap reduction delivers outsized savings.
+Most of our customers see payback in 10-18 months based on direct labor savings. When you factor in reduced scrap, improved quality consistency, lower worker's compensation costs, and increased throughput, the effective payback is often under 12 months. The strongest ROI cases are high-value parts (aerospace) where scrap reduction delivers outsized savings.

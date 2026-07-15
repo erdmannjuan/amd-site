@@ -80,10 +80,6 @@ Direct labor savings are usually the easy calculation. The bigger wins often com
 
 This is where our 30 years of building systems pays off. We've integrated robots from FANUC, ABB, Yaskawa Motoman, KUKA, Universal Robots, and Epson. We've deployed vision systems from Cognex, Keyence, SICK, and Omron. We've built controls on Allen-Bradley, Siemens, Beckhoff, and Mitsubishi platforms. We know which brands excel in which applications — and where their limitations are.
 
-**Robot Selection Example:**
-
-A [medical device manufacturer](/industries/medical/) came to us wanting to automate catheter assembly. Their initial plan called for a FANUC LR Mate. Our assessment identified that the process required ±0.02 mm repeatability in a cleanroom environment. We recommended a Mitsubishi RV-series robot instead — it offered ISO Class 5 cleanroom compatibility out of the box and the precision the application demanded, saving them $40,000 in cleanroom modifications.
-
 **Vision System Evaluation:**
 
 Choosing between a Cognex In-Sight 3800 and a Keyence CV-X series isn't just about specs on a datasheet. It's about your lighting conditions, part variability, integration with your PLC platform, and your maintenance team's ability to adjust the system when products change. We evaluate all of those factors.
@@ -163,13 +159,7 @@ A brake component manufacturer with 15-year-old assembly equipment was experienc
 
 **Our recommendation:** A phased modernization approach — controls upgrade first (PLC-5 to ControlLogix, $180K), vision replacement second (Cognex In-Sight upgrade, $95K), then mechanical refurbishment of [servo press](/solutions/servo-pressing/) stations ($220K). Total investment: $495K. Projected savings: $680K annually from reduced downtime and scrap. Payback: 8.7 months.
 
-### Case 2: Medical Device Startup — First Automation Investment
-
-A startup producing a novel surgical instrument needed to scale from hand-built prototypes to 50,000 units per year. They had $750K budgeted for automation and no idea where to start.
-
-Our feasibility study identified that full automation wasn't appropriate for their current product maturity — the design was still iterating. Instead, we recommended semi-automated workstations with manual load/unload and automated process steps ([ultrasonic welding](/solutions/thermal-processing/), vision inspection, and leak testing). This approach cost $480K, left budget for future expansion, and accommodated design changes without major retooling.
-
-### Case 3: Food & Beverage — End-of-Line Automation
+### Case 2: Food & Beverage — End-of-Line Automation
 
 A regional snack food manufacturer was manually case-packing and [palletizing](/solutions/palletizing/) 40 SKUs across three production lines. Manual labor turnover was running 120% annually. Our ROI analysis showed a 14-month payback on a $1.2M robotic case packing and palletizing system using FANUC M-410iC robots. The key insight from our consulting engagement: by standardizing case sizes from 12 down to 4, the automation solution became dramatically simpler and more reliable, saving $300K on the original equipment quote.
 
@@ -214,6 +204,6 @@ Every consultant on our team has designed, built, and commissioned automation sy
 
 **We think about the full lifecycle.** A system that's easy to install but impossible to maintain is a bad system. We consider long-term [maintenance and support](/services/maintenance-support/), spare parts availability, and future flexibility in every recommendation.
 
-**We've done this 2,500+ times.** That experience base is irreplaceable. We've seen what works across [automotive](/industries/automotive/), [medical](/industries/medical/), [aerospace](/industries/aerospace/), [electronics](/industries/electronics/), [food and beverage](/industries/food-beverage/), and [general manufacturing](/industries/general-manufacturing/). Patterns emerge across industries, and we bring those cross-industry insights to every engagement.
+**We've done this 2,500+ times.** That experience base is irreplaceable. We've seen what works across [automotive](/industries/automotive/), [aerospace](/industries/aerospace/), [electronics](/industries/electronics/), [food and beverage](/industries/food-beverage/), and [general manufacturing](/industries/general-manufacturing/). Patterns emerge across industries, and we bring those cross-industry insights to every engagement.
 
 **Ready to make smarter automation decisions?** [Contact our team](/contact/) to discuss your automation challenges and opportunities. The conversation is free — the insights could save you millions.

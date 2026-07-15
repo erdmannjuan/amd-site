@@ -21,6 +21,97 @@ related_posts:
 
 Every automation investment starts with the same question from leadership: "What's the payback?" It sounds simple, but the answer depends entirely on how honestly you build the model. Over 30 years and 2,500+ machines delivered, we have seen ROI analyses that killed good projects because they missed critical benefits, and we have seen analyses that greenlit bad projects because they glossed over real costs. Both outcomes are avoidable if you build your financial model on solid engineering data rather than wishful thinking.
 
+## Interactive Robot ROI Calculator
+
+Enter your own numbers below. The model uses the same methodology we apply during concept development — fully burdened labor, quality savings, and conservative displacement assumptions. Nothing is uploaded; it runs entirely in your browser.
+
+<div id="amd-roi-calc" style="background: #f8f9fb; border: 1px solid #e0e4ea; border-left: 4px solid #003087; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0 2rem;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem 1.5rem;">
+<label style="display: block; font-size: 0.9rem; font-weight: 600; color: #1a1a2e;">Operators replaced per shift
+<input id="roi-ops" type="number" value="2" min="0" step="0.5" style="width: 100%; margin-top: 0.35rem; padding: 0.5rem; border: 1px solid #c5ccd6; border-radius: 6px; font-size: 1rem;">
+<span style="font-weight: 400; font-size: 0.8rem; color: #555;">Be conservative — most cells still need a monitor (use 1.5, not 2)</span>
+</label>
+<label style="display: block; font-size: 0.9rem; font-weight: 600; color: #1a1a2e;">Shifts per day
+<input id="roi-shifts" type="number" value="2" min="1" max="3" step="1" style="width: 100%; margin-top: 0.35rem; padding: 0.5rem; border: 1px solid #c5ccd6; border-radius: 6px; font-size: 1rem;">
+</label>
+<label style="display: block; font-size: 0.9rem; font-weight: 600; color: #1a1a2e;">Base wage ($/hr)
+<input id="roi-wage" type="number" value="20" min="0" step="0.5" style="width: 100%; margin-top: 0.35rem; padding: 0.5rem; border: 1px solid #c5ccd6; border-radius: 6px; font-size: 1rem;">
+<span style="font-weight: 400; font-size: 0.8rem; color: #555;">We apply a 1.45× burden multiplier automatically</span>
+</label>
+<label style="display: block; font-size: 0.9rem; font-weight: 600; color: #1a1a2e;">Annual volume (units)
+<input id="roi-volume" type="number" value="500000" min="0" step="10000" style="width: 100%; margin-top: 0.35rem; padding: 0.5rem; border: 1px solid #c5ccd6; border-radius: 6px; font-size: 1rem;">
+</label>
+<label style="display: block; font-size: 0.9rem; font-weight: 600; color: #1a1a2e;">Current scrap rate (%)
+<input id="roi-scrap" type="number" value="3" min="0" max="100" step="0.1" style="width: 100%; margin-top: 0.35rem; padding: 0.5rem; border: 1px solid #c5ccd6; border-radius: 6px; font-size: 1rem;">
+<span style="font-weight: 400; font-size: 0.8rem; color: #555;">Automated lines typically reach 0.5%</span>
+</label>
+<label style="display: block; font-size: 0.9rem; font-weight: 600; color: #1a1a2e;">Material cost per unit ($)
+<input id="roi-partcost" type="number" value="8" min="0" step="0.5" style="width: 100%; margin-top: 0.35rem; padding: 0.5rem; border: 1px solid #c5ccd6; border-radius: 6px; font-size: 1rem;">
+</label>
+<label style="display: block; font-size: 0.9rem; font-weight: 600; color: #1a1a2e;">System investment ($)
+<input id="roi-capex" type="number" value="600000" min="0" step="25000" style="width: 100%; margin-top: 0.35rem; padding: 0.5rem; border: 1px solid #c5ccd6; border-radius: 6px; font-size: 1rem;">
+<span style="font-weight: 400; font-size: 0.8rem; color: #555;">Include integration, tooling &amp; installation — not just the robot</span>
+</label>
+</div>
+<div id="roi-results" style="margin-top: 1.5rem; padding: 1.25rem; background: #ffffff; border: 1px solid #e0e4ea; border-radius: 8px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; text-align: center;">
+<div><div style="font-size: 0.8rem; font-weight: 700; color: #555555; text-transform: uppercase; letter-spacing: 0.05em;">Annual labor savings</div><div id="roi-out-labor" style="font-size: 1.5rem; font-weight: 800; color: #003087;">—</div></div>
+<div><div style="font-size: 0.8rem; font-weight: 700; color: #555555; text-transform: uppercase; letter-spacing: 0.05em;">Annual quality savings</div><div id="roi-out-quality" style="font-size: 1.5rem; font-weight: 800; color: #003087;">—</div></div>
+<div><div style="font-size: 0.8rem; font-weight: 700; color: #555555; text-transform: uppercase; letter-spacing: 0.05em;">Payback period</div><div id="roi-out-payback" style="font-size: 1.5rem; font-weight: 800; color: #00b785;">—</div></div>
+<div><div style="font-size: 0.8rem; font-weight: 700; color: #555555; text-transform: uppercase; letter-spacing: 0.05em;">5-year net return</div><div id="roi-out-net" style="font-size: 1.5rem; font-weight: 800; color: #00b785;">—</div></div>
+</div>
+<div id="roi-verdict" style="margin-top: 1rem; font-size: 0.95rem; color: #555555; text-align: center;"></div>
+</div>
+<div style="margin-top: 1rem; text-align: center;">
+<a href="/contact/" style="display: inline-block; padding: 0.7rem 1.6rem; background: #003087; color: #ffffff; font-weight: 700; border-radius: 6px; text-decoration: none;">Get a real quote for these numbers →</a>
+<div style="margin-top: 0.5rem; font-size: 0.85rem; color: #555555;">Our engineers will pressure-test your assumptions free — includes maintenance, consumables &amp; integration costs this simple model omits.</div>
+</div>
+</div>
+
+<script>
+(function() {
+  function fmt(n) {
+    if (!isFinite(n)) return '—';
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function calc() {
+    var ops = parseFloat(document.getElementById('roi-ops').value) || 0;
+    var shifts = parseFloat(document.getElementById('roi-shifts').value) || 1;
+    var wage = parseFloat(document.getElementById('roi-wage').value) || 0;
+    var vol = parseFloat(document.getElementById('roi-volume').value) || 0;
+    var scrap = (parseFloat(document.getElementById('roi-scrap').value) || 0) / 100;
+    var part = parseFloat(document.getElementById('roi-partcost').value) || 0;
+    var capex = parseFloat(document.getElementById('roi-capex').value) || 0;
+    var labor = ops * shifts * wage * 2080 * 1.45;
+    var autoScrap = Math.min(scrap, 0.005);
+    var quality = Math.max(0, (scrap - autoScrap)) * vol * part;
+    var annual = labor + quality;
+    var paybackMonths = annual > 0 ? (capex / annual) * 12 : Infinity;
+    var net5 = annual * 5 - capex;
+    document.getElementById('roi-out-labor').textContent = fmt(labor);
+    document.getElementById('roi-out-quality').textContent = fmt(quality);
+    document.getElementById('roi-out-payback').textContent = isFinite(paybackMonths) ? (paybackMonths < 1 ? '<1 month' : Math.round(paybackMonths) + ' months') : '—';
+    document.getElementById('roi-out-net').textContent = fmt(net5);
+    var v = document.getElementById('roi-verdict');
+    if (!isFinite(paybackMonths)) { v.textContent = ''; }
+    else if (paybackMonths <= 24) { v.textContent = 'Within the 12–24 month window where most of our 2,500+ installed systems landed — this project is worth a serious look.'; }
+    else if (paybackMonths <= 42) { v.textContent = 'Longer than typical, but throughput gains and capacity value (not modeled here) often close this gap. Worth an engineering review.'; }
+    else { v.textContent = 'On labor and quality alone this looks marginal — unless you are capacity-constrained and the added throughput has revenue value.'; }
+  }
+  var ids = ['roi-ops','roi-shifts','roi-wage','roi-volume','roi-scrap','roi-partcost','roi-capex'];
+  function init() {
+    for (var i = 0; i < ids.length; i++) {
+      var el = document.getElementById(ids[i]);
+      if (el) el.addEventListener('input', calc);
+    }
+    calc();
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
+
+The calculator covers labor and quality — the two savings that apply to nearly every project. It deliberately omits throughput/capacity value, which is sometimes the entire justification; the sections below show how to model that honestly.
+
 ## ROI by Automation Type
 
 Different automation applications produce different payback profiles. If you are evaluating a specific type of automation, start here:

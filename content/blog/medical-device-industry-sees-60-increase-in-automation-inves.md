@@ -25,7 +25,7 @@ Several factors are converging simultaneously, and their combined effect is more
 
 The FDA's expectations around process validation and data integrity continue to tighten. Draft guidance documents released in early 2025 place greater emphasis on continuous process verification and electronic batch records. Manual processes create documentation gaps that are increasingly difficult to defend during audits. Automated systems with built-in data capture and traceability solve this problem at the source rather than through after-the-fact paperwork.
 
-For manufacturers operating under [ISO 13485 and FDA 21 CFR Part 11 requirements](/industries/medical/), automation provides a structural advantage in maintaining compliance. Every cycle generates a traceable, timestamped record. Every parameter stays within validated limits. Every deviation gets flagged in real time.
+For manufacturers operating under ISO 13485 and FDA 21 CFR Part 11 requirements, automation provides a structural advantage in maintaining compliance. Every cycle generates a traceable, timestamped record. Every parameter stays within validated limits. Every deviation gets flagged in real time.
 
 ### Labor Availability Remains Constrained
 

@@ -17,8 +17,6 @@ features:
   - Vibratory, centrifugal, and flex-feed part presentation
   - Poka-yoke error proofing with real-time SPC
 applications:
-  - name: Medical Device Assembly
-    description: ISO 13485-compliant clean room systems for regulated devices—catheter assemblies, surgical instruments, and drug delivery components with full traceability.
   - name: Automotive Components
     description: High-speed module, switch, and interior component assembly running 24/7 at sub-4-second cycle times for Tier 1 and Tier 2 suppliers.
   - name: Electronics Assembly
@@ -94,7 +92,7 @@ Picking the right machine architecture is the single most important decision in 
 
 Rotary dial systems are the workhorses of high-volume assembly. A central indexing table—typically driven by a Weiss or Colombo Filippetti cam unit—carries nests through 8 to 24 stations arranged around the dial's perimeter. Every index, all stations execute simultaneously. That parallel processing is what makes dials so fast.
 
-We've built rotary dials running at 40+ parts per minute on automotive connector assemblies, and others running at 6 parts per minute on complex medical devices with 15+ assembly operations. The sweet spot is products smaller than about 200 mm that need 6–16 distinct operations.
+We've built rotary dials running at 40+ parts per minute on automotive connector assemblies, and others running at 6 parts per minute on complex multi-component products with 15+ assembly operations. The sweet spot is products smaller than about 200 mm that need 6–16 distinct operations.
 
 **When to choose a dial:** High volume (250K+ parts/year), small-to-medium parts, relatively stable product design, and cycle times under 6 seconds per part.
 
@@ -162,9 +160,9 @@ We eventually replaced the bowls with an Asyril Asycube flex feeder paired with 
 Today, we evaluate every component and select the right feeding approach:
 
 - **Vibratory bowl feeders** — Still the best choice for simple, symmetrical parts at high rates. We work with RNA, Automation Devices, and Service Engineering.
-- **Centrifugal feeders** — Excellent for small, lightweight parts that need gentle handling (medical components, o-rings, rubber seals).
+- **Centrifugal feeders** — Excellent for small, lightweight parts that need gentle handling (small precision components, o-rings, rubber seals).
 - **Flex feeders with vision** — The go-to for complex geometries, fragile parts, or frequent changeovers. Asyril Asycube and FlexiBowl systems paired with vision.
-- **Magazine and tray systems** — For larger or pre-oriented components, especially in [electronics](/industries/electronics/) and medical device assembly.
+- **Magazine and tray systems** — For larger or pre-oriented components, especially in [electronics](/industries/electronics/) assembly.
 - **Escapement mechanisms** — Simple, reliable, and often the best solution for tube-fed or rail-fed components.
 
 ## Error Proofing and Quality Assurance
@@ -186,7 +184,7 @@ Every AMD assembly machine ships with multiple layers of poka-yoke and in-proces
 - **Barcode and RFID tracking** for serialized product genealogy
 - **MES integration** via OPC UA, MQTT, or direct database writes
 
-We've built systems that meet FDA 21 CFR Part 11 requirements for electronic records in [medical device manufacturing](/industries/medical/), IATF 16949 traceability requirements for [automotive](/industries/automotive/) Tier 1 suppliers, and AS9100 documentation standards for [aerospace](/industries/aerospace/) hardware. See all the [industries we serve with automation equipment](/industries/).
+We've built systems that meet IATF 16949 traceability requirements for [automotive](/industries/automotive/) Tier 1 suppliers and AS9100 documentation standards for [aerospace](/industries/aerospace/) hardware. See all the [industries we serve with automation equipment](/industries/).
 
 ## Real-World Application Examples
 
@@ -197,14 +195,6 @@ A Tier 1 automotive supplier needed to assemble a multi-component HVAC blend doo
 We built a 20-station rotary dial machine with servo-controlled press stations, ultrasonic welding, automated screwdriving, and end-of-line electrical testing. The system uses FANUC iRVision for gear mesh verification and a Keyence laser displacement sensor for weld height inspection.
 
 **Results:** 3.0-second cycle time, 98.5% first-pass yield (up from 94% manual), zero customer PPM complaints in the first 18 months of production. Full payback in 16 months running two shifts.
-
-### Medical Inhaler Device Assembly
-
-A medical device OEM required a fully validated system for assembling a metered-dose inhaler with complete lot traceability. The line needed to handle three product variants with tool-less changeover.
-
-We designed a linear transfer system with 14 stations, including ultrasonic welding, dose-weight verification, leak testing, and 2D barcode serialization. The entire system operates in a Class 100K clean room with stainless steel construction and FDA 21 CFR Part 11-compliant data recording.
-
-**Results:** 22 units per minute, IQ/OQ/PQ validation completed in 12 weeks, electronic batch records for every unit produced. The system replaced a 12-person manual line and paid for itself in 11 months.
 
 ### Electronics Sensor Module Assembly
 
@@ -242,7 +232,7 @@ Looking for a specific configuration? See our [custom assembly machines](/applic
 
 ### What cycle times can a custom assembly system achieve?
 
-It depends on the number of operations and product complexity. Rotary dial systems typically achieve 1.5–6 seconds per part. Linear transfer systems range from 5–30 seconds. We've built dial machines running under 2 seconds per cycle for simple two-component assemblies, and linear systems at 25 seconds for complex 20+ component medical devices.
+It depends on the number of operations and product complexity. Rotary dial systems typically achieve 1.5–6 seconds per part. Linear transfer systems range from 5–30 seconds. We've built dial machines running under 2 seconds per cycle for simple two-component assemblies, and linear systems at 25 seconds for complex 20+ component products.
 
 ### How long does it take from concept to production-ready machine?
 
@@ -263,10 +253,6 @@ Absolutely. Every machine ships with comprehensive operator and maintenance trai
 ### What controls platforms do you use?
 
 We standardize on Allen-Bradley ControlLogix and CompactLogix PLCs for most applications, with Rockwell PanelView HMIs or Ignition-based SCADA for complex systems. Robot integrations include FANUC, ABB, KUKA, and Yaskawa depending on the application requirements. We also integrate Beckhoff TwinCAT and Siemens platforms when the customer's facility standard requires it.
-
-### How do you handle validation for regulated industries?
-
-For medical device and pharmaceutical customers, we provide full IQ/OQ/PQ documentation packages, GAMP 5 software documentation, 21 CFR Part 11-compliant data systems, and FAT/SAT protocols. Our project managers have led dozens of validated automation projects and understand what your quality team needs to see. Visit our [consulting services](/services/consulting/) page to learn more about our approach to regulated projects.
 
 ### What types of assembly automation equipment does AMD Machines integrate?
 

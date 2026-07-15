@@ -31,7 +31,7 @@ applications:
     description: In-process and end-of-line confirmation that all components are present, correctly oriented, and properly secured.
 benefits:
   - title: Zero Defect Shipping
-    description: Comprehensive end-of-line testing catches every defect before it leaves your dock—achieving <1 PPM customer escape rates across automotive and medical programs.
+    description: Comprehensive end-of-line testing catches every defect before it leaves your dock—achieving <1 PPM customer escape rates across automotive programs.
   - title: Full Traceability
     description: Every test result is serialized, timestamped, and archived with part identification for complete quality documentation and regulatory compliance.
   - title: Reduced Warranty Costs
@@ -42,7 +42,7 @@ benefits:
 
 I've spent the better part of two decades commissioning end-of-line test systems, and here's the uncomfortable truth most equipment suppliers won't tell you: test equipment is only as good as the engineering behind the test strategy. I've walked into plants where they spent $200,000 on a leak test station and couldn't hold a stable baseline because nobody accounted for the thermal expansion of the test part during the production shift. I've seen functional test systems that passed every part in the morning and rejected 8% by afternoon—not because the parts changed, but because ambient temperature drifted 6°C and nobody compensated the measurement thresholds.
 
-At AMD Machines, we don't just build test hardware. We engineer complete test strategies—starting with your failure modes, your tolerance stack-ups, your customer's quality requirements, and your production environment. Then we design hardware that delivers reliable, repeatable test results at production speed, every shift, every day. We've built test systems for [automotive](/industries/automotive/) Tier 1 suppliers, [medical device](/industries/medical/) manufacturers, [electronics](/industries/electronics/) assemblers, and [heavy equipment](/industries/heavy-equipment/) OEMs, and the common thread is always the same: the test needs to be right, and the data needs to be bulletproof.
+At AMD Machines, we don't just build test hardware. We engineer complete test strategies—starting with your failure modes, your tolerance stack-ups, your customer's quality requirements, and your production environment. Then we design hardware that delivers reliable, repeatable test results at production speed, every shift, every day. We've built test systems for [automotive](/industries/automotive/) Tier 1 suppliers, [electronics](/industries/electronics/) assemblers, and [heavy equipment](/industries/heavy-equipment/) OEMs, and the common thread is always the same: the test needs to be right, and the data needs to be bulletproof.
 
 ## How Leak Detection Actually Works
 
@@ -72,7 +72,7 @@ When you need to detect extremely small leaks—down to 1×10⁻⁵ scc/s or bel
 
 We integrate helium leak testing using two primary methods:
 
-- **Vacuum chamber (outside-in):** The part is filled with helium and placed inside a vacuum chamber. Any helium that escapes through a leak is drawn to the spectrometer. This method achieves the highest sensitivity (1×10⁻⁹ scc/s on some configurations) and is the standard for refrigerant circuits, fuel rails, and medical device packaging.
+- **Vacuum chamber (outside-in):** The part is filled with helium and placed inside a vacuum chamber. Any helium that escapes through a leak is drawn to the spectrometer. This method achieves the highest sensitivity (1×10⁻⁹ scc/s on some configurations) and is the standard for refrigerant circuits and fuel rails.
 - **Sniffer probe (inside-out):** A helium-filled part is probed externally with a sniffer wand or automated probe head that detects helium at the suspected leak location. Less sensitive than vacuum testing but simpler to implement—and it identifies *where* the leak is, not just *that* it exists.
 
 We build helium test systems using detectors from **Inficon**, **Pfeiffer Vacuum**, and **Agilent**. For high-volume automotive applications, we've designed rotary-index helium test stations that cycle a part through charge, stabilize, test, and evacuate positions—achieving 12-second overall cycle times with helium recovery systems that reclaim over 95% of the gas.
@@ -114,7 +114,7 @@ Our standard test data architecture includes:
 - **Timestamped results** — Every measurement value, pass/fail status, and test condition recorded with millisecond timestamps.
 - **Statistical process control** — Real-time X-bar and R charts, Cpk calculations, and trend alarms displayed on the HMI. If a measurement parameter starts drifting toward the control limit—even while still passing—the system alerts the operator and quality team before a single reject is produced.
 - **Database integration** — Results pushed to SQL Server, Oracle, or cloud databases via OPC UA, MQTT, or direct SQL writes. We integrate with MES platforms from **Plex**, **AVEVA (Wonderware)**, and **Rockwell FactoryTalk** for real-time production visibility.
-- **Regulatory compliance** — For [medical device](/industries/medical/) customers, we design data systems compliant with FDA 21 CFR Part 11, including electronic signatures, audit trails, and controlled access. For [automotive](/industries/automotive/) programs, we support IATF 16949 traceability and AIAG SPC requirements.
+- **Regulatory compliance** — For [automotive](/industries/automotive/) programs, we support IATF 16949 traceability and AIAG SPC requirements.
 
 ## Real-World Application Examples
 
@@ -125,14 +125,6 @@ A Tier 1 powertrain supplier needed to test aluminum transmission valve bodies f
 We designed a 4-station rotary index helium test system using an **Inficon UL3000** mass spectrometer. Station 1 loads and seals the part into a vacuum bell. Station 2 charges the internal circuits with helium at 6 bar. Station 3 evacuates the bell and measures helium leakage across each circuit boundary individually using sequential valve isolation. Station 4 evacuates residual helium and unloads.
 
 **Results:** Cycle time of 14 seconds per part (meeting the 15-second takt requirement). Leak sensitivity of 1×10⁻⁵ scc/s—ten times better than required. Helium recovery rate of 96%, keeping gas costs under $0.08 per test. Customer PPM related to cross-port leaks dropped from 23 PPM to zero over 18 months.
-
-### Medical Device Packaging — Whole-Package Integrity Testing
-
-A medical device manufacturer needed to verify hermetic seal integrity on sterile barrier packaging for implantable devices. The packages used Tyvek lids heat-sealed to PETG trays, and the customer's specification required detection of seal defects down to 250-micron channel leaks per ASTM F2095.
-
-We built a vacuum decay test station using a **CTS Sentinel C28** instrument with custom-machined aluminum test chambers that match the exact package geometry. The test draws the chamber to -500 mbar and monitors the vacuum decay rate over a 30-second test period. Non-destructive, non-invasive, and 100% testable—every package is verified before it enters the sterile warehouse.
-
-**Results:** 100% seal verification at 4 packages per minute per lane (dual-lane system). Detection reliability validated per ASTM F2095 with 95% confidence on 250-micron defects. Replaced manual dye penetration testing that was destructive (sampling only) and took 24 hours for results. The customer passed their next FDA audit with the test data as supporting evidence for process validation.
 
 ### Electronics Power Supply — End-of-Line Functional Test
 
@@ -146,7 +138,7 @@ We designed a test station with a custom bed-of-nails fixture for board contact,
 
 Here's how to think about the business case for automated testing:
 
-**Prevented customer escapes** — A single quality escape at an automotive OEM can cost $50,000–$500,000 between containment sorting, line shutdowns, and chargebacks. In medical devices, a single recalled lot can cost millions. One prevented escape often pays for the test system.
+**Prevented customer escapes** — A single quality escape at an automotive OEM can cost $50,000–$500,000 between containment sorting, line shutdowns, and chargebacks. One prevented escape often pays for the test system.
 
 **Reduced scrap and rework** — Real-time SPC data catches process drift before it produces scrap. Our customers typically see 30–50% scrap reductions within 6 months of deploying SPC-enabled test systems, because they're fixing problems at the source instead of sorting at the end.
 
@@ -192,9 +184,9 @@ Cycle times range from 5 seconds for simple pressure decay tests on small parts 
 
 False rejects waste production capacity; false passes ship defective products. We attack both through rigorous test development: environmental compensation (temperature, barometric pressure), adequate stabilization times, proper seal design, and statistical validation against known reference parts. Our target is always less than 0.5% false reject rate with zero false passes on defects exceeding the reject threshold.
 
-### Do your test systems comply with automotive and medical quality standards?
+### Do your test systems comply with automotive quality standards?
 
-Absolutely. For automotive programs, we design to IATF 16949 requirements including Measurement System Analysis (MSA), full traceability, and AIAG SPC charting. For [medical devices](/industries/medical/), we provide IQ/OQ/PQ validation documentation, 21 CFR Part 11-compliant data systems, and risk analysis per ISO 14971. We also support [process optimization](/services/process-optimization/) through the test data our systems generate.
+Absolutely. For automotive programs, we design to IATF 16949 requirements including Measurement System Analysis (MSA), full traceability, and AIAG SPC charting. We also support [process optimization](/services/process-optimization/) through the test data our systems generate.
 
 ### Can test systems be added to our existing production line?
 

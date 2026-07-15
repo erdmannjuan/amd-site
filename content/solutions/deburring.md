@@ -48,7 +48,7 @@ Modern deburring cells combine several key technologies:
 
 **Force-controlled end effectors** are the heart of any serious robotic deburring system. We typically spec ATI or Schunk force/torque sensors paired with compliant tool heads that maintain constant contact pressure regardless of part-to-part variation. A FANUC M-20iD/25 running a force-controlled spindle can adapt in real time — if the casting flash is 0.3 mm thicker on one part than the last, the robot compensates without missing a beat. The alternative is rigid path programming, where one out-of-spec part can snap your tool or gouge the workpiece.
 
-**Spindle tooling selection** depends entirely on the material and burr type. For aluminum castings, we've had great results with carbide rotary burrs at 15,000-25,000 RPM on high-speed spindles. For steel machined parts, abrasive nylon brushes (typically Brush Research or similar) running at 3,500 RPM provide excellent edge breaks without aggressive material removal. Ceramic fiber brushes work well for stainless steel medical components where surface finish matters as much as burr removal.
+**Spindle tooling selection** depends entirely on the material and burr type. For aluminum castings, we've had great results with carbide rotary burrs at 15,000-25,000 RPM on high-speed spindles. For steel machined parts, abrasive nylon brushes (typically Brush Research or similar) running at 3,500 RPM provide excellent edge breaks without aggressive material removal. Ceramic fiber brushes work well for stainless steel components where surface finish matters as much as burr removal.
 
 **Path programming** is where the engineering hours stack up. We use offline programming with Delfoi or RoboDK to generate initial tool paths from CAD models, then fine-tune on the actual robot using force feedback data. A complex part like an engine block might need 200+ path points with variable force setpoints at each location. Once that program is proven out, it runs identically on part number one thousand as it did on part number one.
 
@@ -90,10 +90,6 @@ We built a two-robot cell with FANUC M-20iD/25 robots, each with ATI Axia80 forc
 
 An aerospace machine shop needed to deburr Ti-6Al-4V structural brackets with very specific edge radius requirements per Boeing BAC 5673. Manual deburring was taking 25 minutes per part with frequent rejections. We integrated an ABB IRB 4600 with a force-controlled Pushcorp active compliance tool, running diamond-coated carbide burrs at reduced speeds for the titanium. Keyence XG-X series vision inspects each edge radius against the CAD-defined specification. Cycle time: 8 minutes per part. First-pass yield went from 71% to 97%.
 
-### Medical Devices: Stainless Steel Surgical Instruments
-
-A medical device manufacturer needed to deburr and polish 17-4 PH stainless steel surgical graspers to meet FDA surface finish requirements. Manual polishing introduced inconsistency — the finish on the jaw tips varied depending on which operator worked on it and how far into their shift they were. We built a compact cell using a FANUC CRX-10iA collaborative robot with a compliant finishing head. The cobot runs ceramic fiber brushes followed by cotton buffing wheels with polishing compound. Surface finish: Ra 0.2 µm consistently. The cell runs alongside operators doing final assembly — no safety fencing required.
-
 ## Common Challenges and How We Solve Them
 
 **Part-to-part variation** is the number one challenge, especially with castings and forgings. Die-cast parts can vary ±0.5 mm at parting lines, and forged parts can shift even more. Force control is the primary solution — the robot adapts contact pressure in real time. For extreme variation, we add a Keyence LJ-X8000 laser profiler to scan each part before deburring and adjust the tool path dynamically.
@@ -122,7 +118,7 @@ Let's talk numbers, because this is where deburring automation makes a compellin
 The deburring isn't done until it's verified. We integrate post-process inspection directly into our deburring cells:
 
 - **[Machine vision inspection](/solutions/machine-vision/)** using Cognex In-Sight or Keyence CV-X series cameras to verify burr removal at each critical edge
-- **Laser profilometry** for measuring actual edge radius against specification — critical for aerospace and medical applications
+- **Laser profilometry** for measuring actual edge radius against specification — critical for aerospace applications
 - **Surface roughness measurement** with contact or non-contact profilometers when finish specs are part of the requirement
 - **Data logging** of every process parameter (force, speed, spindle load, cycle time) tied to part serial number for full [test and traceability](/solutions/marking-traceability/) compliance
 
@@ -132,7 +128,6 @@ Deburring automation applies across virtually every manufacturing sector, but th
 
 - **[Automotive](/industries/automotive/)** — Engine blocks, transmission housings, brake calipers, steering knuckles, and EV motor housings. High volumes drive aggressive payback timelines.
 - **[Aerospace](/industries/aerospace/)** — Structural brackets, turbine components, and hydraulic fittings. Edge radius specifications per Boeing, Airbus, or military standards.
-- **[Medical devices](/industries/medical/)** — Surgical instruments, orthopedic implants, and drug delivery components. FDA and ISO 13485 documentation requirements.
 - **[Heavy equipment](/industries/heavy-equipment/)** — Hydraulic valve bodies, gear housings, and structural weldments. Large parts requiring extended reach robots.
 
 ## Why AMD Machines for Deburring Automation
@@ -169,4 +164,4 @@ The robot itself needs minimal maintenance — FANUC robots are rated for 8+ yea
 
 ### Is collaborative robot (cobot) deburring viable?
 
-For lighter deburring tasks on small parts, absolutely. We've built successful cobot deburring cells using FANUC CRX-10iA and CRX-25iA cobots for medical devices and small electronics components. The limitation is force and speed — cobots are power and force limited by design, so they can't apply the same contact forces as industrial robots behind safety fencing. For heavy flash removal or aggressive material removal, a standard industrial robot is still the right choice. Cobots shine in finishing and polishing applications where the force requirements are lower and the benefit of eliminating safety fencing improves workflow integration.
+For lighter deburring tasks on small parts, absolutely. We've built successful cobot deburring cells using FANUC CRX-10iA and CRX-25iA cobots for small electronics components. The limitation is force and speed — cobots are power and force limited by design, so they can't apply the same contact forces as industrial robots behind safety fencing. For heavy flash removal or aggressive material removal, a standard industrial robot is still the right choice. Cobots shine in finishing and polishing applications where the force requirements are lower and the benefit of eliminating safety fencing improves workflow integration.

@@ -38,13 +38,13 @@ benefits:
 
 Here's something that took me years on the factory floor to truly appreciate: dispensing is one of the most deceptively difficult processes in manufacturing automation. It looks straightforward—squirt adhesive onto a part, move to the next station. But when you're running 800 parts per hour and your customer's quality spec says the bead can't vary by more than ±0.15 mm in width or ±2% in volume, suddenly "squirting adhesive" becomes an exercise in fluid dynamics, thermal management, motion control, and real-time quality inspection all happening simultaneously.
 
-At AMD Machines, we've integrated hundreds of dispensing systems across [automotive](/industries/automotive/), [electronics](/industries/electronics/), [medical device](/industries/medical/), and [aerospace](/industries/aerospace/) manufacturing. We've learned the hard way which dispensing technologies work for which materials, which motion platforms hit the cycle times you need, and—most importantly—how to verify bead quality at production speed so defects never reach your customer.
+At AMD Machines, we've integrated hundreds of dispensing systems across [automotive](/industries/automotive/), [electronics](/industries/electronics/), and [aerospace](/industries/aerospace/) manufacturing. We've learned the hard way which dispensing technologies work for which materials, which motion platforms hit the cycle times you need, and—most importantly—how to verify bead quality at production speed so defects never reach your customer.
 
 ## Why Automated Dispensing Matters More Than Ever
 
 Manual dispensing worked fine when tolerances were loose and volumes were low. But three trends have pushed manufacturers toward automation, and they're not slowing down.
 
-First, **structural adhesives are replacing mechanical fasteners** across industries. Modern two-component epoxies and polyurethanes deliver bond strengths exceeding 30 MPa—stronger than the substrates in many applications. Automotive OEMs are bonding structural panels, electronics manufacturers are replacing screws with adhesive, and medical device companies are using UV-cure adhesives to eliminate assembly steps. But structural bonds demand precise material placement. A bead that's 20% light creates a weak joint. A bead that's 20% heavy wastes expensive adhesive and creates squeeze-out that requires cleaning.
+First, **structural adhesives are replacing mechanical fasteners** across industries. Modern two-component epoxies and polyurethanes deliver bond strengths exceeding 30 MPa—stronger than the substrates in many applications. Automotive OEMs are bonding structural panels, and electronics manufacturers are replacing screws with adhesive. But structural bonds demand precise material placement. A bead that's 20% light creates a weak joint. A bead that's 20% heavy wastes expensive adhesive and creates squeeze-out that requires cleaning.
 
 Second, **form-in-place gasketing has replaced die-cut gaskets** on thousands of products. Instead of cutting, inventorying, and manually placing a molded gasket, you dispense a bead of RTV silicone or polyurethane directly onto the sealing surface. It's faster, cheaper, and eliminates gasket compression set as a failure mode. But it requires a dispensing system that holds bead width, height, and position within tight tolerances—typically ±0.2 mm on position and ±10% on volume.
 
@@ -81,7 +81,7 @@ We've had excellent results with Nordson ASYMTEK DJ-9500 and Musashi ML-5000X II
 
 For precise shot-size control in the microliter-to-milliliter range, piston dispensers deliver the most accurate volumetric metering available. A servo-driven or pneumatic piston draws a calibrated volume of material and dispenses it in a single stroke.
 
-We integrate Nordson EFD's Ultimus and 7V series, Techcon TS Series, and Scheugenpflug dispensers across many applications. Piston dispensing is the technology we reach for when dot size accuracy is non-negotiable—medical device adhesive bonding, lubricant deposition, and solder paste dispensing.
+We integrate Nordson EFD's Ultimus and 7V series, Techcon TS Series, and Scheugenpflug dispensers across many applications. Piston dispensing is the technology we reach for when dot size accuracy is non-negotiable—precision adhesive bonding, lubricant deposition, and solder paste dispensing.
 
 **Best for:** Precise dot dispensing, small-shot metering, lubricant application, and applications requiring ±1% or better volume accuracy.
 
@@ -163,14 +163,6 @@ We designed a Cartesian gantry cell with a Nordson ASYMTEK DJ-9500 jet valve for
 
 **Results:** 6.8-second cycle time per board (vs. 52 seconds with manual masking and spray), zero overspray on keep-out zones, 100% coverage verification via UV inspection. Material consumption dropped 42% by eliminating overspray waste. The system runs three product variants with automatic recipe changeover—no operator intervention between batches.
 
-### Medical Device Potting for Implantable Sensor Module
-
-A [medical device](/industries/medical/) manufacturer needed to pot a miniature sensor module with a two-part silicone compound. The fill volume was 0.35 mL ±0.01 mL per unit, and the potting had to be void-free—any trapped air bubble could compromise the hermetic seal required for an implantable device. The process required full 21 CFR Part 11-compliant traceability and was subject to FDA audit.
-
-We built a clean room-compatible station with a Scheugenpflug DosP two-component meter-mix system dispensing at a 1:1 mix ratio with ±0.3% ratio accuracy. The system dispenses into the part cavity under a partial vacuum (50 mbar) to prevent void formation, then returns to atmospheric pressure to ensure complete fill. A Mettler Toledo XPR precision balance verifies fill weight on every unit.
-
-**Results:** 0.35 mL ±0.006 mL actual fill volume (better than the ±0.01 mL spec), zero void defects in over 200,000 units, IQ/OQ/PQ validation completed in 9 weeks. The system generates electronic batch records meeting 21 CFR Part 11 requirements, with every dispense parameter—mix ratio, volume, vacuum level, fill weight—recorded and linked to the unit serial number.
-
 ## The ROI of Automated Dispensing
 
 Let's run the numbers. Dispensing automation typically delivers ROI from three distinct buckets, and most customers underestimate the second and third.
@@ -193,7 +185,7 @@ A typical single-station robotic dispensing system costs $150,000–$300,000 dep
 
 **"Two-part materials keep curing in the mixer."** Pot life management is critical for 2K systems. We size the static mixer for your flow rate so material doesn't sit in the mixer long enough to gel. Automatic purge cycles flush the mixer at programmed intervals during idle periods. For very short pot-life materials (under 5 minutes), we use dynamic mixers with active cleaning cycles. And we always include mixer pressure monitoring to detect clogs before they become disasters.
 
-**"We're worried about air bubbles in potting applications."** Vacuum dispensing eliminates trapped air. We build enclosed dispensing stations that pull a partial vacuum (typically 10–100 mbar) before and during dispensing, then return to atmospheric pressure to collapse any remaining micro-voids. For the most critical applications—implantable [medical devices](/industries/medical/) and high-reliability electronics—we combine vacuum dispensing with centrifugal degassing of the material before it enters the dispensing system.
+**"We're worried about air bubbles in potting applications."** Vacuum dispensing eliminates trapped air. We build enclosed dispensing stations that pull a partial vacuum (typically 10–100 mbar) before and during dispensing, then return to atmospheric pressure to collapse any remaining micro-voids. For the most critical applications—high-reliability electronics—we combine vacuum dispensing with centrifugal degassing of the material before it enters the dispensing system.
 
 ## Frequently Asked Questions
 
@@ -211,7 +203,7 @@ It varies widely by application. A simple dot dispense takes 0.1–0.3 seconds. 
 
 ### Can the system handle UV-cure adhesives?
 
-Yes. We integrate UV-cure dispensing regularly, especially for [medical device](/industries/medical/) and [electronics](/industries/electronics/) applications. The dispensing system uses amber-tinted reservoirs, opaque tubing, and UV-blocking needle tips to prevent premature cure. We integrate Omron (formerly Loctite/Henkel) UV LED curing systems or Hamamatsu spot curing units downstream of the dispense station for controlled cure exposure. Cure verification uses a UV fluorescence check via [machine vision](/solutions/machine-vision/).
+Yes. We integrate UV-cure dispensing regularly, especially for [electronics](/industries/electronics/) applications. The dispensing system uses amber-tinted reservoirs, opaque tubing, and UV-blocking needle tips to prevent premature cure. We integrate Omron (formerly Loctite/Henkel) UV LED curing systems or Hamamatsu spot curing units downstream of the dispense station for controlled cure exposure. Cure verification uses a UV fluorescence check via [machine vision](/solutions/machine-vision/).
 
 ### How often do dispensing valves need maintenance?
 

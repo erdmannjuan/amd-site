@@ -29,7 +29,7 @@ Our programmers are factory-trained and certified across every major robot platf
 
 FANUC dominates North American manufacturing for good reason: reliability, speed, and an installed base that means spare parts are always available. We program in both TP (Teach Pendant) for straightforward motion sequences and Karel for complex logic, data handling, and custom HMI interfaces.
 
-Our FANUC specialties include iRVision integration for [vision-guided applications](/solutions/machine-vision/), multi-group coordinated motion for systems with positioners and external axes, and advanced force-sensing programs using FANUC's built-in force control option. We've programmed everything from LR Mate 200iD arms assembling medical devices at ±0.02 mm to M-2000iA heavyweights handling 2,300 kg automotive castings.
+Our FANUC specialties include iRVision integration for [vision-guided applications](/solutions/machine-vision/), multi-group coordinated motion for systems with positioners and external axes, and advanced force-sensing programs using FANUC's built-in force control option. We've programmed everything from LR Mate 200iD arms assembling small precision components at ±0.02 mm to M-2000iA heavyweights handling 2,300 kg automotive castings.
 
 ### ABB — RAPID Programming & RobotStudio
 
@@ -129,13 +129,7 @@ A brake caliper manufacturer running six FANUC ARC Mate 100iD welding robots nee
 
 **Result:** All 14 variants programmed and validated in simulation in 3 weeks. On-site touchup and production validation took 5 days with the cell running production on existing parts during simulation development. Total cost: $72,000. Downtime for changeover: 5 days versus the quoted 8 weeks. The client estimates they saved $340,000 in lost production alone.
 
-### Case 2: Medical Device — Precision Assembly Programming
-
-A manufacturer of insulin pen injectors needed sub-0.05 mm assembly accuracy across a 12-station [robotic assembly system](/solutions/assembly/) using FANUC LR Mate 200iD/7L robots. The challenge: thermal drift in the cleanroom environment caused positional shifts of up to 0.08 mm over an 8-hour shift.
-
-**Our solution:** We programmed a vision-based dynamic calibration routine that runs every 90 minutes, using Cognex In-Sight 9000 cameras to measure reference targets on each fixture and apply coordinate offsets automatically. The program compensates for thermal drift without stopping production. First-pass yield went from 94.2% to 99.6% — saving approximately $1.8 million annually in rework and scrap at their production volume.
-
-### Case 3: Consumer Goods — Palletizing Pattern Library
+### Case 2: Consumer Goods — Palletizing Pattern Library
 
 A household products company running four ABB IRB 6700 [palletizing](/solutions/palletizing/) robots needed to handle 65 SKUs with varying case sizes and pallet patterns. Programming each pattern manually was consuming 4 hours per new SKU — and new product introductions were coming every month.
 

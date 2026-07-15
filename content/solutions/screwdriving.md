@@ -23,8 +23,6 @@ applications:
     description: High-volume fastening of interior trim, lighting modules, and electrical assemblies at sub-3-second cycle times for Tier 1 suppliers.
   - name: Appliance Assembly
     description: Multi-fastener type handling on refrigerators, HVAC units, and laundry equipment with automatic bit changeover.
-  - name: Medical Devices
-    description: Controlled torque assembly with 21 CFR Part 11-compliant documentation and full lot traceability for regulated products.
   - name: Consumer Products
     description: High-mix fastening on small appliances, power tools, and consumer electronics with recipe-driven parameters and fast changeover.
 benefits:
@@ -54,7 +52,7 @@ Here's what we typically see when customers move from manual to automated screwd
 - **Elimination of cross-threading** through controlled engagement speed and angle monitoring
 - **Full traceability** for every fastener on every part—serial number, torque, angle, timestamp, pass/fail
 
-That last point matters more than you might think. In [automotive](/industries/automotive/) and [medical device](/industries/medical/) manufacturing, fastener traceability isn't optional. If a customer calls with a warranty issue on a specific unit, you need to pull the torque data for every joint in that assembly within minutes, not days.
+That last point matters more than you might think. In [automotive](/industries/automotive/) and [aerospace](/industries/aerospace/) manufacturing, fastener traceability isn't optional. If a customer calls with a warranty issue on a specific unit, you need to pull the torque data for every joint in that assembly within minutes, not days.
 
 ## How Automated Screwdriving Works: A Technical Deep Dive
 
@@ -125,16 +123,6 @@ The key innovation was a controlled engagement strategy: the spindle runs in rev
 
 **Results:** 18-second total cycle time (down from 72 seconds manual), zero cross-threading defects in 14 months of production, full torque-angle data for all 14 fasteners on every unit. The system processes 180 units per hour on a single shift and has logged over 22 million verified fastening operations.
 
-### Medical Device Enclosure Assembly
-
-A medical device manufacturer needed to assemble a patient monitoring unit with eight M3 screws in the enclosure. FDA regulations required 21 CFR Part 11-compliant electronic records, full lot traceability, and validated torque specifications on every joint.
-
-We built a single-station cell with a 4-spindle simultaneous driving head for the bottom four screws and a Yaskawa GP7 robot with a single spindle for the four top screws at varying locations. A Keyence SR-2000 barcode reader captures the device serial number before fastening begins, and all torque-angle data is tied to that serial record.
-
-The control system runs on an Allen-Bradley CompactLogix PLC with a custom HMI built on Ignition SCADA, providing audit trail, electronic signatures, and tamper-evident data records. Every fastening record includes operator ID, batch number, torque value, angle value, date/time, and pass/fail status.
-
-**Results:** 24-second cycle time, 100% data capture with zero data integrity gaps across 18 months of production, passed FDA audit on first attempt. The system reduced assembly labor by 75% and eliminated the two most common manual assembly defects: missed screws and over-torqued fasteners.
-
 ### Consumer Electronics Final Assembly
 
 A consumer electronics company assembling a popular smart home device needed to drive 6 screws of three different types (two M2, two M2.5, two M3) in a single assembly. Manual operators frequently mixed up screw types, causing cosmetic damage and functional failures.
@@ -151,9 +139,9 @@ We designed a station with three separate blow-feed channels—one per screw typ
 
 **"We need to handle multiple screw types on one machine."** This is increasingly common as products get more complex. Options include multi-channel feed systems with automatic nose switching, quick-change spindle tips, and robotic systems that pick up screws from different feed positions. On a recent project, we handled five different screw types on a single station using a rotary turret with five pre-loaded feed noses.
 
-**"Our torque specs are extremely tight."** For critical joints—think brake calipers, medical implants, or aerospace fasteners—we use high-accuracy spindles with ±2% torque accuracy and implement statistical process control with real-time Cpk monitoring. If the process starts drifting toward a control limit, the system alerts the operator before it produces a reject. We also run periodic torque audits using calibrated Sturtevant Richmont or CDI click-type torque wrenches against the spindle readings.
+**"Our torque specs are extremely tight."** For critical joints—think brake calipers or aerospace fasteners—we use high-accuracy spindles with ±2% torque accuracy and implement statistical process control with real-time Cpk monitoring. If the process starts drifting toward a control limit, the system alerts the operator before it produces a reject. We also run periodic torque audits using calibrated Sturtevant Richmont or CDI click-type torque wrenches against the spindle readings.
 
-**"We need data for every single fastener."** That's exactly what our systems provide. Every fastener operation generates a data record with torque, angle, depth, timestamps, and pass/fail status. This data can be stored locally, pushed to your MES, or archived to cloud storage. We've built systems that retain per-fastener records for 15+ years to meet automotive and medical retention requirements.
+**"We need data for every single fastener."** That's exactly what our systems provide. Every fastener operation generates a data record with torque, angle, depth, timestamps, and pass/fail status. This data can be stored locally, pushed to your MES, or archived to cloud storage. We've built systems that retain per-fastener records for 15+ years to meet automotive and customer-specific retention requirements.
 
 ## ROI and Business Case
 
@@ -191,7 +179,7 @@ We have several approaches depending on the situation. For 2–3 screw types, we
 
 ### What data is captured and stored for each fastener?
 
-Every fastening operation records: final torque value, total angle of rotation, engagement angle, run-down torque, seating torque, complete torque-angle curve (1,000+ data points), cycle start/end timestamps, pass/fail result, spindle ID, and the assembly's serial number. This data is stored locally and can be pushed to your MES via OPC UA, MQTT, Ethernet/IP, or direct database connection. We typically recommend retaining data for a minimum of 10 years for automotive and 15 years for [medical device](/industries/medical/) applications.
+Every fastening operation records: final torque value, total angle of rotation, engagement angle, run-down torque, seating torque, complete torque-angle curve (1,000+ data points), cycle start/end timestamps, pass/fail result, spindle ID, and the assembly's serial number. This data is stored locally and can be pushed to your MES via OPC UA, MQTT, Ethernet/IP, or direct database connection. We typically recommend retaining data for a minimum of 10 years for automotive applications.
 
 ### Do you provide support after installation?
 

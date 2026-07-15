@@ -38,7 +38,7 @@ at_a_glance:
   - label: "Data"
     value: "Serialized images + results; OPC UA / MQTT / SQL to MES"
   - label: "Standards"
-    value: "IATF 16949 MSA, PPAP, Gauge R&R, 21 CFR Part 11-style records"
+    value: "IATF 16949 MSA, PPAP, Gauge R&R"
 faq:
   - q: "What is a machine vision inspection station?"
     a: "A machine vision inspection station is a production machine that uses one or more cameras, controlled lighting, and image-processing software to inspect every part at full line speed. It checks features such as presence, dimensions, surface defects, color, and printed or marked codes, then routes each part to pass, reject, or rework with a serialized data record. Unlike a manual visual inspection, it inspects 100 percent of production with consistent, quantifiable pass/fail criteria."
@@ -53,7 +53,7 @@ faq:
   - q: "What cycle time can a machine vision inspection station achieve?"
     a: "Smart-camera 2D inspections typically complete in 50 to 500 milliseconds per view, so a single-view station easily keeps up with lines running at 60 to 120 parts per minute. Multi-camera stations parallelize views to hold cycle time on complex parts. Line-scan cameras inspect continuously moving webs and parts at meters per second. When inspection time exceeds line takt on a complex part, we split views across a rotary or multi-station architecture so throughput matches the line."
   - q: "Can the vision station integrate with our MES and traceability database?"
-    a: "Yes. Every AMD vision inspection station serializes each result with part ID, recipe, every measured feature, pass/fail status, operator, and timestamp, and can archive the raw image linked to the serial number. Data pushes over OPC UA, MQTT, Ethernet/IP, ODBC/SQL, or REST to Rockwell FactoryTalk, AVEVA Wonderware, Ignition, SAP, or a custom historian. For regulated environments we configure controlled access and audit-trail logging suitable for 21 CFR Part 11-style records."
+    a: "Yes. Every AMD vision inspection station serializes each result with part ID, recipe, every measured feature, pass/fail status, operator, and timestamp, and can archive the raw image linked to the serial number. Data pushes over OPC UA, MQTT, Ethernet/IP, ODBC/SQL, or REST to Rockwell FactoryTalk, AVEVA Wonderware, Ignition, SAP, or a custom historian. For regulated environments we configure controlled access and audit-trail logging."
   - q: "Can we add a vision inspection station to an existing line?"
     a: "Usually yes. We retrofit standalone vision stations into existing conveyors, add cameras to existing robotic cells, or mount inspection over manual workstations. We survey line layout, conveyor height, lighting environment, takt time, and upstream and downstream handoffs, then engineer the frame, optics, and controls for minimum disruption. Many retrofits are installed during a planned shutdown weekend."
 ---

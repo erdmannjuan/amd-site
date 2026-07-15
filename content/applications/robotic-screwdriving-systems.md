@@ -38,7 +38,7 @@ at_a_glance:
   - label: "Data"
     value: "Per-fastener torque-angle curve, OPC UA / MQTT / SQL to MES"
   - label: "Standards"
-    value: "VDI 2862 Class A/B/C, IATF 16949, 21 CFR Part 11-ready"
+    value: "VDI 2862 Class A/B/C, IATF 16949"
 faq:
   - q: "What is a robotic screwdriving system?"
     a: "A robotic screwdriving system is a custom-engineered machine that feeds, presents, drives, and verifies threaded fasteners under closed-loop control without an operator handling the screw. The robot or multi-spindle head positions a DC servo spindle at each fastening location, the spindle runs a programmed torque-angle profile, and the controller logs the result for every joint."
@@ -53,9 +53,9 @@ faq:
   - q: "Can one station handle multiple screw types and lengths?"
     a: "Yes. Common approaches include multi-channel blow-feed with automatic nose selection, robot pick from multiple feed positions, rotary turret noses, and automatic bit change for different drive types (Phillips, Torx, hex). Each fastener runs its own recipe — torque, angle window, depth, and reject thresholds — selected from the part barcode or recipe call at the start of the cycle."
   - q: "What standards do AMD screwdriving systems meet?"
-    a: "We design to VDI 2862 fastening-class requirements (A safety-critical through D non-critical) for automotive programs, IATF 16949 measurement-system rules including MSA and Gauge R&R, and AIAG SPC. For regulated assembly we support 21 CFR Part 11-ready audit trail, electronic signatures, and validation documentation. Safety circuits are dual-channel to ISO 13849-1 PLd/PLe with light curtains, area scanners, or fenced guarding as the layout requires."
+    a: "We design to VDI 2862 fastening-class requirements (A safety-critical through D non-critical) for automotive programs, IATF 16949 measurement-system rules including MSA and Gauge R&R, and AIAG SPC. Safety circuits are dual-channel to ISO 13849-1 PLd/PLe with light curtains, area scanners, or fenced guarding as the layout requires."
   - q: "How is fastening data captured and pushed to our MES?"
-    a: "Every joint records final torque, peak torque, total angle, engagement angle, depth, full torque-angle curve, spindle ID, recipe, operator, timestamp, and pass/fail, tied to the part serial or DataMatrix. Data lands locally on the PLC or controller and pushes over OPC UA, MQTT, EtherNet/IP, or direct SQL to Rockwell FactoryTalk, AVEVA Wonderware, Ignition, SAP, or a custom historian. Retention is typically 10 years for automotive and 15 for medical."
+    a: "Every joint records final torque, peak torque, total angle, engagement angle, depth, full torque-angle curve, spindle ID, recipe, operator, timestamp, and pass/fail, tied to the part serial or DataMatrix. Data lands locally on the PLC or controller and pushes over OPC UA, MQTT, EtherNet/IP, or direct SQL to Rockwell FactoryTalk, AVEVA Wonderware, Ignition, SAP, or a custom historian. Retention is typically 10 years for automotive programs."
   - q: "Can a robotic screwdriving cell be retrofitted into an existing line?"
     a: "Yes. We regularly drop screwdriving cells into existing conveyors, indexing dials, and robotic lines. We survey floor space, conveyor height, takt, and upstream and downstream handoffs, then engineer fixturing, frame, and controls for minimum disruption — many retrofits are installed during a planned shutdown weekend with the new cell on a roll-in base."
 ---
@@ -130,7 +130,7 @@ Many production cells combine approaches — a multi-spindle head for the repeti
 - **Recipe management** — barcode/DataMatrix call loads torque, angle window, depth, and reject envelope per part number
 - **SPC** — X-bar/R, Cpk, and rule-based trend alarms live on the HMI; flagged before drift reaches the customer
 - **MES integration** — Rockwell FactoryTalk, AVEVA Wonderware, Ignition, SAP, or custom historian via OPC UA / MQTT / SQL
-- **Audit-grade** — VDI 2862 fastening class A/B/C/D, IATF 16949 MSA and Gauge R&R, 21 CFR Part 11-ready records
+- **Audit-grade** — VDI 2862 fastening class A/B/C/D, IATF 16949 MSA and Gauge R&R records
 
 ## Industries we serve
 

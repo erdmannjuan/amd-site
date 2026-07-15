@@ -72,11 +72,9 @@ For steel components in the 1.2mm to 12mm thickness range, pulsed MIG delivers e
 
 ### TIG Welding (GTAW)
 
-When weld appearance and metallurgical integrity matter more than raw speed, TIG is still king. We use robotic TIG extensively in [medical device](/industries/medical/) manufacturing, aerospace components, and food-grade stainless applications. The process is slower — typically 4–10 inches per minute versus 20–40 IPM for MIG — but you can't beat the weld quality.
+When weld appearance and metallurgical integrity matter more than raw speed, TIG is still king. We use robotic TIG extensively in aerospace and food-grade stainless applications. The process is slower — typically 4–10 inches per minute versus 20–40 IPM for MIG — but you can't beat the weld quality.
 
 Robotic TIG shines on thin-wall tubing (0.5mm–3mm), pressure vessels, and any application where the weld is visible on the finished product. We pair **ABB IRB 1660ID** robots (with integrated dress for clean routing) with Miller Dynasty power sources for precision arc control down to 0.5-amp increments.
-
-**Real-world example:** A [pharmaceutical](/industries/pharmaceutical/) equipment manufacturer needed circumferential welds on 316L stainless steel vessels. We designed a cell with an ABB robot and a servo headstock/tailstock positioner. The robot maintains a consistent 6 IPM travel speed and 85-amp arc while the positioner rotates the vessel. Result: X-ray-quality welds that pass ASME Section IX requirements every time, with a 45-second cycle per weld joint.
 
 ### Resistance Spot Welding
 
@@ -187,7 +185,7 @@ Looking for a specific configuration? See our [robotic welding cells](/applicati
 ## Frequently Asked Questions
 
 ### What's the minimum volume to justify robotic welding?
-There's no magic number, but we generally see positive ROI starting around 5,000–10,000 parts per year for a single-part-family cell. Below that, the programming and setup costs are harder to justify unless quality requirements are extreme (aerospace, medical) or the welds are hazardous to perform manually.
+There's no magic number, but we generally see positive ROI starting around 5,000–10,000 parts per year for a single-part-family cell. Below that, the programming and setup costs are harder to justify unless quality requirements are extreme (aerospace) or the welds are hazardous to perform manually.
 
 ### How long does it take to switch between part numbers?
 For cells designed with quick-change fixturing, changeover is typically 5–15 minutes for a physical fixture swap. If the parts share a common fixture with adjustable nests, changeover is just a program selection on the pendant — under 30 seconds.

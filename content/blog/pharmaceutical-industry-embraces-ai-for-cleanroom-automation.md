@@ -73,7 +73,7 @@ The convergence of regulatory acceptance, proven technology, and competitive pre
 
 **Build your data infrastructure.** AI systems are only as good as the data they consume. Manufacturers should invest in robust data collection, storage, and governance systems now, even before deploying AI applications. Clean, well-organized historical data accelerates model development and simplifies validation.
 
-**Partner with experienced integrators.** Pharmaceutical cleanroom automation requires deep expertise in both regulated manufacturing processes and robotic systems integration. Working with an automation partner that understands [pharmaceutical industry requirements](/industries/pharmaceutical/)—including FDA validation protocols, cleanroom compatibility, and GMP documentation—reduces risk and accelerates deployment timelines.
+**Partner with experienced integrators.** Pharmaceutical cleanroom automation requires deep expertise in both regulated manufacturing processes and robotic systems integration. Working with an automation partner that understands pharmaceutical industry requirements—including FDA validation protocols, cleanroom compatibility, and GMP documentation—reduces risk and accelerates deployment timelines.
 
 **Plan for hybrid operations.** Full lights-out pharmaceutical manufacturing remains years away for most product types. The near-term reality is hybrid operations where AI-powered automation handles routine tasks while skilled operators manage exceptions, changeovers, and quality oversight. Design your automation strategy around this hybrid model rather than waiting for a fully autonomous solution.
 

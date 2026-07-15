@@ -38,7 +38,7 @@ benefits:
 
 If there's one area of the factory where I've seen more money wasted than any other, it's end-of-line packaging. And I don't mean wasted on expensive equipment—I mean wasted on labor, rework, and retailer chargebacks because manual packaging can't keep pace with upstream production. I've walked into plants where a $2 million filling line was bottlenecked by six people hand-loading cartons at the end, and the whole operation was only hitting 60% of rated capacity because the packaging couldn't keep up.
 
-At AMD Machines, we've designed and integrated hundreds of packaging systems across [consumer products](/industries/consumer/), [food and beverage](/industries/food-beverage/), [pharmaceutical](/industries/pharmaceutical/), and [electronics](/industries/electronics/) manufacturing. We've learned which technologies actually work at production speed, which robot configurations handle the widest product variety, and how to build changeover flexibility into lines running 15 or 20 SKUs without sacrificing throughput on any of them.
+At AMD Machines, we've designed and integrated hundreds of packaging systems across [consumer products](/industries/consumer/), [food and beverage](/industries/food-beverage/), and [electronics](/industries/electronics/) manufacturing. We've learned which technologies actually work at production speed, which robot configurations handle the widest product variety, and how to build changeover flexibility into lines running 15 or 20 SKUs without sacrificing throughput on any of them.
 
 ## Why End-of-Line Packaging Is the Bottleneck Nobody Talks About
 
@@ -64,7 +64,7 @@ Cartoning is the workhorse of primary packaging—loading products into folding 
 
 **Horizontal cartoners** load products from the side into pre-erected cartons. We integrate Bosch (now Syntegon), Marchesini, and IWK horizontal cartoners at speeds from 60 to 300 cartons per minute. These machines handle the widest range of product types—bottles, blisters, pouches, trays, and bags—and they're the right choice when products arrive horizontally on a conveyor.
 
-**Vertical cartoners** (top-load) erect a carton, drop or push the product in from the top, and close the flaps. They're the better choice for fragile products that can't be pushed sideways or for bags and pouches that conform to the carton shape when loaded from the top. We see vertical cartoners most often in [food and beverage](/industries/food-beverage/) and pharmaceutical applications.
+**Vertical cartoners** (top-load) erect a carton, drop or push the product in from the top, and close the flaps. They're the better choice for fragile products that can't be pushed sideways or for bags and pouches that conform to the carton shape when loaded from the top. We see vertical cartoners most often in [food and beverage](/industries/food-beverage/) applications.
 
 For lower-speed operations (under 40 cartons per minute), we often replace mechanical cartoners with robotic carton loading using a FANUC M-2iA or ABB IRB 360 FlexPicker delta robot. The robot picks the product from a conveyor, orients it with a vision system, and places it into an erected carton. This approach costs less than a dedicated cartoning machine and handles product variety far better—you change the product by loading a new robot program, not by retooling a mechanical cartoner.
 
@@ -102,7 +102,7 @@ After products are loaded into a case and before the case sealer closes the flap
 
 ### Label and Code Verification
 
-Every case, carton, and pallet needs correct labeling for the supply chain. We integrate Cognex DataMan barcode readers and Keyence SR-X series scanners to verify barcodes, lot codes, date codes, and serialized identifiers on every package. For [pharmaceutical](/industries/pharmaceutical/) serialization applications, we integrate track-and-trace systems that assign, verify, and aggregate serial numbers from unit dose through pallet—meeting FDA Drug Supply Chain Security Act (DSCSA) requirements.
+Every case, carton, and pallet needs correct labeling for the supply chain. We integrate Cognex DataMan barcode readers and Keyence SR-X series scanners to verify barcodes, lot codes, date codes, and serialized identifiers on every package.
 
 ## Real-World Application Examples
 
@@ -113,14 +113,6 @@ A major consumer goods manufacturer needed to assemble variety packs containing 
 We designed a system with four FANUC M-2iA delta robots, each picking products from a dedicated infeed conveyor. A Cognex In-Sight 3800 camera on each line identifies the product SKU by label and color before the robot picks it. A fifth camera verifies the completed variety pack contents before the case sealer. Recipe management at the HMI allows the operator to select from 12 variety pack configurations—changeover completes in 90 seconds.
 
 **Results:** 22 variety packs per minute (up from 8 manual), wrong-SKU errors reduced to zero in 14 months of production, headcount reduced from 8 to 1 operator per shift. The system paid for itself in 9 months on a two-shift operation. Annual labor savings: $420,000. Annual chargeback elimination: $144,000.
-
-### Pharmaceutical: Serialized Blister Pack Cartoning
-
-A [pharmaceutical](/industries/pharmaceutical/) contract manufacturer needed to carton serialized blister packs at 150 cartons per minute while meeting FDA DSCSA track-and-trace requirements. Each blister pack receives a unique serial number, the carton receives a matching serial number, and the system must aggregate serial numbers as cartons are packed into cases and cases are palletized—creating a complete parent-child hierarchy for every dose.
-
-We integrated a Marchesini MA 305 horizontal cartoner with a Cognex DataMan 370 series verification system. A FANUC LR Mate 200iD robot loads rejected blisters into quarantine while the line continues running at full speed. The serialization system writes serial numbers to each blister and carton via UV laser, verifies readability of every code, and aggregates serial data automatically as cartons enter cases and cases enter pallets.
-
-**Results:** 155 cartons per minute sustained (exceeding the 150 CPM target), 99.97% first-pass serialization yield, full DSCSA compliance verified during FDA audit. The system handles 6 different blister configurations with recipe changeover under 4 minutes. Serialization data integrates with the customer's ERP system for complete lot genealogy.
 
 ### Food & Beverage: High-Speed Snack Bar Case Packing
 
@@ -138,7 +130,7 @@ Let me walk through the numbers we see most often. Packaging automation ROI come
 
 **Throughput gains** are the multiplier. If your packaging line is the bottleneck, automating it unlocks capacity in every upstream process. We've seen plants increase total output by 25–40% simply by uncorking the packaging bottleneck—with zero additional investment in upstream equipment. At typical product margins, that incremental output is worth $200,000–$500,000 per year.
 
-**Quality cost reduction** adds up faster than people expect. Retailer chargebacks for packaging defects—wrong counts, damaged products, misaligned labels, incorrect codes—typically run $50,000–$200,000/year for manual operations. Vision-verified automated packaging drops these costs to near zero. For pharmaceutical manufacturers, the regulatory cost of a packaging error can be orders of magnitude higher.
+**Quality cost reduction** adds up faster than people expect. Retailer chargebacks for packaging defects—wrong counts, damaged products, misaligned labels, incorrect codes—typically run $50,000–$200,000/year for manual operations. Vision-verified automated packaging drops these costs to near zero.
 
 **Changeover efficiency** is the hidden benefit on high-mix lines. If you're losing 30 minutes per changeover and changing over 3 times per shift on a two-shift operation, that's 3 hours of lost production per day—15 hours per week. At even modest line output values, that lost time is worth $100,000–$300,000/year. Cutting changeovers from 30 minutes to 3 minutes recovers most of that capacity.
 
@@ -154,7 +146,7 @@ A typical robotic packaging cell costs $200,000–$400,000. A complete end-of-li
 
 **"Our upstream production rate varies throughout the shift."** Real production lines don't run at constant speed. We design accumulation buffers between production and packaging that absorb rate variations—typically 5–15 minutes of product buffer using spiral conveyors or mass-flow accumulators. The packaging system monitors buffer level and adjusts speed automatically, preventing both starvation and overflow.
 
-**"We need packaging data integrated with our ERP/WMS system."** Every packaging system we build includes an Allen-Bradley or Siemens PLC with Ethernet/IP or PROFINET connectivity. We provide OPC UA data interfaces that feed production counts, changeover events, reject counts, and OEE data directly to your plant historian or ERP system. For [pharmaceutical](/industries/pharmaceutical/) applications, we integrate electronic batch records and serialization data per 21 CFR Part 11 requirements.
+**"We need packaging data integrated with our ERP/WMS system."** Every packaging system we build includes an Allen-Bradley or Siemens PLC with Ethernet/IP or PROFINET connectivity. We provide OPC UA data interfaces that feed production counts, changeover events, reject counts, and OEE data directly to your plant historian or ERP system.
 
 ## Frequently Asked Questions
 

@@ -86,12 +86,6 @@ A Tier 1 automotive supplier needed a complete brake caliper [assembly line](/so
 
 The simulation revealed that Station 3's robot would collide with the overhead gantry during a part flip sequence — something invisible in 2D layout reviews. We redesigned the robot mounting position in simulation, revalidated cycle times (still hit the 42-second target), and avoided what would have been a $65,000 structural modification on-site. Total virtual commissioning time: 3 weeks. On-site commissioning: 8 days. The line hit rate target within 48 hours of power-on.
 
-### Medical Device: Catheter Assembly Cell
-
-A [medical device](/industries/medical/) manufacturer needed a Class 8 cleanroom-compatible assembly cell for catheter sub-assemblies. FDA 21 CFR Part 11 compliance meant every robot program change required documentation and validation — making on-site trial-and-error programming essentially impossible from a regulatory standpoint.
-
-We developed the entire cell in ABB RobotStudio with validated OmniCore controller simulation. Every program was version-controlled, tested against acceptance criteria in simulation, and documented with automated cycle reports before download. The physical commissioning took 4 days — about 70% less than comparable projects we'd done before virtual commissioning became standard practice. The client passed their FDA process validation on the first attempt.
-
 ### Consumer Goods: High-Speed Packaging Line
 
 A major consumer products company needed a [packaging](/solutions/packaging/) line running at 120 units per minute with 4 FANUC delta robots doing pick-and-place from a vision-guided conveyor. The challenge: coordinating 4 robots sharing overlapping work zones without collisions while maintaining rate.
@@ -134,7 +128,7 @@ For a typical $500K automation project, here's what virtual commissioning delive
 - **Faster production ramp:** 2-4 weeks earlier to full rate (value depends on your margins, but it's often the biggest number)
 - **Typical net ROI:** 3:1 to 5:1 within the first project
 
-For [automotive](/industries/automotive/) programs with hard SOP dates and late-launch penalties, the risk mitigation alone justifies the investment. For [medical](/industries/medical/) and [pharmaceutical](/industries/pharmaceutical/) projects with validation requirements, simulation documentation directly supports regulatory submissions.
+For [automotive](/industries/automotive/) programs with hard SOP dates and late-launch penalties, the risk mitigation alone justifies the investment.
 
 ## Frequently Asked Questions
 

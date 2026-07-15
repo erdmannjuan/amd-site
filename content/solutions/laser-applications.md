@@ -20,7 +20,7 @@ applications:
   - name: Laser Cutting
     description: Precision cutting of metals, plastics, and composites with heat affected zones under 0.1 mm using fiber and CO2 sources from 500 W to 12 kW.
   - name: Laser Welding
-    description: Keyhole and conduction mode welding at speeds up to 5 m/min for automotive, medical, and battery assembly with real-time seam tracking.
+    description: Keyhole and conduction mode welding at speeds up to 5 m/min for automotive and battery assembly with real-time seam tracking.
   - name: Laser Marking
     description: Permanent part identification—Data Matrix, QR, serial numbers—in under 1 second per mark with zero consumables.
   - name: Surface Treatment
@@ -52,7 +52,7 @@ The source generates the photons. For production applications, you're choosing b
 
 **CO2 lasers** still earn their place for non-metal cutting—plastics, textiles, wood, and paper—where the 10.6 µm wavelength absorbs far better than near-infrared fiber wavelengths. We integrate TRUMPF and Coherent CO2 sources from 100 W to 6 kW. They require more maintenance than fiber (gas replenishment, mirror alignment, beam path purging), but for organic material cutting, they remain the right tool.
 
-**UV and green lasers** handle heat-sensitive applications where even fiber lasers deposit too much thermal energy. UV lasers (355 nm) from Coherent and TRUMPF ablate material through photochemical bond-breaking rather than thermal melting—producing virtually zero heat affected zone (HAZ). We use them for [medical device](/industries/medical/) micro-machining, ceramic scribing, glass cutting, and fine marking on plastics where discoloration from heat is unacceptable.
+**UV and green lasers** handle heat-sensitive applications where even fiber lasers deposit too much thermal energy. UV lasers (355 nm) from Coherent and TRUMPF ablate material through photochemical bond-breaking rather than thermal melting—producing virtually zero heat affected zone (HAZ). We use them for precision micro-machining, ceramic scribing, glass cutting, and fine marking on plastics where discoloration from heat is unacceptable.
 
 ### The Beam Delivery and Optics
 
@@ -92,7 +92,6 @@ Laser cutting replaces mechanical cutting, stamping, and waterjet for applicatio
 We build laser cutting systems for:
 
 - **Automotive trim cutting** — 3D robot-guided cutting of hydroformed tubes, stamped panels, and composite parts. A FANUC M-20iD with a Precitec cutting head trims flash from injection-molded bumper covers at 4 m/min with ±0.2 mm accuracy.
-- **Medical tube cutting** — 5-axis laser cutting of stents, hypotubes, and cannulae from stainless steel and nitinol tubes as small as 0.5 mm OD. UV lasers cut with zero burr and HAZ under 10 µm.
 - **Sheet metal processing** — Flat sheet cutting integrated with automated [material handling](/solutions/material-handling/) for lights-out operation. We've integrated systems that process 500+ unique part geometries per shift from nested sheet layouts.
 
 ### Laser Welding
@@ -103,13 +102,13 @@ Key applications we've integrated:
 
 - **Battery module assembly** — Welding copper and aluminum bus bars for EV battery packs. Wobble welding with a 2 kW fiber laser joins 0.3 mm copper foils to nickel-plated tabs at 500 mm/s with real-time power monitoring to detect micro-porosity. This is one of the fastest-growing application areas we're seeing.
 - **Automotive body-in-white** — Remote laser welding with galvo scanning heads running on ABB IRB 6700 robots. The scanner moves the beam between weld locations in milliseconds—no robot motion needed between closely spaced welds. One cell produces 40+ spot welds per minute compared to 12–15 with resistance welding.
-- **Hermetic sealing for medical and electronics** — Seam welding titanium and stainless steel enclosures for implantable devices and sensor housings. Weld penetration controlled to ±0.05 mm depth to prevent internal damage to sensitive components.
+- **Hermetic sealing for electronics** — Seam welding titanium and stainless steel enclosures for sensor housings. Weld penetration controlled to ±0.05 mm depth to prevent internal damage to sensitive components.
 
 ### Laser Marking
 
 Laser marking produces permanent, high-contrast marks without consumables—no ink, no labels, no stamps to wear out. A fiber laser marks a 10x10 mm Data Matrix code on anodized aluminum in 150 ms. Over a million parts, that's zero consumable cost versus $0.02–$0.05 per label.
 
-We integrate marking into production systems for [traceability](/solutions/marking-traceability/) requirements across [automotive](/industries/automotive/) (AIAG standards), [medical](/industries/medical/) (FDA UDI), and [aerospace](/industries/aerospace/) (FAA requirements). Every mark gets verified by a [machine vision](/solutions/machine-vision/) system—typically a Cognex DataMan 370 or Keyence SR-2000—that reads and grades the code per ISO 15415/15416 standards before the part leaves the station.
+We integrate marking into production systems for [traceability](/solutions/marking-traceability/) requirements across [automotive](/industries/automotive/) (AIAG standards) and [aerospace](/industries/aerospace/) (FAA requirements). Every mark gets verified by a [machine vision](/solutions/machine-vision/) system—typically a Cognex DataMan 370 or Keyence SR-2000—that reads and grades the code per ISO 15415/15416 standards before the part leaves the station.
 
 ### Laser Surface Treatment
 
@@ -128,14 +127,6 @@ A Tier 1 battery manufacturer needed to weld copper-to-nickel bus bar connection
 We designed a dual-robot cell with two FANUC M-20iD/25 robots, each carrying an IPG D30 wobble welding head fed by a 3 kW IPG fiber laser. The wobble pattern (1.5 mm diameter, 200 Hz circular) compensates for the high reflectivity and thermal conductivity of copper. Each robot welds 600 joints per module at 500 mm/s travel speed, with real-time photodiode monitoring that flags any weld with anomalous emission signatures.
 
 **Results:** 38-second cycle time (vs. 110 seconds with resistance welding), weld pull strength 2.1x the specification minimum, zero cold welds detected in over 3 million joints. The photodiode monitoring system caught 14 developing electrode wear issues before they produced defective welds. The system processes 3 different module variants with automatic recipe changeover.
-
-### Medical Nitinol Stent Cutting
-
-A [medical device](/industries/medical/) manufacturer producing cardiovascular stents needed to cut complex strut patterns into 1.8 mm OD nitinol tubes with wall thicknesses of 0.12 mm. The strut width was 80 µm—demanding cutting precision well below 10 µm with zero burr and an HAZ that wouldn't compromise the nitinol's superelastic properties.
-
-We built a 5-axis precision cutting system with a TRUMPF TruMicro 5050 femtosecond laser (ultrashort pulses eliminate thermal effects entirely) and a custom rotary/linear motion stage with 1 µm positioning resolution. A Keyence confocal displacement sensor maps each tube before cutting to compensate for diameter and straightness variations, and the system adjusts the cutting path in real time.
-
-**Results:** Strut width accuracy of ±3 µm (far exceeding the ±10 µm spec), zero measurable HAZ on metallurgical cross-sections, surface roughness Ra < 0.2 µm as-cut (eliminating electropolishing for some product variants). Cycle time of 90 seconds per stent versus 180 seconds on the previous nanosecond laser system. The system passed IQ/OQ/PQ validation and produces stents under FDA 21 CFR Part 820 quality system requirements.
 
 ### Aerospace Composite Trim Cutting
 
@@ -191,7 +182,7 @@ Fiber lasers are remarkably low-maintenance compared to CO2 or lamp-pumped solid
 
 ### How do you ensure laser process quality in production?
 
-We build multiple layers of quality assurance into every system. **In-process monitoring** uses photodiodes, pyrometers, or high-speed cameras to monitor the laser-material interaction in real time and detect anomalies on every single part. **Post-process inspection** with [machine vision](/solutions/machine-vision/) cameras or laser profilers verifies weld bead geometry, cut edge quality, or mark readability. **Statistical process control** tracks key parameters over time and alerts operators to process drift before it produces defective parts. For critical applications in [medical](/industries/medical/) and [aerospace](/industries/aerospace/), we implement full parameter logging with traceability linking every process parameter to the individual part serial number.
+We build multiple layers of quality assurance into every system. **In-process monitoring** uses photodiodes, pyrometers, or high-speed cameras to monitor the laser-material interaction in real time and detect anomalies on every single part. **Post-process inspection** with [machine vision](/solutions/machine-vision/) cameras or laser profilers verifies weld bead geometry, cut edge quality, or mark readability. **Statistical process control** tracks key parameters over time and alerts operators to process drift before it produces defective parts. For critical applications in [aerospace](/industries/aerospace/), we implement full parameter logging with traceability linking every process parameter to the individual part serial number.
 
 ### What's the difference between galvo scanning and robot-guided laser processing?
 

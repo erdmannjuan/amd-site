@@ -45,7 +45,7 @@ faq:
   - q: "What is a servo press assembly station?"
     a: "A servo press assembly station is a production cell built around a closed-loop electric or servo-hydraulic press that controls both force and position on every cycle. The station fixtures the part, runs a programmed press profile, records a force-versus-displacement signature, compares it against an acceptance envelope, and routes the part to pass, reject, or rework. Unlike a pneumatic or fixed-ram press, a servo press knows exactly where it is and exactly how hard it is pushing, every millisecond of the stroke."
   - q: "What is the difference between a servo-electric and a servo-hydraulic press?"
-    a: "Servo-electric presses use a servo motor driving a ball screw or roller screw, giving sub-10-micron position resolution, very fast response, low maintenance, and clean operation suited to electronics and medical work. Servo-hydraulic presses pair a servo-controlled valve or pump with a hydraulic cylinder, which trades a small amount of position precision for much higher force in a compact frame — the right choice above roughly 100 kN. Both architectures support full signature monitoring."
+    a: "Servo-electric presses use a servo motor driving a ball screw or roller screw, giving sub-10-micron position resolution, very fast response, low maintenance, and clean operation suited to electronics and precision assembly work. Servo-hydraulic presses pair a servo-controlled valve or pump with a hydraulic cylinder, which trades a small amount of position precision for much higher force in a compact frame — the right choice above roughly 100 kN. Both architectures support full signature monitoring."
   - q: "What force ranges do servo press assembly stations cover?"
     a: "Production servo presses run from about 0.5 kN for delicate electronic press-fits up to 300 kN and beyond for bearing seating, bushing insertion, and large powertrain components. Below 5 kN we typically specify Promess EMAP, Schmidt ServoPress, or Janome JP. From 5 to 80 kN, Promess, Kistler NCFT, and TOX electric drives are common. Above 100 kN we move to servo-hydraulic units from TOX, Schmidt, or comparable builders."
   - q: "How is press quality verified on every cycle?"
@@ -89,7 +89,7 @@ A servo press assembly station is a production cell built around a closed-loop e
 
 | Type | Best for | Typical force / stroke | Notes |
 |---|---|---|---|
-| Servo-electric (ball screw) | Electronics, medical, small mechanical assemblies | 0.5–80 kN / 50–300 mm | Sub-10 µm position, low maintenance, clean; Promess EMAP, Kistler NCFT, Schmidt ServoPress |
+| Servo-electric (ball screw) | Electronics, small precision mechanical assemblies | 0.5–80 kN / 50–300 mm | Sub-10 µm position, low maintenance, clean; Promess EMAP, Kistler NCFT, Schmidt ServoPress |
 | Servo-electric (roller screw) | Mid-force press-fit, swaging, riveting | 10–150 kN / 100–400 mm | Higher dynamic load capacity than ball screw at comparable accuracy |
 | Servo-hydraulic | Bearing seating, bushing insertion, large powertrain | 100–300+ kN / 150–500 mm | Compact frame at high force; full signature monitoring with closed-loop valve |
 | Pneumohydraulic | Cost-sensitive medium-force press-fit | 5–50 kN / 50–200 mm | TOX Kraftpaket and similar; monitored cycle with end-stroke force/depth windows |

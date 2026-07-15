@@ -21,7 +21,7 @@ Let's be honest about the industry. Most robot OEM training courses are generic.
 
 We built our training programs differently because we've been on the receiving end of those 2 AM phone calls for three decades. Every curriculum we develop starts from your actual equipment, your actual processes, and the actual failure modes your team will encounter. We don't teach theory for theory's sake — we teach what you need to keep production running.
 
-The difference shows up in the numbers. Manufacturers who complete our training programs see an average 40-60% reduction in unplanned downtime within the first six months. Mean time to repair drops by an average of 35%. And the frequency of emergency service calls — those expensive ones where we send an engineer out at $250/hour plus travel — drops by 50-70% within the first year. That's not aspirational marketing. Those are numbers from real customers across [automotive](/industries/automotive/), [medical device](/industries/medical/), and [electronics](/industries/electronics/) manufacturing.
+The difference shows up in the numbers. Manufacturers who complete our training programs see an average 40-60% reduction in unplanned downtime within the first six months. Mean time to repair drops by an average of 35%. And the frequency of emergency service calls — those expensive ones where we send an engineer out at $250/hour plus travel — drops by 50-70% within the first year. That's not aspirational marketing. Those are numbers from real customers across [automotive](/industries/automotive/) and [electronics](/industries/electronics/) manufacturing.
 
 ## Operator Training Programs
 
@@ -74,8 +74,6 @@ This is where good maintenance techs become great ones:
 **Electrical Troubleshooting** — reading schematics for your specific system, using multimeters and megohmmeters correctly, checking 24VDC sensor circuits, verifying safety relay logic, and tracing communication faults on EtherNet/IP, PROFINET, and DeviceNet networks. We spend real time on network troubleshooting because in modern automation cells, 40% of all faults trace back to communication issues — and most maintenance teams aren't trained to diagnose them.
 
 **Mechanical Troubleshooting** — bearing inspection techniques, belt and chain drive diagnostics, pneumatic system leak detection, servo motor and gearbox evaluation, and linear guide rail maintenance. We teach the sounds, vibrations, and visual cues that experienced technicians use to predict failures before they happen.
-
-**Real-World Example:** A medical device manufacturer running a 6-axis FANUC [assembly cell](/solutions/assembly/) with Keyence vision inspection was experiencing random vision faults 2-3 times per week. Each fault required a 20-minute recovery. Their maintenance team had been cleaning the camera lens and restarting the vision program — which worked temporarily. After our troubleshooting training, a tech identified that the actual root cause was a failing LED backlight that was flickering intermittently, causing exposure inconsistencies. A $180 part replacement eliminated all vision faults. Without the training, they'd have continued band-aiding the problem for months.
 
 ## Programming Training Programs
 
@@ -183,14 +181,13 @@ Let's talk numbers, because training is an investment and it should be justified
 
 **Employee Retention** — This one's harder to quantify but real. Skilled automation technicians are in high demand. Investing in their development builds loyalty. Our customers report 30% lower turnover among trained automation staff compared to untrained peers.
 
-**Typical Payback Period:** 2-4 months for operator training, 3-6 months for maintenance training, 4-8 months for programming training. These are conservative estimates based on customer data across [general manufacturing](/industries/general-manufacturing/), automotive, and medical device sectors.
+**Typical Payback Period:** 2-4 months for operator training, 3-6 months for maintenance training, 4-8 months for programming training. These are conservative estimates based on customer data across [general manufacturing](/industries/general-manufacturing/) and automotive sectors.
 
 ## Industries We Train
 
 Our training programs serve every industry where automation is deployed:
 
 - **[Automotive](/industries/automotive/)** — robotic welding, [assembly](/solutions/assembly/), and material handling training for Tier 1, 2, and 3 suppliers
-- **[Medical Devices](/industries/medical/)** — training with emphasis on FDA validation requirements, cleanroom protocols, and traceability documentation
 - **[Aerospace](/industries/aerospace/)** — training aligned with AS9100 quality requirements and specialized material handling for high-value components
 - **[Electronics](/industries/electronics/)** — precision assembly, vision inspection, and test system training
 - **[Food & Beverage](/industries/food-beverage/)** — sanitary design awareness, [packaging](/solutions/packaging/) system operation, and washdown maintenance procedures
@@ -220,7 +217,7 @@ We typically train one shift at a time over consecutive weeks, with the trained 
 
 ### Do you provide certification upon completion?
 
-Yes. All participants who complete training and pass the assessment receive a certificate of completion documenting the topics covered, hours of instruction, and competency level achieved. For regulated industries (medical, aerospace, pharmaceutical), we provide documentation formatted to support your quality system training records per ISO 13485, AS9100, or FDA 21 CFR Part 820 requirements.
+Yes. All participants who complete training and pass the assessment receive a certificate of completion documenting the topics covered, hours of instruction, and competency level achieved. For regulated industries such as aerospace, we provide documentation formatted to support your quality system training records per AS9100 requirements.
 
 ### Can training be included with a new system purchase?
 

@@ -18,7 +18,7 @@ url: /blog/cleanroom-material-handling-requirements/
 
 Standard material handling equipment does not belong in a cleanroom. Every motor, bearing, belt, and actuator in a conventional system generates particles that can compromise product quality, violate regulatory requirements, and shut down production. If you are designing or upgrading a material handling system for a controlled environment, the engineering decisions you make at the concept stage will determine whether the system maintains classification or becomes the primary source of contamination.
 
-Cleanroom material handling is not simply a matter of buying stainless steel conveyors and calling it done. It requires a ground-up approach to equipment selection, layout design, airflow management, and maintenance planning. The stakes are high—particularly in [medical device manufacturing](/industries/medical/) and pharmaceutical production, where a contamination event can mean scrapped batches, regulatory citations, or worse.
+Cleanroom material handling is not simply a matter of buying stainless steel conveyors and calling it done. It requires a ground-up approach to equipment selection, layout design, airflow management, and maintenance planning. The stakes are high—particularly in medical device manufacturing and pharmaceutical production, where a contamination event can mean scrapped batches, regulatory citations, or worse.
 
 ## Understanding Cleanroom Classifications
 

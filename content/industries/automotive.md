@@ -39,7 +39,7 @@ That pressure has shaped everything about how we build automotive automation. Ev
 
 Let's be clear about what automotive production actually demands, because it's fundamentally different from every other industry we serve.
 
-In [aerospace](/industries/aerospace/), you might build 5,000 units a year and have 30 minutes of cycle time per operation. In [medical devices](/industries/medical/), you're focused on validation protocols and clean-room compatibility. In automotive, you're building 1,200 parts per shift at cycle times under 30 seconds, with a quality standard that expects no more than 10-15 defective parts per million. And you're doing it six days a week, three shifts a day, 50 weeks a year.
+In [aerospace](/industries/aerospace/), you might build 5,000 units a year and have 30 minutes of cycle time per operation. In automotive, you're building 1,200 parts per shift at cycle times under 30 seconds, with a quality standard that expects no more than 10-15 defective parts per million. And you're doing it six days a week, three shifts a day, 50 weeks a year.
 
 That math is unforgiving. At 45-second cycle time on a two-shift operation running 240 days per year, you're producing about 600,000 parts per year from one line. Every minute of unplanned downtime costs you 1-2 parts. A four-hour breakdown on a weld cell feeding a body shop can halt an entire assembly plant — at a cost of $10,000-$22,000 per minute to the OEM.
 

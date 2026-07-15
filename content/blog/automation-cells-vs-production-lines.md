@@ -356,6 +356,6 @@ Think about where your business is heading:
 
 AMD Machines has implemented both [automation cells](/solutions/robotic-cells/) and integrated production lines across industries. We help clients evaluate options objectively based on their specific circumstances.
 
-Our experience spans [automotive](/industries/automotive/), [medical devices](/industries/medical/), [aerospace](/industries/aerospace/), and other industries where both approaches deliver value in appropriate situations.
+Our experience spans [automotive](/industries/automotive/), [aerospace](/industries/aerospace/), and other industries where both approaches deliver value in appropriate situations.
 
 **Not sure which approach fits your needs?** [Contact us](/contact/) for a consultation. We'll evaluate your requirements and recommend the architecture that best serves your manufacturing goals.

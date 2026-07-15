@@ -136,7 +136,7 @@ We built a 12-station box build line for a manufacturer of industrial control pa
 
 ## Traceability: Every Board, Every Operation, Every Data Point
 
-In electronics manufacturing, traceability isn't a nice-to-have — it's a requirement driven by automotive (IATF 16949), medical ([FDA 21 CFR Part 820](/industries/medical/)), aerospace ([AS9100](/industries/aerospace/)), and customer-specific quality mandates. And even where it's not formally required, comprehensive traceability is your best tool for root cause analysis when something goes wrong.
+In electronics manufacturing, traceability isn't a nice-to-have — it's a requirement driven by automotive (IATF 16949), aerospace ([AS9100](/industries/aerospace/)), and customer-specific quality mandates. And even where it's not formally required, comprehensive traceability is your best tool for root cause analysis when something goes wrong.
 
 ### What We Track
 

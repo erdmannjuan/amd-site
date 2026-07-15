@@ -74,7 +74,7 @@ The workhorse of material handling. We use belt conveyors for continuous transpo
 - **Speed range:** 10–200 feet per minute (adjustable via VFD or servo)
 - **Load capacity:** Up to 150 lbs per linear foot for standard designs
 - **Accumulation:** Zero-pressure accumulation zones prevent part damage during backups
-- **Cleanliness:** FDA-compliant belt materials for [food and beverage](/industries/food-beverage/) and [pharmaceutical](/industries/pharmaceutical/) applications
+- **Cleanliness:** FDA-compliant belt materials for [food and beverage](/industries/food-beverage/) applications
 
 ### Pallet Transfer Systems
 
@@ -110,7 +110,7 @@ For long-reach, high-payload applications—moving engine blocks between machini
 
 ### Delta Robots
 
-When you need the absolute fastest pick-and-place—think small, light parts at 200+ picks per minute—delta robots from FANUC (M-1iA, M-3iA) and ABB (IRB 360 FlexPicker) are purpose-built for the job. We pair them with Cognex or Keyence vision systems tracking parts on moving conveyors, enabling the robot to pick on-the-fly without stopping the belt. This is standard in food packaging, pharmaceutical blister pack loading, and small electronics handling.
+When you need the absolute fastest pick-and-place—think small, light parts at 200+ picks per minute—delta robots from FANUC (M-1iA, M-3iA) and ABB (IRB 360 FlexPicker) are purpose-built for the job. We pair them with Cognex or Keyence vision systems tracking parts on moving conveyors, enabling the robot to pick on-the-fly without stopping the belt. This is standard in food packaging and small electronics handling.
 
 ## AGVs and AMRs: Flexible Material Transport
 

@@ -23,7 +23,7 @@ When you ignore preventive maintenance, you're not just risking a breakdown — 
 
 ## Our Approach: Tiered Support That Actually Works
 
-We've structured our maintenance and support services around how real manufacturing plants actually operate — not some textbook ideal. Every facility is different. A medical device manufacturer running two shifts with [ISO 13485 traceability requirements](/industries/medical/) has completely different needs than an [automotive Tier 1 supplier](/industries/automotive/) running three shifts with just-in-time delivery windows measured in minutes.
+We've structured our maintenance and support services around how real manufacturing plants actually operate — not some textbook ideal. Every facility is different. A job shop running two shifts has completely different needs than an [automotive Tier 1 supplier](/industries/automotive/) running three shifts with just-in-time delivery windows measured in minutes.
 
 ### 24/7 Technical Support
 
@@ -156,9 +156,6 @@ We validate safety systems per ANSI/RIA 15.06 and ISO 10218 standards, including
 
 **Automotive Tier 1 Supplier — Assembly Line**
 A customer running twelve FANUC robots across two [assembly](/solutions/assembly/) lines was averaging 47 hours of unplanned downtime per quarter. We implemented a Standard Service contract with monthly PM visits. Within six months, unplanned downtime dropped to 8 hours per quarter — an 83% reduction. Their OEE went from 72% to 91%.
-
-**Medical Device Manufacturer — Packaging Cell**
-A medical packaging line with Yaskawa robots and Cognex vision was experiencing intermittent false rejects that were scrapping 2.4% of good product. Our vision system support team identified LED degradation in the backlight array — a $200 part that was costing them $18,000/month in unnecessary scrap. One PM visit, one part swap, reject rate back to 0.1%.
 
 **Electronics Manufacturer — Test Systems**
 An [electronics manufacturer](/industries/electronics/) with automated [test systems](/solutions/test-systems/) was replacing servo motors reactively at $4,500 each, roughly every 14 months. We implemented predictive maintenance using motor current signature analysis. Now we replace motors proactively during planned shutdowns before they fail catastrophically, extending average motor life to 26 months and eliminating the $12,000+ emergency service calls that came with each unplanned failure.

@@ -142,12 +142,6 @@ Building special purpose machines requires deep expertise across multiple engine
 
 ## Real-World Custom Automation Applications
 
-### Medical Device Assembly: Catheter Sub-Assembly System
-
-A medical device manufacturer needed to automate assembly of a 7-component catheter sub-assembly with tolerances under ±0.025mm. The parts were too small and delicate for standard robotic handling, and the process required 100% inline inspection per FDA 21 CFR Part 820.
-
-We built a custom 8-station rotary dial machine with precision vacuum grippers, ultrasonic welding (Branson 2000X), and Cognex In-Sight 9000 vision inspection at three stations. The system achieves 6.5-second cycle time per assembly, runs at Cpk > 1.67 on critical dimensions, and logs every measurement to a traceability database. It replaced a 4-person manual assembly operation and improved first-pass yield from 94% to 99.7%.
-
 ### Automotive: Transmission Component Assembly and Test
 
 An automotive Tier 1 supplier needed a custom system to assemble and test a 12-component transmission valve body. The process included pressing, [screwdriving](/solutions/screwdriving/) (8 fasteners at precise torque values), leak testing at 5 bar, and electrical functional testing — all at 45-second takt time.

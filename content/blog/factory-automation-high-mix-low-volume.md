@@ -43,7 +43,7 @@ Even with longer payback periods than high-volume automation, HMLV automation de
 
 **Process consistency.** Manual assembly introduces variation — even experienced operators have good days and bad days. Automated systems apply the same force, the same torque, and the same placement every cycle. For operations where consistency directly affects product quality, this alone can justify the investment.
 
-**Automatic data capture.** Traceability is table stakes in industries like [medical device manufacturing](/industries/medical/) and aerospace. Automated systems generate timestamped records of every parameter — press forces, torque values, vision inspection results — without relying on operators to fill out paperwork.
+**Automatic data capture.** Traceability is table stakes in industries like medical device manufacturing and aerospace. Automated systems generate timestamped records of every parameter — press forces, torque values, vision inspection results — without relying on operators to fill out paperwork.
 
 **Competitive differentiation.** The ability to quote shorter lead times and accept smaller batch sizes opens doors to business your competitors can't profitably serve.
 

@@ -38,7 +38,7 @@ benefits:
 
 I'll tell you something that surprises people who don't live on the shop floor: the biggest bottleneck in most machining operations isn't the machine. It's the person loading and unloading it. Your CNC machining center cuts metal at spindle speeds that would've been science fiction 20 years ago—but the spindle sits idle every time an operator opens the door, reaches in, swaps a part, closes the door, and hits cycle start. On a typical 90-second machining cycle, that load/unload sequence eats 25–40 seconds. And when the operator takes a break, goes to lunch, or calls in sick, the spindle doesn't turn at all.
 
-At AMD Machines, we've built robotic machine tending systems for over two decades—hundreds of cells across [automotive](/industries/automotive/), [aerospace](/industries/aerospace/), [medical device](/industries/medical/), and [heavy equipment](/industries/heavy-equipment/) manufacturing. We've learned what works, what breaks, and what separates a machine tending cell that actually runs lights-out from one that needs babysitting. This page covers everything we know.
+At AMD Machines, we've built robotic machine tending systems for over two decades—hundreds of cells across [automotive](/industries/automotive/), [aerospace](/industries/aerospace/), and [heavy equipment](/industries/heavy-equipment/) manufacturing. We've learned what works, what breaks, and what separates a machine tending cell that actually runs lights-out from one that needs babysitting. This page covers everything we know.
 
 ## The Real Economics of Machine Tending
 
@@ -140,8 +140,6 @@ A machine tending cell that only loads and unloads is leaving value on the table
 
 We integrate contact gauging stations (Renishaw Equator, Marposs, Keyence GT2 series) inside the cell. The robot places the machined part on the gauge fixture between the machine unload and the outfeed conveyor. Critical dimensions are checked on every part or at a statistical sampling rate. If a dimension trends out of tolerance, the system automatically adjusts CNC tool offsets to compensate for tool wear—closed-loop machining without operator intervention.
 
-On a [medical device](/industries/medical/) machining cell for orthopedic implants, we integrated a Renishaw Equator gauging system that checks 12 critical dimensions on every titanium knee component. The gauging cycle takes 8 seconds—hidden inside the 4.5-minute machining cycle—and the system has maintained Cpk > 1.67 on all critical features for over 18 months of production.
-
 ### Vision Inspection
 
 [Machine vision](/solutions/machine-vision/) cameras (Keyence CV-X, Cognex In-Sight 2800) inspect parts for surface defects, burrs, missing features, and wrong-part detection. We mount cameras at the robot's unload position so inspection happens during the part transfer—no additional cycle time.
@@ -167,14 +165,6 @@ An [aerospace](/industries/aerospace/) manufacturer producing titanium brackets 
 We installed a FANUC M-710iC/50 robot on a 9-meter Güdel linear rail, tending four Okuma machines. Erowa pallet systems provide 12 hours of unattended raw material staging. The robot handles titanium blanks weighing up to 8 kg, loading each into a hydraulic fixture with ±0.05 mm repeatability. A Renishaw Equator gauges three critical dimensions on every part.
 
 **Results:** Spindle utilization went from 61% to 93%. Weekly output increased by 52% with the same four machines. The cell runs lights-out 5 nights per week, adding 50 hours of production that simply didn't exist before. The customer delayed a planned $1.2M capital expenditure for a fifth machining center because the tending cell gave them the capacity they needed from the existing four.
-
-### Medical: Orthopedic Implant Micro-Machining
-
-A [medical device](/industries/medical/) company machining titanium and cobalt-chrome orthopedic implants needed automation that met FDA quality requirements while handling parts too small for standard grippers. Each implant weighs 12–45 grams, requires 100% dimensional inspection, and demands full lot traceability per 21 CFR Part 820.
-
-We designed a cell around a FANUC LR Mate 200iD/7L robot with custom vacuum grippers that handle the parts by their non-critical surfaces. A Keyence GT2 contact probe gauges five critical dimensions on every part in an 11-second gauging cycle. Laser marking provides a unique device identifier (UDI) per FDA requirements, and a Cognex DataMan 370 verifies the mark readability before the part exits the cell.
-
-**Results:** 100% in-process dimensional inspection (vs. statistical sampling before), Cpk > 2.0 on all critical dimensions, full electronic batch records meeting 21 CFR Part 820. Scrap from machining defects dropped from 2.1% to 0.3%. The cell runs unattended for 6-hour stretches between material staging, producing 280 implants per day vs. 190 with manual tending—a 47% throughput increase.
 
 ## The ROI of Machine Tending Automation
 

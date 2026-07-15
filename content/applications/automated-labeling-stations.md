@@ -38,7 +38,7 @@ at_a_glance:
   - label: "Verification"
     value: "ISO/IEC 15415/15416 grading, OCR/OCV"
   - label: "Standards"
-    value: "GS1-128, SSCC-18, UDI, AIAG B-10"
+    value: "GS1-128, SSCC-18, AIAG B-10"
 faq:
   - q: "What is an automated labeling station?"
     a: "An automated labeling station is a production machine that prints variable label data, applies the label to a part or package without an operator, and verifies the result. A typical system pairs a thermal-transfer print engine with a pneumatic applicator and a vision camera that grades the barcode and confirms placement before the part is released downstream."
@@ -55,7 +55,7 @@ faq:
   - q: "Can you retrofit a print-and-apply labeling station into our existing line?"
     a: "Yes. Print-and-apply systems are well suited to retrofits because the footprint is small and the applicator can be mounted above, beside, or below the conveyor. We survey the available space, part orientation, line speed, and upstream handoff, then design the frame, applicator reach, and guarding around the constraint. Most retrofits install during a planned shutdown."
   - q: "What standards do automated labeling stations meet?"
-    a: "Common requirements include GS1-128 and GS1 DataMatrix encoding, SSCC-18 pallet labels, AIAG B-10 trading-partner labels for automotive, FDA UDI formats for medical-device direct marking, and ISO/IEC 15415 and 15416 print-quality grading. We design the station around the standards your customers and auditors require and provide validation documentation as part of the runoff package."
+    a: "Common requirements include GS1-128 and GS1 DataMatrix encoding, SSCC-18 pallet labels, AIAG B-10 trading-partner labels for automotive, and ISO/IEC 15415 and 15416 print-quality grading. We design the station around the standards your customers and auditors require and provide validation documentation as part of the runoff package."
 ---
 
 If you are evaluating **automated labeling stations** for a production line, the question is usually whether to print and apply on the part, on the carton, or on the pallet — and whether to do it inline or at a robotic cell. We engineer the station around your part, your line speed, and the data your customers and auditors expect to see on the label.

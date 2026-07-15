@@ -12,6 +12,7 @@
 | **Local Path** | `/Users/juan_erdmann/my-site-generator` |
 | **Core Expertise** | Assembly Systems (featured prominently on homepage) |
 | **Business** | Custom automation & robotic systems, 30+ years, 2,500+ machines delivered |
+| **NOT in scope** | **AMD is NOT in the medical/pharmaceutical market.** All medical positioning was removed 2026-07. Never add medical/pharma claims, case studies, or /industries/medical/ links. |
 
 ---
 

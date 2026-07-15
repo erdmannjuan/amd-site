@@ -128,7 +128,7 @@ Hygiene requirements and high volumes drive automation in food processing. Packa
 
 ### Pharmaceutical and Medical
 
-Stringent quality requirements and documentation needs make automation valuable. [Medical device manufacturing](/industries/medical/) benefits from automation's precision and traceability.
+Stringent quality requirements and documentation needs make automation valuable. Medical device manufacturing benefits from automation's precision and traceability.
 
 ### Consumer Products
 

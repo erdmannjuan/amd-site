@@ -76,7 +76,7 @@ Our automation systems are built from the ground up to support defense quality r
 - **Statistical Process Control (SPC):** Real-time Cp/Cpk monitoring on critical parameters. If a process starts drifting toward control limits, the system alerts operators before a single defective part is produced.
 - **100% Inspection:** [Machine vision systems](/solutions/machine-vision/) with Cognex and Keyence cameras inspect every part at every critical operation. No sampling plans, no AQL — every unit verified.
 - **Full Traceability:** Every component, every process parameter, every inspection result linked to a unique serial number. When a government inspector asks "show me the build record for unit 47,293," you can pull it in seconds.
-- **Electronic Signatures:** 21 CFR Part 11 compliant audit trails for all process data, with secure access controls and tamper-evident records.
+- **Electronic Signatures:** Secure, tamper-evident audit trails for all process data, with role-based access controls.
 - **First Article Inspection:** Our systems generate AS9102 First Article Inspection Reports automatically, reducing what used to be a week-long manual effort to a few hours.
 
 We design systems compatible with AS9100 quality management requirements and can support AS9145 APQP/PPAP processes for new product introductions. The data architecture we build into every system makes compliance a byproduct of production, not a separate activity.

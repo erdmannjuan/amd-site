@@ -575,7 +575,7 @@
 <p>Picking the right machine architecture is the single most important decision in an assembly automation project. Get it wrong and you're stuck with a machine that can't hit rate, can't accommodate your next product variant, or costs twice what it should. Here's how we think about it.</p>
 <h3 id="rotary-dial-machines">Rotary Dial Machines</h3>
 <p>Rotary dial systems are the workhorses of high-volume assembly. A central indexing table—typically driven by a Weiss or Colombo Filippetti cam unit—carries nests through 8 to 24 stations arranged around the dial's perimeter. Every index, all stations execute simultaneously. That parallel processing is what makes dials so fast.</p>
-<p>We've built rotary dials running at 40+ parts per minute on automotive connector assemblies, and others running at 6 parts per minute on complex medical devices with 15+ assembly operations. The sweet spot is products smaller than about 200 mm that need 6–16 distinct operations.</p>
+<p>We've built rotary dials running at 40+ parts per minute on automotive connector assemblies, and others running at 6 parts per minute on complex multi-component products with 15+ assembly operations. The sweet spot is products smaller than about 200 mm that need 6–16 distinct operations.</p>
 <p><strong>When to choose a dial:</strong> High volume (250K+ parts/year), small-to-medium parts, relatively stable product design, and cycle times under 6 seconds per part.</p>
 <h3 id="linear-transfer-systems">Linear Transfer Systems</h3>
 <p>Linear transfer—sometimes called walking-beam or pallet transfer—moves workpiece carriers through a straight or loop-shaped sequence of stations. Each station performs one or more operations, and the pallet advances when the slowest station finishes.</p>
@@ -653,9 +653,9 @@
 <p>Today, we evaluate every component and select the right feeding approach:</p>
 <ul>
 <li><strong>Vibratory bowl feeders</strong> — Still the best choice for simple, symmetrical parts at high rates. We work with RNA, Automation Devices, and Service Engineering.</li>
-<li><strong>Centrifugal feeders</strong> — Excellent for small, lightweight parts that need gentle handling (medical components, o-rings, rubber seals).</li>
+<li><strong>Centrifugal feeders</strong> — Excellent for small, lightweight parts that need gentle handling (small precision components, o-rings, rubber seals).</li>
 <li><strong>Flex feeders with vision</strong> — The go-to for complex geometries, fragile parts, or frequent changeovers. Asyril Asycube and FlexiBowl systems paired with vision.</li>
-<li><strong>Magazine and tray systems</strong> — For larger or pre-oriented components, especially in <a href="/industries/electronics/">electronics</a> and medical device assembly.</li>
+<li><strong>Magazine and tray systems</strong> — For larger or pre-oriented components, especially in <a href="/industries/electronics/">electronics</a> assembly.</li>
 <li><strong>Escapement mechanisms</strong> — Simple, reliable, and often the best solution for tube-fed or rail-fed components.</li>
 </ul>
 <h2 id="error-proofing-and-quality-assurance">Error Proofing and Quality Assurance</h2>
@@ -675,16 +675,12 @@
 <li><strong>Barcode and RFID tracking</strong> for serialized product genealogy</li>
 <li><strong>MES integration</strong> via OPC UA, MQTT, or direct database writes</li>
 </ul>
-<p>We've built systems that meet FDA 21 CFR Part 11 requirements for electronic records in <a href="/industries/medical/">medical device manufacturing</a>, IATF 16949 traceability requirements for <a href="/industries/automotive/">automotive</a> Tier 1 suppliers, and AS9100 documentation standards for <a href="/industries/aerospace/">aerospace</a> hardware. See all the <a href="/industries/">industries we serve with automation equipment</a>.</p>
+<p>We've built systems that meet IATF 16949 traceability requirements for <a href="/industries/automotive/">automotive</a> Tier 1 suppliers and AS9100 documentation standards for <a href="/industries/aerospace/">aerospace</a> hardware. See all the <a href="/industries/">industries we serve with automation equipment</a>.</p>
 <h2 id="real-world-application-examples">Real-World Application Examples</h2>
 <h3 id="automotive-hvac-actuator-assembly">Automotive HVAC Actuator Assembly</h3>
 <p>A Tier 1 automotive supplier needed to assemble a multi-component HVAC blend door actuator at 1,200 units per hour. The product contained a DC motor, gear train, position sensor, PCB, housing halves, and six self-tapping screws.</p>
 <p>We built a 20-station rotary dial machine with servo-controlled press stations, ultrasonic welding, automated screwdriving, and end-of-line electrical testing. The system uses FANUC iRVision for gear mesh verification and a Keyence laser displacement sensor for weld height inspection.</p>
 <p><strong>Results:</strong> 3.0-second cycle time, 98.5% first-pass yield (up from 94% manual), zero customer PPM complaints in the first 18 months of production. Full payback in 16 months running two shifts.</p>
-<h3 id="medical-inhaler-device-assembly">Medical Inhaler Device Assembly</h3>
-<p>A medical device OEM required a fully validated system for assembling a metered-dose inhaler with complete lot traceability. The line needed to handle three product variants with tool-less changeover.</p>
-<p>We designed a linear transfer system with 14 stations, including ultrasonic welding, dose-weight verification, leak testing, and 2D barcode serialization. The entire system operates in a Class 100K clean room with stainless steel construction and FDA 21 CFR Part 11-compliant data recording.</p>
-<p><strong>Results:</strong> 22 units per minute, IQ/OQ/PQ validation completed in 12 weeks, electronic batch records for every unit produced. The system replaced a 12-person manual line and paid for itself in 11 months.</p>
 <h3 id="electronics-sensor-module-assembly">Electronics Sensor Module Assembly</h3>
 <p>A sensor manufacturer needed to assemble a multi-layer sensor stack with ±0.02 mm placement accuracy. The product required precision adhesive dispensing, UV curing, and automated electrical testing at each stage.</p>
 <p>We built a hybrid system combining a FANUC LR Mate 200iD/7L robot with a precision linear stage for placement and a Nordson EFD dispensing system for sub-microliter adhesive dots. Cognex VisionPro guided every placement, and a custom fixture maintained alignment through the UV cure cycle.</p>
@@ -703,7 +699,7 @@
 <p>Looking for a specific configuration? See our <a href="/applications/custom-assembly-machines/">custom assembly machines</a> and <a href="/applications/servo-press-assembly-stations/">servo press assembly stations</a>.</p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 <h3 id="what-cycle-times-can-a-custom-assembly-system-achieve">What cycle times can a custom assembly system achieve?</h3>
-<p>It depends on the number of operations and product complexity. Rotary dial systems typically achieve 1.5–6 seconds per part. Linear transfer systems range from 5–30 seconds. We've built dial machines running under 2 seconds per cycle for simple two-component assemblies, and linear systems at 25 seconds for complex 20+ component medical devices.</p>
+<p>It depends on the number of operations and product complexity. Rotary dial systems typically achieve 1.5–6 seconds per part. Linear transfer systems range from 5–30 seconds. We've built dial machines running under 2 seconds per cycle for simple two-component assemblies, and linear systems at 25 seconds for complex 20+ component products.</p>
 <h3 id="how-long-does-it-take-from-concept-to-production-ready-machine">How long does it take from concept to production-ready machine?</h3>
 <p>A typical custom assembly system takes 6–9 months from signed purchase order to site acceptance test. Simple single-station cells can be faster (3–4 months), while complex multi-station lines with validation requirements may take 10–14 months. We provide a detailed timeline during the proposal phase.</p>
 <h3 id="can-the-machine-handle-multiple-product-variants">Can the machine handle multiple product variants?</h3>
@@ -714,8 +710,6 @@
 <p>Absolutely. Every machine ships with comprehensive operator and maintenance training at our facility and at your site. We provide 24/7 phone support, remote diagnostics via secure VPN connection, and on-site <a href="/services/maintenance-support/">maintenance and support</a> contracts. We also stock critical spare parts for fast turnaround on <a href="/services/spare-parts/">replacement components</a>.</p>
 <h3 id="what-controls-platforms-do-you-use">What controls platforms do you use?</h3>
 <p>We standardize on Allen-Bradley ControlLogix and CompactLogix PLCs for most applications, with Rockwell PanelView HMIs or Ignition-based SCADA for complex systems. Robot integrations include FANUC, ABB, KUKA, and Yaskawa depending on the application requirements. We also integrate Beckhoff TwinCAT and Siemens platforms when the customer's facility standard requires it.</p>
-<h3 id="how-do-you-handle-validation-for-regulated-industries">How do you handle validation for regulated industries?</h3>
-<p>For medical device and pharmaceutical customers, we provide full IQ/OQ/PQ documentation packages, GAMP 5 software documentation, 21 CFR Part 11-compliant data systems, and FAT/SAT protocols. Our project managers have led dozens of validated automation projects and understand what your quality team needs to see. Visit our <a href="/services/consulting/">consulting services</a> page to learn more about our approach to regulated projects.</p>
 <h3 id="what-types-of-assembly-automation-equipment-does-amd-machines-integrate">What types of assembly automation equipment does AMD Machines integrate?</h3>
 <p>We integrate a broad range of assembly equipment including rotary dial and indexing machines, linear transfer systems, robotic assembly cells (FANUC, ABB, Yaskawa), vibratory and centrifugal feeders, servo press-fit stations, multi-spindle screwdrivers, precision dispensing systems, and machine vision inspection. Every system is custom-engineered around the customer's specific part geometry, tolerance requirements, and production rate targets—there is no off-the-shelf template.</p>
 <h3 id="how-much-does-an-automated-assembly-system-cost">How much does an automated assembly system cost?</h3>
@@ -755,11 +749,6 @@
                 <div class="applications-flat" id="applications">
                     <h2>Applications</h2>
                     <div class="applications-list">
-                        
-                        <div class="application-item">
-                            <h3>Medical Device Assembly</h3>
-                            <p>ISO 13485-compliant clean room systems for regulated devices—catheter assemblies, surgical instruments, and drug delivery components with full traceability.</p>
-                        </div>
                         
                         <div class="application-item">
                             <h3>Automotive Components</h3>

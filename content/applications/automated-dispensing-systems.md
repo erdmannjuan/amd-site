@@ -90,7 +90,7 @@ Compared to manual dispensing, an automated station:
 | Method | Best for | Typical volume accuracy | Representative vendors |
 |---|---|---|---|
 | Progressive cavity (PC) pump | Medium-to-high viscosity (50k–500k cP): RTV silicone, FIPG, structural epoxy | ±1–2% on continuous bead | Viscotec, Nordson EFD, Graco |
-| Piston dispenser | Precise shot metering: medical adhesives, lubricant dots, solder paste | ±1% or better | Nordson EFD Ultimus/7V, Techcon, Scheugenpflug |
+| Piston dispenser | Precise shot metering: adhesive shots, lubricant dots, solder paste | ±1% or better | Nordson EFD Ultimus/7V, Techcon, Scheugenpflug |
 | Jet valve | High-speed, small-volume dots: conformal coat, underfill, micro-bond | ±3–5% per drop, <±2% averaged | Nordson ASYMTEK DJ-9500, Musashi ML-5000X |
 | Two-component meter-mix | Reactive 1:1 to 100:1: structural epoxy, polyurethane, 2K silicone | ±1% mix-ratio, ±1% volume | Graco PR70, Scheugenpflug DosP/DosC, Nordson EFD 2K |
 | Time-pressure | Low-cost, low-viscosity work: thread lockers, low-criticality dots | ±5–10% | Nordson EFD Ultimus V, Techcon TS Series |

@@ -24,7 +24,7 @@ applications:
   - name: Measurement
     description: Non-contact dimensional verification for critical tolerances and GD&T compliance down to ±0.005 mm repeatability.
   - name: Identification
-    description: Read barcodes, QR codes, data matrix, and OCR text for traceability across automotive, medical, and electronics manufacturing.
+    description: Read barcodes, QR codes, data matrix, and OCR text for traceability across automotive and electronics manufacturing.
 benefits:
   - title: 100% Inspection
     description: Inspect every part at full production speed—no more statistical sampling or missed defects.
@@ -38,7 +38,7 @@ benefits:
 
 I've been integrating machine vision systems for over two decades, and I'll tell you what still surprises me: how many manufacturers are running critical quality checks with nothing but a pair of tired eyes under a magnifying lamp. I've walked into plants where a single inspector is responsible for catching 50-micron defects on parts moving at 30 per minute—and management wonders why they're shipping rejects. Machine vision doesn't get fatigued at hour six, doesn't get distracted by a text message, and doesn't have a bad Monday. It catches defects the same way on part number one as on part number one million.
 
-At AMD Machines, we've integrated hundreds of vision systems across [automotive](/industries/automotive/), [medical device](/industries/medical/), [electronics](/industries/electronics/), and [aerospace](/industries/aerospace/) manufacturing. We're not a camera company—we're automation integrators who understand that the camera is just the starting point. The real work is lighting, optics, algorithms, and integration with your [robotic cells](/solutions/robotic-cells/) and [assembly systems](/solutions/assembly/) so the whole line runs like clockwork.
+At AMD Machines, we've integrated hundreds of vision systems across [automotive](/industries/automotive/), [electronics](/industries/electronics/), and [aerospace](/industries/aerospace/) manufacturing. We're not a camera company—we're automation integrators who understand that the camera is just the starting point. The real work is lighting, optics, algorithms, and integration with your [robotic cells](/solutions/robotic-cells/) and [assembly systems](/solutions/assembly/) so the whole line runs like clockwork.
 
 ## How Industrial Machine Vision Actually Works
 
@@ -50,7 +50,7 @@ Here's something that took me years to fully appreciate: lighting determines abo
 
 We design lighting based on the specific defect or feature we need to detect:
 
-- **Diffuse dome lighting** — Eliminates specular reflections on shiny surfaces. Essential for inspecting machined aluminum, chrome-plated parts, and polished medical components.
+- **Diffuse dome lighting** — Eliminates specular reflections on shiny surfaces. Essential for inspecting machined aluminum, chrome-plated parts, and polished precision components.
 - **Darkfield (low-angle) illumination** — Makes surface scratches, dents, and contamination pop against an otherwise dark background. We use this extensively on painted automotive panels and glass substrates.
 - **Backlighting** — Perfect for dimensional measurement, gap checking, and presence/absence verification on silhouette profiles. Simple, reliable, and fast.
 - **Structured light and laser line projection** — The foundation of 3D vision. A projected laser line deforms as it crosses surface geometry, and triangulation calculates the height map. Keyence's LJ-X8000 series is our go-to for inline 3D profiling.
@@ -76,7 +76,7 @@ This is where the real engineering happens. We select and tune algorithms based 
 - **Edge detection and caliper tools** — Measure distances, gaps, diameters, and angles with sub-pixel accuracy. We routinely achieve ±0.005 mm measurement repeatability with calibrated setups.
 - **Blob analysis** — Count features, measure areas, and detect contamination or missing material. Fast and effective for presence/absence checks.
 - **Color inspection** — Verify correct component color, detect discoloration, and sort products by shade. Requires careful color calibration and controlled lighting.
-- **OCR/OCV** — Read printed, stamped, or laser-marked text and verify it matches expected strings. Critical for lot codes, date codes, and serialization in [medical](/industries/medical/) and [pharmaceutical](/industries/pharmaceutical/) manufacturing.
+- **OCR/OCV** — Read printed, stamped, or laser-marked text and verify it matches expected strings. Critical for lot codes, date codes, and serialization in [food and beverage](/industries/food-beverage/) and [electronics](/industries/electronics/) manufacturing.
 
 ## 3D Vision: When Flat Images Aren't Enough
 
@@ -119,14 +119,6 @@ A Tier 1 supplier needed 100% surface inspection on machined aluminum transmissi
 We designed a multi-camera inspection station with 8 Cognex In-Sight 3800 cameras, each with custom darkfield lighting optimized for its specific inspection zone. A Keyence LJ-X8080 laser profiler scanned the main gasket surface for flatness and scratch depth. Total inspection time: 4.2 seconds per part, synchronized with the [machine tending](/solutions/machine-tending/) robot that loads and unloads the CNC machining center.
 
 **Results:** 99.97% defect detection rate, zero false rejects on scratches over 50 microns, and complete elimination of the 3-person manual inspection team that previously checked every fifth part. Customer PPM complaints related to sealing surface defects dropped from 45 PPM to zero in the first year.
-
-### Medical Device Label Verification
-
-A medical device manufacturer required 100% verification of labels on pre-filled syringes: correct product name, correct dosage, correct lot code, correct expiration date, readable 2D data matrix code, and label placement within ±0.5 mm. FDA 21 CFR Part 11 compliance was mandatory for all inspection records.
-
-We integrated a Cognex VisionPro system with a 5-megapixel GigE camera and telecentric lens for distortion-free label imaging. OCR algorithms verify every text field against the batch recipe, and a calibrated measurement tool checks label position relative to a datum feature on the syringe barrel. Every image is archived with the inspection result in a 21 CFR Part 11-compliant database.
-
-**Results:** 100% label verification at 120 syringes per minute, 0.1% false reject rate (previously 2.5% with manual inspection), and full electronic batch records accepted by the FDA during a facility audit.
 
 ### Electronics Solder Joint Inspection
 
@@ -182,7 +174,7 @@ We use enclosed inspection stations with controlled lighting whenever possible t
 
 ### What data do vision systems output, and can we integrate with our MES?
 
-Vision systems output pass/fail results, measurement values, defect classifications, and inspection images. We integrate this data with MES and SCADA platforms via OPC UA, Ethernet/IP, PROFINET, MQTT, or direct database writes (SQL Server, Oracle, PostgreSQL). Every AMD vision system includes a web-based results dashboard for real-time monitoring and historical trending. For medical and automotive traceability requirements, we archive every inspection image linked to the part's serial number or lot code.
+Vision systems output pass/fail results, measurement values, defect classifications, and inspection images. We integrate this data with MES and SCADA platforms via OPC UA, Ethernet/IP, PROFINET, MQTT, or direct database writes (SQL Server, Oracle, PostgreSQL). Every AMD vision system includes a web-based results dashboard for real-time monitoring and historical trending. For automotive traceability requirements, we archive every inspection image linked to the part's serial number or lot code.
 
 ### Do we need special training to operate and maintain the system?
 

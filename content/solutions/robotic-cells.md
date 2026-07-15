@@ -136,16 +136,6 @@ The cell handles the complete workflow: pick raw blank from conveyor, load CNC l
 
 **Results:** Door-to-door cycle time reduced from 48 seconds to 31 seconds (35% improvement). Scrap from load errors dropped from 2.3% to 0.1%. The cell runs three shifts with a single operator monitoring all three machines. ROI payback was achieved in 14 months, driven primarily by the addition of third-shift capacity that the manual operation couldn't staff.
 
-## Real-World Application: Medical Device Packaging
-
-A medical device manufacturer needed to package sterile catheter assemblies into thermoformed trays with precise placement orientation. The product had 6 variants with different tray configurations, and FDA 21 CFR Part 11 traceability was mandatory. Their manual line required 4 operators per shift and couldn't maintain the placement consistency required for downstream automated lidding.
-
-We built a cell around an ABB IRB 1200-5/0.9 robot with a custom vacuum EOAT and Cognex VisionPro guidance. The system reads a 2D DataMatrix barcode on each catheter assembly, verifies the product variant against the active recipe, picks the assembly from a conveyor, and places it into the correct tray pocket with ±0.5 mm accuracy.
-
-A second Keyence CV-X camera verifies tray fill completeness before the tray advances to the lidding station. Every placement event—including the barcode data, robot position, vision match score, and timestamp—is recorded to a SQL database with 21 CFR Part 11-compliant audit trails.
-
-**Results:** Placement accuracy improved from ±3 mm (manual) to ±0.4 mm (robotic). Throughput increased to 32 trays per hour, a 280% improvement. Variant changeover takes 90 seconds (recipe selection on the HMI). The system eliminated all tray fill errors, which had been generating approximately $180,000/year in rework and scrap costs.
-
 ## Real-World Application: Heavy Equipment Weld Cell
 
 A [heavy equipment](/industries/heavy-equipment/) manufacturer was hand-welding structural brackets—large, heavy weldments with 40+ inches of continuous fillet welds per part. Welder availability was their bottleneck; they couldn't hire enough certified welders to meet demand.
@@ -190,7 +180,7 @@ Robot sizing depends on three factors: payload (the weight of your part plus the
 
 ### How long does it take to deploy a robotic cell?
 
-A straightforward single-robot cell—machine tending, for example—takes 12–16 weeks from purchase order to site acceptance. Multi-robot cells with custom tooling and vision integration typically take 16–24 weeks. Complex cells with validation requirements (medical, aerospace) may take 24–32 weeks. We provide detailed Gantt charts during the proposal phase.
+A straightforward single-robot cell—machine tending, for example—takes 12–16 weeks from purchase order to site acceptance. Multi-robot cells with custom tooling and vision integration typically take 16–24 weeks. Complex cells with validation requirements (aerospace) may take 24–32 weeks. We provide detailed Gantt charts during the proposal phase.
 
 ### Can I add more robots or stations to the cell later?
 

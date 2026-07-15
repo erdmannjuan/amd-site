@@ -44,9 +44,7 @@ We recently optimized a [screwdriving](/solutions/screwdriving/) station where a
 
 **Parallel Processing**
 
-One of the most overlooked optimization strategies is identifying operations that can happen simultaneously. In a multi-robot cell, are all robots waiting for one bottleneck station? Can vision inspection happen during robot transit? Can a servo press begin its return stroke while the next part is loading?
-
-We mapped the timing diagram for a [medical device](/industries/medical/) assembly cell and found that the Keyence CV-X420F vision inspection was happening sequentially after the part was seated, adding 0.9 seconds of pure wait time. By triggering inspection during the final 0.3 seconds of the robot's approach move — when the part was already in view but the gripper hadn't released — we recovered 0.6 seconds and improved inspection reliability because the part was still fixtured.
+One of the most overlooked optimization strategies is identifying operations that can happen simultaneously. In a multi-robot cell, are all robots waiting for one bottleneck station? Can vision inspection happen during robot transit? Can a servo press begin its return stroke while the next part is loading? Triggering an inspection during the final fraction of a second of a robot's approach move — when the part is already in view but the gripper hasn't released — is a classic example: it recovers wait time and often improves inspection reliability because the part is still fixtured.
 
 ### OEE Improvement
 

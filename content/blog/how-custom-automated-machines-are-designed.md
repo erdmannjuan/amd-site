@@ -349,7 +349,7 @@ Regular communication prevents misunderstandings:
 
 ### Experienced Partners
 
-Complex automation requires deep expertise. [AMD Machines](/about/) brings decades of experience across industries including [automotive](/industries/automotive/), [medical devices](/industries/medical/), and [aerospace](/industries/aerospace/).
+Complex automation requires deep expertise. [AMD Machines](/about/) brings decades of experience across industries including [automotive](/industries/automotive/) and [aerospace](/industries/aerospace/).
 
 ### Realistic Timelines
 

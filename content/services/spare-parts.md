@@ -140,8 +140,6 @@ Let's talk numbers. Here's what we see across our customer base:
 
 One [automotive Tier 1 supplier](/industries/automotive/) we work with calculated that a $47,000 annual spare parts investment prevented an estimated $380,000 in unplanned downtime over 12 months. That's an 8:1 return.
 
-A [medical device manufacturer](/industries/medical/) reduced their mean-time-to-repair from 4.2 days to 6 hours by maintaining a critical spares inventory we helped them define. Their line availability went from 91% to 98.5%.
-
 ## Frequently Asked Questions
 
 ### How do I determine which spare parts to stock for my automation equipment?

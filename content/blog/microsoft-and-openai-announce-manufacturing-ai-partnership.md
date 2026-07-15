@@ -49,7 +49,7 @@ Before rushing to adopt these tools, manufacturers should evaluate several facto
 
 **Consider the human element.** Operators who have run equipment for years possess institutional knowledge that no AI model can replicate overnight. The most effective implementations treat AI as a tool that augments operator expertise rather than replacing it. When an experienced operator sees a GPT-generated recommendation that doesn't match their intuition, that disagreement is valuable—it either reveals a gap in the model or uncovers a blind spot in current practice.
 
-**Validate before you trust.** In manufacturing, wrong answers have real consequences—scrapped parts, damaged equipment, or worse. Any AI system needs a validation period where its recommendations are checked against known outcomes before it's trusted for autonomous decision-making. This is especially true for quality-critical applications in [medical device manufacturing](/industries/medical-device-manufacturing/) or automotive safety components where regulatory requirements demand full traceability.
+**Validate before you trust.** In manufacturing, wrong answers have real consequences—scrapped parts, damaged equipment, or worse. Any AI system needs a validation period where its recommendations are checked against known outcomes before it's trusted for autonomous decision-making. This is especially true for quality-critical applications in medical device manufacturing or automotive safety components where regulatory requirements demand full traceability.
 
 ## Where This Fits in the Broader Automation Landscape
 

@@ -91,7 +91,7 @@ Rather than thinking about this as a binary choice, consider where your applicat
 
 **Your product is unique.** Unusual geometry, challenging materials, tight tolerances, or non-standard [assembly sequences](/solutions/assembly-systems/) make standard equipment a poor fit. Custom machinery designed around your product will outperform general-purpose alternatives.
 
-**Quality requirements are stringent.** Industries like [medical device manufacturing](/industries/medical/) and aerospace often require process controls, documentation, and repeatability that standard equipment cannot guarantee without extensive modification.
+**Quality requirements are stringent.** Industries like medical device manufacturing and aerospace often require process controls, documentation, and repeatability that standard equipment cannot guarantee without extensive modification.
 
 **Volume justifies optimization.** At high production volumes, small improvements in cycle time, yield, or scrap rate compound into significant financial impact. A 10% efficiency gain across millions of cycles generates substantial returns.
 

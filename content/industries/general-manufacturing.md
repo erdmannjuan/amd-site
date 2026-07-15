@@ -31,7 +31,7 @@ challenges:
     description: Most manufacturers run multiple product variants on the same line. Your automation has to handle model changeovers quickly without sacrificing cycle time or quality.
 ---
 
-Here's a truth that 30 years of building automation has taught us: the most interesting projects we've ever built didn't come from automotive, medical, or aerospace. They came from manufacturers who called us and said, "We don't think anyone can automate this." That's when things get fun.
+Here's a truth that 30 years of building automation has taught us: the most interesting projects we've ever built didn't come from automotive or aerospace. They came from manufacturers who called us and said, "We don't think anyone can automate this." That's when things get fun.
 
 AMD Machines has delivered over 2,500 custom automation systems, and a significant portion of those went to manufacturers who don't fit cleanly into a single industry category. Companies making hydraulic valves, HVAC components, plumbing fixtures, power tools, electric motors, sporting goods, furniture hardware, industrial fasteners — the list goes on. What they all have in common is a production challenge that off-the-shelf equipment can't solve and a competitor breathing down their neck.
 
@@ -39,7 +39,7 @@ If you make a physical product and you're running out of people, floor space, or
 
 ## Why General Manufacturing Is Actually the Hardest Automation
 
-Counterintuitive, right? You'd think [aerospace](/industries/aerospace/) with its AS9100 requirements or [medical devices](/industries/medical/) with FDA validation would be the toughest automation challenges. And they're demanding — but they're demanding in predictable ways. The standards tell you what to build, and the volumes are usually manageable.
+Counterintuitive, right? You'd think [aerospace](/industries/aerospace/) with its AS9100 requirements would be the toughest automation challenge. And it's demanding — but it's demanding in predictable ways. The standards tell you what to build, and the volumes are usually manageable.
 
 General manufacturing is different. There's no industry standard telling you how to automate a hydraulic manifold assembly. No reference architecture for building a lawn mower blade heat-treat cell. No off-the-shelf solution for inspecting cast-iron pump housings at 900 parts per hour. Every system is genuinely custom, designed from a blank sheet of paper based on the specific product, process, volume, and quality requirements of that particular customer.
 
