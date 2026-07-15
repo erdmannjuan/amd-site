@@ -48,7 +48,7 @@ Biometric monitors tracking heart rate, skin temperature, and motion patterns ca
 
 RTLS-enabled badges or wristbands track worker positions throughout a facility. The primary safety application is mustering during emergencies—knowing exactly who is in the building and where they were last located. Beyond emergency response, location data supports workflow analysis, identifying bottlenecks where workers cluster at shared resources or spend excessive time traveling between stations.
 
-When integrated with [automated systems and robotic cells](/solutions/robotic-automation/), RTLS enables dynamic safety zones that adjust based on worker proximity rather than relying solely on fixed light curtains and interlocked gates.
+When integrated with [automated systems and robotic cells](/solutions/robotic-cells/), RTLS enables dynamic safety zones that adjust based on worker proximity rather than relying solely on fixed light curtains and interlocked gates.
 
 ## Where Wearables Deliver Real Value
 
@@ -58,7 +58,7 @@ The technology only matters if it solves an actual problem. Based on deployment 
 
 For operations with high mix and moderate to high complexity, AR-guided work instructions reduce training time for new operators and cut error rates for experienced ones. The benefit scales with product variety. If a cell runs the same part all day, a printed work instruction on the wall is fine. If that same cell runs 15 different configurations per shift, having the correct instructions appear automatically based on scanned work orders eliminates a meaningful source of defects.
 
-This connects directly to broader [quality control and vision inspection strategies](/solutions/vision-inspection-systems/) that manufacturers use to catch defects before they reach customers.
+This connects directly to broader [quality control and vision inspection strategies](/solutions/machine-vision/) that manufacturers use to catch defects before they reach customers.
 
 ### Remote Expert Assistance
 

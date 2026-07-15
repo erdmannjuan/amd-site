@@ -1,5 +1,5 @@
 ---
-title: Robot Vision Systems Integration Guide | 2D/3D Vision &
+title: 'Robot Vision Integration: 2D/3D Guide'
 description: Guide to integrating vision systems with robots. 2D vs 3D vision, bin picking setup, and quality inspection applications.
 keywords: robot vision system integration, machine vision robotics, 3D bin picking
   robot, vision guided robot, 2D vs 3D robot vision, automated visual inspection

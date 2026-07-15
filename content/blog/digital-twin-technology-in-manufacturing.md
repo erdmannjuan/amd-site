@@ -35,7 +35,7 @@ One of the highest-value applications of digital twin technology in automation i
 
 Virtual commissioning flips this sequence. Engineers build a digital twin of the entire system, connect the actual PLC code to the virtual model, and run the system through its paces before any physical equipment is installed. Robot paths get validated, cycle times get verified, and interference issues between mechanisms get caught in simulation rather than during a frantic weekend on the plant floor.
 
-We have seen virtual commissioning reduce on-site installation time significantly on complex [assembly systems](/solutions/assembly-systems/). The PLC code arrives at the job site already tested against a realistic model of the mechanical and electrical behavior. Operators can even begin training on the virtual system before the physical equipment ships.
+We have seen virtual commissioning reduce on-site installation time significantly on complex [assembly systems](/solutions/assembly/). The PLC code arrives at the job site already tested against a realistic model of the mechanical and electrical behavior. Operators can even begin training on the virtual system before the physical equipment ships.
 
 ## Predictive Maintenance Through Digital Twins
 

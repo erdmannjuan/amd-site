@@ -51,7 +51,7 @@ Several application areas have moved beyond pilot phase into genuine production 
 
 ### Hands-Free Quality Inspection
 
-Inspectors performing visual checks or using handheld gauges can dictate measurements, pass/fail decisions, and observations directly into the quality management system without setting down their tools. This eliminates the clipboard-then-data-entry cycle that slows throughput and introduces transcription errors. For structured inspection checklists and numeric values, voice-to-text accuracy in constrained vocabulary systems now exceeds 98 percent. Manufacturers running [vision-based inspection systems](/solutions/vision-inspection-systems/) alongside manual checks find that voice logging fills the gap for attributes that cameras cannot assess—surface feel, odor, or subjective cosmetic judgments.
+Inspectors performing visual checks or using handheld gauges can dictate measurements, pass/fail decisions, and observations directly into the quality management system without setting down their tools. This eliminates the clipboard-then-data-entry cycle that slows throughput and introduces transcription errors. For structured inspection checklists and numeric values, voice-to-text accuracy in constrained vocabulary systems now exceeds 98 percent. Manufacturers running [vision-based inspection systems](/solutions/machine-vision/) alongside manual checks find that voice logging fills the gap for attributes that cameras cannot assess—surface feel, odor, or subjective cosmetic judgments.
 
 ### Robotic Cell Supervision
 
@@ -63,7 +63,7 @@ Technicians performing preventive or corrective maintenance can create, update, 
 
 ### Guided Assembly Operations
 
-For complex manual or semi-automated [assembly processes](/solutions/assembly-systems/), voice-guided work instructions deliver step-by-step guidance without requiring the operator to look away from the work piece. The system announces the next step, the operator confirms completion verbally, and the system flags errors or sequence violations. This is particularly valuable for high-mix operations where operators handle dozens of product variants and memorizing every sequence is impractical.
+For complex manual or semi-automated [assembly processes](/solutions/assembly/), voice-guided work instructions deliver step-by-step guidance without requiring the operator to look away from the work piece. The system announces the next step, the operator confirms completion verbally, and the system flags errors or sequence violations. This is particularly valuable for high-mix operations where operators handle dozens of product variants and memorizing every sequence is impractical.
 
 ## System Architecture and Integration
 

@@ -88,9 +88,8 @@ Every AMD Machines project follows a structured process designed to minimize ris
 Our Yaskawa Motoman integration capabilities serve manufacturers across multiple industries:
 
 - [Automotive](/industries/automotive/) — body, powertrain, and interior component assembly
-- [Medical Devices](/industries/medical-devices/) — precision assembly and packaging under strict quality requirements
 - [Electronics](/industries/electronics/) — high-speed assembly and testing of electronic components
-- [Consumer Products](/industries/consumer-products/) — flexible automation for consumer goods manufacturing
+- [Consumer Products](/industries/consumer/) — flexible automation for consumer goods manufacturing
 - [Heavy Equipment](/industries/heavy-equipment/) — welding and assembly of large structural components
 - [Food & Beverage](/industries/food-beverage/) — hygienic handling, packaging, and palletizing
 

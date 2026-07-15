@@ -16,7 +16,7 @@ url: /blog/manufacturing-execution-systems-mes-fundamentals/
 
 A Manufacturing Execution System (MES) is the software layer that sits between enterprise resource planning (ERP) and the physical equipment on a production floor. ERP systems handle the big picture—purchase orders, material planning, financials—but they were never designed to manage what happens cycle by cycle at each workstation. That is where MES steps in.
 
-MES tracks work orders as they move through each process step. It captures timestamps, operator IDs, part serial numbers, and process parameters at every station. When a part completes a press operation, MES logs the force and displacement data. When an operator scans a component at an [assembly station](/solutions/automated-assembly-systems/), MES verifies it matches the bill of materials. This real-time visibility is what separates a data-driven production operation from one running on paper travelers and tribal knowledge.
+MES tracks work orders as they move through each process step. It captures timestamps, operator IDs, part serial numbers, and process parameters at every station. When a part completes a press operation, MES logs the force and displacement data. When an operator scans a component at an [assembly station](/solutions/assembly/), MES verifies it matches the bill of materials. This real-time visibility is what separates a data-driven production operation from one running on paper travelers and tribal knowledge.
 
 The ISA-95 standard (sometimes called ANSI/ISA-95) defines the functional model most MES platforms follow. It breaks manufacturing operations into eleven core functions: production scheduling, dispatching, execution management, data collection, performance analysis, tracking and genealogy, quality management, process management, maintenance management, labor management, and material management. Not every MES deployment addresses all eleven from day one, but the framework provides a useful roadmap.
 
@@ -34,7 +34,7 @@ This enforcement capability is particularly valuable in regulated industries. Au
 
 Every part that moves through an MES-controlled line gets a digital birth record. The system captures which raw materials went into the assembly, which machines processed it, which operators handled it, and what the measured parameters were at each step. If a field failure occurs months or years later, a manufacturer can trace backward from the serial number to identify the exact production conditions—and determine whether other parts from the same batch might be affected.
 
-This genealogy capability is not optional for most [automotive and heavy equipment](/industries/automotive-manufacturing/) manufacturers. It is a contractual requirement from OEM customers who need to manage recall scope efficiently.
+This genealogy capability is not optional for most [automotive and heavy equipment](/industries/automotive/) manufacturers. It is a contractual requirement from OEM customers who need to manage recall scope efficiently.
 
 ### Quality Management
 
@@ -54,7 +54,7 @@ MES calculates Overall Equipment Effectiveness (OEE) automatically by pulling av
 
 MES becomes significantly more powerful when it connects directly to automated equipment. A standalone MES that requires manual data entry at each station still delivers value through process enforcement and traceability, but it introduces latency and human error into the data stream.
 
-When MES integrates with PLCs, robots, and [vision inspection systems](/solutions/vision-inspection-systems/), data flows automatically. The press controller sends force-displacement curves directly to MES. The vision system sends pass/fail results along with captured images. The robot controller reports cycle times and fault codes without any operator involvement. This tight integration means the production record is both more complete and more accurate.
+When MES integrates with PLCs, robots, and [vision inspection systems](/solutions/machine-vision/), data flows automatically. The press controller sends force-displacement curves directly to MES. The vision system sends pass/fail results along with captured images. The robot controller reports cycle times and fault codes without any operator involvement. This tight integration means the production record is both more complete and more accurate.
 
 For manufacturers building new automated lines, designing MES connectivity into the controls architecture from the start is far more cost-effective than retrofitting it later. The PLC program should include handshaking routines that exchange part identification, process data, and status signals with MES at each station. Database tags and communication protocols (OPC-UA has become the de facto standard) should be defined during the controls design phase, not after commissioning.
 

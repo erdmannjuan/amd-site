@@ -25,7 +25,7 @@ Edge computing flips the model. Instead of routing all data through a remote ser
 
 The term "edge computing" can mean different things depending on the context. In manufacturing, it typically involves one or more of the following:
 
-**Machine-level processing.** An industrial PC or programmable controller attached directly to a [robotic welding cell](/solutions/robotic-welding/) or assembly station runs local algorithms — vision inspection, force monitoring, statistical process control — without waiting for a round trip to a central server. Decisions happen in single-digit milliseconds.
+**Machine-level processing.** An industrial PC or programmable controller attached directly to a [robotic welding cell](/solutions/welding/) or assembly station runs local algorithms — vision inspection, force monitoring, statistical process control — without waiting for a round trip to a central server. Decisions happen in single-digit milliseconds.
 
 **Line-level aggregation.** A gateway device collects data from multiple machines on a line, performs initial filtering and analysis, and forwards summarized results upstream. This reduces network traffic significantly while still providing real-time visibility into line performance.
 
@@ -35,7 +35,7 @@ Each layer serves a purpose. The key is matching the processing location to the 
 
 ## Latency: The Core Advantage
 
-Consider a [precision assembly system](/solutions/precision-press-systems/) pressing a bearing into a housing. The press controller monitors force and displacement in real time, comparing the actual curve against an acceptance window. If the force exceeds the upper limit, the system must stop the press immediately — not 50 milliseconds later, not after a server round trip.
+Consider a [precision assembly system](/solutions/servo-pressing/) pressing a bearing into a housing. The press controller monitors force and displacement in real time, comparing the actual curve against an acceptance window. If the force exceeds the upper limit, the system must stop the press immediately — not 50 milliseconds later, not after a server round trip.
 
 This kind of real-time control has always lived at the machine level through PLCs and dedicated controllers. What edge computing adds is the ability to layer higher-level analytics on top without sacrificing that response time.
 
@@ -70,7 +70,7 @@ This architecture also reduces the attack surface. An edge device that communica
 
 ## Where Edge Computing Intersects With Automation
 
-For companies building or upgrading [automated assembly lines](/solutions/automated-assembly-lines/), edge computing is becoming a standard part of the architecture rather than an add-on.
+For companies building or upgrading [automated assembly lines](/solutions/assembly/), edge computing is becoming a standard part of the architecture rather than an add-on.
 
 **Quality systems.** Edge-based vision inspection and sensor monitoring provide real-time quality decisions at every station. Data from across the line feeds into local analytics that identify trends — a gradual shift in a dimension, increasing variability in a torque joint — before they trigger rejects.
 

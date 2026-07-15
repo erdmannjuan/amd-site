@@ -24,7 +24,7 @@ The AI-driven planning systems behind the deployment use machine learning models
 
 Deploying 750,000 robots is fundamentally a systems integration problem. Each fulfillment center requires custom floor layouts, charging infrastructure, network architecture capable of handling thousands of simultaneous connections, and safety systems that allow robots and human workers to operate in overlapping zones.
 
-Amazon's approach relies heavily on standardized cell-based architecture. Rather than designing each facility from scratch, they deploy modular work cells that can be configured and reconfigured based on throughput requirements. This is the same principle that drives effective [assembly system design](/solutions/automated-assembly-systems/) in manufacturing — building flexibility into the physical architecture so that changes in product mix or volume don't require a facility redesign.
+Amazon's approach relies heavily on standardized cell-based architecture. Rather than designing each facility from scratch, they deploy modular work cells that can be configured and reconfigured based on throughput requirements. This is the same principle that drives effective [assembly system design](/solutions/assembly/) in manufacturing — building flexibility into the physical architecture so that changes in product mix or volume don't require a facility redesign.
 
 The safety engineering alone is substantial. Amazon's facilities use a layered approach combining LiDAR-based proximity sensing, camera systems for zone monitoring, physical barriers where robot and human paths must be separated, and software-enforced speed limits in collaborative zones. Each layer provides redundancy, and the system degrades gracefully when individual sensors fail rather than shutting down entire sections of the facility.
 
@@ -36,7 +36,7 @@ The technologies proven in Amazon's fulfillment network are directly relevant to
 
 That said, several specific capabilities from Amazon's deployment are worth watching closely:
 
-**AMR fleet coordination.** The ability to manage large fleets of mobile robots through centralized software is directly applicable to material transport on production floors. Manufacturers running multiple [robotic work cells](/solutions/robotic-work-cells/) can use similar coordination layers to move work-in-process between stations without dedicated conveyance.
+**AMR fleet coordination.** The ability to manage large fleets of mobile robots through centralized software is directly applicable to material transport on production floors. Manufacturers running multiple [robotic work cells](/solutions/robotic-cells/) can use similar coordination layers to move work-in-process between stations without dedicated conveyance.
 
 **Vision-guided picking.** Amazon's Sparrow system uses computer vision to identify and grasp items from unstructured bins — a task that requires real-time object recognition, grasp planning, and force control. These same capabilities are essential for automated assembly operations where parts arrive in bulk or semi-organized containers.
 
@@ -56,7 +56,7 @@ Process validation is another critical difference. In regulated industries like 
 
 Amazon's 750,000-robot deployment demonstrates that large-scale robotic coordination is a solved problem at the infrastructure level. The fleet management software, safety systems, and maintenance frameworks that make it possible are mature and proven. The question for manufacturers is not whether these technologies work, but how to adapt them to the tighter tolerances, regulatory requirements, and process complexity inherent in production environments.
 
-Manufacturers evaluating their automation strategy should focus on three areas. First, assess whether your material handling — the movement of parts, components, and assemblies between process steps — could benefit from AMR-based transport rather than fixed conveyance. Second, evaluate your [vision and inspection systems](/solutions/vision-inspection-systems/) to determine whether advances in AI-driven object recognition could improve your picking, orientation, or quality verification operations. Third, consider whether your maintenance practices could benefit from the kind of predictive monitoring that fleet-scale operations demand.
+Manufacturers evaluating their automation strategy should focus on three areas. First, assess whether your material handling — the movement of parts, components, and assemblies between process steps — could benefit from AMR-based transport rather than fixed conveyance. Second, evaluate your [vision and inspection systems](/solutions/machine-vision/) to determine whether advances in AI-driven object recognition could improve your picking, orientation, or quality verification operations. Third, consider whether your maintenance practices could benefit from the kind of predictive monitoring that fleet-scale operations demand.
 
 The technologies are available. The engineering challenge lies in applying them within the constraints that real manufacturing imposes — and that is exactly the kind of problem that custom automation integrators are built to solve.
 

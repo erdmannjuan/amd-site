@@ -25,7 +25,7 @@ Analyst reports from Markets and Markets, Grand View Research, and Fortune Busin
 
 AI-powered visual inspection represents one of the fastest-growing segments, projected to account for roughly 25 percent of manufacturing AI spending by 2030. The technology has matured to the point where deep learning models can detect defects that traditional rule-based vision systems miss entirely. Surface anomalies, subtle dimensional variations, and cosmetic defects that once required human inspectors are now caught at line speed.
 
-This is not theoretical. Manufacturers deploying [AI-driven quality inspection systems](/solutions/ai-vision-quality-inspection/) are reporting defect escape rates dropping by 60 to 90 percent compared to manual inspection, with throughput improvements that eliminate the bottleneck inspection stations often create.
+This is not theoretical. Manufacturers deploying [AI-driven quality inspection systems](/solutions/machine-vision/) are reporting defect escape rates dropping by 60 to 90 percent compared to manual inspection, with throughput improvements that eliminate the bottleneck inspection stations often create.
 
 ### Predictive Maintenance
 
@@ -57,7 +57,7 @@ The $150 billion projection is not being driven by curiosity or competitive pres
 
 For manufacturers evaluating where to start with AI investment, the data points toward several high-return starting points.
 
-**Start with quality.** AI vision inspection typically offers the clearest and fastest return on investment. Defect reduction directly impacts scrap costs, rework labor, warranty claims, and customer satisfaction. If you are still relying on manual inspection for critical quality checks, this should be at the top of your evaluation list. Explore our [assembly systems](/solutions/assembly-systems/) to see how integrated quality checks fit within automated production lines.
+**Start with quality.** AI vision inspection typically offers the clearest and fastest return on investment. Defect reduction directly impacts scrap costs, rework labor, warranty claims, and customer satisfaction. If you are still relying on manual inspection for critical quality checks, this should be at the top of your evaluation list. Explore our [assembly systems](/solutions/assembly/) to see how integrated quality checks fit within automated production lines.
 
 **Address your biggest maintenance pain points.** Rather than deploying predictive maintenance across an entire facility, identify the three to five machines where unplanned downtime costs the most. Prove the concept on high-value assets before scaling.
 

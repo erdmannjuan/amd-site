@@ -37,7 +37,7 @@ Price is easy to compare. Technical capability is harder—and far more importan
 
 ### Relevant Experience
 
-Ask for case studies or references from projects similar to yours. A vendor who has built fifty palletizing cells may not be the right choice for a precision [assembly system](/solutions/automated-assembly-systems/) requiring micron-level accuracy. Relevant experience means they've solved problems like yours before and know where the pitfalls are.
+Ask for case studies or references from projects similar to yours. A vendor who has built fifty palletizing cells may not be the right choice for a precision [assembly system](/solutions/assembly/) requiring micron-level accuracy. Relevant experience means they've solved problems like yours before and know where the pitfalls are.
 
 ### Engineering Depth
 

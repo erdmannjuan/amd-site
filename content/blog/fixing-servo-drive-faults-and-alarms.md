@@ -17,7 +17,7 @@ url: /blog/fixing-servo-drive-faults-and-alarms/
 
 A servo drive fault at 2 AM on a Tuesday means one thing: your production line is down and someone is getting a phone call. Servo drives are the backbone of precision motion in automated systems — they close the loop between the controller's commanded position and the motor's actual position thousands of times per second. When a fault trips, that loop breaks, and so does your throughput.
 
-Over three decades of building and supporting [custom automation systems](/solutions/custom-automation-systems/), we have seen every servo alarm code imaginable. The good news is that most faults fall into a handful of categories, and a systematic approach to diagnosis can get your system back online faster than trial-and-error ever will.
+Over three decades of building and supporting [custom automation systems](/solutions/custom-automation/), we have seen every servo alarm code imaginable. The good news is that most faults fall into a handful of categories, and a systematic approach to diagnosis can get your system back online faster than trial-and-error ever will.
 
 ## Understanding How Servo Drives Work
 

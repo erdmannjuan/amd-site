@@ -20,7 +20,7 @@ Every press-fit bearing seat, every threaded fastener, and every snap-fit connec
 
 Force and torque measurement is not simply a quality gate at the end of the line. When integrated directly into the assembly process, it becomes a closed-loop control mechanism that catches problems at the moment they occur — not hours later during final inspection or, worse, after the product reaches a customer.
 
-At AMD Machines, we have designed and built hundreds of [assembly systems](/solutions/assembly-systems/) that rely on force-displacement and torque-angle signatures to verify joint integrity. The principles are straightforward, but getting reliable results in a production environment requires careful attention to sensor selection, mechanical integration, signal conditioning, and data management.
+At AMD Machines, we have designed and built hundreds of [assembly systems](/solutions/assembly/) that rely on force-displacement and torque-angle signatures to verify joint integrity. The principles are straightforward, but getting reliable results in a production environment requires careful attention to sensor selection, mechanical integration, signal conditioning, and data management.
 
 ## Force Measurement Fundamentals
 

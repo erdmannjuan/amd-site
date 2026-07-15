@@ -21,7 +21,7 @@ The root causes are rarely mysterious. They typically fall into a handful of cat
 
 ## Understanding Interference Zones
 
-An interference zone is any volume of space where two or more moving elements can physically occupy the same location at different times during a cycle. In a single-robot cell, interference typically involves the robot arm interacting with fixtures, part feeders, or conveyor mechanisms. In multi-robot cells — which are increasingly common in [assembly systems](/solutions/assembly-systems/) — the problem compounds because you now have two or more robots whose work envelopes overlap.
+An interference zone is any volume of space where two or more moving elements can physically occupy the same location at different times during a cycle. In a single-robot cell, interference typically involves the robot arm interacting with fixtures, part feeders, or conveyor mechanisms. In multi-robot cells — which are increasingly common in [assembly systems](/solutions/assembly/) — the problem compounds because you now have two or more robots whose work envelopes overlap.
 
 The first step in solving collision problems is mapping every interference zone in the cell. This means going beyond the nominal programmed paths and accounting for:
 
@@ -89,7 +89,7 @@ If you are experiencing intermittent collisions in an existing cell, systematic 
 
 **Inspect mechanical components.** Worn gearboxes, loose mounting bolts, or damaged cable carriers can cause the robot to deviate from its programmed path. This type of drift is gradual and often goes unnoticed until a collision occurs.
 
-**Verify part consistency.** If incoming parts vary in size, shape, or orientation beyond what the cell was designed to accommodate, the robot may collide with out-of-spec components. This is particularly common in applications that lack upstream part inspection or [vision and quality control](/solutions/vision-quality-control/) systems.
+**Verify part consistency.** If incoming parts vary in size, shape, or orientation beyond what the cell was designed to accommodate, the robot may collide with out-of-spec components. This is particularly common in applications that lack upstream part inspection or [vision and quality control](/solutions/machine-vision/) systems.
 
 **Audit recent program changes.** Many collision events trace back to a recent modification — a new point taught, a speed override changed, or an interlock signal inadvertently disabled. Version control for robot programs is just as important as it is for PLC code.
 
@@ -105,4 +105,4 @@ Investing in simulation upfront pays dividends not only in avoiding collisions d
 
 Collision avoidance is not a single feature — it is a design philosophy that spans path planning, control architecture, sensor integration, and operational procedures. The most reliable systems layer multiple safeguards: well-planned paths that minimize interference, PLC-managed zone interlocking, sensor-based detection as a backup, and clear recovery procedures that prevent secondary collisions during fault handling.
 
-At AMD Machines, our engineers design [robotic systems](/solutions/robotic-systems/) with these principles built in from the concept phase. With over 2,500 machines delivered across decades of integration work, we have encountered — and solved — virtually every collision scenario that multi-robot workcells can produce. [Contact us](/contact/) to discuss how we can help you eliminate collision and interference problems in your automation systems.
+At AMD Machines, our engineers design [robotic systems](/solutions/robotic-cells/) with these principles built in from the concept phase. With over 2,500 machines delivered across decades of integration work, we have encountered — and solved — virtually every collision scenario that multi-robot workcells can produce. [Contact us](/contact/) to discuss how we can help you eliminate collision and interference problems in your automation systems.

@@ -40,7 +40,7 @@ While Amazon developed this system for fulfillment center applications, the unde
 
 **Quality and traceability.** Because Amazon's system captures detailed sensor data on every pick, it creates a de facto inspection record. Manufacturers in regulated industries could leverage similar technology to document part handling and detect anomalies — a chipped edge, a missing feature, a wrong part in the bin — before those issues propagate downstream.
 
-**Integration with existing automation.** The system is designed around standard industrial robot platforms and communication protocols, which lowers the barrier to integrating bin picking into existing [robotic automation cells](/solutions/robotic-automation/). This matters for manufacturers who have already invested in robot infrastructure and want to extend capability without rearchitecting their lines.
+**Integration with existing automation.** The system is designed around standard industrial robot platforms and communication protocols, which lowers the barrier to integrating bin picking into existing [robotic automation cells](/solutions/robotic-cells/). This matters for manufacturers who have already invested in robot infrastructure and want to extend capability without rearchitecting their lines.
 
 ## What Manufacturers Should Evaluate
 
@@ -52,7 +52,7 @@ Before treating this announcement as a green light for bin picking projects, it 
 
 **Total cost of ownership.** The vision hardware, AI software licensing, integration engineering, and ongoing support costs for a bin picking system can be substantial. Compare the fully loaded cost against alternatives like bowl feeders, structured part presentation, or manual loading to make sure the ROI justifies the investment for your specific volumes and part mix.
 
-**Upstream process changes.** Sometimes the most cost-effective solution to a bin picking problem is eliminating the bin. If parts can be oriented during the upstream process — coming off a molding machine on a conveyor rather than dumped into a tote — you may avoid the complexity of bin picking entirely. Good [automation system design](/solutions/assembly-systems/) considers the full material flow, not just individual stations in isolation.
+**Upstream process changes.** Sometimes the most cost-effective solution to a bin picking problem is eliminating the bin. If parts can be oriented during the upstream process — coming off a molding machine on a conveyor rather than dumped into a tote — you may avoid the complexity of bin picking entirely. Good [automation system design](/solutions/assembly/) considers the full material flow, not just individual stations in isolation.
 
 ## The Broader Trend
 
@@ -62,7 +62,7 @@ For manufacturers, this is a net positive. Competition among well-funded technol
 
 ## AMD Machines Perspective
 
-At AMD Machines, we have integrated bin picking and [machine vision](/solutions/vision-quality/) systems into manufacturing lines for customers across automotive, medical, electronics, and consumer products. Our experience is that the vision and AI components are only part of the equation — gripper design, cell layout, part presentation strategy, and integration with upstream and downstream processes determine whether a bin picking application actually delivers value on the factory floor.
+At AMD Machines, we have integrated bin picking and [machine vision](/solutions/machine-vision/) systems into manufacturing lines for customers across automotive, medical, electronics, and consumer products. Our experience is that the vision and AI components are only part of the equation — gripper design, cell layout, part presentation strategy, and integration with upstream and downstream processes determine whether a bin picking application actually delivers value on the factory floor.
 
 If you are evaluating bin picking for your operation, we can help you assess feasibility, benchmark cycle times with your actual parts, and design a system that fits your production requirements.
 

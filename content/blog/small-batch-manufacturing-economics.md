@@ -38,7 +38,7 @@ The key to making automation economical at low volumes is minimizing the cost of
 
 ### Quick-Change Tooling and Fixtures
 
-Modular fixturing systems that use locating pins, quick-release clamps, and standardized mounting plates can reduce mechanical changeover from hours to minutes. The upfront cost of building a family of fixtures is higher than building one dedicated fixture, but the math works when you're running 30 different part numbers instead of one. Our experience with [assembly automation systems](/solutions/automated-assembly-systems/) has shown that investing in well-designed quick-change tooling typically pays back within the first year of production.
+Modular fixturing systems that use locating pins, quick-release clamps, and standardized mounting plates can reduce mechanical changeover from hours to minutes. The upfront cost of building a family of fixtures is higher than building one dedicated fixture, but the math works when you're running 30 different part numbers instead of one. Our experience with [assembly automation systems](/solutions/assembly/) has shown that investing in well-designed quick-change tooling typically pays back within the first year of production.
 
 ### Recipe-Based Control Systems
 
@@ -46,7 +46,7 @@ Modern PLCs and robot controllers support recipe management, where process param
 
 ### Vision System Flexibility
 
-Fixed gauging and hard-tooled inspection stations are volume-dependent investments. A vision system with programmable inspection routines can check different features on different parts without any physical changeover. The camera doesn't care whether it's measuring a gap on Part A or verifying a label on Part B — it just loads the next inspection recipe. This flexibility makes [vision and quality control](/solutions/vision-quality-control/) one of the highest-ROI investments in small batch environments.
+Fixed gauging and hard-tooled inspection stations are volume-dependent investments. A vision system with programmable inspection routines can check different features on different parts without any physical changeover. The camera doesn't care whether it's measuring a gap on Part A or verifying a label on Part B — it just loads the next inspection recipe. This flexibility makes [vision and quality control](/solutions/machine-vision/) one of the highest-ROI investments in small batch environments.
 
 ### Collaborative and Flexible Robotics
 
@@ -79,7 +79,7 @@ Not every small batch operation is a good automation candidate. The strongest ca
 
 The most successful small batch automation programs don't try to automate everything at once. They start with the operation that has the clearest economic case — usually the process with the highest changeover cost or the worst quality variation — and build outward from there.
 
-A phased approach also reduces risk. You validate the flexible automation concept on a contained scope before committing to a plant-wide rollout. Lessons learned from the first cell inform the design of the next. For manufacturers evaluating where to begin, a structured [performance optimization](/solutions/performance-optimization/) assessment can identify the operations where automation will deliver the fastest payback.
+A phased approach also reduces risk. You validate the flexible automation concept on a contained scope before committing to a plant-wide rollout. Lessons learned from the first cell inform the design of the next. For manufacturers evaluating where to begin, a structured [performance optimization](/services/process-optimization/) assessment can identify the operations where automation will deliver the fastest payback.
 
 ## The Bottom Line
 

@@ -46,7 +46,7 @@ The trade-off is that optical methods can be sensitive to surface reflectivity, 
 
 ### Vision-Based Surface Inspection
 
-For cosmetic surface defects—scratches, tool marks, discoloration, and similar issues—[vision systems](/solutions/vision-inspection/) offer high-speed, full-surface coverage that profilometry cannot match. A properly configured camera system with appropriate lighting can inspect an entire surface in a single image capture, identifying defects that a profilometer traversing a single line would miss entirely.
+For cosmetic surface defects—scratches, tool marks, discoloration, and similar issues—[vision systems](/solutions/machine-vision/) offer high-speed, full-surface coverage that profilometry cannot match. A properly configured camera system with appropriate lighting can inspect an entire surface in a single image capture, identifying defects that a profilometer traversing a single line would miss entirely.
 
 Vision-based inspection and profilometry serve complementary roles. Profilometry provides quantitative roughness measurements traceable to national standards. Vision inspection provides qualitative assessment of the entire surface area. Many production systems combine both methods, using vision for 100% screening and profilometry for quantitative verification on a statistical sample or on parts flagged by the vision system.
 

@@ -13,7 +13,7 @@ url: /blog/hmi-design-best-practices-for-operators/
 
 ## Why HMI Design Matters More Than Most Engineers Think
 
-A well-designed HMI is the difference between an operator who catches a developing problem in seconds and one who stares at a screen full of flashing colors while production grinds to a halt. In our experience building [custom automation systems](/solutions/custom-automation-engineering/), the operator interface is frequently the last thing that gets attention during a project—and it shows. Poorly designed screens lead to slower response times, higher error rates, and frustrated operators who resort to workarounds that undermine the system you spent months engineering.
+A well-designed HMI is the difference between an operator who catches a developing problem in seconds and one who stares at a screen full of flashing colors while production grinds to a halt. In our experience building [custom automation systems](/solutions/custom-automation/), the operator interface is frequently the last thing that gets attention during a project—and it shows. Poorly designed screens lead to slower response times, higher error rates, and frustrated operators who resort to workarounds that undermine the system you spent months engineering.
 
 The ISA-101 standard provides a formal framework for HMI design, but you do not need to implement a full HMI philosophy document to make meaningful improvements. What follows are practical guidelines drawn from decades of building and commissioning automation equipment across industries ranging from automotive to medical device manufacturing.
 
@@ -93,7 +93,7 @@ Auto-logout timers prevent screens from remaining in elevated access modes when 
 
 ## Responsiveness and Performance
 
-An HMI that lags behind the process is worse than no HMI at all. Screen refresh rates should be fast enough that operators perceive the display as real-time. For most process applications, a one-second update rate is adequate. For high-speed discrete applications like [automated assembly systems](/solutions/assembly-systems/), sub-second updates on critical indicators may be necessary.
+An HMI that lags behind the process is worse than no HMI at all. Screen refresh rates should be fast enough that operators perceive the display as real-time. For most process applications, a one-second update rate is adequate. For high-speed discrete applications like [automated assembly systems](/solutions/assembly/), sub-second updates on critical indicators may be necessary.
 
 Test your HMI performance under realistic conditions: full alarm loads, multiple screens open, historian logging active, and the network carrying normal traffic. Performance problems that appear only under load are the most damaging because they occur precisely when the operator needs the system most.
 

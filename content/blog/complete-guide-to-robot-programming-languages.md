@@ -13,7 +13,7 @@ url: /blog/complete-guide-to-robot-programming-languages/
 
 ## Why Robot Programming Languages Matter
 
-Every industrial robot on a production floor runs code. Whether that code was written line by line on a teach pendant or generated through offline simulation software, the programming language behind it determines how flexible, maintainable, and capable the system will be over its lifetime. Choosing the right programming approach is not just a technical decision—it directly affects cycle time, changeover speed, and the long-term cost of ownership for any [robotic assembly or welding cell](/solutions/robotic-automation/).
+Every industrial robot on a production floor runs code. Whether that code was written line by line on a teach pendant or generated through offline simulation software, the programming language behind it determines how flexible, maintainable, and capable the system will be over its lifetime. Choosing the right programming approach is not just a technical decision—it directly affects cycle time, changeover speed, and the long-term cost of ownership for any [robotic assembly or welding cell](/solutions/robotic-cells/).
 
 Unlike general-purpose software development, robot programming operates under hard real-time constraints. A missed motion command or timing error does not produce a bug report—it produces a collision, a scrapped part, or a safety incident. Understanding the landscape of robot programming languages helps engineers and integrators make informed decisions when specifying systems.
 
@@ -50,7 +50,7 @@ A growing segment of robotic applications uses high-level languages like Python,
 
 ROS and ROS 2 are widely used in research and in applications involving mobile robots, perception, and path planning. However, their adoption in traditional industrial automation has been slower due to concerns about real-time performance, long-term support, and the gap between research-grade and production-grade reliability. That said, ROS 2's improved real-time capabilities and the growing ecosystem of industrial-grade packages are narrowing this gap.
 
-For [vision-guided robotics](/solutions/vision-inspection-systems/) and adaptive process control, high-level languages offer advantages that pendant programming cannot match. Python libraries for image processing, machine learning inference, and statistical analysis allow engineers to build sophisticated perception pipelines that feed directly into robot motion commands.
+For [vision-guided robotics](/solutions/machine-vision/) and adaptive process control, high-level languages offer advantages that pendant programming cannot match. Python libraries for image processing, machine learning inference, and statistical analysis allow engineers to build sophisticated perception pipelines that feed directly into robot motion commands.
 
 ## Choosing the Right Approach
 
@@ -80,6 +80,6 @@ After integrating thousands of robotic systems across automotive, medical device
 
 ## How AMD Machines Handles Robot Programming
 
-At AMD Machines, our controls engineers program across all major robot platforms. We select the programming approach based on the specific requirements of each application—pendant teaching for straightforward operations, offline programming for complex multi-robot cells, and high-level integration for [vision-guided and adaptive systems](/solutions/controls-engineering/). Every program we deliver includes full documentation, operator training, and ongoing support to ensure the system remains productive for years after commissioning.
+At AMD Machines, our controls engineers program across all major robot platforms. We select the programming approach based on the specific requirements of each application—pendant teaching for straightforward operations, offline programming for complex multi-robot cells, and high-level integration for [vision-guided and adaptive systems](/solutions/custom-automation/). Every program we deliver includes full documentation, operator training, and ongoing support to ensure the system remains productive for years after commissioning.
 
 [Contact our engineering team](/contact/) to discuss the programming approach that fits your application.

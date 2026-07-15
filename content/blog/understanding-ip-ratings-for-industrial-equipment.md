@@ -47,7 +47,7 @@ The second digit ranges from 0 to 9 and describes the level of liquid protection
 - **8** — Protection against continuous submersion under conditions specified by the manufacturer.
 - **9** — Protection against high-pressure, high-temperature water jets and steam cleaning.
 
-The jump from 4 to 5 is where things get practical for many manufacturing plants. If your facility runs washdown procedures at the end of shifts — common in [food packaging](/solutions/packaging-automation/) and pharmaceutical operations — you need at least a 5 for water jets. If operators use high-pressure hoses, bump that to 6. If equipment sits in a pit or area subject to flooding, you need a 7.
+The jump from 4 to 5 is where things get practical for many manufacturing plants. If your facility runs washdown procedures at the end of shifts — common in [food packaging](/solutions/packaging/) and pharmaceutical operations — you need at least a 5 for water jets. If operators use high-pressure hoses, bump that to 6. If equipment sits in a pit or area subject to flooding, you need a 7.
 
 ## Common IP Ratings in Manufacturing
 

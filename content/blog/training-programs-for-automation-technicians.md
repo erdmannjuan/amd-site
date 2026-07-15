@@ -57,7 +57,7 @@ What actually works is machine-specific PLC training. Your technicians don't nee
 - **Make minor parameter changes** — Adjusting timers, counters, and analog setpoints within defined ranges without calling the integrator
 - **Back up and restore programs** — This sounds basic, but we've seen plants lose weeks of production because nobody knew how to download a PLC program after a processor swap
 
-If your automation includes [robotic systems](/solutions/robotic-systems/), technicians also need robot-controller-specific training covering teach pendant operation, backup procedures, I/O configuration, and basic path editing.
+If your automation includes [robotic systems](/solutions/robotic-cells/), technicians also need robot-controller-specific training covering teach pendant operation, backup procedures, I/O configuration, and basic path editing.
 
 ### Systematic Troubleshooting Methodology
 

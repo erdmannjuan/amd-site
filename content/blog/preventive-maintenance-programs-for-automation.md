@@ -18,7 +18,7 @@ url: /blog/preventive-maintenance-programs-for-automation/
 
 A robotic assembly cell that runs two shifts generates somewhere around 4,000 operating hours per year. Without a structured preventive maintenance (PM) program, you are gambling that nothing in that system — servos, bearings, pneumatic cylinders, sensors, cables, grippers — will degrade enough to cause an unplanned stop. That is not a bet most production managers want to take.
 
-Unplanned downtime on an automated line typically costs between $5,000 and $50,000 per hour depending on the product and the downstream impact. A well-executed PM program does not eliminate all failures, but it dramatically reduces them. In our experience working with manufacturers across [automotive](/industries/automotive-automation/), medical device, and consumer products sectors, a structured PM program cuts unplanned downtime by 30 to 60 percent within the first year.
+Unplanned downtime on an automated line typically costs between $5,000 and $50,000 per hour depending on the product and the downstream impact. A well-executed PM program does not eliminate all failures, but it dramatically reduces them. In our experience working with manufacturers across [automotive](/industries/automotive/), medical device, and consumer products sectors, a structured PM program cuts unplanned downtime by 30 to 60 percent within the first year.
 
 The math is straightforward. A few hours of scheduled maintenance per month prevents dozens of hours of emergency repairs, expedited parts orders, and scrapped product. But building an effective PM program for automation requires more than a checklist on a clipboard. It requires understanding how automated systems actually wear and fail.
 
@@ -50,7 +50,7 @@ You cannot maintain what you have not cataloged. Create an asset register that i
 - Spare part numbers and lead times
 - Location within the cell or line
 
-This is tedious work, but it only needs to be done once. The electrical schematics and mechanical BOMs from your [system integrator](/solutions/turnkey-automation/) are the starting point.
+This is tedious work, but it only needs to be done once. The electrical schematics and mechanical BOMs from your [system integrator](/solutions/custom-automation/) are the starting point.
 
 ### Step 2: Establish Maintenance Intervals
 
@@ -153,4 +153,4 @@ Track these metrics to gauge whether your program is working:
 
 If you are running automation equipment without a formal PM program, start with the basics. Catalog your assets, establish daily and weekly inspection routines, and stock critical spare parts. You do not need a perfect system on day one — you need a system that improves over time.
 
-AMD Machines supports our customers with [maintenance documentation and training](/services/equipment-maintenance/) as part of every system we deliver. Our field service engineers can help you establish PM procedures specific to your equipment and production environment. [Contact our team](/contact/) to discuss maintenance support for your automation systems.
+AMD Machines supports our customers with [maintenance documentation and training](/services/maintenance-support/) as part of every system we deliver. Our field service engineers can help you establish PM procedures specific to your equipment and production environment. [Contact our team](/contact/) to discuss maintenance support for your automation systems.

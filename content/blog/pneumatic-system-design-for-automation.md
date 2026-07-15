@@ -37,7 +37,7 @@ For vertical applications where the cylinder supports a load against gravity, si
 
 Bore size determines force output, but don't overlook the mounting style. Clevis mounts accommodate angular misalignment, trunnion mounts handle side loading, and flange mounts provide rigid axial alignment. Using the wrong mount style for the application creates bending loads on the rod and accelerates bushing and seal wear.
 
-For applications requiring precise positioning at intermediate points along the stroke, consider multi-position cylinders or pneumatic-electric hybrid approaches. Standard pneumatics excel at end-to-end motion with hard stops, but asking a basic cylinder to hold a mid-stroke position reliably is asking for trouble. That's where [electric actuators or servo-pneumatic solutions](/solutions/assembly-systems/) may be worth evaluating.
+For applications requiring precise positioning at intermediate points along the stroke, consider multi-position cylinders or pneumatic-electric hybrid approaches. Standard pneumatics excel at end-to-end motion with hard stops, but asking a basic cylinder to hold a mid-stroke position reliably is asking for trouble. That's where [electric actuators or servo-pneumatic solutions](/solutions/assembly/) may be worth evaluating.
 
 ## Valve Configuration and Circuit Design
 
@@ -67,7 +67,7 @@ Label every line. Color-coded tubing by function (supply, exhaust, signal) saves
 
 Beyond individual circuits, think about the pneumatic system as a whole. Calculate total air consumption by summing the demand from every actuator at maximum cycle rate, then add 20 to 30 percent for leakage and future expansion. Compare this to available compressor capacity. Running a compressor at 100 percent utilization is a recipe for reliability problems and insufficient pressure during peak demand.
 
-Integrate pneumatic system monitoring into your [overall equipment controls architecture](/solutions/controls-engineering/). Pressure sensors at key points in the distribution system provide early warning of supply problems. Flow sensors on individual machine feeds detect leaks before they become significant energy drains. A single quarter-inch leak at 90 PSI wastes roughly $2,500 per year in compressed air costs, and most plants have dozens of leaks at any given time.
+Integrate pneumatic system monitoring into your [overall equipment controls architecture](/solutions/custom-automation/). Pressure sensors at key points in the distribution system provide early warning of supply problems. Flow sensors on individual machine feeds detect leaks before they become significant energy drains. A single quarter-inch leak at 90 PSI wastes roughly $2,500 per year in compressed air costs, and most plants have dozens of leaks at any given time.
 
 ## Design for Maintainability
 

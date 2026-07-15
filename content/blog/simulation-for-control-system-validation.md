@@ -16,7 +16,7 @@ Every controls engineer has lived the nightmare: you load your PLC program onto 
 
 Simulation for control system validation means running your actual control logic — PLC code, HMI screens, motion profiles, safety interlocks — against a virtual model of the machine before you ever connect to real hardware. The goal is straightforward: find and fix logic errors in a risk-free environment where a bug costs you five minutes instead of five weeks and a damaged servo drive.
 
-For custom automation and [assembly systems](/solutions/assembly-systems/) where machines are one-of-a-kind, simulation is especially valuable. There is no reference installation to copy from. Every program is new, and the cost of field debugging is multiplied by travel, downtime, and the pressure of a customer waiting for production capacity.
+For custom automation and [assembly systems](/solutions/assembly/) where machines are one-of-a-kind, simulation is especially valuable. There is no reference installation to copy from. Every program is new, and the cost of field debugging is multiplied by travel, downtime, and the pressure of a customer waiting for production capacity.
 
 ## Types of Control System Simulation
 
@@ -36,7 +36,7 @@ HIL is more expensive to set up, but it catches problems that SIL misses: commun
 
 ### Virtual Commissioning
 
-Virtual commissioning takes simulation a step further by connecting the control system to a 3D kinematic model of the machine. You can watch a virtual robot follow the programmed path, see conveyor transfers execute, and verify that mechanical clearances hold throughout the full range of motion. This is particularly useful for [robotic systems](/solutions/robotic-systems/) where collision avoidance and path optimization are critical.
+Virtual commissioning takes simulation a step further by connecting the control system to a 3D kinematic model of the machine. You can watch a virtual robot follow the programmed path, see conveyor transfers execute, and verify that mechanical clearances hold throughout the full range of motion. This is particularly useful for [robotic systems](/solutions/robotic-cells/) where collision avoidance and path optimization are critical.
 
 The investment in building a virtual commissioning model is significant, but for complex multi-station systems, the payoff during actual commissioning is substantial. Teams that use virtual commissioning routinely report 20–50% reductions in on-site commissioning time.
 
@@ -74,7 +74,7 @@ Start with the I/O list. Every physical input and output on the machine needs a 
 
 ## Practical Benefits We Have Seen
 
-Over three decades of building [custom automation equipment](/solutions/custom-automated-equipment/), we have seen simulation transform the commissioning process. The benefits are consistent across project types.
+Over three decades of building [custom automation equipment](/solutions/custom-automation/), we have seen simulation transform the commissioning process. The benefits are consistent across project types.
 
 **Reduced commissioning time.** Issues found in simulation are fixed at a desk with full debugging tools. The same issues found in the field require troubleshooting with limited access, safety constraints, and production pressure. A logic error that takes ten minutes to fix in simulation can consume an entire day on-site.
 

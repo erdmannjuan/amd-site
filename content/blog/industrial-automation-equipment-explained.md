@@ -1,5 +1,5 @@
 ---
-title: Industrial Automation Equipment Explained - Robots,
+title: 'Industrial Automation Equipment Explained'
 description: Comprehensive guide to industrial automation equipment including robots, servo presses, conveyors, vision systems, PLCs, and safety systems used in modern manufacturing.
 keywords: industrial automation equipment, industrial robots, servo presses, conveyor
   systems, machine vision, PLC controllers, automation components, factory automation

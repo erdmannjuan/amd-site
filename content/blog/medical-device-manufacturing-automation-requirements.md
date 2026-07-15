@@ -37,7 +37,7 @@ When specifying automation equipment, the first question to answer is what devic
 
 Every automated system used in medical device production must go through Installation Qualification (IQ), Operational Qualification (OQ), and Performance Qualification (PQ). These are not just paperwork exercises—they are structured protocols that verify your equipment does what it is supposed to do, consistently.
 
-**Installation Qualification** confirms the equipment is installed according to specifications. This covers utility connections, safety interlocks, software versions, calibration certificates for all measurement instruments, and verification that purchased components match the bill of materials. On a typical [assembly system](/solutions/automated-assembly-systems/), IQ documentation can run 50 to 100 pages.
+**Installation Qualification** confirms the equipment is installed according to specifications. This covers utility connections, safety interlocks, software versions, calibration certificates for all measurement instruments, and verification that purchased components match the bill of materials. On a typical [assembly system](/solutions/assembly/), IQ documentation can run 50 to 100 pages.
 
 **Operational Qualification** tests every function of the equipment across its specified operating range. For a press-fit station, this means running force-distance curves at minimum, nominal, and maximum parameter settings and verifying the system detects out-of-spec conditions correctly. Every sensor, actuator, reject mechanism, and alarm condition gets tested individually and in combination.
 
@@ -94,4 +94,4 @@ Not every automation integrator has experience with FDA-regulated manufacturing.
 
 Ask for references from medical device manufacturers, and verify that the integrator's documentation practices meet your quality team's expectations. The best-performing equipment is worthless if the documentation package cannot support your validation protocols.
 
-AMD Machines has built automated [assembly](/solutions/automated-assembly-systems/) and test systems for medical device manufacturers producing Class II and Class III devices. Our engineering team understands the regulatory requirements and designs systems with validation, traceability, and cleanroom compatibility built in from the start. [Contact us](/contact/) to discuss your medical device automation project.
+AMD Machines has built automated [assembly](/solutions/assembly/) and test systems for medical device manufacturers producing Class II and Class III devices. Our engineering team understands the regulatory requirements and designs systems with validation, traceability, and cleanroom compatibility built in from the start. [Contact us](/contact/) to discuss your medical device automation project.

@@ -85,7 +85,7 @@ Vacuum gripping appears across virtually every manufacturing sector, but several
 
 **Sheet metal handling** in stamping and press operations is one of the highest-volume applications. Vacuum-based end effectors pick blanks from de-stacking stations, load them into presses, and transfer formed panels between stations. The non-marring grip is essential for Class A automotive surfaces where any clamp mark becomes a paint defect.
 
-**Packaging and palletizing** operations use vacuum grippers to pick cases, cartons, bags, and shrink-wrapped bundles. The variability in package size, weight, and surface condition across a typical distribution center makes vacuum gripping attractive because [cup-based systems adapt more easily](/solutions/assembly-systems/) than mechanical alternatives.
+**Packaging and palletizing** operations use vacuum grippers to pick cases, cartons, bags, and shrink-wrapped bundles. The variability in package size, weight, and surface condition across a typical distribution center makes vacuum gripping attractive because [cup-based systems adapt more easily](/solutions/assembly/) than mechanical alternatives.
 
 **Glass and panel handling** in solar, display, and window manufacturing demands the gentle touch that vacuum provides. These applications often run at lower vacuum levels to minimize stress on brittle substrates, with redundant cup zones so that a single lost seal does not drop the part.
 
@@ -93,7 +93,7 @@ Vacuum gripping appears across virtually every manufacturing sector, but several
 
 ## Integration Considerations
 
-When integrating vacuum gripping into a larger [automated assembly system](/solutions/robotic-automation/), several factors deserve attention beyond the gripper itself.
+When integrating vacuum gripping into a larger [automated assembly system](/solutions/robotic-cells/), several factors deserve attention beyond the gripper itself.
 
 **Compressed air quality** directly affects Venturi ejector life and performance. Oil, water, and particulate in the air supply foul check valves and erode nozzles. Install point-of-use filtration and verify air quality to ISO 8573-1 Class 4 or better.
 

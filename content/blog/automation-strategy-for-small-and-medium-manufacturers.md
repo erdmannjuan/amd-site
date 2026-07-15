@@ -16,7 +16,7 @@ Large OEMs can absorb a failed automation project. They spread the cost across d
 
 That is exactly why strategy matters more at the SMB level—not less. The manufacturers we work with who get the best results are not necessarily the ones with the biggest budgets. They are the ones who take a disciplined approach to identifying where automation will have the greatest impact, then execute in a sequence that builds capability without overextending resources.
 
-This article lays out a practical framework based on patterns we have seen work across hundreds of projects in [assembly](/solutions/assembly-systems/), testing, and material handling applications.
+This article lays out a practical framework based on patterns we have seen work across hundreds of projects in [assembly](/solutions/assembly/), testing, and material handling applications.
 
 ## Step 1: Map Your Current State Honestly
 
@@ -46,7 +46,7 @@ We recommend scoring potential automation projects across four dimensions:
 
 Projects that score high on the first three dimensions and low on risk are your starting points. They fund the next round of investment and build organizational confidence in automation.
 
-A manufacturer running a manual [press-fit operation](/solutions/press-fit-systems/) with high operator variability and measurable reject rates, for example, is a textbook candidate for early automation. The process is well-understood, the technology is proven, and the ROI math is straightforward.
+A manufacturer running a manual [press-fit operation](/solutions/servo-pressing/) with high operator variability and measurable reject rates, for example, is a textbook candidate for early automation. The process is well-understood, the technology is proven, and the ROI math is straightforward.
 
 ## Step 3: Design for Phased Implementation
 
@@ -73,7 +73,7 @@ Your specification should cover:
 - **Part presentation** details such as incoming orientation, packaging, and batch sizes
 - **Environmental factors** like temperature, humidity, cleanliness, and floor space constraints
 - **Changeover requirements** if the system will run multiple part numbers
-- **Data and connectivity** needs for traceability, [quality control](/solutions/quality-control-systems/), or MES integration
+- **Data and connectivity** needs for traceability, [quality control](/solutions/machine-vision/), or MES integration
 
 A thorough specification protects you during vendor selection. It gives you an objective basis for comparing proposals and holding integrators accountable to performance guarantees.
 

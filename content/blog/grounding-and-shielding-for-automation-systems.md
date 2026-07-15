@@ -19,7 +19,7 @@ Intermittent faults are the most frustrating problems in industrial automation. 
 
 More often than not, the root cause is electrical noise — electromagnetic interference (EMI) coupling into signal cables, ground loops creating voltage differentials between devices, or poorly routed power conductors radiating into nearby control wiring. These problems are preventable with proper grounding and shielding practices, but they require deliberate design rather than afterthought.
 
-In our experience building [custom automation systems](/solutions/custom-automation-engineering/), grounding and shielding issues account for a significant share of commissioning delays. The mechanical and software portions of a system can be flawless, but if the electrical foundation has noise problems, the whole machine behaves unpredictably.
+In our experience building [custom automation systems](/solutions/custom-automation/), grounding and shielding issues account for a significant share of commissioning delays. The mechanical and software portions of a system can be flawless, but if the electrical foundation has noise problems, the whole machine behaves unpredictably.
 
 ## Understanding Electrical Noise Sources
 
@@ -29,7 +29,7 @@ Before designing a grounding scheme, you need to understand where noise originat
 
 **Solenoid valves and relay coils** produce voltage spikes when de-energized. The collapsing magnetic field generates transient voltages that can exceed 1,000V for a few microseconds. Without suppression, these transients couple into nearby signal wiring through both radiated and conducted paths.
 
-**Welding power supplies** are particularly aggressive noise sources. Arc welding generates broadband RF energy that can couple into control systems hundreds of feet away. If your automation includes [welding cells](/solutions/robotic-welding-systems/), grounding and shielding deserve extra attention during the design phase.
+**Welding power supplies** are particularly aggressive noise sources. Arc welding generates broadband RF energy that can couple into control systems hundreds of feet away. If your automation includes [welding cells](/solutions/welding/), grounding and shielding deserve extra attention during the design phase.
 
 **Servo drives and stepper motors** produce PWM switching noise similar to VFDs. High-performance servo systems switching at 8–20 kHz can inject substantial common-mode current into cable shields and ground conductors.
 
@@ -98,7 +98,7 @@ Use dedicated 24VDC power supplies for sensor circuits, separate from the power 
 
 ### Robot Controllers
 
-Industrial robot controllers — whether from FANUC, ABB, KUKA, or others — have specific grounding requirements that must be followed during integration. The controller chassis needs a direct ground connection, and the teach pendant cable, motor power cables, and I/O cables each have their own grounding specifications. When integrating robots into a larger [automated assembly system](/solutions/automated-assembly-systems/), the robot controller ground must tie back to the same central ground reference as the rest of the cell.
+Industrial robot controllers — whether from FANUC, ABB, KUKA, or others — have specific grounding requirements that must be followed during integration. The controller chassis needs a direct ground connection, and the teach pendant cable, motor power cables, and I/O cables each have their own grounding specifications. When integrating robots into a larger [automated assembly system](/solutions/assembly/), the robot controller ground must tie back to the same central ground reference as the rest of the cell.
 
 ## Troubleshooting Noise Problems
 

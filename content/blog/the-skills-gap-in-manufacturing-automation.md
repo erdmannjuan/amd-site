@@ -34,7 +34,7 @@ The challenge is compounded by the shift toward more sophisticated control archi
 
 Industrial robots have become standard equipment in manufacturing, but finding technicians who can program and maintain them remains difficult. Each robot manufacturer—FANUC, ABB, KUKA, Yaskawa—uses its own programming language and teach pendant interface. A technician proficient with FANUC's TP programming still needs significant ramp-up time to work on an ABB system.
 
-Beyond basic programming, the real shortage is in integration skills. Getting a robot to pick up a part is straightforward. Getting it to work reliably within a larger [automated assembly system](/solutions/automated-assembly-systems/) that includes vision inspection, force sensing, and coordinated motion with other equipment requires deeper expertise.
+Beyond basic programming, the real shortage is in integration skills. Getting a robot to pick up a part is straightforward. Getting it to work reliably within a larger [automated assembly system](/solutions/assembly/) that includes vision inspection, force sensing, and coordinated motion with other equipment requires deeper expertise.
 
 ### Vision Systems and Inspection
 

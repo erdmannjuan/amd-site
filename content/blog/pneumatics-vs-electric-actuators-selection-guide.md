@@ -86,7 +86,7 @@ Electric actuators provide full motion control: any position along the stroke, a
 
 Pneumatics remain the right answer in many applications. Here are the scenarios where they make the most sense:
 
-**Clamping and fixturing**: Workholding clamps that simply open and close are the bread and butter of pneumatics. The inherent compliance of air provides a cushioned clamp force that doesn't damage parts, and the simplicity of control keeps fixture costs down. On [assembly systems](/solutions/assembly-systems/) with multiple clamp stations, pneumatic clamping often represents the most cost-effective approach.
+**Clamping and fixturing**: Workholding clamps that simply open and close are the bread and butter of pneumatics. The inherent compliance of air provides a cushioned clamp force that doesn't damage parts, and the simplicity of control keeps fixture costs down. On [assembly systems](/solutions/assembly/) with multiple clamp stations, pneumatic clamping often represents the most cost-effective approach.
 
 **High-speed, short-stroke actuation**: Reject gates, diverters, and part stops that cycle rapidly between two positions are ideal pneumatic applications. A small-bore cylinder with hard stops and high flow rates can cycle faster than most electric alternatives.
 

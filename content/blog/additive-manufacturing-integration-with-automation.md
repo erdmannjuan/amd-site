@@ -42,7 +42,7 @@ Robots handle several functions that are impractical or unsafe for manual operat
 
 **Surface finishing.** Robotic grinding, sanding, and polishing cells bring additive surface roughness down to specification. Force-torque sensors allow the robot to maintain constant contact pressure across complex freeform geometries that would be tedious and inconsistent with manual finishing.
 
-**Machine tending for hybrid operations.** Some workflows require moving a 3D-printed blank into a CNC machine for finish machining of critical interfaces, bores, or sealing surfaces. Automated [machine tending cells](/solutions/machine-tending-automation/) handle the loading, fixturing, and unloading without operator involvement.
+**Machine tending for hybrid operations.** Some workflows require moving a 3D-printed blank into a CNC machine for finish machining of critical interfaces, bores, or sealing surfaces. Automated [machine tending cells](/solutions/machine-tending/) handle the loading, fixturing, and unloading without operator involvement.
 
 ## Process Control and Data Integration
 

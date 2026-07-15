@@ -70,7 +70,7 @@ A PLC program that works is the minimum requirement. A PLC program that a mainte
 
 **Organize by machine section.** Group your routines or program sections by physical machine area: infeed, process station, outfeed, reject handling. When something stops working, maintenance goes to the area of the machine that's faulted, and your program structure should match that mental model.
 
-**Standardize your AOIs and function blocks.** If you're building [custom assembly systems](/solutions/custom-assembly-systems/) with repeated stations, create Add-On Instructions or function blocks for common patterns like motor control, cylinder sequences, and part-present checks. This reduces errors and speeds development.
+**Standardize your AOIs and function blocks.** If you're building [custom assembly systems](/solutions/assembly/) with repeated stations, create Add-On Instructions or function blocks for common patterns like motor control, cylinder sequences, and part-present checks. This reduces errors and speeds development.
 
 ## Troubleshooting Fundamentals
 

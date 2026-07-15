@@ -17,7 +17,7 @@ url: /blog/test-data-management-and-analytics/
 
 Every automated test station on a production line generates data. Leak test pressures, torque values, dimensional measurements, electrical continuity results, vision inspection verdicts—each test cycle produces a record. The question is whether that data disappears after the pass/fail decision or becomes a strategic asset that drives quality improvement.
 
-In our experience building [automated test equipment](/solutions/automated-test-equipment/) across dozens of industries, the difference between manufacturers who struggle with chronic quality issues and those who steadily improve often comes down to how they manage test data. The test itself is only half the equation. What you do with the results afterward determines whether you catch a developing problem at unit 50 or unit 5,000.
+In our experience building [automated test equipment](/solutions/test-systems/) across dozens of industries, the difference between manufacturers who struggle with chronic quality issues and those who steadily improve often comes down to how they manage test data. The test itself is only half the equation. What you do with the results afterward determines whether you catch a developing problem at unit 50 or unit 5,000.
 
 ## Designing a Test Data Architecture
 

@@ -47,7 +47,7 @@ Washdown-rated components cost more than their standard industrial counterparts.
 
 ## Vision Systems and Quality Inspection
 
-[Vision and quality control systems](/solutions/vision-quality-control/) play a critical role in food packaging automation. Cameras and sensors verify multiple quality attributes at line speed: fill levels, seal integrity, label placement, date code legibility, and foreign object detection.
+[Vision and quality control systems](/solutions/machine-vision/) play a critical role in food packaging automation. Cameras and sensors verify multiple quality attributes at line speed: fill levels, seal integrity, label placement, date code legibility, and foreign object detection.
 
 For seal inspection, thermal imaging cameras can detect incomplete seals on modified atmosphere packaging (MAP) by identifying temperature differentials where the seal didn't fully form. This is faster and more reliable than the destructive burst testing that manual operations typically rely on.
 
@@ -59,13 +59,13 @@ Food products present unique handling challenges. Many are soft, fragile, irregu
 
 Soft robotic grippers using food-grade silicone or elastomeric fingers have transformed this space. These grippers conform to the product shape rather than requiring the product to conform to the gripper. Delta robots paired with vision-guided picking systems can handle mixed products at speeds exceeding 120 picks per minute, sorting and placing items into trays, clamshells, or cartons with consistent orientation.
 
-For [assembly and packaging operations](/solutions/assembly-systems/) involving multiple components—think meal kits, variety packs, or combo trays—collaborative robots offer the flexibility to handle frequent product changeovers without extensive retooling. A cobot cell can switch from packing a 6-piece snack tray to a 12-piece appetizer platter with a recipe change on the HMI rather than a mechanical changeover.
+For [assembly and packaging operations](/solutions/assembly/) involving multiple components—think meal kits, variety packs, or combo trays—collaborative robots offer the flexibility to handle frequent product changeovers without extensive retooling. A cobot cell can switch from packing a 6-piece snack tray to a 12-piece appetizer platter with a recipe change on the HMI rather than a mechanical changeover.
 
 ## Line Integration and Throughput Optimization
 
 Individual machines don't make a packaging line—integration does. The upstream filler, the primary packaging machine, the labeler, the case packer, and the palletizer all need to communicate and synchronize. A bottleneck at any single station throttles the entire line.
 
-Effective [line integration](/solutions/turnkey-integration/) starts with understanding the rate-limiting step. In food packaging, the primary packaging machine (the form-fill-seal unit, the flow wrapper, or the tray sealer) usually sets the pace. Everything upstream and downstream needs to be sized with margin to prevent starving or flooding the primary machine.
+Effective [line integration](/solutions/custom-automation/) starts with understanding the rate-limiting step. In food packaging, the primary packaging machine (the form-fill-seal unit, the flow wrapper, or the tray sealer) usually sets the pace. Everything upstream and downstream needs to be sized with margin to prevent starving or flooding the primary machine.
 
 Accumulation conveyors between stations provide buffer capacity that absorbs the minor stoppages that inevitably occur—a label roll change, a carton magazine refill, a brief sensor fault. Without adequate accumulation, a 30-second stop at the labeler cascades into a line-wide shutdown. With proper buffering, the rest of the line continues running while the issue is resolved.
 

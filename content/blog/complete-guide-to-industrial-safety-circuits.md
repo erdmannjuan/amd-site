@@ -18,7 +18,7 @@ Every automated manufacturing cell starts with a fundamental question: what happ
 
 Safety circuits are not optional extras bolted on at the end of a project. They are foundational systems that influence mechanical design, electrical layout, control architecture, and operator workflow from day one. Getting them right means fewer injuries, less downtime, lower insurance costs, and faster regulatory approval. Getting them wrong can be catastrophic.
 
-At AMD Machines, we have integrated safety circuits into thousands of [custom automation systems](/solutions/custom-automation-systems/) over three decades. This guide walks through the core principles, components, and design strategies that we apply on real production floors.
+At AMD Machines, we have integrated safety circuits into thousands of [custom automation systems](/solutions/custom-automation/) over three decades. This guide walks through the core principles, components, and design strategies that we apply on real production floors.
 
 ## Understanding Safety Standards and Risk Assessment
 
@@ -75,7 +75,7 @@ Safety circuits should be designed so that the safe state is the de-energized st
 
 Modern servo drives support safety functions directly at the drive level. Safe Torque Off (STO) removes the PWM pulses to the motor, guaranteeing zero torque without cutting main power. Safe Speed Monitoring (SSM) and Safely Limited Speed (SLS) allow operations like setup or teaching to occur at reduced speed with the guard door open, verified by the drive itself rather than an external speed switch.
 
-These drive-integrated safety functions reduce wiring, improve response time, and enable more flexible operator workflows — particularly valuable in [robotic welding cells](/solutions/robotic-welding-systems/) and other applications where manual intervention is part of the normal production cycle.
+These drive-integrated safety functions reduce wiring, improve response time, and enable more flexible operator workflows — particularly valuable in [robotic welding cells](/solutions/welding/) and other applications where manual intervention is part of the normal production cycle.
 
 ## Light Curtains, Safety Mats, and Area Scanners
 
@@ -83,7 +83,7 @@ Not every hazard can be guarded with a physical fence. For applications where op
 
 **Light curtains** project an array of infrared beams across an opening. Breaking any beam triggers the safety circuit. Resolution (beam spacing) must be selected based on the minimum detectable object — typically a finger (14 mm) or a hand (30 mm) — and the curtain must be mounted at the correct distance from the hazard to ensure the machine stops before the operator's hand reaches the danger zone. This stopping-distance calculation accounts for machine response time, light curtain response time, and a safety margin defined by ISO 13855.
 
-**Safety laser scanners** monitor a two-dimensional area and can define warning zones and safety zones in software. They are particularly useful in [collaborative robot applications](/solutions/robotic-assembly-systems/) where the workspace is not fixed and operators move freely around the cell.
+**Safety laser scanners** monitor a two-dimensional area and can define warning zones and safety zones in software. They are particularly useful in [collaborative robot applications](/solutions/assembly/) where the workspace is not fixed and operators move freely around the cell.
 
 ## Commissioning, Validation, and Ongoing Maintenance
 

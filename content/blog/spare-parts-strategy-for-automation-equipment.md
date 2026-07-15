@@ -74,7 +74,7 @@ Component obsolescence is an increasing challenge in automation. A PLC model tha
 
 Proactive obsolescence management includes several practices. Subscribe to end-of-life notifications from your key component suppliers. When a critical component is announced as end-of-life, immediately assess your installed base and calculate a lifetime buy quantity. Work with your equipment integrator — they often have early visibility into which platforms are being phased out and can recommend migration paths.
 
-This is also where your relationship with your [automation systems integrator](/solutions/custom-automated-assembly-systems/) becomes valuable. A good integrator tracks technology transitions across their installed base and can advise you on cost-effective upgrade paths before obsolescence forces an emergency retrofit.
+This is also where your relationship with your [automation systems integrator](/solutions/assembly/) becomes valuable. A good integrator tracks technology transitions across their installed base and can advise you on cost-effective upgrade paths before obsolescence forces an emergency retrofit.
 
 ## Calculating the Right Investment Level
 

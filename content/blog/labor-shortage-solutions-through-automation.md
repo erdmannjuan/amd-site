@@ -26,7 +26,7 @@ Not every task on the floor is a good candidate for automation. The highest-impa
 
 ### Repetitive Assembly and Material Handling
 
-Manual assembly stations where operators perform the same pick-place-fasten sequence hundreds of times per shift are prime candidates. These tasks are physically demanding, prone to repetitive strain injuries, and difficult to staff consistently. A well-designed [robotic assembly cell](/solutions/robotic-assembly/) can run two or three shifts without the absenteeism and turnover that plague manual lines.
+Manual assembly stations where operators perform the same pick-place-fasten sequence hundreds of times per shift are prime candidates. These tasks are physically demanding, prone to repetitive strain injuries, and difficult to staff consistently. A well-designed [robotic assembly cell](/solutions/assembly/) can run two or three shifts without the absenteeism and turnover that plague manual lines.
 
 We have built systems where a single operator oversees four or five automated stations, loading fixtures and monitoring output, rather than four or five operators each running one station manually. The throughput stays the same or improves. The labor requirement drops by 60 to 80 percent.
 

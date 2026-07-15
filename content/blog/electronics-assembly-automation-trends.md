@@ -33,7 +33,7 @@ Collaborative robots have found a natural home in electronics assembly. The payl
 
 What makes cobots particularly useful in electronics is their reprogrammability. When a product line changes — and in electronics, it changes frequently — reprogramming a cobot for a new pick-and-place sequence or a different screw pattern takes hours, not weeks. Compare that to designing and fabricating a new hard automation fixture.
 
-That said, cobots are not a universal solution. Operations requiring cycle times under two seconds per unit or placement accuracies below ±0.02 mm still call for dedicated [assembly systems](/solutions/assembly-systems/) built around high-speed actuators and precision stages. The right answer depends on your volume, cycle time targets, and how often the product changes.
+That said, cobots are not a universal solution. Operations requiring cycle times under two seconds per unit or placement accuracies below ±0.02 mm still call for dedicated [assembly systems](/solutions/assembly/) built around high-speed actuators and precision stages. The right answer depends on your volume, cycle time targets, and how often the product changes.
 
 ## Vision-Guided Assembly and Inspection
 

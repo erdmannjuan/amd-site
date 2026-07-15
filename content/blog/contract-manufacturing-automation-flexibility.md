@@ -29,7 +29,7 @@ Flexibility in automation is not a single feature. It is an architecture decisio
 
 The fastest way to kill changeover time is quick-change tooling. Rather than bolting down dedicated fixtures that take hours to swap, flexible systems use modular fixture plates with repeatable locating features. An operator can remove one fixture set, drop in another, and be running a different part within minutes.
 
-This is especially critical in [assembly automation](/solutions/automated-assembly-systems/), where the tooling interface between the machine and the workpiece defines what the system can and cannot build. Designing that interface for modularity from the start avoids expensive retrofits later.
+This is especially critical in [assembly automation](/solutions/assembly/), where the tooling interface between the machine and the workpiece defines what the system can and cannot build. Designing that interface for modularity from the start avoids expensive retrofits later.
 
 ### Programmable Motion Systems
 
@@ -89,7 +89,7 @@ Not every flexibility strategy succeeds. Here are mistakes we see contract manuf
 
 **Over-specifying flexibility.** Designing a system to handle every conceivable future product makes it expensive and complex. Focus on the product families you actually run or plan to pursue. A system flexible enough for 80% of your work is far more practical than one that tries to cover 100%.
 
-**Neglecting operator training.** A flexible system is only as capable as the people running it. If operators do not understand how to execute changeovers, load recipes, and verify first articles, the system's flexibility exists only on paper. Investing in [workforce development and training](/services/training-and-knowledge-transfer/) pays dividends in actual changeover times and first-pass yield.
+**Neglecting operator training.** A flexible system is only as capable as the people running it. If operators do not understand how to execute changeovers, load recipes, and verify first articles, the system's flexibility exists only on paper. Investing in [workforce development and training](/services/training/) pays dividends in actual changeover times and first-pass yield.
 
 **Ignoring maintenance across configurations.** Each product configuration may stress different mechanical components. Preventive maintenance schedules need to account for the actual mix of products running, not just calendar time or total cycle count.
 

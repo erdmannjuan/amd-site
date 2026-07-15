@@ -544,7 +544,7 @@
 <li><strong>One HMI</strong> communicating with the single processor for operator interface</li>
 </ul>
 <p>The advantages are straightforward. All your logic lives in one place, making troubleshooting simpler when a sequence does not behave as expected. You have one processor to monitor, one program to back up, and one firmware version to manage. Scan times are predictable because you are not dependent on network communication between controllers.</p>
-<p>For compact machines—think a <a href="/solutions/press-fit-assembly-machines/">press-fit assembly station</a> or a single-robot cell—centralized control keeps things clean. Wiring distances are short, the I/O count is manageable, and there is no reason to introduce the complexity of multiple networked controllers.</p>
+<p>For compact machines—think a <a href="/solutions/servo-pressing/">press-fit assembly station</a> or a single-robot cell—centralized control keeps things clean. Wiring distances are short, the I/O count is manageable, and there is no reason to introduce the complexity of multiple networked controllers.</p>
 <h2 id="what-distributed-control-looks-like">What Distributed Control Looks Like</h2>
 <p>Distributed architectures push intelligence closer to the equipment. Instead of one large PLC managing everything, you deploy multiple controllers—each responsible for a subsection of the process. These controllers communicate over an industrial network (EtherNet/IP, PROFINET, or similar) and coordinate through peer-to-peer messaging or a supervisory layer.</p>
 <p>A distributed system typically includes:</p>

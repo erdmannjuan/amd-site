@@ -52,7 +52,7 @@ The feedback device is arguably the most critical component in determining syste
 - **Linear encoders** — Mounted directly on the axis of motion to measure actual load position rather than motor shaft position. This eliminates errors from backlash, belt stretch, and thermal expansion in the mechanical transmission.
 - **Resolvers** — Analog devices that use transformer coupling to report position. They are extremely rugged and tolerate high temperatures, vibration, and contamination. Common in military, aerospace, and harsh industrial environments.
 
-The choice between these devices depends on accuracy requirements, environmental conditions, and cost constraints. For most [assembly automation](/solutions/automated-assembly-systems/) applications, absolute encoders with 17-bit or higher resolution provide the best combination of accuracy and convenience.
+The choice between these devices depends on accuracy requirements, environmental conditions, and cost constraints. For most [assembly automation](/solutions/assembly/) applications, absolute encoders with 17-bit or higher resolution provide the best combination of accuracy and convenience.
 
 ## Motion Profiles and Trajectory Planning
 
@@ -84,7 +84,7 @@ Most modern drives include auto-tuning routines that measure the mechanical syst
 
 ### Assembly and Press-Fit Operations
 
-Servo-driven press systems use force-displacement monitoring to verify that every press-fit operation falls within specification. The servo motor controls ram position and velocity with sub-millimeter accuracy while a load cell measures force in real time. The resulting force-displacement curve provides 100% in-process inspection—a capability that pneumatic or hydraulic presses simply cannot match. This approach is central to modern [assembly system design](/solutions/custom-automation-solutions/) where quality verification is built into the process rather than added after the fact.
+Servo-driven press systems use force-displacement monitoring to verify that every press-fit operation falls within specification. The servo motor controls ram position and velocity with sub-millimeter accuracy while a load cell measures force in real time. The resulting force-displacement curve provides 100% in-process inspection—a capability that pneumatic or hydraulic presses simply cannot match. This approach is central to modern [assembly system design](/solutions/custom-automation/) where quality verification is built into the process rather than added after the fact.
 
 ### Packaging and Material Handling
 

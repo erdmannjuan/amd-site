@@ -19,7 +19,7 @@ Augmented reality has moved from consumer novelty to serious industrial tool. In
 
 The core value proposition is straightforward. Instead of flipping through a 400-page service manual while crouched beside a machine, a technician wearing AR glasses or holding a tablet sees step-by-step instructions overlaid directly on the physical equipment. Arrows point to the correct bolts. Torque values appear next to fasteners. Wiring diagrams float beside electrical panels. The gap between knowing what to do and actually doing it shrinks dramatically.
 
-This is not theoretical. Manufacturers running AR-assisted maintenance programs report measurable results: first-time fix rates improving by 20 to 30 percent, mean time to repair dropping by similar margins, and training periods for new technicians cut significantly. For facilities running complex [automated systems](/solutions/automated-assembly-systems/) with dozens of integrated stations, those improvements translate directly to production output.
+This is not theoretical. Manufacturers running AR-assisted maintenance programs report measurable results: first-time fix rates improving by 20 to 30 percent, mean time to repair dropping by similar margins, and training periods for new technicians cut significantly. For facilities running complex [automated systems](/solutions/assembly/) with dozens of integrated stations, those improvements translate directly to production output.
 
 ## How AR Works in a Maintenance Context
 
@@ -41,7 +41,7 @@ When a machine faults, the AR system can connect to the equipment's control syst
 
 ### Preventive Maintenance Procedures
 
-Routine PM tasks are ideal AR candidates. The system guides the technician through each step of the procedure, confirms task completion, and logs the work automatically. Checklists that might be skipped or glossed over on paper get enforced through the AR workflow. For facilities managing maintenance across many pieces of [automated equipment](/solutions/turnkey-automation/), this consistency matters.
+Routine PM tasks are ideal AR candidates. The system guides the technician through each step of the procedure, confirms task completion, and logs the work automatically. Checklists that might be skipped or glossed over on paper get enforced through the AR workflow. For facilities managing maintenance across many pieces of [automated equipment](/solutions/custom-automation/), this consistency matters.
 
 ### Remote Expert Assistance
 

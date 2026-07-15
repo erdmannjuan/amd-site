@@ -43,7 +43,7 @@ Most PLCs provide several types of data storage:
 - **Bit memory (internal relays):** Single on/off flags used for program logic, status tracking, and interlocking. These are sometimes called internal coils or markers depending on your platform.
 - **Integer registers:** 16-bit or 32-bit words for whole numbers. Used for counters, part counts, recipe indices, and similar values.
 - **Floating-point registers:** 32-bit values for decimal numbers. Essential for temperature control, analog scaling, and any calculation requiring fractional precision.
-- **String registers:** Character data for things like part numbers, batch IDs, or operator messages displayed on an [HMI](/blog/hmi-programming-best-practices/).
+- **String registers:** Character data for things like part numbers, batch IDs, or operator messages displayed on an [HMI](/blog/hmi-design-best-practices-for-operators/).
 
 How you allocate and organize these registers has a major impact on program maintainability. Scattering related data across random addresses is a recipe for confusion. Grouping registers by function — dedicating a block for recipe data, another for alarm status, another for production counters — makes programs far easier to read and debug.
 
@@ -96,7 +96,7 @@ Every modern PLC platform supports symbolic or tag-based addressing. Use it. A t
 
 ### Reserve Address Blocks for Future Expansion
 
-Leave gaps in your memory map. If your recipe block uses N7:0 through N7:30, do not start your next data group at N7:31. Start it at N7:50. Those unused addresses give you room to add recipe parameters later without reorganizing your entire memory structure. This is especially important on machines that may go through multiple phases of development or receive feature additions after initial deployment — something we see regularly in [custom assembly systems](/solutions/automated-assembly-systems/).
+Leave gaps in your memory map. If your recipe block uses N7:0 through N7:30, do not start your next data group at N7:31. Start it at N7:50. Those unused addresses give you room to add recipe parameters later without reorganizing your entire memory structure. This is especially important on machines that may go through multiple phases of development or receive feature additions after initial deployment — something we see regularly in [custom assembly systems](/solutions/assembly/).
 
 ### Document Everything
 

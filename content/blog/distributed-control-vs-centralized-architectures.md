@@ -34,7 +34,7 @@ This approach has been the default in discrete manufacturing for decades. A typi
 
 The advantages are straightforward. All your logic lives in one place, making troubleshooting simpler when a sequence does not behave as expected. You have one processor to monitor, one program to back up, and one firmware version to manage. Scan times are predictable because you are not dependent on network communication between controllers.
 
-For compact machines—think a [press-fit assembly station](/solutions/press-fit-assembly-machines/) or a single-robot cell—centralized control keeps things clean. Wiring distances are short, the I/O count is manageable, and there is no reason to introduce the complexity of multiple networked controllers.
+For compact machines—think a [press-fit assembly station](/solutions/servo-pressing/) or a single-robot cell—centralized control keeps things clean. Wiring distances are short, the I/O count is manageable, and there is no reason to introduce the complexity of multiple networked controllers.
 
 ## What Distributed Control Looks Like
 

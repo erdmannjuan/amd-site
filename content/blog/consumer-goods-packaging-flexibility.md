@@ -40,7 +40,7 @@ Not everything can be eliminated with servos. Some physical tooling changes are 
 
 ### Vision-Based Verification
 
-When the line runs multiple formats, the risk of cross-contamination and mislabeling goes up. Inline [vision and quality control systems](/solutions/vision-quality/) verify that the correct label, cap, and packaging materials are being used for the active SKU. Camera-based inspection catches errors within seconds of a changeover rather than after an entire run has been completed with the wrong configuration.
+When the line runs multiple formats, the risk of cross-contamination and mislabeling goes up. Inline [vision and quality control systems](/solutions/machine-vision/) verify that the correct label, cap, and packaging materials are being used for the active SKU. Camera-based inspection catches errors within seconds of a changeover rather than after an entire run has been completed with the wrong configuration.
 
 ### Recipe-Driven Controls
 

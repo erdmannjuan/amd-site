@@ -29,7 +29,7 @@ Three primary hardware approaches dominate the space:
 - **Tablet and handheld devices** that use rear-facing cameras to render AR overlays on a screen, offering a lower-cost entry point with less operator encumbrance
 - **Projected AR systems** that use ceiling- or fixture-mounted projectors to cast instructions directly onto the work surface, eliminating wearable hardware entirely
 
-Each approach has tradeoffs in cost, ergonomics, accuracy, and suitability for different production environments. Projected systems work well for stationary [assembly operations](/solutions/assembly-systems/) where the workpiece stays in a fixed orientation. Head-mounted units excel in maintenance scenarios where technicians move around large equipment.
+Each approach has tradeoffs in cost, ergonomics, accuracy, and suitability for different production environments. Projected systems work well for stationary [assembly operations](/solutions/assembly/) where the workpiece stays in a fixed orientation. Head-mounted units excel in maintenance scenarios where technicians move around large equipment.
 
 ## Assembly Guidance: Fewer Errors, Faster Builds
 
@@ -59,7 +59,7 @@ Training data flows in both directions. AR platforms capture detailed records of
 
 ## Quality Verification and Inspection
 
-AR is also gaining traction as an inline quality verification tool. After an assembly step, the system can prompt the operator to visually confirm component placement, orientation, or routing. Some platforms integrate with [vision systems and quality control sensors](/solutions/vision-quality-control-systems/) to perform automated checks, comparing a camera image of the completed assembly against the digital reference model and flagging discrepancies.
+AR is also gaining traction as an inline quality verification tool. After an assembly step, the system can prompt the operator to visually confirm component placement, orientation, or routing. Some platforms integrate with [vision systems and quality control sensors](/solutions/machine-vision/) to perform automated checks, comparing a camera image of the completed assembly against the digital reference model and flagging discrepancies.
 
 This approach moves quality verification upstream, catching errors at the point of origin rather than at end-of-line inspection. The cost of correcting a defect at the workstation is a fraction of the cost of rework after the product has moved through subsequent assembly steps, test, and packaging.
 

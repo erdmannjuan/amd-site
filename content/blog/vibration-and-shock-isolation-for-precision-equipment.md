@@ -67,7 +67,7 @@ For the most demanding applications—semiconductor lithography, interferometric
 
 Sometimes the best approach combines mass with isolation. An inertia block—a concrete or steel mass significantly heavier than the equipment it supports—lowers the system's center of gravity, reduces the amplitude of rocking modes, and provides thermal stability. Mounting an inertia block on isolators creates a stable, low-frequency isolation platform.
 
-A typical inertia block weighs 3 to 10 times the supported equipment mass. The added mass lowers the natural frequency for a given isolator stiffness and reduces the equipment's response to force disturbances. For [precision assembly systems](/solutions/precision-assembly-automation/) that must maintain micron-level positioning accuracy, an inertia block foundation is often non-negotiable.
+A typical inertia block weighs 3 to 10 times the supported equipment mass. The added mass lowers the natural frequency for a given isolator stiffness and reduces the equipment's response to force disturbances. For [precision assembly systems](/solutions/assembly/) that must maintain micron-level positioning accuracy, an inertia block foundation is often non-negotiable.
 
 ## Practical Design Considerations
 
@@ -111,4 +111,4 @@ Similarly, equipment with automatic tool changers, pallet changers, or part load
 
 Most standard equipment installations can be handled with manufacturer-recommended isolation systems and straightforward engineering analysis. But some situations warrant specialized vibration consulting: when multiple precision machines share a common foundation, when the building structure itself has problematic resonances, when isolation requirements are below 1 micro-g, or when active isolation systems are being considered.
 
-At AMD Machines, we design [custom automation systems](/solutions/custom-automation-solutions/) that frequently incorporate precision equipment requiring carefully engineered vibration isolation. Our approach starts with understanding the process requirements, measuring the installation environment, and designing isolation solutions that deliver the required performance without over-engineering. [Contact us](/contact/) to discuss your precision equipment installation challenges.
+At AMD Machines, we design [custom automation systems](/solutions/custom-automation/) that frequently incorporate precision equipment requiring carefully engineered vibration isolation. Our approach starts with understanding the process requirements, measuring the installation environment, and designing isolation solutions that deliver the required performance without over-engineering. [Contact us](/contact/) to discuss your precision equipment installation challenges.

@@ -57,7 +57,7 @@ Start with these high-value signals:
 
 **Fault and Alarm Data.** If the legacy PLC tracks faults internally, pulling that data into a central system enables pattern analysis. You might discover that a specific fault code always precedes an unplanned downtime event by 48 hours, giving your maintenance team an actionable early warning.
 
-**Process Parameters.** Temperature, pressure, force, speed — whatever parameters define part quality for that process. This data supports [quality control and inspection](/solutions/quality-control-inspection-automation/) by correlating process variations with downstream defect rates.
+**Process Parameters.** Temperature, pressure, force, speed — whatever parameters define part quality for that process. This data supports [quality control and inspection](/solutions/machine-vision/) by correlating process variations with downstream defect rates.
 
 **Energy Consumption.** Power monitoring at the machine level reveals energy waste during idle periods and provides data for sustainability reporting.
 
@@ -67,7 +67,7 @@ Wholesale IIoT deployment across an entire factory rarely works. The projects th
 
 **Phase 1: Pilot on a Bottleneck.** Pick one machine or work cell that represents a known constraint. Instrument it, connect it, and prove the value of real-time data on a small scale. The bottleneck selection is strategic — improvements here have the most visible impact on throughput, which makes it easier to justify expanding the program.
 
-**Phase 2: Expand to a Production Line.** Once the pilot proves the technology and the team develops confidence, extend connectivity to an entire production line. This is where you start seeing system-level insights — how machine interactions affect overall line performance, where buffer starvation occurs, and where cycle time variability in one station propagates downstream. This kind of [systems integration](/solutions/systems-integration/) thinking is what separates successful IIoT programs from ones that generate dashboards nobody uses.
+**Phase 2: Expand to a Production Line.** Once the pilot proves the technology and the team develops confidence, extend connectivity to an entire production line. This is where you start seeing system-level insights — how machine interactions affect overall line performance, where buffer starvation occurs, and where cycle time variability in one station propagates downstream. This kind of [systems integration](/solutions/custom-automation/) thinking is what separates successful IIoT programs from ones that generate dashboards nobody uses.
 
 **Phase 3: Factory-Wide Deployment.** With proven patterns and trained staff, roll out across the facility. Standardize on gateway hardware, communication protocols, and data schemas. Build dashboards for operators, supervisors, and management that show the metrics each audience actually needs.
 
@@ -97,7 +97,7 @@ These improvements compound. A 10% OEE gain on a machine that runs three shifts 
 
 ## When Modernization Makes More Sense Than Integration
 
-IIoT integration isn't always the right answer. If legacy equipment is approaching end-of-life, requires obsolete spare parts, can't hold required tolerances, or presents safety concerns, the better investment may be [custom automation systems](/solutions/custom-automation-systems/) designed with modern connectivity built in from the start. The decision should be based on total cost of ownership over the remaining useful life of the equipment, not just the upfront cost of an IIoT retrofit versus a new machine.
+IIoT integration isn't always the right answer. If legacy equipment is approaching end-of-life, requires obsolete spare parts, can't hold required tolerances, or presents safety concerns, the better investment may be [custom automation systems](/solutions/custom-automation/) designed with modern connectivity built in from the start. The decision should be based on total cost of ownership over the remaining useful life of the equipment, not just the upfront cost of an IIoT retrofit versus a new machine.
 
 ## Moving Forward
 

@@ -27,7 +27,7 @@ Modern automation addresses these issues through several mechanisms:
 
 **Variable frequency drives (VFDs) and servo systems.** Replacing fixed-speed motors with VFDs on conveyors, pumps, and fans allows equipment to draw only the energy the process actually requires. A conveyor running at 60% speed during low-volume periods uses significantly less power than one running at full speed continuously. Servo-driven systems take this further, providing precise motion profiles that eliminate wasted energy during acceleration, deceleration, and idle periods.
 
-**Intelligent standby and sleep modes.** A well-programmed PLC can monitor production flow and put downstream equipment into low-power states during gaps in production. This is especially valuable in [assembly systems](/solutions/assembly-systems/) where multiple stations may not all be needed simultaneously. Rather than running an entire line at full power for an eight-hour shift, the control system activates stations on demand.
+**Intelligent standby and sleep modes.** A well-programmed PLC can monitor production flow and put downstream equipment into low-power states during gaps in production. This is especially valuable in [assembly systems](/solutions/assembly/) where multiple stations may not all be needed simultaneously. Rather than running an entire line at full power for an eight-hour shift, the control system activates stations on demand.
 
 **Process optimization through data.** When you instrument a process with sensors and collect data through a SCADA or MES system, you can identify energy waste that would otherwise go unnoticed. We have seen cases where a welding cell was using 20% more shielding gas than necessary simply because nobody had optimized the flow settings after a product changeover. Automated monitoring catches these inefficiencies in real time.
 
@@ -63,7 +63,7 @@ You cannot manage sustainability performance without data, and automation genera
 
 This data serves two purposes. First, it provides the baseline measurements needed to set realistic sustainability targets. Second, it enables continuous improvement by making waste visible. When a plant manager can see on a dashboard that Line 3 used 15% more energy per unit last week than the week before, they can investigate and correct the issue before it becomes the new normal.
 
-Many manufacturers are finding that the data infrastructure they build for sustainability reporting also supports [predictive maintenance](/services/ongoing-support/) and overall equipment effectiveness (OEE) initiatives. The sensors and connectivity required to track energy consumption also enable vibration monitoring, thermal trending, and other condition-based maintenance strategies that extend equipment life and prevent unplanned downtime.
+Many manufacturers are finding that the data infrastructure they build for sustainability reporting also supports [predictive maintenance](/services/maintenance-support/) and overall equipment effectiveness (OEE) initiatives. The sensors and connectivity required to track energy consumption also enable vibration monitoring, thermal trending, and other condition-based maintenance strategies that extend equipment life and prevent unplanned downtime.
 
 ## Regulatory and Customer Pressure
 

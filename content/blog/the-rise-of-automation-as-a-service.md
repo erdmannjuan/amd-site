@@ -16,7 +16,7 @@ url: /blog/the-rise-of-automation-as-a-service/
 
 For decades, acquiring automation equipment meant one thing: a capital purchase. You specified a system, negotiated a price, cut a purchase order, and waited months for delivery, installation, and commissioning. The machine went on your balance sheet as a depreciating asset. You owned every maintenance headache that came with it.
 
-Automation-as-a-Service (AaaS) flips that model. Instead of buying a robotic cell or [assembly system](/solutions/automated-assembly-systems/) outright, a manufacturer pays a recurring fee—monthly, quarterly, or per unit produced—for access to automation equipment and the services wrapped around it. The provider retains ownership of the hardware. The manufacturer gets the output without the capital outlay.
+Automation-as-a-Service (AaaS) flips that model. Instead of buying a robotic cell or [assembly system](/solutions/assembly/) outright, a manufacturer pays a recurring fee—monthly, quarterly, or per unit produced—for access to automation equipment and the services wrapped around it. The provider retains ownership of the hardware. The manufacturer gets the output without the capital outlay.
 
 This is not a new financing trick dressed up in cloud-computing language. The shift reflects real changes in how automation providers design, deploy, and maintain equipment. Remote monitoring, modular hardware platforms, and standardized software stacks have made it technically feasible for a provider to manage equipment installed at a customer site without dispatching a field service engineer every time something needs adjustment.
 
@@ -52,13 +52,13 @@ Like any business model, AaaS has boundary conditions. It works best in certain 
 
 **Good fit:**
 
-- **Standard processes.** Pick-and-place, palletizing, machine tending, basic welding, and [quality inspection](/solutions/vision-inspection-systems/) tasks that use commercially available robotic platforms with minimal customization.
+- **Standard processes.** Pick-and-place, palletizing, machine tending, basic welding, and [quality inspection](/solutions/machine-vision/) tasks that use commercially available robotic platforms with minimal customization.
 - **Scalable volumes.** Processes where the manufacturer may need to add or remove capacity based on demand. Subscription models allow scaling without the commitment of additional capital purchases.
 - **Non-core processes.** Automation that supports production but is not central to the manufacturer's competitive advantage. If the process does not require proprietary tooling or trade-secret knowledge, outsourcing it to an AaaS provider is lower risk.
 
 **Poor fit:**
 
-- **Highly custom systems.** Complex [multi-station assembly lines](/solutions/automated-assembly-systems/) with custom tooling, specialized fixturing, and deeply integrated process controls are difficult to deliver on subscription terms. The provider's investment in engineering and custom hardware is too high to recover on a subscription timeline unless the contract term is very long.
+- **Highly custom systems.** Complex [multi-station assembly lines](/solutions/assembly/) with custom tooling, specialized fixturing, and deeply integrated process controls are difficult to deliver on subscription terms. The provider's investment in engineering and custom hardware is too high to recover on a subscription timeline unless the contract term is very long.
 - **Processes with proprietary IP.** If the automation process itself is a competitive advantage—a unique joining technique, a proprietary dispensing method, a calibration process that took years to develop—manufacturers are understandably reluctant to have that knowledge embedded in equipment owned by a third party.
 - **Very long product lifecycles.** If a system will run the same process for 10 or 15 years, the total cost of a subscription will almost certainly exceed the cost of a capital purchase. The financial advantage of AaaS comes from flexibility, not from reducing lifetime cost.
 

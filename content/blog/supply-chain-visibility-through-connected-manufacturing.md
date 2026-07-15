@@ -69,7 +69,7 @@ If you are planning to improve supply chain visibility through connected manufac
 
 Off-the-shelf equipment sometimes provides connectivity out of the box, but custom automation systems offer a significant advantage for supply chain visibility. When the automation is designed and built specifically for your process, data collection can be embedded into the system architecture from the beginning rather than bolted on afterward.
 
-Every [assembly system](/solutions/assembly-systems/) AMD Machines builds includes a controls architecture that supports data collection and integration. PLC programs are structured to expose relevant process variables. HMI screens are designed to present real-time status. Communication interfaces are configured to feed data upstream to MES and ERP systems. This is not an add-on feature. It is part of how we approach system design.
+Every [assembly system](/solutions/assembly/) AMD Machines builds includes a controls architecture that supports data collection and integration. PLC programs are structured to expose relevant process variables. HMI screens are designed to present real-time status. Communication interfaces are configured to feed data upstream to MES and ERP systems. This is not an add-on feature. It is part of how we approach system design.
 
 ## Moving Forward
 

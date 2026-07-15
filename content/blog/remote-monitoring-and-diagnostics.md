@@ -31,7 +31,7 @@ A remote monitoring system typically consists of several layers working together
 
 **Visualization Layer** — Raw data is useless without context. HMI screens, SCADA dashboards, and cloud-based monitoring platforms present the information in ways that operators and engineers can act on. Good dashboards show real-time machine status, historical trends, alarm summaries, and production KPIs like OEE (Overall Equipment Effectiveness) broken down by availability, performance, and quality.
 
-**Diagnostic Layer** — This is where remote access pays for itself. When a fault occurs, an engineer can remotely connect to the PLC, view the logic in real time, check I/O status, review fault logs, and watch the HMI screens exactly as the operator sees them. For vision-guided [robotic systems](/solutions/robotic-systems/), this means being able to pull up camera images, review inspection results, and adjust parameters without being on-site.
+**Diagnostic Layer** — This is where remote access pays for itself. When a fault occurs, an engineer can remotely connect to the PLC, view the logic in real time, check I/O status, review fault logs, and watch the HMI screens exactly as the operator sees them. For vision-guided [robotic systems](/solutions/robotic-cells/), this means being able to pull up camera images, review inspection results, and adjust parameters without being on-site.
 
 ## Real-World Benefits We Have Seen
 

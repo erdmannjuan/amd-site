@@ -38,7 +38,7 @@ Magnetic tape guidance is the oldest and simplest AGV navigation method. The veh
 - Branching and merging points need additional infrastructure such as RFID markers or magnets embedded in the floor
 - The facility floor must be reasonably flat and clean for tape adhesion
 
-Magnetic tape guidance still makes sense in stable production environments where routes rarely change. We see it frequently in [assembly line applications](/solutions/assembly-automation/) where vehicles shuttle parts between fixed workstations on a predictable schedule. The total cost of ownership stays low as long as the layout remains constant.
+Magnetic tape guidance still makes sense in stable production environments where routes rarely change. We see it frequently in [assembly line applications](/solutions/assembly/) where vehicles shuttle parts between fixed workstations on a predictable schedule. The total cost of ownership stays low as long as the layout remains constant.
 
 ## Laser Triangulation (LGV Navigation)
 

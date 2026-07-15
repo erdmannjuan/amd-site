@@ -31,7 +31,7 @@ This is the application with the most immediate and measurable payoff for automa
 
 Instead of writing PLC code and debugging it on the factory floor with real hardware, engineers connect their control program to a simulated model of the machine. The simulation includes the kinematics of robots and actuators, the behavior of sensors and vision systems, and the physics of part handling and material flow. The PLC thinks it is talking to real equipment.
 
-The result is that 60-80% of control logic debugging happens in the office rather than on the shop floor. This compresses commissioning timelines, reduces travel costs for integration teams, and catches interlock errors and collision risks before they can damage real hardware. For complex systems like multi-robot [assembly cells](/solutions/automated-assembly/), virtual commissioning has become a standard part of the development process rather than a luxury.
+The result is that 60-80% of control logic debugging happens in the office rather than on the shop floor. This compresses commissioning timelines, reduces travel costs for integration teams, and catches interlock errors and collision risks before they can damage real hardware. For complex systems like multi-robot [assembly cells](/solutions/assembly/), virtual commissioning has become a standard part of the development process rather than a luxury.
 
 ### Real-Time Process Monitoring
 

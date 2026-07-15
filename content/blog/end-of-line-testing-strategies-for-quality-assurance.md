@@ -37,7 +37,7 @@ Modern EOL systems draw on a broad toolkit of measurement technologies. The righ
 
 **Leak testing** is critical for any product that must contain or exclude fluids or gases. Pressure decay testing is the most common approach—pressurize the part, isolate it, and measure pressure loss over a defined interval. Mass flow testing measures flow rate directly and can be faster for high-volume applications. For extremely low leak rates, helium tracer gas testing provides sensitivity down to 10⁻⁹ atm·cc/sec.
 
-**Vision-based inspection** uses cameras and image processing to detect surface defects, verify label placement, confirm component presence, and measure features. Advances in [machine vision and quality inspection](/blog/machine-vision-quality-inspection-systems/) have made camera-based EOL checks faster and more reliable than ever, with deep learning models now handling defect classification tasks that once required human judgment.
+**Vision-based inspection** uses cameras and image processing to detect surface defects, verify label placement, confirm component presence, and measure features. Advances in [machine vision and quality inspection](/solutions/machine-vision/) have made camera-based EOL checks faster and more reliable than ever, with deep learning models now handling defect classification tasks that once required human judgment.
 
 **Dimensional measurement** ranges from simple go/no-go gauging to full 3D surface scanning. Laser triangulation sensors, structured light systems, and coordinate measuring probes can all be integrated into automated EOL stations to verify critical dimensions at production speed.
 

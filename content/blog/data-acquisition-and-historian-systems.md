@@ -19,7 +19,7 @@ Every automated production line generates data — temperatures, pressures, cycl
 
 Data acquisition (DAQ) systems and process historians solve this problem by collecting machine-level data in real time and storing it in time-series databases that support long-term trending, root cause analysis, and regulatory compliance. When implemented correctly, these systems become the backbone of continuous improvement programs, giving engineers the evidence they need to optimize processes, reduce scrap, and predict equipment failures before they cause downtime.
 
-At AMD Machines, we integrate data acquisition into the [automated systems](/solutions/assembly-automation/) we build, ensuring that the data infrastructure is designed alongside the mechanical and controls architecture — not bolted on as an afterthought.
+At AMD Machines, we integrate data acquisition into the [automated systems](/solutions/assembly/) we build, ensuring that the data infrastructure is designed alongside the mechanical and controls architecture — not bolted on as an afterthought.
 
 ## Core Components of a DAQ System
 

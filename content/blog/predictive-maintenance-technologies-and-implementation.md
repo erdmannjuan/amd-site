@@ -28,7 +28,7 @@ There is no single sensor or technique that covers every failure mode. Effective
 
 Vibration monitoring is the backbone of most PdM programs for rotating equipment. Accelerometers mounted on motor housings, spindle bearings, gearboxes, and pump casings capture vibration signatures that reveal bearing wear, shaft misalignment, imbalance, and looseness long before they produce audible symptoms.
 
-Modern vibration sensors range from simple overall-level monitors (which trigger an alarm when vibration amplitude exceeds a threshold) to triaxial accelerometers feeding high-resolution FFT analyzers that can distinguish between inner-race bearing defects, outer-race defects, and gear mesh problems based on characteristic frequency patterns. For [automated assembly systems](/solutions/assembly-systems/), where precision directly impacts product quality, vibration trending on press actuators and rotary indexers provides early warning of mechanical degradation that would otherwise show up as dimensional drift in finished parts.
+Modern vibration sensors range from simple overall-level monitors (which trigger an alarm when vibration amplitude exceeds a threshold) to triaxial accelerometers feeding high-resolution FFT analyzers that can distinguish between inner-race bearing defects, outer-race defects, and gear mesh problems based on characteristic frequency patterns. For [automated assembly systems](/solutions/assembly/), where precision directly impacts product quality, vibration trending on press actuators and rotary indexers provides early warning of mechanical degradation that would otherwise show up as dimensional drift in finished parts.
 
 ### Thermal Imaging
 

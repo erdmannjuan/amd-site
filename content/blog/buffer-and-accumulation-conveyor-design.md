@@ -18,7 +18,7 @@ url: /blog/buffer-and-accumulation-conveyor-design/
 
 Every automated production line has stations that run at different speeds, require periodic maintenance, or experience unplanned stoppages. Without buffering between those stations, a single disruption cascades through the entire line. A 30-second jam at one station starves everything downstream and blocks everything upstream. Over the course of a shift, those micro-stoppages compound into significant lost output.
 
-Buffer and accumulation conveyors absorb these variations. They decouple stations so each can operate semi-independently, keeping overall equipment effectiveness (OEE) high even when individual stations have imperfect availability. Getting the buffer design right is one of the most impactful decisions in any [assembly system](/solutions/assembly-systems/) layout, yet it often receives less engineering attention than the stations themselves.
+Buffer and accumulation conveyors absorb these variations. They decouple stations so each can operate semi-independently, keeping overall equipment effectiveness (OEE) high even when individual stations have imperfect availability. Getting the buffer design right is one of the most impactful decisions in any [assembly system](/solutions/assembly/) layout, yet it often receives less engineering attention than the stations themselves.
 
 ## FIFO vs. LIFO Buffer Strategies
 
@@ -61,7 +61,7 @@ One common mistake is sizing buffers based only on average conditions. Productio
 
 The physical implementation of the buffer conveyor matters as much as the sizing calculation.
 
-**Conveyor type selection** depends on the product. Belt conveyors handle a wide range of part geometries and provide gentle handling. Roller conveyors work well for flat-bottomed containers and pallets. Pallet-transfer conveyors with workpiece carriers are common in [assembly systems](/solutions/assembly-systems/) where parts need precise positioning at each station.
+**Conveyor type selection** depends on the product. Belt conveyors handle a wide range of part geometries and provide gentle handling. Roller conveyors work well for flat-bottomed containers and pallets. Pallet-transfer conveyors with workpiece carriers are common in [assembly systems](/solutions/assembly/) where parts need precise positioning at each station.
 
 **Incline and decline sections** can create gravity-fed accumulation, which is mechanically simple and energy-efficient. Gravity roller conveyors with speed-controlled retarders provide low-cost FIFO accumulation for suitable products. The limitation is that parts must be stable enough to travel on rollers without tipping or rotating.
 

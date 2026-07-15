@@ -28,7 +28,7 @@ The engineering challenge with unit load systems is structural. The racking supp
 
 ### Mini-Load Systems
 
-Mini-load AS/RS handles smaller loads—typically totes or cartons weighing 50 to 500 pounds. The crane mechanism is lighter and faster than unit load systems, achieving cycle times that support piece-picking and kitting operations. Mini-load systems are common in manufacturing environments where components need to be staged for [assembly operations](/solutions/automated-assembly-systems/) at specific workstations.
+Mini-load AS/RS handles smaller loads—typically totes or cartons weighing 50 to 500 pounds. The crane mechanism is lighter and faster than unit load systems, achieving cycle times that support piece-picking and kitting operations. Mini-load systems are common in manufacturing environments where components need to be staged for [assembly operations](/solutions/assembly/) at specific workstations.
 
 ### Shuttle-Based Systems
 
@@ -86,7 +86,7 @@ The payback period varies widely depending on labor costs, facility costs, and o
 
 AS/RS is not the right solution for every storage challenge. If your operation handles a small number of SKUs with low transaction volumes, conventional shelving with good inventory practices may be sufficient. Similarly, if your product mix changes frequently and unpredictably, the fixed infrastructure of an AS/RS can become a constraint rather than an advantage.
 
-AS/RS delivers the strongest returns in operations with consistent high-volume throughput, limited floor space, strict inventory accuracy requirements, or environments where labor availability is a persistent challenge. Manufacturing operations that feed [automated assembly lines](/solutions/turnkey-automation/) often benefit significantly because the AS/RS can precisely sequence component delivery to match production schedules.
+AS/RS delivers the strongest returns in operations with consistent high-volume throughput, limited floor space, strict inventory accuracy requirements, or environments where labor availability is a persistent challenge. Manufacturing operations that feed [automated assembly lines](/solutions/custom-automation/) often benefit significantly because the AS/RS can precisely sequence component delivery to match production schedules.
 
 ## Planning an AS/RS Implementation
 

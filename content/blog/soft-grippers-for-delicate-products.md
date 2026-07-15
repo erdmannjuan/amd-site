@@ -84,7 +84,7 @@ Soft grippers are inherently slower than rigid grippers. The pneumatic inflation
 
 Mounting soft grippers on a robot arm requires attention to air supply routing, finger spacing relative to product dimensions, and compliance direction relative to approach angle. Unlike rigid grippers where the tool center point is fixed, soft grippers have a variable contact geometry that shifts depending on the product shape. Robot programs need to account for this variability in the placement accuracy calculations.
 
-Working with an experienced [assembly systems integrator](/solutions/assembly-systems/) helps avoid the trial-and-error that often plagues first-time soft gripper deployments. The interaction between gripper compliance, robot motion profile, and product variability creates a design space that benefits from hands-on experience with similar applications.
+Working with an experienced [assembly systems integrator](/solutions/assembly/) helps avoid the trial-and-error that often plagues first-time soft gripper deployments. The interaction between gripper compliance, robot motion profile, and product variability creates a design space that benefits from hands-on experience with similar applications.
 
 ## Selecting the Right Soft Gripper
 

@@ -28,7 +28,7 @@ Not every post-processing step benefits equally from automation. The highest-ret
 
 Most metal AM parts require support structures to anchor overhanging features, conduct heat away from thin walls, and prevent warping during the build. Removing these supports manually involves band saws, grinders, and pliers — slow work that risks damaging the part surface and introduces variability from operator to operator.
 
-Automated support removal typically uses CNC-based machining, wire EDM for delicate internal features, or robotic grinding cells with force-controlled end effectors. The key challenge is programming: support geometry varies by part, so the system needs either CAD-driven offline programming or adaptive sensing (force/torque feedback, [vision systems](/solutions/vision-inspection-systems/)) to follow irregular surfaces without gouging the parent material.
+Automated support removal typically uses CNC-based machining, wire EDM for delicate internal features, or robotic grinding cells with force-controlled end effectors. The key challenge is programming: support geometry varies by part, so the system needs either CAD-driven offline programming or adaptive sensing (force/torque feedback, [vision systems](/solutions/machine-vision/)) to follow irregular surfaces without gouging the parent material.
 
 For polymer parts printed with soluble support material, automation is more straightforward — heated agitation tanks with automated loading and cycle control dissolve supports with minimal operator involvement.
 
@@ -49,7 +49,7 @@ Automated powder removal uses controlled vibration, pulsed airflow, ultrasonic c
 
 ### Inspection and Quality Verification
 
-Production AM parts need the same inspection rigor as any other manufactured component. Dimensional accuracy, surface finish, material density, and internal defect detection all require measurement. Automating inspection with coordinate measuring machines (CMMs), structured-light scanners, CT systems, or inline [vision inspection](/solutions/vision-inspection-systems/) closes the quality loop and generates the traceability data that regulated industries demand.
+Production AM parts need the same inspection rigor as any other manufactured component. Dimensional accuracy, surface finish, material density, and internal defect detection all require measurement. Automating inspection with coordinate measuring machines (CMMs), structured-light scanners, CT systems, or inline [vision inspection](/solutions/machine-vision/) closes the quality loop and generates the traceability data that regulated industries demand.
 
 ## Designing the Automated Post-Processing Cell
 
@@ -57,7 +57,7 @@ Integrating post-processing automation is not simply buying equipment. It requir
 
 ### Material Handling and Fixturing
 
-AM parts arrive in unpredictable orientations on build plates or loose in bins. The automation system needs a strategy for singulation, orientation, and fixturing. Options range from dedicated fixtures per part number (low complexity, high changeover cost) to flexible robotic handling with [vision-guided picking](/solutions/robotic-automation/) (higher upfront engineering, lower changeover cost). For high-mix environments, flexible fixturing wins quickly.
+AM parts arrive in unpredictable orientations on build plates or loose in bins. The automation system needs a strategy for singulation, orientation, and fixturing. Options range from dedicated fixtures per part number (low complexity, high changeover cost) to flexible robotic handling with [vision-guided picking](/solutions/robotic-cells/) (higher upfront engineering, lower changeover cost). For high-mix environments, flexible fixturing wins quickly.
 
 ### Process Sequencing
 
@@ -89,4 +89,4 @@ The calculation should also factor in quality consistency. Manual post-processin
 
 Additive manufacturing's promise has always been production-grade parts with geometric freedom that conventional manufacturing cannot match. Delivering on that promise requires treating post-processing as an engineered production system, not an afterthought staffed with manual labor. The manufacturers gaining competitive advantage with AM are the ones automating the entire workflow — from powder to finished, inspected, documented part.
 
-AMD Machines has extensive experience designing and building [automated production cells](/solutions/assembly-automation/) that integrate multiple process steps, material handling, and inspection into cohesive systems. If you are scaling additive manufacturing and need to automate the downstream workflow, [contact our engineering team](/contact/) to discuss your application.
+AMD Machines has extensive experience designing and building [automated production cells](/solutions/assembly/) that integrate multiple process steps, material handling, and inspection into cohesive systems. If you are scaling additive manufacturing and need to automate the downstream workflow, [contact our engineering team](/contact/) to discuss your application.

@@ -16,7 +16,7 @@ url: /blog/servo-motor-sizing-and-selection-guide/
 
 An undersized servo motor stalls under load, faults out during acceleration, and shuts down your production line. An oversized servo motor wastes capital, takes up unnecessary panel space, draws more power than needed, and can actually make motion control harder because the inertia mismatch between a large motor and a small load degrades tuning performance.
 
-Getting servo sizing right is not optional — it is foundational to every axis of motion in an automated system. Whether you are designing a rotary indexing table, a linear press station, a pick-and-place mechanism, or a [robotic welding positioner](/solutions/robotic-welding/), the servo motor and drive must be matched to the mechanical load with enough margin for real-world conditions but not so much margin that you are paying for capacity you will never use.
+Getting servo sizing right is not optional — it is foundational to every axis of motion in an automated system. Whether you are designing a rotary indexing table, a linear press station, a pick-and-place mechanism, or a [robotic welding positioner](/solutions/welding/), the servo motor and drive must be matched to the mechanical load with enough margin for real-world conditions but not so much margin that you are paying for capacity you will never use.
 
 This guide walks through the engineering fundamentals we apply on every motion axis we design.
 
@@ -106,7 +106,7 @@ With the required continuous torque, peak torque, speed, and inertia ratio defin
 - **Feedback type** (incremental encoder, absolute encoder, resolver)
 - **Brake option** (required for vertical axes or safety holding)
 
-The servo drive must match the motor and provide sufficient current for the required torque at the required speed. Verify that the drive's continuous and peak current ratings exceed the motor's requirements. Also confirm the drive's bus voltage is compatible with your facility's power supply and that the [control architecture](/solutions/controls-engineering/) supports your communication protocol — EtherCAT, PROFINET, EtherNet/IP, or others.
+The servo drive must match the motor and provide sufficient current for the required torque at the required speed. Verify that the drive's continuous and peak current ratings exceed the motor's requirements. Also confirm the drive's bus voltage is compatible with your facility's power supply and that the [control architecture](/solutions/custom-automation/) supports your communication protocol — EtherCAT, PROFINET, EtherNet/IP, or others.
 
 ## Common Sizing Mistakes
 
@@ -118,7 +118,7 @@ The servo drive must match the motor and provide sufficient current for the requ
 
 **Forgetting about the duty cycle.** A machine that runs 10 moves per minute during testing but 60 moves per minute in production has a completely different thermal profile. Always size for the actual production duty cycle.
 
-**Oversizing by too much.** A motor that is 3 to 4 times larger than needed creates a poor inertia ratio (the motor rotor inertia may dominate the load), increases cost, and takes up space in the [machine design](/solutions/automated-assembly/) that could be used for other components.
+**Oversizing by too much.** A motor that is 3 to 4 times larger than needed creates a poor inertia ratio (the motor rotor inertia may dominate the load), increases cost, and takes up space in the [machine design](/solutions/assembly/) that could be used for other components.
 
 ## Practical Recommendations
 
@@ -132,6 +132,6 @@ Prototype and validate. Run the actual motion profile on the physical machine an
 
 ## How AMD Machines Approaches Servo Sizing
 
-Every [custom automation system](/solutions/automated-assembly/) we build includes detailed servo sizing calculations for every motion axis. Our mechanical and controls engineers work together from the concept phase to match motor, gearbox, and drivetrain components to the actual production requirements. We validate sizing with simulation tools during design and confirm performance during commissioning with measured torque and speed data.
+Every [custom automation system](/solutions/assembly/) we build includes detailed servo sizing calculations for every motion axis. Our mechanical and controls engineers work together from the concept phase to match motor, gearbox, and drivetrain components to the actual production requirements. We validate sizing with simulation tools during design and confirm performance during commissioning with measured torque and speed data.
 
 If you are planning a new automated system or upgrading motion axes on existing equipment, [contact our engineering team](/contact/) to discuss your application requirements.

@@ -58,7 +58,7 @@ Where operators need regular access—load/unload stations, inspection points, m
 
 **Area scanners** and **safety mats** are useful for zones where fixed guarding and light curtains are not practical, such as open-sided cells or collaborative workstations. Laser scanners can define multiple zones with different responses—slow the robot when someone enters the warning zone, stop it completely when they enter the danger zone.
 
-**Two-hand controls** force the operator to keep both hands on buttons during the hazardous portion of the cycle, ensuring their hands are out of the danger zone. These are common on press applications and [assembly systems](/solutions/assembly-systems/) where an operator initiates a clamp or press stroke.
+**Two-hand controls** force the operator to keep both hands on buttons during the hazardous portion of the cycle, ensuring their hands are out of the danger zone. These are common on press applications and [assembly systems](/solutions/assembly/) where an operator initiates a clamp or press stroke.
 
 ## Safety System Architecture
 
@@ -81,7 +81,7 @@ Safety circuits must follow established architectural principles:
 
 ## Integrating Safety Into the Cell Design Workflow
 
-Safety system design should not live in a silo. It intersects with mechanical layout, electrical design, controls programming, and operator workflow. Here is how it fits into a typical [system integration](/services/system-integration/) project:
+Safety system design should not live in a silo. It intersects with mechanical layout, electrical design, controls programming, and operator workflow. Here is how it fits into a typical [system integration](/solutions/) project:
 
 1. **Conceptual design** – Identify hazard zones and operator interaction points. Establish preliminary guarding strategy. This happens alongside the initial cell layout.
 2. **Detailed risk assessment** – Formalize the hazard analysis once the mechanical design is far enough along to identify specific hazards, reach distances, and access requirements.

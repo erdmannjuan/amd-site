@@ -32,7 +32,7 @@ A highly automated production line in the U.S. or Mexico can achieve unit econom
 
 ### Supporting Multi-Sourcing Strategies
 
-Smart supply chain management means qualifying multiple sources for critical components and materials. But running multiple material specifications through production introduces variability. Automated systems with [vision inspection and quality monitoring](/solutions/vision-inspection-quality/) handle this variability more consistently than manual processes.
+Smart supply chain management means qualifying multiple sources for critical components and materials. But running multiple material specifications through production introduces variability. Automated systems with [vision inspection and quality monitoring](/solutions/machine-vision/) handle this variability more consistently than manual processes.
 
 Vision-guided systems can detect material differences, adjust process parameters, and verify output quality in real time. If you switch from Supplier A's material to Supplier B's material, an automated system with proper sensing and adaptive controls maintains quality standards without relying on an operator to notice subtle differences.
 

@@ -16,7 +16,7 @@ url: /blog/network-architecture-for-industrial-automation/
 
 Every automated production line depends on devices talking to each other — PLCs sending commands to servo drives, vision systems reporting inspection results, robots requesting the next part position, and SCADA platforms aggregating it all into something an operator can act on. When that communication breaks down, the line stops. The difference between a network that runs reliably for years and one that causes intermittent headaches usually comes down to decisions made during the architecture phase.
 
-Manufacturers investing in [custom automation systems](/solutions/custom-automation-solutions/) often focus on mechanical design and controls programming, which is understandable — those are the visible pieces. But the network tying everything together deserves equal attention. A poorly designed network introduces latency, drops packets during high-traffic periods, and creates debugging nightmares when something goes wrong at 2 AM on a Saturday.
+Manufacturers investing in [custom automation systems](/solutions/custom-automation/) often focus on mechanical design and controls programming, which is understandable — those are the visible pieces. But the network tying everything together deserves equal attention. A poorly designed network introduces latency, drops packets during high-traffic periods, and creates debugging nightmares when something goes wrong at 2 AM on a Saturday.
 
 ## The Purdue Model and Network Segmentation
 
@@ -39,7 +39,7 @@ The protocol you select shapes your entire network design. The three dominant op
 
 **PROFINET** dominates in facilities running Siemens controllers. It offers three performance classes — TCP/IP for non-critical data, RT (Real-Time) for standard I/O at cycle times around 1-10 ms, and IRT (Isochronous Real-Time) for motion control applications requiring sub-millisecond precision. If you are running Siemens S7-1500 PLCs, PROFINET is the natural fit.
 
-**EtherCAT** excels in high-speed motion control applications. Its processing-on-the-fly architecture pushes cycle times below 100 microseconds, making it the protocol of choice for applications like semiconductor handling or high-speed [robotic assembly](/solutions/robotic-assembly-systems/) where deterministic timing is non-negotiable.
+**EtherCAT** excels in high-speed motion control applications. Its processing-on-the-fly architecture pushes cycle times below 100 microseconds, making it the protocol of choice for applications like semiconductor handling or high-speed [robotic assembly](/solutions/assembly/) where deterministic timing is non-negotiable.
 
 The protocol decision often follows the controls platform. If the plant is standardized on Rockwell, EtherNet/IP is the path of least resistance. Mixing protocols is possible through gateways, but each gateway adds a potential failure point and complicates troubleshooting.
 
@@ -77,7 +77,7 @@ Additional measures that belong in every industrial network design:
 
 ## Practical Design Tips
 
-After building networks for hundreds of [assembly systems](/solutions/assembly-systems/) and custom machines, a few patterns consistently prove their value:
+After building networks for hundreds of [assembly systems](/solutions/assembly/) and custom machines, a few patterns consistently prove their value:
 
 1. **Document everything during commissioning.** Record IP addresses, VLAN assignments, switch port mappings, and cable labels. Future troubleshooting depends on accurate documentation.
 2. **Standardize IP addressing schemes across machines.** Using a consistent subnet structure — say, x.x.machine_number.device — makes it straightforward to identify any device on the floor.

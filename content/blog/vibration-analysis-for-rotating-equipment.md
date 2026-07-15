@@ -69,7 +69,7 @@ ISO 10816 provides general vibration severity guidelines based on machine class 
 
 The vibration data itself is just information. The value comes from acting on it. This means integrating vibration analysis findings into the maintenance planning process: generating work orders when alert thresholds are crossed, scheduling repairs during planned downtime windows, and verifying that repairs actually resolved the vibration issue.
 
-In facilities that run [predictive maintenance programs](/services/preventive-maintenance/), vibration data feeds into a broader condition monitoring strategy alongside oil analysis, thermography, and motor current analysis. Each technique has strengths — vibration excels at detecting mechanical faults in rotating components, while thermography catches electrical connection problems and oil analysis identifies wear particle contamination.
+In facilities that run [predictive maintenance programs](/services/maintenance-support/), vibration data feeds into a broader condition monitoring strategy alongside oil analysis, thermography, and motor current analysis. Each technique has strengths — vibration excels at detecting mechanical faults in rotating components, while thermography catches electrical connection problems and oil analysis identifies wear particle contamination.
 
 ## Common Pitfalls to Avoid
 
@@ -93,6 +93,6 @@ Beyond direct repair cost avoidance, vibration analysis reduces secondary costs:
 
 If your facility doesn't currently monitor rotating equipment vibration, start with a focused pilot program. Identify your most critical rotating assets — the ones where failure would have the greatest production impact — and establish monitoring on those first. Build internal expertise or partner with a vibration analysis service provider who can train your team while delivering immediate diagnostic value.
 
-For [automated assembly systems](/solutions/assembly-systems/) and other complex machines with multiple rotating components, integrating vibration monitoring from the machine design phase ensures that measurement points are accessible and that sensor mounting provisions are built into the structure. Retrofitting monitoring onto existing equipment is always possible, but designing it in from the start is more effective and less expensive.
+For [automated assembly systems](/solutions/assembly/) and other complex machines with multiple rotating components, integrating vibration monitoring from the machine design phase ensures that measurement points are accessible and that sensor mounting provisions are built into the structure. Retrofitting monitoring onto existing equipment is always possible, but designing it in from the start is more effective and less expensive.
 
 AMD Machines designs custom automation with maintainability in mind, including provisions for condition monitoring on critical rotating components. [Contact our engineering team](/contact/) to discuss how predictive maintenance capabilities can be built into your next automation project.

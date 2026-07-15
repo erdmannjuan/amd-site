@@ -32,7 +32,7 @@ Each robot architecture was engineered to solve a specific class of motion probl
 
 Six-axis articulated robots remain the workhorse of industrial automation. Their kinematic chain mimics a human arm with a rotating base, shoulder, elbow, and three-axis wrist. This gives them unmatched flexibility in terms of the orientations they can achieve within their work envelope.
 
-Articulated robots are the default choice for welding applications that demand complex torch angles, machine tending operations where loading positions are awkward or obstructed, [assembly operations](/solutions/automated-assembly-systems/) requiring tool access from multiple directions, and painting or coating tasks where the end effector must follow complex 3D surfaces.
+Articulated robots are the default choice for welding applications that demand complex torch angles, machine tending operations where loading positions are awkward or obstructed, [assembly operations](/solutions/assembly/) requiring tool access from multiple directions, and painting or coating tasks where the end effector must follow complex 3D surfaces.
 
 Modern articulated robots range from compact tabletop units with 500 mm reach and 3 kg payload up to heavy-duty machines exceeding 3 meters of reach and 500 kg payload. The breadth of the category means nearly any application can be addressed, but that versatility can also lead to over-specification if you are not disciplined about matching capability to need.
 

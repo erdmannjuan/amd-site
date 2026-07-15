@@ -28,7 +28,7 @@ For engineers and plant managers who have not yet deployed AI vision, here is wh
 
 **Surface defect detection** is the most common application. Whether you are inspecting painted automotive panels, machined metal surfaces, or molded plastic housings, AI vision systems can identify scratches, dents, discoloration, and porosity that fall outside normal variation. Unlike traditional systems that need explicit programming for each defect type, AI models generalize — they learn what "good" looks like and flag anything that deviates.
 
-**Assembly verification** is another high-value use case. On complex assemblies with dozens of components, AI vision confirms that every part is present, correctly oriented, and properly seated. This is especially valuable on [assembly systems](/solutions/assembly-systems/) where manual verification creates bottlenecks and human error rates increase with product complexity.
+**Assembly verification** is another high-value use case. On complex assemblies with dozens of components, AI vision confirms that every part is present, correctly oriented, and properly seated. This is especially valuable on [assembly systems](/solutions/assembly/) where manual verification creates bottlenecks and human error rates increase with product complexity.
 
 **Dimensional measurement** using AI has also improved significantly. While traditional gauging and CMM inspection remain the gold standard for tight tolerances, AI-enhanced vision can perform in-line dimensional checks at production speed, flagging parts that trend toward tolerance limits before they go out of spec.
 

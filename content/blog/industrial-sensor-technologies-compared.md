@@ -56,7 +56,7 @@ Photoelectric sensors use a light emitter and receiver to detect objects. They c
 
 **Diffuse (proximity mode):** The emitter and receiver are in one housing, and the sensor detects light reflected back from the target itself. Convenient for single-sided mounting, but range is shorter (typically under 2 meters) and detection depends heavily on the target's color and surface finish. A matte black part reflects far less light than a polished white one, which directly affects reliable sensing distance.
 
-Photoelectric sensors are a strong choice for detecting non-metallic parts at moderate distances. In applications with significant dust, mist, or airborne particulate, consider models with air purge fittings or look at ultrasonic alternatives. For [assembly systems](/solutions/automated-assembly-systems/) where parts move through multiple stations, photoelectric sensors are frequently used for part-present confirmation at each fixture.
+Photoelectric sensors are a strong choice for detecting non-metallic parts at moderate distances. In applications with significant dust, mist, or airborne particulate, consider models with air purge fittings or look at ultrasonic alternatives. For [assembly systems](/solutions/assembly/) where parts move through multiple stations, photoelectric sensors are frequently used for part-present confirmation at each fixture.
 
 ## Ultrasonic Sensors
 
