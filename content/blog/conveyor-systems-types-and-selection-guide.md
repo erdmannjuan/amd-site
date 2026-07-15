@@ -1,7 +1,6 @@
 ---
 title: 'Conveyor Systems: Types and Selection Guide'
-description: This topic represents an important consideration for manufacturers seeking
-  to improve their operations through automation. Understanding the fundamentals.
+description: "Compare belt, roller, chain, and modular conveyor types — with selection criteria for load, speed, and layout to fit your automation line."
 keywords: industrial automation, manufacturing automation, AMD Machines, material
   handling automation, conveyor systems, palletizing, conveyor, systems, types
 date: '2025-07-24'

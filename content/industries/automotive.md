@@ -1,5 +1,5 @@
 ---
-title: Automotive Manufacturing Automation | Tier 1, 2 & 3 Supplier Solutions
+title: 'Automotive Manufacturing Automation'
 description: "Automotive automation for OEMs and Tier 1-3 suppliers: robotic welding, powertrain assembly, EV battery systems, and end-of-line testing. 2,500+ systems delivered."
 keywords: automotive manufacturing automation, automotive assembly systems, Tier 1 supplier automation, robotic welding automotive, EV battery automation, powertrain assembly systems, IATF 16949 automation
 template: industry.html

@@ -51,6 +51,16 @@
    | marking, traceability | `/solutions/marking-traceability/` | No other page should target "marking systems" as primary |
    | industrial automation equipment | `/industries/` | No other page should target "industrial automation equipment" as primary |
    | automated assembly machines (guide content) | `/blog/automated-assembly-machines-a-selection-guide/` | Blog targets guide/educational intent |
+   | automated deburring, robotic deburring | `/solutions/deburring/` | Released 2026-06 (stale redirect removed) |
+   | heavy equipment manufacturing automation | `/industries/heavy-equipment/` | Blog post merged + 301'd here 2026-06 |
+
+   **`/applications/` pages (19) are long-tail complements, NOT competitors.** Each
+   application page targets a specific machine/station configuration (e.g. "automated
+   leak test stations") while its parent `/solutions/` page owns the broad commercial
+   cluster (e.g. "leak testing systems"). GSC verified (June 2026): solutions pages own
+   all head terms. Never give an applications page a solutions-page head term in its
+   title or H1. Each applications page links UP to its parent solution; each parent
+   solution links DOWN to its applications ("Looking for a specific configuration?").
 
 8. **Blog posts SUPPORT solution pages, they don't compete with them.** Blog posts should target educational/informational keywords ("what is...", "how to...", "guide to..."). Solution pages target commercial keywords ("robotic cells", "welding automation"). Every blog post about a solution topic MUST link to the corresponding solution page with descriptive anchor text.
 
@@ -143,6 +153,11 @@ Application page → primary long-tail cluster → parent solution (DO NOT targe
 ### Redirect Reference
 
 Current active redirects (in `_redirects`):
+- `/blog/heavy-equipment-manufacturing-automation/` → `/industries/heavy-equipment/` (301, merged 2026-06)
+- `/blog/calculating-roi-for-industrial-automation-projects/` → `/blog/roi-of-robotic-automation/` (301, content file deleted 2026-06)
+- NOTE: on Cloudflare Pages, `_redirects` rules run BEFORE static assets — a stale
+  redirect can silently suppress a real generated page (this hid `/solutions/deburring/`
+  until 2026-06). When adding a redirect, confirm no content file generates that URL.
 - `/automated-solutions/*` paths → `/solutions/*` equivalents (301)
 - `www.amdmachines.com/*` → `amdmachines.com/*` (handled by Cloudflare)
 
@@ -212,7 +227,7 @@ my-site-generator/
 │   │   └── amd/          # AMD facility and equipment photos
 │   └── js/
 │
-├── output/               # Generated site (419 pages, deployed via git push)
+├── output/               # Generated site (~500 pages, deployed via git push)
 │
 ├── scripts/
 │   └── seo-crawler.py    # SEO audit script

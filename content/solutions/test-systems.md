@@ -168,6 +168,8 @@ For a typical single-station automated test system, we see project costs of $75,
 
 **"We need data integration with our MES/ERP system."** Every system we build includes standard database connectivity. We output structured test data via OPC UA, SQL, or MQTT and have integrated with Plex, SAP, Oracle, and custom MES platforms. We also build real-time dashboards accessible from any browser on your network.
 
+Looking for a specific configuration? See our [automated leak test stations](/applications/automated-leak-test-stations/), [end-of-line test systems](/applications/end-of-line-test-systems/), and [automated functional test stations](/applications/automated-functional-test-stations/).
+
 ## Frequently Asked Questions
 
 ### What leak rate can you detect with pressure decay vs. helium testing?

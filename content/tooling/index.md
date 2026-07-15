@@ -1,5 +1,5 @@
 ---
-title: Custom Tooling Design & Manufacturing | Press Dies, Assembly Fixtures, Welding Jigs
+title: 'Custom Tooling, Press Dies & Weld Fixtures'
 description: "AMD Machines designs and builds custom toolings - press dies, assembly fixtures, welding jigs. Prototype toolings in 4-6 weeks. Servo press tooling specialists with 30+ years experience."
 keywords: press tooling, servo press tooling, press dies, assembly tooling, assembly fixtures, welding fixtures, welding jigs, prototype tooling, custom tooling manufacturer, tooling design services, stamping dies, production tooling, fixture design
 template: tooling.html

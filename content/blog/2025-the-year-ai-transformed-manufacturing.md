@@ -1,7 +1,6 @@
 ---
 title: '2025: The Year AI Transformed Manufacturing'
-description: The latest developments in AI and automation continue to reshape manufacturing.
-  Year-end analysis shows AI adoption crossed critical threshold.
+description: "2025 in review: how AI reshaped manufacturing — from vision inspection and predictive maintenance to robot programming and production planning."
 keywords: AI automation, robotics news, manufacturing AI, industrial automation, automation
   trends
 date: '2025-12-20'

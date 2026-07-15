@@ -1,5 +1,5 @@
 ---
-title: Consumer Products Automation | High-Volume Assembly & Packaging Systems
+title: 'Consumer Products Automation & Assembly'
 description: "High-volume consumer products automation: assembly, packaging, inspection & palletizing systems. Quick-changeover solutions handling 50+ SKUs with sub-3-second cycle times."
 keywords: consumer products automation, consumer goods manufacturing, high-volume assembly systems, packaging automation equipment, product inspection automation, high-mix manufacturing automation, consumer goods packaging lines
 template: industry.html

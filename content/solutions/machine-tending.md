@@ -202,6 +202,8 @@ A typical single-machine CNC tending cell with a FANUC robot, conveyor staging, 
 
 **"Lights-out scares us—what if something goes wrong at 2 AM?"** Remote monitoring. Every cell we build includes Ethernet connectivity to your plant network, and we integrate with monitoring platforms that send alerts via text and email when the cell stops, a fault occurs, or material runs low. Some customers use cameras inside the cell for visual verification. We also build in automatic recovery logic—if the robot drops a part or a gauge cycle fails, the system retries before faulting. On most cells, over 95% of minor faults resolve automatically without human intervention.
 
+Looking for a specific configuration? See our [robotic machine tending cells](/applications/robotic-machine-tending-cells/) for CNC loading and unloading.
+
 ## Frequently Asked Questions
 
 ### What robots do you use for machine tending?

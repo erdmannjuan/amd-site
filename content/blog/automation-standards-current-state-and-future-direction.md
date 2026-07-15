@@ -1,7 +1,6 @@
 ---
 title: 'Automation Standards: Current State and Future Direction'
-description: This topic represents an important consideration for manufacturers seeking
-  to improve their operations through automation. Understanding the fundamentals.
+description: "Where industrial automation standards stand today — ISO, ANSI/RIA, OPC UA — and where they're heading. What OEMs and integrators should track."
 keywords: industrial automation, manufacturing automation, AMD Machines, manufacturing
   trends, automation trends, industry outlook, automation, standards, current
 date: '2024-10-01'

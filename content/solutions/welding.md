@@ -182,6 +182,8 @@ We help our customers build detailed ROI models before every project. Here's a t
 
 Typical system investment: $250,000–$600,000 depending on complexity. At 320 parts/shift and $3.32 labor savings per part, the payback on labor alone is about 16 months — and that doesn't count the rework reduction, overtime elimination, or the fact that you can actually fill the orders you're turning away today.
 
+Looking for a specific configuration? See our [robotic welding cells](/applications/robotic-welding-cells/) for MIG, TIG, and laser applications.
+
 ## Frequently Asked Questions
 
 ### What's the minimum volume to justify robotic welding?

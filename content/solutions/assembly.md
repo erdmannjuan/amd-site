@@ -219,6 +219,8 @@ For a typical $800,000–$1.2M custom assembly system, we see full payback in **
 
 **"We need to integrate with our existing MES."** We support all major communication protocols: OPC UA, MQTT, Ethernet/IP, PROFINET, and direct SQL or REST API connections. We've integrated with SAP, Plex, Ignition, and dozens of custom MES platforms.
 
+Looking for a specific configuration? See our [custom assembly machines](/applications/custom-assembly-machines/) and [servo press assembly stations](/applications/servo-press-assembly-stations/).
+
 ## Frequently Asked Questions
 
 ### What cycle times can a custom assembly system achieve?

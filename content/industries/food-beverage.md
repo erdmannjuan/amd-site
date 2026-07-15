@@ -1,5 +1,5 @@
 ---
-title: Food & Beverage Automation | Sanitary Packaging & Palletizing Systems
+title: 'Food & Beverage Automation | Palletizing'
 description: "Sanitary food & beverage automation systems: FDA-compliant packaging, robotic palletizing, vision inspection & washdown-rated material handling for food manufacturing."
 keywords: food and beverage automation, sanitary packaging systems, food palletizing robots, FDA food safe automation, USDA compliant equipment, food processing automation, washdown rated robots
 template: industry.html

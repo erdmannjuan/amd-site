@@ -1,7 +1,6 @@
 ---
 title: 'Measuring Automation Success: KPIs and Metrics'
-description: This topic represents an important consideration for manufacturers seeking
-  to improve their operations through automation. Understanding the fundamentals.
+description: "The KPIs that prove automation ROI: OEE, first-pass yield, cycle time, and labor hours per unit — how to baseline them and track real gains."
 keywords: industrial automation, manufacturing automation, AMD Machines, automation
   ROI, manufacturing efficiency, automation investment, measuring, automation, success
 date: '2025-06-12'

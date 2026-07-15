@@ -1,5 +1,5 @@
 ---
-title: Robotic Bin Picking Systems | AI Vision Integration | Industrial Automation
+title: 'Robotic Bin Picking Systems | 3D AI Vision'
 description: AI-powered robotic bin picking systems with 3D vision achieving 99%+ pick rates. Custom FANUC & ABB integration for automotive, medical, and heavy equipment manufacturers.
 keywords: robotic bin picking, 3D vision bin picking, AI vision integration, random bin picking automation, structured bin picking, bin picking ROI, industrial bin picking systems
 template: solution.html
@@ -145,6 +145,8 @@ Let's build a realistic business case. Here are the numbers we see most often ac
 **Throughput consistency**: Manual sorting rates degrade through the shift—operators slow down, take breaks, and vary in speed. Automated systems maintain consistent cycle times 24/7, which smooths downstream operations and reduces buffer inventory requirements.
 
 For a typical bin picking system costing $180,000–$350,000 (robot, vision, gripper, integration, and controls), we see full payback in **10–20 months** on a two-shift operation. Simpler applications with standard totes and lighter parts come in at the lower end; complex gaylord applications with custom grippers and heavy parts are at the higher end.
+
+Looking for a specific configuration? See our [robotic bin picking systems](/applications/robotic-bin-picking-systems/) with 3D vision guidance.
 
 ## Frequently Asked Questions
 

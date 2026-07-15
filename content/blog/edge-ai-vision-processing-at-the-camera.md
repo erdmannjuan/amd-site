@@ -1,7 +1,6 @@
 ---
 title: 'Edge AI Vision: Processing at the Camera'
-description: Machine vision has transformed from a specialized technology to a mainstream
-  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+description: "Edge AI vision puts inference on the camera itself — cutting latency and network load for inline inspection. How smart cameras change system design."
 keywords: industrial automation, manufacturing automation, AMD Machines, machine
   vision, industrial vision, automated inspection, vision, processing, camera
 date: '2025-11-25'

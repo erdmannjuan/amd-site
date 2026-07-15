@@ -565,6 +565,11 @@ def generate_sitemap(pages, config):
         if url in ['/404/', '/privacy-policy/']:
             continue
 
+        # Skip blog category and pagination pages: they canonicalize to /blog/,
+        # so listing them in the sitemap sends Google conflicting signals
+        if '/blog/category/' in url or '/page/' in url:
+            continue
+
         # Determine priority and changefreq based on page type
         if url == '/':
             priority = '1.0'

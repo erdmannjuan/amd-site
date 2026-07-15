@@ -1,7 +1,6 @@
 ---
 title: OCR and Barcode Reading in Automated Production
-description: Machine vision has transformed from a specialized technology to a mainstream
-  manufacturing tool. Modern systems combine high-resolution imaging, powerful.
+description: "OCR and barcode reading drive traceability in automated production. Camera selection, lighting, and read-rate strategies for reliable code reads."
 keywords: industrial automation, manufacturing automation, AMD Machines, machine
   vision, industrial vision, automated inspection, barcode, reading, automated
 date: '2025-12-11'

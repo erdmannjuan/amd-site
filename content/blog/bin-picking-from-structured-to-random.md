@@ -1,7 +1,6 @@
 ---
 title: 'Bin Picking: From Structured to Random'
-description: This topic represents an important consideration for manufacturers seeking
-  to improve their operations through automation. Understanding the fundamentals.
+description: "From structured trays to random bins: how 3D vision and AI grasp planning made robotic bin picking production-ready, and when each approach fits."
 keywords: industrial automation, manufacturing automation, AMD Machines, material
   handling automation, conveyor systems, palletizing, picking, structured, random
 date: '2025-07-16'

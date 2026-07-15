@@ -181,6 +181,8 @@ For a typical single-station laser marking and verification system with MES inte
 
 **"We need to mark on curved or irregular surfaces."** Laser marking with a 3D galvo scan head (like the KEYENCE MD-X series with 3-axis control) can focus across a curved surface, maintaining mark quality on cylindrical, spherical, and freeform geometries. For extreme contours, we mount the marking head on a robot arm and use [vision-guided positioning](/solutions/machine-vision/) to adapt to each part.
 
+Looking for a specific configuration? See our [part marking and traceability systems](/applications/part-marking-traceability-systems/) for serialization and DPM.
+
 ## Frequently Asked Questions
 
 ### What's the smallest data matrix code you can reliably mark and read?

@@ -1,7 +1,6 @@
 ---
 title: 'Scaling Automation: From Pilot to Full Deployment'
-description: This topic represents an important consideration for manufacturers seeking
-  to improve their operations through automation. Understanding the fundamentals.
+description: "How to take automation from a successful pilot cell to full production deployment — phasing, risk control, and lessons from 30+ years of integration."
 keywords: industrial automation, manufacturing automation, AMD Machines, automation
   ROI, manufacturing efficiency, automation investment, scaling, automation, pilot
 date: '2025-05-29'
