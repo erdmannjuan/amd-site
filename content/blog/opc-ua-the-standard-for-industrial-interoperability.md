@@ -1,6 +1,6 @@
 ---
-title: 'OPC UA Guide | Industrial Communication & Interoperability'
-description: 'How OPC UA enables secure, vendor-neutral communication across PLCs, robots, and SCADA systems. Architecture, security model, and integration guide.'
+title: 'What Is OPC UA? 2026 Interoperability Guide'
+description: 'OPC UA is the vendor-neutral protocol linking PLCs, robots & SCADA. Architecture, security model, and a practical integration guide for 2026.'
 keywords: OPC UA, industrial interoperability, automation communication protocol,
   IEC 62541, industrial data exchange, SCADA integration, PLC communication, smart
   manufacturing

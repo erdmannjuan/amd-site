@@ -1,6 +1,6 @@
 ---
-title: 'Robot Programming Languages | RAPID, KRL & Karel Compared'
-description: 'Compare RAPID, KRL, Karel, TP, and offline programming tools for industrial robots. Practical guide to choosing the right language for your application.'
+title: 'Robot Programming Languages (2026 Guide)'
+description: 'Compare RAPID, KRL, Karel, TP & URScript in this 2026 guide to choosing the right industrial robot programming language.'
 keywords: robot programming languages, RAPID, KRL, Karel, teach pendant programming,
   offline robot programming, industrial robot software, robot controller languages
 date: '2024-11-26'
