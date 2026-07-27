@@ -36,6 +36,27 @@ benefits:
     description: Single-operator monitoring of systems that replace 4–8 manual stations, delivering 40–60% direct labor reduction.
   - title: Built-in Quality Checks
     description: In-process force monitoring, vision inspection, and leak testing catch defects before they leave the station.
+faq:
+  - q: What cycle times can a custom assembly system achieve?
+    a: It depends on the number of operations and product complexity. Rotary dial systems typically achieve 1.5–6 seconds per part. Linear transfer systems range from 5–30 seconds. We've built dial machines running under 2 seconds per cycle for simple two-component assemblies, and linear systems at 25 seconds for complex 20+ component products.
+  - q: How much does an automated assembly system cost?
+    a: Custom assembly machines typically range from $250K to $2M+ depending on station count, cycle time requirements, level of inspection, and overall process complexity. Based on our installed base, ROI breakeven falls in the 14–24 month range for two-shift operations, driven primarily by 40–60% labor cost reductions and significant throughput gains. Three-shift plants often recover the investment even faster. Contact us for a budgetary estimate based on your specific requirements.
+  - q: How long does it take from concept to production-ready machine?
+    a: A typical custom assembly system takes 6–9 months from signed purchase order to site acceptance test. Simple single-station cells can be faster (3–4 months), while complex multi-station lines with validation requirements may take 10–14 months. We provide a detailed timeline during the proposal phase.
+  - q: What is the difference between a rotary dial and linear transfer assembly line?
+    a: Rotary dial machines offer a compact footprint with 4–16 stations arranged around a central indexing table. They excel at high-speed assembly of small parts with a fixed number of variants and can achieve cycle times under 2 seconds. Linear transfer systems are longer and modular, supporting 6–40+ stations with the ability to add, remove, or rearrange stations as your process evolves — making them the better choice for complex multi-step assemblies or when future expansion is planned. Both architectures achieve sub-1% defect rates when properly designed. The right choice depends on part size, station count, cycle time target, and available floor space. We build both and can recommend the best architecture for your application.
+  - q: What types of assembly automation equipment does AMD Machines integrate?
+    a: We integrate a broad range of assembly equipment including rotary dial and indexing machines, linear transfer systems, robotic assembly cells (FANUC, ABB, Yaskawa), vibratory and centrifugal feeders, servo press-fit stations, multi-spindle screwdrivers, precision dispensing systems, and machine vision inspection. Every system is custom-engineered around the customer's specific part geometry, tolerance requirements, and production rate targets — there is no off-the-shelf template.
+  - q: Can the machine handle multiple product variants?
+    a: Yes — and this is something we plan for from the beginning. Depending on the variants, we use recipe-driven servo parameters, quick-change fixture nests (swap time under 5 minutes), or fully flexible vision-guided robotic systems that handle variants without any changeover.
+  - q: What OEE should I expect?
+    a: We target 85% OEE during the run-off acceptance at our facility, and our installed base typically reaches 90–95% OEE within 6 months of production start. The biggest factors affecting OEE are part feeding reliability and incoming component quality — both things we address during the design phase.
+  - q: Can existing manual assembly processes be automated?
+    a: Yes — converting manual assembly lines into automated systems is exactly what AMD Machines specializes in. With over 30 years of experience and more than 2,500 machines delivered, we have automated virtually every type of hand-assembly operation. Most projects begin with a process audit where our engineers evaluate the manual workflow station by station, identify the highest-impact automation opportunities, and design a phased implementation approach. Even partial automation — targeting just the bottleneck stations or the highest-scrap operations — can deliver significant ROI and serve as a foundation for future expansion.
+  - q: What controls platforms do you use?
+    a: We standardize on Allen-Bradley ControlLogix and CompactLogix PLCs for most applications, with Rockwell PanelView HMIs or Ignition-based SCADA for complex systems. Robot integrations include FANUC, ABB, KUKA, and Yaskawa depending on the application requirements. We also integrate Beckhoff TwinCAT and Siemens platforms when the customer's facility standard requires it.
+  - q: Do you provide training and ongoing support?
+    a: Every machine ships with comprehensive operator and maintenance training at our facility and at your site. We provide 24/7 phone support, remote diagnostics via secure VPN connection, and on-site maintenance and support contracts. We also stock critical spare parts for fast turnaround on replacement components.
 ---
 
 After more than three decades and over 2,500 machines shipped, we've learned something that most automation brochures won't tell you: the hardest part of assembly automation isn't picking the right robot or designing a clever fixture. It's understanding *your* product well enough to build a machine that runs lights-out on second shift without a single quality escape. That's what AMD Machines does—and it's all we've done since day one.
@@ -228,44 +249,8 @@ For a typical $800,000–$1.2M custom assembly system, we see full payback in **
 
 Looking for a specific configuration? See our [custom assembly machines](/applications/custom-assembly-machines/) and [servo press assembly stations](/applications/servo-press-assembly-stations/).
 
-## Frequently Asked Questions
+## Support After Installation
 
-### What cycle times can a custom assembly system achieve?
+Every system ships with operator and maintenance training at our facility and at your plant, backed by 24/7 phone support and remote diagnostics. Ongoing [maintenance and support](/services/maintenance-support/) contracts and stocked [replacement components](/services/spare-parts/) keep your line running once it is in production.
 
-It depends on the number of operations and product complexity. Rotary dial systems typically achieve 1.5–6 seconds per part. Linear transfer systems range from 5–30 seconds. We've built dial machines running under 2 seconds per cycle for simple two-component assemblies, and linear systems at 25 seconds for complex 20+ component products.
-
-### How long does it take from concept to production-ready machine?
-
-A typical custom assembly system takes 6–9 months from signed purchase order to site acceptance test. Simple single-station cells can be faster (3–4 months), while complex multi-station lines with validation requirements may take 10–14 months. We provide a detailed timeline during the proposal phase.
-
-### Can the machine handle multiple product variants?
-
-Yes—and this is something we plan for from the beginning. Depending on the variants, we use recipe-driven servo parameters, quick-change fixture nests (swap time under 5 minutes), or fully flexible vision-guided robotic systems that handle variants without any changeover.
-
-### What OEE should I expect?
-
-We target 85% OEE during the run-off acceptance at our facility, and our installed base typically reaches 90–95% OEE within 6 months of production start. The biggest factors affecting OEE are part feeding reliability and incoming component quality—both things we address during the design phase.
-
-### Do you provide training and ongoing support?
-
-Absolutely. Every machine ships with comprehensive operator and maintenance training at our facility and at your site. We provide 24/7 phone support, remote diagnostics via secure VPN connection, and on-site [maintenance and support](/services/maintenance-support/) contracts. We also stock critical spare parts for fast turnaround on [replacement components](/services/spare-parts/).
-
-### What controls platforms do you use?
-
-We standardize on Allen-Bradley ControlLogix and CompactLogix PLCs for most applications, with Rockwell PanelView HMIs or Ignition-based SCADA for complex systems. Robot integrations include FANUC, ABB, KUKA, and Yaskawa depending on the application requirements. We also integrate Beckhoff TwinCAT and Siemens platforms when the customer's facility standard requires it.
-
-### What types of assembly automation equipment does AMD Machines integrate?
-
-We integrate a broad range of assembly equipment including rotary dial and indexing machines, linear transfer systems, robotic assembly cells (FANUC, ABB, Yaskawa), vibratory and centrifugal feeders, servo press-fit stations, multi-spindle screwdrivers, precision dispensing systems, and machine vision inspection. Every system is custom-engineered around the customer's specific part geometry, tolerance requirements, and production rate targets—there is no off-the-shelf template.
-
-### How much does an automated assembly system cost?
-
-Custom assembly machines typically range from $250K to $2M+ depending on station count, cycle time requirements, level of inspection, and overall process complexity. Based on our installed base, ROI breakeven falls in the 14–24 month range for two-shift operations, driven primarily by 40–60% labor cost reductions and significant throughput gains. Three-shift plants often recover the investment even faster. Contact us for a budgetary estimate based on your specific requirements.
-
-### What is the difference between a rotary dial and linear transfer assembly line?
-
-Rotary dial machines offer a compact footprint with 4–16 stations arranged around a central indexing table. They excel at high-speed assembly of small parts with a fixed number of variants and can achieve cycle times under 2 seconds. Linear transfer systems are longer and modular, supporting 6–40+ stations with the ability to add, remove, or rearrange stations as your process evolves—making them the better choice for complex multi-step assemblies or when future expansion is planned. Both architectures achieve sub-1% defect rates when properly designed. The right choice depends on part size, station count, cycle time target, and available floor space. We build both and can recommend the best architecture for your application.
-
-### Can existing manual assembly processes be automated?
-
-Yes—converting manual assembly lines into automated systems is exactly what AMD Machines specializes in. With over 30 years of experience and more than 2,500 machines delivered, we have automated virtually every type of hand-assembly operation. Most projects begin with a process audit where our engineers evaluate the manual workflow station by station, identify the highest-impact automation opportunities, and design a phased implementation approach. Even partial automation—targeting just the bottleneck stations or the highest-scrap operations—can deliver significant ROI and serve as a foundation for future expansion.
+See the frequently asked questions below for cycle times, cost ranges, lead times, and how rotary dial and linear transfer architectures compare.

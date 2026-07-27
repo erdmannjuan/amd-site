@@ -17,6 +17,24 @@
     "serviceType": {{ (page.short_title or page.title) | tojson }}
 }
 </script>
+{% if page.faq %}
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for item in page.faq %}
+        {
+            "@type": "Question",
+            "name": {{ item.q | tojson }},
+            "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | tojson }} }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -164,6 +182,26 @@
         </div>
     </div>
 </section>
+
+<!-- FAQ (rendered from frontmatter -> collapsible + powers FAQPage schema) -->
+{% if page.faq %}
+<section class="section app-faq-section" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">{{ page.short_title or page.title }}: frequently asked questions</h2>
+        </div>
+        <div class="app-faq">
+            {% for item in page.faq %}
+            <details class="app-faq-item"{% if loop.first %} open{% endif %}>
+                <summary>{{ item.q }}</summary>
+                <div class="app-faq-answer"><p>{{ item.a }}</p></div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
 
 <!-- Customers Also Viewed -->
 <section class="also-viewed-section" id="related">

@@ -1,9 +1,9 @@
 ---
-title: 'Robotic Bin Picking Systems | 3D AI Vision'
-description: AI-powered robotic bin picking systems with 3D vision achieving 99%+ pick rates. Custom FANUC & ABB integration for automotive and heavy equipment.
+title: 'Automated Bin Picking Systems | 3D Vision'
+description: Automated bin picking with 3D vision — 99%+ pick rates, 2–4s cycles. Custom FANUC & ABB robot cells for automotive and heavy equipment. Get a quote.
 keywords: robotic bin picking, 3D vision bin picking, AI vision integration, random bin picking automation, structured bin picking, bin picking ROI, industrial bin picking systems
 template: solution.html
-hero_title: Robotic Bin Picking
+hero_title: Automated Bin Picking Systems
 hero_subtitle: AI-powered 3D vision systems delivering measurable labor reduction for Tier 1 manufacturers
 short_title: Bin Picking
 url: /solutions/bin-picking/
