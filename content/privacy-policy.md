@@ -18,10 +18,10 @@ This policy covers visitors to amdmachines.com, the customers, prospects, suppli
 AMD Machines is responsible for the use, processing, and protection of the personal information described in this policy.
 
 **Advanced Manufacturing Development LLC (AMD Machines)**
-420 N Wabash Ave, Chicago, IL 60611
+10330 Lake Rd, Suite F6, Houston, TX 77070
 Phone: +1 832 745 1292
 
-We also operate a sales and service location in Houston, Texas, and a manufacturing complex in Querétaro, Mexico.
+We also operate a sales and service hub in Chicago, Illinois, and a manufacturing complex in Querétaro, Mexico.
 
 ## Information We Collect
 
@@ -181,5 +181,5 @@ If you have questions about this Privacy Policy, or believe your privacy rights 
 
 **AMD Machines**
 Phone: +1 832 745 1292
-Address: 420 N Wabash Ave, Chicago, IL 60611
+Address: 10330 Lake Rd, Suite F6, Houston, TX 77070
 Privacy requests: [info@amdmachines.com](mailto:info@amdmachines.com)
