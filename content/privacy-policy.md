@@ -9,7 +9,7 @@ template: page.html
 
 Advanced Manufacturing Development LLC, doing business as AMD Machines ("AMD," "we," "our," or "us"), respects the right to privacy and is committed to protecting the personal information entrusted to us. This Privacy Policy explains what personal information we collect, how we use and safeguard it, and the rights and choices available to you.
 
-This policy covers visitors to amdmachines.com, the customers, prospects, suppliers, and business contacts we work with in the United States, and individuals who apply for employment with us.
+This policy covers visitors to amdmachines.com, the customers, prospects, suppliers, and business contacts we work with in the United States, and the people who apply to work at AMD and who work for us.
 
 **Operations in Mexico:** Personal information collected by our affiliate AMD Maquinaria, S.A. de C.V. in Querétaro is governed by Mexico's Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Those disclosures, including how to exercise ARCO rights, are set out in our [Aviso de Privacidad for Mexico (PDF)](/static/docs/aviso-de-privacidad-mx.pdf).
 
@@ -51,13 +51,15 @@ This information is stored in HubSpot and used solely to respond to your inquiry
 
 When you engage with us as a customer, prospect, supplier, or partner, we may collect business contact and transaction information, including name, job title, employer, business address, business email and phone, project and technical requirements, quotations and purchase orders, billing and payment details, and related correspondence.
 
-**Job Applicant Information**
+**Job Applicant and Employee Information**
 
-When you apply for a position with AMD, we may collect your name and contact details, resume or CV, work history, education, certifications and licenses, references, and work authorization status, along with anything else you choose to share with us. If we extend an offer, we may also collect the information needed to onboard you and to meet payroll, tax, benefits, and other legal obligations — which can include government-issued identification numbers and, where permitted by law and with any required consent, background check results.
+When you apply for a position with AMD, we may collect your name and contact details, resume or CV, work history, education, certifications and licenses, references, and work authorization status, along with anything else you choose to share with us.
 
-Applicant information is used only for recruiting, hiring, and employment administration. We do not use it for marketing, and we do not sell it.
+If you join AMD, we maintain a personnel record for the duration of your employment and for the retention period that applies afterward. Depending on your role, that record may include government-issued identification and work authorization documents, tax withholding information, bank details for payroll, compensation history and benefits elections, dependent and beneficiary information you provide during benefits enrollment, emergency contacts, timekeeping and attendance records, training and certification records, performance and disciplinary records, facility and system access credentials, and — where permitted by law and with any consent required — background check and screening results.
 
-Apart from the recruiting and hiring context described above, we do not knowingly collect sensitive personal information — such as Social Security numbers, government ID numbers, financial account numbers, or health information — through this website.
+We use this information to recruit and hire, to administer payroll, benefits, and taxes, to manage performance, training, and workplace access, to meet our employment, tax, immigration, safety, and recordkeeping obligations, and to provide employment references where the law permits. We do not use applicant or employee information for marketing, and we do not sell it.
+
+Apart from the employment context described above, we do not knowingly collect sensitive personal information — such as Social Security numbers, government ID numbers, financial account numbers, or health information — through this website.
 
 ## How We Use Your Information
 
@@ -73,7 +75,8 @@ We use the information we collect to:
 8. Comply with legal, tax, customs, export control, and other regulatory obligations
 9. Protect our rights and property and the security of our systems and facilities
 10. Evaluate applications for employment, conduct interviews, and administer hiring
-11. Administer employment, payroll, benefits, and facility access for those we hire
+11. Administer employment, payroll, benefits, taxes, timekeeping, performance, training, and facility access
+12. Provide employment references where permitted by law
 
 ## Cookies
 
@@ -121,7 +124,7 @@ Depending on your state of residence, you may have the right to:
 - Opt out of analytics tracking
 - Not be discriminated against for exercising these rights
 
-**How to submit a request.** Email our privacy officer at [sromero@amdmaquinaria.com](mailto:sromero@amdmaquinaria.com), or [contact us](/contact/). Your request should include:
+**How to submit a request.** Email us at [info@amdmachines.com](mailto:info@amdmachines.com), or [contact us](/contact/). Your request should include:
 
 1. Your full name and an email address where we can reach you
 2. A clear description of the personal information your request concerns
@@ -150,6 +153,8 @@ Residents of states with comprehensive consumer privacy laws — including Virgi
 
 We do not sell personal data, engage in targeted advertising, or conduct that kind of profiling.
 
+Most state privacy laws outside California exempt personal data processed in an employment context. Where that exemption applies, the rights above cover your information as a consumer rather than as an applicant or employee — but you may still contact us about employment records and we will respond.
+
 Submit requests the same way described under [Your Rights](#your-rights). If we decline a request, you may appeal by replying to our response or writing to our privacy officer; we will notify you of the outcome in writing within the period your state's law allows. You may also file a complaint with your state attorney general.
 
 ## Children's Privacy
@@ -177,4 +182,4 @@ If you have questions about this Privacy Policy, or believe your privacy rights 
 **AMD Machines**
 Phone: +1 832 745 1292
 Address: 420 N Wabash Ave, Chicago, IL 60611
-Privacy requests: [sromero@amdmaquinaria.com](mailto:sromero@amdmaquinaria.com)
+Privacy requests: [info@amdmachines.com](mailto:info@amdmachines.com)
