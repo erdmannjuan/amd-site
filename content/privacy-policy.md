@@ -9,7 +9,7 @@ template: page.html
 
 Advanced Manufacturing Development LLC, doing business as AMD Machines ("AMD," "we," "our," or "us"), respects the right to privacy and is committed to protecting the personal information entrusted to us. This Privacy Policy explains what personal information we collect, how we use and safeguard it, and the rights and choices available to you.
 
-This policy covers visitors to amdmachines.com and the customers, prospects, suppliers, and business contacts we work with in the United States.
+This policy covers visitors to amdmachines.com, the customers, prospects, suppliers, and business contacts we work with in the United States, and individuals who apply for employment with us.
 
 **Operations in Mexico:** Personal information collected by our affiliate AMD Maquinaria, S.A. de C.V. in Querétaro is governed by Mexico's Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Those disclosures, including how to exercise ARCO rights, are set out in our [Aviso de Privacidad for Mexico (PDF)](/static/docs/aviso-de-privacidad-mx.pdf).
 
@@ -51,7 +51,13 @@ This information is stored in HubSpot and used solely to respond to your inquiry
 
 When you engage with us as a customer, prospect, supplier, or partner, we may collect business contact and transaction information, including name, job title, employer, business address, business email and phone, project and technical requirements, quotations and purchase orders, billing and payment details, and related correspondence.
 
-We do not knowingly collect sensitive personal information — such as Social Security numbers, government ID numbers, financial account numbers, or health information — through this website.
+**Job Applicant Information**
+
+When you apply for a position with AMD, we may collect your name and contact details, resume or CV, work history, education, certifications and licenses, references, and work authorization status, along with anything else you choose to share with us. If we extend an offer, we may also collect the information needed to onboard you and to meet payroll, tax, benefits, and other legal obligations — which can include government-issued identification numbers and, where permitted by law and with any required consent, background check results.
+
+Applicant information is used only for recruiting, hiring, and employment administration. We do not use it for marketing, and we do not sell it.
+
+Apart from the recruiting and hiring context described above, we do not knowingly collect sensitive personal information — such as Social Security numbers, government ID numbers, financial account numbers, or health information — through this website.
 
 ## How We Use Your Information
 
@@ -66,6 +72,8 @@ We use the information we collect to:
 7. Send communications you have requested
 8. Comply with legal, tax, customs, export control, and other regulatory obligations
 9. Protect our rights and property and the security of our systems and facilities
+10. Evaluate applications for employment, conduct interviews, and administer hiring
+11. Administer employment, payroll, benefits, and facility access for those we hire
 
 ## Cookies
 
@@ -134,7 +142,15 @@ California residents have the right to:
 - Limit the use and disclosure of sensitive personal information
 - Equal service and price, even after exercising privacy rights
 
-We do not sell or share personal information as those terms are defined under the CCPA, and we do not use or disclose sensitive personal information for purposes beyond those permitted by law.
+We do not sell or share personal information as those terms are defined under the CCPA, and we do not use or disclose sensitive personal information for purposes beyond those permitted by law. These rights extend to California job applicants and employees with respect to the personal information described in this policy.
+
+## Residents of Other States
+
+Residents of states with comprehensive consumer privacy laws — including Virginia, Colorado, Connecticut, Utah, Texas, Oregon, Montana, and others as their laws take effect — generally have the right to confirm whether we process their personal data, to access and obtain a copy of it, to correct inaccuracies, to request deletion, and to opt out of targeted advertising, the sale of personal data, and profiling that produces legal or similarly significant effects.
+
+We do not sell personal data, engage in targeted advertising, or conduct that kind of profiling.
+
+Submit requests the same way described under [Your Rights](#your-rights). If we decline a request, you may appeal by replying to our response or writing to our privacy officer; we will notify you of the outcome in writing within the period your state's law allows. You may also file a complaint with your state attorney general.
 
 ## Children's Privacy
 
