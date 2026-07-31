@@ -5,13 +5,25 @@ keywords: privacy policy, data protection, cookies, analytics
 template: page.html
 ---
 
-## Privacy Policy
+**Last Updated: July 2026**
 
-**Last Updated: January 2025**
+Advanced Manufacturing Development LLC, doing business as AMD Machines ("AMD," "we," "our," or "us"), respects the right to privacy and is committed to protecting the personal information entrusted to us. This Privacy Policy explains what personal information we collect, how we use and safeguard it, and the rights and choices available to you.
 
-AMD Machines ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard information when you visit our website.
+This policy covers visitors to amdmachines.com and the customers, prospects, suppliers, and business contacts we work with in the United States.
 
-### Information We Collect
+**Operations in Mexico:** Personal information collected by our affiliate AMD Maquinaria, S.A. de C.V. in Querétaro is governed by Mexico's Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Those disclosures, including how to exercise ARCO rights, are set out in our [Aviso de Privacidad for Mexico (PDF)](/static/docs/aviso-de-privacidad-mx.pdf).
+
+## Who We Are
+
+AMD Machines is responsible for the use, processing, and protection of the personal information described in this policy.
+
+**Advanced Manufacturing Development LLC (AMD Machines)**
+420 N Wabash Ave, Chicago, IL 60611
+Phone: +1 832 745 1292
+
+We also operate a sales and service location in Houston, Texas, and a manufacturing complex in Querétaro, Mexico.
+
+## Information We Collect
 
 **Analytics Data**
 
@@ -35,16 +47,27 @@ When you submit our contact form, we collect:
 
 This information is stored in HubSpot and used solely to respond to your inquiry and provide relevant services.
 
-### How We Use Your Information
+**Business Relationship Information**
 
-We use the collected information to:
+When you engage with us as a customer, prospect, supplier, or partner, we may collect business contact and transaction information, including name, job title, employer, business address, business email and phone, project and technical requirements, quotations and purchase orders, billing and payment details, and related correspondence.
 
-- Improve our website and user experience
-- Respond to your inquiries and requests
-- Understand our audience and website performance
-- Send relevant communications if you've requested them
+We do not knowingly collect sensitive personal information — such as Social Security numbers, government ID numbers, financial account numbers, or health information — through this website.
 
-### Cookies
+## How We Use Your Information
+
+We use the information we collect to:
+
+1. Respond to inquiries, requests for quotation, and service requests
+2. Design, quote, build, install, commission, and support automated equipment
+3. Administer contracts, purchase orders, invoicing, and payment
+4. Manage supplier, subcontractor, and partner relationships
+5. Provide maintenance, spare parts, and technical support
+6. Improve our website, products, and user experience
+7. Send communications you have requested
+8. Comply with legal, tax, customs, export control, and other regulatory obligations
+9. Protect our rights and property and the security of our systems and facilities
+
+## Cookies
 
 Our website uses cookies for:
 
@@ -53,49 +76,89 @@ Our website uses cookies for:
 
 You can control cookies through your browser settings. Note that disabling cookies may affect website functionality.
 
-### Third-Party Services
+## Third-Party Services
 
 We use the following third-party services:
 
 - **Google Analytics** - Website analytics ([Google Privacy Policy](https://policies.google.com/privacy))
 - **HubSpot** - Contact form and CRM ([HubSpot Privacy Policy](https://legal.hubspot.com/privacy-policy))
-- **GitHub Pages** - Website hosting ([GitHub Privacy Policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement))
+- **Cloudflare** - Website hosting, content delivery, and security ([Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/))
 
-### Data Security
+## Disclosure of Personal Information
 
-We implement appropriate technical and organizational measures to protect your information. However, no internet transmission is completely secure.
+We do not sell, rent, trade, or otherwise commercialize your personal information. We disclose personal information only:
 
-### Your Rights
+- To service providers that process information on our behalf under contract, such as hosting, analytics, CRM, and payment providers
+- To our affiliates, including AMD Maquinaria, S.A. de C.V. in Mexico, where necessary to deliver, install, or support your project
+- Where required or permitted by law, including in response to a subpoena, court order, or request from federal, state, or local authorities
+- In connection with a merger, acquisition, financing, or sale of assets, subject to the protections of this policy
 
-Depending on your location, you may have the right to:
+## Data Security
+
+We maintain administrative, technical, and physical safeguards designed to protect personal information against loss, misuse, and unauthorized access, alteration, or disclosure. No method of transmission over the internet is completely secure, and we cannot guarantee absolute security.
+
+## Data Retention
+
+We retain personal information for as long as it is needed for the purposes described above, and thereafter as required to satisfy legal, tax, contractual, and warranty obligations — typically for the duration of the business relationship plus the applicable record retention period.
+
+## Your Rights
+
+Depending on your state of residence, you may have the right to:
 
 - Access the personal information we hold about you
-- Request correction of inaccurate information
+- Request correction of inaccurate or incomplete information
 - Request deletion of your information
+- Receive a portable copy of your information
+- Opt out of the sale or sharing of personal information and of targeted advertising
 - Opt out of analytics tracking
+- Not be discriminated against for exercising these rights
 
-To exercise these rights, [contact us](/contact/).
+**How to submit a request.** Email our privacy officer at [sromero@amdmaquinaria.com](mailto:sromero@amdmaquinaria.com), or [contact us](/contact/). Your request should include:
 
-### California Residents (CCPA)
+1. Your full name and an email address where we can reach you
+2. A clear description of the personal information your request concerns
+3. A clear description of the right you wish to exercise
+4. If the request is submitted by an authorized agent, proof of that authorization
+
+We may need to verify your identity before acting on a request. We will respond within 45 days of receiving a verifiable request. If we need more time, we will notify you and may extend that period by up to an additional 45 days.
+
+## California Residents (CCPA/CPRA)
 
 California residents have the right to:
 
-- Know what personal information is collected
-- Know whether personal information is sold or disclosed
-- Say no to the sale of personal information
-- Access their personal information
+- Know what personal information is collected, used, and disclosed
+- Know whether personal information is sold or shared
+- Opt out of the sale or sharing of personal information
+- Request correction of inaccurate personal information
+- Request deletion of personal information
+- Limit the use and disclosure of sensitive personal information
 - Equal service and price, even after exercising privacy rights
 
-We do not sell personal information.
+We do not sell or share personal information as those terms are defined under the CCPA, and we do not use or disclose sensitive personal information for purposes beyond those permitted by law.
 
-### Changes to This Policy
+## Children's Privacy
 
-We may update this Privacy Policy periodically. Changes will be posted on this page with an updated revision date.
+Our website and services are directed to businesses and are not intended for children. We do not knowingly collect personal information from children under 13.
 
-### Contact Us
+## Personal Information Collected in Mexico
 
-If you have questions about this Privacy Policy, [contact us](/contact/) or call:
+Personal information collected by AMD Maquinaria, S.A. de C.V. in Querétaro, Mexico is subject to Mexican law rather than this policy. Our Mexican privacy notice describes the data collected, the purposes of processing, transfers, security measures, and how to exercise ARCO rights (Access, Rectification, Cancellation, and Opposition):
+
+[Aviso de Privacidad — México (PDF)](/static/docs/aviso-de-privacidad-mx.pdf)
+
+Requests relating to information handled in Mexico should be sent to [sromero@amdmaquinaria.com](mailto:sromero@amdmaquinaria.com).
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time as a result of new legal requirements, changes to the products and services we offer, changes to our privacy practices, or changes to our business. Changes will be posted on this page with an updated revision date, and where required by law we will notify you directly.
+
+## Questions and Complaints
+
+If you have questions about this Privacy Policy, or believe your privacy rights have been affected by our practices, [contact us](/contact/) so we can address it. You may also file a complaint with your state attorney general or the Federal Trade Commission. For personal information handled in Mexico, complaints may be filed with the competent Mexican data protection authority as described in our [Aviso de Privacidad](/static/docs/aviso-de-privacidad-mx.pdf).
+
+## Contact Us
 
 **AMD Machines**
-Phone: {{ config.social.phone }}
-Address: {{ config.social.address }}
+Phone: +1 832 745 1292
+Address: 420 N Wabash Ave, Chicago, IL 60611
+Privacy requests: [sromero@amdmaquinaria.com](mailto:sromero@amdmaquinaria.com)
