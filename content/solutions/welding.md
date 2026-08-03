@@ -38,6 +38,21 @@ benefits:
     description: In-process monitoring catches defects early, reducing scrap and rework costs.
   - title: Skilled Labor Savings
     description: Automation addresses welder shortages while maintaining quality standards.
+faq:
+  - q: What's the minimum volume to justify robotic welding?
+    a: There's no magic number, but we generally see positive ROI starting around 5,000–10,000 parts per year for a single-part-family cell. Below that, the programming and setup costs are harder to justify unless quality requirements are extreme (aerospace) or the welds are hazardous to perform manually.
+  - q: How long does it take to switch between part numbers?
+    a: For cells designed with quick-change fixturing, changeover is typically 5–15 minutes for a physical fixture swap. If the parts share a common fixture with adjustable nests, changeover is just a program selection on the pendant — under 30 seconds.
+  - q: Can a robotic cell handle parts with poor fit-up?
+    a: Yes, within limits. Laser seam tracking compensates for gaps up to about 3 mm and misalignment up to 2 mm in real time. Beyond that, you need to fix the upstream forming or machining process. We always evaluate incoming part quality during the feasibility study because no amount of robot intelligence can overcome parts that simply don't fit together.
+  - q: What about welding aluminum? Is it harder to automate?
+    a: Aluminum welding is absolutely automatable, but it does require specific expertise. The feedability of aluminum wire is trickier (push-pull torch systems are often necessary), and the process window is narrower than steel. We've built dozens of aluminum welding cells using pulsed MIG and CMT processes. The key is getting the power source, wire, gas, and torch setup right from the start.
+  - q: How do you handle weld fume extraction?
+    a: Every cell we build includes fume extraction engineered for the specific welding process and material. For MIG welding steel, we typically use overhead hood extraction or source capture (on-torch extraction). For stainless steel and exotic materials with hexavalent chromium concerns, source capture is mandatory per OSHA standards. We work with extraction system suppliers to ensure compliance with PEL requirements.
+  - q: What maintenance does a robotic welding cell require?
+    a: Plan for daily tip and nozzle checks, weekly cable and liner inspection, monthly full PM including robot axis greasing and positioner checks, and annual calibration verification. We provide detailed PM schedules and maintenance and support contracts tailored to your cell's duty cycle.
+  - q: Do you provide operator and maintenance training?
+    a: Every system we deliver includes comprehensive hands-on training at our facility and at your plant. Operators learn part loading, program selection, basic troubleshooting, and quality checks. Maintenance technicians get deeper training on robot jogging, parameter adjustment, torch maintenance, and diagnostic procedures. We've found that investing in thorough training during startup prevents 80% of the support calls we'd otherwise get in the first year.
 ---
 
 If you've spent any time on a production floor, you already know the reality: finding skilled welders is harder than ever, quality demands keep climbing, and your customers want more parts faster at lower cost. That's the world we've been living in for over 30 years at AMD Machines, and it's exactly why robotic welding has become the backbone of modern manufacturing.
@@ -182,28 +197,11 @@ Typical system investment: $250,000–$600,000 depending on complexity. At 320 p
 
 Looking for a specific configuration? See our [robotic welding cells](/applications/robotic-welding-cells/) for MIG, TIG, and laser applications.
 
-## Frequently Asked Questions
+## Support After Installation
 
-### What's the minimum volume to justify robotic welding?
-There's no magic number, but we generally see positive ROI starting around 5,000–10,000 parts per year for a single-part-family cell. Below that, the programming and setup costs are harder to justify unless quality requirements are extreme (aerospace) or the welds are hazardous to perform manually.
+Every cell ships with hands-on [operator and maintenance training](/services/training/) at our facility and at your plant — part loading, program selection, fault recovery, torch maintenance, and diagnostics. We back that with detailed PM schedules, from daily tip and nozzle checks through annual calibration, and ongoing [maintenance and support](/services/maintenance-support/) contracts matched to your cell's actual duty cycle.
 
-### How long does it take to switch between part numbers?
-For cells designed with quick-change fixturing, changeover is typically 5–15 minutes for a physical fixture swap. If the parts share a common fixture with adjustable nests, changeover is just a program selection on the pendant — under 30 seconds.
-
-### Can a robotic cell handle parts with poor fit-up?
-Yes, within limits. Laser seam tracking compensates for gaps up to about 3mm and misalignment up to 2mm in real time. Beyond that, you need to fix the upstream forming or machining process. We always evaluate incoming part quality during the feasibility study because no amount of robot intelligence can overcome parts that simply don't fit together.
-
-### What about welding aluminum? Is it harder to automate?
-Aluminum welding is absolutely automatable, but it does require specific expertise. The feedability of aluminum wire is trickier (push-pull torch systems are often necessary), and the process window is narrower than steel. We've built dozens of aluminum welding cells using pulsed MIG and CMT processes. The key is getting the power source, wire, gas, and torch setup right from the start.
-
-### How do you handle weld fume extraction?
-Every cell we build includes fume extraction engineered for the specific welding process and material. For MIG welding steel, we typically use overhead hood extraction or source capture (on-torch extraction). For stainless steel and exotic materials with hexavalent chromium concerns, source capture is mandatory per OSHA standards. We work with extraction system suppliers to ensure compliance with PEL requirements.
-
-### What maintenance does a robotic welding cell require?
-Plan for daily tip and nozzle checks, weekly cable and liner inspection, monthly full PM including robot axis greasing and positioner checks, and annual calibration verification. We provide detailed PM schedules and [maintenance support](/services/maintenance-support/) contracts tailored to your cell's duty cycle.
-
-### Do you provide operator and maintenance training?
-Every system we deliver includes comprehensive hands-on [training](/services/training/) at our facility and at your plant. Operators learn part loading, program selection, basic troubleshooting, and quality checks. Maintenance technicians get deeper training on robot jogging, parameter adjustment, torch maintenance, and diagnostic procedures. We've found that investing in thorough training during startup prevents 80% of the support calls we'd otherwise get in the first year.
+Common questions on minimum volumes, changeover times, aluminum welding, fume extraction, and maintenance are answered in the FAQ below. For budgetary ranges across welding cells and other system types, see our [automation equipment cost guide](/blog/what-automation-costs/).
 
 ## Let's Talk About Your Welding Application
 

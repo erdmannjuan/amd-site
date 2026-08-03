@@ -68,7 +68,7 @@ Many manufacturers also discover that a successful first automation project crea
 
 ## How to Budget Accurately
 
-The most reliable approach is to apply a multiplier to the equipment quote that accounts for these ancillary costs. Depending on the complexity of the integration and the regulatory environment, total installed cost typically runs 1.3x to 2.0x the equipment price. For a first-time automation buyer, plan closer to the higher end of that range.
+The most reliable approach is to apply a multiplier to the equipment quote that accounts for these ancillary costs. Depending on the complexity of the integration and the regulatory environment, total installed cost typically runs 1.3x to 2.0x the equipment price. For a first-time automation buyer, plan closer to the higher end of that range. If you're still establishing the base equipment number itself, our [automation equipment cost guide](/blog/what-automation-costs/) publishes typical ranges by system type to anchor the multiplier against.
 
 Build a detailed checklist that covers facility prep, integration engineering, spare parts, training, documentation, and first-year support. Get quotes for each category independently rather than hoping they are included somewhere in the equipment proposal. And have an honest conversation with your integrator about what is and is not included in their scope—good integrators will help you identify these items because they know that budget surprises damage relationships.
 

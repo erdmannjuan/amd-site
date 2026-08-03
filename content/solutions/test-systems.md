@@ -38,6 +38,21 @@ benefits:
     description: Effective testing prevents field failures—our customers typically see 60–80% reductions in warranty claims within the first year of deployment.
   - title: Process Feedback
     description: Real-time SPC data reveals trends by shift, station, and material lot, enabling proactive corrections before scrap accumulates.
+faq:
+  - q: What leak rate can you detect with pressure decay vs. helium testing?
+    a: Pressure decay reliably detects leaks down to approximately 0.1 scc/s, depending on part volume, test pressure, and environmental conditions. Mass flow extends that to about 0.01 scc/s. Helium vacuum testing pushes sensitivity to 1×10⁻⁵ scc/s or below — roughly 10,000 times more sensitive than basic pressure decay. We recommend the least expensive method that meets your specification with margin.
+  - q: How do you determine the right reject threshold for a leak test?
+    a: We start with your functional leak rate requirement — the leak rate that would cause a product failure in the field. Then we add a safety margin (typically 3–5x) and validate the reject threshold against known-good and known-bad parts during the test development phase. We use Gauge R&R studies to confirm the test system's measurement capability relative to the reject threshold, targeting a Gauge R&R under 10%.
+  - q: Can you test parts at elevated temperature or pressure?
+    a: Yes. We build test systems that operate at temperatures from -40°C to +150°C using thermal chambers, heated fixtures, or cryogenic cooling. Pressure ranges extend from vacuum to 100+ bar depending on the application. High-pressure and high-temperature testing requires specialized safety engineering — burst containment, pressure relief, and SIL-rated safety circuits — which we design into every system.
+  - q: What cycle time can you achieve for leak testing?
+    a: Cycle times range from 5 seconds for simple pressure decay tests on small parts to 60+ seconds for high-sensitivity helium tests on large volumes. For assembly line integrations, we design the test station cycle time to match the line takt. If the test inherently takes longer than takt, we use multiple parallel test stations feeding a common conveyor to maintain throughput.
+  - q: How do you handle false rejects and false passes?
+    a: False rejects waste production capacity; false passes ship defective products. We attack both through rigorous test development — environmental compensation (temperature, barometric pressure), adequate stabilization times, proper seal design, and statistical validation against known reference parts. Our target is always less than 0.5% false reject rate with zero false passes on defects exceeding the reject threshold.
+  - q: Do your test systems comply with automotive quality standards?
+    a: Absolutely. For automotive programs, we design to IATF 16949 requirements including Measurement System Analysis (MSA), full traceability, and AIAG SPC charting. We also support process optimization through the test data our systems generate.
+  - q: Can test systems be added to our existing production line?
+    a: Yes. We regularly retrofit test stations into existing lines — integrating with your current conveyor, robotic cells, or material handling systems. We evaluate your line layout, available floor space, and cycle time requirements, then design the test station for minimal disruption during installation. Many retrofit projects are installed and validated during a planned shutdown weekend.
 ---
 
 I've spent the better part of two decades commissioning end-of-line test systems, and here's the uncomfortable truth most equipment suppliers won't tell you: test equipment is only as good as the engineering behind the test strategy. I've walked into plants where they spent $200,000 on a leak test station and couldn't hold a stable baseline because nobody accounted for the thermal expansion of the test part during the production shift. I've seen functional test systems that passed every part in the morning and rejected 8% by afternoon—not because the parts changed, but because ambient temperature drifted 6°C and nobody compensated the measurement thresholds.
@@ -162,32 +177,8 @@ For a typical single-station automated test system, we see project costs of $75,
 
 Looking for a specific configuration? See our [automated leak test stations](/applications/automated-leak-test-stations/), [end-of-line test systems](/applications/end-of-line-test-systems/), and [automated functional test stations](/applications/automated-functional-test-stations/).
 
-## Frequently Asked Questions
+## Support After Installation
 
-### What leak rate can you detect with pressure decay vs. helium testing?
+Most of our test stations integrate directly into an existing [assembly line](/solutions/assembly/), [robotic cell](/solutions/robotic-cells/), or [material handling](/solutions/material-handling/) system, and many retrofits are installed and validated during a single planned shutdown weekend. Every system ships with IATF-ready documentation, and the SPC data it generates feeds directly into [process optimization](/services/process-optimization/) work after launch.
 
-Pressure decay reliably detects leaks down to approximately 0.1 scc/s, depending on part volume, test pressure, and environmental conditions. Mass flow extends that to about 0.01 scc/s. Helium vacuum testing pushes sensitivity to 1×10⁻⁵ scc/s or below—roughly 10,000 times more sensitive than basic pressure decay. We recommend the least expensive method that meets your specification with margin.
-
-### How do you determine the right reject threshold for a leak test?
-
-We start with your functional leak rate requirement—the leak rate that would cause a product failure in the field. Then we add a safety margin (typically 3–5x) and validate the reject threshold against known-good and known-bad parts during the test development phase. We use Gauge R&R studies to confirm the test system's measurement capability relative to the reject threshold, targeting a Gauge R&R under 10%.
-
-### Can you test parts at elevated temperature or pressure?
-
-Yes. We build test systems that operate at temperatures from -40°C to +150°C using thermal chambers, heated fixtures, or cryogenic cooling. Pressure ranges extend from vacuum to 100+ bar depending on the application. High-pressure and high-temperature testing requires specialized safety engineering—burst containment, pressure relief, and SIL-rated safety circuits—which we design into every system.
-
-### What cycle time can you achieve for leak testing?
-
-Cycle times range from 5 seconds for simple pressure decay tests on small parts to 60+ seconds for high-sensitivity helium tests on large volumes. For our [assembly line](/solutions/assembly/) integrations, we design the test station cycle time to match the line takt. If the test inherently takes longer than takt, we use multiple parallel test stations feeding a common conveyor to maintain throughput.
-
-### How do you handle false rejects and false passes?
-
-False rejects waste production capacity; false passes ship defective products. We attack both through rigorous test development: environmental compensation (temperature, barometric pressure), adequate stabilization times, proper seal design, and statistical validation against known reference parts. Our target is always less than 0.5% false reject rate with zero false passes on defects exceeding the reject threshold.
-
-### Do your test systems comply with automotive quality standards?
-
-Absolutely. For automotive programs, we design to IATF 16949 requirements including Measurement System Analysis (MSA), full traceability, and AIAG SPC charting. We also support [process optimization](/services/process-optimization/) through the test data our systems generate.
-
-### Can test systems be added to our existing production line?
-
-Yes. We regularly retrofit test stations into existing lines—integrating with your current conveyor, [robotic cells](/solutions/robotic-cells/), or [material handling](/solutions/material-handling/) systems. We evaluate your line layout, available floor space, and cycle time requirements, then design the test station for minimal disruption during installation. Many retrofit projects are installed and validated during a planned shutdown weekend.
+Detectable leak rates, reject-threshold methodology, false-reject handling, and achievable cycle times are covered in the FAQ below. For budgetary ranges across test stations and other system types, see our [automation equipment cost guide](/blog/what-automation-costs/).
