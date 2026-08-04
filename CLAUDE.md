@@ -54,6 +54,8 @@
    | (merged 2026-07) `/blog/automated-assembly-machines/` + selection-guide slug → 301 to `/solutions/assembly/` | `/solutions/assembly/` | Was cannibalizing the head term; do NOT recreate an assembly-machines blog page with commercial intent |
    | automated deburring, robotic deburring | `/solutions/deburring/` | Released 2026-06 (stale redirect removed) |
    | heavy equipment manufacturing automation | `/industries/heavy-equipment/` | Blog post merged + 301'd here 2026-06 |
+   | custom automation machines, custom automation machinery, automation machine builder | `/` (homepage) | Title retargeted 2026-08-03 (EXP-011). `/solutions/custom-automation/` keeps "custom automation" + special purpose machines; homepage owns the machines/builder flavor |
+   | end of line testing (educational/process intent) | `/blog/end-of-line-testing-strategies-for-quality-assurance/` | Educational guide; `/solutions/test-systems/` owns test systems/leak testing head terms, `/applications/end-of-line-test-systems/` owns EOL equipment long-tail |
 
    **`/applications/` pages (19) are long-tail complements, NOT competitors.** Each
    application page targets a specific machine/station configuration (e.g. "automated

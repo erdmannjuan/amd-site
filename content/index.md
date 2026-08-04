@@ -1,6 +1,6 @@
 ---
-title: Custom Automation & Robotic Systems
-description: Custom automated machines, robotic cells and welding systems. 30+ years experience, 2,500+ machines built. Get a free quote.
+title: Custom Automation Machine Builder
+description: Custom automation machines engineered and built in the USA — 2,500+ systems delivered, 14-24 month payback. Send your part for a free quote.
 keywords: custom automation, robotic automation systems, automated manufacturing equipment, industrial automation solutions, robotic welding cells, assembly automation, turnkey automation
 template: homepage.html
 hero_title: Your Partner for Custom Automated Manufacturing Solutions

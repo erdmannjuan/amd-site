@@ -1,6 +1,6 @@
 ---
-title: "End-of-Line Testing: Methods, Equipment & System Design"
-description: "How to design an end-of-line test system — leak, electrical, vision, and functional test methods. Test fixture design, data integration, and first-pass yield optimization."
+title: "End-of-Line Testing (2026 Guide)"
+description: "What end-of-line testing is, which methods fit which products — leak, electrical, vision, functional — and how to spec an EOL station that holds takt."
 keywords: industrial automation, manufacturing automation, AMD Machines, automated
   testing, quality inspection, test systems, testing, strategies, quality
 date: '2025-10-22'
