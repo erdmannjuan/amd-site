@@ -281,3 +281,10 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /blog/openai-demonstrates-gpt-5-capabilities-for-industrial-proces/ /blog/ 301
 /blog/heavy-equipment-welding-cell-increases-throughput-3x/ /solutions/welding/ 301
 /blog/the-total-automation-ecosystem-from-design-to-support/ /blog/ 301
+
+# Blog pruning batch 2 (2026-08-10, G REVIEW-list processing) - 5 dated News posts removed
+/blog/2024-year-in-review-ai-transforms-manufacturing-automation/ /blog/ 301
+/blog/major-automakers-commit-50b-to-ai-driven-manufacturing-by-20/ /industries/automotive/ 301
+/blog/foxconn-unveils-lights-out-iphone-factory-in-india/ /industries/electronics/ 301
+/blog/industrial-metaverse-platforms-gain-traction/ /blog/ 301
+/blog/humanoid-robots-progress-toward-factory-deployment/ /blog/ 301
