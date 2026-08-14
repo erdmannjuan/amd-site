@@ -9,7 +9,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com; frame-src https://www.google.com https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com; frame-ancestors 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://www.gstatic.com https://analytics.ahrefs.com https://js.hs-scripts.com https://js.hs-analytics.net https://js.hs-banner.com https://js.hscollectedforms.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://api.hsforms.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.google.com https://analytics.ahrefs.com https://track.hubspot.com https://forms.hscollectedforms.net; frame-src https://www.google.com https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com; frame-ancestors 'self';">
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Request a free quote for custom automation. Contact AMD Machines to discuss robotic cells, welding, or assembly projects.">
@@ -825,6 +825,17 @@
             const messageText = document.getElementById('message').value;
             const fullMessage = projectType ? `[Project Type: ${projectType}]\n\n${messageText}` : messageText;
 
+            // HubSpot tracking cookie for source attribution.
+            // Strictly additive: if the cookie is absent, the payload is identical to before.
+            const hutkMatch = document.cookie.match(/(?:^|;\s*)hubspotutk=([^;]+)/);
+            const submissionContext = {
+                pageUri: window.location.href,
+                pageName: document.title
+            };
+            if (hutkMatch && hutkMatch[1]) {
+                submissionContext.hutk = hutkMatch[1];
+            }
+
             const formData = {
                 fields: [
                     { name: 'firstname', value: document.getElementById('firstname').value },
@@ -834,10 +845,7 @@
                     { name: 'company', value: document.getElementById('company').value },
                     { name: 'message', value: fullMessage }
                 ],
-                context: {
-                    pageUri: window.location.href,
-                    pageName: document.title
-                }
+                context: submissionContext
             };
 
             const response = await fetch(
@@ -912,5 +920,7 @@
         }
     })();
     </script>
+    <!-- HubSpot tracking: restores lead source attribution (async, loads after paint) -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/7739025.js"></script>
 </body>
 </html>

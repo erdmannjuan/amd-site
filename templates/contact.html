@@ -177,6 +177,17 @@
             const messageText = document.getElementById('message').value;
             const fullMessage = projectType ? `[Project Type: ${projectType}]\n\n${messageText}` : messageText;
 
+            // HubSpot tracking cookie for source attribution.
+            // Strictly additive: if the cookie is absent, the payload is identical to before.
+            const hutkMatch = document.cookie.match(/(?:^|;\s*)hubspotutk=([^;]+)/);
+            const submissionContext = {
+                pageUri: window.location.href,
+                pageName: document.title
+            };
+            if (hutkMatch && hutkMatch[1]) {
+                submissionContext.hutk = hutkMatch[1];
+            }
+
             const formData = {
                 fields: [
                     { name: 'firstname', value: document.getElementById('firstname').value },
@@ -186,10 +197,7 @@
                     { name: 'company', value: document.getElementById('company').value },
                     { name: 'message', value: fullMessage }
                 ],
-                context: {
-                    pageUri: window.location.href,
-                    pageName: document.title
-                }
+                context: submissionContext
             };
 
             const response = await fetch(
