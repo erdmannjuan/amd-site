@@ -83,6 +83,7 @@ We use the information we collect to:
 Our website uses cookies for:
 
 - **Analytics cookies** (Google Analytics) - Help us understand website usage
+- **Marketing and CRM cookies** (HubSpot) - Recognize returning visitors and connect contact form submissions to your visit, so we know how you found us and can respond to your inquiry knowledgeably
 - **Functional cookies** - Remember your preferences
 
 You can control cookies through your browser settings. Note that disabling cookies may affect website functionality.
@@ -92,7 +93,8 @@ You can control cookies through your browser settings. Note that disabling cooki
 We use the following third-party services:
 
 - **Google Analytics** - Website analytics ([Google Privacy Policy](https://policies.google.com/privacy))
-- **HubSpot** - Contact form and CRM ([HubSpot Privacy Policy](https://legal.hubspot.com/privacy-policy))
+- **HubSpot** - Contact form, CRM, and visitor analytics ([HubSpot Privacy Policy](https://legal.hubspot.com/privacy-policy))
+- **Ahrefs Analytics** - Privacy-focused website analytics ([Ahrefs Privacy Policy](https://ahrefs.com/privacy))
 - **Cloudflare** - Website hosting, content delivery, and security ([Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/))
 
 ## Disclosure of Personal Information
