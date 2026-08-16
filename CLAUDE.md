@@ -13,6 +13,7 @@
 | **Core Expertise** | Assembly Systems (featured prominently on homepage) |
 | **Business** | Custom automation & robotic systems, 30+ years, 2,500+ machines delivered |
 | **NOT in scope** | **AMD is NOT in the medical/pharmaceutical market.** All medical positioning was removed 2026-07. Never add medical/pharma claims, case studies, or /industries/medical/ links. |
+| **Customer anonymity (CRITICAL)** | **NEVER identify a customer anywhere on the site — no names, no logos, no attributable quotes** (Juan, 2026-08-16: competitors use it to poach accounts). Case studies stay anonymized ("Tier 1 automotive supplier"). This applies to customer names heard in conversation, email, or HubSpot — they never reach published pages. Vendor/supplier brands (FANUC, Cognex, Rockwell, Dorner, etc.) are fine and encouraged. Sole approved exception: the existing homepage logo wall (templates/homepage.html) — Juan confirmed 2026-08-16 these are OLD customers and may stay. Do not add logos or names to it or anywhere else without Juan's explicit approval per customer. |
 
 ---
 
