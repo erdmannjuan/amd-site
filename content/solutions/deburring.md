@@ -162,6 +162,10 @@ Initial offline programming from a CAD model takes 4-16 hours depending on part 
 
 The robot itself needs minimal maintenance — FANUC robots are rated for 8+ years between major overhauls. The consumable tooling (burrs, brushes, abrasive wheels) needs regular replacement based on our monitored wear schedules. Spindle bearings typically last 3,000-5,000 hours. Dust collection filters need replacement on a regular schedule depending on material and volume. We provide a complete [maintenance and support](/services/maintenance-support/) plan with every system, including preventive maintenance schedules and recommended spare parts inventory.
 
+### How does deburring fit into a complete finishing process?
+
+Deburring is one of three finishing families — edge finishing, grinding, and polishing — and many parts need more than one in sequence. Our [guide to automated metal finishing](/blog/automated-metal-finishing/) explains how to identify which process your parts actually need and what cycle times and surface specs to expect from each.
+
 ### Is collaborative robot (cobot) deburring viable?
 
 For lighter deburring tasks on small parts, absolutely. We've built successful cobot deburring cells using FANUC CRX-10iA and CRX-25iA cobots for small electronics components. The limitation is force and speed — cobots are power and force limited by design, so they can't apply the same contact forces as industrial robots behind safety fencing. For heavy flash removal or aggressive material removal, a standard industrial robot is still the right choice. Cobots shine in finishing and polishing applications where the force requirements are lower and the benefit of eliminating safety fencing improves workflow integration.

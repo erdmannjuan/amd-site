@@ -72,6 +72,8 @@ Justifying automated surface finish measurement is straightforward when you quan
 
 Automated systems eliminate inspector subjectivity, enable 100% inspection, generate traceable data for every part, and free skilled quality personnel for higher-value activities like root cause analysis and process improvement. For manufacturers serving automotive, aerospace, or medical device industries where surface finish documentation is a contractual requirement, automated measurement systems convert a compliance burden into a competitive advantage.
 
+Measurement is also only half the loop — the finishing process itself has to be capable of hitting the spec. Our [guide to automated metal finishing](/blog/automated-metal-finishing/) covers the deburring, grinding, and polishing processes that produce the surfaces you're measuring.
+
 ## Working With AMD Machines
 
 AMD Machines has integrated surface finish measurement into automated inspection systems across multiple industries. Our engineering team understands the practical challenges of measuring surface texture at production speed—from fixturing and part handling to instrument selection and data integration. [Contact us](/contact/) to discuss how automated surface finish inspection can improve quality and reduce costs in your operation.

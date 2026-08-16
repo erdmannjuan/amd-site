@@ -186,6 +186,10 @@ For parts in the same family with similar geometry, changeover typically involve
 
 For grinding with significant contact forces (>50N), you need a rigid robot with at least 50kg payload capacity — FANUC M-710iC/50, ABB IRB 6700, or KUKA KR 60 are good choices. For lighter polishing work (<20N), smaller robots like the FANUC M-20iD or Yaskawa GP25 offer faster acceleration and better path accuracy. For collaborative applications where operators work near the cell, FANUC CRX-25iA and ABB GoFa CRB 15000 provide force control with built-in safety features.
 
+### How do I know whether my parts need grinding, polishing, or deburring?
+
+If the requirement is dimensional, you're grinding; cosmetic or coating prep, polishing; edge quality, deburring — and many parts need two of the three in one cell. Our [automated metal finishing guide](/blog/automated-metal-finishing/) walks through the selection logic with typical cycle times and surface specs for each process family.
+
 ### What's the typical ROI timeline for a grinding/polishing cell?
 
 Most of our customers see payback in 10-18 months based on direct labor savings. When you factor in reduced scrap, improved quality consistency, lower worker's compensation costs, and increased throughput, the effective payback is often under 12 months. The strongest ROI cases are high-value parts (aerospace) where scrap reduction delivers outsized savings.
