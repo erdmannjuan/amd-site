@@ -106,3 +106,5 @@ Invest in a proper [preventive maintenance program](/blog/preventive-maintenance
 Vendor selection isn't glamorous, but it's one of the highest-leverage decisions in any automation project. Spend the time upfront to define your requirements clearly, evaluate candidates rigorously, and structure contracts that align incentives. The payoff is a system that runs the way it should, delivered by a team you can count on for the next project.
 
 AMD Machines has been on both sides of this process—as a vendor competing for projects and as an engineering team helping customers evaluate options. If you're starting an automation project and want a partner who understands what it takes to get it right, [contact our team](/contact/) to start the conversation.
+
+One selection criterion deserves more weight than most checklists give it: schedule credibility. Our [guide to custom automation lead times](/blog/custom-automation-lead-times/) covers what realistic timelines look like and the questions that expose an optimistic quote.

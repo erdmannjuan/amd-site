@@ -109,3 +109,5 @@ The manufacturers gaining the most ground are the ones treating reshoring not as
 ## Partner With AMD Machines
 
 AMD Machines has helped manufacturers across automotive, medical, consumer products, and defense industries design and build automated production systems for domestic operations. Whether you are reshoring an existing product line or launching new domestic production, our engineering team can assess your process, develop automation concepts, and deliver turnkey systems that make the business case work. [Contact us](/contact/) to discuss your reshoring automation strategy.
+
+Lead time is one of reshoring's quietest advantages: a complex system built in North America typically delivers in 24–26 weeks versus 40–42 from overseas builders — the full comparison is in our [custom automation lead-times guide](/blog/custom-automation-lead-times/).

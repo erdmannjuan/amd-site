@@ -449,3 +449,5 @@ Working with knowledgeable integrators:
 AMD Machines brings decades of experience implementing manufacturing automation systems across [automotive](/industries/automotive/), [aerospace](/industries/aerospace/), [electronics](/industries/electronics/), [consumer products](/industries/consumer/), and [food and beverage](/industries/food-beverage/) industries.
 
 **Ready to begin your automation journey?** [Contact us](/contact/) to discuss your project. We'll guide you from concept through production commissioning and beyond.
+
+One question this process guide deliberately doesn't answer is duration — that depends on scope, part maturity, and your builder's capacity. For real numbers, see our [guide to custom automation lead times](/blog/custom-automation-lead-times/), including what separates a 6-week machine from a 26-week system.
