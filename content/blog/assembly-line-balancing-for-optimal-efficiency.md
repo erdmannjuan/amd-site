@@ -1,6 +1,6 @@
 ---
-title: "Assembly Line Balancing: Cycle Time Analysis & Station Optimization"
-description: "How to balance an assembly line — takt time calculation, station loading, bottleneck identification, and buffer sizing. Methods we use across 2,500+ production systems."
+title: "Assembly Line Balancing (2026 Guide)"
+description: "How to balance an assembly line: takt time math, station loading, bottleneck fixes, and a worked example — methods proven across 2,500+ systems."
 keywords: industrial automation, manufacturing automation, AMD Machines, automated
   assembly, assembly line, assembly systems, assembly, balancing, optimal
 date: '2025-11-03'

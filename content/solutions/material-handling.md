@@ -1,11 +1,11 @@
 ---
-title: Material Handling Automation
-description: "Custom conveyor, palletizing & pick-and-place systems. Cut labor costs 40-60% and boost throughput 30-75%. Proven ROI in 10-18 months."
-keywords: material handling automation, automated conveyor systems, robotic palletizing, pick and place robots, AGV AMR integration, automated part transfer, material flow optimization
+title: Automated Material Handling Systems
+description: "Automated material handling systems — conveyors, robotic palletizing, AMRs & part feeding, built for US plants. 10–18 month payback. Get an assessment."
+keywords: automated material handling systems, material handling automation, automated conveyor systems, robotic palletizing, AGV AMR integration, automated part transfer, material flow optimization
 template: solution.html
 short_title: Material Handling
-hero_title: Material Handling Automation
-hero_subtitle: Efficient material flow solutions that keep your production moving
+hero_title: Automated Material Handling Systems
+hero_subtitle: Conveyors, robots, and AMRs engineered to keep your production moving
 url: /solutions/material-handling/
 features:
   - Conveyor systems
@@ -44,7 +44,7 @@ Here's a truth that most plant managers learn the hard way: your production equi
 
 Material handling is the circulatory system of your factory. When it works, nobody notices. When it doesn't, everything stops.
 
-At AMD Machines, we've spent over 30 years designing material handling systems that connect every operation in your plant—from raw material receiving to finished goods shipping. We've built hundreds of systems across [automotive](/industries/automotive/), [consumer products](/industries/consumer/), [food and beverage](/industries/food-beverage/), and [heavy equipment](/industries/heavy-equipment/) manufacturing. We've learned what works, what breaks, and what separates a material handling system that transforms your throughput from one that just moves your bottleneck somewhere else.
+At AMD Machines, we've spent over 30 years designing automated material handling systems that connect every operation in your plant—from raw material receiving to finished goods shipping. We've built hundreds of systems across [automotive](/industries/automotive/), [consumer products](/industries/consumer/), [food and beverage](/industries/food-beverage/), and [heavy equipment](/industries/heavy-equipment/) manufacturing. We've learned what works, what breaks, and what separates a material handling system that transforms your throughput from one that just moves your bottleneck somewhere else.
 
 ## Why Material Handling Is the First Thing We Look At
 
@@ -196,6 +196,14 @@ We also design smart accumulation logic that prevents the most common material h
 **Challenge: System jams and stoppages.** Parts misalign, sensors misread, conveyors back up. **Solution:** We build jam detection and auto-recovery logic into every system. Photoelectric sensor arrays detect jams within 2 seconds, and the system executes automatic clearing sequences before an operator even notices.
 
 **Challenge: Floor space constraints.** Most facilities can't spare a football field for conveyors. **Solution:** We design vertical material flow using elevators, overhead conveyors, and multi-level accumulation. We've squeezed complete material handling systems into footprints 40% smaller than the customer expected.
+
+## Built for US Manufacturing Operations
+
+Most of the automated material handling projects we quote today are driven by the same two pressures: reshored production volumes that need more throughput than existing lines were designed to deliver, and a labor market that can no longer reliably staff manual handling positions — at the fully loaded $55,000–$75,000 per position noted above, the jobs are expensive when you can fill them and disruptive when you can't.
+
+Our systems are engineered to US standards first: ANSI B20.1 for conveyor safety, ANSI/RIA R15.06 for robot safety, and OSHA 1910 machine guarding requirements, with ISO 12100 risk assessments and ISO 13849 safety-circuit documentation where your corporate standards require them. Specifications are written in US customary units, controls run on the Rockwell Automation (Allen-Bradley) platforms most US plants already maintain, and major wear components come from US-distributed lines — Dorner, Hytrol, FANUC America — so replacement parts arrive in days, not transatlantic weeks.
+
+From our sales and service hub in downtown Chicago we support installations across North America. [Learn more about our company and facilities](/about/), or see how we approach [robotic palletizing cells](/solutions/palletizing/) and [automated bin picking](/solutions/bin-picking/) when a project calls for them.
 
 ## The Business Case for Material Handling Automation
 
