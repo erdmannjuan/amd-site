@@ -25,7 +25,7 @@ The result was a wave of deployments that moved AI out of innovation labs and in
 
 ## Predictive Maintenance Became Standard Practice
 
-Perhaps the most widespread AI application in 2025 was [predictive maintenance](/blog/ai-predictive-maintenance-reduces-unplanned-downtime-50/). Vibration analysis, thermal monitoring, acoustic signature detection, and power draw pattern recognition—all fed into machine learning models that could flag degrading components days or weeks before failure.
+Perhaps the most widespread AI application in 2025 was [predictive maintenance](/blog/predictive-maintenance-with-machine-learning/). Vibration analysis, thermal monitoring, acoustic signature detection, and power draw pattern recognition—all fed into machine learning models that could flag degrading components days or weeks before failure.
 
 The appeal is straightforward. Unplanned downtime costs automotive and electronics manufacturers anywhere from $5,000 to $50,000 per hour depending on the line. Traditional preventive maintenance schedules replace parts on fixed intervals regardless of actual condition, which means you're either changing parts too early (wasting money) or too late (risking failures). AI-driven condition monitoring threads the needle by triggering maintenance actions based on actual equipment health.
 
@@ -35,7 +35,7 @@ By the end of 2025, predictive maintenance platforms from major automation vendo
 
 Machine vision powered by deep learning had another landmark year. Traditional rule-based vision systems—where engineers manually program inspection criteria—are effective for simple, well-defined defects. But they struggle with variability: different lighting conditions, surface textures, part orientations, and the kind of subtle cosmetic defects that human inspectors catch intuitively.
 
-In 2025, AI-powered [vision inspection systems](/blog/ai-quality-vision-reduces-inspection-costs-40/) closed that gap decisively. Convolutional neural networks trained on production image data achieved defect detection rates matching or exceeding experienced human inspectors across several industries, including automotive surface inspection, electronics solder joint analysis, and medical device component verification.
+In 2025, AI-powered [vision inspection systems](/solutions/machine-vision/) closed that gap decisively. Convolutional neural networks trained on production image data achieved defect detection rates matching or exceeding experienced human inspectors across several industries, including automotive surface inspection, electronics solder joint analysis, and medical device component verification.
 
 The practical impact extended beyond catch rates. AI vision systems inspect at line speed without fatigue, deliver consistent results across shifts, and generate data trails that satisfy regulatory and quality audit requirements. For manufacturers dealing with labor shortages in quality departments—which is most of them—this wasn't just a performance upgrade. It was a staffing solution.
 

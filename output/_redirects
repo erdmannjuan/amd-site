@@ -288,3 +288,10 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /blog/foxconn-unveils-lights-out-iphone-factory-in-india/ /industries/electronics/ 301
 /blog/industrial-metaverse-platforms-gain-traction/ /blog/ 301
 /blog/humanoid-robots-progress-toward-factory-deployment/ /blog/ 301
+
+# Blog pruning batch 3 (2026-08-17, G REVIEW-list processing) - 4 dated News posts removed, 0 clicks/60d each
+/blog/ai-energy-management-reduces-factory-costs-20/ /blog/energy-monitoring-and-optimization-in-smart-factories/ 301
+/blog/ai-predictive-maintenance-reduces-unplanned-downtime-50/ /blog/predictive-maintenance-with-machine-learning/ 301
+/blog/ai-quality-vision-reduces-inspection-costs-40/ /solutions/machine-vision/ 301
+/blog/ai-powered-quality-systems-reduce-scrap-30/ /solutions/machine-vision/ 301
+/blog/category/news/page/4/ /blog/category/news/ 301
