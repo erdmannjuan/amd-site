@@ -11896,3 +11896,24 @@ button:disabled {
         grid-template-columns: 1fr;
     }
 }
+
+/* SVG logo (2026-08 brand refresh) */
+.logo-img {
+    display: block;
+    width: 170px;
+    height: 34px;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 145px;
+        height: 29px;
+    }
+}
+
+.footer-logo-img {
+    display: block;
+    width: 220px;
+    height: 44px;
+    margin-bottom: 0.75rem;
+}
