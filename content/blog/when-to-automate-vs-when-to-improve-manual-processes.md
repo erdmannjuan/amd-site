@@ -58,7 +58,7 @@ The automate-or-improve framing is useful, but the best solutions often combine 
 
 For example, consider a manual assembly station where an operator performs twelve discrete steps. Process improvement analysis might reveal that three of those steps account for 70 percent of the cycle time and 90 percent of the defects. Automating those three steps—perhaps with a collaborative robot handling press-fit insertions while the operator performs the remaining manual tasks—delivers most of the automation benefit at a fraction of the cost of a fully automated cell.
 
-This hybrid approach also provides a practical path toward [building internal automation capabilities](/blog/building-internal-automation-capabilities/). Your maintenance technicians and process engineers learn to support a manageable system before you scale to full automation.
+This hybrid approach also provides a practical path toward building internal capability through [hands-on automation training for your technicians](/services/training/). Your maintenance technicians and process engineers learn to support a manageable system before you scale to full automation.
 
 ## A Decision Framework
 

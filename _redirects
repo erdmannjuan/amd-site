@@ -295,3 +295,11 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /blog/ai-quality-vision-reduces-inspection-costs-40/ /solutions/machine-vision/ 301
 /blog/ai-powered-quality-systems-reduce-scrap-30/ /solutions/machine-vision/ 301
 /blog/category/news/page/4/ /blog/category/news/ 301
+
+# Blog pruning batch 4 (2026-08-19, G REVIEW-list processing) - 5 zero-click REVIEW posts, topic-matched 301s
+/blog/labor-shortage-solutions-through-automation/ /blog/reshoring-manufacturing-the-automation-imperative/ 301
+/blog/regional-manufacturing-competitiveness/ /blog/reshoring-manufacturing-the-automation-imperative/ 301
+/blog/building-internal-automation-capabilities/ /services/training/ 301
+/blog/building-an-automation-support-organization/ /services/maintenance-support/ 301
+/blog/prototyping-and-proof-of-concept-for-automation/ /blog/manufacturing-automation-systems-concept-to-commissioning/ 301
+/blog/page/25/ /blog/ 301

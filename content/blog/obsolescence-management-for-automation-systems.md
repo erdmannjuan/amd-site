@@ -92,7 +92,7 @@ One of the most overlooked aspects of obsolescence management is documentation. 
 
 At minimum, maintain current versions of all PLC programs and configuration files in a version-controlled repository. Back up HMI applications, drive parameters, vision system recipes, and robot programs regularly. Store network configurations, IP address maps, and communication settings in a format that a new engineer could understand without tribal knowledge.
 
-This documentation also supports your ability to [build internal automation support capabilities](/blog/building-an-automation-support-organization/) that reduce dependence on outside integrators for routine maintenance and minor modifications.
+This documentation also supports your internal team — paired with [ongoing maintenance and support services](/services/maintenance-support/), it reduces dependence on outside integrators for routine maintenance and minor modifications.
 
 ## A Realistic Approach
 

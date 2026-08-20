@@ -83,7 +83,7 @@ An effective electrical maintenance program doesn't require a large dedicated st
 
 Build inspection checklists specific to each equipment type and train your maintenance team on what to look for. Establish inspection frequencies based on criticality, environment, and manufacturer recommendations. Track all findings, corrective actions, and component replacements in a maintenance management system.
 
-Consider investing in condition monitoring technologies. In addition to thermal imaging, vibration sensors on motors and current monitoring on critical circuits can provide continuous insight into equipment health. These technologies have become much more accessible and affordable, making them practical even for smaller operations. Understanding [how to build internal automation capabilities](/blog/building-internal-automation-capabilities/) will help your team take ownership of these maintenance practices.
+Consider investing in condition monitoring technologies. In addition to thermal imaging, vibration sensors on motors and current monitoring on critical circuits can provide continuous insight into equipment health. These technologies have become much more accessible and affordable, making them practical even for smaller operations. Structured [automation training programs for your maintenance team](/services/training/) will help your team take ownership of these maintenance practices.
 
 ## The Cost of Neglect vs. the Value of Prevention
 
