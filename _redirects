@@ -303,3 +303,10 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /blog/building-an-automation-support-organization/ /services/maintenance-support/ 301
 /blog/prototyping-and-proof-of-concept-for-automation/ /blog/manufacturing-automation-systems-concept-to-commissioning/ 301
 /blog/page/25/ /blog/ 301
+
+# Blog pruning batch 5 (2026-08-23, G REVIEW-list processing) - 5 near-zero-click REVIEW News posts, topic-matched 301s
+/blog/small-manufacturers-report-3x-roi-on-automation-investments/ /blog/roi-of-robotic-automation/ 301
+/blog/ai-weld-quality-prediction-achieves-99-accuracy/ /blog/weld-quality-monitoring-and-control-systems/ 301
+/blog/predictions-for-industrial-ai-in-2026/ /blog/ 301
+/blog/robotics-companies-report-record-order-backlogs/ /blog/reshoring-manufacturing-the-automation-imperative/ 301
+/blog/fanuc-launches-ai-enhanced-crx-collaborative-robots/ /blog/collaborative-robots-in-manufacturing-a-complete-guide/ 301

@@ -1,6 +1,6 @@
 ---
-title: 'Custom Robotic Cells | FANUC, ABB & Yaskawa'
-description: Custom robotic cells for CNC machine tending, welding & assembly automation. FANUC, ABB & Yaskawa integration. 200-400% throughput gains. Free quote.
+title: 'Custom Robotic Cells | 2,500+ Machines Built'
+description: Custom robotic cells for welding, CNC tending & assembly. FANUC, ABB & Yaskawa. Complex systems in 24-26 weeks vs 40+ overseas. Request a quote.
 keywords: custom robotic cells, robotic cell integration, FANUC robot integrator, ABB robotic cell, industrial robot cell design, turnkey robotic automation, robotic workcell engineering
 template: solution.html
 short_title: Robotic Cells
