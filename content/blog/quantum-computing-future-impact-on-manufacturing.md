@@ -62,7 +62,7 @@ Quantum computing intersects with quality systems through enhanced machine learn
 
 Complex defect detection — identifying subtle surface anomalies, internal voids from CT scan data, or dimensional drift patterns across production runs — benefits from quantum-enhanced classifiers that can process higher-dimensional feature spaces. While classical AI and machine learning are already transforming quality inspection, quantum approaches could handle the edge cases where current systems struggle: rare defect types with limited training data, or multi-variable correlation patterns that indicate emerging process drift.
 
-Manufacturers already investing in [AI-driven automation systems](/blog/the-impact-of-ai-on-industrial-automation/) will find quantum machine learning to be a natural extension of their existing digital infrastructure rather than a wholesale replacement.
+Manufacturers already investing in [AI-driven automation systems](/blog/2025-the-year-ai-transformed-manufacturing/) will find quantum machine learning to be a natural extension of their existing digital infrastructure rather than a wholesale replacement.
 
 ## Practical Considerations for Manufacturing Engineers
 

@@ -310,3 +310,11 @@ https://www.amdmachines.com/* https://amdmachines.com/:splat 301
 /blog/predictions-for-industrial-ai-in-2026/ /blog/ 301
 /blog/robotics-companies-report-record-order-backlogs/ /blog/reshoring-manufacturing-the-automation-imperative/ 301
 /blog/fanuc-launches-ai-enhanced-crx-collaborative-robots/ /blog/collaborative-robots-in-manufacturing-a-complete-guide/ 301
+
+# Blog pruning batch 6 (2026-08-24, G REVIEW-list processing) - 5 zero-click REVIEW posts, topic-matched 301s
+/blog/the-impact-of-ai-on-industrial-automation/ /blog/2025-the-year-ai-transformed-manufacturing/ 301
+/blog/the-future-of-human-robot-collaboration/ /blog/collaborative-robots-in-manufacturing-a-complete-guide/ 301
+/blog/appliance-assembly-line-integrates-15-robot-stations/ /blog/appliance-assembly-line-automation/ 301
+/blog/the-rise-of-automation-as-a-service/ /blog/what-automation-costs/ 301
+/blog/sustainability-goals-driving-automation-investment/ /blog/roi-of-robotic-automation/ 301
+/blog/page/24/ /blog/ 301

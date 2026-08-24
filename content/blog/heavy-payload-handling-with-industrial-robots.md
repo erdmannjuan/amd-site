@@ -71,7 +71,7 @@ The consequences of a failure in a heavy-payload application are severe. A 500 k
 - **Perimeter guarding** — Heavy-payload cells typically require hard guarding (welded steel fence panels) rather than light curtains. The kinetic energy involved exceeds what most presence-sensing devices are rated to protect against.
 - **Redundant grip verification** — Sensors confirming part presence and grip force should use redundant, diverse sensing technologies. A proximity sensor confirming clamp closure combined with a pressure transducer confirming hydraulic force, for example.
 - **Controlled stop categories** — Heavy payloads take longer to decelerate safely. Stop Category 1 (controlled deceleration followed by power removal) is typically required. The deceleration profile must account for inertial loads to prevent part ejection during emergency stops.
-- **Restricted speed zones** — When personnel must enter the cell for setup or maintenance, restricted-speed operation (typically 250 mm/s maximum) with reduced payload limits provides an additional safety layer. For lighter applications where speed-and-separation monitoring or power-and-force limiting may apply, see our discussion on [the future of human-robot collaboration](/blog/the-future-of-human-robot-collaboration/).
+- **Restricted speed zones** — When personnel must enter the cell for setup or maintenance, restricted-speed operation (typically 250 mm/s maximum) with reduced payload limits provides an additional safety layer. For lighter applications where speed-and-separation monitoring or power-and-force limiting may apply, see our complete guide to [collaborative robots in manufacturing](/blog/collaborative-robots-in-manufacturing-a-complete-guide/).
 
 ## Integration and Commissioning
 
