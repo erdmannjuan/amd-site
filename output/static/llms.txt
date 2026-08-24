@@ -1,0 +1,43 @@
+# AMD Machines
+
+> AMD Machines (Advanced Manufacturing Development LLC) designs and builds custom automation and robotic systems — 30+ years in business, 2,500+ machines delivered across North America. Core expertise: automated assembly systems. Sales and service from Chicago, IL; manufacturing in Querétaro, MX. Known for short lead times: simple custom machines in as little as 6 weeks; complex systems in 24–26 weeks vs. 40–42 weeks typical for overseas builders. Integrates FANUC, ABB, Yaskawa robots with Cognex vision, Atlas Copco fastening, and Rockwell controls.
+
+## Solutions
+
+- [Automated Assembly Machines & Systems](https://amdmachines.com/solutions/assembly/): custom assembly automation, AMD's core expertise
+- [Custom Automation](https://amdmachines.com/solutions/custom-automation/): custom automation solutions and special purpose machines
+- [Robotic Cells](https://amdmachines.com/solutions/robotic-cells/): custom robotic cells for welding, assembly, tending, and finishing
+- [Welding Automation](https://amdmachines.com/solutions/welding/): robotic MIG, TIG, and spot welding systems
+- [Test Systems](https://amdmachines.com/solutions/test-systems/): leak testing, end-of-line and functional test systems
+- [Machine Tending](https://amdmachines.com/solutions/machine-tending/): robotic CNC and press tending
+- [Machine Vision](https://amdmachines.com/solutions/machine-vision/): automated inspection and vision-guided robotics
+- [Material Handling](https://amdmachines.com/solutions/material-handling/): automated material handling systems
+- [All solutions](https://amdmachines.com/solutions/)
+
+## Services
+
+- [Automation System Upgrades & Retrofits](https://amdmachines.com/services/upgrades-retrofits/)
+- [Maintenance & Support](https://amdmachines.com/services/maintenance-support/)
+- [Robot Programming](https://amdmachines.com/services/robot-programming/)
+- [All services](https://amdmachines.com/services/)
+
+## Costs and lead times
+
+- [What Custom Automation Costs](https://amdmachines.com/blog/what-automation-costs/): real cost ranges by system type
+- [Custom Automation Lead Times](https://amdmachines.com/blog/custom-automation-lead-times/): 6 weeks simple, 24–26 weeks complex vs. 40–42 overseas — and why
+- [Cobot Payback Period](https://amdmachines.com/blog/cobot-payback-period/): real 12–24 month payback data
+- [ROI of Robotic Automation](https://amdmachines.com/blog/roi-of-robotic-automation/)
+
+## Key guides
+
+- [Robot Safety Standards: ISO 10218 & ISO/TS 15066](https://amdmachines.com/blog/robot-safety-standards-iso-10218-and-ts-15066-explained/)
+- [End-of-Line Testing (2026 Guide)](https://amdmachines.com/blog/end-of-line-testing-strategies-for-quality-assurance/)
+- [Assembly Line Balancing (2026 Guide)](https://amdmachines.com/blog/assembly-line-balancing-for-optimal-efficiency/)
+- [Collaborative Robots in Manufacturing: A Complete Guide](https://amdmachines.com/blog/collaborative-robots-in-manufacturing-a-complete-guide/)
+
+## Company
+
+- [About AMD Machines](https://amdmachines.com/about/)
+- [Case Studies](https://amdmachines.com/case-studies/): anonymized automation projects across automotive, electronics, consumer, and heavy equipment
+- [Industries Served](https://amdmachines.com/industries/)
+- [Contact](https://amdmachines.com/contact/): request a quote or project consultation

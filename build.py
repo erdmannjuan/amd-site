@@ -467,6 +467,12 @@ def build_site():
             shutil.copy(robots_src, OUTPUT_DIR / 'robots.txt')
             print("  ✓ Copied robots.txt")
 
+        # Copy llms.txt to root (AI-assistant content index, llmstxt.org convention)
+        llms_src = STATIC_DIR / 'llms.txt'
+        if llms_src.exists():
+            shutil.copy(llms_src, OUTPUT_DIR / 'llms.txt')
+            print("  ✓ Copied llms.txt")
+
         # Copy .well-known directory to root
         wellknown_src = STATIC_DIR / '.well-known'
         if wellknown_src.exists():
