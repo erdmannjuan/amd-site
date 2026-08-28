@@ -37,7 +37,7 @@ Visual inspection is another area where AI has matured rapidly. Traditional mach
 
 The practical advantage is significant. Deep learning vision systems can be deployed faster because they do not require extensive algorithm tuning. They also adapt better to product variations. When a manufacturer introduces a new part variant, retraining the model on a few hundred new images is often sufficient, compared to rewriting and validating rule-based inspection logic.
 
-Where processing speed matters—and it almost always does on a production line—[edge computing](/blog/edge-computing-in-manufacturing-applications/) allows AI inference to happen directly on the factory floor rather than routing data to a cloud server. Latencies drop from hundreds of milliseconds to single-digit milliseconds, which is critical for applications like robotic pick-and-place guidance or real-time weld quality monitoring.
+Where processing speed matters—and it almost always does on a production line—edge computing on [IIoT-connected equipment](/blog/iiot-sensors-and-connectivity-for-legacy-equipment/) allows AI inference to happen directly on the factory floor rather than routing data to a cloud server. Latencies drop from hundreds of milliseconds to single-digit milliseconds, which is critical for applications like robotic pick-and-place guidance or real-time weld quality monitoring.
 
 ## Process Optimization Through Data
 

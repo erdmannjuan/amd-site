@@ -86,7 +86,7 @@ Finding and retaining skilled production workers is a challenge across all of ma
 
 Scaling renewable energy manufacturing is not just about the final assembly line. The entire supply chain — from raw material processing through sub-component fabrication to final assembly — needs to scale in concert.
 
-Manufacturers who invest in [supply chain visibility](/blog/supply-chain-visibility-through-connected-manufacturing/) across their production operations gain a significant advantage. Connected manufacturing systems that share production data across the supply chain enable better demand planning, faster quality issue resolution, and more efficient inventory management.
+Manufacturers who invest in [connected Industry 4.0 production systems](/blog/introduction-to-industry-40-and-smart-manufacturing/) across their operations gain a significant advantage. Connected manufacturing systems that share production data across the supply chain enable better demand planning, faster quality issue resolution, and more efficient inventory management.
 
 For companies operating in the [energy sector](/industries/energy/), understanding how automation fits into the broader supply chain strategy is just as important as optimizing individual production stations.
 

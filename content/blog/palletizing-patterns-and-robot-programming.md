@@ -49,7 +49,7 @@ Pattern selection directly affects robot programming complexity and system throu
 
 The order in which cases are placed within each layer has a significant impact on cycle time. A naive approach places cases left to right, top to bottom, but this often results in unnecessary travel between positions. Optimizing the placement sequence to minimize total robot travel distance can reduce layer build time by 15 to 20 percent.
 
-For articulated robots, path optimization also needs to account for joint configurations and potential singularities. A placement sequence that looks efficient in Cartesian space might force the robot through awkward joint configurations that slow it down. Most modern robot simulation tools can evaluate multiple placement sequences and identify the fastest option, and this analysis should happen during the [design phase](/blog/simulation-tools-for-automation-design/) rather than after the cell is built.
+For articulated robots, path optimization also needs to account for joint configurations and potential singularities. A placement sequence that looks efficient in Cartesian space might force the robot through awkward joint configurations that slow it down. Most modern robot simulation tools can evaluate multiple placement sequences and identify the fastest option, and this analysis should happen during the design phase — ideally in a [digital twin simulation of the cell](/services/digital-twins/) — rather than after the cell is built.
 
 ### Pick and Place Coordination
 
@@ -77,7 +77,7 @@ Choosing the right pattern involves balancing several competing factors.
 
 Modern palletizing systems rarely require manual point-by-point programming. Dedicated palletizing software packages from major robot manufacturers allow engineers to define case dimensions, pallet size, and pattern type, then automatically generate the robot program. These tools handle the geometry calculations, placement sequencing, and motion planning.
 
-For more complex applications, offline programming and [simulation tools](/blog/simulation-tools-for-automation-design/) let engineers evaluate multiple pattern options before committing to hardware. Simulation can verify cycle time targets, identify potential collisions with cell structures, and validate that the robot can reach all positions on the pallet without exceeding joint limits.
+For more complex applications, offline programming and [digital twin simulation services](/services/digital-twins/) let engineers evaluate multiple pattern options before committing to hardware. Simulation can verify cycle time targets, identify potential collisions with cell structures, and validate that the robot can reach all positions on the pallet without exceeding joint limits.
 
 When integrating palletizing into a broader [automated material handling system](/solutions/material-handling/), the palletizing pattern software needs to communicate with upstream and downstream systems. The warehouse management system may dictate which SKUs go on which pallets, and the pattern software needs to adapt dynamically to changing product mixes.
 
