@@ -55,7 +55,7 @@ A well-designed acoustic test station balances measurement quality with producti
 
 ## Integration With Automated Lines
 
-Acoustic test stations rarely operate in isolation. They integrate into larger automated assembly and test systems where products flow from assembly operations through multiple test stations before reaching packaging. Integrating acoustic testing into these lines requires coordination with the [material handling system](/blog/automated-storage-and-retrieval-systems-overview/) — conveyors, pick-and-place units, or robotic transfers that move products into and out of the test fixture.
+Acoustic test stations rarely operate in isolation. They integrate into larger automated assembly and test systems where products flow from assembly operations through multiple test stations before reaching packaging. Integrating acoustic testing into these lines requires coordination with the [automated material handling system](/solutions/material-handling/) — conveyors, pick-and-place units, or robotic transfers that move products into and out of the test fixture.
 
 Data integration is equally important. Each test result must be linked to the product's serial number or lot identifier and stored in a central database. This traceability allows engineers to correlate acoustic test failures with upstream process parameters — for example, connecting a spike in bearing noise rejections to a change in grease supplier or press-fit force on a specific assembly station.
 

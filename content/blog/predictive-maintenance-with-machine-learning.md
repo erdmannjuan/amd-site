@@ -62,7 +62,7 @@ Not every machine in the plant needs ML-based monitoring. Focus initial deployme
 
 Real-time vibration analysis requires significant compute resources, especially when processing high-frequency data from multiple sensors simultaneously. Edge computing — running models on industrial PCs or gateways located near the equipment — reduces latency and eliminates dependence on network connectivity. Cloud platforms are better suited for model training, fleet-wide comparisons, and long-term trend analysis where real-time response isn't critical.
 
-For a deeper look at the tradeoffs between these architectures, see our post on [cloud vs. on-premise solutions for manufacturing data](/blog/cloud-vs-on-premise-for-manufacturing-data/).
+For a deeper look at how these architectures fit into a plant-wide digitalization strategy, see our [introduction to Industry 4.0 and smart manufacturing](/blog/introduction-to-industry-40-and-smart-manufacturing/).
 
 ### Integration With Existing Systems
 

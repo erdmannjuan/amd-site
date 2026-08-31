@@ -77,7 +77,7 @@ Polling collects data at fixed intervals regardless of whether values have chang
 
 ### Edge vs. Cloud Storage
 
-On-premise historians provide low-latency access and keep sensitive production data inside the plant network. Cloud-based historians (or cloud extensions of on-premise systems) enable cross-plant analytics, remote monitoring, and scalable compute for advanced analytics. Many manufacturers adopt a hybrid approach — local historians for real-time operations with cloud replication for enterprise analytics and long-term archival. For more on this decision, see our guide on [cloud vs. on-premise approaches for manufacturing data](/blog/cloud-vs-on-premise-for-manufacturing-data/).
+On-premise historians provide low-latency access and keep sensitive production data inside the plant network. Cloud-based historians (or cloud extensions of on-premise systems) enable cross-plant analytics, remote monitoring, and scalable compute for advanced analytics. Many manufacturers adopt a hybrid approach — local historians for real-time operations with cloud replication for enterprise analytics and long-term archival. For more on how plant data infrastructure fits into a broader digitalization strategy, see our [introduction to Industry 4.0 and smart manufacturing](/blog/introduction-to-industry-40-and-smart-manufacturing/).
 
 ### Data Contextualization
 

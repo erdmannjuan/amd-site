@@ -39,7 +39,7 @@ Storing only pass/fail results is a common mistake. When you retain the actual m
 
 ### Storage and Retention
 
-For most manufacturing operations, a relational database running on a local server handles the volume adequately. A typical test station generating one record per cycle at 30-second takt times produces roughly 100,000 records per month—well within the capacity of standard database platforms. The decision between [cloud and on-premise storage](/blog/cloud-vs-on-premise-for-manufacturing-data/) depends on factors like multi-site access requirements, IT infrastructure, and data sovereignty regulations.
+For most manufacturing operations, a relational database running on a local server handles the volume adequately. A typical test station generating one record per cycle at 30-second takt times produces roughly 100,000 records per month—well within the capacity of standard database platforms. The decision between cloud and on-premise storage depends on factors like multi-site access requirements, IT infrastructure, and data sovereignty regulations — our [introduction to Industry 4.0 and smart manufacturing](/blog/introduction-to-industry-40-and-smart-manufacturing/) covers how these data architectures fit together.
 
 Retention policies should be driven by regulatory requirements and warranty periods. Automotive Tier 1 suppliers commonly retain test data for 15 years. Medical device manufacturers may need indefinite retention. Whatever the period, the architecture needs to account for data volume growth and ensure older records remain queryable.
 
