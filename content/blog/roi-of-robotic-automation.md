@@ -19,7 +19,7 @@ related_posts:
   description: Avoid these pitfalls when implementing your first automation project.
 ---
 
-Every automation investment starts with the same question from leadership: "What's the payback?" It sounds simple, but the answer depends entirely on how honestly you build the model. Over 30 years and 2,500+ machines delivered, we have seen ROI analyses that killed good projects because they missed critical benefits, and we have seen analyses that greenlit bad projects because they glossed over real costs. Both outcomes are avoidable if you build your financial model on solid engineering data rather than wishful thinking.
+Every automation investment starts with the same question from leadership: "What's the payback?" It sounds simple, but the answer depends entirely on how honestly you build the model. Over 30 years and 2,500+ machines delivered, we have seen ROI analyses that killed good projects because they missed critical benefits, and we have seen analyses that greenlit bad projects because they glossed over real costs. Both outcomes are avoidable if you build your financial model on solid engineering data rather than wishful thinking. The aggregate numbers behind this model — cost bands, lead times, and payback distributions — are published in our [custom automation benchmark report](/blog/custom-automation-benchmarks/).
 
 ## Interactive Robot ROI Calculator
 
@@ -94,9 +94,9 @@ Enter your own numbers below. The model uses the same methodology we apply durin
     document.getElementById('roi-out-net').textContent = fmt(net5);
     var v = document.getElementById('roi-verdict');
     if (!isFinite(paybackMonths)) { v.textContent = ''; }
-    else if (paybackMonths <= 24) { v.textContent = 'Within the 12–24 month window where most of our 2,500+ installed systems landed — this project is worth a serious look.'; }
-    else if (paybackMonths <= 42) { v.textContent = 'Longer than typical, but throughput gains and capacity value (not modeled here) often close this gap. Worth an engineering review.'; }
-    else { v.textContent = 'On labor and quality alone this looks marginal — unless you are capacity-constrained and the added throughput has revenue value.'; }
+    else if (paybackMonths <= 24) { v.textContent = 'Faster than the 2–3 year payback typical across our 2,500+ installed custom machines — cobot-cell territory. This project is worth a serious look.'; }
+    else if (paybackMonths <= 42) { v.textContent = 'Within the 2–3 year window where most of our installed custom machines land — a typical, solid result.'; }
+    else { v.textContent = 'Longer than the typical 2–3 years for a single machine — though very large lines in our installed base typically run to ~5 years. On labor and quality alone this looks marginal; capacity value often changes the answer.'; }
   }
   var ids = ['roi-ops','roi-shifts','roi-wage','roi-volume','roi-scrap','roi-partcost','roi-capex'];
   function init() {

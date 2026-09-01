@@ -24,7 +24,7 @@ After working with manufacturers across dozens of industries over three decades,
 
 ## Start With the Problem, Not the Solution
 
-The most common mistake engineers make is leading with equipment. A proposal that opens with "we need a $400K robotic welding cell" immediately triggers cost-avoidance instincts in anyone controlling budgets.
+The most common mistake engineers make is leading with equipment. A proposal that opens with "we need a $400K robotic welding cell" immediately triggers cost-avoidance instincts in anyone controlling budgets. (When the conversation does turn to numbers, anchor them in published data — our [custom automation benchmark report](/blog/custom-automation-benchmarks/) gives real cost bands and payback periods from 2,500+ delivered machines.)
 
 Instead, start with the business problem you're solving:
 

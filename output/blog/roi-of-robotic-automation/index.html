@@ -530,7 +530,7 @@
                 
 
                 <div class="article-body" id="article-body">
-                    <p>Every automation investment starts with the same question from leadership: "What's the payback?" It sounds simple, but the answer depends entirely on how honestly you build the model. Over 30 years and 2,500+ machines delivered, we have seen ROI analyses that killed good projects because they missed critical benefits, and we have seen analyses that greenlit bad projects because they glossed over real costs. Both outcomes are avoidable if you build your financial model on solid engineering data rather than wishful thinking.</p>
+                    <p>Every automation investment starts with the same question from leadership: "What's the payback?" It sounds simple, but the answer depends entirely on how honestly you build the model. Over 30 years and 2,500+ machines delivered, we have seen ROI analyses that killed good projects because they missed critical benefits, and we have seen analyses that greenlit bad projects because they glossed over real costs. Both outcomes are avoidable if you build your financial model on solid engineering data rather than wishful thinking. The aggregate numbers behind this model — cost bands, lead times, and payback distributions — are published in our <a href="/blog/custom-automation-benchmarks/">custom automation benchmark report</a>.</p>
 <h2 id="interactive-robot-roi-calculator">Interactive Robot ROI Calculator</h2>
 <p>Enter your own numbers below. The model uses the same methodology we apply during concept development — fully burdened labor, quality savings, and conservative displacement assumptions. Nothing is uploaded; it runs entirely in your browser.</p>
 <div id="amd-roi-calc" style="background: #f8f9fb; border: 1px solid #e0e4ea; border-left: 4px solid #003087; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0 2rem;">
@@ -602,9 +602,9 @@
     document.getElementById('roi-out-net').textContent = fmt(net5);
     var v = document.getElementById('roi-verdict');
     if (!isFinite(paybackMonths)) { v.textContent = ''; }
-    else if (paybackMonths <= 24) { v.textContent = 'Within the 12–24 month window where most of our 2,500+ installed systems landed — this project is worth a serious look.'; }
-    else if (paybackMonths <= 42) { v.textContent = 'Longer than typical, but throughput gains and capacity value (not modeled here) often close this gap. Worth an engineering review.'; }
-    else { v.textContent = 'On labor and quality alone this looks marginal — unless you are capacity-constrained and the added throughput has revenue value.'; }
+    else if (paybackMonths <= 24) { v.textContent = 'Faster than the 2–3 year payback typical across our 2,500+ installed custom machines — cobot-cell territory. This project is worth a serious look.'; }
+    else if (paybackMonths <= 42) { v.textContent = 'Within the 2–3 year window where most of our installed custom machines land — a typical, solid result.'; }
+    else { v.textContent = 'Longer than the typical 2–3 years for a single machine — though very large lines in our installed base typically run to ~5 years. On labor and quality alone this looks marginal; capacity value often changes the answer.'; }
   }
   var ids = ['roi-ops','roi-shifts','roi-wage','roi-volume','roi-scrap','roi-partcost','roi-capex'];
   function init() {
@@ -776,6 +776,18 @@
                     
                     <div class="related-posts">
                         
+                        <a href="/blog/custom-automation-benchmarks/" class="related-post-card related-post-no-image">
+                            <div class="related-post-category-badge">
+                                Business
+                            </div>
+                            <div class="related-post-content">
+                                <h4>Custom Automation Benchmarks: 2026 Report</h4>
+                                
+                                <span class="related-post-meta">5 min read</span>
+                                
+                            </div>
+                        </a>
+                        
                         <a href="/blog/custom-automation-lead-times/" class="related-post-card related-post-no-image">
                             <div class="related-post-category-badge">
                                 Business
@@ -796,18 +808,6 @@
                                 <h4>What Automation Costs: 2026 Pricing Guide</h4>
                                 
                                 <span class="related-post-meta">9 min read</span>
-                                
-                            </div>
-                        </a>
-                        
-                        <a href="/blog/cobot-payback-period/" class="related-post-card related-post-no-image">
-                            <div class="related-post-category-badge">
-                                Business
-                            </div>
-                            <div class="related-post-content">
-                                <h4>Cobot Payback Period: Real 12-24 Month Data</h4>
-                                
-                                <span class="related-post-meta">7 min read</span>
                                 
                             </div>
                         </a>
@@ -834,6 +834,19 @@
             <h2 class="section-title">More from the Blog</h2>
         </div>
         <div class="related-grid">
+            
+            
+            <a href="/blog/custom-automation-benchmarks/" class="related-item" data-content-id="custom-automation-benchmarks:-">
+                <div class="related-item-inner">
+                    
+                    <span class="related-category">Business</span>
+                    
+                    <h3>Custom Automation Benchmarks: 2026 Report</h3>
+                    <p>Benchmark data from 2,500+ custom machines: real cost bands, lead times, payback periods — and the lever that cuts delivery to 4–6 weeks.</p>
+                    <span class="related-link">Read Article →</span>
+                </div>
+            </a>
+            
             
             
             <a href="/blog/automated-metal-finishing/" class="related-item" data-content-id="automated-metal-finishing-(202">
@@ -869,19 +882,6 @@
                     
                     <h3>What Automation Costs: 2026 Pricing Guide</h3>
                     <p>Real cost ranges for custom assembly machines, robotic cells, welding, and test systems — drawn from 2,500+ projects, broken down by system type.</p>
-                    <span class="related-link">Read Article →</span>
-                </div>
-            </a>
-            
-            
-            
-            <a href="/blog/cobot-payback-period/" class="related-item" data-content-id="cobot-payback-period:-real-12-">
-                <div class="related-item-inner">
-                    
-                    <span class="related-category">Business</span>
-                    
-                    <h3>Cobot Payback Period: Real 12-24 Month Data</h3>
-                    <p>How fast do cobots pay for themselves? Real 12-24 month benchmark data, the 5 factors that move payback, and a simple model to run your own numbers.</p>
                     <span class="related-link">Read Article →</span>
                 </div>
             </a>
