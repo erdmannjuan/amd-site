@@ -70,4 +70,4 @@ For a US manufacturer under schedule pressure, this is often worth more than any
 
 ## Using These Numbers
 
-Benchmarks start conversations; project reviews finish them. If you're building a capital request, use the bands above. If you want numbers for your specific process — with your cycle time, your quality requirements, your schedule — [talk to our engineering team](/contact/). Initial concept and quote work starts immediately.
+Benchmarks start conversations; project reviews finish them. If you're building a capital request, use the bands above — or [download the PDF version of this benchmark report](/static/downloads/custom-automation-benchmarks-2026.pdf) to share with your team. If you want numbers for your specific process — with your cycle time, your quality requirements, your schedule — [talk to our engineering team](/contact/). Initial concept and quote work starts immediately.

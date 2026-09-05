@@ -1,6 +1,6 @@
 ---
-title: Welding Automation Systems & Equipment
-description: Automated welding systems for MIG, TIG, spot & laser applications. FANUC & ABB robotic welding integration. 30+ years expertise. Free consultation.
+title: Automated Welding Systems & Services
+description: Automated welding systems for MIG, TIG, spot & laser. Complex cells in 24-26 weeks vs 40-42 typical overseas. FANUC & ABB integration. Get a quote.
 keywords: robotic welding systems, automated MIG welding, robotic TIG welding, spot welding automation, laser welding systems, welding robot integrator, arc welding automation
 template: solution.html
 short_title: Welding Automation
