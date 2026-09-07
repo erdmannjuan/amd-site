@@ -1,6 +1,6 @@
 ---
 title: 'Automation System Upgrades & Retrofits'
-description: 'Automation system upgrades from a 30-year machine builder — PLC migration, robot retrofits, safety modernization at 30-50% of replacement cost. Get a quote.'
+description: 'Automation system upgrade services: PLC migrations & robot retrofits at 30-50% of replacement cost, installed in 3-5 days. 6-12 month payback. Get a quote.'
 keywords: automation system upgrades, automation system upgrades company, automation system upgrades services, automation upgrades, robot retrofit, robot refurbishment, control system upgrade, PLC migration, safety system upgrade, production line modernization
 template: page.html
 hero_title: Upgrades & Retrofits

@@ -40,6 +40,28 @@ I'll tell you something that surprises people who don't live on the shop floor: 
 
 At AMD Machines, we've built robotic machine tending systems for over two decades—hundreds of cells across [automotive](/industries/automotive/), [aerospace](/industries/aerospace/), and [heavy equipment](/industries/heavy-equipment/) manufacturing. We've learned what works, what breaks, and what separates a machine tending cell that actually runs lights-out from one that needs babysitting. This page covers everything we know.
 
+## What Is Robotic Machine Tending?
+
+**Robotic machine tending is the use of an industrial robot to load raw workpieces into—and unload finished parts from—production machinery such as CNC mills and lathes, stamping presses, and injection molding machines, so the machine keeps running with no operator standing at the door.** The robot manages the machine door, chuck or fixture confirmation, part staging, and cycle start, turning a machine that cuts metal 40–55% of the time into one that runs at 85–92% utilization.
+
+**Who robotic machine tending is for:**
+
+- Shops running CNC machines across two shifts with cycle times over 60 seconds — this is where the payback case is strongest (8–16 months typical)
+- Manufacturers that can't hire machine operators for second and third shift — lights-out tending adds 40–60 hours of weekly spindle time without adding headcount
+- High-mix job shops — quick-change grippers and parametric part programs cut changeover from 30–45 minutes to under 60 seconds
+- Capacity-constrained plants weighing a new machine purchase — pushing existing machines from ~50% to ~88% utilization often defers a $300,000–$500,000 capital buy
+
+### Machine Tending Systems at a Glance
+
+| Configuration | Typical robots | Fits cycle times | Typical investment | Payback |
+|---|---|---|---|---|
+| Single-machine cell | FANUC M-10iD, LR Mate 200iD, CRX-10iA/L cobot | 60 s and up | $150,000–$250,000 | 8–16 months |
+| Multi-machine cell (2–4 machines) | FANUC M-20iD, ABB IRB 2600 | 3 min and up | $300,000–$500,000 | 8–16 months |
+| Linear rail system (5+ machines) | FANUC M-710iC/50 on Güdel rail | 5 min and up | $300,000–$500,000 | 8–16 months |
+| Rotary indexing integration | Dial-integrated load/unload stations | under 30 s | project-specific | project-specific |
+
+A standard single-machine tending cell delivers in 16–20 weeks from purchase order; multi-machine and rail systems run 20–28 weeks (full timeline breakdown in the FAQ below). For how these figures compare across automation types, see our [custom automation pricing guide](/blog/what-automation-costs/) and the [payback benchmarks from 2,500+ installed machines](/blog/custom-automation-benchmarks/).
+
 ## The Real Economics of Machine Tending
 
 Before we talk technology, let's talk numbers—because the math on machine tending is some of the most compelling in all of manufacturing automation.

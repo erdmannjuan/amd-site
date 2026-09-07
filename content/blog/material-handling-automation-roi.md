@@ -59,7 +59,7 @@ For operations running [mixed-case or multi-SKU palletizing](/blog/palletizing-p
 
 ### AGVs and Autonomous Mobile Robots (AMRs)
 
-[Autonomous mobile robots](/blog/autonomous-mobile-robots-technology-update/) for material transport represent a newer segment with different ROI dynamics. The investment model often involves fleet deployment — 3 to 10 AMRs replacing forklift operators or material handlers who transport parts between warehouse and production areas.
+Autonomous mobile robots for [automated material transport](/solutions/material-handling/) represent a newer segment with different ROI dynamics. The investment model often involves fleet deployment — 3 to 10 AMRs replacing forklift operators or material handlers who transport parts between warehouse and production areas.
 
 Individual AMR costs range from $30,000 to $150,000 depending on payload and navigation sophistication. Fleet deployments including fleet management software, charging infrastructure, and integration with WMS or MES systems typically run $200,000 to $800,000.
 

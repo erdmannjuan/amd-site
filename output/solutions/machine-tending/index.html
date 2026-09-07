@@ -502,6 +502,58 @@
                 <div class="prose">
                     <p>I'll tell you something that surprises people who don't live on the shop floor: the biggest bottleneck in most machining operations isn't the machine. It's the person loading and unloading it. Your CNC machining center cuts metal at spindle speeds that would've been science fiction 20 years ago—but the spindle sits idle every time an operator opens the door, reaches in, swaps a part, closes the door, and hits cycle start. On a typical 90-second machining cycle, that load/unload sequence eats 25–40 seconds. And when the operator takes a break, goes to lunch, or calls in sick, the spindle doesn't turn at all.</p>
 <p>At AMD Machines, we've built robotic machine tending systems for over two decades—hundreds of cells across <a href="/industries/automotive/">automotive</a>, <a href="/industries/aerospace/">aerospace</a>, and <a href="/industries/heavy-equipment/">heavy equipment</a> manufacturing. We've learned what works, what breaks, and what separates a machine tending cell that actually runs lights-out from one that needs babysitting. This page covers everything we know.</p>
+<h2 id="what-is-robotic-machine-tending">What Is Robotic Machine Tending?</h2>
+<p><strong>Robotic machine tending is the use of an industrial robot to load raw workpieces into—and unload finished parts from—production machinery such as CNC mills and lathes, stamping presses, and injection molding machines, so the machine keeps running with no operator standing at the door.</strong> The robot manages the machine door, chuck or fixture confirmation, part staging, and cycle start, turning a machine that cuts metal 40–55% of the time into one that runs at 85–92% utilization.</p>
+<p><strong>Who robotic machine tending is for:</strong></p>
+<ul>
+<li>Shops running CNC machines across two shifts with cycle times over 60 seconds — this is where the payback case is strongest (8–16 months typical)</li>
+<li>Manufacturers that can't hire machine operators for second and third shift — lights-out tending adds 40–60 hours of weekly spindle time without adding headcount</li>
+<li>High-mix job shops — quick-change grippers and parametric part programs cut changeover from 30–45 minutes to under 60 seconds</li>
+<li>Capacity-constrained plants weighing a new machine purchase — pushing existing machines from ~50% to ~88% utilization often defers a $300,000–$500,000 capital buy</li>
+</ul>
+<h3 id="machine-tending-systems-at-a-glance">Machine Tending Systems at a Glance</h3>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Typical robots</th>
+<th>Fits cycle times</th>
+<th>Typical investment</th>
+<th>Payback</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-machine cell</td>
+<td>FANUC M-10iD, LR Mate 200iD, CRX-10iA/L cobot</td>
+<td>60 s and up</td>
+<td>$150,000–$250,000</td>
+<td>8–16 months</td>
+</tr>
+<tr>
+<td>Multi-machine cell (2–4 machines)</td>
+<td>FANUC M-20iD, ABB IRB 2600</td>
+<td>3 min and up</td>
+<td>$300,000–$500,000</td>
+<td>8–16 months</td>
+</tr>
+<tr>
+<td>Linear rail system (5+ machines)</td>
+<td>FANUC M-710iC/50 on Güdel rail</td>
+<td>5 min and up</td>
+<td>$300,000–$500,000</td>
+<td>8–16 months</td>
+</tr>
+<tr>
+<td>Rotary indexing integration</td>
+<td>Dial-integrated load/unload stations</td>
+<td>under 30 s</td>
+<td>project-specific</td>
+<td>project-specific</td>
+</tr>
+</tbody>
+</table>
+<p>A standard single-machine tending cell delivers in 16–20 weeks from purchase order; multi-machine and rail systems run 20–28 weeks (full timeline breakdown in the FAQ below). For how these figures compare across automation types, see our <a href="/blog/what-automation-costs/">custom automation pricing guide</a> and the <a href="/blog/custom-automation-benchmarks/">payback benchmarks from 2,500+ installed machines</a>.</p>
 <h2 id="the-real-economics-of-machine-tending">The Real Economics of Machine Tending</h2>
 <p>Before we talk technology, let's talk numbers—because the math on machine tending is some of the most compelling in all of manufacturing automation.</p>
 <p>Most machine shops run their CNCs at <strong>40–55% spindle utilization</strong> across a standard two-shift operation. That means your $300,000 machining center is cutting metal less than half the time you're paying for the building, the electricity, and the machine's depreciation. The rest is operator load/unload time, breaks, shift changes, setup, and unplanned downtime.</p>
