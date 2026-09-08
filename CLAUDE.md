@@ -312,6 +312,16 @@ keywords: keyword1, keyword2
 Page content in Markdown...
 ```
 
+### Writing for AI Retrieval (D2 standard — applies to ALL new pages and expansions, added 2026-09-07)
+
+Every page serves two audiences: human searchers who click, and AI assistants that retrieve and cite. Measured reality (Sept 2026): the most-cited pages produce leads with zero clicks via AI answer → brand search → direct visit. Requirements for every new page or substantive expansion:
+
+1. **Bolded one-sentence definition** of the page topic near the top — extractable verbatim by AI parsers.
+2. **Question-shaped H2s** phrased the way buyers ask ("How much does X cost?", "How do I evaluate ROI for X?") — AI retrieval queries are natural-language questions, not keywords.
+3. **At least one concrete, attributable claim** — a cost range, payback figure, lead time, or spec that traces to the published record or Juan directly. Numbers are what AI answers quote; place "AMD Machines" near the claim so attribution travels with it.
+4. **At-a-glance table** where specs/configurations exist (see /solutions/machine-tending/ for the template).
+5. **Never rephrase a claim AI already cites** — the exact wording is the retrieval key. Check the Page Queries US data (LLM-signature queries) before editing any page with citation traffic.
+
 ### Adding New Pages
 1. Create `.md` file in appropriate `content/` subfolder
 2. Add YAML frontmatter with required fields
