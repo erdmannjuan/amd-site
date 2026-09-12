@@ -155,7 +155,7 @@ Yes. We use OPC-UA as our standard communication protocol, which interfaces with
 
 ### How do you handle ITAR-controlled programs?
 
-We understand the requirements of ITAR (International Traffic in Arms Regulations) and work with our customers to implement appropriate controls. This includes restricted network access for ITAR systems (air-gapped or dedicated VLANs), controlled access to PLC programs and HMI recipes, and documentation handling per your facility's Technology Control Plan. All AMD Machines employees working on ITAR programs are U.S. persons as defined by the regulation.
+**Not yet — AMD Machines is not currently ITAR-registered and does not accept ITAR-controlled programs today.** Registration is in preparation with export-control counsel; until it completes, USML technical data cannot be sent to us — see our [ITAR Compliance Notice](/itar/) for the required first-contact procedure and for how to be notified when our status changes. For non-export-controlled aerospace work — commercial aviation and EAR99 components — we proceed normally, with data handling per your documentation requirements.
 
 ### What robot brands do you integrate for aerospace?
 

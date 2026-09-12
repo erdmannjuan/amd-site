@@ -49,6 +49,7 @@ AMD Machines recognizes the importance of serving customers in defense and aeros
 
 **Current Initiatives:**
 
+- Preparing for ITAR registration in coordination with export-control counsel
 - Evaluating locations for United States based manufacturing facilities
 - Developing partnerships with ITAR registered organizations
 - Building a domestic engineering and manufacturing team
